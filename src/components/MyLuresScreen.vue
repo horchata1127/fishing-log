@@ -77,11 +77,11 @@ async function loadMyLures() {
       continue
     }
 
-const catchCount = await db.catches
-  .filter((catchRecord) => catchRecord.lureId === myLure.id)
-  .count()
+    const catchCount = await db.catches
+      .filter((catchRecord) => catchRecord.lureId === myLure.id)
+      .count()
 
-console.log('釣果数確認', myLure.id, catchCount)
+    console.log('釣果数確認', myLure.id, catchCount)
 
     result.push({
       myLure,
@@ -315,12 +315,8 @@ onMounted(async () => {
 
       <p v-if="myLureViews.length === 0" class="empty">まだルアーが登録されてへんで。</p>
 
-      <article
-        v-for="item in myLureViews"
-        :key="item.myLure.id"
-        class="lure-row"
-        @click="item.myLure.id && emit('selectLure', item.myLure.id)"
-      >
+      <article v-for="item in myLureViews" :key="item.myLure.id" class="lure-row"
+        @click="item.myLure.id && emit('selectLure', item.myLure.id)">
         <div class="lure-main">
           <strong>{{ item.modelName }}</strong>
 
@@ -376,6 +372,7 @@ h1 {
 h2 {
   margin-top: 0;
   font-size: 19px;
+  color: #17212b;
 }
 
 .card {
@@ -392,7 +389,7 @@ h2 {
   margin-bottom: 16px;
 }
 
-.form-card label > span {
+.form-card label>span {
   display: block;
   margin-bottom: 7px;
   color: #69747e;
@@ -401,6 +398,7 @@ h2 {
 }
 
 input {
+  box-sizing: border-box;
   width: 100%;
   padding: 13px;
   border: 1px solid #d9dee3;
