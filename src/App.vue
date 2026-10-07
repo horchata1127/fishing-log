@@ -383,10 +383,10 @@ onMounted(async () => {
 
     <!-- マイルアー -->
     <MyLuresScreen
-  v-else-if="screen === 'my-lures'"
-  @back="goHome"
-  @select-lure="openLureDetail"
-/>
+      v-else-if="screen === 'my-lures'"
+      @back="goHome"
+      @select-lure="openLureDetail"
+    />
 
     <!-- 新規釣行 -->
     <template v-else-if="screen === 'new-trip'">

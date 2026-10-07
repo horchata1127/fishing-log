@@ -11,7 +11,7 @@ import {
 
 const emit = defineEmits<{
   back: []
-  selectLure: [myLureId: number]
+  selectLure: [id: number]
 }>()
 
 interface MyLureView {
@@ -113,7 +113,13 @@ async function findOrCreateManufacturer(
     name,
   }
 
-  return await db.lureManufacturers.add(manufacturer)
+  const id = await db.lureManufacturers.add(manufacturer)
+
+  if (id === undefined) {
+    throw new Error('メーカーの登録に失敗しました')
+  }
+
+  return id
 }
 
 async function findOrCreateSeries(
@@ -135,7 +141,13 @@ async function findOrCreateSeries(
     name,
   }
 
-  return await db.lureSeries.add(series)
+  const id = await db.lureSeries.add(series)
+
+  if (id === undefined) {
+    throw new Error('シリーズの登録に失敗しました')
+  }
+
+  return id
 }
 
 async function findOrCreateModel(
@@ -157,7 +169,13 @@ async function findOrCreateModel(
     name,
   }
 
-  return await db.lureModels.add(model)
+  const id = await db.lureModels.add(model)
+
+  if (id === undefined) {
+    throw new Error('モデルの登録に失敗しました')
+  }
+
+  return id
 }
 
 async function findOrCreateVariant(
@@ -179,7 +197,13 @@ async function findOrCreateVariant(
     colorName,
   }
 
-  return await db.lureVariants.add(variant)
+  const id = await db.lureVariants.add(variant)
+
+  if (id === undefined) {
+    throw new Error('カラーの登録に失敗しました')
+  }
+
+  return id
 }
 
 async function addMyLure() {
@@ -416,9 +440,7 @@ input {
   padding: 15px 0;
   border-top: 1px solid #edf0f2;
   cursor: pointer;
-  transition:
-    background 0.15s ease,
-    transform 0.15s ease;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .lure-row:hover {
