@@ -3,6 +3,7 @@ import { onMounted, ref } from 'vue'
 import CatchModal from './components/CatchModal.vue'
 import FishingScreen from './components/FishingScreen.vue'
 import MyLuresScreen from './components/MyLuresScreen.vue'
+import { exportBackup, importBackup } from './utils/backup'
 import {
   db,
   type CatchRecord,
@@ -24,6 +25,53 @@ const myLureOptions = ref<MyLureOption[]>([])
 
 function openMyLures() {
   screen.value = 'my-lures'
+}
+
+async function backupData() {
+  try {
+    await exportBackup()
+  } catch (error) {
+    console.error('バックアップに失敗しました', error)
+    alert('バックアップに失敗したで。')
+  }
+}
+
+async function restoreData(event: Event) {
+  const input = event.target as HTMLInputElement
+  const file = input.files?.[0]
+
+  if (!file) {
+    return
+  }
+
+  const ok = confirm(
+    'バックアップから復元すると、現在のデータはすべて置き換わるで。\nほんまに復元する？'
+  )
+
+  if (!ok) {
+    input.value = ''
+    return
+  }
+
+  try {
+    await importBackup(file)
+
+    await loadTrips()
+    await loadMyLureOptions()
+
+    alert('バックアップから復元したで！')
+  } catch (error) {
+    console.error('復元に失敗しました', error)
+
+    const message =
+      error instanceof Error
+        ? error.message
+        : 'バックアップの復元に失敗しました'
+
+    alert(message)
+  } finally {
+    input.value = ''
+  }
 }
 
 function openLureDetail(id: number) {
@@ -306,7 +354,7 @@ function goHome() {
 
 async function deleteAllData() {
   const ok = confirm(
-    '開発用データを全部削除するで。\nほんまに削除する？'
+    '開発用データを全部削除するで。\n釣行・釣果・マイルアーも全部消えるで。\nほんまに削除する？'
   )
 
   if (!ok) {
@@ -315,16 +363,29 @@ async function deleteAllData() {
 
   await db.transaction(
     'rw',
-    db.trips,
-    db.catches,
+    [
+      db.trips,
+      db.catches,
+      db.lureManufacturers,
+      db.lureSeries,
+      db.lureModels,
+      db.lureVariants,
+      db.myLures,
+    ],
     async () => {
       await db.catches.clear()
+      await db.myLures.clear()
+      await db.lureVariants.clear()
+      await db.lureModels.clear()
+      await db.lureSeries.clear()
+      await db.lureManufacturers.clear()
       await db.trips.clear()
     }
   )
 
   currentTrip.value = null
   catches.value = []
+  myLureOptions.value = []
 
   await loadTrips()
 
@@ -351,17 +412,25 @@ onMounted(async () => {
 
       <button class="secondary-button" @click="openMyLures">🎣 マイルアー</button>
 
+      <button class="backup-button" @click="backupData">
+        📦 データをバックアップ
+      </button>
+
+      <label class="restore-button">
+        📥 バックアップから復元
+
+        <input class="restore-input" type="file" accept=".json,application/json" @change="restoreData" />
+      </label>
+
+
+
+
       <section class="card">
         <h2>最近の釣行</h2>
 
         <p v-if="trips.length === 0" class="empty">まだ釣行記録がないで。</p>
 
-        <button
-          v-for="trip in trips"
-          :key="trip.id"
-          class="trip-row"
-          @click="openTrip(trip)"
-        >
+        <button v-for="trip in trips" :key="trip.id" class="trip-row" @click="openTrip(trip)">
           <div>
             <strong>
               {{ trip.fishingAreaName }}
@@ -382,11 +451,7 @@ onMounted(async () => {
     </template>
 
     <!-- マイルアー -->
-    <MyLuresScreen
-      v-else-if="screen === 'my-lures'"
-      @back="goHome"
-      @select-lure="openLureDetail"
-    />
+    <MyLuresScreen v-else-if="screen === 'my-lures'" @back="goHome" @select-lure="openLureDetail" />
 
     <!-- 新規釣行 -->
     <template v-else-if="screen === 'new-trip'">
@@ -444,37 +509,64 @@ onMounted(async () => {
 
     <!-- 釣行中 -->
 
-    <FishingScreen
-      v-else-if="screen === 'fishing' && currentTrip"
-      :trip="currentTrip"
-      :catches="catches"
-      @home="goHome"
-      @add-catch="addCatch"
-      @end-trip="endTrip"
-    />
+    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" @home="goHome"
+      @add-catch="addCatch" @end-trip="endTrip" />
 
     <!-- 釣果入力モーダル -->
-    <CatchModal
-      v-if="showCatchForm && pendingCaughtAt"
-      :caught-at="pendingCaughtAt"
-      :has-previous-catch="catches.length > 0"
-      :my-lures="myLureOptions"
-      v-model:lure-name="catchLureName"
-      v-model:lure-color="catchLureColor"
-      v-model:range="catchRange"
-      v-model:retrieve-speed="catchRetrieveSpeed"
-      v-model:action="catchAction"
-      @select-my-lure="selectMyLure"
-      @save="saveCatch"
-      @same-as-previous="saveSameAsPrevious"
-      @cancel="cancelCatch"
-    />
+    <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt"
+      :has-previous-catch="catches.length > 0" :my-lures="myLureOptions" v-model:lure-name="catchLureName"
+      v-model:lure-color="catchLureColor" v-model:range="catchRange" v-model:retrieve-speed="catchRetrieveSpeed"
+      v-model:action="catchAction" @select-my-lure="selectMyLure" @save="saveCatch"
+      @same-as-previous="saveSameAsPrevious" @cancel="cancelCatch" />
   </main>
 </template>
 
 <style scoped>
 * {
   box-sizing: border-box;
+}
+
+.restore-button {
+  display: block;
+  width: 100%;
+  margin: 0 0 24px;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 1px solid #d9dee3;
+  border-radius: 14px;
+  background: white;
+  color: #17212b;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.restore-button:active {
+  transform: scale(0.98);
+}
+
+.restore-input {
+  display: none;
+}
+
+
+
+.backup-button {
+  width: 100%;
+  margin: 0 0 24px;
+  padding: 14px;
+  border: 1px solid #d9dee3;
+  border-radius: 14px;
+  background: white;
+  color: #17212b;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.backup-button:active {
+  transform: scale(0.98);
 }
 
 .app {
@@ -587,7 +679,7 @@ h2 {
   margin-bottom: 0;
 }
 
-.form-card label > span {
+.form-card label>span {
   display: block;
   margin-bottom: 7px;
   color: #69747e;
