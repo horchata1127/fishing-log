@@ -56,16 +56,65 @@ const availableColors = computed(() =>
   catalogVariants.value.filter(item => item.modelId === selectedModel.value?.id)
 )
 
-function onManufacturerInput() {
-  seriesName.value = ''
-  modelName.value = ''
-  colorName.value = ''
+type Step = 'manufacturer' | 'series' | 'model' | 'color'
+const activeStep = ref<Step>('manufacturer')
+const manualMode = ref(false)
+const steps: { key: Step; label: string }[] = [
+  { key: 'manufacturer', label: 'メーカー' },
+  { key: 'series', label: 'シリーズ' },
+  { key: 'model', label: 'モデル' },
+  { key: 'color', label: 'カラー' },
+]
+const stepValues = computed<Record<Step, string>>(() => ({
+  manufacturer: manufacturerName.value,
+  series: seriesName.value,
+  model: modelName.value,
+  color: colorName.value,
+}))
+const choices = computed(() => {
+  if (activeStep.value === 'manufacturer') return catalogManufacturers.value.map(x => x.name)
+  if (activeStep.value === 'series') return availableSeries.value.map(x => x.name)
+  if (activeStep.value === 'model') return availableModels.value.map(x => x.name)
+  return availableColors.value.map(x => x.colorName)
+})
+const canOpenStep = (step: Step) => {
+  if (step === 'manufacturer') return true
+  if (step === 'series') return !!selectedManufacturer.value
+  if (step === 'model') return !!selectedSeries.value
+  return !!selectedModel.value
 }
-function onSeriesInput() {
-  modelName.value = ''
-  colorName.value = ''
+function choose(value: string) {
+  switch (activeStep.value) {
+    case 'manufacturer':
+      manufacturerName.value = value
+      seriesName.value = ''; modelName.value = ''; colorName.value = ''
+      activeStep.value = 'series'
+      break
+    case 'series':
+      seriesName.value = value
+      modelName.value = ''; colorName.value = ''
+      activeStep.value = 'model'
+      break
+    case 'model':
+      modelName.value = value
+      colorName.value = ''
+      activeStep.value = 'color'
+      break
+    case 'color':
+      colorName.value = value
+      break
+  }
 }
-function onModelInput() {
+function enableManual() {
+  manualMode.value = true
+}
+function onManualManufacturerInput() {
+  seriesName.value = ''; modelName.value = ''; colorName.value = ''
+}
+function onManualSeriesInput() {
+  modelName.value = ''; colorName.value = ''
+}
+function onManualModelInput() {
   colorName.value = ''
 }
 
@@ -309,6 +358,7 @@ async function addMyLure() {
     seriesName.value = ''
     modelName.value = ''
     colorName.value = ''
+    activeStep.value = 'manufacturer'
 
     await loadMyLures()
     await loadCatalog()
@@ -337,41 +387,37 @@ onMounted(async () => {
     <section class="card form-card">
       <h2>ルアーを登録</h2>
 
-      <label>
-        <span>メーカー</span>
+      <div class="mode-switch">
+        <button type="button" :class="{ chosen: !manualMode }" @click="manualMode = false">一覧から選ぶ</button>
+        <button type="button" :class="{ chosen: manualMode }" @click="enableManual">手入力</button>
+      </div>
 
-        <input v-model="manufacturerName" type="text" list="lure-manufacturers" autocomplete="off" placeholder="メーカーを選択・入力" @input="onManufacturerInput" />
-        <datalist id="lure-manufacturers">
-          <option v-for="item in catalogManufacturers" :key="item.id" :value="item.name" />
-        </datalist>
-      </label>
+      <template v-if="!manualMode">
+        <div class="step-tabs" aria-label="ルアー選択の進行状況">
+          <button v-for="step in steps" :key="step.key" type="button"
+            :disabled="!canOpenStep(step.key)" :class="{ current: activeStep === step.key }"
+            @click="activeStep = step.key">
+            <span>{{ step.label }}</span>
+            <small>{{ stepValues[step.key] || '未選択' }}</small>
+          </button>
+        </div>
+        <p class="choice-caption">{{ steps.find(x => x.key === activeStep)?.label }}をスクロールして選んでな</p>
+        <div class="choice-list" role="group" :aria-label="`${steps.find(x => x.key === activeStep)?.label}の候補`">
+          <button v-for="(value, index) in choices" :key="`${index}-${value}`" type="button"
+            class="choice-row" :class="{ selected: stepValues[activeStep] === value }" @click="choose(value)">
+            <span>{{ value }}</span><span v-if="stepValues[activeStep] === value" aria-label="選択中">✓</span>
+          </button>
+          <p v-if="choices.length === 0" class="empty">候補がないで。「手入力」に切り替えて登録してな。</p>
+        </div>
+        <p class="selected-summary">選択中：{{ manufacturerName || '—' }} / {{ seriesName || '—' }} / {{ modelName || '—' }} / {{ colorName || '—' }}</p>
+      </template>
 
-      <label>
-        <span>シリーズ</span>
-
-        <input v-model="seriesName" type="text" list="lure-series" autocomplete="off" placeholder="シリーズを選択・入力" @input="onSeriesInput" />
-        <datalist id="lure-series">
-          <option v-for="item in availableSeries" :key="item.id" :value="item.name" />
-        </datalist>
-      </label>
-
-      <label>
-        <span>モデル</span>
-
-        <input v-model="modelName" type="text" list="lure-models" autocomplete="off" placeholder="モデルを選択・入力" @input="onModelInput" />
-        <datalist id="lure-models">
-          <option v-for="item in availableModels" :key="item.id" :value="item.name" />
-        </datalist>
-      </label>
-
-      <label>
-        <span>カラー</span>
-
-        <input v-model="colorName" type="text" list="lure-colors" autocomplete="off" placeholder="カラーを選択・入力" />
-        <datalist id="lure-colors">
-          <option v-for="item in availableColors" :key="item.id" :value="item.colorName" />
-        </datalist>
-      </label>
+      <template v-else>
+        <label><span>メーカー</span><input v-model="manufacturerName" type="text" autocomplete="off" placeholder="メーカー名" @input="onManualManufacturerInput" /></label>
+        <label><span>シリーズ</span><input v-model="seriesName" type="text" autocomplete="off" placeholder="シリーズ名" @input="onManualSeriesInput" /></label>
+        <label><span>モデル</span><input v-model="modelName" type="text" autocomplete="off" placeholder="モデル名" @input="onManualModelInput" /></label>
+        <label><span>カラー</span><input v-model="colorName" type="text" autocomplete="off" placeholder="カラー名" /></label>
+      </template>
 
       <button class="register-button" :disabled="saving" @click="addMyLure">
         {{ saving ? "登録中…" : "＋ マイルアーに登録" }}
@@ -553,4 +599,20 @@ input {
   font-size: 13px;
   font-weight: 800;
 }
+</style>
+
+<style scoped>
+.mode-switch { display:flex; gap:8px; margin: 0 0 16px; }
+.mode-switch button { flex:1; border:1px solid #cbd5d1; background:#fff; color:#17654d; border-radius:10px; padding:11px 6px; font-weight:700; }
+.mode-switch button.chosen { background:#13795b; color:#fff; border-color:#13795b; }
+.step-tabs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+.step-tabs button { min-width:0; text-align:left; border:1px solid #dce6e0; border-radius:10px; background:#f8faf9; padding:10px; color:#26362f; }
+.step-tabs button.current { border:2px solid #13795b; background:#eaf6f0; }
+.step-tabs button:disabled { opacity:.45; }
+.step-tabs small { display:block; margin-top:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#53645c; }
+.choice-caption { margin:16px 0 8px; font-size:14px; font-weight:700; }
+.choice-list { max-height:270px; overflow-y:auto; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; border:1px solid #dce6e0; border-radius:12px; }
+.choice-row { display:flex; justify-content:space-between; align-items:center; gap:8px; width:100%; padding:14px; min-height:48px; text-align:left; background:#fff; color:#17212b; border:0; border-bottom:1px solid #edf1ee; font:inherit; overflow-wrap:anywhere; }
+.choice-row.selected { background:#eaf6f0; color:#116348; font-weight:700; }
+.selected-summary { font-size:12px; color:#56665d; overflow-wrap:anywhere; }
 </style>
