@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import {
   db,
   type LureManufacturer,
@@ -29,6 +29,58 @@ const manufacturerName = ref('')
 const seriesName = ref('')
 const modelName = ref('')
 const colorName = ref('')
+
+const catalogManufacturers = ref<LureManufacturer[]>([])
+const catalogSeries = ref<LureSeries[]>([])
+const catalogModels = ref<LureModel[]>([])
+const catalogVariants = ref<LureVariant[]>([])
+
+const normalized = (value: string) => value.trim().normalize('NFKC').toLocaleLowerCase()
+
+const selectedManufacturer = computed(() =>
+  catalogManufacturers.value.find(item => normalized(item.name) === normalized(manufacturerName.value))
+)
+const availableSeries = computed(() =>
+  catalogSeries.value.filter(item => item.manufacturerId === selectedManufacturer.value?.id)
+)
+const selectedSeries = computed(() =>
+  availableSeries.value.find(item => normalized(item.name) === normalized(seriesName.value))
+)
+const availableModels = computed(() =>
+  catalogModels.value.filter(item => item.seriesId === selectedSeries.value?.id)
+)
+const selectedModel = computed(() =>
+  availableModels.value.find(item => normalized(item.name) === normalized(modelName.value))
+)
+const availableColors = computed(() =>
+  catalogVariants.value.filter(item => item.modelId === selectedModel.value?.id)
+)
+
+function onManufacturerInput() {
+  seriesName.value = ''
+  modelName.value = ''
+  colorName.value = ''
+}
+function onSeriesInput() {
+  modelName.value = ''
+  colorName.value = ''
+}
+function onModelInput() {
+  colorName.value = ''
+}
+
+async function loadCatalog() {
+  const [manufacturers, series, models, variants] = await Promise.all([
+    db.lureManufacturers.toArray(),
+    db.lureSeries.toArray(),
+    db.lureModels.toArray(),
+    db.lureVariants.toArray(),
+  ])
+  catalogManufacturers.value = manufacturers.sort((a, b) => a.name.localeCompare(b.name, 'ja'))
+  catalogSeries.value = series
+  catalogModels.value = models
+  catalogVariants.value = variants
+}
 
 const saving = ref(false)
 
@@ -259,13 +311,17 @@ async function addMyLure() {
     colorName.value = ''
 
     await loadMyLures()
+    await loadCatalog()
+  } catch (error) {
+    console.error('ルアー登録失敗', error)
+    alert('ルアーの登録に失敗しました。入力内容を確認してもう一度試してな。')
   } finally {
     saving.value = false
   }
 }
 
 onMounted(async () => {
-  await loadMyLures()
+  await Promise.all([loadMyLures(), loadCatalog()])
 })
 </script>
 
@@ -284,25 +340,37 @@ onMounted(async () => {
       <label>
         <span>メーカー</span>
 
-        <input v-model="manufacturerName" type="text" placeholder="例：Lucky Craft" />
+        <input v-model="manufacturerName" type="text" list="lure-manufacturers" autocomplete="off" placeholder="メーカーを選択・入力" @input="onManufacturerInput" />
+        <datalist id="lure-manufacturers">
+          <option v-for="item in catalogManufacturers" :key="item.id" :value="item.name" />
+        </datalist>
       </label>
 
       <label>
         <span>シリーズ</span>
 
-        <input v-model="seriesName" type="text" placeholder="例：WAH" />
+        <input v-model="seriesName" type="text" list="lure-series" autocomplete="off" placeholder="シリーズを選択・入力" @input="onSeriesInput" />
+        <datalist id="lure-series">
+          <option v-for="item in availableSeries" :key="item.id" :value="item.name" />
+        </datalist>
       </label>
 
       <label>
         <span>モデル</span>
 
-        <input v-model="modelName" type="text" placeholder="例：WAH 40F" />
+        <input v-model="modelName" type="text" list="lure-models" autocomplete="off" placeholder="モデルを選択・入力" @input="onModelInput" />
+        <datalist id="lure-models">
+          <option v-for="item in availableModels" :key="item.id" :value="item.name" />
+        </datalist>
       </label>
 
       <label>
         <span>カラー</span>
 
-        <input v-model="colorName" type="text" placeholder="例：クロまんじゅう" />
+        <input v-model="colorName" type="text" list="lure-colors" autocomplete="off" placeholder="カラーを選択・入力" />
+        <datalist id="lure-colors">
+          <option v-for="item in availableColors" :key="item.id" :value="item.colorName" />
+        </datalist>
       </label>
 
       <button class="register-button" :disabled="saving" @click="addMyLure">

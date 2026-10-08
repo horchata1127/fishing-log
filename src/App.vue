@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import LureCatalogImportPanel from './LureCatalogImportPanel.vue'
 import { onMounted, ref } from 'vue'
 import CatchModal from './components/CatchModal.vue'
 import FishingScreen from './components/FishingScreen.vue'
@@ -422,7 +423,10 @@ onMounted(async () => {
         <input class="restore-input" type="file" accept=".json,application/json" @change="restoreData" />
       </label>
 
-
+<!-- ルアーマスタ取り込み -->
+<section class="card">
+  <LureCatalogImportPanel />
+</section>
 
 
       <section class="card">
