@@ -7,6 +7,7 @@ interface MyLureOption {
   seriesName: string;
   modelName: string;
   colorName: string;
+  category: string;
 }
 
 const props = defineProps<{
@@ -38,6 +39,10 @@ const emit = defineEmits<{
 const showLurePicker = ref(false);
 const showManualInput = ref(false);
 const lureSearch = ref("");
+const lureManufacturer = ref("");
+const lureCategory = ref("");
+const lureCategories = ['スプーン','クランク','ミノー','トップ','バイブレーション','その他'];
+const lureManufacturers = computed(() => [...new Set(props.myLures.map(l => l.manufacturerName))].sort((a,b) => a.localeCompare(b,'ja')));
 
 const selectedMyLure = computed(() => {
   return props.myLures.find(
@@ -48,11 +53,11 @@ const selectedMyLure = computed(() => {
 const filteredMyLures = computed(() => {
   const keyword = lureSearch.value.trim().toLowerCase();
 
-  if (!keyword) {
-    return props.myLures;
-  }
+
 
   return props.myLures.filter((lure) => {
+    if (lureManufacturer.value && lure.manufacturerName !== lureManufacturer.value) return false;
+    if (lureCategory.value && lure.category !== lureCategory.value) return false;
     const text = [lure.manufacturerName, lure.seriesName, lure.modelName, lure.colorName]
       .join(" ")
       .toLowerCase();
@@ -63,6 +68,8 @@ const filteredMyLures = computed(() => {
 
 function openLurePicker() {
   lureSearch.value = "";
+  lureManufacturer.value = "";
+  lureCategory.value = "";
   showLurePicker.value = true;
 }
 
@@ -205,6 +212,10 @@ function openManualInput() {
             placeholder="ルアー名・カラー・メーカーで検索"
           />
 
+          <div class="picker-category-filters">
+            <select v-model="lureManufacturer" aria-label="メーカー"><option value="">すべてのメーカー</option><option v-for="name in lureManufacturers" :key="name" :value="name">{{ name }}</option></select>
+            <select v-model="lureCategory" aria-label="カテゴリ"><option value="">すべてのカテゴリ</option><option v-for="cat in lureCategories" :key="cat" :value="cat">{{ cat }}</option></select>
+          </div>
           <div v-if="filteredMyLures.length > 0" class="lure-picker-list">
             <button
               v-for="lure in filteredMyLures"
@@ -644,4 +655,9 @@ select {
     border-radius: 22px 22px 0 0;
   }
 }
+</style>
+
+<style scoped>
+.picker-category-filters { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin-bottom:12px; }
+.picker-category-filters select { min-width:0; width:100%; padding:10px; border:1px solid #d9dee3; border-radius:10px; background:white; color:#17212b; font:inherit; }
 </style>

@@ -42,11 +42,11 @@ async function importFile(event: Event) {
   message.value = ''
   try {
     const seed = JSON.parse(await file.text())
-    if (seed.format !== 'fishing-log-catalog-seed' || seed.version !== 1 || seed.catalogVersion !== '1.0-rc7') {
-      throw new Error('RC7のカタログJSONを選んでな。バックアップJSONはインポートできへんで。')
+    if (seed.format !== 'fishing-log-catalog-seed' || seed.version !== 1 || !['1.0-rc7', '1.0-rc18'].includes(seed.catalogVersion)) {
+      throw new Error('RC7またはRC18の専用カタログJSONを選んでな。')
     }
     const result = await importLureCatalog(seed)
-    message.value = `追加完了: メーカー${result.manufacturers}・シリーズ${result.series}・モデル${result.models}・カラー${result.variants}件。既存項目は重複追加してへんで。画面を再表示して確認してな。`
+    message.value = `追加完了: メーカー${result.manufacturers}・シリーズ${result.series}・モデル${result.models}・カラー${result.variants}・所有ルアー${result.owned}件。既存項目は重複追加してへんで。画面を再表示して確認してな。`
   } catch (error) { message.value = `インポート失敗: ${String(error)}` }
   finally { busy.value = false; input.value = '' }
 }
@@ -54,13 +54,13 @@ async function importFile(event: Event) {
 
 <template>
   <section class="catalog-import">
-    <h2>ルアーマスタ RC7</h2>
-    <p>先にバックアップを保存・確認してから、RC7の専用JSONを読み込んでな。</p>
+    <h2>ルアーマスタ RC18対応</h2>
+    <p>先にバックアップを保存・確認してから、RC18の専用JSONを読み込んでな。</p>
     <button type="button" :disabled="busy" @click="backup">① 全データをバックアップ</button>
-    <button type="button" :disabled="busy" @click="fileInput?.click()">② RC7 JSONを読み込む</button>
+    <button type="button" :disabled="busy" @click="fileInput?.click()">② RC18 JSONを読み込む</button>
     <input ref="fileInput" type="file" accept=".json,application/json" hidden @change="importFile" />
     <p v-if="message" role="status">{{ message }}</p>
-    <p class="note">釣行・釣果・所有ルアーはインポート対象外。既存カタログの名前が違う場合は別項目として追加されることがあるで。</p>
+    <p class="note">釣行・釣果は変更しません。所有ルアーは不足数のみ追加し、再インポートでも重複しません。</p>
   </section>
 </template>
 
