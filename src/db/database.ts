@@ -20,6 +20,16 @@ export interface FishingTrip {
   memo?: string
 }
 
+export type TripEventType = 'stocking' | 'pellet'
+
+export interface TripEvent {
+  id?: number
+  tripId: number
+  type: TripEventType
+  occurredAt: Date
+  note?: string
+}
+
 export interface CatchRecord {
   id?: number
   tripId: number
@@ -116,6 +126,7 @@ export interface MyLure {
 export const db = new Dexie('FishingLogDatabase') as Dexie & {
   trips: EntityTable<FishingTrip, 'id'>
   catches: EntityTable<CatchRecord, 'id'>
+  tripEvents: EntityTable<TripEvent, 'id'>
 
   lureManufacturers: EntityTable<LureManufacturer, 'id'>
   lureSeries: EntityTable<LureSeries, 'id'>
@@ -152,4 +163,8 @@ db.version(3).stores({
   lureModels: '++id, seriesId, name',
   lureVariants: '++id, modelId, colorName',
   myLures: '++id, variantId, active',
+})
+/* 放流・ペレット時刻。既存データを保持したまま追加 */
+db.version(4).stores({
+  tripEvents: '++id, tripId, occurredAt, type',
 })

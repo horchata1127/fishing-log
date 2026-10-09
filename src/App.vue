@@ -10,6 +10,8 @@ import {
   type CatchRecord,
   type FishingStyle,
   type FishingTrip,
+  type TripEvent,
+  type TripEventType,
 } from './db/database'
 
 type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures'
@@ -60,6 +62,7 @@ async function restoreData(event: Event) {
 
     await loadTrips()
     await loadMyLureOptions()
+    if (currentTrip.value) await loadTripEvents()
 
     alert('バックアップから復元したで！')
   } catch (error) {
@@ -84,6 +87,7 @@ const screen = ref<Screen>('home')
 
 const trips = ref<FishingTrip[]>([])
 const catches = ref<CatchRecord[]>([])
+const tripEvents = ref<TripEvent[]>([])
 const currentTrip = ref<FishingTrip | null>(null)
 
 // 新規釣行
@@ -142,6 +146,52 @@ async function loadCatches() {
     .where('tripId')
     .equals(currentTrip.value.id)
     .sortBy('caughtAt')
+}
+
+async function loadTripEvents() {
+  const tripId = currentTrip.value?.id
+  tripEvents.value = tripId
+    ? await db.tripEvents.where('tripId').equals(tripId).sortBy('occurredAt')
+    : []
+}
+
+async function recordTripEvent(type: TripEventType) {
+  const tripId = currentTrip.value?.id
+  if (!tripId || currentTrip.value?.endedAt) return
+  // ボタンを押した瞬間の時刻を使う
+  const occurredAt = new Date()
+  try {
+    await db.tripEvents.add({ tripId, type, occurredAt })
+    await loadTripEvents()
+  } catch (error) {
+    console.error('イベント記録に失敗しました', error)
+    alert('記録できへんかった。もう一度試してな。')
+  }
+}
+
+async function updateTripEvent(event: TripEvent, dateTime: string) {
+  if (!event.id || !currentTrip.value?.id || event.tripId !== currentTrip.value.id) return
+  const occurredAt = new Date(dateTime)
+  if (!Number.isFinite(occurredAt.getTime())) {
+    alert('日時を確認してな。')
+    return
+  }
+  const startedAt = new Date(currentTrip.value.startedAt)
+  if (occurredAt < startedAt) {
+    alert('釣行開始より前の日時にはできへんで。')
+    return
+  }
+  if (currentTrip.value.endedAt && occurredAt > new Date(currentTrip.value.endedAt)) {
+    alert('釣行終了より後の日時にはできへんで。')
+    return
+  }
+  try {
+    await db.tripEvents.update(event.id, { occurredAt })
+    await loadTripEvents()
+  } catch (error) {
+    console.error('イベント時刻の更新に失敗しました', error)
+    alert('時刻の修正に失敗したで。')
+  }
 }
 
 async function loadMyLureOptions() {
@@ -226,6 +276,7 @@ async function startTrip() {
   }
 
   catches.value = []
+  tripEvents.value = []
 
   await loadTrips()
 
@@ -236,6 +287,7 @@ async function openTrip(trip: FishingTrip) {
   currentTrip.value = trip
 
   await loadCatches()
+  await loadTripEvents()
 
   screen.value = 'fishing'
 }
@@ -341,6 +393,7 @@ async function endTrip() {
 
   currentTrip.value = null
   catches.value = []
+  tripEvents.value = []
 
   await loadTrips()
 
@@ -350,6 +403,7 @@ async function endTrip() {
 function goHome() {
   currentTrip.value = null
   catches.value = []
+  tripEvents.value = []
   showCatchForm.value = false
 
   screen.value = 'home'
@@ -369,6 +423,7 @@ async function deleteAllData() {
     [
       db.trips,
       db.catches,
+      db.tripEvents,
       db.lureManufacturers,
       db.lureSeries,
       db.lureModels,
@@ -377,6 +432,7 @@ async function deleteAllData() {
     ],
     async () => {
       await db.catches.clear()
+      await db.tripEvents.clear()
       await db.myLures.clear()
       await db.lureVariants.clear()
       await db.lureModels.clear()
@@ -389,6 +445,7 @@ async function deleteAllData() {
   currentTrip.value = null
   catches.value = []
   myLureOptions.value = []
+  tripEvents.value = []
 
   await loadTrips()
 
@@ -515,8 +572,8 @@ onMounted(async () => {
 
     <!-- 釣行中 -->
 
-    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" @home="goHome"
-      @add-catch="addCatch" @end-trip="endTrip" />
+    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" @home="goHome"
+      @add-catch="addCatch" @record-event="recordTripEvent" @update-event="updateTripEvent" @end-trip="endTrip" />
 
     <!-- 釣果入力モーダル -->
     <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt"

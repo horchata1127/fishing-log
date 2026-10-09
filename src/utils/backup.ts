@@ -2,12 +2,13 @@ import { db } from '../db/database'
 
 export interface FishingLogBackup {
     format: 'fishing-log-backup'
-    version: 1
+    version: 1 | 2
     exportedAt: string
 
     data: {
         trips: unknown[]
         catches: unknown[]
+        tripEvents?: unknown[]
 
         lureManufacturers: unknown[]
         lureSeries: unknown[]
@@ -21,6 +22,7 @@ export async function createBackup(): Promise<FishingLogBackup> {
     const [
         trips,
         catches,
+        tripEvents,
         lureManufacturers,
         lureSeries,
         lureModels,
@@ -29,6 +31,7 @@ export async function createBackup(): Promise<FishingLogBackup> {
     ] = await Promise.all([
         db.trips.toArray(),
         db.catches.toArray(),
+        db.tripEvents.toArray(),
         db.lureManufacturers.toArray(),
         db.lureSeries.toArray(),
         db.lureModels.toArray(),
@@ -38,12 +41,13 @@ export async function createBackup(): Promise<FishingLogBackup> {
 
     return {
         format: 'fishing-log-backup',
-        version: 1,
+        version: 2,
         exportedAt: new Date().toISOString(),
 
         data: {
             trips,
             catches,
+            tripEvents,
             lureManufacturers,
             lureSeries,
             lureModels,
@@ -96,7 +100,7 @@ export async function importBackup(file: File): Promise<void> {
 
     if (
         backup.format !== 'fishing-log-backup' ||
-        backup.version !== 1 ||
+        (backup.version !== 1 && backup.version !== 2) ||
         !backup.data
     ) {
         throw new Error('Fishing Logのバックアップファイルではありません')
@@ -105,6 +109,7 @@ export async function importBackup(file: File): Promise<void> {
     const {
         trips,
         catches,
+        tripEvents,
         lureManufacturers,
         lureSeries,
         lureModels,
@@ -124,6 +129,15 @@ export async function importBackup(file: File): Promise<void> {
         throw new Error('バックアップデータの形式が正しくありません')
     }
 
+    if (tripEvents !== undefined && !Array.isArray(tripEvents)) {
+        throw new Error('イベントデータの形式が正しくありません')
+    }
+
+    const restoredEvents = (tripEvents ?? []).map((event: any) => ({
+        ...event,
+        occurredAt: new Date(event.occurredAt),
+    }))
+
     // JSONではDateが文字列になるため、Date型に戻してから復元する
     const restoredTrips = trips.map((trip: any) => ({
         ...trip,
@@ -141,6 +155,7 @@ export async function importBackup(file: File): Promise<void> {
         [
             db.trips,
             db.catches,
+            db.tripEvents,
             db.lureManufacturers,
             db.lureSeries,
             db.lureModels,
@@ -150,6 +165,7 @@ export async function importBackup(file: File): Promise<void> {
         async () => {
             // 現在のデータを削除
             await db.catches.clear()
+            await db.tripEvents.clear()
             await db.myLures.clear()
             await db.lureVariants.clear()
             await db.lureModels.clear()
@@ -165,6 +181,7 @@ export async function importBackup(file: File): Promise<void> {
             await db.lureVariants.bulkAdd(lureVariants as any[])
             await db.myLures.bulkAdd(myLures as any[])
             await db.catches.bulkAdd(restoredCatches)
+            await db.tripEvents.bulkAdd(restoredEvents)
         }
     )
 }

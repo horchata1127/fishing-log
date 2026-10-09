@@ -1,21 +1,48 @@
 <script setup lang="ts">
-import { computed } from "vue"
+import { computed, ref } from "vue"
 import type {
   CatchRecord,
   FishingStyle,
   FishingTrip,
+  TripEvent,
+  TripEventType,
 } from "../db/database"
 
 const props = defineProps<{
   trip: FishingTrip
   catches: CatchRecord[]
+  events: TripEvent[]
 }>()
 
 const emit = defineEmits<{
   home: []
   addCatch: []
   endTrip: []
+  recordEvent: [type: TripEventType]
+  updateEvent: [event: TripEvent, dateTime: string]
 }>()
+
+const editingEventId = ref<number | null>(null)
+const eventDateTime = ref('')
+
+function toLocalDateTime(date: Date) {
+  const d = new Date(date)
+  const pad = (n: number) => String(n).padStart(2, '0')
+  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`
+}
+
+function beginEdit(event: TripEvent) {
+  editingEventId.value = event.id ?? null
+  eventDateTime.value = toLocalDateTime(event.occurredAt)
+}
+
+function saveEdit(event: TripEvent) {
+  if (!eventDateTime.value) return
+  emit('updateEvent', event, eventDateTime.value)
+  editingEventId.value = null
+}
+
+const sortedEvents = computed(() => [...props.events].sort((a,b) => new Date(b.occurredAt).getTime()-new Date(a.occurredAt).getTime()))
 
 const catchCount = computed(() => props.catches.length)
 
@@ -93,6 +120,28 @@ function fishingStyleName(style: FishingStyle) {
   >
     🎣 釣れた！
   </button>
+
+  <section class="card event-card">
+    <h2>📣 放流・ペレット記録</h2>
+    <div v-if="!trip.endedAt" class="event-buttons">
+      <button type="button" class="event-button stocking" @click="emit('recordEvent', 'stocking')">🐟 放流を記録</button>
+      <button type="button" class="event-button pellet" @click="emit('recordEvent', 'pellet')">🟤 ペレットを記録</button>
+    </div>
+    <p class="event-hint">ボタンを押した時刻で記録するで。あとから時刻も修正できるよ。</p>
+    <p v-if="!sortedEvents.length" class="event-hint">イベントはまだ記録されてへんで。</p>
+    <div v-for="event in sortedEvents" :key="event.id" class="event-entry">
+      <div class="event-entry-head">
+        <strong>{{ event.type === 'stocking' ? '🐟 放流' : '🟤 ペレット' }}</strong>
+        <span>{{ new Date(event.occurredAt).toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' }) }}</span>
+        <button type="button" class="edit-time" @click="beginEdit(event)">時刻修正</button>
+      </div>
+      <div v-if="editingEventId === event.id" class="event-editor">
+        <input v-model="eventDateTime" type="datetime-local" aria-label="イベントの日時" />
+        <button type="button" @click="saveEdit(event)">保存</button>
+        <button type="button" @click="editingEventId = null">やめる</button>
+      </div>
+    </div>
+  </section>
 
   <section class="card">
     <h2>現在のセッティング</h2>
@@ -371,4 +420,20 @@ function fishingStyleName(style: FishingStyle) {
     font-size: 42px;
   }
 }
+</style>
+<style scoped>
+.event-card { margin-top: 12px; }
+.event-buttons { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:12px 0; }
+.event-button { min-height:58px; border:0; border-radius:12px; font-size:15px; font-weight:800; cursor:pointer; }
+.event-button.stocking { background:#e7f4fd; color:#155e82; }
+.event-button.pellet { background:#fff0dc; color:#885014; }
+.event-hint { font-size:12px; color:#69747e; margin:12px 0; }
+.event-entry { border-top:1px solid #edf0f2; padding:12px 0; }
+.event-entry-head { display:flex; align-items:center; flex-wrap:wrap; gap:10px; }
+.event-entry-head span { margin-left:auto; }
+.edit-time { border:1px solid #d9dee3; border-radius:8px; background:white; color:#13795b; padding:7px; }
+.event-editor { display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
+.event-editor input { min-width:190px; flex:1; padding:8px; border:1px solid #d9dee3; border-radius:8px; }
+.event-editor button { padding:8px; border:1px solid #d9dee3; border-radius:8px; background:white; color:#13795b; }
+@media(max-width:360px) { .event-buttons { grid-template-columns:1fr; } }
 </style>
