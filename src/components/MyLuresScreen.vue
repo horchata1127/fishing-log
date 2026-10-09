@@ -21,9 +21,21 @@ interface MyLureView {
   modelName: string
   colorName: string
   catchCount: number
+  category: string
 }
 
 const myLureViews = ref<MyLureView[]>([])
+const filterManufacturer = ref('')
+const filterCategory = ref('')
+const filterKeyword = ref('')
+const categories = ['スプーン', 'クランク', 'ミノー', 'トップ', 'バイブレーション', 'その他']
+const manufacturerFilters = computed(() => [...new Set(myLureViews.value.map(x => x.manufacturerName))].sort((a,b) => a.localeCompare(b,'ja')))
+const filteredMyLureViews = computed(() => myLureViews.value.filter(x =>
+  (!filterManufacturer.value || x.manufacturerName === filterManufacturer.value) &&
+  (!filterCategory.value || x.category === filterCategory.value) &&
+  (!filterKeyword.value.trim() || [x.manufacturerName, x.seriesName, x.modelName, x.colorName]
+    .join(' ').normalize('NFKC').toLocaleLowerCase().includes(filterKeyword.value.trim().normalize('NFKC').toLocaleLowerCase()))
+))
 
 const manufacturerName = ref('')
 const seriesName = ref('')
@@ -191,6 +203,7 @@ async function loadMyLures() {
       modelName: model.name,
       colorName: variant.colorName,
       catchCount,
+      category: model.category ?? 'その他',
     })
   }
 
@@ -426,10 +439,16 @@ onMounted(async () => {
 
     <section class="card lure-list">
       <h2>所有ルアー</h2>
+      <div class="lure-filters">
+        <label>メーカー<select v-model="filterManufacturer"><option value="">すべてのメーカー</option><option v-for="name in manufacturerFilters" :key="name" :value="name">{{ name }}</option></select></label>
+        <label>カテゴリ<select v-model="filterCategory"><option value="">すべてのカテゴリ</option><option v-for="cat in categories" :key="cat" :value="cat">{{ cat }}</option></select></label>
+        <label>キーワード<input v-model="filterKeyword" type="search" placeholder="モデル名・カラー名" /></label>
+      </div>
+      <p class="filter-count">{{ filteredMyLureViews.length }} / {{ myLureViews.length }} 件表示</p>
 
       <p v-if="myLureViews.length === 0" class="empty">まだルアーが登録されてへんで。</p>
 
-      <article v-for="item in myLureViews" :key="item.myLure.id" class="lure-row"
+      <article v-for="item in filteredMyLureViews" :key="item.myLure.id" class="lure-row"
         @click="item.myLure.id && emit('selectLure', item.myLure.id)">
         <div class="lure-main">
           <strong>{{ item.modelName }}</strong>
@@ -615,4 +634,12 @@ input {
 .choice-row { display:flex; justify-content:space-between; align-items:center; gap:8px; width:100%; padding:14px; min-height:48px; text-align:left; background:#fff; color:#17212b; border:0; border-bottom:1px solid #edf1ee; font:inherit; overflow-wrap:anywhere; }
 .choice-row.selected { background:#eaf6f0; color:#116348; font-weight:700; }
 .selected-summary { font-size:12px; color:#56665d; overflow-wrap:anywhere; }
+</style>
+
+<style scoped>
+.lure-filters { display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:12px; text-align:left; }
+.lure-filters label { min-width:0; font-size:13px; font-weight:700; color:#52606b; }
+.lure-filters label:last-child { grid-column:1 / -1; }
+.lure-filters select, .lure-filters input { display:block; width:100%; min-width:0; margin-top:5px; padding:11px; border:1px solid #d9dee3; border-radius:10px; background:white; color:#17212b; font:inherit; }
+.filter-count { margin: 12px 0; color:#52606b; font-size:13px; }
 </style>

@@ -74,6 +74,8 @@ export interface LureSeries {
  * WAH 40F
  * パニクラ MR
  */
+export type LureCategory = 'スプーン' | 'クランク' | 'ミノー' | 'トップ' | 'バイブレーション' | 'その他'
+
 export interface LureModel {
   id?: number
   seriesId: number
@@ -81,6 +83,7 @@ export interface LureModel {
 
   lengthMm?: number
   weightG?: number
+  category?: LureCategory
 }
 
 /*

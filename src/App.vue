@@ -20,6 +20,7 @@ export interface MyLureOption {
   seriesName: string
   modelName: string
   colorName: string
+  category: string
 }
 
 const myLureOptions = ref<MyLureOption[]>([])
@@ -187,6 +188,7 @@ async function loadMyLureOptions() {
       seriesName: series.name,
       modelName: model.name,
       colorName: variant.colorName,
+      category: model.category ?? 'その他',
     })
   }
 
