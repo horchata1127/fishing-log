@@ -55,7 +55,7 @@ function seed() {
 }
 
 async function snapshot(names = db.tables.map(table => table.name)) {
-  return JSON.stringify(await Promise.all(names.map(async name => [name, await db.table(name).orderBy('id').toArray()])))
+  return JSON.stringify(await Promise.all(names.map(async name => [name, await db.table(name).orderBy(db.table(name).schema.primKey.name).toArray()])))
 }
 const protectedTables = ['myLures', 'trips', 'catches', 'tripEvents']
 

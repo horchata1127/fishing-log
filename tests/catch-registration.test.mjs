@@ -10,15 +10,17 @@ import * as Vue from 'vue'
 import { parse, compileScript, compileTemplate } from '@vue/compiler-sfc'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-catch-test-'))
-const paths = Object.fromEntries(['database', 'catchRegistration', 'tackleManagement', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
+const paths = Object.fromEntries(['database', 'catchRegistration', 'tackleManagement', 'fishSpecies', 'fishMaster', 'fishPicker', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
 const compile = source => ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
 }).outputText
-for (const [name, source] of [['database', 'db/database.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
+for (const [name, source] of [['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
   const code = compile(await readFile(new URL(`../src/${source}`, import.meta.url), 'utf8'))
     .replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
     .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
     .replace("'./tackleManagement'", JSON.stringify(pathToFileURL(paths.tackleManagement).href))
+    .replace("'./fishSpecies'", JSON.stringify(pathToFileURL(paths.fishSpecies).href))
+    .replace("'../data/fishMaster'", JSON.stringify(pathToFileURL(paths.fishMaster).href))
   await writeFile(paths[name], code)
 }
 const { db, ownershipStatus } = await import(pathToFileURL(paths.database).href)
@@ -26,7 +28,12 @@ const { registerCatch, registerSameAsPrevious, loadLureChoices } = await import(
 const { createBackup, importBackup, validateBackup } = await import(pathToFileURL(paths.backup).href)
 const { descriptor } = parse(await readFile(new URL('../src/components/CatchModal.vue', import.meta.url), 'utf8'))
 const script = compileScript(descriptor, { id: 'catch-test' })
-await writeFile(paths.modal, compile(script.content).replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`))
+const { descriptor: pickerDescriptor } = parse(await readFile(new URL('../src/components/FishSpeciesPicker.vue', import.meta.url), 'utf8'))
+await writeFile(paths.fishPicker, compile(compileScript(pickerDescriptor, { id: 'fish-picker-test' }).content)
+  .replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
+  .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href)))
+await writeFile(paths.modal, compile(script.content).replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
+  .replace("'./FishSpeciesPicker.vue'", JSON.stringify(pathToFileURL(paths.fishPicker).href)))
 const template = compileTemplate({ source: descriptor.template.content, filename: 'CatchModal.vue', id: 'catch-test',
   compilerOptions: { bindingMetadata: script.bindings, expressionPlugins: ['typescript'] } })
 assert.deepEqual(template.errors, [])
@@ -62,7 +69,7 @@ beforeEach(async () => {
 
 const input = (time = '2026-10-10T01:00:00Z') => ({ tripId: 60, caughtAt: new Date(time), rangeLevel: '表層' })
 const catalog = { kind: 'catalog', variantId: 40 }
-const snapshot = async () => JSON.stringify(await Promise.all(db.tables.map(async table => [table.name, await table.orderBy('id').toArray()])))
+const snapshot = async () => JSON.stringify(await Promise.all(db.tables.map(async table => [table.name, await table.orderBy(table.schema.primKey.name).toArray()])))
 
 test('legacy ownership defaults to unverified without rewriting IDs or records', async () => {
   const before = await snapshot()

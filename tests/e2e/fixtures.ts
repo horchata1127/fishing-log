@@ -2,8 +2,9 @@ import { test as base, expect, type Page } from '@playwright/test'
 
 export const tableNames = ['trips', 'catches', 'tripEvents', 'lureManufacturers', 'lureSeries',
   'lureModels', 'lureVariants', 'myLures', 'rods', 'reels', 'lines', 'tackleSets'] as const
+export const fullTableNames = [...tableNames, 'fishSpecies'] as const
 export type Row = Record<string, any>
-export type State = Record<typeof tableNames[number], Row[]>
+export type State = Record<typeof fullTableNames[number], Row[]>
 
 // 原本・実バックアップは読まない。テストごとに新しい合成データを作る。
 export function catalogFixture() {
@@ -41,7 +42,7 @@ export async function readState(page: Page): Promise<State> {
         transaction.onerror = () => reject(transaction.error)
       })
     } finally { database.close() }
-  }, [...tableNames])
+  }, [...fullTableNames])
 }
 
 export const test = base.extend<{ isolatedApp: void }>({

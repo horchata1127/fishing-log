@@ -6,6 +6,8 @@ import FishingScreen from './components/FishingScreen.vue'
 import MyLuresScreen from './components/MyLuresScreen.vue'
 import TackleManagementScreen from './components/TackleManagementScreen.vue'
 import TripTackleSelector from './components/TripTackleSelector.vue'
+import FishSpeciesScreen from './components/FishSpeciesScreen.vue'
+import { loadFishChoices, defaultFishSpeciesId } from './utils/fishSpecies'
 import { availableTackleSets, createTrip, updateTripTackles, suggestTackleSetId } from './utils/tackleManagement'
 import { exportBackup, importBackup } from './utils/backup'
 import { loadLureChoices, registerCatch, registerSameAsPrevious,
@@ -18,9 +20,13 @@ import {
   type TripEvent,
   type TripEventType,
   type TackleSet,
+  type FishSpecies,
 } from './db/database'
 
-type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures' | 'tackles'
+type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures' | 'tackles' | 'fish-species'
+const fishChoices = ref<FishSpecies[]>([])
+const catchFishSpeciesId = ref<string>()
+const catchFishSize = ref('')
 const availableSets = ref<TackleSet[]>([])
 const tripSetSelection = ref<number[]>([])
 const catchTackleOptions = ref<TackleSet[]>([])
@@ -92,6 +98,9 @@ async function restoreData(event: Event) {
   pendingCaughtAt.value = null
   catchSelection.value = null
   catchTackleSetId.value = undefined
+  fishChoices.value = []
+  catchFishSpeciesId.value = undefined
+  catchFishSize.value = ''
   catchTackleOptions.value = []
   availableSets.value = []
   tripSetSelection.value = []
@@ -331,6 +340,9 @@ async function addCatch() {
 
   try {
     await loadMyLureOptions()
+    fishChoices.value = await loadFishChoices()
+    catchFishSpeciesId.value = defaultFishSpeciesId(fishChoices.value)
+    catchFishSize.value = ''
     catchTackleOptions.value = await availableTackleSets(currentTrip.value ?? undefined)
     catchTackleSetId.value = suggestTackleSetId(catches.value, catchTackleOptions.value)
     showCatchForm.value = true
@@ -360,6 +372,8 @@ async function commitCatch(sameAsPrevious: boolean) {
         : catchSelection.value
       await registerCatch({ tripId: currentTrip.value.id, caughtAt: pendingCaughtAt.value,
         tackleSetId: catchTackleSetId.value,
+        fishSpeciesId: catchFishSpeciesId.value,
+        fishSizeCm: catchFishSize.value.trim() ? Number(catchFishSize.value) : undefined,
         rangeLevel: catchRange.value || undefined, retrieveSpeed: catchRetrieveSpeed.value || undefined,
         action: catchAction.value || undefined }, selection)
     }
@@ -428,7 +442,7 @@ function goHome() {
 
 async function deleteAllData() {
   const ok = confirm(
-    '開発用データを全部削除するで。\n釣行・釣果・マイルアー・タックルも全部消えるで。\nほんまに削除する？'
+    '開発用データを全部削除するで。\n釣行・釣果・マイルアー・タックル・魚種も全部消えるで。\nほんまに削除する？'
   )
 
   if (!ok) {
@@ -450,10 +464,12 @@ async function deleteAllData() {
       db.reels,
       db.lines,
       db.tackleSets,
+      db.fishSpecies,
     ],
     async () => {
       await db.catches.clear()
       await db.tackleSets.clear()
+      await db.fishSpecies.clear()
       await db.reels.clear()
       await db.rods.clear()
       await db.lines.clear()
@@ -498,6 +514,7 @@ onMounted(async () => {
 
       <button class="secondary-button" @click="openMyLures">🎣 マイルアー</button>
       <button class="secondary-button" @click="screen = 'tackles'">タックル管理</button>
+      <button class="secondary-button" @click="screen = 'fish-species'">魚種マスター管理</button>
 
       <button class="backup-button" @click="backupData">
         📦 データをバックアップ
@@ -543,6 +560,7 @@ onMounted(async () => {
     <!-- マイルアー -->
     <MyLuresScreen v-else-if="screen === 'my-lures'" @back="goHome" @select-lure="openLureDetail" />
     <TackleManagementScreen v-else-if="screen === 'tackles'" @back="goHome" />
+    <FishSpeciesScreen v-else-if="screen === 'fish-species'" @back="goHome" />
 
     <!-- 新規釣行 -->
     <template v-else-if="screen === 'new-trip'">
@@ -616,6 +634,7 @@ onMounted(async () => {
 
     <!-- 釣果入力モーダル -->
     <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt"
+      :fish-choices="fishChoices" v-model:fish-species-id="catchFishSpeciesId" v-model:fish-size="catchFishSize"
       :tackle-sets="catchTackleOptions" v-model:tackle-set-id="catchTackleSetId"
       :catalog="catalogOptions" :recent-lures="recentLures" :selection="catchSelection" :saving="savingCatch"
       :has-previous-catch="catches.length > 0" :my-lures="myLureOptions" v-model:lure-name="catchLureName"

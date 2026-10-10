@@ -49,6 +49,8 @@ export interface CatchRecord {
   action?: string
 
   fishSpecies?: string
+  fishSpeciesId?: string
+  fishSpeciesGroup?: FishGroup
   fishSizeCm?: number
   memo?: string
 }
@@ -135,6 +137,42 @@ export function ownershipStatus(lure: MyLure): OwnershipStatus {
 
 export function isUsableOwnedLure(lure: MyLure): boolean {
   return lure.active === true && ownershipStatus(lure) === 'owned'
+}
+
+export const fishGroups = ['ニジマス', 'ブランドマス', 'イロモノ'] as const
+export type FishGroup = typeof fishGroups[number]
+export interface FishSpecies {
+  fish_id: string
+  group: FishGroup
+  display_name: string
+  aliases: string
+  region: string
+  lineage_or_type: string
+  source_status: string
+  notes: string
+  source_url: string
+  active: boolean
+  origin: 'reviewed' | 'user'
+  userEdited?: boolean
+}
+export function validateFishSpecies(value: unknown): asserts value is FishSpecies {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('魚種マスターの形式が不正です。')
+  const row = value as Record<string, unknown>
+  for (const field of ['fish_id', 'display_name', 'group', 'aliases', 'region', 'lineage_or_type', 'source_status', 'notes', 'source_url']) {
+    if (typeof row[field] !== 'string' || (['fish_id', 'display_name'].includes(field) && !(row[field] as string).trim())) throw new Error(`魚種.${field}: 文字列が必要です。`)
+  }
+  if (!fishGroups.includes(row.group as FishGroup)) throw new Error('魚種の分類が不正です。')
+  if (typeof row.active !== 'boolean' || !['reviewed', 'user'].includes(row.origin as string) ||
+      (row.userEdited !== undefined && typeof row.userEdited !== 'boolean')) throw new Error('魚種の登録状態が不正です。')
+  if (row.source_url !== '' && !(row.source_url as string).split(/\s+/).every(url => /^https?:\/\//.test(url))) throw new Error('出典URLはhttp/httpsで入力してください。')
+}
+
+export function validateFishCatch(row: Record<string, unknown>, ids?: Set<string>) {
+  if (row.fishSizeCm !== undefined && (typeof row.fishSizeCm !== 'number' || !Number.isFinite(row.fishSizeCm) || row.fishSizeCm <= 0)) throw new Error('全長は0より大きい数値（cm）を入力してください。')
+  if (row.fishSpeciesId !== undefined) {
+    if (typeof row.fishSpeciesId !== 'string' || !row.fishSpeciesId.trim() || (ids && !ids.has(row.fishSpeciesId))) throw new Error('魚種の参照IDが不正です。')
+    if (typeof row.fishSpecies !== 'string' || !row.fishSpecies.trim() || !fishGroups.includes(row.fishSpeciesGroup as FishGroup)) throw new Error('魚種の表示名・分類スナップショットが不正です。')
+  } else if (row.fishSpeciesGroup !== undefined) throw new Error('魚種分類にはマスター参照が必要です。')
 }
 
 export interface Rod {
@@ -239,6 +277,7 @@ export const db = new Dexie('FishingLogDatabase') as Dexie & {
   reels: EntityTable<Reel, 'id'>
   lines: EntityTable<TackleLine, 'id'>
   tackleSets: EntityTable<TackleSet, 'id'>
+  fishSpecies: EntityTable<FishSpecies, 'fish_id'>
 }
 
 /*
@@ -282,3 +321,6 @@ db.version(5).stores({
   lines: '++id, initialKey',
   tackleSets: '++id, rodId, reelId, leaderLineId',
 })
+
+// 旧12テーブルを変更しない。既存釣果への魚種補完・起動時シードは行わない。
+db.version(6).stores({ fishSpecies: 'fish_id, group, display_name, origin' })

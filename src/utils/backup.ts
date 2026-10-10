@@ -1,4 +1,4 @@
-import { db, tackleTableNames, validateTackleRecord } from '../db/database'
+import { db, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch } from '../db/database'
 
 export const backupTableNames = [
   'trips', 'catches', 'tripEvents', 'lureManufacturers',
@@ -6,13 +6,14 @@ export const backupTableNames = [
 ] as const
 
 export const allBackupTableNames = [...backupTableNames, ...tackleTableNames] as const
+export const fullBackupTableNames = [...allBackupTableNames, 'fishSpecies'] as const
 type TableName = typeof allBackupTableNames[number]
 type Row = Record<string, unknown>
-type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>>
+type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>> & { fishSpecies?: Row[] }
 
 export interface FishingLogBackup {
   format: 'fishing-log-backup'
-  version: 1 | 2 | 3 | 4
+  version: 1 | 2 | 3 | 4 | 5
   exportedAt: string
   data: {
     trips: unknown[]
@@ -27,6 +28,7 @@ export interface FishingLogBackup {
     reels?: unknown[]
     lines?: unknown[]
     tackleSets?: unknown[]
+    fishSpecies?: unknown[]
   }
 }
 
@@ -80,16 +82,29 @@ function dateTime(value: unknown, path: string): Date {
 /** 書き込み前に全テーブルを検証し、入力を変更せずDateを復元する。 */
 export function validateBackup(value: unknown): RestoredData {
   const backup = object(value, 'ルート')
-  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4].includes(backup.version as number)) {
+  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5].includes(backup.version as number)) {
     fail('format/version', '対応するFishing Logバックアップではありません')
   }
   dateTime(backup.exportedAt, 'exportedAt')
   const source = object(backup.data, 'data')
   const data = {} as RestoredData
   const ids = {} as Record<TableName, Set<number>>
+  const fishIds = new Set<string>()
+  const fishNames = new Set<string>()
+  if (backup.version === 5) {
+    if (!Array.isArray(source.fishSpecies)) fail('data.fishSpecies', '配列が必要です')
+    data.fishSpecies = source.fishSpecies.map(entry => {
+      validateFishSpecies(entry)
+      const name = entry.display_name.trim().toLocaleLowerCase('ja-JP')
+      if (fishIds.has(entry.fish_id) || fishNames.has(name)) fail('data.fishSpecies', '魚種IDまたは名称が重複しています')
+      fishIds.add(entry.fish_id)
+      fishNames.add(name)
+      return { ...entry }
+    })
+  } else if (source.fishSpecies !== undefined) fail('data.fishSpecies', '魚種マスターにはv5形式が必要です')
 
   for (const table of allBackupTableNames) {
-    if ((tackleTableNames as readonly string[]).includes(table) && backup.version !== 4) {
+    if ((tackleTableNames as readonly string[]).includes(table) && Number(backup.version) < 4) {
       if (source[table] !== undefined) fail(`data.${table}`, 'タックルデータにはv4形式が必要です')
       ids[table] = new Set()
       continue
@@ -152,7 +167,7 @@ export function validateBackup(value: unknown): RestoredData {
       switch (table) {
         case 'trips': {
           if (row.tackleSetIds !== undefined) {
-            if (backup.version !== 4 || !Array.isArray(row.tackleSetIds)) fail(`${path}.tackleSetIds`, 'v4形式のセットID配列が必要です')
+            if (Number(backup.version) < 4 || !Array.isArray(row.tackleSetIds)) fail(`${path}.tackleSetIds`, 'v4以降のセットID配列が必要です')
             if (new Set(row.tackleSetIds).size !== row.tackleSetIds.length) fail(path, '持参セットが重複しています')
             for (const setId of row.tackleSetIds) reference({ setId }, 'setId', 'tackleSets', path)
           }
@@ -172,6 +187,8 @@ export function validateBackup(value: unknown): RestoredData {
           break
         }
         case 'catches':
+          if (backup.version !== 5 && (row.fishSpeciesId !== undefined || row.fishSpeciesGroup !== undefined)) fail(path, '魚種参照にはv5形式が必要です')
+          validateFishCatch(row, fishIds)
           reference(row, 'tripId', 'trips', path)
           reference(row, 'lureId', 'myLures', path, true)
           reference(row, 'lureVariantId', 'lureVariants', path, true)
@@ -181,7 +198,7 @@ export function validateBackup(value: unknown): RestoredData {
           if (row.tackleSetId !== undefined) id(row.tackleSetId, `${path}.tackleSetId`)
           // 導入前のIDのみの記録は意味を推測せず保持する。新記録はsnapshotと参照を検証。
           if (row.tackleSnapshot !== undefined) {
-            if (backup.version !== 4) fail(path, 'スナップショットにはv4形式が必要です')
+            if (Number(backup.version) < 4) fail(path, 'スナップショットにはv4以降の形式が必要です')
             snapshot(row.tackleSnapshot, row.tackleSetId, `${path}.tackleSnapshot`)
           }
           row.caughtAt = dateTime(row.caughtAt, `${path}.caughtAt`)
@@ -239,9 +256,9 @@ export function validateBackup(value: unknown): RestoredData {
 }
 
 export async function createBackup(): Promise<FishingLogBackup> {
-  const data = await db.transaction('r', allBackupTableNames.map(name => db.table(name)), async () => {
-    const result = {} as Record<TableName, unknown[]>
-    await Promise.all(allBackupTableNames.map(async name => {
+  const data = await db.transaction('r', fullBackupTableNames.map(name => db.table(name)), async () => {
+    const result = {} as Record<typeof fullBackupTableNames[number], unknown[]>
+    await Promise.all(fullBackupTableNames.map(async name => {
       result[name] = await db.table(name).toArray()
     }))
     return result
@@ -249,9 +266,11 @@ export async function createBackup(): Promise<FishingLogBackup> {
   // タックル関連データはv4。未導入データは従来のv2/v3形式との互換性を保つ。
   const hasTackle = tackleTableNames.some(name => data[name].length > 0) ||
     data.trips.some(row => (row as Row).tackleSetIds !== undefined) || data.catches.some(row => (row as Row).tackleSnapshot !== undefined)
-  const version = hasTackle ? 4 : data.myLures.some(row => (row as Row).ownershipStatus !== undefined) ||
+  const hasFish = data.fishSpecies.length > 0 || data.catches.some(row => (row as Row).fishSpeciesId !== undefined || (row as Row).fishSpeciesGroup !== undefined)
+  const version = hasFish ? 5 : hasTackle ? 4 : data.myLures.some(row => (row as Row).ownershipStatus !== undefined) ||
     data.catches.some(row => (row as Row).lureVariantId !== undefined) ? 3 : 2
-  if (!hasTackle) for (const name of tackleTableNames) delete (data as Partial<typeof data>)[name]
+  if (!hasFish && !hasTackle) for (const name of tackleTableNames) delete (data as Partial<typeof data>)[name]
+  if (!hasFish) delete (data as Partial<typeof data>).fishSpecies
   return { format: 'fishing-log-backup', version, exportedAt: new Date().toISOString(), data }
 }
 
@@ -281,9 +300,9 @@ export async function importBackup(file: File): Promise<void> {
     throw new Error('JSONファイルを読み込めませんでした')
   }
   const data = validateBackup(value)
-  await db.transaction('rw', allBackupTableNames.map(name => db.table(name)), async () => {
-    for (const name of allBackupTableNames) await db.table(name).clear()
-    for (const name of allBackupTableNames) await db.table(name).bulkAdd(data[name] ?? [])
-    // 例外を握りつぶさず、全12テーブルの変更をロールバックする。
+  await db.transaction('rw', fullBackupTableNames.map(name => db.table(name)), async () => {
+    for (const name of fullBackupTableNames) await db.table(name).clear()
+    for (const name of fullBackupTableNames) await db.table(name).bulkAdd(data[name] ?? [])
+    // 全置換。旧形式は魚種テーブルが空になる。明示登録・選択保存時に再シードできる。
   })
 }

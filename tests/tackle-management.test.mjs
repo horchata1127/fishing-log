@@ -8,15 +8,17 @@ import { pathToFileURL } from 'node:url'
 import ts from 'typescript'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-tackle-test-'))
-const paths = Object.fromEntries(['database', 'tackleManagement', 'catchRegistration', 'backup', 'legacy', 'legacy1', 'legacy2', 'legacy3'].map(name => [name, join(directory, `${name}.mjs`)]))
+const paths = Object.fromEntries(['database', 'fishSpecies', 'fishMaster', 'tackleManagement', 'catchRegistration', 'backup', 'legacy', 'legacy1', 'legacy2', 'legacy3'].map(name => [name, join(directory, `${name}.mjs`)]))
 const databaseSource = await readFile(new URL('../src/db/database.ts', import.meta.url), 'utf8')
 const compile = source => ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
 }).outputText.replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
-for (const [name, source] of [['database', 'db/database.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['backup', 'utils/backup.ts']]) {
+for (const [name, source] of [['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['backup', 'utils/backup.ts']]) {
   const code = compile(await readFile(new URL(`../src/${source}`, import.meta.url), 'utf8'))
     .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
     .replace("'./tackleManagement'", JSON.stringify(pathToFileURL(paths.tackleManagement).href))
+    .replace("'./fishSpecies'", JSON.stringify(pathToFileURL(paths.fishSpecies).href))
+    .replace("'../data/fishMaster'", JSON.stringify(pathToFileURL(paths.fishMaster).href))
   await writeFile(paths[name], code)
 }
 await writeFile(paths.legacy, compile(databaseSource.slice(0, databaseSource.indexOf('db.version(5)'))))
@@ -35,7 +37,7 @@ after(async () => {
 const trip = () => ({ fishingAreaName: 'ニレ池', fishingDate: '2026-10-24', fishingStyle: 'AREA_TROUT', startedAt: new Date('2026-10-24T00:00:00Z') })
 const manual = { kind: 'manual', lureName: '未登録ルアー', lureColor: '青' }
 const input = (setId, time = '2026-10-24T01:00:00Z') => ({ tripId: 60, caughtAt: new Date(time), ...(setId === undefined ? {} : { tackleSetId: setId }) })
-const state = async () => JSON.stringify(await Promise.all(db.tables.map(async table => [table.name, await table.orderBy('id').toArray()])))
+const state = async () => JSON.stringify(await Promise.all(db.tables.map(async table => [table.name, await table.orderBy(table.schema.primKey.name).toArray()])))
 const jsonBackup = async () => JSON.parse(JSON.stringify(await createBackup()))
 const restore = value => importBackup({ text: async () => JSON.stringify(value) })
 beforeEach(async () => {
@@ -292,7 +294,7 @@ test('failure in final tackle table during restore rolls back all twelve tables'
   assert.equal(await state(), before)
 })
 
-test('v4 to v5 migration preserves 1886 colors, 1885 unverified individuals, owned and historical IDs', async () => {
+test('v4 to v6 migration preserves 1886 colors, 1885 unverified individuals, owned and historical IDs', async () => {
   await db.delete()
   const { db: legacy } = await import(pathToFileURL(paths.legacy).href)
   await legacy.open()
@@ -311,14 +313,14 @@ test('v4 to v5 migration preserves 1886 colors, 1885 unverified individuals, own
   const before = await Promise.all(backupTableNames.map(name => legacy.table(name).orderBy('id').toArray()))
   legacy.close()
   await db.open()
-  assert.equal(db.verno, 5)
+  assert.equal(db.verno, 6)
   assert.deepEqual(await Promise.all(backupTableNames.map(name => db.table(name).orderBy('id').toArray())), before)
-  assert.equal(db.tables.length, 12)
+  assert.equal(db.tables.length, 13)
   for (const name of ['rods', 'reels', 'lines', 'tackleSets']) assert.equal(await db.table(name).count(), 0)
   assert.equal((await db.myLures.toArray()).filter(row => row.ownershipStatus === undefined).length, 1885)
 })
 
-for (const version of [1, 2, 3]) test(`DB v${version} upgrades to v5 without changing historical trip and catch`, async () => {
+for (const version of [1, 2, 3]) test(`DB v${version} upgrades to v6 without changing historical trip and catch`, async () => {
   await db.delete()
   const { db: legacy } = await import(pathToFileURL(paths[`legacy${version}`]).href)
   await legacy.open()
@@ -327,7 +329,7 @@ for (const version of [1, 2, 3]) test(`DB v${version} upgrades to v5 without cha
   const rows = [await legacy.trips.toArray(), await legacy.catches.toArray()]
   legacy.close()
   await db.open()
-  assert.equal(db.verno, 5)
+  assert.equal(db.verno, 6)
   assert.deepEqual([await db.trips.toArray(), await db.catches.toArray()], rows)
   for (const name of ['rods', 'reels', 'lines', 'tackleSets']) assert.equal(await db.table(name).count(), 0)
 })

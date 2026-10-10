@@ -2,6 +2,8 @@
 import { computed, ref } from "vue";
 import type { LureOption, LureSelection, RecentLure } from '../utils/catchRegistration';
 import type { TackleSet } from '../db/database';
+import type { FishSpecies } from '../db/database';
+import FishSpeciesPicker from './FishSpeciesPicker.vue';
 
 const props = defineProps<{
   caughtAt: Date;
@@ -13,6 +15,9 @@ const props = defineProps<{
   saving: boolean;
   tackleSets?: TackleSet[];
   tackleSetId?: number;
+  fishChoices?: FishSpecies[];
+  fishSpeciesId?: string;
+  fishSize?: string;
 
   lureName: string;
   lureColor: string;
@@ -28,6 +33,8 @@ const emit = defineEmits<{
 
   selectLure: [selection: LureSelection];
   'update:tackleSetId': [id: number | undefined];
+  'update:fishSpeciesId': [id: string | undefined];
+  'update:fishSize': [size: string];
 
   "update:lureName": [value: string];
   "update:lureColor": [value: string];
@@ -360,6 +367,10 @@ function selectRecent(recent: RecentLure) {
           <option v-for="set in tackleSets ?? []" :key="set.id" :value="set.id">{{ set.name }}</option>
         </select>
         <small v-if="!tackleSets?.length">持参セットは釣行画面で追加できます。</small>
+      </label>
+      <FishSpeciesPicker :choices="fishChoices ?? []" :model-value="fishSpeciesId" @update:model-value="emit('update:fishSpeciesId', $event)" />
+      <label class="catch-field"><span>全長（cm・任意）</span>
+        <input type="number" inputmode="decimal" min="0" step="any" :value="fishSize ?? ''" @input="emit('update:fishSize', ($event.target as HTMLInputElement).value)" />
       </label>
       <button class="primary-button" :disabled="saving" @click="emit('save')">{{ saving ? '保存中…' : '保存する' }}</button>
 
