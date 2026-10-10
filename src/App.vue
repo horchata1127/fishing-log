@@ -5,6 +5,8 @@ import CatchModal from './components/CatchModal.vue'
 import FishingScreen from './components/FishingScreen.vue'
 import MyLuresScreen from './components/MyLuresScreen.vue'
 import { exportBackup, importBackup } from './utils/backup'
+import { loadLureChoices, registerCatch, registerSameAsPrevious,
+  type LureOption, type LureSelection, type RecentLure } from './utils/catchRegistration'
 import {
   db,
   type CatchRecord,
@@ -16,16 +18,10 @@ import {
 
 type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures'
 
-export interface MyLureOption {
-  id: number
-  manufacturerName: string
-  seriesName: string
-  modelName: string
-  colorName: string
-  category: string
-}
-
-const myLureOptions = ref<MyLureOption[]>([])
+const myLureOptions = ref<LureOption[]>([])
+const catalogOptions = ref<LureOption[]>([])
+const recentLures = ref<RecentLure[]>([])
+const savingCatch = ref(false)
 const restoringData = ref(false)
 
 function openMyLures() {
@@ -84,7 +80,7 @@ async function restoreData(event: Event) {
   input.value = ''
   goHome()
   pendingCaughtAt.value = null
-  catchLureId.value = undefined
+  catchSelection.value = null
   catchLureName.value = ''
   catchLureColor.value = ''
   catchRange.value = ''
@@ -92,6 +88,8 @@ async function restoreData(event: Event) {
   catchAction.value = ''
   trips.value = []
   myLureOptions.value = []
+  catalogOptions.value = []
+  recentLures.value = []
   try {
     await Promise.all([loadTrips(), loadMyLureOptions()])
     alert('バックアップから復元したで！')
@@ -128,10 +126,10 @@ const catchLureColor = ref('')
 const catchRange = ref('')
 const catchRetrieveSpeed = ref('')
 const catchAction = ref('')
-const catchLureId = ref<number | undefined>(undefined)
+const catchSelection = ref<LureSelection | null>(null)
 
-function selectMyLure(id: number) {
-  catchLureId.value = id
+function selectLure(selection: LureSelection) {
+  catchSelection.value = selection
 }
 
 function formatDate(date: string) {
@@ -219,54 +217,10 @@ async function updateTripEvent(event: TripEvent, dateTime: string) {
 }
 
 async function loadMyLureOptions() {
-  const myLures = await db.myLures
-    .filter((myLure) => myLure.active === true)
-    .toArray()
-
-  const result: MyLureOption[] = []
-
-  for (const myLure of myLures) {
-    if (!myLure.id) {
-      continue
-    }
-
-    const variant = await db.lureVariants.get(myLure.variantId)
-
-    if (!variant) {
-      continue
-    }
-
-    const model = await db.lureModels.get(variant.modelId)
-
-    if (!model) {
-      continue
-    }
-
-    const series = await db.lureSeries.get(model.seriesId)
-
-    if (!series) {
-      continue
-    }
-
-    const manufacturer = await db.lureManufacturers.get(
-      series.manufacturerId
-    )
-
-    if (!manufacturer) {
-      continue
-    }
-
-    result.push({
-      id: myLure.id,
-      manufacturerName: manufacturer.name,
-      seriesName: series.name,
-      modelName: model.name,
-      colorName: variant.colorName,
-      category: model.category ?? 'その他',
-    })
-  }
-
-  myLureOptions.value = result
+  const options = await loadLureChoices()
+  myLureOptions.value = options.owned
+  catalogOptions.value = options.catalog
+  recentLures.value = options.recent
 }
 
 function openNewTrip() {
@@ -317,85 +271,74 @@ async function openTrip(trip: FishingTrip) {
 }
 
 async function addCatch() {
+  if (savingCatch.value || showCatchForm.value) return
   /*
    * 「釣れた！」を押した瞬間に時刻を確保。
    * 入力に時間がかかっても、この時刻は変わらない。
    */
   pendingCaughtAt.value = new Date()
 
-  catchLureId.value = undefined
+  catchSelection.value = null
   catchLureName.value = ''
   catchLureColor.value = ''
   catchRange.value = ''
   catchRetrieveSpeed.value = ''
   catchAction.value = ''
 
-  await loadMyLureOptions()
-
-  showCatchForm.value = true
+  try {
+    await loadMyLureOptions()
+    showCatchForm.value = true
+  } catch (error) {
+    pendingCaughtAt.value = null
+    alert(error instanceof Error ? error.message : 'ルアー候補を読み込めませんでした。')
+  }
 }
 
 async function saveCatch() {
-  if (!currentTrip.value?.id || !pendingCaughtAt.value) {
-    return
-  }
-
-  await db.catches.add({
-    tripId: currentTrip.value.id,
-    caughtAt: pendingCaughtAt.value,
-
-    lureId: catchLureId.value,
-    lureName: catchLureName.value.trim() || undefined,
-    lureColor: catchLureColor.value.trim() || undefined,
-
-    rangeLevel: catchRange.value || undefined,
-    retrieveSpeed: catchRetrieveSpeed.value || undefined,
-    action: catchAction.value || undefined,
-  })
-
-  showCatchForm.value = false
-  pendingCaughtAt.value = null
-
-  await loadCatches()
+  await commitCatch(false)
 }
 
 async function saveSameAsPrevious() {
-  if (
-    !currentTrip.value?.id ||
-    !pendingCaughtAt.value ||
-    catches.value.length === 0
-  ) {
+  await commitCatch(true)
+}
+
+async function commitCatch(sameAsPrevious: boolean) {
+  if (savingCatch.value || !currentTrip.value?.id || !pendingCaughtAt.value) return
+  savingCatch.value = true
+  try {
+    if (sameAsPrevious) {
+      await registerSameAsPrevious(currentTrip.value.id, pendingCaughtAt.value)
+    } else {
+      const selection = catchSelection.value?.kind === 'manual' || !catchSelection.value
+        ? { kind: 'manual' as const, lureName: catchLureName.value, lureColor: catchLureColor.value }
+        : catchSelection.value
+      await registerCatch({ tripId: currentTrip.value.id, caughtAt: pendingCaughtAt.value,
+        rangeLevel: catchRange.value || undefined, retrieveSpeed: catchRetrieveSpeed.value || undefined,
+        action: catchAction.value || undefined }, selection)
+    }
+  } catch (error) {
+    alert(error instanceof Error ? error.message : '釣果の保存に失敗しました。')
+    savingCatch.value = false
     return
   }
-
-  const previous = catches.value[catches.value.length - 1]
-
-  await db.catches.add({
-    tripId: currentTrip.value.id,
-    caughtAt: pendingCaughtAt.value,
-
-    lureId: previous.lureId,
-    tackleSetId: previous.tackleSetId,
-
-    lureName: previous.lureName,
-    lureColor: previous.lureColor,
-
-    rangeLevel: previous.rangeLevel,
-    retrieveSpeed: previous.retrieveSpeed,
-    action: previous.action,
-
-    fishSpecies: previous.fishSpecies,
-  })
-
   showCatchForm.value = false
   pendingCaughtAt.value = null
-
-  await loadCatches()
+  catchSelection.value = null
+  try {
+    await Promise.all([loadCatches(), loadMyLureOptions()])
+  } catch (error) {
+    console.error('保存後の画面更新に失敗しました', error)
+    alert('釣果は保存済みです。画面を再読み込みしてください。')
+  } finally {
+    savingCatch.value = false
+  }
 }
 
 function cancelCatch() {
+  if (savingCatch.value) return
   showCatchForm.value = false
   pendingCaughtAt.value = null
+  catchSelection.value = null
 }
 
 async function endTrip() {
@@ -602,9 +545,10 @@ onMounted(async () => {
 
     <!-- 釣果入力モーダル -->
     <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt"
+      :catalog="catalogOptions" :recent-lures="recentLures" :selection="catchSelection" :saving="savingCatch"
       :has-previous-catch="catches.length > 0" :my-lures="myLureOptions" v-model:lure-name="catchLureName"
       v-model:lure-color="catchLureColor" v-model:range="catchRange" v-model:retrieve-speed="catchRetrieveSpeed"
-      v-model:action="catchAction" @select-my-lure="selectMyLure" @save="saveCatch"
+      v-model:action="catchAction" @select-lure="selectLure" @save="saveCatch"
       @same-as-previous="saveSameAsPrevious" @cancel="cancelCatch" />
   </main>
 </template>

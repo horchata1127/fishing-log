@@ -36,6 +36,7 @@ export interface CatchRecord {
   caughtAt: Date
 
   lureId?: number
+  lureVariantId?: number
   tackleSetId?: number
 
   lureName?: string
@@ -114,6 +115,8 @@ export interface LureVariant {
  * 同じカラーを2個持っていても
  * それぞれ登録できるようにする。
  */
+export type OwnershipStatus = 'owned' | 'unverified' | 'placeholder'
+
 export interface MyLure {
   id?: number
   variantId: number
@@ -121,6 +124,15 @@ export interface MyLure {
   nickname?: string
   memo?: string
   active: boolean
+  ownershipStatus?: OwnershipStatus
+}
+
+export function ownershipStatus(lure: MyLure): OwnershipStatus {
+  return lure.ownershipStatus ?? 'unverified'
+}
+
+export function isUsableOwnedLure(lure: MyLure): boolean {
+  return lure.active === true && ownershipStatus(lure) === 'owned'
 }
 
 export const db = new Dexie('FishingLogDatabase') as Dexie & {

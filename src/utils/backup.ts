@@ -11,7 +11,7 @@ type RestoredData = Record<TableName, Row[]>
 
 export interface FishingLogBackup {
   format: 'fishing-log-backup'
-  version: 1 | 2
+  version: 1 | 2 | 3
   exportedAt: string
   data: {
     trips: unknown[]
@@ -75,7 +75,7 @@ function dateTime(value: unknown, path: string): Date {
 /** 書き込み前に全テーブルを検証し、入力を変更せずDateを復元する。 */
 export function validateBackup(value: unknown): RestoredData {
   const backup = object(value, 'ルート')
-  if (backup.format !== 'fishing-log-backup' || (backup.version !== 1 && backup.version !== 2)) {
+  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3].includes(backup.version as number)) {
     fail('format/version', '対応するFishing Logバックアップではありません')
   }
   dateTime(backup.exportedAt, 'exportedAt')
@@ -108,6 +108,7 @@ export function validateBackup(value: unknown): RestoredData {
   const styles = ['AREA_TROUT', 'CHUBBING', 'NATIVE_TROUT', 'BASS', 'OTHER']
   const categories = ['スプーン', 'クランク', 'ミノー', 'トップ', 'バイブレーション', 'その他']
   const manufacturerNames = new Set<string>()
+  const ownedVariants = new Map(data.myLures.map(row => [row.id, row.variantId]))
 
   for (const table of backupTableNames) {
     data[table].forEach((row, index) => {
@@ -143,6 +144,10 @@ export function validateBackup(value: unknown): RestoredData {
         case 'catches':
           reference(row, 'tripId', 'trips', path)
           reference(row, 'lureId', 'myLures', path, true)
+          reference(row, 'lureVariantId', 'lureVariants', path, true)
+          if (row.lureId !== undefined && row.lureVariantId !== undefined && ownedVariants.get(row.lureId) !== row.lureVariantId) {
+            fail(`${path}.lureVariantId`, '所有個体のカラー参照と一致しません')
+          }
           if (row.tackleSetId !== undefined) id(row.tackleSetId, `${path}.tackleSetId`)
           row.caughtAt = dateTime(row.caughtAt, `${path}.caughtAt`)
           break
@@ -174,6 +179,9 @@ export function validateBackup(value: unknown): RestoredData {
         case 'myLures':
           reference(row, 'variantId', 'lureVariants', path)
           if (typeof row.active !== 'boolean') fail(`${path}.active`, 'booleanが必要です')
+          if (row.ownershipStatus !== undefined && !['owned', 'unverified', 'placeholder'].includes(row.ownershipStatus as string)) {
+            fail(`${path}.ownershipStatus`, '所有状態が不正です')
+          }
           break
       }
     })
@@ -189,7 +197,10 @@ export async function createBackup(): Promise<FishingLogBackup> {
     }))
     return result
   })
-  return { format: 'fishing-log-backup', version: 2, exportedAt: new Date().toISOString(), data }
+  // 新しい所有状態を持つ場合だけv3。旧データだけのバックアップはv2互換を保つ。
+  const version = data.myLures.some(row => (row as Row).ownershipStatus !== undefined) ||
+    data.catches.some(row => (row as Row).lureVariantId !== undefined) ? 3 : 2
+  return { format: 'fishing-log-backup', version, exportedAt: new Date().toISOString(), data }
 }
 
 export async function exportBackup(): Promise<void> {

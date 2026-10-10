@@ -1,19 +1,15 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
-
-interface MyLureOption {
-  id: number;
-  manufacturerName: string;
-  seriesName: string;
-  modelName: string;
-  colorName: string;
-  category: string;
-}
+import type { LureOption, LureSelection, RecentLure } from '../utils/catchRegistration';
 
 const props = defineProps<{
   caughtAt: Date;
   hasPreviousCatch: boolean;
-  myLures: MyLureOption[];
+  myLures: LureOption[];
+  catalog: LureOption[];
+  recentLures: RecentLure[];
+  selection: LureSelection | null;
+  saving: boolean;
 
   lureName: string;
   lureColor: string;
@@ -27,7 +23,7 @@ const emit = defineEmits<{
   save: [];
   sameAsPrevious: [];
 
-  selectMyLure: [id: number];
+  selectLure: [selection: LureSelection];
 
   "update:lureName": [value: string];
   "update:lureColor": [value: string];
@@ -41,13 +37,16 @@ const showManualInput = ref(false);
 const lureSearch = ref("");
 const lureManufacturer = ref("");
 const lureCategory = ref("");
+const pickerMode = ref<'owned' | 'catalog'>('owned');
+const catalogModel = ref<number | ''>('');
+const pickerOptions = computed(() => pickerMode.value === 'catalog' ? props.catalog : props.myLures);
 const lureCategories = ['スプーン','クランク','ミノー','トップ','バイブレーション','その他'];
-const lureManufacturers = computed(() => [...new Set(props.myLures.map(l => l.manufacturerName))].sort((a,b) => a.localeCompare(b,'ja')));
+const lureManufacturers = computed(() => [...new Set(pickerOptions.value.map(l => l.manufacturerName))].sort((a,b) => a.localeCompare(b,'ja')));
 
 const selectedMyLure = computed(() => {
-  return props.myLures.find(
-    (lure) => lure.modelName === props.lureName && lure.colorName === props.lureColor
-  );
+  const selection = props.selection;
+  return selection?.kind === 'owned' ? props.myLures.find(lure => lure.id === selection.myLureId)
+    : selection?.kind === 'catalog' ? props.catalog.find(lure => lure.variantId === selection.variantId) : undefined;
 });
 
 const filteredMyLures = computed(() => {
@@ -55,7 +54,7 @@ const filteredMyLures = computed(() => {
 
 
 
-  return props.myLures.filter((lure) => {
+  return pickerOptions.value.filter((lure) => {
     if (lureManufacturer.value && lure.manufacturerName !== lureManufacturer.value) return false;
     if (lureCategory.value && lure.category !== lureCategory.value) return false;
     const text = [lure.manufacturerName, lure.seriesName, lure.modelName, lure.colorName]
@@ -66,10 +65,17 @@ const filteredMyLures = computed(() => {
   });
 });
 
+const catalogModels = computed(() => [...new Map(filteredMyLures.value.map(lure => [lure.modelId, lure])).values()]);
+const visibleLures = computed(() => pickerMode.value === 'catalog'
+  ? filteredMyLures.value.filter(lure => lure.modelId === catalogModel.value) : filteredMyLures.value);
+
+function switchPicker(mode: 'owned' | 'catalog') {
+  pickerMode.value = mode;
+  lureSearch.value = ''; lureManufacturer.value = ''; lureCategory.value = ''; catalogModel.value = '';
+}
+
 function openLurePicker() {
-  lureSearch.value = "";
-  lureManufacturer.value = "";
-  lureCategory.value = "";
+  switchPicker(props.myLures.length ? 'owned' : 'catalog');
   showLurePicker.value = true;
 }
 
@@ -77,8 +83,9 @@ function closeLurePicker() {
   showLurePicker.value = false;
 }
 
-function selectMyLure(lure: MyLureOption) {
-  emit("selectMyLure", lure.id);
+function selectMyLure(lure: LureOption) {
+  emit("selectLure", pickerMode.value === 'catalog'
+    ? { kind: 'catalog', variantId: lure.variantId } : { kind: 'owned', myLureId: lure.id });
   emit("update:lureName", lure.modelName);
   emit("update:lureColor", lure.colorName);
 
@@ -87,14 +94,23 @@ function selectMyLure(lure: MyLureOption) {
 }
 
 function openManualInput() {
+  emit('selectLure', { kind: 'manual', lureName: props.lureName, lureColor: props.lureColor });
   showManualInput.value = true;
+  showLurePicker.value = false;
+}
+
+function selectRecent(recent: RecentLure) {
+  emit('selectLure', recent.selection);
+  emit('update:lureName', recent.lureName);
+  emit('update:lureColor', recent.lureColor);
+  showManualInput.value = recent.selection.kind === 'manual';
   showLurePicker.value = false;
 }
 </script>
 
 <template>
   <div class="modal-backdrop">
-    <section class="catch-modal">
+    <section class="catch-modal" :inert="saving" :aria-busy="saving">
       <p class="app-name">CATCH RECORD</p>
 
       <h2>🎣 釣果を登録</h2>
@@ -144,7 +160,7 @@ function openManualInput() {
         </div>
 
         <button v-else type="button" class="choose-lure-button" @click="openLurePicker">
-          🎣 マイルアーを選ぶ
+          🎣 ルアーを選ぶ
         </button>
 
         <button
@@ -199,10 +215,21 @@ function openManualInput() {
             <div>
               <p class="app-name">MY LURES</p>
 
-              <h3>🎣 マイルアーを選択</h3>
+              <h3>🎣 ルアーを選択</h3>
             </div>
 
             <button type="button" class="close-button" @click="closeLurePicker">✕</button>
+          </div>
+
+          <div v-if="recentLures.length" class="lure-picker-list">
+            <strong>最近使用</strong>
+            <button v-for="recent in recentLures" :key="recent.key" type="button" class="picker-lure-button" @click="selectRecent(recent)">
+              {{ recent.lureName }} ・ {{ recent.lureColor }}
+            </button>
+          </div>
+          <div class="picker-category-filters">
+            <button type="button" :aria-pressed="pickerMode === 'owned'" @click="switchPicker('owned')">マイルアー</button>
+            <button type="button" :aria-pressed="pickerMode === 'catalog'" @click="switchPicker('catalog')">カタログ</button>
           </div>
 
           <input
@@ -216,9 +243,19 @@ function openManualInput() {
             <select v-model="lureManufacturer" aria-label="メーカー"><option value="">すべてのメーカー</option><option v-for="name in lureManufacturers" :key="name" :value="name">{{ name }}</option></select>
             <select v-model="lureCategory" aria-label="カテゴリ"><option value="">すべてのカテゴリ</option><option v-for="cat in lureCategories" :key="cat" :value="cat">{{ cat }}</option></select>
           </div>
-          <div v-if="filteredMyLures.length > 0" class="lure-picker-list">
+          <label v-if="pickerMode === 'catalog'" class="catch-field">
+            <span>モデルを選んでからカラーを選択</span>
+            <select v-model="catalogModel">
+              <option value="">モデルを選択</option>
+              <option v-for="model in catalogModels" :key="model.modelId" :value="model.modelId">
+                {{ model.manufacturerName }} / {{ model.seriesName }} / {{ model.modelName }}
+              </option>
+            </select>
+          </label>
+          <p v-if="pickerMode === 'catalog'" class="no-lures">未登録のルアーは、釣果の保存時にマイルアーへ1個登録します。</p>
+          <div v-if="visibleLures.length > 0" class="lure-picker-list">
             <button
-              v-for="lure in filteredMyLures"
+              v-for="lure in visibleLures"
               :key="lure.id"
               type="button"
               class="picker-lure-button"
@@ -242,7 +279,7 @@ function openManualInput() {
             </button>
           </div>
 
-          <p v-else class="no-lures">該当するマイルアーがないで。</p>
+          <p v-else class="no-lures">{{ pickerMode === 'catalog' && !catalogModel ? 'モデルを選択してください。' : '該当するルアーがありません。' }}</p>
 
           <button type="button" class="picker-manual-button" @click="openManualInput">
             ✏️ マスターにないルアーを手入力
@@ -312,7 +349,7 @@ function openManualInput() {
         </select>
       </label>
 
-      <button class="primary-button" @click="emit('save')">保存する</button>
+      <button class="primary-button" :disabled="saving" @click="emit('save')">{{ saving ? '保存中…' : '保存する' }}</button>
 
       <button class="cancel-button" @click="emit('cancel')">キャンセル</button>
     </section>
