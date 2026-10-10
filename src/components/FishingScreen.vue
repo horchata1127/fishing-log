@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from "vue"
+import TackleSnapshotDetails from './TackleSnapshotDetails.vue'
 import type {
   CatchRecord,
   FishingStyle,
@@ -20,6 +21,7 @@ const emit = defineEmits<{
   endTrip: []
   recordEvent: [type: TripEventType]
   updateEvent: [event: TripEvent, dateTime: string]
+  editTackles: []
 }>()
 
 const editingEventId = ref<number | null>(null)
@@ -145,6 +147,7 @@ function fishingStyleName(style: FishingStyle) {
 
   <section class="card">
     <h2>現在のセッティング</h2>
+    <button v-if="!trip.endedAt" type="button" class="back-button" @click="emit('editTackles')">持参セットを追加・変更</button>
 
     <div class="setting">
       <span>ルアー</span>
@@ -173,8 +176,9 @@ function fishingStyleName(style: FishingStyle) {
 
     <div class="setting">
       <span>タックル</span>
-      <strong>未選択</strong>
+      <strong>{{ lastCatch?.tackleSnapshot?.setName ?? '未指定' }}</strong>
     </div>
+    <TackleSnapshotDetails v-if="lastCatch?.tackleSnapshot" :snapshot="lastCatch.tackleSnapshot" />
   </section>
 
   <section
@@ -232,6 +236,7 @@ function fishingStyleName(style: FishingStyle) {
             </template>
           </span>
         </small>
+        <TackleSnapshotDetails v-if="record.tackleSnapshot" :snapshot="record.tackleSnapshot" />
       </div>
 
       <span>

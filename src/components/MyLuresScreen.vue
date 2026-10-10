@@ -7,6 +7,7 @@ import {
   type LureModel,
   type LureVariant,
   type MyLure,
+  isUsableOwnedLure,
 } from '../db/database'
 
 const emit = defineEmits<{
@@ -147,7 +148,7 @@ const saving = ref(false)
 
 async function loadMyLures() {
   const myLures = await db.myLures
-    .filter((myLure) => myLure.active === true)
+    .filter(isUsableOwnedLure)
     .toArray()
 
   const result: MyLureView[] = []
@@ -363,6 +364,7 @@ async function addMyLure() {
         await db.myLures.add({
           variantId,
           active: true,
+          ownershipStatus: 'owned',
         })
       }
     )
@@ -439,6 +441,7 @@ onMounted(async () => {
 
     <section class="card lure-list">
       <h2>所有ルアー</h2>
+      <p class="empty">実所有として登録したルアーを表示します。未確認のルアーも保管されています。</p>
       <div class="lure-filters">
         <label>メーカー<select v-model="filterManufacturer"><option value="">すべてのメーカー</option><option v-for="name in manufacturerFilters" :key="name" :value="name">{{ name }}</option></select></label>
         <label>カテゴリ<select v-model="filterCategory"><option value="">すべてのカテゴリ</option><option v-for="cat in categories" :key="cat" :value="cat">{{ cat }}</option></select></label>

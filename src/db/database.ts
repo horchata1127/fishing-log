@@ -18,6 +18,7 @@ export interface FishingTrip {
   startedAt: Date
   endedAt?: Date
   memo?: string
+  tackleSetIds?: number[]
 }
 
 export type TripEventType = 'stocking' | 'pellet'
@@ -36,7 +37,9 @@ export interface CatchRecord {
   caughtAt: Date
 
   lureId?: number
+  lureVariantId?: number
   tackleSetId?: number
+  tackleSnapshot?: TackleSnapshot
 
   lureName?: string
   lureColor?: string
@@ -114,6 +117,8 @@ export interface LureVariant {
  * 同じカラーを2個持っていても
  * それぞれ登録できるようにする。
  */
+export type OwnershipStatus = 'owned' | 'unverified' | 'placeholder'
+
 export interface MyLure {
   id?: number
   variantId: number
@@ -121,6 +126,103 @@ export interface MyLure {
   nickname?: string
   memo?: string
   active: boolean
+  ownershipStatus?: OwnershipStatus
+}
+
+export function ownershipStatus(lure: MyLure): OwnershipStatus {
+  return lure.ownershipStatus ?? 'unverified'
+}
+
+export function isUsableOwnedLure(lure: MyLure): boolean {
+  return lure.active === true && ownershipStatus(lure) === 'owned'
+}
+
+export interface Rod {
+  id?: number
+  manufacturer: string
+  modelName: string
+  modelCode?: string
+  length?: string
+  power?: string
+  memo?: string
+  active: boolean
+  initialKey?: string
+}
+
+export interface Reel {
+  id?: number
+  manufacturer: string
+  modelName: string
+  size?: string
+  year?: number
+  gearRatio?: string
+  mainLineId?: number
+  memo?: string
+  active: boolean
+  initialKey?: string
+}
+
+export const lineMaterials = ['ナイロン', 'フロロ', 'PE', 'エステル', 'その他'] as const
+export interface TackleLine {
+  id?: number
+  manufacturer?: string
+  productName?: string
+  material: typeof lineMaterials[number]
+  strengthLb?: number
+  sizeGo?: number
+  memo?: string
+  active: boolean
+  initialKey?: string
+}
+
+export interface TackleSet {
+  id?: number
+  name: string
+  rodId: number
+  reelId: number
+  leaderLineId?: number
+  memo?: string
+  active: boolean
+}
+
+// 保存時の構成を値としてコピー。後日のマスター編集・巻き替えでは更新しない。
+export interface TackleSnapshot {
+  version: 1
+  setId: number
+  setName: string
+  rod: Rod & { id: number }
+  reel: Reel & { id: number }
+  mainLine?: TackleLine & { id: number }
+  leader?: TackleLine & { id: number }
+}
+
+export const tackleTableNames = ['rods', 'reels', 'lines', 'tackleSets'] as const
+export type TackleTable = typeof tackleTableNames[number]
+
+/** フォーム保存・バックアップ・スナップショットで共用する構造検証。 */
+export function validateTackleRecord(table: TackleTable, value: unknown): asserts value is Record<string, unknown> {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error(`${table}: オブジェクトが必要です。`)
+  const row = value as Record<string, unknown>
+  const required = table === 'rods' || table === 'reels' ? ['manufacturer', 'modelName']
+    : table === 'lines' ? ['material'] : ['name']
+  for (const field of required) {
+    if (typeof row[field] !== 'string' || !(row[field] as string).trim()) throw new Error(`${table}.${field}: 入力が必要です。`)
+  }
+  for (const field of ['manufacturer', 'modelName', 'modelCode', 'length', 'power', 'memo', 'size', 'gearRatio', 'productName', 'initialKey']) {
+    if (row[field] !== undefined && typeof row[field] !== 'string') throw new Error(`${table}.${field}: 文字列が必要です。`)
+  }
+  if (typeof row.active !== 'boolean') throw new Error(`${table}.active: 使用状態が不正です。`)
+  for (const field of ['rodId', 'reelId', 'mainLineId', 'leaderLineId']) {
+    if (row[field] !== undefined && (typeof row[field] !== 'number' || !Number.isSafeInteger(row[field]) || (row[field] as number) <= 0)) {
+      throw new Error(`${table}.${field}: 正の整数IDが必要です。`)
+    }
+  }
+  if (table === 'tackleSets' && (row.rodId === undefined || row.reelId === undefined)) throw new Error('ロッドとリールを選択してください。')
+  if (table === 'lines' && !lineMaterials.includes(row.material as TackleLine['material'])) throw new Error('ライン素材が不正です。')
+  for (const field of ['strengthLb', 'sizeGo']) {
+    if (row[field] !== undefined && (typeof row[field] !== 'number' || !Number.isFinite(row[field]) || (row[field] as number) <= 0)) throw new Error(`${field}: 正の数を入力してください。`)
+  }
+  if (row.year !== undefined && (typeof row.year !== 'number' || !Number.isSafeInteger(row.year) || row.year <= 0)) throw new Error('年式が不正です。')
 }
 
 export const db = new Dexie('FishingLogDatabase') as Dexie & {
@@ -133,6 +235,10 @@ export const db = new Dexie('FishingLogDatabase') as Dexie & {
   lureModels: EntityTable<LureModel, 'id'>
   lureVariants: EntityTable<LureVariant, 'id'>
   myLures: EntityTable<MyLure, 'id'>
+  rods: EntityTable<Rod, 'id'>
+  reels: EntityTable<Reel, 'id'>
+  lines: EntityTable<TackleLine, 'id'>
+  tackleSets: EntityTable<TackleSet, 'id'>
 }
 
 /*
@@ -167,4 +273,12 @@ db.version(3).stores({
 /* 放流・ペレット時刻。既存データを保持したまま追加 */
 db.version(4).stores({
   tripEvents: '++id, tripId, occurredAt, type',
+})
+
+// 既存8テーブル・ID・レコードを変更せず、独立したマスターだけを追加する。
+db.version(5).stores({
+  rods: '++id, initialKey',
+  reels: '++id, mainLineId, initialKey',
+  lines: '++id, initialKey',
+  tackleSets: '++id, rodId, reelId, leaderLineId',
 })
