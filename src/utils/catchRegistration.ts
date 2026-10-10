@@ -1,5 +1,6 @@
-import { db, isUsableOwnedLure, type CatchRecord } from '../db/database'
+import { db, isUsableOwnedLure, validateFishCatch, type CatchRecord } from '../db/database'
 import { snapshotTackle, tackleTables } from './tackleManagement'
+import { fishSnapshot } from './fishSpecies'
 
 export type LureSelection =
   | { kind: 'owned'; myLureId: number }
@@ -25,7 +26,7 @@ export interface RecentLure {
 }
 
 type CatchInput = Omit<CatchRecord, 'id' | 'lureId' | 'lureVariantId' | 'lureName' | 'lureColor' | 'tackleSnapshot'>
-const tables = [db.trips, db.catches, db.myLures, db.lureVariants, db.lureModels, db.lureSeries, db.lureManufacturers, ...tackleTables]
+const tables = [db.trips, db.catches, db.myLures, db.lureVariants, db.lureModels, db.lureSeries, db.lureManufacturers, ...tackleTables, db.fishSpecies]
 
 function requireId(id: number) {
   if (!Number.isSafeInteger(id) || id <= 0) throw new Error('ルアーIDを確認してください。')
@@ -41,7 +42,8 @@ async function catalogNames(variantId: number) {
   return { lureVariantId: variantId, lureName: model.name, lureColor: variant.colorName }
 }
 
-async function writeCatch(input: CatchInput, selection: LureSelection): Promise<number> {
+async function writeCatch(input: CatchInput, selection: LureSelection, previousFish?: CatchRecord): Promise<number> {
+  if (input.fishSizeCm !== undefined && (!Number.isFinite(input.fishSizeCm) || input.fishSizeCm <= 0)) throw new Error('全長は0より大きい数値（cm）を入力してください。')
   const trip = await db.trips.get(input.tripId)
   if (!trip || trip.endedAt) throw new Error('釣行が存在しないか、終了しています。')
   if (!(input.caughtAt instanceof Date) || !Number.isFinite(input.caughtAt.getTime())) throw new Error('釣果日時が不正です。')
@@ -49,6 +51,7 @@ async function writeCatch(input: CatchInput, selection: LureSelection): Promise<
     throw new Error('このセットは釣行の持参予定にありません。持参セットを変更するか、未指定で保存してください。')
   }
   const tackleSnapshot = input.tackleSetId === undefined ? undefined : await snapshotTackle(input.tackleSetId)
+  const fish = input.fishSpeciesId === undefined ? {} : await fishSnapshot(input.fishSpeciesId, previousFish)
   let lure: Pick<CatchRecord, 'lureId' | 'lureVariantId' | 'lureName' | 'lureColor'>
   if (selection.kind === 'manual') {
     lure = { lureName: selection.lureName.trim() || undefined, lureColor: selection.lureColor.trim() || undefined }
@@ -78,7 +81,11 @@ async function writeCatch(input: CatchInput, selection: LureSelection): Promise<
   delete record.lureName
   delete record.lureColor
   delete record.tackleSnapshot
-  const id = await db.catches.add({ ...record, ...lure, ...(tackleSnapshot ? { tackleSnapshot } : {}) })
+  delete record.fishSpeciesGroup
+  if (input.fishSpeciesId !== undefined) delete record.fishSpecies
+  const complete = { ...record, ...fish, ...lure, ...(tackleSnapshot ? { tackleSnapshot } : {}) }
+  validateFishCatch(complete as unknown as Record<string, unknown>)
+  const id = await db.catches.add(complete)
   if (id === undefined) throw new Error('釣果の登録に失敗しました。')
   return id
 }
@@ -99,7 +106,7 @@ export async function registerSameAsPrevious(tripId: number, caughtAt: Date): Pr
     // 第4弾以前の意味が確認できないIDだけの記録は自動コピーしない。
     return writeCatch({ tripId, caughtAt, tackleSetId: previous.tackleSnapshot ? previous.tackleSetId : undefined,
       rangeLevel: previous.rangeLevel, retrieveSpeed: previous.retrieveSpeed,
-      action: previous.action, fishSpecies: previous.fishSpecies }, selection)
+      action: previous.action, fishSpecies: previous.fishSpecies, fishSpeciesId: previous.fishSpeciesId }, selection, previous)
   })
 }
 

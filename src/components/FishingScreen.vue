@@ -47,6 +47,17 @@ function saveEdit(event: TripEvent) {
 const sortedEvents = computed(() => [...props.events].sort((a,b) => new Date(b.occurredAt).getTime()-new Date(a.occurredAt).getTime()))
 
 const catchCount = computed(() => props.catches.length)
+const fishCounts = computed(() => {
+  const names = new Map<string, number>()
+  const groups = new Map<string, number>()
+  for (const row of props.catches) {
+    const name = row.fishSpecies || '魚種未設定'
+    const group = row.fishSpeciesGroup || '分類未設定'
+    names.set(name, (names.get(name) ?? 0) + 1)
+    groups.set(group, (groups.get(group) ?? 0) + 1)
+  }
+  return { names: [...names], groups: [...groups] }
+})
 
 const lastCatch = computed(() => {
   if (props.catches.length === 0) {
@@ -186,6 +197,10 @@ function fishingStyleName(style: FishingStyle) {
     class="card history" aria-label="釣果履歴"
   >
     <h2>今日の釣果</h2>
+    <details><summary>魚種・分類別の釣果数</summary>
+      <p v-for="[name, count] in fishCounts.names" :key="name">{{ name }}：{{ count }}匹</p>
+      <p v-for="[group, count] in fishCounts.groups" :key="group">{{ group }}：{{ count }}匹</p>
+    </details>
 
     <div
       v-for="(record, index) in [...catches].reverse()"
@@ -196,6 +211,7 @@ function fishingStyleName(style: FishingStyle) {
         <strong>
           {{ catches.length - index }}匹目
         </strong>
+        <p>{{ record.fishSpecies || '魚種未設定' }}{{ record.fishSpeciesGroup ? `（${record.fishSpeciesGroup}）` : '' }}{{ record.fishSizeCm !== undefined ? ` / ${record.fishSizeCm}cm` : '' }}</p>
 
         <small
           v-if="

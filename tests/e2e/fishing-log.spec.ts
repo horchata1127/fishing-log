@@ -5,7 +5,11 @@ import { test, expect, catalogFixture, tableNames, readState, restoreViaUI,
 
 const catchDialog = (page: Page) => page.getByRole('dialog', { name: '釣果を登録', exact: true })
 const home = (page: Page) => page.getByRole('button', { name: '← ホーム', exact: true }).click()
-const openCatch = (page: Page) => page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
+const openCatch = async (page: Page) => {
+  await page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
+  // 従来A〜Dは魚種未設定を選び、合成v4の互換性を引き続き検証する。
+  await catchDialog(page).getByRole('combobox', { name: '魚種を選択', exact: true }).selectOption('')
+}
 
 test('A: 釣行・カタログ釣果・キャンセル・自動所有・前回と同じ・手入力・一覧', async ({ page }) => {
   await restoreViaUI(page, catalogFixture())
@@ -115,7 +119,7 @@ async function prepareTackleHistory(page: Page) {
 
 async function showLineHistory(page: Page) {
   const history = page.getByRole('region', { name: '釣果履歴' })
-  const summaries = history.locator('summary')
+  const summaries = history.getByText('クランク用①（保存時の構成）', { exact: true })
   await expect(summaries).toHaveCount(2)
   await summaries.nth(0).click()
   await summaries.nth(1).click()
@@ -140,7 +144,7 @@ test('C: v4全12テーブルをダウンロードし、別Contextへ復元して
   expect(backup.format).toBe('fishing-log-backup')
   expect(backup.version).toBe(4)
   expect(Object.keys(backup.data).sort()).toEqual([...tableNames].sort())
-  expect(backup.data).toEqual(source)
+  expect(backup.data).toEqual(Object.fromEntries(Object.entries(source).filter(([name]) => name !== 'fishSpecies')))
   const set = backup.data.tackleSets[0]
   expect(backup.data.trips[0].tackleSetIds).toEqual([set.id])
   expect(backup.data.rods.some((row: { id: number }) => row.id === set.rodId)).toBe(true)
@@ -220,7 +224,8 @@ test('不正なv4復元は既存のテストDBを保持する', async ({ page })
   await restoreViaUI(page, catalogFixture())
   await registerTackleSet(page)
   const before = await readState(page)
-  const invalid = { format: 'fishing-log-backup', version: 4, exportedAt: '2026-10-10T00:00:00Z', data: structuredClone(before) }
+  const { fishSpecies: _fish, ...legacyData } = before
+  const invalid = { format: 'fishing-log-backup', version: 4, exportedAt: '2026-10-10T00:00:00Z', data: structuredClone(legacyData) }
   invalid.data.tackleSets[0].rodId = 99999
   await restoreViaUI(page, invalid, 'rods のID 99999 がありません')
   expect(await readState(page)).toEqual(before)
