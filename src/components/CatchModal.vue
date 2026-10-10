@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import type { LureOption, LureSelection, RecentLure } from '../utils/catchRegistration';
+import type { TackleSet } from '../db/database';
 
 const props = defineProps<{
   caughtAt: Date;
@@ -10,6 +11,8 @@ const props = defineProps<{
   recentLures: RecentLure[];
   selection: LureSelection | null;
   saving: boolean;
+  tackleSets?: TackleSet[];
+  tackleSetId?: number;
 
   lureName: string;
   lureColor: string;
@@ -24,6 +27,7 @@ const emit = defineEmits<{
   sameAsPrevious: [];
 
   selectLure: [selection: LureSelection];
+  'update:tackleSetId': [id: number | undefined];
 
   "update:lureName": [value: string];
   "update:lureColor": [value: string];
@@ -349,6 +353,14 @@ function selectRecent(recent: RecentLure) {
         </select>
       </label>
 
+      <label class="catch-field">
+        <span>使用タックル（任意）</span>
+        <select aria-label="使用タックル" :value="tackleSetId ?? ''" @change="emit('update:tackleSetId', ($event.target as HTMLSelectElement).value ? Number(($event.target as HTMLSelectElement).value) : undefined)">
+          <option value="">未指定</option>
+          <option v-for="set in tackleSets ?? []" :key="set.id" :value="set.id">{{ set.name }}</option>
+        </select>
+        <small v-if="!tackleSets?.length">持参セットは釣行画面で追加できます。</small>
+      </label>
       <button class="primary-button" :disabled="saving" @click="emit('save')">{{ saving ? '保存中…' : '保存する' }}</button>
 
       <button class="cancel-button" @click="emit('cancel')">キャンセル</button>

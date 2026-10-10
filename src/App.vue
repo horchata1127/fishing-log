@@ -4,6 +4,9 @@ import { onMounted, ref } from 'vue'
 import CatchModal from './components/CatchModal.vue'
 import FishingScreen from './components/FishingScreen.vue'
 import MyLuresScreen from './components/MyLuresScreen.vue'
+import TackleManagementScreen from './components/TackleManagementScreen.vue'
+import TripTackleSelector from './components/TripTackleSelector.vue'
+import { availableTackleSets, createTrip, updateTripTackles, suggestTackleSetId } from './utils/tackleManagement'
 import { exportBackup, importBackup } from './utils/backup'
 import { loadLureChoices, registerCatch, registerSameAsPrevious,
   type LureOption, type LureSelection, type RecentLure } from './utils/catchRegistration'
@@ -14,9 +17,16 @@ import {
   type FishingTrip,
   type TripEvent,
   type TripEventType,
+  type TackleSet,
 } from './db/database'
 
-type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures'
+type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures' | 'tackles'
+const availableSets = ref<TackleSet[]>([])
+const tripSetSelection = ref<number[]>([])
+const catchTackleOptions = ref<TackleSet[]>([])
+const catchTackleSetId = ref<number | undefined>()
+const editingTripTackles = ref(false)
+const savingTrip = ref(false)
 
 const myLureOptions = ref<LureOption[]>([])
 const catalogOptions = ref<LureOption[]>([])
@@ -81,6 +91,11 @@ async function restoreData(event: Event) {
   goHome()
   pendingCaughtAt.value = null
   catchSelection.value = null
+  catchTackleSetId.value = undefined
+  catchTackleOptions.value = []
+  availableSets.value = []
+  tripSetSelection.value = []
+  editingTripTackles.value = false
   catchLureName.value = ''
   catchLureColor.value = ''
   catchRange.value = ''
@@ -223,16 +238,20 @@ async function loadMyLureOptions() {
   recentLures.value = options.recent
 }
 
-function openNewTrip() {
+async function openNewTrip() {
   newTripArea.value = ''
   newTripDate.value = new Date().toISOString().slice(0, 10)
   newTripStyle.value = 'AREA_TROUT'
   newTripWeather.value = ''
-
-  screen.value = 'new-trip'
+  tripSetSelection.value = []
+  try {
+    availableSets.value = await availableTackleSets()
+    screen.value = 'new-trip'
+  } catch (error) { alert(error instanceof Error ? error.message : String(error)) }
 }
 
 async function startTrip() {
+  if (savingTrip.value) return
   if (!newTripArea.value.trim()) {
     alert('釣り場を入力してな！')
     return
@@ -244,21 +263,46 @@ async function startTrip() {
     fishingStyle: newTripStyle.value,
     weather: newTripWeather.value || undefined,
     startedAt: new Date(),
+    tackleSetIds: [...tripSetSelection.value],
   }
+  savingTrip.value = true
+  try {
+    const id = await createTrip(trip)
+    currentTrip.value = { ...trip, id }
+    catches.value = []
+    tripEvents.value = []
+    screen.value = 'fishing'
+    try { await loadTrips() }
+    catch (error) {
+      console.error('釣行保存後の一覧更新に失敗しました', error)
+      alert('釣行は保存済みです。一覧の更新に失敗しました。再読み込みしてください。')
+    }
+  } catch (error) { alert(error instanceof Error ? error.message : String(error)) }
+  finally { savingTrip.value = false }
+}
 
-  const id = await db.trips.add(trip)
+async function editTripTackles() {
+  if (!currentTrip.value || currentTrip.value.endedAt) return
+  try {
+    availableSets.value = await availableTackleSets()
+    tripSetSelection.value = [...(currentTrip.value.tackleSetIds ?? [])]
+    editingTripTackles.value = true
+  } catch (error) { alert(error instanceof Error ? error.message : String(error)) }
+}
 
-  currentTrip.value = {
-    ...trip,
-    id,
-  }
-
-  catches.value = []
-  tripEvents.value = []
-
-  await loadTrips()
-
-  screen.value = 'fishing'
+async function saveTripTackles() {
+  if (savingTrip.value || !currentTrip.value?.id) return
+  savingTrip.value = true
+  try {
+    // 停止済みのセットは候補から除外。変更画面で確認して保存する。
+    const allowed = new Set(availableSets.value.map(set => set.id))
+    const ids = tripSetSelection.value.filter(id => allowed.has(id))
+    await updateTripTackles(currentTrip.value.id, ids)
+    currentTrip.value = { ...currentTrip.value, tackleSetIds: ids }
+    editingTripTackles.value = false
+    await loadTrips()
+  } catch (error) { alert(error instanceof Error ? error.message : String(error)) }
+  finally { savingTrip.value = false }
 }
 
 async function openTrip(trip: FishingTrip) {
@@ -287,6 +331,8 @@ async function addCatch() {
 
   try {
     await loadMyLureOptions()
+    catchTackleOptions.value = await availableTackleSets(currentTrip.value ?? undefined)
+    catchTackleSetId.value = suggestTackleSetId(catches.value, catchTackleOptions.value)
     showCatchForm.value = true
   } catch (error) {
     pendingCaughtAt.value = null
@@ -313,6 +359,7 @@ async function commitCatch(sameAsPrevious: boolean) {
         ? { kind: 'manual' as const, lureName: catchLureName.value, lureColor: catchLureColor.value }
         : catchSelection.value
       await registerCatch({ tripId: currentTrip.value.id, caughtAt: pendingCaughtAt.value,
+        tackleSetId: catchTackleSetId.value,
         rangeLevel: catchRange.value || undefined, retrieveSpeed: catchRetrieveSpeed.value || undefined,
         action: catchAction.value || undefined }, selection)
     }
@@ -324,6 +371,7 @@ async function commitCatch(sameAsPrevious: boolean) {
   showCatchForm.value = false
   pendingCaughtAt.value = null
   catchSelection.value = null
+  catchTackleSetId.value = undefined
   try {
     await Promise.all([loadCatches(), loadMyLureOptions()])
   } catch (error) {
@@ -339,6 +387,7 @@ function cancelCatch() {
   showCatchForm.value = false
   pendingCaughtAt.value = null
   catchSelection.value = null
+  catchTackleSetId.value = undefined
 }
 
 async function endTrip() {
@@ -372,13 +421,14 @@ function goHome() {
   catches.value = []
   tripEvents.value = []
   showCatchForm.value = false
+  editingTripTackles.value = false
 
   screen.value = 'home'
 }
 
 async function deleteAllData() {
   const ok = confirm(
-    '開発用データを全部削除するで。\n釣行・釣果・マイルアーも全部消えるで。\nほんまに削除する？'
+    '開発用データを全部削除するで。\n釣行・釣果・マイルアー・タックルも全部消えるで。\nほんまに削除する？'
   )
 
   if (!ok) {
@@ -396,9 +446,17 @@ async function deleteAllData() {
       db.lureModels,
       db.lureVariants,
       db.myLures,
+      db.rods,
+      db.reels,
+      db.lines,
+      db.tackleSets,
     ],
     async () => {
       await db.catches.clear()
+      await db.tackleSets.clear()
+      await db.reels.clear()
+      await db.rods.clear()
+      await db.lines.clear()
       await db.tripEvents.clear()
       await db.myLures.clear()
       await db.lureVariants.clear()
@@ -439,6 +497,7 @@ onMounted(async () => {
       <button class="primary-button" @click="openNewTrip">＋ 新しい釣行を開始</button>
 
       <button class="secondary-button" @click="openMyLures">🎣 マイルアー</button>
+      <button class="secondary-button" @click="screen = 'tackles'">タックル管理</button>
 
       <button class="backup-button" @click="backupData">
         📦 データをバックアップ
@@ -483,6 +542,7 @@ onMounted(async () => {
 
     <!-- マイルアー -->
     <MyLuresScreen v-else-if="screen === 'my-lures'" @back="goHome" @select-lure="openLureDetail" />
+    <TackleManagementScreen v-else-if="screen === 'tackles'" @back="goHome" />
 
     <!-- 新規釣行 -->
     <template v-else-if="screen === 'new-trip'">
@@ -535,16 +595,28 @@ onMounted(async () => {
         </label>
       </section>
 
-      <button class="primary-button" @click="startTrip">🎣 釣行開始</button>
+      <TripTackleSelector v-model="tripSetSelection" :sets="availableSets" :inert="savingTrip" />
+      <button class="primary-button" :disabled="savingTrip" @click="startTrip">🎣 釣行開始</button>
     </template>
 
     <!-- 釣行中 -->
 
     <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" @home="goHome"
-      @add-catch="addCatch" @record-event="recordTripEvent" @update-event="updateTripEvent" @end-trip="endTrip" />
+      @add-catch="addCatch" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @update-event="updateTripEvent" @end-trip="endTrip" />
+
+    <div v-if="editingTripTackles" class="tackle-overlay">
+      <section class="card tackle-dialog" :inert="savingTrip">
+        <h2>持参セットを変更</h2>
+        <p>使用停止中のセットは保存時に候補から外します。過去の釣果は変わりません。</p>
+        <TripTackleSelector v-model="tripSetSelection" :sets="availableSets" />
+        <button class="secondary-button" @click="saveTripTackles">保存</button>
+        <button class="back-button" @click="editingTripTackles = false">キャンセル</button>
+      </section>
+    </div>
 
     <!-- 釣果入力モーダル -->
     <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt"
+      :tackle-sets="catchTackleOptions" v-model:tackle-set-id="catchTackleSetId"
       :catalog="catalogOptions" :recent-lures="recentLures" :selection="catchSelection" :saving="savingCatch"
       :has-previous-catch="catches.length > 0" :my-lures="myLureOptions" v-model:lure-name="catchLureName"
       v-model:lure-color="catchLureColor" v-model:range="catchRange" v-model:retrieve-speed="catchRetrieveSpeed"
@@ -554,6 +626,8 @@ onMounted(async () => {
 </template>
 
 <style scoped>
+.tackle-overlay { position:fixed; inset:0; z-index:110; padding:18px; background:rgb(0 0 0 / 45%); display:flex; align-items:center; justify-content:center; }
+.tackle-dialog { width:min(100%,520px); max-height:85vh; overflow-y:auto; }
 * {
   box-sizing: border-box;
 }

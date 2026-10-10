@@ -10,14 +10,15 @@ import * as Vue from 'vue'
 import { parse, compileScript, compileTemplate } from '@vue/compiler-sfc'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-catch-test-'))
-const paths = Object.fromEntries(['database', 'catchRegistration', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
+const paths = Object.fromEntries(['database', 'catchRegistration', 'tackleManagement', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
 const compile = source => ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
 }).outputText
-for (const [name, source] of [['database', 'db/database.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['backup', 'utils/backup.ts']]) {
+for (const [name, source] of [['database', 'db/database.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
   const code = compile(await readFile(new URL(`../src/${source}`, import.meta.url), 'utf8'))
     .replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
     .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
+    .replace("'./tackleManagement'", JSON.stringify(pathToFileURL(paths.tackleManagement).href))
   await writeFile(paths[name], code)
 }
 const { db, ownershipStatus } = await import(pathToFileURL(paths.database).href)
@@ -257,6 +258,7 @@ function setupModal(choices, onEmit) {
     if (event === 'selectLure') props.selection = value
     if (event === 'update:lureName') props.lureName = value
     if (event === 'update:lureColor') props.lureColor = value
+    if (event === 'update:tackleSetId') props.tackleSetId = value
     onEmit?.(event, value)
   } })
   return { props, state, events }
@@ -295,4 +297,39 @@ test('UI switches catalog selection to manual with no lingering owned or variant
   assert.equal(props.selection.kind, 'manual')
   assert.equal(props.selection.variantId, undefined)
   assert.equal(props.selection.myLureId, undefined)
+})
+
+function findTackleSelect(vnode) {
+  if (!vnode || typeof vnode !== 'object') return undefined
+  if (vnode.type === 'select' && vnode.props?.['aria-label'] === '使用タックル') return vnode
+  if (Array.isArray(vnode.children)) {
+    for (const child of vnode.children) {
+      const match = findTackleSelect(child)
+      if (match) return match
+    }
+  }
+}
+
+test('UI tackle selection and cancel emits state only, without ownership or catch writes', async () => {
+  const before = await snapshot()
+  const { props, state, events } = setupModal(await loadLureChoices())
+  props.tackleSets = [{ id: 90, name: '持参セット', rodId: 1, reelId: 2, active: true }]
+  let vnode = render({}, [], props, Vue.proxyRefs(state), {}, {})
+  findTackleSelect(vnode).props.onChange({ target: { value: '90' } })
+  assert.equal(props.tackleSetId, 90)
+  vnode = render({}, [], props, Vue.proxyRefs(state), {}, {})
+  assert.equal(findTackleSelect(vnode).props.value, 90)
+  findCancel(vnode).props.onClick()
+  assert.equal(events.at(-1)[0], 'cancel')
+  assert.equal(await snapshot(), before)
+})
+
+test('UI supports explicitly clearing a preceding tackle suggestion', async () => {
+  const { props, state, events } = setupModal(await loadLureChoices())
+  props.tackleSets = [{ id: 90, name: '持参セット', rodId: 1, reelId: 2, active: true }]
+  props.tackleSetId = 90
+  const vnode = render({}, [], props, Vue.proxyRefs(state), {}, {})
+  findTackleSelect(vnode).props.onChange({ target: { value: '' } })
+  assert.equal(props.tackleSetId, undefined)
+  assert.deepEqual(events.at(-1), ['update:tackleSetId', undefined])
 })

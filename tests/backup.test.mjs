@@ -102,7 +102,7 @@ test('empty v2 is valid and empty snapshots contain all eight arrays', () => {
 const invalidCases = [
   ['root null', () => null],
   ['wrong format', b => { b.format = 'catalog'; return b }],
-  ['unsupported version', b => { b.version = 4; return b }],
+  ['unsupported version', b => { b.version = 5; return b }],
   ['missing export time', b => { delete b.exportedAt; return b }],
   ['invalid export time', b => { b.exportedAt = 'bad'; return b }],
   ['missing data', b => { delete b.data; return b }],
