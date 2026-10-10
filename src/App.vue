@@ -26,12 +26,14 @@ export interface MyLureOption {
 }
 
 const myLureOptions = ref<MyLureOption[]>([])
+const restoringData = ref(false)
 
 function openMyLures() {
   screen.value = 'my-lures'
 }
 
 async function backupData() {
+  if (restoringData.value) return
   try {
     await exportBackup()
   } catch (error) {
@@ -42,6 +44,10 @@ async function backupData() {
 
 async function restoreData(event: Event) {
   const input = event.target as HTMLInputElement
+  if (restoringData.value) {
+    input.value = ''
+    return
+  }
   const file = input.files?.[0]
 
   if (!file) {
@@ -57,14 +63,9 @@ async function restoreData(event: Event) {
     return
   }
 
+  restoringData.value = true
   try {
     await importBackup(file)
-
-    await loadTrips()
-    await loadMyLureOptions()
-    if (currentTrip.value) await loadTripEvents()
-
-    alert('バックアップから復元したで！')
   } catch (error) {
     console.error('復元に失敗しました', error)
 
@@ -74,8 +75,31 @@ async function restoreData(event: Event) {
         : 'バックアップの復元に失敗しました'
 
     alert(message)
-  } finally {
     input.value = ''
+    restoringData.value = false
+    return
+  }
+
+  // 復元済みDBに、以前開いていた釣行や入力状態を持ち越さない。
+  input.value = ''
+  goHome()
+  pendingCaughtAt.value = null
+  catchLureId.value = undefined
+  catchLureName.value = ''
+  catchLureColor.value = ''
+  catchRange.value = ''
+  catchRetrieveSpeed.value = ''
+  catchAction.value = ''
+  trips.value = []
+  myLureOptions.value = []
+  try {
+    await Promise.all([loadTrips(), loadMyLureOptions()])
+    alert('バックアップから復元したで！')
+  } catch (error) {
+    console.error('復元後の画面更新に失敗しました', error)
+    alert('データの復元は完了したで。画面の更新に失敗したので、再読み込みしてな。')
+  } finally {
+    restoringData.value = false
   }
 }
 
@@ -458,7 +482,8 @@ onMounted(async () => {
 </script>
 
 <template>
-  <main class="app">
+  <p v-if="restoringData" role="status">バックアップを復元しています…</p>
+  <main class="app" :inert="restoringData" :aria-busy="restoringData">
     <!-- ホーム -->
     <template v-if="screen === 'home'">
       <header class="header">
