@@ -183,7 +183,7 @@ function fishingStyleName(style: FishingStyle) {
 
   <section
     v-if="catches.length"
-    class="card history"
+    class="card history" aria-label="釣果履歴"
   >
     <h2>今日の釣果</h2>
 

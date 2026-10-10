@@ -439,7 +439,7 @@ onMounted(async () => {
       </button>
     </section>
 
-    <section class="card lure-list">
+    <section class="card lure-list" aria-label="所有ルアー">
       <h2>所有ルアー</h2>
       <p class="empty">実所有として登録したルアーを表示します。未確認のルアーも保管されています。</p>
       <div class="lure-filters">
