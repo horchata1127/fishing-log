@@ -506,7 +506,7 @@ onMounted(async () => {
       <label class="restore-button">
         📥 バックアップから復元
 
-        <input class="restore-input" type="file" accept=".json,application/json" @change="restoreData" />
+        <input class="restore-input" data-testid="restore-backup" type="file" accept=".json,application/json" @change="restoreData" />
       </label>
 
 <!-- ルアーマスタ取り込み -->
@@ -605,7 +605,7 @@ onMounted(async () => {
       @add-catch="addCatch" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @update-event="updateTripEvent" @end-trip="endTrip" />
 
     <div v-if="editingTripTackles" class="tackle-overlay">
-      <section class="card tackle-dialog" :inert="savingTrip">
+      <section class="card tackle-dialog" role="dialog" aria-label="持参セットを変更" aria-modal="true" :inert="savingTrip">
         <h2>持参セットを変更</h2>
         <p>使用停止中のセットは保存時に候補から外します。過去の釣果は変わりません。</p>
         <TripTackleSelector v-model="tripSetSelection" :sets="availableSets" />

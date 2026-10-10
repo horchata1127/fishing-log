@@ -114,7 +114,7 @@ function selectRecent(recent: RecentLure) {
 
 <template>
   <div class="modal-backdrop">
-    <section class="catch-modal" :inert="saving" :aria-busy="saving">
+    <section class="catch-modal" role="dialog" aria-label="釣果を登録" aria-modal="true" :inert="saving" :aria-busy="saving">
       <p class="app-name">CATCH RECORD</p>
 
       <h2>🎣 釣果を登録</h2>
@@ -214,7 +214,7 @@ function selectRecent(recent: RecentLure) {
 
       <!-- マイルアー選択パネル -->
       <div v-if="showLurePicker" class="picker-backdrop" @click.self="closeLurePicker">
-        <section class="lure-picker">
+        <section class="lure-picker" role="dialog" aria-label="ルアーを選択" aria-modal="true">
           <div class="picker-header">
             <div>
               <p class="app-name">MY LURES</p>
