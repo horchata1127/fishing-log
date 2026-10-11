@@ -7,6 +7,8 @@ import MyLuresScreen from './components/MyLuresScreen.vue'
 import TackleManagementScreen from './components/TackleManagementScreen.vue'
 import TripTackleSelector from './components/TripTackleSelector.vue'
 import FishSpeciesScreen from './components/FishSpeciesScreen.vue'
+import TripDeleteDialog from './components/TripDeleteDialog.vue'
+import { getTripDeletionSummary, deleteFishingTrip, type TripDeletionSummary } from './utils/tripDeletion'
 import { loadFishChoices, defaultFishSpeciesId } from './utils/fishSpecies'
 import { availableTackleSets, createTrip, updateTripTackles, suggestTackleSetId } from './utils/tackleManagement'
 import { exportBackup, importBackup } from './utils/backup'
@@ -39,6 +41,62 @@ const catalogOptions = ref<LureOption[]>([])
 const recentLures = ref<RecentLure[]>([])
 const savingCatch = ref(false)
 const restoringData = ref(false)
+const tripDeletionSummary = ref<TripDeletionSummary | null>(null)
+const preparingTripDeletion = ref(false)
+const deletingTrip = ref(false)
+const tripDeletionError = ref('')
+const tripDeletionNotice = ref('')
+
+async function requestTripDeletion() {
+  const id = currentTrip.value?.id
+  if (!id || tripDeletionSummary.value || preparingTripDeletion.value || deletingTrip.value || savingCatch.value || savingTrip.value ||
+      showCatchForm.value || editingTripTackles.value) return
+  preparingTripDeletion.value = true
+  tripDeletionError.value = ''
+  tripDeletionNotice.value = ''
+  try {
+    const summary = await getTripDeletionSummary(id)
+    if (screen.value === 'fishing' && currentTrip.value?.id === id) tripDeletionSummary.value = summary
+  } catch (error) {
+    alert(error instanceof Error ? error.message : '削除対象を確認できませんでした。')
+  } finally { preparingTripDeletion.value = false }
+}
+
+function cancelTripDeletion() {
+  if (deletingTrip.value) return
+  tripDeletionSummary.value = null
+  tripDeletionError.value = ''
+}
+
+async function confirmTripDeletion() {
+  const summary = tripDeletionSummary.value
+  if (!summary || deletingTrip.value) return
+  deletingTrip.value = true
+  tripDeletionError.value = ''
+  try {
+    await deleteFishingTrip(summary.trip.id, summary)
+  } catch (error) {
+    tripDeletionError.value = error instanceof Error ? error.message : 'データベースへのアクセスに失敗しました。'
+    deletingTrip.value = false
+    return
+  }
+  // The transaction has committed. Leave the deleted detail even if refresh fails.
+  trips.value = trips.value.filter(trip => trip.id !== summary.trip.id)
+  tripDeletionSummary.value = null
+  goHome()
+  pendingCaughtAt.value = null
+  catchSelection.value = null
+  catchTackleSetId.value = undefined
+  myLureOptions.value = []
+  recentLures.value = []
+  tripDeletionNotice.value = '釣行と関連記録を削除しました。'
+  try {
+    await Promise.all([loadTrips(), loadMyLureOptions()])
+  } catch (error) {
+    console.error('削除後の画面更新に失敗しました', error)
+    tripDeletionNotice.value = '削除は完了しました。画面の更新に失敗したため、再読み込みしてください。'
+  } finally { deletingTrip.value = false }
+}
 
 function openMyLures() {
   screen.value = 'my-lures'
@@ -503,6 +561,7 @@ onMounted(async () => {
   <main class="app" :inert="restoringData" :aria-busy="restoringData">
     <!-- ホーム -->
     <template v-if="screen === 'home'">
+      <p v-if="tripDeletionNotice" role="status">{{ tripDeletionNotice }}</p>
       <header class="header">
         <div>
           <p class="app-name">MY FISHING LOG</p>
@@ -622,6 +681,13 @@ onMounted(async () => {
     <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" @home="goHome"
       @add-catch="addCatch" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @update-event="updateTripEvent" @end-trip="endTrip" />
 
+    <button v-if="screen === 'fishing' && currentTrip" type="button" class="delete-trip-button"
+      :disabled="preparingTripDeletion || deletingTrip || savingCatch || savingTrip || showCatchForm || editingTripTackles"
+      @click="requestTripDeletion">{{ preparingTripDeletion ? '削除対象を確認中…' : 'この釣行を削除' }}</button>
+
+    <TripDeleteDialog v-if="tripDeletionSummary" :summary="tripDeletionSummary" :busy="deletingTrip" :error="tripDeletionError"
+      @cancel="cancelTripDeletion" @confirm="confirmTripDeletion" />
+
     <div v-if="editingTripTackles" class="tackle-overlay">
       <section class="card tackle-dialog" role="dialog" aria-label="持参セットを変更" aria-modal="true" :inert="savingTrip">
         <h2>持参セットを変更</h2>
@@ -645,6 +711,8 @@ onMounted(async () => {
 </template>
 
 <style scoped>
+.delete-trip-button { width:100%; min-height:44px; margin-top:24px; padding:12px; border:1px solid #9b2424; border-radius:10px; background:#fff; color:#9b2424; font:inherit; font-weight:700; cursor:pointer; }
+.delete-trip-button:disabled { opacity:.65; cursor:default; }
 .tackle-overlay { position:fixed; inset:0; z-index:110; padding:18px; background:rgb(0 0 0 / 45%); display:flex; align-items:center; justify-content:center; }
 .tackle-dialog { width:min(100%,520px); max-height:85vh; overflow-y:auto; }
 * {
