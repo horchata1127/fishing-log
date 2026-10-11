@@ -2,17 +2,17 @@
 import { computed, onMounted, ref } from 'vue'
 import { lineMaterials, type TackleTable } from '../db/database'
 import { loadTackleData, saveTackle, setTackleActive, registerInitialTackles } from '../utils/tackleManagement'
+import { normalizeTackleField, type TackleField as Field } from '../utils/tackleForm'
 
 const emit = defineEmits<{ back: [] }>()
 const tab = ref<TackleTable>('rods')
 const data = ref<Awaited<ReturnType<typeof loadTackleData>>>({ rods: [], reels: [], lines: [], tackleSets: [] })
 const editingId = ref<number | undefined>()
-const draft = ref<Record<string, string>>({ material: 'ナイロン' })
+const draft = ref<Record<string, string | number | null | undefined>>({ material: 'ナイロン' })
 const active = ref(true)
 const busy = ref(false)
 const message = ref('')
 const labels = { rods: 'ロッド', reels: 'リール', lines: 'ライン', tackleSets: 'セット' }
-type Field = { key: string; label: string; number?: boolean; options?: 'rods' | 'reels' | 'lines' | 'materials'; required?: boolean }
 const fields = computed<Field[]>(() => {
   switch (tab.value) {
     case 'rods': return [
@@ -77,9 +77,9 @@ async function save() {
   await run(async () => {
     const row: Record<string, unknown> = { active: active.value }
     for (const field of [...fields.value, { key: 'memo', label: 'メモ' }]) {
-      const value = draft.value[field.key]?.trim()
-      if (!value) continue
-      row[field.key] = field.number || (field.options && field.options !== 'materials') ? Number(value) : value
+      const value = normalizeTackleField(draft.value[field.key], field)
+      if (value === undefined) continue
+      row[field.key] = value
     }
     await saveTackle(tab.value, row, editingId.value)
     reset()
