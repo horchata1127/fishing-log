@@ -494,7 +494,7 @@ onMounted(async () => {
 
 .app-name {
   margin: 0;
-  color: #73808c;
+  color: var(--text-muted);
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.18em;
@@ -528,7 +528,7 @@ h2 {
 .form-card label>span {
   display: block;
   margin-bottom: 7px;
-  color: #69747e;
+  color: var(--text-muted);
   font-size: 13px;
   font-weight: 700;
 }
@@ -563,7 +563,7 @@ input {
 }
 
 .empty {
-  color: #7b8792;
+  color: var(--text-muted);
 }
 
 .lure-list {
@@ -611,7 +611,7 @@ input {
 
 .lure-sub {
   margin-top: 5px;
-  color: #69747e;
+  color: var(--text-muted);
   font-size: 12px;
 }
 

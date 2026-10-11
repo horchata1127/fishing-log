@@ -315,7 +315,7 @@ function fishingStyleName(style: FishingStyle) {
 .label {
   display: block;
   margin-bottom: 5px;
-  color: #7b8792;
+  color: var(--text-muted);
   font-size: 12px;
 }
 
@@ -326,7 +326,7 @@ function fishingStyleName(style: FishingStyle) {
 
 .trip-card p {
   margin: 0 0 4px;
-  color: #69747e;
+  color: var(--text-muted);
 }
 
 .trip-card small {
@@ -371,7 +371,7 @@ function fishingStyleName(style: FishingStyle) {
 }
 
 .setting span {
-  color: #69747e;
+  color: var(--text-muted);
 }
 
 .setting strong {
@@ -394,7 +394,7 @@ function fishingStyleName(style: FishingStyle) {
 .catch-lure {
   display: block;
   margin-top: 4px;
-  color: #69747e;
+  color: var(--text-muted);
   font-weight: 400;
 }
 
@@ -448,7 +448,7 @@ function fishingStyleName(style: FishingStyle) {
 .event-button { min-height:58px; border:0; border-radius:12px; font-size:15px; font-weight:800; cursor:pointer; }
 .event-button.stocking { background:#e7f4fd; color:#155e82; }
 .event-button.pellet { background:#fff0dc; color:#885014; }
-.event-hint { font-size:12px; color:#69747e; margin:12px 0; }
+.event-hint { font-size:12px; color:var(--text-muted); margin:12px 0; }
 .event-entry { border-top:1px solid #edf0f2; padding:12px 0; }
 .event-entry-head { display:flex; align-items:center; flex-wrap:wrap; gap:10px; }
 .event-entry-head span { margin-left:auto; }
