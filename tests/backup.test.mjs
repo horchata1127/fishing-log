@@ -10,6 +10,8 @@ import ts from 'typescript'
 // 実ブラウザのDBには接続しない。現在のTS実装を一時ESMへ変換して検証する。
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-backup-test-'))
 const databaseFile = join(directory, 'database.mjs')
+const masterFile = join(directory, 'facilityMaster.mjs')
+const storageFile = join(directory, 'facilityStorage.mjs')
 const backupFile = join(directory, 'backup.mjs')
 const compile = source => ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
@@ -17,7 +19,9 @@ const compile = source => ts.transpileModule(source, {
 const databaseSource = await readFile(new URL('../src/db/database.ts', import.meta.url), 'utf8')
 const backupSource = await readFile(new URL('../src/utils/backup.ts', import.meta.url), 'utf8')
 await writeFile(databaseFile, compile(databaseSource).replace("'dexie'", JSON.stringify(import.meta.resolve('dexie'))))
-await writeFile(backupFile, compile(backupSource).replace("'../db/database'", JSON.stringify(pathToFileURL(databaseFile).href)))
+await writeFile(masterFile, compile(await readFile(new URL('../src/utils/facilityMaster.ts', import.meta.url), 'utf8')))
+await writeFile(storageFile, compile(await readFile(new URL('../src/utils/facilityStorage.ts', import.meta.url), 'utf8')).replace("'../db/database'", JSON.stringify(pathToFileURL(databaseFile).href)).replace("'./facilityMaster'", JSON.stringify(pathToFileURL(masterFile).href)))
+await writeFile(backupFile, compile(backupSource).replace("'./facilityStorage'", JSON.stringify(pathToFileURL(storageFile).href)).replace("'../db/database'", JSON.stringify(pathToFileURL(databaseFile).href)))
 const { db } = await import(pathToFileURL(databaseFile).href)
 const { createBackup, importBackup, validateBackup, backupTableNames } = await import(pathToFileURL(backupFile).href)
 
@@ -25,6 +29,8 @@ after(async () => {
   db.close()
   await unlink(databaseFile)
   await unlink(backupFile)
+  await unlink(masterFile)
+  await unlink(storageFile)
   await rmdir(directory)
 })
 

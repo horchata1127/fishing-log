@@ -10,14 +10,16 @@ import * as Vue from 'vue'
 import { parse, compileScript, compileTemplate } from '@vue/compiler-sfc'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-catch-test-'))
-const paths = Object.fromEntries(['database', 'catchRegistration', 'tackleManagement', 'fishSpecies', 'fishMaster', 'fishPicker', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
+const paths = Object.fromEntries(['facilityMaster', 'facilityStorage', 'database', 'catchRegistration', 'tackleManagement', 'fishSpecies', 'fishMaster', 'fishPicker', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
 const compile = source => ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
 }).outputText
-for (const [name, source] of [['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
+for (const [name, source] of [['facilityMaster', 'utils/facilityMaster.ts'], ['facilityStorage', 'utils/facilityStorage.ts'], ['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
   const code = compile(await readFile(new URL(`../src/${source}`, import.meta.url), 'utf8'))
     .replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
     .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
+    .replace("'./facilityMaster'", JSON.stringify(pathToFileURL(paths.facilityMaster).href))
+    .replace("'./facilityStorage'", JSON.stringify(pathToFileURL(paths.facilityStorage).href))
     .replace("'./tackleManagement'", JSON.stringify(pathToFileURL(paths.tackleManagement).href))
     .replace("'./fishSpecies'", JSON.stringify(pathToFileURL(paths.fishSpecies).href))
     .replace("'../data/fishMaster'", JSON.stringify(pathToFileURL(paths.fishMaster).href))

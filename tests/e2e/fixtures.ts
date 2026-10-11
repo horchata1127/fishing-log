@@ -74,7 +74,8 @@ export async function restoreViaUI(page: Page, backup: unknown, expectedMessage 
     await page.getByTestId('restore-backup').setInputFiles({ name: 'e2e-backup.json',
       mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(backup)) })
     await expect.poll(() => messages.length).toBe(2)
-    expect(messages[0]).toContain('現在のデータはすべて置き換わる')
+    expect(messages[0]).toContain('現在の釣行・釣果・ルアー・魚種・タックルなどの記録は置き換わる')
+    expect(messages[0]).toContain('端末に追加した施設・エリアは残して')
     expect(messages[1]).toContain(expectedMessage)
     await expect(page.getByRole('main')).not.toHaveAttribute('inert')
   } finally { page.off('dialog', handler) }

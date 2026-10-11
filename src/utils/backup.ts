@@ -1,4 +1,5 @@
 import { db, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch } from '../db/database'
+import { facilityTableNames, validateFacilityStorage, readFacilityStorage, mergeFacilityStorage, validateLocationReferences, type FacilityStorage } from './facilityStorage'
 
 export const backupTableNames = [
   'trips', 'catches', 'tripEvents', 'lureManufacturers',
@@ -9,11 +10,12 @@ export const allBackupTableNames = [...backupTableNames, ...tackleTableNames] as
 export const fullBackupTableNames = [...allBackupTableNames, 'fishSpecies'] as const
 type TableName = typeof allBackupTableNames[number]
 type Row = Record<string, unknown>
-type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>> & { fishSpecies?: Row[] }
+type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>> & { fishSpecies?: Row[] } & Partial<FacilityStorage>
+export const completeBackupTableNames = [...fullBackupTableNames, ...facilityTableNames] as const
 
 export interface FishingLogBackup {
   format: 'fishing-log-backup'
-  version: 1 | 2 | 3 | 4 | 5
+  version: 1 | 2 | 3 | 4 | 5 | 6
   exportedAt: string
   data: {
     trips: unknown[]
@@ -29,6 +31,9 @@ export interface FishingLogBackup {
     lines?: unknown[]
     tackleSets?: unknown[]
     fishSpecies?: unknown[]
+    facilities?: unknown[]
+    zones?: unknown[]
+    appMetadata?: unknown[]
   }
 }
 
@@ -82,7 +87,7 @@ function dateTime(value: unknown, path: string): Date {
 /** 書き込み前に全テーブルを検証し、入力を変更せずDateを復元する。 */
 export function validateBackup(value: unknown): RestoredData {
   const backup = object(value, 'ルート')
-  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5].includes(backup.version as number)) {
+  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6].includes(backup.version as number)) {
     fail('format/version', '対応するFishing Logバックアップではありません')
   }
   dateTime(backup.exportedAt, 'exportedAt')
@@ -91,7 +96,7 @@ export function validateBackup(value: unknown): RestoredData {
   const ids = {} as Record<TableName, Set<number>>
   const fishIds = new Set<string>()
   const fishNames = new Set<string>()
-  if (backup.version === 5) {
+  if (backup.version === 5 || backup.version === 6) {
     if (!Array.isArray(source.fishSpecies)) fail('data.fishSpecies', '配列が必要です')
     data.fishSpecies = source.fishSpecies.map(entry => {
       validateFishSpecies(entry)
@@ -187,7 +192,7 @@ export function validateBackup(value: unknown): RestoredData {
           break
         }
         case 'catches':
-          if (backup.version !== 5 && (row.fishSpeciesId !== undefined || row.fishSpeciesGroup !== undefined)) fail(path, '魚種参照にはv5形式が必要です')
+          if (Number(backup.version) < 5 && (row.fishSpeciesId !== undefined || row.fishSpeciesGroup !== undefined)) fail(path, '魚種参照にはv5形式が必要です')
           validateFishCatch(row, fishIds)
           reference(row, 'tripId', 'trips', path)
           reference(row, 'lureId', 'myLures', path, true)
@@ -252,17 +257,35 @@ export function validateBackup(value: unknown): RestoredData {
       }
     })
   }
+  if (backup.version === 6) {
+    const facilities = validateFacilityStorage(source)
+    Object.assign(data, facilities)
+    validateLocationReferences(data, facilities)
+  } else {
+    for (const name of facilityTableNames) if (source[name] !== undefined) fail(`data.${name}`, '施設データにはv6形式が必要です')
+    for (const row of [...data.trips, ...data.catches]) {
+      if (['facilityId', 'currentZoneId', 'zoneId', 'locationSnapshot'].some(key => row[key] !== undefined)) fail('場所参照', '場所参照にはv6形式が必要です')
+    }
+  }
   return data
 }
 
 export async function createBackup(): Promise<FishingLogBackup> {
-  const data = await db.transaction('r', fullBackupTableNames.map(name => db.table(name)), async () => {
-    const result = {} as Record<typeof fullBackupTableNames[number], unknown[]>
-    await Promise.all(fullBackupTableNames.map(async name => {
+  const data = await db.transaction('r', completeBackupTableNames.map(name => db.table(name)), async () => {
+    const result = {} as Record<typeof completeBackupTableNames[number], unknown[]>
+    await Promise.all(completeBackupTableNames.map(async name => {
       result[name] = await db.table(name).toArray()
     }))
     return result
   })
+  const hasFacilities = facilityTableNames.some(name => data[name].length > 0) ||
+    [...data.trips, ...data.catches].some(row => ['facilityId', 'currentZoneId', 'zoneId', 'locationSnapshot'].some(key => (row as Row)[key] !== undefined))
+  if (hasFacilities) {
+    const storage = validateFacilityStorage(data)
+    validateLocationReferences(data as { trips: Row[]; catches: Row[] }, storage)
+    return { format: 'fishing-log-backup', version: 6, exportedAt: new Date().toISOString(), data }
+  }
+  for (const name of facilityTableNames) delete (data as Partial<typeof data>)[name]
   // タックル関連データはv4。未導入データは従来のv2/v3形式との互換性を保つ。
   const hasTackle = tackleTableNames.some(name => data[name].length > 0) ||
     data.trips.some(row => (row as Row).tackleSetIds !== undefined) || data.catches.some(row => (row as Row).tackleSnapshot !== undefined)
@@ -300,9 +323,16 @@ export async function importBackup(file: File): Promise<void> {
     throw new Error('JSONファイルを読み込めませんでした')
   }
   const data = validateBackup(value)
-  await db.transaction('rw', fullBackupTableNames.map(name => db.table(name)), async () => {
+  await db.transaction('rw', completeBackupTableNames.map(name => db.table(name)), async () => {
+    const merged = mergeFacilityStorage(await readFacilityStorage(), {
+      facilities: data.facilities ?? [], zones: data.zones ?? [], appMetadata: data.appMetadata ?? [],
+    })
+    validateLocationReferences(data, merged)
     for (const name of fullBackupTableNames) await db.table(name).clear()
     for (const name of fullBackupTableNames) await db.table(name).bulkAdd(data[name] ?? [])
-    // 全置換。旧形式は魚種テーブルが空になる。明示登録・選択保存時に再シードできる。
+    await db.facilities.bulkPut(merged.facilities)
+    await db.zones.bulkPut(merged.zones)
+    await db.appMetadata.bulkPut(merged.appMetadata)
+    // Only the original 13 stores are replaced. New stores are merged without clear/delete.
   })
 }
