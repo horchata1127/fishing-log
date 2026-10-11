@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import LureCatalogImportPanel from './LureCatalogImportPanel.vue'
+import OfflineStatus from './components/OfflineStatus.vue'
+import { offline } from './pwa'
 import { onMounted, ref } from 'vue'
 import CatchModal from './components/CatchModal.vue'
 import FishingScreen from './components/FishingScreen.vue'
@@ -26,6 +28,8 @@ import {
 } from './db/database'
 
 type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures' | 'tackles' | 'fish-species'
+const catalogPanel = ref<{ busy: boolean; preview: unknown } | null>(null)
+const backingUp = ref(false)
 const fishChoices = ref<FishSpecies[]>([])
 const catchFishSpeciesId = ref<string>()
 const catchFishSize = ref('')
@@ -104,12 +108,13 @@ function openMyLures() {
 
 async function backupData() {
   if (restoringData.value) return
+  backingUp.value = true
   try {
     await exportBackup()
   } catch (error) {
     console.error('バックアップに失敗しました', error)
     alert('バックアップに失敗したで。')
-  }
+  } finally { backingUp.value = false }
 }
 
 async function restoreData(event: Event) {
@@ -558,7 +563,8 @@ onMounted(async () => {
 
 <template>
   <p v-if="restoringData" role="status">バックアップを復元しています…</p>
-  <main class="app" :inert="restoringData" :aria-busy="restoringData">
+  <main class="app" :inert="restoringData || offline.updating" :aria-busy="restoringData || offline.updating">
+    <OfflineStatus :safe="screen === 'home' && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
     <!-- ホーム -->
     <template v-if="screen === 'home'">
       <p v-if="tripDeletionNotice" role="status">{{ tripDeletionNotice }}</p>
@@ -587,7 +593,7 @@ onMounted(async () => {
 
 <!-- ルアーマスタ取り込み -->
 <section class="card">
-  <LureCatalogImportPanel />
+  <LureCatalogImportPanel ref="catalogPanel" />
 </section>
 
 
