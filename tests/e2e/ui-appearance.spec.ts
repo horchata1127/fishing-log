@@ -54,6 +54,19 @@ for (const colorScheme of ['light', 'dark'] as const) {
       expect(bounds.left).toBeGreaterThanOrEqual(bounds.parentLeft)
       expect(bounds.right).toBeLessThanOrEqual(bounds.parentRight)
       await expect(date).toHaveValue('2026-10-10')
+      const area = page.getByLabel('釣り場', { exact: true })
+      const areaBounds = (await area.boundingBox())!
+      const dateBounds = (await date.boundingBox())!
+      expect(Math.abs(dateBounds.x + dateBounds.width - areaBounds.x - areaBounds.width)).toBeLessThanOrEqual(1)
+      expect(Math.abs(dateBounds.width - areaBounds.width)).toBeLessThanOrEqual(1)
+      await date.fill('')
+      expect((await date.boundingBox())!.height).toBeGreaterThanOrEqual(areaBounds.height - 1)
+      await date.fill('2026-10-10')
+      await date.focus()
+      await expect(date).toBeFocused()
+      await date.screenshot({ path: testInfo.outputPath('date-focused.png') })
+      expect((await date.boundingBox())!.width).toBeCloseTo(dateBounds.width, 0)
+      expect((await date.boundingBox())!.height).toBeGreaterThanOrEqual(areaBounds.height - 1)
     }
     await page.getByRole('button', { name: '🎣 釣行開始', exact: true }).click()
     await check('fishing')

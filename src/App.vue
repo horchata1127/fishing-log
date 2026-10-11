@@ -804,6 +804,11 @@ h2 {
   margin-bottom: 0;
 }
 
+.form-card input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .form-card label>span {
   display: block;
   margin-bottom: 7px;
