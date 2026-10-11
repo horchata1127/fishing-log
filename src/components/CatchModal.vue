@@ -13,6 +13,7 @@ const props = defineProps<{
   recentLures: RecentLure[];
   selection: LureSelection | null;
   saving: boolean;
+  locationBusy?: boolean;
   tackleSets?: TackleSet[];
   tackleSetId?: number;
   fishChoices?: FishSpecies[];
@@ -140,7 +141,8 @@ function selectRecent(recent: RecentLure) {
         </strong>
       </div>
 
-      <button v-if="hasPreviousCatch" class="same-button" @click="emit('sameAsPrevious')">
+      <slot name="location" />
+      <button v-if="hasPreviousCatch" class="same-button" :disabled="locationBusy" @click="emit('sameAsPrevious')">
         ⚡ 前回と同じ
       </button>
 
@@ -372,9 +374,9 @@ function selectRecent(recent: RecentLure) {
       <label class="catch-field"><span>全長（cm・任意）</span>
         <input type="number" inputmode="decimal" min="0" step="any" :value="fishSize ?? ''" @input="emit('update:fishSize', ($event.target as HTMLInputElement).value)" />
       </label>
-      <button class="primary-button" :disabled="saving" @click="emit('save')">{{ saving ? '保存中…' : '保存する' }}</button>
+      <button class="primary-button" :disabled="saving || locationBusy" @click="emit('save')">{{ saving ? '保存中…' : '保存する' }}</button>
 
-      <button class="cancel-button" @click="emit('cancel')">キャンセル</button>
+      <button class="cancel-button" :disabled="locationBusy" @click="emit('cancel')">キャンセル</button>
     </section>
   </div>
 </template>
@@ -398,6 +400,7 @@ function selectRecent(recent: RecentLure) {
 .catch-modal {
   width: min(100%, 460px);
   max-height: 90vh;
+  max-height: 90dvh;
   overflow-y: auto;
   padding: 24px;
   border-radius: 20px;

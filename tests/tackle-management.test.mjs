@@ -8,15 +8,16 @@ import { pathToFileURL } from 'node:url'
 import ts from 'typescript'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-tackle-test-'))
-const paths = Object.fromEntries(['facilityMaster', 'facilityStorage', 'database', 'fishSpecies', 'fishMaster', 'tackleManagement', 'catchRegistration', 'backup', 'legacy', 'legacy1', 'legacy2', 'legacy3'].map(name => [name, join(directory, `${name}.mjs`)]))
+const paths = Object.fromEntries(['tripLocations', 'facilityMaster', 'facilityStorage', 'database', 'fishSpecies', 'fishMaster', 'tackleManagement', 'catchRegistration', 'backup', 'legacy', 'legacy1', 'legacy2', 'legacy3'].map(name => [name, join(directory, `${name}.mjs`)]))
 const databaseSource = await readFile(new URL('../src/db/database.ts', import.meta.url), 'utf8')
 const compile = source => ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
 }).outputText.replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
-for (const [name, source] of [['facilityMaster', 'utils/facilityMaster.ts'], ['facilityStorage', 'utils/facilityStorage.ts'], ['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['backup', 'utils/backup.ts']]) {
+for (const [name, source] of [['tripLocations', 'utils/tripLocations.ts'], ['facilityMaster', 'utils/facilityMaster.ts'], ['facilityStorage', 'utils/facilityStorage.ts'], ['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['backup', 'utils/backup.ts']]) {
   const code = compile(await readFile(new URL(`../src/${source}`, import.meta.url), 'utf8'))
     .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
     .replace("'./facilityMaster'", JSON.stringify(pathToFileURL(paths.facilityMaster).href))
+    .replace("'./tripLocations'", JSON.stringify(pathToFileURL(paths.tripLocations).href))
     .replace("'./facilityStorage'", JSON.stringify(pathToFileURL(paths.facilityStorage).href))
     .replace("'./tackleManagement'", JSON.stringify(pathToFileURL(paths.tackleManagement).href))
     .replace("'./fishSpecies'", JSON.stringify(pathToFileURL(paths.fishSpecies).href))

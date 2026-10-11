@@ -1,6 +1,7 @@
 import { db, isUsableOwnedLure, validateFishCatch, type CatchRecord } from '../db/database'
 import { snapshotTackle, tackleTables } from './tackleManagement'
 import { fishSnapshot } from './fishSpecies'
+import { resolveCatchLocation, type CatchLocationSelection } from './tripLocations'
 
 export type LureSelection =
   | { kind: 'owned'; myLureId: number }
@@ -25,8 +26,8 @@ export interface RecentLure {
   selection: LureSelection
 }
 
-type CatchInput = Omit<CatchRecord, 'id' | 'lureId' | 'lureVariantId' | 'lureName' | 'lureColor' | 'tackleSnapshot'>
-const tables = [db.trips, db.catches, db.myLures, db.lureVariants, db.lureModels, db.lureSeries, db.lureManufacturers, ...tackleTables, db.fishSpecies]
+type CatchInput = Omit<CatchRecord, 'id' | 'lureId' | 'lureVariantId' | 'lureName' | 'lureColor' | 'tackleSnapshot' | 'facilityId' | 'zoneId' | 'locationSnapshot'> & { location?: CatchLocationSelection }
+const tables = [db.trips, db.catches, db.myLures, db.lureVariants, db.lureModels, db.lureSeries, db.lureManufacturers, ...tackleTables, db.fishSpecies, db.facilities, db.zones]
 
 function requireId(id: number) {
   if (!Number.isSafeInteger(id) || id <= 0) throw new Error('ルアーIDを確認してください。')
@@ -46,6 +47,7 @@ async function writeCatch(input: CatchInput, selection: LureSelection, previousF
   if (input.fishSizeCm !== undefined && (!Number.isFinite(input.fishSizeCm) || input.fishSizeCm <= 0)) throw new Error('全長は0より大きい数値（cm）を入力してください。')
   const trip = await db.trips.get(input.tripId)
   if (!trip || trip.endedAt) throw new Error('釣行が存在しないか、終了しています。')
+  const place = await resolveCatchLocation(trip, input.location)
   if (!(input.caughtAt instanceof Date) || !Number.isFinite(input.caughtAt.getTime())) throw new Error('釣果日時が不正です。')
   if (input.tackleSetId !== undefined && !(trip.tackleSetIds ?? []).includes(input.tackleSetId)) {
     throw new Error('このセットは釣行の持参予定にありません。持参セットを変更するか、未指定で保存してください。')
@@ -81,9 +83,13 @@ async function writeCatch(input: CatchInput, selection: LureSelection, previousF
   delete record.lureName
   delete record.lureColor
   delete record.tackleSnapshot
+  delete (record as CatchRecord & { location?: CatchLocationSelection }).location
+  delete record.facilityId
+  delete record.zoneId
+  delete record.locationSnapshot
   delete record.fishSpeciesGroup
   if (input.fishSpeciesId !== undefined) delete record.fishSpecies
-  const complete = { ...record, ...fish, ...lure, ...(tackleSnapshot ? { tackleSnapshot } : {}) }
+  const complete = { ...record, ...fish, ...lure, ...place, ...(tackleSnapshot ? { tackleSnapshot } : {}) }
   validateFishCatch(complete as unknown as Record<string, unknown>)
   const id = await db.catches.add(complete)
   if (id === undefined) throw new Error('釣果の登録に失敗しました。')
@@ -92,11 +98,11 @@ async function writeCatch(input: CatchInput, selection: LureSelection, previousF
 
 /** 選択・キャンセル中には呼ばない。所有検索・追加と釣果追加を一括コミットする。 */
 export async function registerCatch(input: CatchInput, selection: LureSelection): Promise<number> {
-  return db.transaction('rw', tables, () => writeCatch(input, selection))
+  return db.transaction('rw', tables, async () => writeCatch(input, selection))
 }
 
 /** 同じ釣行の最新保存済み釣果だけを再利用し、未確認IDは拒否する。 */
-export async function registerSameAsPrevious(tripId: number, caughtAt: Date): Promise<number> {
+export async function registerSameAsPrevious(tripId: number, caughtAt: Date, location?: CatchLocationSelection): Promise<number> {
   return db.transaction('rw', tables, async () => {
     const previous = (await db.catches.where('tripId').equals(tripId).sortBy('caughtAt')).at(-1)
     if (!previous) throw new Error('前回の釣果がありません。')
@@ -104,7 +110,7 @@ export async function registerSameAsPrevious(tripId: number, caughtAt: Date): Pr
       ? { kind: 'owned', myLureId: previous.lureId }
       : { kind: 'manual', lureName: previous.lureName ?? '', lureColor: previous.lureColor ?? '' }
     // 第4弾以前の意味が確認できないIDだけの記録は自動コピーしない。
-    return writeCatch({ tripId, caughtAt, tackleSetId: previous.tackleSnapshot ? previous.tackleSetId : undefined,
+    return writeCatch({ tripId, caughtAt, location, tackleSetId: previous.tackleSnapshot ? previous.tackleSetId : undefined,
       rangeLevel: previous.rangeLevel, retrieveSpeed: previous.retrieveSpeed,
       action: previous.action, fishSpecies: previous.fishSpecies, fishSpeciesId: previous.fishSpeciesId }, selection, previous)
   })

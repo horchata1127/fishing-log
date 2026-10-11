@@ -7,18 +7,20 @@ import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import ts from 'typescript'
 import * as Vue from 'vue'
+import { renderToString } from 'vue/server-renderer'
 import { parse, compileScript, compileTemplate } from '@vue/compiler-sfc'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-catch-test-'))
-const paths = Object.fromEntries(['facilityMaster', 'facilityStorage', 'database', 'catchRegistration', 'tackleManagement', 'fishSpecies', 'fishMaster', 'fishPicker', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
+const paths = Object.fromEntries(['tripLocations', 'facilityMaster', 'facilityStorage', 'database', 'catchRegistration', 'tackleManagement', 'fishSpecies', 'fishMaster', 'fishPicker', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
 const compile = source => ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
 }).outputText
-for (const [name, source] of [['facilityMaster', 'utils/facilityMaster.ts'], ['facilityStorage', 'utils/facilityStorage.ts'], ['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
+for (const [name, source] of [['tripLocations', 'utils/tripLocations.ts'], ['facilityMaster', 'utils/facilityMaster.ts'], ['facilityStorage', 'utils/facilityStorage.ts'], ['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
   const code = compile(await readFile(new URL(`../src/${source}`, import.meta.url), 'utf8'))
     .replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
     .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
     .replace("'./facilityMaster'", JSON.stringify(pathToFileURL(paths.facilityMaster).href))
+    .replace("'./tripLocations'", JSON.stringify(pathToFileURL(paths.tripLocations).href))
     .replace("'./facilityStorage'", JSON.stringify(pathToFileURL(paths.facilityStorage).href))
     .replace("'./tackleManagement'", JSON.stringify(pathToFileURL(paths.tackleManagement).href))
     .replace("'./fishSpecies'", JSON.stringify(pathToFileURL(paths.fishSpecies).href))
@@ -273,6 +275,16 @@ function setupModal(choices, onEmit) {
   return { props, state, events }
 }
 
+// Render inside an actual Vue instance so named slots have their runtime context.
+async function renderModal(props, state) {
+  let vnode
+  await renderToString(Vue.createSSRApp({ render() {
+    vnode = render(this, [], props, Vue.proxyRefs(state), {}, {})
+    return vnode
+  } }))
+  return vnode
+}
+
 function findCancel(vnode) {
   if (!vnode || typeof vnode !== 'object') return undefined
   if (vnode.type === 'button' && vnode.props?.class === 'cancel-button') return vnode
@@ -290,7 +302,7 @@ test('UI catalog selection then cancel performs no writes and no auto-registrati
   state.openLurePicker()
   state.selectMyLure(props.catalog[0])
   assert.equal(props.selection.kind, 'catalog')
-  const vnode = render({}, [], props, Vue.proxyRefs(state), {}, {})
+  const vnode = await renderModal(props, state)
   const cancel = findCancel(vnode)
   assert.ok(cancel)
   cancel.props.onClick()
@@ -323,10 +335,10 @@ test('UI tackle selection and cancel emits state only, without ownership or catc
   const before = await snapshot()
   const { props, state, events } = setupModal(await loadLureChoices())
   props.tackleSets = [{ id: 90, name: '持参セット', rodId: 1, reelId: 2, active: true }]
-  let vnode = render({}, [], props, Vue.proxyRefs(state), {}, {})
+  let vnode = await renderModal(props, state)
   findTackleSelect(vnode).props.onChange({ target: { value: '90' } })
   assert.equal(props.tackleSetId, 90)
-  vnode = render({}, [], props, Vue.proxyRefs(state), {}, {})
+  vnode = await renderModal(props, state)
   assert.equal(findTackleSelect(vnode).props.value, 90)
   findCancel(vnode).props.onClick()
   assert.equal(events.at(-1)[0], 'cancel')
@@ -337,7 +349,7 @@ test('UI supports explicitly clearing a preceding tackle suggestion', async () =
   const { props, state, events } = setupModal(await loadLureChoices())
   props.tackleSets = [{ id: 90, name: '持参セット', rodId: 1, reelId: 2, active: true }]
   props.tackleSetId = 90
-  const vnode = render({}, [], props, Vue.proxyRefs(state), {}, {})
+  const vnode = await renderModal(props, state)
   findTackleSelect(vnode).props.onChange({ target: { value: '' } })
   assert.equal(props.tackleSetId, undefined)
   assert.deepEqual(events.at(-1), ['update:tackleSetId', undefined])

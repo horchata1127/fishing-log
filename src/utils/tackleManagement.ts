@@ -1,5 +1,6 @@
 import { db, tackleTableNames, validateTackleRecord,
   type CatchRecord, type FishingTrip, type TackleSet, type TackleSnapshot, type TackleTable } from '../db/database'
+import { validateNewTripLocation } from './tripLocations'
 
 export const tackleTables = tackleTableNames.map(name => db.table(name))
 
@@ -100,7 +101,8 @@ export async function snapshotTackle(setId: number): Promise<TackleSnapshot> {
 }
 
 export async function createTrip(trip: FishingTrip): Promise<number> {
-  return db.transaction('rw', [db.trips, ...tackleTables], async () => {
+  return db.transaction('rw', [db.trips, ...tackleTables, db.facilities, db.zones], async () => {
+    await validateNewTripLocation(trip)
     await validateTripSets(trip.tackleSetIds ?? [])
     const id = await db.trips.add(trip)
     if (id === undefined) throw new Error('釣行を保存できませんでした。')
