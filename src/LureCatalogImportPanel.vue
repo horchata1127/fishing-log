@@ -8,6 +8,8 @@ const message = ref('')
 const fileInput = ref<HTMLInputElement | null>(null)
 const pendingSeed = shallowRef<unknown>(null)
 const preview = shallowRef<CatalogPreview | null>(null)
+// Read-only UI state for deferring application updates during import/preview.
+defineExpose({ busy, preview })
 const tableLabels = {
   lureManufacturers: 'メーカー', lureSeries: 'シリーズ',
   lureModels: 'モデル', lureVariants: 'カラー',
