@@ -1,4 +1,5 @@
-import Dexie, { type EntityTable } from 'dexie'
+import Dexie, { type EntityTable, type Table } from 'dexie'
+import type { FlatOfficialFacility, FlatOfficialZone, UserFacility, UserZone, AppliedMaster } from '../utils/facilityMaster'
 
 export type FishingStyle =
   | 'AREA_TROUT'
@@ -19,6 +20,8 @@ export interface FishingTrip {
   endedAt?: Date
   memo?: string
   tackleSetIds?: number[]
+  facilityId?: string
+  currentZoneId?: string
 }
 
 export type TripEventType = 'stocking' | 'pellet'
@@ -53,6 +56,9 @@ export interface CatchRecord {
   fishSpeciesGroup?: FishGroup
   fishSizeCm?: number
   memo?: string
+  facilityId?: string
+  zoneId?: string
+  locationSnapshot?: { facilityName: string; zoneName?: string }
 }
 
 /*
@@ -278,6 +284,9 @@ export const db = new Dexie('FishingLogDatabase') as Dexie & {
   lines: EntityTable<TackleLine, 'id'>
   tackleSets: EntityTable<TackleSet, 'id'>
   fishSpecies: EntityTable<FishSpecies, 'fish_id'>
+  facilities: Table<FlatOfficialFacility | UserFacility, string>
+  zones: Table<FlatOfficialZone | UserZone, string>
+  appMetadata: EntityTable<AppliedMaster & { key: 'facilityMaster' }, 'key'>
 }
 
 /*
@@ -324,3 +333,25 @@ db.version(5).stores({
 
 // 旧12テーブルを変更しない。既存釣果への魚種補完・起動時シードは行わない。
 db.version(6).stores({ fishSpecies: 'fish_id, group, display_name, origin' })
+
+// Additive only: existing stores, keys and records remain untouched. No seed or migration writes.
+db.version(7).stores({ facilities: 'id, origin, prefecture', zones: 'id, facilityId, origin', appMetadata: 'key' })
+
+export const databaseConnection = { state: 'ready' as 'ready' | 'changed' | 'blocked' }
+const connectionListeners = new Set<(state: typeof databaseConnection.state) => void>()
+export function subscribeDatabaseConnection(listener: (state: typeof databaseConnection.state) => void) {
+  connectionListeners.add(listener)
+  return () => { connectionListeners.delete(listener) }
+}
+function notifyConnection(state: typeof databaseConnection.state) {
+  databaseConnection.state = state
+  for (const listener of connectionListeners) listener(state)
+}
+db.on('versionchange', () => {
+  notifyConnection('changed')
+  // Keep the page and unsaved inputs. A stale connection must not silently reopen.
+  db.close({ disableAutoOpen: true })
+  return false // Stop Dexie's default handler from re-enabling automatic opening.
+})
+db.on('blocked', () => { notifyConnection('blocked') })
+db.on('ready', () => { notifyConnection('ready') }, true)

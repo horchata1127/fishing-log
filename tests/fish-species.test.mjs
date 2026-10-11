@@ -8,14 +8,16 @@ import { pathToFileURL } from 'node:url'
 import ts from 'typescript'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-fish-test-'))
-const names = ['database', 'fishSpecies', 'fishMaster', 'catchRegistration', 'tackleManagement', 'backup', 'legacy']
+const names = ['facilityMaster', 'facilityStorage', 'database', 'fishSpecies', 'fishMaster', 'catchRegistration', 'tackleManagement', 'backup', 'legacy']
 const paths = Object.fromEntries(names.map(name => [name, join(directory, `${name}.mjs`)]))
 const compile = source => ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText
 const databaseSource = await readFile(new URL('../src/db/database.ts', import.meta.url), 'utf8')
-for (const [name, file] of [['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
+for (const [name, file] of [['facilityMaster', 'utils/facilityMaster.ts'], ['facilityStorage', 'utils/facilityStorage.ts'], ['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
   const code = compile(await readFile(new URL(`../src/${file}`, import.meta.url), 'utf8'))
     .replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
     .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
+    .replace("'./facilityMaster'", JSON.stringify(pathToFileURL(paths.facilityMaster).href))
+    .replace("'./facilityStorage'", JSON.stringify(pathToFileURL(paths.facilityStorage).href))
     .replace("'../data/fishMaster'", JSON.stringify(pathToFileURL(paths.fishMaster).href))
     .replace("'./fishSpecies'", JSON.stringify(pathToFileURL(paths.fishSpecies).href))
     .replace("'./tackleManagement'", JSON.stringify(pathToFileURL(paths.tackleManagement).href))
@@ -214,7 +216,7 @@ test('failure writing fish table at end of restore rolls back all 13 tables', as
   assert.equal(await state(), before)
 })
 
-test('v5 to v6 migration preserves all 12 tables and does not invent fish assignments or seed', async () => {
+test('v5 to v7 migration preserves all 12 tables and does not invent fish assignments or seed', async () => {
   await db.delete()
   const { db: legacy } = await import(pathToFileURL(paths.legacy).href)
   await legacy.open()
@@ -227,7 +229,7 @@ test('v5 to v6 migration preserves all 12 tables and does not invent fish assign
   const before = await Promise.all(legacy.tables.map(async table => [table.name, await table.toArray()]))
   legacy.close()
   await db.open()
-  assert.equal(db.verno, 6)
+  assert.equal(db.verno, 7)
   for (const [name, rows] of before) assert.deepEqual(await db.table(name).toArray(), rows)
   assert.equal(await db.fishSpecies.count(), 0)
   assert.equal((await db.catches.get(90)).fishSpeciesId, undefined)

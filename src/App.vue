@@ -2,7 +2,7 @@
 import LureCatalogImportPanel from './LureCatalogImportPanel.vue'
 import OfflineStatus from './components/OfflineStatus.vue'
 import { offline } from './pwa'
-import { onMounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 import CatchModal from './components/CatchModal.vue'
 import FishingScreen from './components/FishingScreen.vue'
 import MyLuresScreen from './components/MyLuresScreen.vue'
@@ -18,6 +18,8 @@ import { loadLureChoices, registerCatch, registerSameAsPrevious,
   type LureOption, type LureSelection, type RecentLure } from './utils/catchRegistration'
 import {
   db,
+  databaseConnection,
+  subscribeDatabaseConnection,
   type CatchRecord,
   type FishingStyle,
   type FishingTrip,
@@ -28,6 +30,9 @@ import {
 } from './db/database'
 
 type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures' | 'tackles' | 'fish-species'
+const connectionState = ref(databaseConnection.state)
+const unsubscribeConnection = subscribeDatabaseConnection(state => { connectionState.value = state })
+onUnmounted(unsubscribeConnection)
 const catalogPanel = ref<{ busy: boolean; preview: unknown } | null>(null)
 const backingUp = ref(false)
 const fishChoices = ref<FishSpecies[]>([])
@@ -130,7 +135,7 @@ async function restoreData(event: Event) {
   }
 
   const ok = confirm(
-    'バックアップから復元すると、現在のデータはすべて置き換わるで。\nほんまに復元する？'
+    'バックアップから復元すると、現在の釣行・釣果・ルアー・魚種・タックルなどの記録は置き換わるで。\n端末に追加した施設・エリアは残して、バックアップに含まれる施設・エリアを追加するで。\n同じ施設・エリアIDで内容が違う場合は、何も変更せず復元を中止するで。公式マスターは古い状態には戻さへん。\nほんまに復元する？'
   )
 
   if (!ok) {
@@ -565,6 +570,8 @@ onMounted(async () => {
   <p v-if="restoringData" role="status">バックアップを復元しています…</p>
   <main class="app" :inert="restoringData || offline.updating" :aria-busy="restoringData || offline.updating">
     <OfflineStatus :safe="screen === 'home' && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
+    <p v-if="connectionState === 'changed'" role="alert">別の画面でデータベースが更新されたため、この画面からは保存できません。入力中の内容をメモしてから、この画面を手動で再読み込みしてください。</p>
+    <p v-else-if="connectionState === 'blocked'" role="alert">別のFishing Log画面がデータベースの更新を待たせています。その画面の入力を保存して閉じてください。自動で再読み込みはしません。</p>
     <!-- ホーム -->
     <template v-if="screen === 'home'">
       <p v-if="tripDeletionNotice" role="status">{{ tripDeletionNotice }}</p>

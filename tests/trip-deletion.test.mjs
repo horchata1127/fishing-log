@@ -8,14 +8,14 @@ import { pathToFileURL } from 'node:url'
 import ts from 'typescript'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-trip-delete-test-'))
-const sources = { database: 'db/database.ts', tripDeletion: 'utils/tripDeletion.ts', backup: 'utils/backup.ts',
+const sources = { facilityMaster: 'utils/facilityMaster.ts', facilityStorage: 'utils/facilityStorage.ts', database: 'db/database.ts', tripDeletion: 'utils/tripDeletion.ts', backup: 'utils/backup.ts',
   tackleManagement: 'utils/tackleManagement.ts', fishSpecies: 'utils/fishSpecies.ts', fishMaster: 'data/fishMaster.ts' }
 const paths = Object.fromEntries(Object.keys(sources).map(name => [name, join(directory, `${name}.mjs`)]))
 for (const [name, source] of Object.entries(sources)) {
   let code = ts.transpileModule(await readFile(new URL(`../src/${source}`, import.meta.url), 'utf8'), {
     compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
   }).outputText.replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
-  for (const [specifier, module] of [['../db/database', 'database'], ['./tackleManagement', 'tackleManagement'],
+  for (const [specifier, module] of [['../db/database', 'database'], ['./facilityMaster', 'facilityMaster'], ['./facilityStorage', 'facilityStorage'], ['./tackleManagement', 'tackleManagement'],
     ['./fishSpecies', 'fishSpecies'], ['../data/fishMaster', 'fishMaster']]) {
     code = code.replace(`'${specifier}'`, JSON.stringify(pathToFileURL(paths[module]).href))
   }
