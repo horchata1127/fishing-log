@@ -719,7 +719,7 @@ onMounted(async () => {
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.18em;
-  color: #73808c;
+  color: var(--text-muted);
 }
 
 h1 {
@@ -778,7 +778,7 @@ h2 {
 }
 
 .trip-row span {
-  color: #69747e;
+  color: var(--text-muted);
   font-size: 13px;
 }
 
@@ -792,7 +792,7 @@ h2 {
 }
 
 .empty {
-  color: #7b8792;
+  color: var(--text-muted);
 }
 
 .form-card label {
@@ -807,7 +807,7 @@ h2 {
 .form-card label>span {
   display: block;
   margin-bottom: 7px;
-  color: #69747e;
+  color: var(--text-muted);
   font-size: 13px;
   font-weight: 700;
 }

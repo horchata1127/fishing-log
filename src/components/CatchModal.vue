@@ -408,7 +408,7 @@ function selectRecent(recent: RecentLure) {
 
 .app-name {
   margin: 0;
-  color: #73808c;
+  color: var(--text-muted);
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.18em;
@@ -429,7 +429,7 @@ h2 {
 }
 
 .caught-time span {
-  color: #69747e;
+  color: var(--text-muted);
 }
 
 .same-button {
@@ -453,7 +453,7 @@ h2 {
 .catch-field > span {
   display: block;
   margin-bottom: 7px;
-  color: #69747e;
+  color: var(--text-muted);
   font-size: 13px;
   font-weight: 700;
 }
@@ -496,7 +496,7 @@ h2 {
 
 .selected-lure small {
   margin-top: 4px;
-  color: #7b8792;
+  color: var(--text-muted);
 }
 
 .change-lure-button {
@@ -516,7 +516,7 @@ h2 {
   padding: 5px 8px;
   border: 0;
   background: transparent;
-  color: #69747e;
+  color: var(--text-muted);
   font-size: 12px;
   cursor: pointer;
 }
@@ -589,7 +589,7 @@ select {
   padding: 12px;
   border: 0;
   background: transparent;
-  color: #69747e;
+  color: var(--text-muted);
   cursor: pointer;
 }
 
@@ -680,7 +680,7 @@ select {
 .picker-lure-button small {
   display: block;
   margin-top: 4px;
-  color: #7b8792;
+  color: var(--text-muted);
 }
 
 .picker-manual-button {
@@ -696,7 +696,7 @@ select {
 }
 
 .no-lures {
-  color: #7b8792;
+  color: var(--text-muted);
   font-size: 13px;
 }
 

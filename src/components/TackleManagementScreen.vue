@@ -154,6 +154,6 @@ input, select, textarea { box-sizing:border-box; width:100%; min-width:0; paddin
 .check { display:flex; align-items:center; gap:8px; }
 .check input { width:auto; }
 article { border-top:1px solid #e4e8ec; padding:14px 0; overflow-wrap:anywhere; }
-article > span { display:block; font-size:12px; color:#69747e; }
-.hint { font-size:13px; color:#69747e; }
+article > span { display:block; font-size:12px; color:var(--text-muted); }
+.hint { font-size:13px; color:var(--text-muted); }
 </style>

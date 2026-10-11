@@ -32,5 +32,5 @@ fieldset { min-width:0; padding:12px; margin:16px 0; border:1px solid #d9dee3; b
 .filters { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:8px; }
 label { display:block; font-size:13px; margin:8px 0; }
 input, select { display:block; width:100%; min-width:0; box-sizing:border-box; padding:12px; border:1px solid #d9dee3; border-radius:8px; background:white; color:#17212b; font:inherit; font-size:16px; }
-p, small { font-size:12px; color:#69747e; overflow-wrap:anywhere; }
+p, small { font-size:12px; color:var(--text-muted); overflow-wrap:anywhere; }
 </style>

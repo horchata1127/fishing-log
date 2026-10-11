@@ -70,5 +70,5 @@ input, select, textarea { display:block; width:100%; min-width:0; box-sizing:bor
 .check { display:flex; align-items:center; gap:8px; }.check input { width:auto; }
 button { min-height:44px; margin:4px; padding:10px; border:1px solid #cad5d0; border-radius:10px; background:#eef7f3; color:#13795b; cursor:pointer; }
 article { padding:14px 0; border-top:1px solid #e4e8ec; overflow-wrap:anywhere; }
-.hint, article p { font-size:13px; color:#69747e; }
+.hint, article p { font-size:13px; color:var(--text-muted); }
 </style>
