@@ -6,7 +6,7 @@ import { join } from 'node:path'
 const origin = 'http://127.0.0.1:4188'
 const url = `${origin}/fishing-log/`
 const names = ['trips', 'catches', 'tripEvents', 'lureManufacturers', 'lureSeries', 'lureModels', 'lureVariants', 'myLures', 'rods', 'reels', 'lines', 'tackleSets', 'fishSpecies']
-async function database(page: Page, seed = false) {
+async function database(page: Page, seed = false, includeLocations = false) {
   return page.evaluate(async ({ names, seed }) => {
     if (location.origin !== 'http://127.0.0.1:4188') throw new Error('Only isolated offline test origin permitted')
     const db = await new Promise<IDBDatabase>((resolve, reject) => {
@@ -36,7 +36,7 @@ async function database(page: Page, seed = false) {
         tx.oncomplete = () => resolve(JSON.parse(JSON.stringify(rows))); tx.onabort = () => reject(tx.error); tx.onerror = () => reject(tx.error)
       })
     } finally { db.close() }
-  }, { names, seed })
+  }, { names: includeLocations ? [...names, 'facilities', 'zones', 'appMetadata'] : names, seed })
 }
 async function ready(page: Page) {
   await expect(page.getByText('準備を完了するにはホームで再読み込みしてください。', { exact: true })).toBeVisible()
@@ -44,6 +44,63 @@ async function ready(page: Page) {
   await expect(page.getByText('圏外利用の準備完了', { exact: true })).toBeVisible()
   expect(await page.evaluate(() => navigator.serviceWorker.controller?.scriptURL)).toBe(`${url}sw.js`)
 }
+
+test('offline user facility/zone additions, catch snapshots and v6 backup survive full profile restart', async ({}, info) => {
+  await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
+  const profile = await mkdtemp(join(tmpdir(), 'fishing-location-offline-')), mobile = info.project.name.includes('mobile')
+  const launch = (offline = false) => chromium.launchPersistentContext(profile, {
+    serviceWorkers: 'allow', offline, viewport: mobile ? { width: 390, height: 844 } : { width: 1280, height: 800 },
+    isMobile: mobile, hasTouch: mobile, locale: 'ja-JP', timezoneId: 'Asia/Tokyo',
+  })
+  let context = await launch()
+  try {
+    let page = context.pages()[0]!
+    await page.goto(url); await ready(page)
+    await database(page, true)
+    const original = await database(page)
+    await context.close(); context = await launch(true); page = context.pages()[0]!
+    await page.goto(url)
+    expect(await database(page)).toEqual(original)
+    await page.getByRole('button', { name: '新しい釣行を開始' }).click()
+    await page.getByRole('button', { name: '施設を追加', exact: true }).click()
+    await page.getByLabel('追加する施設名', { exact: true }).fill('圏外の架空施設')
+    await page.getByRole('button', { name: '登録して選択', exact: true }).click()
+    await expect(page.getByLabel('追加する施設名', { exact: true })).not.toBeVisible()
+    await page.getByRole('button', { name: 'この施設にエリアを追加', exact: true }).click()
+    await page.getByLabel('追加するエリア名', { exact: true }).fill('圏外の架空下池')
+    await page.getByRole('button', { name: '登録して選択', exact: true }).click()
+    await expect(page.getByLabel('追加するエリア名', { exact: true })).not.toBeVisible()
+    await page.getByRole('button', { name: '🎣 釣行開始', exact: true }).click()
+    await page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
+    const modal = page.getByRole('dialog', { name: '釣果を登録', exact: true })
+    await modal.getByRole('button', { name: 'ルアーを選ぶ' }).click()
+    await page.getByRole('dialog', { name: 'ルアーを選択', exact: true }).getByRole('button', { name: /E2Eスプーン 赤/ }).click()
+    await modal.getByRole('button', { name: '保存する', exact: true }).click()
+    await expect(modal).not.toBeVisible()
+    const saved = await database(page, false, true)
+    expect(saved.facilities).toHaveLength(1); expect(saved.zones).toHaveLength(1)
+    expect(saved.trips).toHaveLength(2); expect(saved.catches).toHaveLength(1)
+    expect(saved.catches![0].locationSnapshot).toEqual({ facilityName: '圏外の架空施設', zoneName: '圏外の架空下池' })
+    expect(saved.myLures).toEqual(original.myLures); expect(saved.tackleSets).toEqual(original.tackleSets)
+    expect(saved.trips![0]).toEqual(original.trips![0])
+    await context.close(); context = await launch(true); page = context.pages()[0]!
+    await page.goto(url); expect(await database(page, false, true)).toEqual(saved)
+    await page.getByRole('button', { name: /圏外の架空施設/ }).click()
+    await expect(page.getByLabel('現在のエリア', { exact: true })).toHaveValue(saved.zones![0].id)
+    await page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
+    await page.getByRole('dialog', { name: '釣果を登録', exact: true }).getByRole('button', { name: /前回と同じ/ }).click()
+    await expect(page.getByRole('dialog', { name: '釣果を登録', exact: true })).not.toBeVisible()
+    await page.getByRole('button', { name: '← ホーム', exact: true }).click()
+    const complete = await database(page, false, true)
+    expect(complete.catches).toHaveLength(2)
+    expect(complete.catches![1].locationSnapshot).toEqual(saved.catches![0].locationSnapshot)
+    const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: '📦 データをバックアップ', exact: true }).click()])
+    const path = info.outputPath('synthetic-location-backup.json'); await download.saveAs(path)
+    const backup = JSON.parse(await readFile(path, 'utf8'))
+    expect(backup.version).toBe(6); expect(backup.data).toEqual(complete)
+    await page.screenshot({ path: info.outputPath('offline-user-locations.png'), fullPage: true })
+  } finally { await context.close() }
+})
 test('cold persistent profile: offline trip/catch, snapshots, restart, backup and static-only cache', async ({}, info) => {
   await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
   const profile = await mkdtemp(join(tmpdir(), 'fishing-offline-'))
@@ -103,10 +160,15 @@ test('updates: unsaved input, defer, other window veto, explicit update, natural
     const page = await context.newPage(); await page.goto(url); await ready(page)
     await page.getByRole('button', { name: '新しい釣行を開始' }).click()
     await page.getByLabel('釣り場', { exact: true }).fill('未保存の入力')
+    await page.getByRole('button', { name: '施設を追加', exact: true }).click()
+    await page.getByLabel('追加する施設名', { exact: true }).fill('未保存の追加施設')
     await fetch(`${origin}/__test/version?v=B`, { method: 'POST' })
     await page.evaluate(async () => { await (await navigator.serviceWorker.getRegistration())!.update() })
     await expect(page.getByRole('button', { name: '更新して再読み込み' })).toBeDisabled()
     await expect(page.getByLabel('釣り場', { exact: true })).toHaveValue('未保存の入力')
+    await expect(page.getByLabel('追加する施設名', { exact: true })).toHaveValue('未保存の追加施設')
+    await expect(page.getByRole('button', { name: '🎣 釣行開始', exact: true })).toBeDisabled()
+    await page.getByRole('button', { name: '追加をキャンセル', exact: true }).click()
     await page.getByRole('button', { name: '後で', exact: true }).click()
     await page.getByRole('button', { name: '🎣 釣行開始', exact: true }).click()
     await page.getByRole('button', { name: '← ホーム', exact: true }).click()

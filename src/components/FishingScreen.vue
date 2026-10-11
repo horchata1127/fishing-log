@@ -13,6 +13,7 @@ const props = defineProps<{
   trip: FishingTrip
   catches: CatchRecord[]
   events: TripEvent[]
+  locationBusy?: boolean
 }>()
 
 const emit = defineEmits<{
@@ -89,7 +90,7 @@ function fishingStyleName(style: FishingStyle) {
 
 <template>
   <header class="header">
-    <button class="back-button" @click="emit('home')">
+    <button class="back-button" :disabled="locationBusy" @click="emit('home')">
       ← ホーム
     </button>
 
@@ -126,9 +127,10 @@ function fishingStyleName(style: FishingStyle) {
     </div>
   </section>
 
+  <slot name="location" />
   <button
     v-if="!trip.endedAt"
-    class="catch-button"
+    class="catch-button" :disabled="locationBusy"
     @click="emit('addCatch')"
   >
     🎣 釣れた！
@@ -158,7 +160,7 @@ function fishingStyleName(style: FishingStyle) {
 
   <section class="card">
     <h2>現在のセッティング</h2>
-    <button v-if="!trip.endedAt" type="button" class="back-button" @click="emit('editTackles')">持参セットを追加・変更</button>
+    <button v-if="!trip.endedAt" type="button" class="back-button" :disabled="locationBusy" @click="emit('editTackles')">持参セットを追加・変更</button>
 
     <div class="setting">
       <span>ルアー</span>
@@ -212,6 +214,7 @@ function fishingStyleName(style: FishingStyle) {
           {{ catches.length - index }}匹目
         </strong>
         <p>{{ record.fishSpecies || '魚種未設定' }}{{ record.fishSpeciesGroup ? `（${record.fishSpeciesGroup}）` : '' }}{{ record.fishSizeCm !== undefined ? ` / ${record.fishSizeCm}cm` : '' }}</p>
+        <p v-if="record.locationSnapshot">{{ record.locationSnapshot.facilityName }}{{ record.locationSnapshot.zoneName ? ` / ${record.locationSnapshot.zoneName}` : '' }}</p>
 
         <small
           v-if="
@@ -268,7 +271,7 @@ function fishingStyleName(style: FishingStyle) {
 
   <button
     v-if="!trip.endedAt"
-    class="end-button"
+    class="end-button" :disabled="locationBusy"
     @click="emit('endTrip')"
   >
     釣行を終了
