@@ -32,7 +32,7 @@ onMounted(() => run(async () => {}))
   <section class="fish-management">
     <button type="button" :disabled="busy" @click="emit('back')">← 戻る</button>
     <h1>魚種マスター管理</h1>
-    <button type="button" :disabled="busy" @click="initial">初期魚種37件を登録</button>
+    <button type="button" :disabled="busy" @click="initial">初期魚種46件を登録</button>
     <p class="hint">原本の確認状態を保持しています。現在の放流を保証する情報ではありません。非表示でも過去の釣果は保持されます。</p>
     <p v-if="message" role="status">{{ message }}</p>
     <form @submit.prevent="save" class="card" :inert="busy">

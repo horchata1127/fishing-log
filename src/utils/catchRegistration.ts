@@ -43,19 +43,25 @@ async function catalogNames(variantId: number) {
   return { lureVariantId: variantId, lureName: model.name, lureColor: variant.colorName }
 }
 
-async function writeCatch(input: CatchInput, selection: LureSelection, previousFish?: CatchRecord): Promise<number> {
+async function writeCatch(input: CatchInput, selection: LureSelection | undefined, previousFish?: CatchRecord, editing?: CatchRecord): Promise<number> {
   if (input.fishSizeCm !== undefined && (!Number.isFinite(input.fishSizeCm) || input.fishSizeCm <= 0)) throw new Error('全長は0より大きい数値（cm）を入力してください。')
   const trip = await db.trips.get(input.tripId)
-  if (!trip || trip.endedAt) throw new Error('釣行が存在しないか、終了しています。')
-  const place = await resolveCatchLocation(trip, input.location)
+  if (!trip || (!editing && trip.endedAt)) throw new Error('釣行が存在しないか、終了しています。')
+  const place = editing && input.location === undefined ? { facilityId: editing.facilityId, zoneId: editing.zoneId, locationSnapshot: editing.locationSnapshot } : await resolveCatchLocation(trip, input.location)
   if (!(input.caughtAt instanceof Date) || !Number.isFinite(input.caughtAt.getTime())) throw new Error('釣果日時が不正です。')
-  if (input.tackleSetId !== undefined && !(trip.tackleSetIds ?? []).includes(input.tackleSetId)) {
+  if (input.tackleSetId !== undefined && input.tackleSetId !== editing?.tackleSetId && !(trip.tackleSetIds ?? []).includes(input.tackleSetId)) {
     throw new Error('このセットは釣行の持参予定にありません。持参セットを変更するか、未指定で保存してください。')
   }
-  const tackleSnapshot = input.tackleSetId === undefined ? undefined : await snapshotTackle(input.tackleSetId)
-  const fish = input.fishSpeciesId === undefined ? {} : await fishSnapshot(input.fishSpeciesId, previousFish)
+  const tackleSnapshot = editing && input.tackleSetId === editing.tackleSetId ? editing.tackleSnapshot : input.tackleSetId === undefined ? undefined : await snapshotTackle(input.tackleSetId)
+  const fish = editing && input.fishSpeciesId === editing.fishSpeciesId
+    ? { fishSpeciesId: editing.fishSpeciesId, fishSpecies: editing.fishSpecies, fishSpeciesGroup: editing.fishSpeciesGroup }
+    : input.fishSpeciesId === undefined ? {} : await fishSnapshot(input.fishSpeciesId, previousFish)
   let lure: Pick<CatchRecord, 'lureId' | 'lureVariantId' | 'lureName' | 'lureColor'>
-  if (selection.kind === 'manual') {
+  if (!selection && editing) {
+    lure = { lureId: editing.lureId, lureVariantId: editing.lureVariantId, lureName: editing.lureName, lureColor: editing.lureColor }
+  } else if (!selection) {
+    throw new Error('ルアーの選択を確認してください。')
+  } else if (selection.kind === 'manual') {
     lure = { lureName: selection.lureName.trim() || undefined, lureColor: selection.lureColor.trim() || undefined }
   } else if (selection.kind === 'owned') {
     requireId(selection.myLureId)
@@ -91,6 +97,13 @@ async function writeCatch(input: CatchInput, selection: LureSelection, previousF
   if (input.fishSpeciesId !== undefined) delete record.fishSpecies
   const complete = { ...record, ...fish, ...lure, ...place, ...(tackleSnapshot ? { tackleSnapshot } : {}) }
   validateFishCatch(complete as unknown as Record<string, unknown>)
+  if (editing) {
+    const patch = { ...complete, lureId: lure.lureId, lureVariantId: lure.lureVariantId,
+      fishSpeciesId: input.fishSpeciesId, fishSpecies: fish.fishSpecies, fishSpeciesGroup: fish.fishSpeciesGroup,
+      tackleSnapshot, facilityId: place.facilityId, zoneId: place.zoneId, locationSnapshot: place.locationSnapshot }
+    await db.catches.update(editing.id!, patch)
+    return editing.id!
+  }
   const id = await db.catches.add(complete)
   if (id === undefined) throw new Error('釣果の登録に失敗しました。')
   return id
@@ -158,5 +171,15 @@ export async function loadLureChoices() {
           : { kind: 'manual', lureName: record.lureName ?? '', lureColor: record.lureColor ?? '' } })
     }
     return { catalog, owned, recent }
+  })
+}
+
+/** 編集では既存IDと親釣行を固定する。省略したルアー選択は履歴を保持する。 */
+export async function updateCatch(catchId: number, input: CatchInput, selection?: LureSelection): Promise<number> {
+  return db.transaction('rw', tables, async () => {
+    const existing = await db.catches.get(catchId)
+    if (!existing || existing.tripId !== input.tripId) throw new Error('編集対象または釣行IDが不正です。')
+    // 未変更のルアー参照とスナップショットは保持する。
+    return writeCatch(input, selection, undefined, existing)
   })
 }

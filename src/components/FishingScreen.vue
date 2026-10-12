@@ -19,6 +19,7 @@ const props = defineProps<{
 const emit = defineEmits<{
   home: []
   addCatch: []
+  editCatch: [record: CatchRecord]
   endTrip: []
   recordEvent: [type: TripEventType]
   updateEvent: [event: TripEvent, dateTime: string]
@@ -209,12 +210,14 @@ function fishingStyleName(style: FishingStyle) {
       :key="record.id"
       class="catch-row"
     >
+      <button type="button" class="edit-catch" :disabled="locationBusy" @click="emit('editCatch', record)">編集</button>
       <div>
         <strong>
           {{ catches.length - index }}匹目
         </strong>
         <p>{{ record.fishSpecies || '魚種未設定' }}{{ record.fishSpeciesGroup ? `（${record.fishSpeciesGroup}）` : '' }}{{ record.fishSizeCm !== undefined ? ` / ${record.fishSizeCm}cm` : '' }}</p>
         <p v-if="record.locationSnapshot">{{ record.locationSnapshot.facilityName }}{{ record.locationSnapshot.zoneName ? ` / ${record.locationSnapshot.zoneName}` : '' }}</p>
+        <p v-if="record.memo">{{ record.memo }}</p>
 
         <small
           v-if="
@@ -460,4 +463,8 @@ function fishingStyleName(style: FishingStyle) {
 .event-editor input { min-width:190px; flex:1; padding:8px; border:1px solid #d9dee3; border-radius:8px; }
 .event-editor button { padding:8px; border:1px solid #d9dee3; border-radius:8px; background:white; color:#13795b; }
 @media(max-width:360px) { .event-buttons { grid-template-columns:1fr; } }
+</style>
+
+<style scoped>
+.edit-catch { min-width:44px; min-height:44px; border:1px solid #13795b; border-radius:10px; background:white; color:#13795b; }
 </style>

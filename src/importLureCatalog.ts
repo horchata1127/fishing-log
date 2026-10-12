@@ -1,5 +1,41 @@
 import { db } from './db/database'
 
+/** ユーザー確認済みのRC19対象2色だけを不足分追加する。自動実行しない。 */
+export async function registerRc19HuntGrande() {
+  return db.transaction('rw', [db.lureManufacturers, db.lureSeries, db.lureModels, db.lureVariants], async () => {
+    let added = 0
+    function choose<T>(rows: T[]): T | undefined {
+      if (rows.length > 1) throw new Error('同じ対象の候補が複数あります。カタログを確認してください。')
+      return rows[0]
+    }
+    const key = (value: string) => value.normalize('NFKC').replace(/[\s・（）()_-]/g, '').toLowerCase()
+    const manufacturer = choose((await db.lureManufacturers.toArray()).filter(row => ['ニュードロワー', 'newdrawer'].includes(key(row.name))))
+    const manufacturerId = manufacturer?.id ?? await db.lureManufacturers.add({ name: 'ニュードロワー' })
+    if (!manufacturer) added++
+    const series = choose((await db.lureSeries.where('manufacturerId').equals(manufacturerId!).toArray())
+      .filter(row => ['huntgrande', 'ハントグランデ'].includes(key(row.name))))
+    const seriesId = series?.id ?? await db.lureSeries.add({ manufacturerId: manufacturerId!, name: 'HUNT GRANDE' })
+    if (!series) added++
+    const model = choose((await db.lureModels.where('seriesId').equals(seriesId!).toArray())
+      .filter(row => ['huntgrande1.3g', 'ハントグランデ1.3g'].includes(key(row.name))))
+    const modelId = model?.id ?? await db.lureModels.add({ seriesId: seriesId!, name: 'HUNT GRANDE 1.3g', weightG: 1.3, category: 'スプーン' })
+    if (!model) added++
+    const variants = await db.lureVariants.where('modelId').equals(modelId!).toArray()
+    for (const color of [
+      { code: 'T-15', name: 'T-15 シルバー（SILVER）', aliases: ['シルバー', 'silver'] },
+      { code: 'T-18', name: 'T-18 黄茶次郎（KICYAJIRO）', aliases: ['黄茶次郎', 'kicyajiro'] },
+    ]) {
+      const codePattern = new RegExp(`^T[-\\s]*${color.code.slice(2)}(?:$|[^0-9])`, 'i')
+      const existing = choose(variants.filter(row => codePattern.test(row.colorName.normalize('NFKC').trim()) || color.aliases.includes(key(row.colorName))))
+      if (!existing) {
+        await db.lureVariants.add({ modelId: modelId!, colorName: color.name })
+        added++
+      }
+    }
+    return added
+  })
+}
+
 export const catalogTables = ['lureManufacturers', 'lureSeries', 'lureModels', 'lureVariants'] as const
 type CatalogTable = typeof catalogTables[number]
 type Row = { id: number; [field: string]: unknown }

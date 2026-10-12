@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, shallowRef } from 'vue'
 import { exportBackup } from './utils/backup'
-import { catalogTables, importLureCatalog, previewLureCatalog, type CatalogPreview } from './importLureCatalog'
+import { catalogTables, importLureCatalog, previewLureCatalog, registerRc19HuntGrande, type CatalogPreview } from './importLureCatalog'
 
 const busy = ref(false)
 const message = ref('')
@@ -18,6 +18,15 @@ const tableLabels = {
 function cancelPreview() {
   pendingSeed.value = null
   preview.value = null
+}
+
+async function addRc19() {
+  if (busy.value || preview.value) return
+  busy.value = true
+  try {
+    message.value = `RC19対象カタログ: ${await registerRc19HuntGrande()}件追加しました。`
+  } catch (error) { message.value = `RC19追加失敗: ${String(error)}` }
+  finally { busy.value = false }
 }
 
 async function backup() {
@@ -71,6 +80,8 @@ async function applyCatalog() {
     <p>先にバックアップを保存・確認してから、RC18の専用JSONを読み込んでな。</p>
     <button type="button" :disabled="busy" @click="backup">① 全データをバックアップ</button>
     <button type="button" :disabled="busy" @click="fileInput?.click()">② カタログJSONを事前確認</button>
+    <p>RC19確認済み：HUNT GRANDE 1.3g / T-15 シルバー・T-18 黄茶次郎</p>
+    <button type="button" :disabled="busy || !!preview" @click="addRc19">RC19のHUNT GRANDE 1.3g・2色を追加</button>
     <input ref="fileInput" type="file" accept=".json,application/json" hidden @change="importFile" />
     <p v-if="message" role="status">{{ message }}</p>
     <p class="note">所有ルアーは追加・変更されません。釣行・釣果も変更しません。</p>

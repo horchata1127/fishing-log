@@ -18,20 +18,20 @@ async function chooseFish(page: Page, name: string, id: string, size?: string) {
 async function prepareFishHistory(page: Page) {
   await restoreViaUI(page, catalogFixture()) // 旧v4から開始、魚種を旧釣果へ割り当てない。
   await page.getByRole('button', { name: '魚種マスター管理', exact: true }).click()
-  await page.getByRole('button', { name: '初期魚種37件を登録', exact: true }).click()
-  await expect(page.getByRole('heading', { name: '魚種一覧（37件）', exact: true })).toBeVisible()
+  await page.getByRole('button', { name: '初期魚種46件を登録', exact: true }).click()
+  await expect(page.getByRole('heading', { name: '魚種一覧（46件）', exact: true })).toBeVisible()
   let data = await readState(page)
   expect(data.fishSpecies.filter(row => row.group === 'ニジマス')).toHaveLength(1)
   expect(data.fishSpecies.filter(row => row.group === 'イロモノ')).toHaveLength(15)
   expect(data.fishSpecies.filter(row => row.group === 'ブランドマス')).toHaveLength(21)
   expect(data.fishSpecies.some(row => row.fish_id === 'F017')).toBe(false)
-  await page.getByRole('button', { name: '初期魚種37件を登録', exact: true }).click()
+  await page.getByRole('button', { name: '初期魚種46件を登録', exact: true }).click()
   await expect(page.getByRole('status')).toContainText('0件追加')
   expect(await readState(page)).toEqual(data)
   await page.getByLabel('表示名（必須）', { exact: true }).fill('E2E独自ブランド')
   await page.getByLabel('地域', { exact: true }).fill('合成県')
   await page.getByRole('button', { name: '保存', exact: true }).click()
-  await expect(page.getByRole('heading', { name: '魚種一覧（38件）', exact: true })).toBeVisible()
+  await expect(page.getByRole('heading', { name: '魚種一覧（47件）', exact: true })).toBeVisible()
   data = await readState(page)
   const userId = data.fishSpecies.find(row => row.display_name === 'E2E独自ブランド')!.fish_id
   expect(userId).toMatch(/^user:/)
@@ -72,7 +72,7 @@ async function prepareFishHistory(page: Page) {
   await page.getByRole('button', { name: '保存', exact: true }).click()
   await expect(page.getByRole('status')).toContainText('魚種を保存しました')
   expect((await readState(page)).catches).toEqual(beforeEdit)
-  await page.getByRole('button', { name: '初期魚種37件を登録', exact: true }).click()
+  await page.getByRole('button', { name: '初期魚種46件を登録', exact: true }).click()
   await expect(page.getByRole('status')).toContainText('0件追加')
   expect((await readState(page)).fishSpecies.find(row => row.fish_id === userId)!.display_name).toBe('E2E独自ブランド改名')
   await page.getByRole('button', { name: '← 戻る', exact: true }).click()
@@ -86,7 +86,7 @@ async function prepareFishHistory(page: Page) {
   return await readState(page)
 }
 
-test('E: 初期37種・ニジマス初期選択・ハコスチ/イワナ/独自ブランド・前回魚種とサイズ非継承・履歴不変', async ({ page }) => {
+test('E: 初期46種・ニジマス初期選択・ハコスチ/イワナ/独自ブランド・前回魚種とサイズ非継承・履歴不変', async ({ page }) => {
   await prepareFishHistory(page)
   await open(page)
   await modal(page).getByRole('combobox', { name: '魚種を選択', exact: true }).selectOption('')

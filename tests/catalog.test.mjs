@@ -19,7 +19,7 @@ await writeFile(databaseFile, compile(await readFile(new URL('../src/db/database
 await writeFile(catalogFile, compile(await readFile(new URL('../src/importLureCatalog.ts', import.meta.url), 'utf8'))
   .replace("'./db/database'", JSON.stringify(pathToFileURL(databaseFile).href)))
 const { db } = await import(pathToFileURL(databaseFile).href)
-const { catalogTables, previewLureCatalog, importLureCatalog } = await import(pathToFileURL(catalogFile).href)
+const { registerRc19HuntGrande, catalogTables, previewLureCatalog, importLureCatalog } = await import(pathToFileURL(catalogFile).href)
 
 after(async () => {
   db.close()
@@ -245,4 +245,34 @@ test('latest reference JSON is previewed only: 304 models, 1886 separate colors 
   assert.equal(checked.collisions.length, 1)
   assert.equal(checked.ignoredOwnership, false)
   assert.equal(await snapshot(), before)
+})
+
+test('RC19 adds the confirmed model/colors only, reuses manufacturer ID and is idempotent', async () => {
+  await db.lureManufacturers.add({ id: 800, name: 'New Drawer' })
+  const catches = await db.catches.toArray(), owned = await db.myLures.toArray()
+  assert.equal(await registerRc19HuntGrande(), 4)
+  assert.equal(await registerRc19HuntGrande(), 0)
+  const series = (await db.lureSeries.where('manufacturerId').equals(800).toArray())[0]
+  assert.equal(series.name, 'HUNT GRANDE')
+  const model = (await db.lureModels.where('seriesId').equals(series.id).toArray())[0]
+  assert.equal(model.name, 'HUNT GRANDE 1.3g')
+  const colors = await db.lureVariants.where('modelId').equals(model.id).toArray()
+  assert.equal(colors.length, 2)
+  assert.ok(colors.some(c => c.colorName.startsWith('T-15 ')))
+  assert.ok(colors.some(c => c.colorName.startsWith('T-18 ')))
+  assert.deepEqual(await db.catches.toArray(), catches)
+  assert.deepEqual(await db.myLures.toArray(), owned)
+})
+
+test('RC19 respects existing color IDs and rolls back on ambiguous candidates', async () => {
+  await registerRc19HuntGrande()
+  const model = (await db.lureModels.toArray()).find(m => m.name === 'HUNT GRANDE 1.3g')
+  const variants = await db.lureVariants.where('modelId').equals(model.id).toArray()
+  await db.lureVariants.update(variants[0].id, { colorName: 'Silver' })
+  assert.equal(await registerRc19HuntGrande(), 0)
+  assert.equal((await db.lureVariants.get(variants[0].id)).colorName, 'Silver')
+  await db.lureVariants.add({ modelId: model.id, colorName: 'T-15 duplicate' })
+  const before = await db.lureVariants.toArray()
+  await assert.rejects(registerRc19HuntGrande())
+  assert.deepEqual(await db.lureVariants.toArray(), before)
 })
