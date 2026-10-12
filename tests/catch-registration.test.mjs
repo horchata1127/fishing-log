@@ -27,8 +27,8 @@ for (const [name, source] of [['tripLocations', 'utils/tripLocations.ts'], ['fac
     .replace("'../data/fishMaster'", JSON.stringify(pathToFileURL(paths.fishMaster).href))
   await writeFile(paths[name], code)
 }
-const { db, ownershipStatus } = await import(pathToFileURL(paths.database).href)
-const { updateCatch, registerCatch, registerSameAsPrevious, loadLureChoices } = await import(pathToFileURL(paths.catchRegistration).href)
+const { db, ownershipStatus, countResults } = await import(pathToFileURL(paths.database).href)
+const { deleteCatch, updateCatch, registerCatch, registerSameAsPrevious, loadLureChoices } = await import(pathToFileURL(paths.catchRegistration).href)
 const { createBackup, importBackup, validateBackup } = await import(pathToFileURL(paths.backup).href)
 const { descriptor } = parse(await readFile(new URL('../src/components/CatchModal.vue', import.meta.url), 'utf8'))
 const script = compileScript(descriptor, { id: 'catch-test' })
@@ -74,6 +74,112 @@ beforeEach(async () => {
 const input = (time = '2026-10-10T01:00:00Z') => ({ tripId: 60, caughtAt: new Date(time), rangeLevel: '表層' })
 const catalog = { kind: 'catalog', variantId: 40 }
 const snapshot = async () => JSON.stringify(await Promise.all(db.tables.map(async table => [table.name, await table.orderBy(table.schema.primKey.name).toArray()])))
+
+test('RC23 legacy records and three lost distances stay separate with reused ownership and backup round-trip', async () => {
+  await db.myLures.update(50, { ownershipStatus: 'owned' })
+  const owned = await db.myLures.toArray()
+  const old = { ...input(), id: 11, lureName: 'Legacy' }
+  await db.catches.add(old)
+  assert.equal(countResults(await db.catches.toArray()).catches, 1)
+  for (const lostDistance of ['offshore', 'near', 'landing']) {
+    await registerCatch({ ...input(), resultType: 'lost', lostDistance }, catalog)
+  }
+  const counts = countResults(await db.catches.toArray())
+  assert.deepEqual(counts, { catches: 1, lost: 3, distances: { offshore: 1, near: 1, landing: 1 } })
+  assert.deepEqual(await db.myLures.toArray(), owned)
+  assert.deepEqual(await db.catches.get(11), old)
+  const before = await snapshot()
+  await importBackup(new File([JSON.stringify(await createBackup())], 'rc23.json'))
+  assert.equal(await snapshot(), before)
+  assert.equal(db.verno, 7)
+})
+
+test('RC23 invalid result/distance and invalid restored record reject without any writes', async () => {
+  const before = await snapshot()
+  for (const bad of [{ resultType: 'unknown' }, { resultType: 'lost' }, { resultType: 'lost', lostDistance: 'other' }, { resultType: 'catch', lostDistance: 'near' }]) {
+    await assert.rejects(registerCatch({ ...input(), ...bad }, catalog))
+    assert.equal(await snapshot(), before)
+  }
+  await registerCatch({ ...input(), resultType: 'lost', lostDistance: 'near' }, catalog)
+  const backup = JSON.parse(JSON.stringify(await createBackup()))
+  backup.data.catches[0].lostDistance = 'invalid'
+  const saved = await snapshot()
+  await assert.rejects(importBackup(new File([JSON.stringify(backup)], 'bad-rc23.json')))
+  assert.equal(await snapshot(), saved)
+})
+
+test('RC23 explicit owned lure, result switches, previous variant and deletion preserve unrelated rows', async () => {
+  await db.myLures.update(50, { ownershipStatus: 'owned' })
+  const owned = await db.myLures.toArray()
+  const id = await registerCatch({ ...input(), resultType: 'lost', lostDistance: 'offshore' }, { kind: 'owned', myLureId: 50 })
+  assert.equal((await db.catches.get(id)).lureId, 50)
+  await updateCatch(id, { ...input(), resultType: 'catch' })
+  assert.equal((await db.catches.get(id)).lostDistance, undefined)
+  assert.equal(countResults(await db.catches.toArray()).catches, 1)
+  await updateCatch(id, { ...input(), resultType: 'lost', lostDistance: 'landing' })
+  assert.equal(countResults(await db.catches.toArray()).lost, 1)
+  await registerCatch({ ...input('2026-10-10T03:00:00Z'), resultType: 'lost', lostDistance: 'near' }, { kind: 'catalog', variantId: 41 })
+  const previousId = await registerSameAsPrevious(60, new Date('2026-10-10T04:00:00Z'), undefined, { resultType: 'lost', lostDistance: 'landing' })
+  assert.equal((await db.catches.get(previousId)).lureVariantId, 41)
+  await assert.rejects(deleteCatch(id, 999))
+  await deleteCatch(id, 60)
+  assert.equal(await db.catches.get(id), undefined)
+  assert.deepEqual((await db.myLures.toArray()).filter(row => row.id <= 52), owned)
+  assert.equal(await db.myLures.count(), owned.length + 1)
+})
+
+test('RC23 failed lost creation/update/delete roll back without modifying history or ownership', async () => {
+  const failure = () => { throw new Error('RC23 injected failure') }
+  for (const hook of ['creating', 'updating', 'deleting']) {
+    const id = await registerCatch({ ...input(), resultType: 'lost', lostDistance: 'near' }, catalog)
+    const before = await snapshot()
+    db.catches.hook(hook, failure)
+    try {
+      await assert.rejects(hook === 'creating' ? registerCatch({ ...input(), resultType: 'lost', lostDistance: 'near' }, catalog)
+        : hook === 'updating' ? updateCatch(id, { ...input(), resultType: 'catch' }) : deleteCatch(id, 60), /RC23 injected/)
+    } finally { db.catches.hook(hook).unsubscribe(failure) }
+    assert.equal(await snapshot(), before)
+  }
+})
+
+test('RC23 concurrent catch and lost catalog saves create one owned individual and keep separate counts', async () => {
+  const legacy = await db.myLures.toArray()
+  const ids = await Promise.all([
+    registerCatch({ ...input(), resultType: 'catch' }, catalog),
+    registerCatch({ ...input(), resultType: 'lost', lostDistance: 'offshore' }, catalog),
+    registerCatch({ ...input(), resultType: 'lost', lostDistance: 'landing' }, catalog),
+  ])
+  const rows = await Promise.all(ids.map(id => db.catches.get(id)))
+  assert.equal(new Set(rows.map(r => r.lureId)).size, 1)
+  assert.ok(rows[0].lureId > 52)
+  assert.equal(await db.myLures.count(), legacy.length + 1)
+  assert.deepEqual((await db.myLures.toArray()).filter(row => row.id <= 52), legacy)
+  const counts = countResults(rows)
+  assert.equal(counts.catches, 1)
+  assert.equal(counts.lost, 2)
+})
+
+test('RC23 lost manual saves never create ownership; catalog editing/deletion retain owned rows', async () => {
+  const legacy = await db.myLures.toArray()
+  const id = await registerCatch({ ...input(), resultType: 'lost', lostDistance: 'near' }, { kind: 'manual', lureName: 'Model', lureColor: 'Color' })
+  assert.deepEqual(await db.myLures.toArray(), legacy)
+  await updateCatch(id, { ...input(), resultType: 'lost', lostDistance: 'near' }, catalog)
+  const owned = await db.myLures.toArray()
+  assert.equal(owned.length, legacy.length + 1)
+  await updateCatch(id, { ...input(), resultType: 'catch' }, { kind: 'manual', lureName: 'Manual', lureColor: '' })
+  await deleteCatch(id, 60)
+  assert.deepEqual(await db.myLures.toArray(), owned)
+})
+
+test('RC23 late lost edit failure rolls back the newly created owned individual', async () => {
+  const id = await registerCatch({ ...input(), resultType: 'lost', lostDistance: 'near' }, { kind: 'manual', lureName: '', lureColor: '' })
+  const before = await snapshot()
+  const fail = () => { throw new Error('late edit failure') }
+  db.catches.hook('updating', fail)
+  try { await assert.rejects(updateCatch(id, { ...input(), resultType: 'lost', lostDistance: 'near' }, catalog), /late edit failure/) }
+  finally { db.catches.hook('updating').unsubscribe(fail) }
+  assert.equal(await snapshot(), before)
+})
 
 test('legacy ownership defaults to unverified without rewriting IDs or records', async () => {
   const before = await snapshot()
@@ -122,14 +228,14 @@ test('explicit owned individual and most recent individual are reused among mult
   assert.equal(await db.myLures.count(), 5)
 })
 
-test('inactive owned is retained and a new active copy is created as specified', async () => {
+test('inactive owned is retained without creating an active copy', async () => {
   await db.myLures.add({ id: 70, variantId: 40, active: false, ownershipStatus: 'owned' })
   const saved = await db.catches.get(await registerCatch(input(), catalog))
   assert.notEqual(saved.lureId, 70)
   assert.equal((await db.myLures.get(70)).active, false)
 })
 
-test('catch write failure rolls back auto-registration and leaves recent choices unchanged', async () => {
+test('catch write failure rolls back registration and leaves recent choices unchanged', async () => {
   const before = await snapshot()
   const fail = () => { throw new Error('injected catch failure') }
   db.catches.hook('creating', fail)
@@ -152,13 +258,14 @@ test('manual catch discards stale IDs and does not register catalog or ownership
 })
 
 test('same as previous reuses valid owned ID with current caughtAt and conditions', async () => {
+  await db.myLures.update(50, { ownershipStatus: 'owned' })
   const first = await db.catches.get(await registerCatch(input(), catalog))
   const at = new Date('2026-10-10T02:00:00Z')
   const saved = await db.catches.get(await registerSameAsPrevious(60, at))
   assert.equal(saved.lureId, first.lureId)
   assert.equal(saved.rangeLevel, '表層')
   assert.equal(saved.caughtAt.getTime(), at.getTime())
-  assert.equal(await db.myLures.count(), 4)
+  assert.equal(await db.myLures.count(), 3)
 })
 
 for (const [label, lureId] of [['unset', 50], ['unverified', 51], ['placeholder', 52], ['missing', 999]]) {
@@ -235,7 +342,8 @@ test('invalid ownership or variant references in new backups are rejected withou
 })
 
 test('backup rejects mismatched owned and catalog references even when both IDs exist', async () => {
-  await registerCatch(input(), catalog)
+  await db.myLures.update(50, { ownershipStatus: 'owned' })
+  await registerCatch(input(), { kind: 'owned', myLureId: 50 })
   const backup = JSON.parse(JSON.stringify(await createBackup()))
   backup.data.catches[0].lureVariantId = 41
   assert.throws(() => validateBackup(backup), /一致しません/)

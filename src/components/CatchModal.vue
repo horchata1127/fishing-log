@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import type { LureOption, LureSelection, RecentLure } from '../utils/catchRegistration';
-import type { TackleSet } from '../db/database';
+import type { LostDistance, TackleSet } from '../db/database';
 import type { FishSpecies } from '../db/database';
 import FishSpeciesPicker from './FishSpeciesPicker.vue';
 
 const props = defineProps<{
+  resultType?: "catch" | "lost";
+  lostDistance?: LostDistance;
   caughtAt: Date;
   editing?: boolean;
   memo?: string;
@@ -30,6 +32,8 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits<{
+  'update:resultType': [value: 'catch' | 'lost'];
+  'update:lostDistance': [value: LostDistance];
   'update:caughtAt': [value: Date];
   'update:memo': [value: string];
   cancel: [];
@@ -135,6 +139,19 @@ function selectRecent(recent: RecentLure) {
 
       <h2>{{ editing ? '釣果を編集' : '🎣 釣果を登録' }}</h2>
 
+      <fieldset class="catch-field"><legend>結果</legend>
+        <div class="choice-grid">
+          <button type="button" :aria-pressed="resultType !== 'lost'" :class="{selected: resultType !== 'lost'}" @click="emit('update:resultType', 'catch')">キャッチ</button>
+          <button type="button" :aria-pressed="resultType === 'lost'" :class="{selected: resultType === 'lost'}" @click="emit('update:resultType', 'lost')">バラシ</button>
+        </div>
+      </fieldset>
+      <fieldset v-if="resultType === 'lost'" class="catch-field"><legend>バラシの距離（必須）</legend>
+        <p>フッキング後、取り込むまでに逃した魚を記録します。</p>
+        <div class="choice-grid">
+          <button v-for="option in ([['offshore', '沖'], ['near', '手前'], ['landing', 'キャッチ直前']] as const)" :key="option[0]" type="button" :aria-pressed="lostDistance === option[0]" :class="{selected: lostDistance === option[0]}" @click="emit('update:lostDistance', option[0])">{{ option[1] }}</button>
+        </div>
+        <p v-if="!lostDistance" role="status">バラシの距離を選択してください。</p>
+      </fieldset>
       <div class="caught-time">
         <span>釣れた時刻</span>
 
@@ -153,7 +170,7 @@ function selectRecent(recent: RecentLure) {
         <input type="datetime-local" step="1" aria-label="釣果日時" :value="localDateTime(caughtAt)" @input="emit('update:caughtAt', new Date(($event.target as HTMLInputElement).value))" />
       </label>
       <slot name="location" />
-      <button v-if="hasPreviousCatch" class="same-button" :disabled="locationBusy" @click="emit('sameAsPrevious')">
+      <button v-if="hasPreviousCatch" class="same-button" :disabled="locationBusy || (resultType === 'lost' && !lostDistance)" @click="emit('sameAsPrevious')">
         ⚡ 前回と同じ
       </button>
 
@@ -386,7 +403,7 @@ function selectRecent(recent: RecentLure) {
         <input type="number" inputmode="decimal" min="0" step="any" :value="fishSize ?? ''" @input="emit('update:fishSize', ($event.target as HTMLInputElement).value)" />
       </label>
       <label class="catch-field"><span>メモ（任意）</span><textarea :value="memo ?? ''" @input="emit('update:memo', ($event.target as HTMLTextAreaElement).value)" /></label>
-      <button class="primary-button" :disabled="saving || locationBusy" @click="emit('save')">{{ saving ? '保存中…' : '保存する' }}</button>
+      <button class="primary-button" :disabled="saving || locationBusy || (resultType === 'lost' && !lostDistance)" @click="emit('save')">{{ saving ? '保存中…' : '保存する' }}</button>
 
       <button class="cancel-button" :disabled="locationBusy" @click="emit('cancel')">キャンセル</button>
     </section>

@@ -34,7 +34,23 @@ export interface TripEvent {
   note?: string
 }
 
+export type LostDistance = "offshore" | "near" | "landing"
+export const lostDistanceLabels = { offshore: "沖", near: "手前", landing: "キャッチ直前" } as const
+export function isCatch(row: { resultType?: string }) { return row.resultType !== "lost" }
+export function countResults(rows: CatchRecord[]) {
+  return { catches: rows.filter(isCatch).length, lost: rows.filter(row => !isCatch(row)).length,
+    distances: Object.fromEntries(Object.keys(lostDistanceLabels).map(key => [key, rows.filter(row => row.resultType === "lost" && row.lostDistance === key).length])) }
+}
+export function validateCatchResult(row: Record<string, unknown>) {
+  if (row.resultType !== undefined && row.resultType !== "catch" && row.resultType !== "lost") throw new Error("結果区分が不正です。")
+  if (row.resultType === "lost") {
+    if (!["offshore", "near", "landing"].includes(row.lostDistance as string)) throw new Error("バラシの距離を選択してください。")
+  } else if (row.lostDistance !== undefined) throw new Error("キャッチにはバラシ距離を保存できません。")
+}
+
 export interface CatchRecord {
+  resultType?: "catch" | "lost"
+  lostDistance?: LostDistance
   id?: number
   tripId: number
   caughtAt: Date

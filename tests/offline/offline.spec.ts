@@ -4,10 +4,66 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { rc20Fixture } from '../rc20Fixture'
 import { rc22Fixture } from '../rc22Fixture'
+import { rc23Fixture } from '../rc23Fixture'
 
 const origin = 'http://127.0.0.1:4188'
 const url = `${origin}/fishing-log/`
 const names = ['trips', 'catches', 'tripEvents', 'lureManufacturers', 'lureSeries', 'lureModels', 'lureVariants', 'myLures', 'rods', 'reels', 'lines', 'tackleSets', 'fishSpecies']
+
+test('RC23 lost records persist offline across full profile restart without changing RC22 history', async ({}, info) => {
+  await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
+  const profile = await mkdtemp(join(tmpdir(), 'fishing-rc23-offline-'))
+  const launch = (offline = false) => chromium.launchPersistentContext(profile, { serviceWorkers: 'allow', offline,
+    viewport: info.project.name.includes('mobile') ? { width: 390, height: 844 } : { width: 1280, height: 800 }, locale: 'ja-JP', timezoneId: 'Asia/Tokyo' })
+  let context = await launch()
+  try {
+    let page = context.pages()[0]!
+    await page.goto(url); await ready(page)
+    page.on('dialog', d => d.accept())
+    await page.getByTestId('restore-backup').setInputFiles({ name: 'synthetic-rc22.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(rc23Fixture())) })
+    await expect.poll(async () => (await database(page)).catches!.length).toBe(7)
+    const before = await database(page)
+    await context.setOffline(true)
+    await page.getByRole('button', { name: '新しい釣行を開始' }).click()
+    await page.getByLabel('釣り場', { exact: true }).fill('RC23圏外試験')
+    await page.getByRole('button', { name: '🎣 釣行開始', exact: true }).click()
+    for (const distance of ['沖', '手前', 'キャッチ直前']) {
+      await page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
+      const modal = page.getByRole('dialog', { name: '釣果を登録', exact: true })
+      await modal.getByRole('button', { name: 'バラシ', exact: true }).click()
+      await modal.getByRole('button', { name: distance, exact: true }).click()
+      await modal.getByRole('button', { name: 'ルアーを選ぶ' }).click()
+      await page.getByRole('dialog', { name: 'ルアーを選択', exact: true }).getByRole('button', { name: /HUNT GRANDE.*T-15/ }).first().click()
+      await modal.getByRole('button', { name: '保存する', exact: true }).click()
+      await expect(modal).not.toBeVisible()
+    }
+    await page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
+    const modal = page.getByRole('dialog', { name: '釣果を登録', exact: true })
+    await modal.getByRole('button', { name: 'バラシ', exact: true }).click()
+    await modal.getByRole('button', { name: '沖', exact: true }).click()
+    await modal.getByRole('button', { name: 'ルアーを選ぶ' }).click()
+    const picker = page.getByRole('dialog', { name: 'ルアーを選択', exact: true })
+    await picker.getByRole('button', { name: 'カタログ', exact: true }).click()
+    await picker.getByLabel('モデルを選んでからカラーを選択').selectOption('324')
+    await picker.getByRole('button', { name: /クリペナプラス/ }).click()
+    await modal.getByRole('button', { name: '保存する', exact: true }).click()
+    await expect(modal).not.toBeVisible()
+    await page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
+    await modal.getByRole('button', { name: '前回と同じ' }).click()
+    await expect(modal).not.toBeVisible()
+    const saved = await database(page)
+    expect(saved.catches!.filter(r => r.resultType === 'lost')).toHaveLength(4)
+    expect(saved.myLures).toHaveLength(before.myLures!.length + 1)
+    for (const row of before.myLures!) expect(saved.myLures!.find(r => r.id === row.id)).toEqual(row)
+    expect(saved.lureVariants).toEqual(before.lureVariants)
+    for (const row of before.catches!) expect(saved.catches!.find(r => r.id === row.id)).toEqual(row)
+    await context.close(); context = await launch(true); page = context.pages()[0]!
+    await page.goto(url)
+    expect(await database(page)).toEqual(saved)
+    await page.getByRole('button', { name: /RC23圏外試験/ }).click()
+    await expect(page.getByText('キャッチ 1匹／バラシ 4回', { exact: true })).toBeVisible()
+  } finally { await context.close() }
+})
 async function database(page: Page, seed = false, includeLocations = false) {
   return page.evaluate(async ({ names, seed }) => {
     if (location.origin !== 'http://127.0.0.1:4188') throw new Error('Only isolated offline test origin permitted')

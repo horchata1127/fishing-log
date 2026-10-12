@@ -61,12 +61,13 @@ test('A: 釣行・カタログ釣果・キャンセル・自動所有・前回�
   await page.getByRole('button', { name: '🎣 マイルアー', exact: true }).click()
   const myLures = page.getByRole('region', { name: '所有ルアー' })
   await expect(myLures.getByRole('article')).toHaveCount(1)
-  await expect(myLures.getByRole('article')).toContainText('E2Eスプーン')
-  await expect(myLures.getByRole('article')).toContainText('🎣 3匹')
+  await expect(myLures).toContainText('キャッチ 3匹／バラシ 0回')
 })
 
 async function prepareTackleHistory(page: Page) {
-  await restoreViaUI(page, catalogFixture())
+  const fixture = catalogFixture()
+  fixture.data.myLures[0].ownershipStatus = "owned"
+  await restoreViaUI(page, fixture)
   await registerTackleSet(page)
   await startTrip(page) // 釣行開始後に持参セットを追加する経路も確認。
   await page.getByRole('button', { name: '持参セットを追加・変更', exact: true }).click()
@@ -172,7 +173,7 @@ test('C: v4全12テーブルをダウンロードし、別Contextへ復元して
     await restored.getByRole('button', { name: '🎣 マイルアー', exact: true }).click()
     const owned = restored.getByRole('region', { name: '所有ルアー' })
     await expect(owned.getByRole('article')).toHaveCount(1)
-    await expect(owned).toContainText('🎣 3匹')
+    await expect(owned).toContainText('キャッチ 3匹／バラシ 0回')
     expect(await readState(page)).toEqual(source) // 復元元コンテキストも変化しない。
     expect(errors, '復元先の未処理ブラウザ例外').toEqual([])
   } finally { await context.close() }

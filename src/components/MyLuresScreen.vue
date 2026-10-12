@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import {
-  db,
+  db, isCatch,
   type LureManufacturer,
   type LureSeries,
   type LureModel,
@@ -22,6 +22,7 @@ interface MyLureView {
   modelName: string
   colorName: string
   catchCount: number
+  lostCount: number
   category: string
 }
 
@@ -192,7 +193,7 @@ async function loadMyLures() {
     }
 
     const catchCount = await db.catches
-      .filter((catchRecord) => catchRecord.lureId === myLure.id)
+      .filter((catchRecord) => catchRecord.lureId === myLure.id && isCatch(catchRecord))
       .count()
 
     console.log('釣果数確認', myLure.id, catchCount)
@@ -204,6 +205,7 @@ async function loadMyLures() {
       modelName: model.name,
       colorName: variant.colorName,
       catchCount,
+      lostCount: await db.catches.filter(row => row.resultType === "lost" && (row.lureId === myLure.id || (row.lureId === undefined && row.lureVariantId === myLure.variantId))).count(),
       category: model.category ?? 'その他',
     })
   }
@@ -467,7 +469,7 @@ onMounted(async () => {
           {{ item.seriesName }}
         </div>
 
-        <div class="catch-count">🎣 {{ item.catchCount }}匹</div>
+        <div class="catch-count">🎣 キャッチ {{ item.catchCount }}匹／バラシ {{ item.lostCount }}回</div>
       </article>
     </section>
   </div>

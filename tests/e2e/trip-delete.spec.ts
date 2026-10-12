@@ -39,7 +39,7 @@ async function ownedCount(page: Page, count: number) {
   await page.getByRole('button', { name: '🎣 マイルアー', exact: true }).click()
   const owned = page.getByRole('region', { name: '所有ルアー' })
   await expect(owned.getByRole('article')).toHaveCount(1)
-  await expect(owned).toContainText(`🎣 ${count}匹`)
+  await expect(owned).toContainText(`キャッチ ${count}匹／バラシ 0回`)
   await page.getByRole('button', { name: '← 戻る', exact: true }).click()
 }
 

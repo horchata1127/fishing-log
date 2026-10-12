@@ -16,12 +16,13 @@ import { getTripDeletionSummary, deleteFishingTrip, type TripDeletionSummary } f
 import { loadFishChoices, defaultFishSpeciesId } from './utils/fishSpecies'
 import { availableTackleSets, createTrip, updateTripTackles, suggestTackleSetId } from './utils/tackleManagement'
 import { exportBackup, importBackup } from './utils/backup'
-import { loadLureChoices, updateCatch, registerCatch, registerSameAsPrevious,
+import { loadLureChoices, deleteCatch, updateCatch, registerCatch, registerSameAsPrevious,
   type LureOption, type LureSelection, type RecentLure } from './utils/catchRegistration'
 import {
   db,
   databaseConnection,
   subscribeDatabaseConnection,
+  type LostDistance,
   type CatchRecord,
   type FishingStyle,
   type FishingTrip,
@@ -218,6 +219,9 @@ const newTripWeather = ref('')
 // 釣果入力
 const showCatchForm = ref(false)
 const editingCatch = ref<CatchRecord | null>(null)
+const catchResultType = ref<'catch' | 'lost'>('catch')
+const catchLostDistance = ref<LostDistance | undefined>()
+const recordStatus = ref('')
 const catchMemo = ref('')
 const pendingCaughtAt = ref<Date | null>(null)
 const catchLureName = ref('')
@@ -419,6 +423,8 @@ async function editCatch(record: CatchRecord) {
       const retained = await db.tackleSets.get(record.tackleSetId)
       if (retained) catchTackleOptions.value.push(retained)
     }
+    catchResultType.value = record.resultType ?? "catch"
+    catchLostDistance.value = record.lostDistance
     editingCatch.value = record
     pendingCaughtAt.value = new Date(record.caughtAt)
     catchSelection.value = null
@@ -443,6 +449,8 @@ async function addCatch() {
    * 「釣れた！」を押した瞬間に時刻を確保。
    * 入力に時間がかかっても、この時刻は変わらない。
    */
+  catchResultType.value = "catch"
+  catchLostDistance.value = undefined
   editingCatch.value = null
   catchMemo.value = ''
   pendingCaughtAt.value = new Date()
@@ -474,6 +482,15 @@ async function addCatch() {
   }
 }
 
+async function removeCatch(record: CatchRecord) {
+  if (savingCatch.value || !record.id || !currentTrip.value?.id) return
+  if (!confirm(`${record.resultType === 'lost' ? 'バラシ' : 'キャッチ'}記録を削除しますか？`)) return
+  savingCatch.value = true
+  try { await deleteCatch(record.id, currentTrip.value.id); await loadCatches(); recordStatus.value = '記録を削除しました' }
+  catch (error) { alert(error instanceof Error ? error.message : String(error)) }
+  finally { savingCatch.value = false }
+}
+
 async function saveCatch() {
   await commitCatch(false)
 }
@@ -487,12 +504,12 @@ async function commitCatch(sameAsPrevious: boolean) {
   savingCatch.value = true
   try {
     if (sameAsPrevious) {
-      await registerSameAsPrevious(currentTrip.value.id, pendingCaughtAt.value, catchLocation.value ? { ...catchLocation.value, zoneId: catchZoneId.value } : undefined)
+      await registerSameAsPrevious(currentTrip.value.id, pendingCaughtAt.value, catchLocation.value ? { ...catchLocation.value, zoneId: catchZoneId.value } : undefined, { resultType: catchResultType.value, lostDistance: catchResultType.value === "lost" ? catchLostDistance.value : undefined })
     } else {
       const selection = catchSelection.value?.kind === 'manual' || !catchSelection.value
         ? { kind: 'manual' as const, lureName: catchLureName.value, lureColor: catchLureColor.value }
         : catchSelection.value
-      const input = { tripId: currentTrip.value.id, caughtAt: pendingCaughtAt.value,
+      const input = { resultType: catchResultType.value, lostDistance: catchResultType.value === "lost" ? catchLostDistance.value : undefined, tripId: currentTrip.value.id, caughtAt: pendingCaughtAt.value,
         location: editingCatch.value && catchZoneId.value === editingCatch.value.zoneId ? undefined : catchLocation.value ? { ...catchLocation.value, zoneId: catchZoneId.value } : undefined,
         tackleSetId: catchTackleSetId.value,
         fishSpeciesId: catchFishSpeciesId.value,
@@ -508,6 +525,7 @@ async function commitCatch(sameAsPrevious: boolean) {
     savingCatch.value = false
     return
   }
+  recordStatus.value = catchResultType.value === "lost" ? "バラシ登録完了" : "キャッチ登録完了"
   showCatchForm.value = false
   editingCatch.value = null
   pendingCaughtAt.value = null
@@ -764,7 +782,7 @@ async function selectCurrentZone(zoneId: string | undefined) {
 
     <!-- 釣行中 -->
 
-    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation" @home="goHome"
+    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch" @delete-catch="removeCatch" @home="goHome"
       @add-catch="addCatch" @edit-catch="editCatch" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @update-event="updateTripEvent" @end-trip="endTrip">
       <template #location><FacilityPicker v-if="currentTrip.facilityId" :key="locationRefresh" fixed :facility-id="currentTrip.facilityId" :trip-id="currentTrip.id"
         :zone-id="currentTrip.currentZoneId" :retained-zone-id="currentTrip.currentZoneId" zone-label="現在のエリア" :disabled="!!currentTrip.endedAt || savingLocation || showCatchForm"
@@ -788,8 +806,10 @@ async function selectCurrentZone(zoneId: string | undefined) {
       </section>
     </div>
 
+    <p v-if="recordStatus && screen === 'fishing'" role="status">{{ recordStatus }}</p>
     <!-- 釣果入力モーダル -->
     <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt" :editing="!!editingCatch" @update:caught-at="pendingCaughtAt = $event" v-model:memo="catchMemo"
+      v-model:result-type="catchResultType" v-model:lost-distance="catchLostDistance"
       :location-busy="locationBusy || savingLocation"
       :fish-choices="fishChoices" v-model:fish-species-id="catchFishSpeciesId" v-model:fish-size="catchFishSize"
       :tackle-sets="catchTackleOptions" v-model:tackle-set-id="catchTackleSetId"

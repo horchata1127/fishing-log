@@ -196,7 +196,7 @@ test('unplanned or stopped sets are rejected and same-as-previous cannot silentl
   assert.equal(await state(), before)
 })
 
-test('catalog lure automatic ownership still reuses one individual with tackle selected', async () => {
+test('catalog lure automatically registers and reuses ownership with tackle selected', async () => {
   const { setId } = await setupSet()
   const first = await registerCatch(input(setId), { kind: 'catalog', variantId: 40 })
   const next = await registerSameAsPrevious(60, new Date('2026-10-24T02:00:00Z'))

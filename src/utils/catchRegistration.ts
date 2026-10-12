@@ -1,4 +1,4 @@
-import { db, isUsableOwnedLure, validateFishCatch, type CatchRecord } from '../db/database'
+import { db, isUsableOwnedLure, validateFishCatch, validateCatchResult, type CatchRecord } from '../db/database'
 import { snapshotTackle, tackleTables } from './tackleManagement'
 import { fishSnapshot } from './fishSpecies'
 import { resolveCatchLocation, type CatchLocationSelection } from './tripLocations'
@@ -44,6 +44,7 @@ async function catalogNames(variantId: number) {
 }
 
 async function writeCatch(input: CatchInput, selection: LureSelection | undefined, previousFish?: CatchRecord, editing?: CatchRecord): Promise<number> {
+  validateCatchResult(input as unknown as Record<string, unknown>)
   if (input.fishSizeCm !== undefined && (!Number.isFinite(input.fishSizeCm) || input.fishSizeCm <= 0)) throw new Error('全長は0より大きい数値（cm）を入力してください。')
   const trip = await db.trips.get(input.tripId)
   if (!trip || (!editing && trip.endedAt)) throw new Error('釣行が存在しないか、終了しています。')
@@ -100,6 +101,7 @@ async function writeCatch(input: CatchInput, selection: LureSelection | undefine
   if (editing) {
     const patch = { ...complete, lureId: lure.lureId, lureVariantId: lure.lureVariantId,
       fishSpeciesId: input.fishSpeciesId, fishSpecies: fish.fishSpecies, fishSpeciesGroup: fish.fishSpeciesGroup,
+      resultType: input.resultType, lostDistance: input.lostDistance,
       tackleSnapshot, facilityId: place.facilityId, zoneId: place.zoneId, locationSnapshot: place.locationSnapshot }
     await db.catches.update(editing.id!, patch)
     return editing.id!
@@ -109,21 +111,22 @@ async function writeCatch(input: CatchInput, selection: LureSelection | undefine
   return id
 }
 
-/** 選択・キャンセル中には呼ばない。所有検索・追加と釣果追加を一括コミットする。 */
+/** カタログで特定した色の所有登録と記録を単一トランザクションで保存する。 */
 export async function registerCatch(input: CatchInput, selection: LureSelection): Promise<number> {
   return db.transaction('rw', tables, async () => writeCatch(input, selection))
 }
 
 /** 同じ釣行の最新保存済み釣果だけを再利用し、未確認IDは拒否する。 */
-export async function registerSameAsPrevious(tripId: number, caughtAt: Date, location?: CatchLocationSelection): Promise<number> {
+export async function registerSameAsPrevious(tripId: number, caughtAt: Date, location?: CatchLocationSelection, result?: { resultType: "catch" | "lost"; lostDistance?: CatchRecord["lostDistance"] }): Promise<number> {
   return db.transaction('rw', tables, async () => {
     const previous = (await db.catches.where('tripId').equals(tripId).sortBy('caughtAt')).at(-1)
     if (!previous) throw new Error('前回の釣果がありません。')
     const selection: LureSelection = previous.lureId !== undefined
       ? { kind: 'owned', myLureId: previous.lureId }
+      : previous.lureVariantId !== undefined ? { kind: 'catalog', variantId: previous.lureVariantId }
       : { kind: 'manual', lureName: previous.lureName ?? '', lureColor: previous.lureColor ?? '' }
     // 第4弾以前の意味が確認できないIDだけの記録は自動コピーしない。
-    return writeCatch({ tripId, caughtAt, location, tackleSetId: previous.tackleSnapshot ? previous.tackleSetId : undefined,
+    return writeCatch({ tripId, caughtAt, location, ...result, tackleSetId: previous.tackleSnapshot ? previous.tackleSetId : undefined,
       rangeLevel: previous.rangeLevel, retrieveSpeed: previous.retrieveSpeed,
       action: previous.action, fishSpecies: previous.fishSpecies, fishSpeciesId: previous.fishSpeciesId }, selection, previous)
   })
@@ -162,12 +165,14 @@ export async function loadLureChoices() {
       if (recent.length >= 5) break
       const option = record.lureId !== undefined ? ownedMap.get(record.lureId) : undefined
       if (record.lureId !== undefined && !option) continue
-      const key = option ? `variant:${option.variantId}` : `manual:${JSON.stringify([record.lureName, record.lureColor])}`
+      const variant = record.lureVariantId !== undefined ? catalogMap.get(record.lureVariantId) : undefined
+      const key = option || variant ? `variant:${(option ?? variant)!.variantId}` : `manual:${JSON.stringify([record.lureName, record.lureColor])}`
       if (seen.has(key) || (!option && !record.lureName && !record.lureColor)) continue
       seen.add(key)
       recent.push({ key, lureName: option?.modelName ?? record.lureName ?? '',
         lureColor: option?.colorName ?? record.lureColor ?? '',
         selection: option ? { kind: 'owned', myLureId: option.id }
+          : variant ? { kind: 'catalog', variantId: variant.variantId }
           : { kind: 'manual', lureName: record.lureName ?? '', lureColor: record.lureColor ?? '' } })
     }
     return { catalog, owned, recent }
@@ -181,5 +186,14 @@ export async function updateCatch(catchId: number, input: CatchInput, selection?
     if (!existing || existing.tripId !== input.tripId) throw new Error('編集対象または釣行IDが不正です。')
     // 未変更のルアー参照とスナップショットは保持する。
     return writeCatch(input, selection, undefined, existing)
+  })
+}
+
+/** 明示削除だけを許可し、所有情報には書き込まない。 */
+export async function deleteCatch(catchId: number, tripId: number) {
+  return db.transaction("rw", [db.catches], async () => {
+    const record = await db.catches.get(catchId)
+    if (!record || record.tripId !== tripId) throw new Error("削除対象が見つかりません。")
+    await db.catches.delete(catchId)
   })
 }
