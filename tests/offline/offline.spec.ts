@@ -75,6 +75,41 @@ test('RC20 official patch works offline and preserves historical IDs after full 
   } finally { await context.close() }
 })
 
+test('RC21 held model patch works offline and preserves historical IDs after full profile restart', async ({}, info) => {
+  await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
+  const profile = await mkdtemp(join(tmpdir(), 'fishing-rc21-offline-'))
+  const launch = (offline = false) => chromium.launchPersistentContext(profile, { serviceWorkers: 'allow', offline,
+    viewport: info.project.name.includes('mobile') ? { width: 390, height: 844 } : { width: 1280, height: 800 },
+    locale: 'ja-JP', timezoneId: 'Asia/Tokyo' })
+  let context = await launch()
+  try {
+    let page = context.pages()[0]!
+    await page.goto(url); await ready(page)
+    page.on('dialog', dialog => dialog.accept())
+    await page.getByTestId('restore-backup').setInputFiles({ name: 'synthetic-rc19.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(rc20Fixture())) })
+    await expect.poll(async () => (await database(page)).catches!.length).toBe(4)
+    await page.getByRole('button', { name: 'RC20\u306e\u8ffd\u52a0\u4e88\u5b9a\u3092\u78ba\u8a8d', exact: true }).click()
+    await page.getByRole('button', { name: 'RC20\u306e\u78ba\u8a8d\u6e08\u307f\u30ab\u30e9\u30fc\u3092\u8ffd\u52a0', exact: true }).click()
+    await expect(page.getByRole('region', { name: 'RC20\u30ab\u30bf\u30ed\u30b0\u306e\u4e8b\u524d\u78ba\u8a8d', exact: true })).not.toBeVisible()
+    const before = await database(page)
+    await context.setOffline(true)
+    await page.getByRole('button', { name: 'RC21の追加予定を確認', exact: true }).click()
+    const preview = page.getByRole('region', { name: 'RC21カタログの事前確認', exact: true })
+    await expect(preview).toContainText('追加 282色')
+    await preview.getByRole('button', { name: 'RC21の確認済みカラーを追加', exact: true }).click()
+    await expect(preview).not.toBeVisible()
+    const saved = await database(page)
+    expect(saved.catches).toEqual(before.catches); expect(saved.trips).toEqual(before.trips); expect(saved.myLures).toEqual(before.myLures)
+    expect(saved.lureVariants!.length - before.lureVariants!.length).toBe(282)
+    expect(saved.lureSeries!.length - before.lureSeries!.length).toBe(8)
+    expect(saved.lureModels!.length - before.lureModels!.length).toBe(18)
+    expect(saved.lureVariants!.filter(v => v.modelId === 305)).toHaveLength(30)
+    await context.close(); context = await launch(true); page = context.pages()[0]!
+    await page.goto(url)
+    expect(await database(page)).toEqual(saved)
+  } finally { await context.close() }
+})
+
 test('offline user facility/zone additions, catch snapshots and v6 backup survive full profile restart', async ({}, info) => {
   await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
   const profile = await mkdtemp(join(tmpdir(), 'fishing-location-offline-')), mobile = info.project.name.includes('mobile')
