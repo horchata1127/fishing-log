@@ -4,6 +4,21 @@ import { exportBackup } from './utils/backup'
 import { catalogTables, importLureCatalog, previewLureCatalog, registerRc19HuntGrande, type CatalogPreview } from './importLureCatalog'
 import { previewRc20Catalog, applyRc20Catalog, rc20DiffCsv, type Rc20Preview } from './utils/rc20Catalog'
 
+import { previewRc21Catalog, applyRc21Catalog, rc21DiffCsv, type Rc21Preview } from './utils/rc21Catalog'
+
+const rc21Preview = shallowRef<Rc21Preview | null>(null)
+const rc21Models = computed(() => {
+  const groups = new Map<string, { manufacturer: string; series: string; model: string; add: number; keep: number; hold: number }>()
+  for (const row of rc21Preview.value?.rows ?? []) {
+    const key = `${row.manufacturer}/${row.model}`
+    const group = groups.get(key) ?? { manufacturer: row.manufacturer, series: row.series, model: row.model, add: 0, keep: 0, hold: 0 }
+    if (row.action === 'add_color') group.add++
+    else if (row.action === 'keep') group.keep++
+    else group.hold++
+    groups.set(key, group)
+  }
+  return [...groups.values()]
+})
 const busy = ref(false)
 const message = ref('')
 const fileInput = ref<HTMLInputElement | null>(null)
@@ -11,7 +26,7 @@ const pendingSeed = shallowRef<unknown>(null)
 const preview = shallowRef<CatalogPreview | null>(null)
 const rc20Preview = shallowRef<Rc20Preview | null>(null)
 // Read-only UI state for deferring application updates during import/preview.
-defineExpose({ busy, preview: computed(() => preview.value ?? rc20Preview.value) })
+defineExpose({ busy, preview: computed(() => preview.value ?? rc20Preview.value ?? rc21Preview.value) })
 const tableLabels = {
   lureManufacturers: 'メーカー', lureSeries: 'シリーズ',
   lureModels: 'モデル', lureVariants: 'カラー',
@@ -21,6 +36,7 @@ function cancelPreview() {
   pendingSeed.value = null
   preview.value = null
   rc20Preview.value = null
+  rc21Preview.value = null
 }
 
 async function checkRc20() {
@@ -54,8 +70,39 @@ function downloadRc20Diff() {
   setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
 
+async function checkRc21() {
+  if (busy.value) return
+  cancelPreview()
+  busy.value = true
+  try {
+    rc21Preview.value = await previewRc21Catalog()
+    message.value = 'RC21の追加予定を確認しました。まだ反映していません。'
+  } catch (error) { message.value = `RC21確認失敗: ${String(error)}` }
+  finally { busy.value = false }
+}
+
+async function applyRc21() {
+  const checked = rc21Preview.value
+  if (busy.value || !checked || !checked.addedColors) return
+  busy.value = true
+  try {
+    const result = await applyRc21Catalog(checked.comparisonToken)
+    message.value = `RC21反映完了: ${result.addedColors}色追加・${result.retainedColors}色保持・${result.pendingColors}色保留。`
+    cancelPreview()
+  } catch (error) { message.value = `RC21反映失敗: ${String(error)}`; cancelPreview() }
+  finally { busy.value = false }
+}
+
+function downloadRc21Diff() {
+  if (!rc21Preview.value) return
+  const url = URL.createObjectURL(new Blob([rc21DiffCsv(rc21Preview.value)], { type: 'text/csv;charset=utf-8' }))
+  const link = document.createElement('a')
+  link.href = url; link.download = 'RC21_CATALOG_DIFF_DEVICE.csv'; link.click()
+  setTimeout(() => URL.revokeObjectURL(url), 1000)
+}
+
 async function addRc19() {
-  if (busy.value || preview.value || rc20Preview.value) return
+  if (busy.value || preview.value || rc20Preview.value || rc21Preview.value) return
   busy.value = true
   try {
     message.value = `RC19対象カタログ: ${await registerRc19HuntGrande()}件追加しました。`
@@ -110,14 +157,16 @@ async function applyCatalog() {
 
 <template>
   <section class="catalog-import">
-    <h2>ルアーマスター RC20対応</h2>
+    <h2>ルアーマスター RC21対応</h2>
     <p>先にバックアップを保存・確認してから、RC18の専用JSONを読み込んでな。</p>
     <button type="button" :disabled="busy" @click="backup">① 全データをバックアップ</button>
     <button type="button" :disabled="busy" @click="fileInput?.click()">② カタログJSONを事前確認</button>
     <p>RC19確認済み：HUNT GRANDE 1.3g / T-15 シルバー・T-18 黄茶次郎</p>
-    <button type="button" :disabled="busy || !!preview || !!rc20Preview" @click="addRc19">RC19のHUNT GRANDE 1.3g・2色を追加</button>
+    <button type="button" :disabled="busy || !!preview || !!rc20Preview || !!rc21Preview" @click="addRc19">RC19のHUNT GRANDE 1.3g・2色を追加</button>
     <p>RC20：HUNT GRANDE 1.3gの30色と、4メーカーの公式確認済みカラーを補完します。</p>
     <button type="button" :disabled="busy" @click="checkRc20">RC20の追加予定を確認</button>
+    <p>RC21：ベルベットアーツ11モデル・213色、ロブルアー7モデル・69色を事前照合します。</p>
+    <button type="button" :disabled="busy" @click="checkRc21">RC21の追加予定を確認</button>
     <input ref="fileInput" type="file" accept=".json,application/json" hidden @change="importFile" />
     <p v-if="message" role="status">{{ message }}</p>
     <p class="note">所有ルアーは追加・変更されません。釣行・釣果も変更しません。</p>
@@ -137,6 +186,29 @@ async function applyCatalog() {
       <button type="button" :disabled="busy" @click="downloadRc20Diff">照合結果をCSVで保存</button>
       <button type="button" :disabled="busy || !rc20Preview.addedColors" @click="applyRc20">RC20の確認済みカラーを追加</button>
       <button type="button" :disabled="busy" @click="cancelPreview">RC20の追加をキャンセル</button>
+    </section>
+    <section v-if="rc21Preview" class="preview" aria-label="RC21カタログの事前確認">
+      <h3>RC21の追加予定</h3>
+      <p>追加 {{ rc21Preview.addedColors }}色・登録済み {{ rc21Preview.retainedColors }}色・保留 {{ rc21Preview.pendingColors }}色</p>
+      <p>新しいモデル {{ rc21Preview.addedModels }}件・シリーズ {{ rc21Preview.addedSeries }}件</p>
+      <p class="note">対象18モデルの公式確認済み282色を照合します。その他の確認待ちは残ります。適用前後のバックアップを保存・比較してください。</p>
+      <details><summary>モデル別の追加予定</summary>
+        <ul><li v-for="model in rc21Models" :key="`${model.manufacturer}/${model.model}`">
+          {{ model.manufacturer }} / {{ model.series }} / {{ model.model }}：追加 {{ model.add }}色・登録済み {{ model.keep }}色・保留 {{ model.hold }}色
+        </li></ul>
+      </details>
+      <details><summary>カラーごとの照合結果・公式出典</summary>
+        <ul><li v-for="(row, index) in rc21Preview.rows" :key="index">
+          {{ row.manufacturer }} / {{ row.series }} / {{ row.model }} / {{ row.color_name }}：
+          {{ row.action === 'keep' ? '登録済み' : row.action === 'add_color' ? '追加' : '保留' }}
+          <span>メーカーID {{ row.manufacturer_id || '未登録・要確認' }} / シリーズID {{ row.series_id || '新規・保留' }} / モデルID {{ row.model_id || '新規・保留' }} {{ row.hold_reason }}</span>
+          <span v-if="row.existing_id">（ID {{ row.existing_id }}）</span>
+          <a :href="row.source_url" target="_blank" rel="noopener noreferrer">公式出典</a>
+        </li></ul>
+      </details>
+      <button type="button" :disabled="busy" @click="downloadRc21Diff">照合結果をCSVで保存</button>
+      <button type="button" :disabled="busy || !rc21Preview.addedColors" @click="applyRc21">RC21の確認済みカラーを追加</button>
+      <button type="button" :disabled="busy" @click="cancelPreview">RC21の追加をキャンセル</button>
     </section>
     <section v-if="preview" class="preview" aria-label="カタログ取り込みの事前確認">
       <h3>取り込み予定</h3>
