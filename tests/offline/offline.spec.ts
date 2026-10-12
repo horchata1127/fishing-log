@@ -2,6 +2,7 @@ import { test, expect, chromium, type BrowserContext, type Page } from '@playwri
 import { mkdtemp, readFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
+import { rc20Fixture } from '../rc20Fixture'
 
 const origin = 'http://127.0.0.1:4188'
 const url = `${origin}/fishing-log/`
@@ -44,6 +45,35 @@ async function ready(page: Page) {
   await expect(page.getByText('圏外利用の準備完了', { exact: true })).toBeVisible()
   expect(await page.evaluate(() => navigator.serviceWorker.controller?.scriptURL)).toBe(`${url}sw.js`)
 }
+
+test('RC20 official patch works offline and preserves historical IDs after full profile restart', async ({}, info) => {
+  await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
+  const profile = await mkdtemp(join(tmpdir(), 'fishing-rc20-offline-'))
+  const launch = (offline = false) => chromium.launchPersistentContext(profile, { serviceWorkers: 'allow', offline,
+    viewport: info.project.name.includes('mobile') ? { width: 390, height: 844 } : { width: 1280, height: 800 },
+    locale: 'ja-JP', timezoneId: 'Asia/Tokyo' })
+  let context = await launch()
+  try {
+    let page = context.pages()[0]!
+    await page.goto(url); await ready(page)
+    page.on('dialog', dialog => dialog.accept())
+    await page.getByTestId('restore-backup').setInputFiles({ name: 'synthetic-rc19.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(rc20Fixture())) })
+    await expect.poll(async () => (await database(page)).catches!.length).toBe(4)
+    const before = await database(page)
+    await context.setOffline(true)
+    await page.getByRole('button', { name: 'RC20の追加予定を確認', exact: true }).click()
+    const preview = page.getByRole('region', { name: 'RC20カタログの事前確認', exact: true })
+    await expect(preview).toContainText('追加 48色')
+    await preview.getByRole('button', { name: 'RC20の確認済みカラーを追加', exact: true }).click()
+    await expect(preview).not.toBeVisible()
+    const saved = await database(page)
+    expect(saved.catches).toEqual(before.catches); expect(saved.trips).toEqual(before.trips); expect(saved.myLures).toEqual(before.myLures)
+    expect(saved.lureVariants!.filter(v => v.modelId === 305)).toHaveLength(30)
+    await context.close(); context = await launch(true); page = context.pages()[0]!
+    await page.goto(url)
+    expect(await database(page)).toEqual(saved)
+  } finally { await context.close() }
+})
 
 test('offline user facility/zone additions, catch snapshots and v6 backup survive full profile restart', async ({}, info) => {
   await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })

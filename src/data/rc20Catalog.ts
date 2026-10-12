@@ -1,0 +1,3213 @@
+// Generated from docs/rc20/RC20_OFFICIAL_CATALOG.json. No runtime network access.
+export const rc20Catalog = [
+  {
+    "manufacturer": "ニュードロワー",
+    "series": "HUNT GRANDE",
+    "model": "HUNT GRANDE 1.3g",
+    "weight": 1.3,
+    "colors": [
+      {
+        "code": "T-1",
+        "name": "おんぶらこっこ",
+        "label": "T-1 おんぶらこっこ（ONBURAKOKKO）",
+        "aliases": [
+          "おんぶらこっこ",
+          "ONBURAKOKKO"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-2",
+        "name": "黄黒郎",
+        "label": "T-2 黄黒郎（KIKURO）",
+        "aliases": [
+          "黄黒郎",
+          "KIKURO"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-3",
+        "name": "ピンク〇",
+        "label": "T-3 ピンク〇（PINK-MARU）",
+        "aliases": [
+          "ピンク〇",
+          "PINK-MARU"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-4",
+        "name": "油田",
+        "label": "T-4 油田（YUDEN）",
+        "aliases": [
+          "油田",
+          "YUDEN"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-5",
+        "name": "コクーン",
+        "label": "T-5 コクーン（COCOON）",
+        "aliases": [
+          "コクーン",
+          "COCOON"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-6",
+        "name": "キイ様",
+        "label": "T-6 キイ様（KIISAMA）",
+        "aliases": [
+          "キイ様",
+          "KIISAMA"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-7",
+        "name": "いえまん",
+        "label": "T-7 いえまん（IEMAN）",
+        "aliases": [
+          "いえまん",
+          "IEMAN"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-8",
+        "name": "ロイホー",
+        "label": "T-8 ロイホー（ROIHO）",
+        "aliases": [
+          "ロイホー",
+          "ROIHO"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-9",
+        "name": "剛健",
+        "label": "T-9 剛健（GOHKEN）",
+        "aliases": [
+          "剛健",
+          "GOHKEN"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-10",
+        "name": "剛毅",
+        "label": "T-10 剛毅（GOHKI）",
+        "aliases": [
+          "剛毅",
+          "GOHKI"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-11",
+        "name": "サイティングUV",
+        "label": "T-11 サイティングUV（SIGHTING UV）",
+        "aliases": [
+          "サイティングUV",
+          "SIGHTING UV"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-12",
+        "name": "マイロ",
+        "label": "T-12 マイロ（MAIRO）",
+        "aliases": [
+          "マイロ",
+          "MAIRO"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-13",
+        "name": "小龍景光",
+        "label": "T-13 小龍景光（KORYU KAGEMITSU）",
+        "aliases": [
+          "小龍景光",
+          "KORYU KAGEMITSU"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-14",
+        "name": "ゴールド",
+        "label": "T-14 ゴールド（GOLD）",
+        "aliases": [
+          "ゴールド",
+          "GOLD"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-15",
+        "name": "シルバー",
+        "label": "T-15 シルバー（SILVER）",
+        "aliases": [
+          "シルバー",
+          "SILVER"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-16",
+        "name": "同世代",
+        "label": "T-16 同世代（DOUSEDAI）",
+        "aliases": [
+          "同世代",
+          "DOUSEDAI"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-17",
+        "name": "チャマチャマ",
+        "label": "T-17 チャマチャマ（CYAMACYAMA）",
+        "aliases": [
+          "チャマチャマ",
+          "CYAMACYAMA"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-18",
+        "name": "黄茶次郎",
+        "label": "T-18 黄茶次郎（KICYAJIRO）",
+        "aliases": [
+          "黄茶次郎",
+          "KICYAJIRO"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-19",
+        "name": "黒魔金",
+        "label": "T-19 黒魔金（KUROMAKIN）",
+        "aliases": [
+          "黒魔金",
+          "KUROMAKIN"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-20",
+        "name": "ゴブラドール",
+        "label": "T-20 ゴブラドール（GOBRA-DOLL）",
+        "aliases": [
+          "ゴブラドール",
+          "GOBRA-DOLL"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-21",
+        "name": "ゴールデンティー",
+        "label": "T-21 ゴールデンティー（GOLDEN TEA）",
+        "aliases": [
+          "ゴールデンティー",
+          "GOLDEN TEA"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-22",
+        "name": "まっちゃぶ（グロー）",
+        "label": "T-22 まっちゃぶ（グロー）（MATCHABU(GLOW)）",
+        "aliases": [
+          "まっちゃぶ（グロー）",
+          "MATCHABU(GLOW)"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-23",
+        "name": "マッディパール",
+        "label": "T-23 マッディパール（MUDDY PEARL）",
+        "aliases": [
+          "マッディパール",
+          "MUDDY PEARL"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-24",
+        "name": "２丁目",
+        "label": "T-24 ２丁目（NICYOME）",
+        "aliases": [
+          "２丁目",
+          "NICYOME"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-25",
+        "name": "ゴルカラ丸",
+        "label": "T-25 ゴルカラ丸（GORUKARAMARU）",
+        "aliases": [
+          "ゴルカラ丸",
+          "GORUKARAMARU"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-26",
+        "name": "メイアン（グロー）",
+        "label": "T-26 メイアン（グロー）（MEIAN(GLOW)）",
+        "aliases": [
+          "メイアン（グロー）",
+          "MEIAN(GLOW)"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-27",
+        "name": "ヒサロ焼け",
+        "label": "T-27 ヒサロ焼け（HISAROYAKE）",
+        "aliases": [
+          "ヒサロ焼け",
+          "HISAROYAKE"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-28",
+        "name": "開眼ブルオリ",
+        "label": "T-28 開眼ブルオリ（KAIGAN BURUORI）",
+        "aliases": [
+          "開眼ブルオリ",
+          "KAIGAN BURUORI"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-29",
+        "name": "リボルバー(UV)",
+        "label": "T-29 リボルバー(UV)（REVOLVER(UV)）",
+        "aliases": [
+          "リボルバー(UV)",
+          "REVOLVER(UV)"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      },
+      {
+        "code": "T-30",
+        "name": "鬼鮫",
+        "label": "T-30 鬼鮫（KISAME）",
+        "aliases": [
+          "鬼鮫",
+          "KISAME"
+        ],
+        "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/"
+      }
+    ],
+    "sourceUrl": "https://zenmaru-group.co.jp/newdrawer/hunt-grande-1-0g-1-3g/",
+    "allowNewModel": true,
+    "manufacturerAliases": [
+      "New Drawer"
+    ],
+    "seriesAliases": [
+      "ハントグランデ"
+    ],
+    "modelAliases": [
+      "ハントグランデ 1.3g"
+    ]
+  },
+  {
+    "manufacturer": "ベルベットアーツ",
+    "series": "フォルテ",
+    "model": "フォルテ 0.6g",
+    "weight": 0.6,
+    "colors": [
+      {
+        "code": "4",
+        "name": "フリッカーゴールド",
+        "label": "4 フリッカーゴールド",
+        "aliases": [
+          "フリッカーゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/004"
+      },
+      {
+        "code": "6",
+        "name": "ＵＶシルバーオリーブ",
+        "label": "6 ＵＶシルバーオリーブ",
+        "aliases": [
+          "ＵＶシルバーオリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/006"
+      },
+      {
+        "code": "7",
+        "name": "ブルーシルバー",
+        "label": "7 ブルーシルバー",
+        "aliases": [
+          "ブルーシルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/007"
+      },
+      {
+        "code": "9",
+        "name": "ＵＶ金粉ブラウン",
+        "label": "9 ＵＶ金粉ブラウン",
+        "aliases": [
+          "ＵＶ金粉ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/009"
+      },
+      {
+        "code": "10",
+        "name": "チャート/ブラック",
+        "label": "10 チャート/ブラック",
+        "aliases": [
+          "チャート/ブラック"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/010"
+      },
+      {
+        "code": "11",
+        "name": "パールイエロー/ブラウン",
+        "label": "11 パールイエロー/ブラウン",
+        "aliases": [
+          "パールイエロー/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/011"
+      },
+      {
+        "code": "14",
+        "name": "カラシ",
+        "label": "14 カラシ",
+        "aliases": [
+          "カラシ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/014"
+      },
+      {
+        "code": "15",
+        "name": "カラシ/ブラウン",
+        "label": "15 カラシ/ブラウン",
+        "aliases": [
+          "カラシ/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/015"
+      },
+      {
+        "code": "16",
+        "name": "ココア",
+        "label": "16 ココア",
+        "aliases": [
+          "ココア"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/016"
+      },
+      {
+        "code": "18",
+        "name": "オリーブ",
+        "label": "18 オリーブ",
+        "aliases": [
+          "オリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/018"
+      },
+      {
+        "code": "19",
+        "name": "ゴールド",
+        "label": "19 ゴールド",
+        "aliases": [
+          "ゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/019"
+      },
+      {
+        "code": "20",
+        "name": "シルバー",
+        "label": "20 シルバー",
+        "aliases": [
+          "シルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/020"
+      },
+      {
+        "code": "23",
+        "name": "パールオレンジ/ブラウン",
+        "label": "23 パールオレンジ/ブラウン",
+        "aliases": [
+          "パールオレンジ/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/023"
+      },
+      {
+        "code": "25",
+        "name": "ジャングルグリーン",
+        "label": "25 ジャングルグリーン",
+        "aliases": [
+          "ジャングルグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/025"
+      },
+      {
+        "code": "29",
+        "name": "ＵＶシャイニーレモン",
+        "label": "29 ＵＶシャイニーレモン",
+        "aliases": [
+          "ＵＶシャイニーレモン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/029"
+      },
+      {
+        "code": "30",
+        "name": "グローゴールド",
+        "label": "30 グローゴールド",
+        "aliases": [
+          "グローゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/030"
+      },
+      {
+        "code": "31",
+        "name": "ゴールドペレットグロー",
+        "label": "31 ゴールドペレットグロー",
+        "aliases": [
+          "ゴールドペレットグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/031"
+      },
+      {
+        "code": "32",
+        "name": "グロー蛍光ピンク",
+        "label": "32 グロー蛍光ピンク",
+        "aliases": [
+          "グロー蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/032"
+      },
+      {
+        "code": "33",
+        "name": "カナリアグリーン",
+        "label": "33 カナリアグリーン",
+        "aliases": [
+          "カナリアグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/033"
+      },
+      {
+        "code": "34",
+        "name": "グローオレンジバンド",
+        "label": "34 グローオレンジバンド",
+        "aliases": [
+          "グローオレンジバンド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/034"
+      },
+      {
+        "code": "66",
+        "name": "シルバーペレットグロー",
+        "label": "66 シルバーペレットグロー",
+        "aliases": [
+          "シルバーペレットグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/066"
+      }
+    ],
+    "sourceUrl": "https://velvetarts.co.jp/pages/forte06",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "VELVET ARTS"
+    ],
+    "seriesAliases": [
+      "FORTE"
+    ],
+    "modelAliases": [
+      "FORTE 0.6g"
+    ]
+  },
+  {
+    "manufacturer": "ベルベットアーツ",
+    "series": "フォルテ",
+    "model": "フォルテ 0.9g",
+    "weight": 0.9,
+    "colors": [
+      {
+        "code": "1",
+        "name": "キックオンザフェスタ",
+        "label": "1 キックオンザフェスタ",
+        "aliases": [
+          "キックオンザフェスタ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/001"
+      },
+      {
+        "code": "3",
+        "name": "ロイヤルグリーン",
+        "label": "3 ロイヤルグリーン",
+        "aliases": [
+          "ロイヤルグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/003"
+      },
+      {
+        "code": "4",
+        "name": "フリッカーゴールド",
+        "label": "4 フリッカーゴールド",
+        "aliases": [
+          "フリッカーゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/004"
+      },
+      {
+        "code": "6",
+        "name": "ＵＶシルバーオリーブ",
+        "label": "6 ＵＶシルバーオリーブ",
+        "aliases": [
+          "ＵＶシルバーオリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/006"
+      },
+      {
+        "code": "7",
+        "name": "ブルーシルバー",
+        "label": "7 ブルーシルバー",
+        "aliases": [
+          "ブルーシルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/007"
+      },
+      {
+        "code": "9",
+        "name": "ＵＶ金粉ブラウン",
+        "label": "9 ＵＶ金粉ブラウン",
+        "aliases": [
+          "ＵＶ金粉ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/009"
+      },
+      {
+        "code": "10",
+        "name": "チャート/ブラック",
+        "label": "10 チャート/ブラック",
+        "aliases": [
+          "チャート/ブラック"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/010"
+      },
+      {
+        "code": "11",
+        "name": "パールイエロー/ブラウン",
+        "label": "11 パールイエロー/ブラウン",
+        "aliases": [
+          "パールイエロー/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/011"
+      },
+      {
+        "code": "13",
+        "name": "マイルド蛍光ピンク",
+        "label": "13 マイルド蛍光ピンク",
+        "aliases": [
+          "マイルド蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/013"
+      },
+      {
+        "code": "14",
+        "name": "カラシ",
+        "label": "14 カラシ",
+        "aliases": [
+          "カラシ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/014"
+      },
+      {
+        "code": "16",
+        "name": "ココア",
+        "label": "16 ココア",
+        "aliases": [
+          "ココア"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/016"
+      },
+      {
+        "code": "17",
+        "name": "ブーストブラウン",
+        "label": "17 ブーストブラウン",
+        "aliases": [
+          "ブーストブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/017"
+      },
+      {
+        "code": "18",
+        "name": "オリーブ",
+        "label": "18 オリーブ",
+        "aliases": [
+          "オリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/018"
+      },
+      {
+        "code": "19",
+        "name": "ゴールド",
+        "label": "19 ゴールド",
+        "aliases": [
+          "ゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/019"
+      },
+      {
+        "code": "20",
+        "name": "シルバー",
+        "label": "20 シルバー",
+        "aliases": [
+          "シルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/020"
+      },
+      {
+        "code": "21",
+        "name": "ゴールドオレンジブラウン",
+        "label": "21 ゴールドオレンジブラウン",
+        "aliases": [
+          "ゴールドオレンジブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/021"
+      },
+      {
+        "code": "22",
+        "name": "ゴールドチャートグリーン",
+        "label": "22 ゴールドチャートグリーン",
+        "aliases": [
+          "ゴールドチャートグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/022"
+      },
+      {
+        "code": "23",
+        "name": "パールオレンジ/ブラウン",
+        "label": "23 パールオレンジ/ブラウン",
+        "aliases": [
+          "パールオレンジ/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/023"
+      },
+      {
+        "code": "24",
+        "name": "弱明滅カラシ",
+        "label": "24 弱明滅カラシ",
+        "aliases": [
+          "弱明滅カラシ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/024"
+      },
+      {
+        "code": "25",
+        "name": "ジャングルグリーン",
+        "label": "25 ジャングルグリーン",
+        "aliases": [
+          "ジャングルグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/025"
+      },
+      {
+        "code": "30",
+        "name": "グローゴールド",
+        "label": "30 グローゴールド",
+        "aliases": [
+          "グローゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/030"
+      },
+      {
+        "code": "31",
+        "name": "ゴールドペレットグロー",
+        "label": "31 ゴールドペレットグロー",
+        "aliases": [
+          "ゴールドペレットグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/031"
+      },
+      {
+        "code": "32",
+        "name": "グロー蛍光ピンク",
+        "label": "32 グロー蛍光ピンク",
+        "aliases": [
+          "グロー蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/032"
+      },
+      {
+        "code": "34",
+        "name": "グローオレンジバンド",
+        "label": "34 グローオレンジバンド",
+        "aliases": [
+          "グローオレンジバンド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/034"
+      },
+      {
+        "code": "35",
+        "name": "イエローレッド/ブラウン",
+        "label": "35 イエローレッド/ブラウン",
+        "aliases": [
+          "イエローレッド/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/035"
+      }
+    ],
+    "sourceUrl": "https://velvetarts.co.jp/pages/forte09",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "VELVET ARTS"
+    ],
+    "seriesAliases": [
+      "FORTE"
+    ],
+    "modelAliases": [
+      "FORTE 0.9g"
+    ]
+  },
+  {
+    "manufacturer": "ベルベットアーツ",
+    "series": "フォルテ",
+    "model": "フォルテ 1.5g",
+    "weight": 1.5,
+    "colors": [
+      {
+        "code": "1",
+        "name": "キックオンザフェスタ",
+        "label": "1 キックオンザフェスタ",
+        "aliases": [
+          "キックオンザフェスタ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/001"
+      },
+      {
+        "code": "3",
+        "name": "ロイヤルグリーン",
+        "label": "3 ロイヤルグリーン",
+        "aliases": [
+          "ロイヤルグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/003"
+      },
+      {
+        "code": "4",
+        "name": "フリッカーゴールド",
+        "label": "4 フリッカーゴールド",
+        "aliases": [
+          "フリッカーゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/004"
+      },
+      {
+        "code": "6",
+        "name": "ＵＶシルバーオリーブ",
+        "label": "6 ＵＶシルバーオリーブ",
+        "aliases": [
+          "ＵＶシルバーオリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/006"
+      },
+      {
+        "code": "7",
+        "name": "ブルーシルバー",
+        "label": "7 ブルーシルバー",
+        "aliases": [
+          "ブルーシルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/007"
+      },
+      {
+        "code": "9",
+        "name": "ＵＶ金粉ブラウン",
+        "label": "9 ＵＶ金粉ブラウン",
+        "aliases": [
+          "ＵＶ金粉ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/009"
+      },
+      {
+        "code": "11",
+        "name": "パールイエロー/ブラウン",
+        "label": "11 パールイエロー/ブラウン",
+        "aliases": [
+          "パールイエロー/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/011"
+      },
+      {
+        "code": "12",
+        "name": "フロッグパール",
+        "label": "12 フロッグパール",
+        "aliases": [
+          "フロッグパール"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/012"
+      },
+      {
+        "code": "14",
+        "name": "カラシ",
+        "label": "14 カラシ",
+        "aliases": [
+          "カラシ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/014"
+      },
+      {
+        "code": "16",
+        "name": "ココア",
+        "label": "16 ココア",
+        "aliases": [
+          "ココア"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/016"
+      },
+      {
+        "code": "18",
+        "name": "オリーブ",
+        "label": "18 オリーブ",
+        "aliases": [
+          "オリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/018"
+      },
+      {
+        "code": "19",
+        "name": "ゴールド",
+        "label": "19 ゴールド",
+        "aliases": [
+          "ゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/019"
+      },
+      {
+        "code": "20",
+        "name": "シルバー",
+        "label": "20 シルバー",
+        "aliases": [
+          "シルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/020"
+      },
+      {
+        "code": "23",
+        "name": "パールオレンジ/ブラウン",
+        "label": "23 パールオレンジ/ブラウン",
+        "aliases": [
+          "パールオレンジ/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/023"
+      },
+      {
+        "code": "26",
+        "name": "二代目鱒王",
+        "label": "26 二代目鱒王",
+        "aliases": [
+          "二代目鱒王"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/026"
+      },
+      {
+        "code": "30",
+        "name": "グローゴールド",
+        "label": "30 グローゴールド",
+        "aliases": [
+          "グローゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/030"
+      },
+      {
+        "code": "31",
+        "name": "ゴールドペレットグロー",
+        "label": "31 ゴールドペレットグロー",
+        "aliases": [
+          "ゴールドペレットグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/031"
+      },
+      {
+        "code": "32",
+        "name": "グロー蛍光ピンク",
+        "label": "32 グロー蛍光ピンク",
+        "aliases": [
+          "グロー蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/032"
+      },
+      {
+        "code": "74",
+        "name": "カラシ金",
+        "label": "74 カラシ金",
+        "aliases": [
+          "カラシ金"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/074"
+      },
+      {
+        "code": "75",
+        "name": "ワールドチャンプ/ブラック",
+        "label": "75 ワールドチャンプ/ブラック",
+        "aliases": [
+          "ワールドチャンプ/ブラック"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/075"
+      }
+    ],
+    "sourceUrl": "https://velvetarts.co.jp/pages/forte15",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "VELVET ARTS"
+    ],
+    "seriesAliases": [
+      "FORTE"
+    ],
+    "modelAliases": [
+      "FORTE 1.5g"
+    ]
+  },
+  {
+    "manufacturer": "ベルベットアーツ",
+    "series": "フォルテ",
+    "model": "フォルテ 1.8g",
+    "weight": 1.8,
+    "colors": [
+      {
+        "code": "1",
+        "name": "キックオンザフェスタ",
+        "label": "1 キックオンザフェスタ",
+        "aliases": [
+          "キックオンザフェスタ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/001"
+      },
+      {
+        "code": "2",
+        "name": "パールゴールド",
+        "label": "2 パールゴールド",
+        "aliases": [
+          "パールゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/002"
+      },
+      {
+        "code": "3",
+        "name": "ロイヤルグリーン",
+        "label": "3 ロイヤルグリーン",
+        "aliases": [
+          "ロイヤルグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/003"
+      },
+      {
+        "code": "4",
+        "name": "フリッカーゴールド",
+        "label": "4 フリッカーゴールド",
+        "aliases": [
+          "フリッカーゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/004"
+      },
+      {
+        "code": "5",
+        "name": "透過チャートゴールド",
+        "label": "5 透過チャートゴールド",
+        "aliases": [
+          "透過チャートゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/005"
+      },
+      {
+        "code": "6",
+        "name": "ＵＶシルバーオリーブ",
+        "label": "6 ＵＶシルバーオリーブ",
+        "aliases": [
+          "ＵＶシルバーオリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/006"
+      },
+      {
+        "code": "7",
+        "name": "ブルーシルバー",
+        "label": "7 ブルーシルバー",
+        "aliases": [
+          "ブルーシルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/007"
+      },
+      {
+        "code": "8",
+        "name": "マット金粉ブラック",
+        "label": "8 マット金粉ブラック",
+        "aliases": [
+          "マット金粉ブラック"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/008"
+      },
+      {
+        "code": "9",
+        "name": "ＵＶ金粉ブラウン",
+        "label": "9 ＵＶ金粉ブラウン",
+        "aliases": [
+          "ＵＶ金粉ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/009"
+      },
+      {
+        "code": "10",
+        "name": "チャート/ブラック",
+        "label": "10 チャート/ブラック",
+        "aliases": [
+          "チャート/ブラック"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/010"
+      },
+      {
+        "code": "11",
+        "name": "パールイエロー/ブラウン",
+        "label": "11 パールイエロー/ブラウン",
+        "aliases": [
+          "パールイエロー/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/011"
+      },
+      {
+        "code": "12",
+        "name": "フロッグパール",
+        "label": "12 フロッグパール",
+        "aliases": [
+          "フロッグパール"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/012"
+      },
+      {
+        "code": "13",
+        "name": "マイルド蛍光ピンク",
+        "label": "13 マイルド蛍光ピンク",
+        "aliases": [
+          "マイルド蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/013"
+      },
+      {
+        "code": "14",
+        "name": "カラシ",
+        "label": "14 カラシ",
+        "aliases": [
+          "カラシ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/014"
+      },
+      {
+        "code": "15",
+        "name": "カラシ/ブラウン",
+        "label": "15 カラシ/ブラウン",
+        "aliases": [
+          "カラシ/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/015"
+      },
+      {
+        "code": "16",
+        "name": "ココア",
+        "label": "16 ココア",
+        "aliases": [
+          "ココア"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/016"
+      },
+      {
+        "code": "17",
+        "name": "ブーストブラウン",
+        "label": "17 ブーストブラウン",
+        "aliases": [
+          "ブーストブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/017"
+      },
+      {
+        "code": "18",
+        "name": "オリーブ",
+        "label": "18 オリーブ",
+        "aliases": [
+          "オリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/018"
+      },
+      {
+        "code": "19",
+        "name": "ゴールド",
+        "label": "19 ゴールド",
+        "aliases": [
+          "ゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/019"
+      },
+      {
+        "code": "20",
+        "name": "シルバー",
+        "label": "20 シルバー",
+        "aliases": [
+          "シルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/020"
+      },
+      {
+        "code": "26",
+        "name": "二代目鱒王",
+        "label": "26 二代目鱒王",
+        "aliases": [
+          "二代目鱒王"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/026"
+      },
+      {
+        "code": "27",
+        "name": "マッディメタグリグロー",
+        "label": "27 マッディメタグリグロー",
+        "aliases": [
+          "マッディメタグリグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/027"
+      },
+      {
+        "code": "30",
+        "name": "グローゴールド",
+        "label": "30 グローゴールド",
+        "aliases": [
+          "グローゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/030"
+      },
+      {
+        "code": "31",
+        "name": "ゴールドペレットグロー",
+        "label": "31 ゴールドペレットグロー",
+        "aliases": [
+          "ゴールドペレットグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/031"
+      },
+      {
+        "code": "32",
+        "name": "グロー蛍光ピンク",
+        "label": "32 グロー蛍光ピンク",
+        "aliases": [
+          "グロー蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/032"
+      },
+      {
+        "code": "34",
+        "name": "グローオレンジバンド",
+        "label": "34 グローオレンジバンド",
+        "aliases": [
+          "グローオレンジバンド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/034"
+      },
+      {
+        "code": "66",
+        "name": "シルバーペレットグロー",
+        "label": "66 シルバーペレットグロー",
+        "aliases": [
+          "シルバーペレットグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/066"
+      }
+    ],
+    "sourceUrl": "https://velvetarts.co.jp/pages/forte18",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "VELVET ARTS"
+    ],
+    "seriesAliases": [
+      "FORTE"
+    ],
+    "modelAliases": [
+      "FORTE 1.8g"
+    ]
+  },
+  {
+    "manufacturer": "ベルベットアーツ",
+    "series": "フォルテ",
+    "model": "フォルテ 2.1g",
+    "weight": 2.1,
+    "colors": [
+      {
+        "code": "1",
+        "name": "キックオンザフェスタ",
+        "label": "1 キックオンザフェスタ",
+        "aliases": [
+          "キックオンザフェスタ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/001"
+      },
+      {
+        "code": "2",
+        "name": "パールゴールド",
+        "label": "2 パールゴールド",
+        "aliases": [
+          "パールゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/002"
+      },
+      {
+        "code": "3",
+        "name": "ロイヤルグリーン",
+        "label": "3 ロイヤルグリーン",
+        "aliases": [
+          "ロイヤルグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/003"
+      },
+      {
+        "code": "4",
+        "name": "フリッカーゴールド",
+        "label": "4 フリッカーゴールド",
+        "aliases": [
+          "フリッカーゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/004"
+      },
+      {
+        "code": "5",
+        "name": "透過チャートゴールド",
+        "label": "5 透過チャートゴールド",
+        "aliases": [
+          "透過チャートゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/005"
+      },
+      {
+        "code": "6",
+        "name": "ＵＶシルバーオリーブ",
+        "label": "6 ＵＶシルバーオリーブ",
+        "aliases": [
+          "ＵＶシルバーオリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/006"
+      },
+      {
+        "code": "7",
+        "name": "ブルーシルバー",
+        "label": "7 ブルーシルバー",
+        "aliases": [
+          "ブルーシルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/007"
+      },
+      {
+        "code": "9",
+        "name": "ＵＶ金粉ブラウン",
+        "label": "9 ＵＶ金粉ブラウン",
+        "aliases": [
+          "ＵＶ金粉ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/009"
+      },
+      {
+        "code": "10",
+        "name": "チャート/ブラック",
+        "label": "10 チャート/ブラック",
+        "aliases": [
+          "チャート/ブラック"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/010"
+      },
+      {
+        "code": "11",
+        "name": "パールイエロー/ブラウン",
+        "label": "11 パールイエロー/ブラウン",
+        "aliases": [
+          "パールイエロー/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/011"
+      },
+      {
+        "code": "12",
+        "name": "フロッグパール",
+        "label": "12 フロッグパール",
+        "aliases": [
+          "フロッグパール"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/012"
+      },
+      {
+        "code": "13",
+        "name": "マイルド蛍光ピンク",
+        "label": "13 マイルド蛍光ピンク",
+        "aliases": [
+          "マイルド蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/013"
+      },
+      {
+        "code": "14",
+        "name": "カラシ",
+        "label": "14 カラシ",
+        "aliases": [
+          "カラシ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/014"
+      },
+      {
+        "code": "15",
+        "name": "カラシ/ブラウン",
+        "label": "15 カラシ/ブラウン",
+        "aliases": [
+          "カラシ/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/015"
+      },
+      {
+        "code": "16",
+        "name": "ココア",
+        "label": "16 ココア",
+        "aliases": [
+          "ココア"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/016"
+      },
+      {
+        "code": "18",
+        "name": "オリーブ",
+        "label": "18 オリーブ",
+        "aliases": [
+          "オリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/018"
+      },
+      {
+        "code": "19",
+        "name": "ゴールド",
+        "label": "19 ゴールド",
+        "aliases": [
+          "ゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/019"
+      },
+      {
+        "code": "20",
+        "name": "シルバー",
+        "label": "20 シルバー",
+        "aliases": [
+          "シルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/020"
+      },
+      {
+        "code": "26",
+        "name": "二代目鱒王",
+        "label": "26 二代目鱒王",
+        "aliases": [
+          "二代目鱒王"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/026"
+      },
+      {
+        "code": "27",
+        "name": "マッディメタグリグロー",
+        "label": "27 マッディメタグリグロー",
+        "aliases": [
+          "マッディメタグリグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/027"
+      }
+    ],
+    "sourceUrl": "https://velvetarts.co.jp/pages/forte21",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "VELVET ARTS"
+    ],
+    "seriesAliases": [
+      "FORTE"
+    ],
+    "modelAliases": [
+      "FORTE 2.1g"
+    ]
+  },
+  {
+    "manufacturer": "ベルベットアーツ",
+    "series": "デイジー",
+    "model": "デイジー 0.4g",
+    "weight": 0.4,
+    "colors": [
+      {
+        "code": "4",
+        "name": "フリッカーゴールド",
+        "label": "4 フリッカーゴールド",
+        "aliases": [
+          "フリッカーゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/004"
+      },
+      {
+        "code": "6",
+        "name": "ＵＶシルバーオリーブ",
+        "label": "6 ＵＶシルバーオリーブ",
+        "aliases": [
+          "ＵＶシルバーオリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/006"
+      },
+      {
+        "code": "7",
+        "name": "ブルーシルバー",
+        "label": "7 ブルーシルバー",
+        "aliases": [
+          "ブルーシルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/007"
+      },
+      {
+        "code": "9",
+        "name": "ＵＶ金粉ブラウン",
+        "label": "9 ＵＶ金粉ブラウン",
+        "aliases": [
+          "ＵＶ金粉ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/009"
+      },
+      {
+        "code": "14",
+        "name": "カラシ",
+        "label": "14 カラシ",
+        "aliases": [
+          "カラシ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/014"
+      },
+      {
+        "code": "16",
+        "name": "ココア",
+        "label": "16 ココア",
+        "aliases": [
+          "ココア"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/016"
+      },
+      {
+        "code": "18",
+        "name": "オリーブ",
+        "label": "18 オリーブ",
+        "aliases": [
+          "オリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/018"
+      },
+      {
+        "code": "19",
+        "name": "ゴールド",
+        "label": "19 ゴールド",
+        "aliases": [
+          "ゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/019"
+      },
+      {
+        "code": "20",
+        "name": "シルバー",
+        "label": "20 シルバー",
+        "aliases": [
+          "シルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/020"
+      },
+      {
+        "code": "23",
+        "name": "パールオレンジ/ブラウン",
+        "label": "23 パールオレンジ/ブラウン",
+        "aliases": [
+          "パールオレンジ/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/023"
+      },
+      {
+        "code": "25",
+        "name": "ジャングルグリーン",
+        "label": "25 ジャングルグリーン",
+        "aliases": [
+          "ジャングルグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/025"
+      },
+      {
+        "code": "31",
+        "name": "ゴールドペレットグロー",
+        "label": "31 ゴールドペレットグロー",
+        "aliases": [
+          "ゴールドペレットグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/031"
+      },
+      {
+        "code": "32",
+        "name": "グロー蛍光ピンク",
+        "label": "32 グロー蛍光ピンク",
+        "aliases": [
+          "グロー蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/032"
+      },
+      {
+        "code": "33",
+        "name": "カナリアグリーン",
+        "label": "33 カナリアグリーン",
+        "aliases": [
+          "カナリアグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/033"
+      },
+      {
+        "code": "34",
+        "name": "グローオレンジバンド",
+        "label": "34 グローオレンジバンド",
+        "aliases": [
+          "グローオレンジバンド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/034"
+      },
+      {
+        "code": "69",
+        "name": "ライトピンク/ココア",
+        "label": "69 ライトピンク/ココア",
+        "aliases": [
+          "ライトピンク/ココア"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/069"
+      },
+      {
+        "code": "70",
+        "name": "フロッググリーン",
+        "label": "70 フロッググリーン",
+        "aliases": [
+          "フロッググリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/070"
+      },
+      {
+        "code": "71",
+        "name": "ハネムシ",
+        "label": "71 ハネムシ",
+        "aliases": [
+          "ハネムシ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/071"
+      },
+      {
+        "code": "72",
+        "name": "ベージュ",
+        "label": "72 ベージュ",
+        "aliases": [
+          "ベージュ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/072"
+      },
+      {
+        "code": "73",
+        "name": "ピリオドオリーブ",
+        "label": "73 ピリオドオリーブ",
+        "aliases": [
+          "ピリオドオリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/073"
+      }
+    ],
+    "sourceUrl": "https://velvetarts.co.jp/pages/daisy04",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "VELVET ARTS"
+    ],
+    "seriesAliases": [
+      "DAISY"
+    ],
+    "modelAliases": [
+      "DAISY 0.4g"
+    ]
+  },
+  {
+    "manufacturer": "ベルベットアーツ",
+    "series": "デイジー",
+    "model": "デイジー 0.8g",
+    "weight": 0.8,
+    "colors": [
+      {
+        "code": "3",
+        "name": "ロイヤルグリーン",
+        "label": "3 ロイヤルグリーン",
+        "aliases": [
+          "ロイヤルグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/003"
+      },
+      {
+        "code": "4",
+        "name": "フリッカーゴールド",
+        "label": "4 フリッカーゴールド",
+        "aliases": [
+          "フリッカーゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/004"
+      },
+      {
+        "code": "6",
+        "name": "ＵＶシルバーオリーブ",
+        "label": "6 ＵＶシルバーオリーブ",
+        "aliases": [
+          "ＵＶシルバーオリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/006"
+      },
+      {
+        "code": "7",
+        "name": "ブルーシルバー",
+        "label": "7 ブルーシルバー",
+        "aliases": [
+          "ブルーシルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/007"
+      },
+      {
+        "code": "9",
+        "name": "ＵＶ金粉ブラウン",
+        "label": "9 ＵＶ金粉ブラウン",
+        "aliases": [
+          "ＵＶ金粉ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/009"
+      },
+      {
+        "code": "10",
+        "name": "チャート/ブラック",
+        "label": "10 チャート/ブラック",
+        "aliases": [
+          "チャート/ブラック"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/010"
+      },
+      {
+        "code": "14",
+        "name": "カラシ",
+        "label": "14 カラシ",
+        "aliases": [
+          "カラシ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/014"
+      },
+      {
+        "code": "18",
+        "name": "オリーブ",
+        "label": "18 オリーブ",
+        "aliases": [
+          "オリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/018"
+      },
+      {
+        "code": "19",
+        "name": "ゴールド",
+        "label": "19 ゴールド",
+        "aliases": [
+          "ゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/019"
+      },
+      {
+        "code": "20",
+        "name": "シルバー",
+        "label": "20 シルバー",
+        "aliases": [
+          "シルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/020"
+      },
+      {
+        "code": "23",
+        "name": "パールオレンジ/ブラウン",
+        "label": "23 パールオレンジ/ブラウン",
+        "aliases": [
+          "パールオレンジ/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/023"
+      },
+      {
+        "code": "25",
+        "name": "ジャングルグリーン",
+        "label": "25 ジャングルグリーン",
+        "aliases": [
+          "ジャングルグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/025"
+      },
+      {
+        "code": "26",
+        "name": "二代目鱒王",
+        "label": "26 二代目鱒王",
+        "aliases": [
+          "二代目鱒王"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/026"
+      },
+      {
+        "code": "28",
+        "name": "ピンクレッドゴールド",
+        "label": "28 ピンクレッドゴールド",
+        "aliases": [
+          "ピンクレッドゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/028"
+      },
+      {
+        "code": "29",
+        "name": "ＵＶシャイニーレモン",
+        "label": "29 ＵＶシャイニーレモン",
+        "aliases": [
+          "ＵＶシャイニーレモン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/029"
+      },
+      {
+        "code": "30",
+        "name": "グローゴールド",
+        "label": "30 グローゴールド",
+        "aliases": [
+          "グローゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/030"
+      },
+      {
+        "code": "31",
+        "name": "ゴールドペレットグロー",
+        "label": "31 ゴールドペレットグロー",
+        "aliases": [
+          "ゴールドペレットグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/031"
+      },
+      {
+        "code": "32",
+        "name": "グロー蛍光ピンク",
+        "label": "32 グロー蛍光ピンク",
+        "aliases": [
+          "グロー蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/032"
+      },
+      {
+        "code": "33",
+        "name": "カナリアグリーン",
+        "label": "33 カナリアグリーン",
+        "aliases": [
+          "カナリアグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/033"
+      },
+      {
+        "code": "34",
+        "name": "グローオレンジバンド",
+        "label": "34 グローオレンジバンド",
+        "aliases": [
+          "グローオレンジバンド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/034"
+      },
+      {
+        "code": "35",
+        "name": "イエローレッド/ブラウン",
+        "label": "35 イエローレッド/ブラウン",
+        "aliases": [
+          "イエローレッド/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/035"
+      },
+      {
+        "code": "66",
+        "name": "シルバーペレットグロー",
+        "label": "66 シルバーペレットグロー",
+        "aliases": [
+          "シルバーペレットグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/066"
+      },
+      {
+        "code": "69",
+        "name": "ライトピンク/ココア",
+        "label": "69 ライトピンク/ココア",
+        "aliases": [
+          "ライトピンク/ココア"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/069"
+      }
+    ],
+    "sourceUrl": "https://velvetarts.co.jp/pages/daisy08",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "VELVET ARTS"
+    ],
+    "seriesAliases": [
+      "DAISY"
+    ],
+    "modelAliases": [
+      "DAISY 0.8g"
+    ]
+  },
+  {
+    "manufacturer": "ベルベットアーツ",
+    "series": "デイジー",
+    "model": "デイジー 1.3g",
+    "weight": 1.3,
+    "colors": [
+      {
+        "code": "1",
+        "name": "キックオンザフェスタ",
+        "label": "1 キックオンザフェスタ",
+        "aliases": [
+          "キックオンザフェスタ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/001"
+      },
+      {
+        "code": "3",
+        "name": "ロイヤルグリーン",
+        "label": "3 ロイヤルグリーン",
+        "aliases": [
+          "ロイヤルグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/003"
+      },
+      {
+        "code": "6",
+        "name": "ＵＶシルバーオリーブ",
+        "label": "6 ＵＶシルバーオリーブ",
+        "aliases": [
+          "ＵＶシルバーオリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/006"
+      },
+      {
+        "code": "9",
+        "name": "ＵＶ金粉ブラウン",
+        "label": "9 ＵＶ金粉ブラウン",
+        "aliases": [
+          "ＵＶ金粉ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/009"
+      },
+      {
+        "code": "10",
+        "name": "チャート/ブラック",
+        "label": "10 チャート/ブラック",
+        "aliases": [
+          "チャート/ブラック"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/010"
+      },
+      {
+        "code": "12",
+        "name": "フロッグパール",
+        "label": "12 フロッグパール",
+        "aliases": [
+          "フロッグパール"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/012"
+      },
+      {
+        "code": "14",
+        "name": "カラシ",
+        "label": "14 カラシ",
+        "aliases": [
+          "カラシ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/014"
+      },
+      {
+        "code": "18",
+        "name": "オリーブ",
+        "label": "18 オリーブ",
+        "aliases": [
+          "オリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/018"
+      },
+      {
+        "code": "19",
+        "name": "ゴールド",
+        "label": "19 ゴールド",
+        "aliases": [
+          "ゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/019"
+      },
+      {
+        "code": "20",
+        "name": "シルバー",
+        "label": "20 シルバー",
+        "aliases": [
+          "シルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/020"
+      },
+      {
+        "code": "23",
+        "name": "パールオレンジ/ブラウン",
+        "label": "23 パールオレンジ/ブラウン",
+        "aliases": [
+          "パールオレンジ/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/023"
+      },
+      {
+        "code": "26",
+        "name": "二代目鱒王",
+        "label": "26 二代目鱒王",
+        "aliases": [
+          "二代目鱒王"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/026"
+      },
+      {
+        "code": "28",
+        "name": "ピンクレッドゴールド",
+        "label": "28 ピンクレッドゴールド",
+        "aliases": [
+          "ピンクレッドゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/028"
+      },
+      {
+        "code": "30",
+        "name": "グローゴールド",
+        "label": "30 グローゴールド",
+        "aliases": [
+          "グローゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/030"
+      },
+      {
+        "code": "31",
+        "name": "ゴールドペレットグロー",
+        "label": "31 ゴールドペレットグロー",
+        "aliases": [
+          "ゴールドペレットグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/031"
+      },
+      {
+        "code": "32",
+        "name": "グロー蛍光ピンク",
+        "label": "32 グロー蛍光ピンク",
+        "aliases": [
+          "グロー蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/032"
+      },
+      {
+        "code": "33",
+        "name": "カナリアグリーン",
+        "label": "33 カナリアグリーン",
+        "aliases": [
+          "カナリアグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/033"
+      },
+      {
+        "code": "34",
+        "name": "グローオレンジバンド",
+        "label": "34 グローオレンジバンド",
+        "aliases": [
+          "グローオレンジバンド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/034"
+      },
+      {
+        "code": "35",
+        "name": "イエローレッド/ブラウン",
+        "label": "35 イエローレッド/ブラウン",
+        "aliases": [
+          "イエローレッド/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/035"
+      },
+      {
+        "code": "66",
+        "name": "シルバーペレットグロー",
+        "label": "66 シルバーペレットグロー",
+        "aliases": [
+          "シルバーペレットグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/066"
+      }
+    ],
+    "sourceUrl": "https://velvetarts.co.jp/pages/daisy13",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "VELVET ARTS"
+    ],
+    "seriesAliases": [
+      "DAISY"
+    ],
+    "modelAliases": [
+      "DAISY 1.3g"
+    ]
+  },
+  {
+    "manufacturer": "ベルベットアーツ",
+    "series": "デイジー",
+    "model": "デイジー 2.5g",
+    "weight": 2.5,
+    "colors": [
+      {
+        "code": "1",
+        "name": "キックオンザフェスタ",
+        "label": "1 キックオンザフェスタ",
+        "aliases": [
+          "キックオンザフェスタ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/001"
+      },
+      {
+        "code": "2",
+        "name": "パールゴールド",
+        "label": "2 パールゴールド",
+        "aliases": [
+          "パールゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/002"
+      },
+      {
+        "code": "3",
+        "name": "ロイヤルグリーン",
+        "label": "3 ロイヤルグリーン",
+        "aliases": [
+          "ロイヤルグリーン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/003"
+      },
+      {
+        "code": "4",
+        "name": "フリッカーゴールド",
+        "label": "4 フリッカーゴールド",
+        "aliases": [
+          "フリッカーゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/004"
+      },
+      {
+        "code": "5",
+        "name": "透過チャートゴールド",
+        "label": "5 透過チャートゴールド",
+        "aliases": [
+          "透過チャートゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/005"
+      },
+      {
+        "code": "6",
+        "name": "ＵＶシルバーオリーブ",
+        "label": "6 ＵＶシルバーオリーブ",
+        "aliases": [
+          "ＵＶシルバーオリーブ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/006"
+      },
+      {
+        "code": "7",
+        "name": "ブルーシルバー",
+        "label": "7 ブルーシルバー",
+        "aliases": [
+          "ブルーシルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/007"
+      },
+      {
+        "code": "9",
+        "name": "ＵＶ金粉ブラウン",
+        "label": "9 ＵＶ金粉ブラウン",
+        "aliases": [
+          "ＵＶ金粉ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/009"
+      },
+      {
+        "code": "10",
+        "name": "チャート/ブラック",
+        "label": "10 チャート/ブラック",
+        "aliases": [
+          "チャート/ブラック"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/010"
+      },
+      {
+        "code": "11",
+        "name": "パールイエロー/ブラウン",
+        "label": "11 パールイエロー/ブラウン",
+        "aliases": [
+          "パールイエロー/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/011"
+      },
+      {
+        "code": "12",
+        "name": "フロッグパール",
+        "label": "12 フロッグパール",
+        "aliases": [
+          "フロッグパール"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/012"
+      },
+      {
+        "code": "13",
+        "name": "マイルド蛍光ピンク",
+        "label": "13 マイルド蛍光ピンク",
+        "aliases": [
+          "マイルド蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/013"
+      },
+      {
+        "code": "14",
+        "name": "カラシ",
+        "label": "14 カラシ",
+        "aliases": [
+          "カラシ"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/014"
+      },
+      {
+        "code": "19",
+        "name": "ゴールド",
+        "label": "19 ゴールド",
+        "aliases": [
+          "ゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/019"
+      },
+      {
+        "code": "20",
+        "name": "シルバー",
+        "label": "20 シルバー",
+        "aliases": [
+          "シルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/020"
+      },
+      {
+        "code": "23",
+        "name": "パールオレンジ/ブラウン",
+        "label": "23 パールオレンジ/ブラウン",
+        "aliases": [
+          "パールオレンジ/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/023"
+      },
+      {
+        "code": "26",
+        "name": "二代目鱒王",
+        "label": "26 二代目鱒王",
+        "aliases": [
+          "二代目鱒王"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/026"
+      },
+      {
+        "code": "27",
+        "name": "マッディメタグリグロー",
+        "label": "27 マッディメタグリグロー",
+        "aliases": [
+          "マッディメタグリグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/027"
+      },
+      {
+        "code": "28",
+        "name": "ピンクレッドゴールド",
+        "label": "28 ピンクレッドゴールド",
+        "aliases": [
+          "ピンクレッドゴールド"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/028"
+      },
+      {
+        "code": "29",
+        "name": "ＵＶシャイニーレモン",
+        "label": "29 ＵＶシャイニーレモン",
+        "aliases": [
+          "ＵＶシャイニーレモン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/029"
+      },
+      {
+        "code": "32",
+        "name": "グロー蛍光ピンク",
+        "label": "32 グロー蛍光ピンク",
+        "aliases": [
+          "グロー蛍光ピンク"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/032"
+      }
+    ],
+    "sourceUrl": "https://velvetarts.co.jp/pages/daisy25",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "VELVET ARTS"
+    ],
+    "seriesAliases": [
+      "DAISY"
+    ],
+    "modelAliases": [
+      "DAISY 2.5g"
+    ]
+  },
+  {
+    "manufacturer": "ベルベットアーツ",
+    "series": "ゴーレム",
+    "model": "ゴーレム 2.2g",
+    "weight": 2.2,
+    "colors": [
+      {
+        "code": "20",
+        "name": "シルバー",
+        "label": "20 シルバー",
+        "aliases": [
+          "シルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/020"
+      },
+      {
+        "code": "37",
+        "name": "レッドグロー",
+        "label": "37 レッドグロー",
+        "aliases": [
+          "レッドグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/037"
+      },
+      {
+        "code": "38",
+        "name": "ダークアース",
+        "label": "38 ダークアース",
+        "aliases": [
+          "ダークアース"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/038"
+      },
+      {
+        "code": "39",
+        "name": "マホガニー",
+        "label": "39 マホガニー",
+        "aliases": [
+          "マホガニー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/039"
+      },
+      {
+        "code": "41",
+        "name": "オリーブブルーパール",
+        "label": "41 オリーブブルーパール",
+        "aliases": [
+          "オリーブブルーパール"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/041"
+      },
+      {
+        "code": "42",
+        "name": "宇治金時",
+        "label": "42 宇治金時",
+        "aliases": [
+          "宇治金時"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/042"
+      },
+      {
+        "code": "67",
+        "name": "源氏蛍",
+        "label": "67 源氏蛍",
+        "aliases": [
+          "源氏蛍"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/067"
+      }
+    ],
+    "sourceUrl": "https://velvetarts.co.jp/pages/golem22",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "VELVET ARTS"
+    ],
+    "seriesAliases": [
+      "GOLEM"
+    ],
+    "modelAliases": [
+      "GOLEM 2.2g"
+    ]
+  },
+  {
+    "manufacturer": "ベルベットアーツ",
+    "series": "ゴーレム",
+    "model": "ゴーレム 2.9g",
+    "weight": 2.9,
+    "colors": [
+      {
+        "code": "20",
+        "name": "シルバー",
+        "label": "20 シルバー",
+        "aliases": [
+          "シルバー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/020"
+      },
+      {
+        "code": "36",
+        "name": "シルバー/ブラウン",
+        "label": "36 シルバー/ブラウン",
+        "aliases": [
+          "シルバー/ブラウン"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/036"
+      },
+      {
+        "code": "37",
+        "name": "レッドグロー",
+        "label": "37 レッドグロー",
+        "aliases": [
+          "レッドグロー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/037"
+      },
+      {
+        "code": "38",
+        "name": "ダークアース",
+        "label": "38 ダークアース",
+        "aliases": [
+          "ダークアース"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/038"
+      },
+      {
+        "code": "39",
+        "name": "マホガニー",
+        "label": "39 マホガニー",
+        "aliases": [
+          "マホガニー"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/039"
+      },
+      {
+        "code": "40",
+        "name": "ブラウングリーンパール",
+        "label": "40 ブラウングリーンパール",
+        "aliases": [
+          "ブラウングリーンパール"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/040"
+      },
+      {
+        "code": "41",
+        "name": "オリーブブルーパール",
+        "label": "41 オリーブブルーパール",
+        "aliases": [
+          "オリーブブルーパール"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/041"
+      },
+      {
+        "code": "42",
+        "name": "宇治金時",
+        "label": "42 宇治金時",
+        "aliases": [
+          "宇治金時"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/042"
+      },
+      {
+        "code": "67",
+        "name": "源氏蛍",
+        "label": "67 源氏蛍",
+        "aliases": [
+          "源氏蛍"
+        ],
+        "sourceUrl": "https://velvetarts.co.jp/blogs/color/067"
+      }
+    ],
+    "sourceUrl": "https://velvetarts.co.jp/pages/golem29",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "VELVET ARTS"
+    ],
+    "seriesAliases": [
+      "GOLEM"
+    ],
+    "modelAliases": [
+      "GOLEM 2.9g"
+    ]
+  },
+  {
+    "manufacturer": "1089工房",
+    "series": "さかさにょろ",
+    "model": "さかさにょろ 35FS",
+    "weight": 2.1,
+    "colors": [
+      {
+        "code": "1",
+        "name": "クリアー",
+        "label": "クリアー",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/1/9/19e2bda3.png"
+      },
+      {
+        "code": "2",
+        "name": "チャービン",
+        "label": "チャービン",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/1/9/19e2bda3.png"
+      },
+      {
+        "code": "3",
+        "name": "トロピカル",
+        "label": "トロピカル",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/1/9/19e2bda3.png"
+      },
+      {
+        "code": "4",
+        "name": "GLOW&GLOW",
+        "label": "GLOW&GLOW",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/1/9/19e2bda3.png"
+      },
+      {
+        "code": "6",
+        "name": "夜光虫",
+        "label": "夜光虫",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/1/9/19e2bda3.png"
+      },
+      {
+        "code": "7",
+        "name": "ツレツレももちゃん",
+        "label": "ツレツレももちゃん",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/1/9/19e2bda3.png"
+      },
+      {
+        "code": "9",
+        "name": "派手ペレット",
+        "label": "派手ペレット",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/1/9/19e2bda3.png"
+      },
+      {
+        "code": "10",
+        "name": "エビカニ",
+        "label": "エビカニ",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/1/9/19e2bda3.png"
+      },
+      {
+        "code": "11",
+        "name": "レッドグロー",
+        "label": "レッドグロー",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/1/9/19e2bda3.png"
+      }
+    ],
+    "sourceUrl": "https://koubou1089.livedoor.blog/archives/22868720.html",
+    "allowNewModel": false,
+    "manufacturerAliases": [],
+    "seriesAliases": [],
+    "modelAliases": [
+      "さかさにょろslim 35FS"
+    ]
+  },
+  {
+    "manufacturer": "1089工房",
+    "series": "さかさにょろ",
+    "model": "さかさにょろ 60FS",
+    "weight": 3.3,
+    "colors": [
+      {
+        "code": "1",
+        "name": "マンゴー",
+        "label": "マンゴー",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/5/b/5b93465d.jpg"
+      },
+      {
+        "code": "2",
+        "name": "チャービン",
+        "label": "チャービン",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/5/b/5b93465d.jpg"
+      },
+      {
+        "code": "3",
+        "name": "にんじん",
+        "label": "にんじん",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/5/b/5b93465d.jpg"
+      },
+      {
+        "code": "4",
+        "name": "GLOW&GLOW",
+        "label": "GLOW&GLOW",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/5/b/5b93465d.jpg"
+      },
+      {
+        "code": "5",
+        "name": "ずんだGLOW",
+        "label": "ずんだGLOW",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/5/b/5b93465d.jpg"
+      },
+      {
+        "code": "6",
+        "name": "コスモス",
+        "label": "コスモス",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/5/b/5b93465d.jpg"
+      },
+      {
+        "code": "7",
+        "name": "メロンソーダ",
+        "label": "メロンソーダ",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/5/b/5b93465d.jpg"
+      },
+      {
+        "code": "8",
+        "name": "スケイカ",
+        "label": "スケイカ",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/5/b/5b93465d.jpg"
+      },
+      {
+        "code": "9",
+        "name": "ペレット",
+        "label": "ペレット",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/5/b/5b93465d.jpg"
+      },
+      {
+        "code": "10",
+        "name": "エビカニ",
+        "label": "エビカニ",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/5/b/5b93465d.jpg"
+      },
+      {
+        "code": "11",
+        "name": "レッドグロー",
+        "label": "レッドグロー",
+        "aliases": [],
+        "sourceUrl": "https://livedoor.blogimg.jp/koubou1089/imgs/5/b/5b93465d.jpg"
+      }
+    ],
+    "sourceUrl": "https://koubou1089.livedoor.blog/archives/22868720.html",
+    "allowNewModel": false,
+    "manufacturerAliases": [],
+    "seriesAliases": [],
+    "modelAliases": [
+      "さかさにょろslim 60FS"
+    ]
+  },
+  {
+    "manufacturer": "ロブルアー",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "weight": 1.8,
+    "colors": [
+      {
+        "code": "",
+        "name": "ゴールド",
+        "label": "ゴールド",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "シルバー",
+        "label": "シルバー",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "ネーブル",
+        "label": "ネーブル",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "ろっきゅ～",
+        "label": "ろっきゅ～",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "Go! Go! チャンス",
+        "label": "Go! Go! チャンス",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "スケスケオリーブ",
+        "label": "スケスケオリーブ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "GLG",
+        "label": "GLG",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "MOOかりまっか",
+        "label": "MOOかりまっか",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "壊滅ブラウン",
+        "label": "壊滅ブラウン",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "明滅ライム",
+        "label": "明滅ライム",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "宴もたけなわ",
+        "label": "宴もたけなわ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "ぽむプリ",
+        "label": "ぽむプリ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      }
+    ],
+    "sourceUrl": "https://rob-lure.com/work/s-plug/",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "rob lure",
+      "rob-lure"
+    ],
+    "seriesAliases": [],
+    "modelAliases": []
+  },
+  {
+    "manufacturer": "ロブルアー",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "weight": 2.2,
+    "colors": [
+      {
+        "code": "",
+        "name": "ゴールド",
+        "label": "ゴールド",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "シルバー",
+        "label": "シルバー",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "ネーブル",
+        "label": "ネーブル",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "ろっきゅ～",
+        "label": "ろっきゅ～",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "Go! Go! チャンス",
+        "label": "Go! Go! チャンス",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "スケスケオリーブ",
+        "label": "スケスケオリーブ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "GLG",
+        "label": "GLG",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "MOOかりまっか",
+        "label": "MOOかりまっか",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "壊滅ブラウン",
+        "label": "壊滅ブラウン",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "明滅ライム",
+        "label": "明滅ライム",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "宴もたけなわ",
+        "label": "宴もたけなわ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      },
+      {
+        "code": "",
+        "name": "ぽむプリ",
+        "label": "ぽむプリ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/s-plug/"
+      }
+    ],
+    "sourceUrl": "https://rob-lure.com/work/s-plug/",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "rob lure",
+      "rob-lure"
+    ],
+    "seriesAliases": [],
+    "modelAliases": []
+  },
+  {
+    "manufacturer": "ロブルアー",
+    "series": "チェルシー",
+    "model": "チェルシー SS",
+    "weight": 1.8,
+    "colors": [
+      {
+        "code": "",
+        "name": "スケスケオリーブ",
+        "label": "スケスケオリーブ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "スネーキーグロー",
+        "label": "スネーキーグロー",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "とんこつ",
+        "label": "とんこつ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "玉ウキ",
+        "label": "玉ウキ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "オリーブチャート",
+        "label": "オリーブチャート",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "はいからさん",
+        "label": "はいからさん",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "でん六",
+        "label": "でん六",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "あずて〜ら",
+        "label": "あずて〜ら",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "コンクリートグレー",
+        "label": "コンクリートグレー",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      }
+    ],
+    "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "rob lure",
+      "rob-lure"
+    ],
+    "seriesAliases": [],
+    "modelAliases": []
+  },
+  {
+    "manufacturer": "ロブルアー",
+    "series": "チェルシー",
+    "model": "チェルシー F",
+    "weight": 1.4,
+    "colors": [
+      {
+        "code": "",
+        "name": "スケスケオリーブ",
+        "label": "スケスケオリーブ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "スネーキーグロー",
+        "label": "スネーキーグロー",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "とんこつ",
+        "label": "とんこつ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "クリクリ",
+        "label": "クリクリ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "ブルーパールクリア",
+        "label": "ブルーパールクリア",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "G6",
+        "label": "G6",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "カモフラペレット",
+        "label": "カモフラペレット",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "キョンシー（グロー）",
+        "label": "キョンシー（グロー）",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      }
+    ],
+    "sourceUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "rob lure",
+      "rob-lure"
+    ],
+    "seriesAliases": [],
+    "modelAliases": []
+  },
+  {
+    "manufacturer": "ロブルアー",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "weight": 3.4,
+    "colors": [
+      {
+        "code": "",
+        "name": "クリクリ",
+        "label": "クリクリ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "スケスケオリーブ",
+        "label": "スケスケオリーブ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "スネーキーグロー",
+        "label": "スネーキーグロー",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "とんこつ",
+        "label": "とんこつ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "カビるん",
+        "label": "カビるん",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "オリーブチャート",
+        "label": "オリーブチャート",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "クリピン",
+        "label": "クリピン",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "玉ウキ",
+        "label": "玉ウキ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "CG桜薫",
+        "label": "CG桜薫",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "ブルーパールクリア",
+        "label": "ブルーパールクリア",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      }
+    ],
+    "sourceUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "rob lure",
+      "rob-lure"
+    ],
+    "seriesAliases": [],
+    "modelAliases": []
+  },
+  {
+    "manufacturer": "ロブルアー",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "weight": 3.4,
+    "colors": [
+      {
+        "code": "",
+        "name": "クリクリ",
+        "label": "クリクリ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "スネーキーグロー",
+        "label": "スネーキーグロー",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "青汁",
+        "label": "青汁",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "FM5",
+        "label": "FM5",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "グローセサミン",
+        "label": "グローセサミン",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "スケスケオリーブ",
+        "label": "スケスケオリーブ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "とんこつ",
+        "label": "とんこつ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "黒坦々",
+        "label": "黒坦々",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "玉ウキ",
+        "label": "玉ウキ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      },
+      {
+        "code": "",
+        "name": "カモフラオリーブ",
+        "label": "カモフラオリーブ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      }
+    ],
+    "sourceUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "rob lure",
+      "rob-lure"
+    ],
+    "seriesAliases": [],
+    "modelAliases": []
+  },
+  {
+    "manufacturer": "ロブルアー",
+    "series": "もぐたそ",
+    "model": "もぐたそ",
+    "weight": 4.2,
+    "colors": [
+      {
+        "code": "",
+        "name": "凸ポンオリーブ",
+        "label": "凸ポンオリーブ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      },
+      {
+        "code": "",
+        "name": "レッドグロー",
+        "label": "レッドグロー",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      },
+      {
+        "code": "",
+        "name": "とんこつ",
+        "label": "とんこつ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      },
+      {
+        "code": "",
+        "name": "スケスケオリーブ",
+        "label": "スケスケオリーブ",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      },
+      {
+        "code": "",
+        "name": "凸ポングロー",
+        "label": "凸ポングロー",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      },
+      {
+        "code": "",
+        "name": "黒坦々",
+        "label": "黒坦々",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      },
+      {
+        "code": "",
+        "name": "ピン子",
+        "label": "ピン子",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      },
+      {
+        "code": "",
+        "name": "スネーキーグロー",
+        "label": "スネーキーグロー",
+        "aliases": [],
+        "sourceUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      }
+    ],
+    "sourceUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+    "allowNewModel": false,
+    "manufacturerAliases": [
+      "rob lure",
+      "rob-lure"
+    ],
+    "seriesAliases": [],
+    "modelAliases": []
+  }
+] as const
