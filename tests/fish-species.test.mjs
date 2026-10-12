@@ -50,16 +50,16 @@ const backup = async () => JSON.parse(JSON.stringify(await createBackup()))
 const restore = value => importBackup({ text: async () => JSON.stringify(value) })
 const custom = (display_name = '独自ブランド') => ({ ...initialFishSpecies[0], fish_id: 'ignored', display_name, group: 'ブランドマス', origin: 'user', source_status: 'ユーザー登録' })
 
-test('Excel conversion keeps all four sheets and 44 original rows; exactly 37 chosen with 7 excluded', () => {
+test('Excel conversion keeps all four sheets and 44 original rows; exactly 46 chosen with 7 excluded', () => {
   assert.equal(fishMasterSource.sourceFile, 'fishing-log-fish-master-reviewed-2026-10-10.xlsx')
   assert.equal(fishMasterSource.sheets['初期マスター'].length, 44)
   assert.equal(fishMasterSource.sheets['ブランド放流確認'].length, 28)
   assert.equal(fishMasterSource.sheets['保留・対象外'].length, 18)
   assert.equal(fishMasterSource.sheets['判定方針'].length, 7)
-  assert.equal(initialFishSpecies.length, 37)
-  for (const [group, count] of [['ニジマス', 1], ['イロモノ', 15], ['ブランドマス', 21]]) assert.equal(initialFishSpecies.filter(row => row.group === group).length, count)
-  assert.equal(new Set(initialFishSpecies.map(row => row.fish_id)).size, 37)
-  assert.equal(new Set(initialFishSpecies.map(row => row.display_name)).size, 37)
+  assert.equal(initialFishSpecies.length, 46)
+  for (const [group, count] of [['ニジマス', 1], ['イロモノ', 15], ['ブランドマス', 21], ['川魚', 7], ['バス', 2]]) assert.equal(initialFishSpecies.filter(row => row.group === group).length, count)
+  assert.equal(new Set(initialFishSpecies.map(row => row.fish_id)).size, 46)
+  assert.equal(new Set(initialFishSpecies.map(row => row.display_name)).size, 46)
   assert.deepEqual(fishMasterSource.sheets['初期マスター'].filter(row => !initialFishSpecies.some(chosen => chosen.fish_id === row.fish_id)).map(row => row.fish_id), ['F017', 'F018', 'F019', 'F021', 'F023', 'F024', 'F025'])
   assert.ok(initialFishSpecies.some(row => row.group === 'イロモノ' && row.source_status === '二次資料確認'))
 })
@@ -67,14 +67,14 @@ test('Excel conversion keeps all four sheets and 44 original rows; exactly 37 ch
 test('reading candidates and default rainbow does not seed DB or assign fish to historical catches', async () => {
   const before = await state()
   const choices = await loadFishChoices()
-  assert.equal(choices.length, 37)
+  assert.equal(choices.length, 46)
   assert.equal(defaultFishSpeciesId(choices), rainbowFishId)
   assert.equal(await state(), before)
   assert.equal((await db.catches.get(70)).fishSpeciesId, undefined)
 })
 
 test('explicit seed is idempotent and preserves user edits, hidden status and user additions', async () => {
-  assert.equal(await registerInitialFishSpecies(), 37)
+  assert.equal(await registerInitialFishSpecies(), 46)
   const row = await db.fishSpecies.get('F020')
   await saveFishSpecies({ ...row, display_name: '編集済みハコスチ', group: 'イロモノ' }, row.fish_id)
   await setFishSpeciesActive('F001', false)
@@ -95,10 +95,10 @@ test('user name duplicate and reserved candidate name are rejected without write
   assert.equal(await state(), before)
 })
 
-test('first catch commits initial 37 with fish snapshot and lure ownership atomically', async () => {
+test('first catch commits initial 46 with fish snapshot and lure ownership atomically', async () => {
   const id = await registerCatch(input({ fishSpeciesId: rainbowFishId, fishSizeCm: 30.5 }), { kind: 'catalog', variantId: 40 })
   const row = await db.catches.get(id)
-  assert.equal(await db.fishSpecies.count(), 37)
+  assert.equal(await db.fishSpecies.count(), 46)
   assert.equal(await db.myLures.count(), 2)
   assert.deepEqual([row.fishSpeciesId, row.fishSpecies, row.fishSpeciesGroup, row.fishSizeCm], ['F001', 'ニジマス', 'ニジマス', 30.5])
   assert.equal((await db.catches.get(70)).fishSpeciesId, undefined)
@@ -169,7 +169,7 @@ test('v5 round-trip preserves all 13 tables, original metadata, edited/user fish
   assert.equal(await state(), before)
 })
 
-for (const version of [1, 2, 3, 4]) test(`old v${version} restore has unknown historical catches; explicit reseed restores 37 without rewriting catches`, async () => {
+for (const version of [1, 2, 3, 4]) test(`old v${version} restore has unknown historical catches; explicit reseed restores 46 without rewriting catches`, async () => {
   const value = await backup()
   value.version = version
   if (version === 1) delete value.data.tripEvents
@@ -179,10 +179,10 @@ for (const version of [1, 2, 3, 4]) test(`old v${version} restore has unknown hi
   await saveFishSpecies(custom())
   await restore(value)
   assert.equal(await db.fishSpecies.count(), 0) // 明示した全データ置換の仕様。
-  assert.equal((await loadFishChoices()).length, 37)
+  assert.equal((await loadFishChoices()).length, 46)
   assert.deepEqual(await db.catches.toArray(), original)
   await registerInitialFishSpecies()
-  assert.equal(await db.fishSpecies.count(), 37)
+  assert.equal(await db.fishSpecies.count(), 46)
   assert.deepEqual(await db.catches.toArray(), original)
 })
 

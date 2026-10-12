@@ -7,6 +7,8 @@ import FishSpeciesPicker from './FishSpeciesPicker.vue';
 
 const props = defineProps<{
   caughtAt: Date;
+  editing?: boolean;
+  memo?: string;
   hasPreviousCatch: boolean;
   myLures: LureOption[];
   catalog: LureOption[];
@@ -28,6 +30,8 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits<{
+  'update:caughtAt': [value: Date];
+  'update:memo': [value: string];
   cancel: [];
   save: [];
   sameAsPrevious: [];
@@ -44,6 +48,10 @@ const emit = defineEmits<{
   "update:action": [value: string];
 }>();
 
+function localDateTime(date: Date) {
+  const pad = (n: number) => String(n).padStart(2, '0');
+  return `${date.getFullYear()}-${pad(date.getMonth()+1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
+}
 const showLurePicker = ref(false);
 const showManualInput = ref(false);
 const lureSearch = ref("");
@@ -122,10 +130,10 @@ function selectRecent(recent: RecentLure) {
 
 <template>
   <div class="modal-backdrop">
-    <section class="catch-modal" role="dialog" aria-label="釣果を登録" aria-modal="true" :inert="saving" :aria-busy="saving">
+    <section class="catch-modal" role="dialog" :aria-label="editing ? '釣果を編集' : '釣果を登録'" aria-modal="true" :inert="saving" :aria-busy="saving">
       <p class="app-name">CATCH RECORD</p>
 
-      <h2>🎣 釣果を登録</h2>
+      <h2>{{ editing ? '釣果を編集' : '🎣 釣果を登録' }}</h2>
 
       <div class="caught-time">
         <span>釣れた時刻</span>
@@ -141,6 +149,9 @@ function selectRecent(recent: RecentLure) {
         </strong>
       </div>
 
+      <label v-if="editing" class="catch-field"><span>釣果日時</span>
+        <input type="datetime-local" step="1" aria-label="釣果日時" :value="localDateTime(caughtAt)" @input="emit('update:caughtAt', new Date(($event.target as HTMLInputElement).value))" />
+      </label>
       <slot name="location" />
       <button v-if="hasPreviousCatch" class="same-button" :disabled="locationBusy" @click="emit('sameAsPrevious')">
         ⚡ 前回と同じ
@@ -311,7 +322,7 @@ function selectRecent(recent: RecentLure) {
             :class="{
               selected: range === value,
             }"
-            @click="emit('update:range', value)"
+            @click="emit('update:range', range === value ? '' : value)"
           >
             {{ value }}
           </button>
@@ -329,7 +340,7 @@ function selectRecent(recent: RecentLure) {
             :class="{
               selected: retrieveSpeed === value,
             }"
-            @click="emit('update:retrieveSpeed', value)"
+            @click="emit('update:retrieveSpeed', retrieveSpeed === value ? '' : value)"
           >
             {{ value }}
           </button>
@@ -374,6 +385,7 @@ function selectRecent(recent: RecentLure) {
       <label class="catch-field"><span>全長（cm・任意）</span>
         <input type="number" inputmode="decimal" min="0" step="any" :value="fishSize ?? ''" @input="emit('update:fishSize', ($event.target as HTMLInputElement).value)" />
       </label>
+      <label class="catch-field"><span>メモ（任意）</span><textarea :value="memo ?? ''" @input="emit('update:memo', ($event.target as HTMLTextAreaElement).value)" /></label>
       <button class="primary-button" :disabled="saving || locationBusy" @click="emit('save')">{{ saving ? '保存中…' : '保存する' }}</button>
 
       <button class="cancel-button" :disabled="locationBusy" @click="emit('cancel')">キャンセル</button>

@@ -16,7 +16,7 @@ import { getTripDeletionSummary, deleteFishingTrip, type TripDeletionSummary } f
 import { loadFishChoices, defaultFishSpeciesId } from './utils/fishSpecies'
 import { availableTackleSets, createTrip, updateTripTackles, suggestTackleSetId } from './utils/tackleManagement'
 import { exportBackup, importBackup } from './utils/backup'
-import { loadLureChoices, registerCatch, registerSameAsPrevious,
+import { loadLureChoices, updateCatch, registerCatch, registerSameAsPrevious,
   type LureOption, type LureSelection, type RecentLure } from './utils/catchRegistration'
 import {
   db,
@@ -217,6 +217,8 @@ const newTripWeather = ref('')
 
 // 釣果入力
 const showCatchForm = ref(false)
+const editingCatch = ref<CatchRecord | null>(null)
+const catchMemo = ref('')
 const pendingCaughtAt = ref<Date | null>(null)
 const catchLureName = ref('')
 const catchLureColor = ref('')
@@ -403,12 +405,46 @@ async function openTrip(trip: FishingTrip) {
   screen.value = 'fishing'
 }
 
+async function editCatch(record: CatchRecord) {
+  if (savingCatch.value || showCatchForm.value || locationBusy.value || !currentTrip.value?.id) return
+  try {
+    await loadMyLureOptions()
+    fishChoices.value = await loadFishChoices()
+    if (record.fishSpeciesId && !fishChoices.value.some(f => f.fish_id === record.fishSpeciesId)) {
+      const retained = await db.fishSpecies.get(record.fishSpeciesId)
+      if (retained) fishChoices.value.push(retained)
+    }
+    catchTackleOptions.value = await availableTackleSets(currentTrip.value)
+    if (record.tackleSetId && !catchTackleOptions.value.some(t => t.id === record.tackleSetId)) {
+      const retained = await db.tackleSets.get(record.tackleSetId)
+      if (retained) catchTackleOptions.value.push(retained)
+    }
+    editingCatch.value = record
+    pendingCaughtAt.value = new Date(record.caughtAt)
+    catchSelection.value = null
+    catchLureName.value = record.lureName ?? ''
+    catchLureColor.value = record.lureColor ?? ''
+    catchRange.value = record.rangeLevel ?? ''
+    catchRetrieveSpeed.value = record.retrieveSpeed ?? ''
+    catchAction.value = record.action ?? ''
+    catchMemo.value = record.memo ?? ''
+    catchFishSpeciesId.value = record.fishSpeciesId
+    catchFishSize.value = record.fishSizeCm === undefined ? '' : String(record.fishSizeCm)
+    catchTackleSetId.value = record.tackleSetId
+    catchZoneId.value = record.zoneId
+    catchLocation.value = currentTrip.value.facilityId ? { expectedFacilityId: currentTrip.value.facilityId, expectedCurrentZoneId: currentTrip.value.currentZoneId, zoneId: record.zoneId } : undefined
+    showCatchForm.value = true
+  } catch (error) { alert(error instanceof Error ? error.message : String(error)) }
+}
+
 async function addCatch() {
   if (savingCatch.value || showCatchForm.value || locationBusy.value || savingLocation.value) return
   /*
    * 「釣れた！」を押した瞬間に時刻を確保。
    * 入力に時間がかかっても、この時刻は変わらない。
    */
+  editingCatch.value = null
+  catchMemo.value = ''
   pendingCaughtAt.value = new Date()
 
   catchSelection.value = null
@@ -427,7 +463,7 @@ async function addCatch() {
     catchLocation.value = { expectedFacilityId: trip.facilityId, expectedCurrentZoneId: trip.currentZoneId, zoneId: trip.currentZoneId }
     await loadMyLureOptions()
     fishChoices.value = await loadFishChoices()
-    catchFishSpeciesId.value = defaultFishSpeciesId(fishChoices.value)
+    catchFishSpeciesId.value = trip.fishingStyle === 'AREA_TROUT' ? defaultFishSpeciesId(fishChoices.value) : undefined
     catchFishSize.value = ''
     catchTackleOptions.value = await availableTackleSets(currentTrip.value ?? undefined)
     catchTackleSetId.value = suggestTackleSetId(catches.value, catchTackleOptions.value)
@@ -456,13 +492,16 @@ async function commitCatch(sameAsPrevious: boolean) {
       const selection = catchSelection.value?.kind === 'manual' || !catchSelection.value
         ? { kind: 'manual' as const, lureName: catchLureName.value, lureColor: catchLureColor.value }
         : catchSelection.value
-      await registerCatch({ tripId: currentTrip.value.id, caughtAt: pendingCaughtAt.value,
-        location: catchLocation.value ? { ...catchLocation.value, zoneId: catchZoneId.value } : undefined,
+      const input = { tripId: currentTrip.value.id, caughtAt: pendingCaughtAt.value,
+        location: editingCatch.value && catchZoneId.value === editingCatch.value.zoneId ? undefined : catchLocation.value ? { ...catchLocation.value, zoneId: catchZoneId.value } : undefined,
         tackleSetId: catchTackleSetId.value,
         fishSpeciesId: catchFishSpeciesId.value,
         fishSizeCm: catchFishSize.value.trim() ? Number(catchFishSize.value) : undefined,
         rangeLevel: catchRange.value || undefined, retrieveSpeed: catchRetrieveSpeed.value || undefined,
-        action: catchAction.value || undefined }, selection)
+        action: catchAction.value || undefined, memo: catchMemo.value || undefined }
+      if (editingCatch.value?.id) {
+        await updateCatch(editingCatch.value.id, input, catchSelection.value ? selection : undefined)
+      } else await registerCatch(input, selection)
     }
   } catch (error) {
     alert(error instanceof Error ? error.message : '釣果の保存に失敗しました。')
@@ -470,6 +509,7 @@ async function commitCatch(sameAsPrevious: boolean) {
     return
   }
   showCatchForm.value = false
+  editingCatch.value = null
   pendingCaughtAt.value = null
   catchSelection.value = null
   catchTackleSetId.value = undefined
@@ -487,6 +527,7 @@ function cancelCatch() {
   if (locationBusy.value || savingLocation.value) return
   if (savingCatch.value) return
   showCatchForm.value = false
+  editingCatch.value = null
   pendingCaughtAt.value = null
   catchSelection.value = null
   catchTackleSetId.value = undefined
@@ -724,7 +765,7 @@ async function selectCurrentZone(zoneId: string | undefined) {
     <!-- 釣行中 -->
 
     <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation" @home="goHome"
-      @add-catch="addCatch" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @update-event="updateTripEvent" @end-trip="endTrip">
+      @add-catch="addCatch" @edit-catch="editCatch" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @update-event="updateTripEvent" @end-trip="endTrip">
       <template #location><FacilityPicker v-if="currentTrip.facilityId" :key="locationRefresh" fixed :facility-id="currentTrip.facilityId" :trip-id="currentTrip.id"
         :zone-id="currentTrip.currentZoneId" :retained-zone-id="currentTrip.currentZoneId" zone-label="現在のエリア" :disabled="!!currentTrip.endedAt || savingLocation || showCatchForm"
         @update:zone-id="selectCurrentZone" @busy="locationBusy = $event" /></template>
@@ -748,17 +789,17 @@ async function selectCurrentZone(zoneId: string | undefined) {
     </div>
 
     <!-- 釣果入力モーダル -->
-    <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt"
+    <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt" :editing="!!editingCatch" @update:caught-at="pendingCaughtAt = $event" v-model:memo="catchMemo"
       :location-busy="locationBusy || savingLocation"
       :fish-choices="fishChoices" v-model:fish-species-id="catchFishSpeciesId" v-model:fish-size="catchFishSize"
       :tackle-sets="catchTackleOptions" v-model:tackle-set-id="catchTackleSetId"
       :catalog="catalogOptions" :recent-lures="recentLures" :selection="catchSelection" :saving="savingCatch"
-      :has-previous-catch="catches.length > 0" :my-lures="myLureOptions" v-model:lure-name="catchLureName"
+      :has-previous-catch="!editingCatch && catches.length > 0" :my-lures="myLureOptions" v-model:lure-name="catchLureName"
       v-model:lure-color="catchLureColor" v-model:range="catchRange" v-model:retrieve-speed="catchRetrieveSpeed"
       v-model:action="catchAction" @select-lure="selectLure" @save="saveCatch"
       @same-as-previous="saveSameAsPrevious" @cancel="cancelCatch">
       <template #location><FacilityPicker v-if="catchLocation?.expectedFacilityId" fixed :facility-id="catchLocation.expectedFacilityId" :trip-id="currentTrip?.id"
-        v-model:zone-id="catchZoneId" :retained-zone-id="catchLocation.expectedCurrentZoneId" zone-label="今回のエリア" :disabled="savingCatch" @busy="locationBusy = $event" /></template>
+        v-model:zone-id="catchZoneId" :retained-zone-id="editingCatch?.zoneId ?? catchLocation.expectedCurrentZoneId" zone-label="今回のエリア" :disabled="savingCatch" @busy="locationBusy = $event" /></template>
     </CatchModal>
   </main>
 </template>

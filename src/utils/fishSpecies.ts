@@ -1,7 +1,18 @@
 import { db, validateFishSpecies, type FishSpecies, type CatchRecord } from '../db/database'
 import { initialFishMaster } from '../data/fishMaster'
 
-export const initialFishSpecies: FishSpecies[] = initialFishMaster.map(row => ({ ...row, active: true, origin: 'reviewed' }))
+// RC19仕様書の候補。旧Excel/CSVのID空間を変更しない。
+const rc19FishMaster = [
+  'カワムツ', 'オイカワ', 'ウグイ', 'ヌマムツ', 'アブラハヤ', 'タカハヤ', 'ムギツク',
+  'スモールマウスバス', 'ラージマウスバス',
+].map((display_name, i) => ({
+  fish_id: `RC19-F${String(i + 1).padStart(3, '0')}`, display_name,
+  group: i < 7 ? '川魚' as const : 'バス' as const,
+  aliases: '', region: '', lineage_or_type: '', source_status: 'RC19仕様候補',
+  notes: '', source_url: '',
+}))
+export const initialFishSpecies: FishSpecies[] = [...initialFishMaster, ...rc19FishMaster]
+  .map(row => ({ ...row, active: true, origin: 'reviewed' }))
 export const rainbowFishId = initialFishSpecies.find(row => row.group === 'ニジマス')!.fish_id
 export function defaultFishSpeciesId(choices: FishSpecies[]) {
   return choices.some(row => row.fish_id === rainbowFishId && row.active) ? rainbowFishId : undefined

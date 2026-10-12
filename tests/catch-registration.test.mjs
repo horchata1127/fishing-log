@@ -28,7 +28,7 @@ for (const [name, source] of [['tripLocations', 'utils/tripLocations.ts'], ['fac
   await writeFile(paths[name], code)
 }
 const { db, ownershipStatus } = await import(pathToFileURL(paths.database).href)
-const { registerCatch, registerSameAsPrevious, loadLureChoices } = await import(pathToFileURL(paths.catchRegistration).href)
+const { updateCatch, registerCatch, registerSameAsPrevious, loadLureChoices } = await import(pathToFileURL(paths.catchRegistration).href)
 const { createBackup, importBackup, validateBackup } = await import(pathToFileURL(paths.backup).href)
 const { descriptor } = parse(await readFile(new URL('../src/components/CatchModal.vue', import.meta.url), 'utf8'))
 const script = compileScript(descriptor, { id: 'catch-test' })
@@ -353,4 +353,49 @@ test('UI supports explicitly clearing a preceding tackle suggestion', async () =
   findTackleSelect(vnode).props.onChange({ target: { value: '' } })
   assert.equal(props.tackleSetId, undefined)
   assert.deepEqual(events.at(-1), ['update:tackleSetId', undefined])
+})
+
+test('editing an ended trip preserves IDs and count and clears stale references durably', async () => {
+  const id = await registerCatch({ ...input(), fishSpeciesId: 'RC19-F001', fishSizeCm: 12, memo: 'old' }, catalog)
+  await db.trips.update(60, { endedAt: new Date() })
+  const count = await db.catches.count()
+  const at = new Date('2026-10-11T01:00:00Z')
+  await updateCatch(id, { ...input(), caughtAt: at, fishSpeciesId: undefined, fishSizeCm: undefined, memo: undefined }, { kind: 'manual', lureName: 'HUNT GRANDE 1.3g', lureColor: 'Silver' })
+  db.close()
+  await db.open()
+  const row = await db.catches.get(id)
+  assert.equal(await db.catches.count(), count)
+  assert.equal(row.id, id)
+  assert.equal(row.tripId, 60)
+  assert.equal(row.caughtAt.getTime(), at.getTime())
+  for (const field of ['lureId', 'lureVariantId', 'fishSpeciesId', 'fishSpecies', 'fishSpeciesGroup', 'fishSizeCm', 'memo']) assert.equal(row[field], undefined, field)
+})
+
+test('editing validates parent/date/size and rolls back ownership on update failure', async () => {
+  const id = await registerCatch(input(), { kind: 'manual', lureName: 'old', lureColor: '' })
+  const before = await snapshot()
+  await assert.rejects(updateCatch(id, { ...input(), tripId: 999 }, catalog))
+  await assert.rejects(updateCatch(id, { ...input(), caughtAt: new Date(NaN) }, catalog))
+  await assert.rejects(updateCatch(id, { ...input(), fishSizeCm: 0 }, catalog))
+  const fail = () => { throw new Error('injected update failure') }
+  db.catches.hook('updating', fail)
+  try { await assert.rejects(updateCatch(id, input(), catalog), /injected/) }
+  finally { db.catches.hook('updating').unsubscribe(fail) }
+  assert.equal(await snapshot(), before)
+})
+
+test('editing preserves unchanged history and refreshes a changed fish selection', async () => {
+  const id = await registerCatch({ ...input(), fishSpeciesId: 'RC19-F001' }, catalog)
+  const original = await db.catches.get(id)
+  await db.fishSpecies.update('RC19-F001', { active: false, display_name: 'renamed' })
+  await updateCatch(id, { ...input(), fishSpeciesId: 'RC19-F001' })
+  assert.deepEqual(await db.catches.get(id), original)
+  await updateCatch(id, { ...input(), fishSpeciesId: 'RC19-F008' }, { kind: 'catalog', variantId: 41 })
+  const row = await db.catches.get(id)
+  assert.equal(row.fishSpeciesGroup, '\u30d0\u30b9')
+  assert.equal(row.lureVariantId, 41)
+  assert.equal(row.lureColor, 'Other')
+  const backup = await createBackup()
+  await importBackup(new File([JSON.stringify(backup)], 'rc19.json'))
+  assert.deepEqual(await db.catches.get(id), row)
 })

@@ -145,7 +145,7 @@ export function isUsableOwnedLure(lure: MyLure): boolean {
   return lure.active === true && ownershipStatus(lure) === 'owned'
 }
 
-export const fishGroups = ['ニジマス', 'ブランドマス', 'イロモノ'] as const
+export const fishGroups = ['ニジマス', 'ブランドマス', 'イロモノ', '川魚', 'バス'] as const
 export type FishGroup = typeof fishGroups[number]
 export interface FishSpecies {
   fish_id: string
