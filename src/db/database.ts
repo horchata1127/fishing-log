@@ -105,6 +105,7 @@ export interface LureModel {
   lengthMm?: number
   weightG?: number
   category?: LureCategory
+  actionType?: 'F' | 'SS' | 'SSS'
 }
 
 /*
@@ -117,6 +118,10 @@ export interface LureVariant {
   id?: number
   modelId: number
   colorName: string
+  catalogEvidence?: {
+    revision: 'RC22'; colorClass: string; sourceTier: string
+    manufacturerUrl: string; retailerUrl: string; jan: string; originalName: string
+  }
 }
 
 /*

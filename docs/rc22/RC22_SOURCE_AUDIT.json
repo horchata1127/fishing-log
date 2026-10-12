@@ -1,0 +1,170 @@
+{
+  "official": [
+    {
+      "url": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "sha256": "7cd7d244950ebd758712ee23cdb246575a3e7e122c355f017726c06d76aebe1a",
+      "fetchedAt": "2026-10-12T07:24:20.138750+00:00",
+      "colors": []
+    },
+    {
+      "url": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "sha256": "a9262c74b44e7486372ed08f303e828ece7a6c5187cb5b0846d14f602236cb44",
+      "fetchedAt": "2026-10-12T07:24:20.329552+00:00",
+      "colors": [
+        {
+          "name": "スケスケオリーブ",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/01.png"
+        },
+        {
+          "name": "スネーキーグロー",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/02.png"
+        },
+        {
+          "name": "とんこつ",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/03.png"
+        },
+        {
+          "name": "玉ウキ",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/04.png"
+        },
+        {
+          "name": "オリーブチャート",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/05.png"
+        },
+        {
+          "name": "カモフラオリーブ",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/06.png"
+        },
+        {
+          "name": "クリピン",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/07.png"
+        },
+        {
+          "name": "アカキン",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/08-.png"
+        },
+        {
+          "name": "スケスケブラウン",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/09.png"
+        },
+        {
+          "name": "が〜こちゃん",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/010.png"
+        }
+      ]
+    },
+    {
+      "url": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "sha256": "42b8c7fa8001329287138b954d3e9d2505d5351f92534a1ac99a4669bcc80d88",
+      "fetchedAt": "2026-10-12T07:24:20.572895+00:00",
+      "colors": [
+        {
+          "name": "ミルキー",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f01-ミルキー.jpg"
+        },
+        {
+          "name": "クリクリ",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f02-クリクリ.jpg"
+        },
+        {
+          "name": "メタグリ夫",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f03-メタグリ夫.jpg"
+        },
+        {
+          "name": "はいからさん",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f04-はいからさん.jpg"
+        },
+        {
+          "name": "スネーキーグロー",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f05-スネーキーグロー.jpg"
+        },
+        {
+          "name": "オリーブチャート",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f06-オリーブチャート.jpg"
+        },
+        {
+          "name": "FM2",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f07-FM2.jpg"
+        },
+        {
+          "name": "ブルーバックチャート",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f08-ブルーバックチャート.jpg"
+        },
+        {
+          "name": "とんこつ",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f09-とんこつ.jpg"
+        },
+        {
+          "name": "坦々麺",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f10-坦々麺.jpg"
+        },
+        {
+          "name": "フェアリーオレンジ",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f11-フェアリーオレンジ.jpg"
+        },
+        {
+          "name": "カニミソグロー",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f12-カニミソグロー.jpg"
+        },
+        {
+          "name": "イチゴパフェ",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss01-イチゴパフェ.jpg"
+        },
+        {
+          "name": "ももいろメタリック",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss02-ももいろメタリック.jpg"
+        },
+        {
+          "name": "グローセサミン",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss03-グローセサミン.jpg"
+        },
+        {
+          "name": "マッティブルーバック",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss04-マッティブルーバック.jpg"
+        },
+        {
+          "name": "月城",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss05-月城.jpg"
+        },
+        {
+          "name": "オリーブチャート",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss06-オリーブチャート.jpg"
+        },
+        {
+          "name": "FM2",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss07-FM2.jpg"
+        },
+        {
+          "name": "おしるこ",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss08-おしるこ.jpg"
+        },
+        {
+          "name": "とんこつ",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss09-とんこつ.jpg"
+        },
+        {
+          "name": "坦々麺",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss10-坦々麺.jpg"
+        },
+        {
+          "name": "フェアリーオレンジ",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss11-フェアリーオレンジ.jpg"
+        },
+        {
+          "name": "ブルーデリック",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss12-ブルーデリック.jpg"
+        },
+        {
+          "name": "みるき～",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss13-みるき～.jpg"
+        }
+      ]
+    }
+  ],
+  "retailerEvidence": "RC22_RETAILER_EVIDENCE.json",
+  "limitations": [
+    "通常F/SS/SSSの公式画像から色名を推測しない。",
+    "1091の検索キャッシュのみの掲載は現行の商品別照合ができず、パックに追加しない。",
+    "商品写真は保存・転載せず公式画像URLだけを記録。"
+  ]
+}
