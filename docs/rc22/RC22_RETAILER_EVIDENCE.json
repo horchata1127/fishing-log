@@ -1,0 +1,650 @@
+{
+  "checkedAt": "2026-10-12",
+  "method": "Live rendered Proshop Otsuka typed model inventory pages; JAN, model and specification are taken from the same item block. No DOM IDs used as codes.",
+  "rows": [
+    {
+      "jan": "4573581500000",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #15 クリペナプラス",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374761647",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #黒坦々",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581510702",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #ミリタリスト",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+      "colorClass": "heroes"
+    },
+    {
+      "jan": "4573581510719",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #ツタンカーメン",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+      "colorClass": "heroes"
+    },
+    {
+      "jan": "4573581510726",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #みそピーグロー",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+      "colorClass": "heroes"
+    },
+    {
+      "jan": "4580374761616",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #クリアピンク",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374761630",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #スケスケオリーブ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374761838",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #スィートパール",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374761821",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #すけチョコ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374761623",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #クリクリ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581500031",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #15 クリペナプラス",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374760862",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #クリピン",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581500048",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #16 ハリ砂夫",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374760855",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #FM1",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581510733",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #ミリタリスト",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+      "colorClass": "heroes"
+    },
+    {
+      "jan": "4573581510740",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #ツタンカーメン",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+      "colorClass": "heroes"
+    },
+    {
+      "jan": "4573581510757",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #みそピーグロー",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+      "colorClass": "heroes"
+    },
+    {
+      "jan": "4580374760886",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #とんこつ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374760879",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #クリクリ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374760831",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #ハムスター",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581506279",
+      "model": "バービー SSS",
+      "detail": "1.6g スーパースローシンキング / #21 オリーブチャート",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581506293",
+      "model": "バービー SSS",
+      "detail": "1.6g スーパースローシンキング / #23 クリピン",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581506262",
+      "model": "バービー SSS",
+      "detail": "1.6g スーパースローシンキング / #20 玉ウキ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581506286",
+      "model": "バービー SSS",
+      "detail": "1.6g スーパースローシンキング / #22 カモフラオリーブ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581506323",
+      "model": "バービー SSS",
+      "detail": "1.6g スーパースローシンキング / #16 ハリ砂夫",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581506316",
+      "model": "バービー SSS",
+      "detail": "1.6g スーパースローシンキング / #15 クリペナプラス",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581506330",
+      "model": "バービー SSS",
+      "detail": "1.6g スーパースローシンキング / #17 C.G.G",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581506309",
+      "model": "バービー SSS",
+      "detail": "1.6g スーパースローシンキング / #24 マッディブルーバック",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491411340",
+      "model": "バービー SSS",
+      "detail": "30mm 1.6g スーパースローシンキング / #名古屋 手羽先",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581518999",
+      "model": "バービー ガール F",
+      "detail": "24.5mm 0.7g フローティング / #5 ブルクリ(ブルーパールクリア)",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581518975",
+      "model": "バービー ガール F",
+      "detail": "24.5mm 0.7g フローティング / #3 とんこつ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581519019",
+      "model": "バービー ガール F",
+      "detail": "24.5mm 0.7g フローティング / #15 クリペナプラス",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581519002",
+      "model": "バービー ガール F",
+      "detail": "24.5mm 0.7g フローティング / #10 がーこちゃん",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581519057",
+      "model": "バービー ガール F",
+      "detail": "24.5mm 0.7g フローティング / #21 ただ巻バグ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581519033",
+      "model": "バービー ガール F",
+      "detail": "24.5mm 0.7g フローティング / #19 キラキラ豆腐yoh!",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581516551",
+      "model": "バービー ガール SS",
+      "detail": "24.5mm 0.9g スローシンキング / #1 スケスケオリーブ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581516568",
+      "model": "バービー ガール SS",
+      "detail": "24.5mm 0.9g スローシンキング / #3 とんこつ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581516599",
+      "model": "バービー ガール SS",
+      "detail": "24.5mm 0.9g スローシンキング / #15 クリペナプラス",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581516612",
+      "model": "バービー ガール SS",
+      "detail": "24.5mm 0.9g スローシンキング / #18 ぽむプリ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581516629",
+      "model": "バービー ガール SS",
+      "detail": "24.5mm 0.9g スローシンキング / #19 キラキラ豆腐yoh!",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581516636",
+      "model": "バービー ガール SS",
+      "detail": "24.5mm 0.9g スローシンキング / #20 透け透けジンタ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581516643",
+      "model": "バービー ガール SS",
+      "detail": "24.5mm 0.9g スローシンキング / #21 ただ巻バグ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581516575",
+      "model": "バービー ガール SS",
+      "detail": "24.5mm 0.9g スローシンキング / #6 カモフラオリーブ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581516582",
+      "model": "バービー ガール SS",
+      "detail": "24.5mm 0.9g スローシンキング / #10 がーこちゃん",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581494835",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #1 スケスケオリーブ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581494927",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #10 がーこちゃん",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581500192",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #16 ハリ砂夫",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581500185",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #15 クリペナプラス",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581494866",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #4 玉ウキ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581494873",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #5 オリーブチャート",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581494859",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #3 とんこつ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581494842",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #2 スネーキーグロー",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581494880",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #6 カモフラオリーブ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581494910",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #9 スケスケブラウン",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581515929",
+      "model": "バービー ロングSS",
+      "detail": "ボディ長30.5mm 1.8g スローシンキング / #7 クリピン",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581515943",
+      "model": "バービー ロングSS",
+      "detail": "ボディ長30.5mm 1.8g スローシンキング / #15 クリペナプラス",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581515950",
+      "model": "バービー ロングSS",
+      "detail": "ボディ長30.5mm 1.8g スローシンキング / #16 ハリ砂夫",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581515912",
+      "model": "バービー ロングSS",
+      "detail": "ボディ長30.5mm 1.8g スローシンキング / #6 カモフラオリーブ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581515905",
+      "model": "バービー ロングSS",
+      "detail": "ボディ長30.5mm 1.8g スローシンキング / #3 とんこつ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581515899",
+      "model": "バービー ロングSS",
+      "detail": "ボディ長30.5mm 1.8g スローシンキング / #1 スケスケオリーブ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581515936",
+      "model": "バービー ロングSS",
+      "detail": "ボディ長30.5mm 1.8g スローシンキング / #8 アカキン",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581515967",
+      "model": "バービー ロングSS",
+      "detail": "ボディ長30.5mm 1.8g スローシンキング / #17 C.G.G",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491413306",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #ミルキー",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491413412",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #カニミソグロー",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491413313",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #クリクリ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491413399",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #坦々麺",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491413405",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #フェアリーオレンジ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491413375",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #ブルーバックチャート",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491413337",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #はいからさん",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581500079",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #16 ハリ砂夫",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491413368",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #FM2",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581500086",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #17 C.G.G",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491414457",
+      "model": "ママバービー SS",
+      "detail": "2.8g スローシンキング / #8 おしるこ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491414488",
+      "model": "ママバービー SS",
+      "detail": "2.8g スローシンキング / #11 フェアリーオレンジ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491414471",
+      "model": "ママバービー SS",
+      "detail": "2.8g スローシンキング / #10 担々麺",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491414419",
+      "model": "ママバービー SS",
+      "detail": "2.8g スローシンキング / #4 マッティブルーバック",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491414396",
+      "model": "ママバービー SS",
+      "detail": "2.8g スローシンキング / #2 イチゴパフェ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491414426",
+      "model": "ママバービー SS",
+      "detail": "2.8g スローシンキング / #5 月城",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491414440",
+      "model": "ママバービー SS",
+      "detail": "2.8g スローシンキング / #7 FM2",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491414433",
+      "model": "ママバービー SS",
+      "detail": "2.8g スローシンキング / #6 オリーブチャート",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491414389",
+      "model": "ママバービー SS",
+      "detail": "2.8g スローシンキング / #1 ももいろメタリック",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491414402",
+      "model": "ママバービー SS",
+      "detail": "2.8g スローシンキング / #3 グローセサミン",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581500024",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #17 C.G.G",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581500017",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #16 ハリ砂夫",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374761654",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #バレンシア",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374761609",
+      "model": "バービー F",
+      "detail": "30mm 1.4g フローティング / #ミルクココア",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580374760893",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #黒坦々",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0025",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581500055",
+      "model": "バービー SS",
+      "detail": "30mm 1.6g スローシンキング / #17 C.G.G",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0025",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581494903",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #8 アカキン",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4573581500208",
+      "model": "バービー ロング",
+      "detail": "30mm 1.6g フローティング / #17 C.G.G",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0096",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491413382",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #とんこつ",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&p=2&type=0049",
+      "colorClass": "unknown"
+    },
+    {
+      "jan": "4580491413344",
+      "model": "ママバービー F",
+      "detail": "2.6g フローティング / #スネーキーグロー",
+      "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&p=2&type=0049",
+      "colorClass": "unknown"
+    }
+  ]
+}

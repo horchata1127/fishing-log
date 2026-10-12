@@ -1,0 +1,8 @@
+{
+  "baseline_type": "synthetic_rc21_acceptance_fixture",
+  "fixture": "tests/rc22Fixture.ts",
+  "actual_iphone_backup_used": false,
+  "before": { "lureVariants": 2218, "lureModels": 323, "lureSeries": 143, "lureManufacturers": 80, "trips": 5, "catches": 7, "myLures": 4 },
+  "planned": { "colors": 89, "models": 8, "series": 4, "held_color_rows": 11 },
+  "note": "RC22_CATALOG_DIFF.csv is the actual UI-generated preview against this isolated synthetic fixture, not an iPhone-device diff. Export RC22_CATALOG_DIFF_DEVICE.csv on the iPhone before applying."
+}

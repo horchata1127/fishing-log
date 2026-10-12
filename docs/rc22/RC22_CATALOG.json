@@ -1,0 +1,1908 @@
+{
+  "version": "RC22",
+  "checkedOn": "2026-10-12",
+  "officialListedCount": 61,
+  "officialNamedCount": 35,
+  "targets": [
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー",
+      "model": "バービー F",
+      "weight": 1.4,
+      "actionType": "F",
+      "officialColorCount": 8,
+      "manufacturerAliases": [
+        "rob lure",
+        "ロブ・ルアー"
+      ],
+      "seriesAliases": [
+        "バービー"
+      ],
+      "modelAliases": [
+        "バービー F"
+      ],
+      "productVerified": true,
+      "expectedManufacturerId": 71,
+      "category": "クランク",
+      "sourceUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "productSourceTier": "manufacturer",
+      "holdReason": "",
+      "colors": [
+        {
+          "code": "15",
+          "name": "クリペナプラス",
+          "label": "15 クリペナプラス",
+          "aliases": [
+            "クリペナプラス"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "imageUrl": "",
+          "jan": "4573581500000",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "黒坦々",
+          "label": "黒坦々",
+          "aliases": [
+            "黒坦々"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "imageUrl": "",
+          "jan": "4580374761647",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "ミリタリスト",
+          "label": "ミリタリスト",
+          "aliases": [
+            "ミリタリスト"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "imageUrl": "",
+          "jan": "4573581510702",
+          "colorClass": "heroes",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "ツタンカーメン",
+          "label": "ツタンカーメン",
+          "aliases": [
+            "ツタンカーメン"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "imageUrl": "",
+          "jan": "4573581510719",
+          "colorClass": "heroes",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "みそピーグロー",
+          "label": "みそピーグロー",
+          "aliases": [
+            "みそピーグロー"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "imageUrl": "",
+          "jan": "4573581510726",
+          "colorClass": "heroes",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "クリアピンク",
+          "label": "クリアピンク",
+          "aliases": [
+            "クリアピンク"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "imageUrl": "",
+          "jan": "4580374761616",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "スケスケオリーブ",
+          "label": "スケスケオリーブ",
+          "aliases": [
+            "スケスケオリーブ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "imageUrl": "",
+          "jan": "4580374761630",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "スィートパール",
+          "label": "スィートパール",
+          "aliases": [
+            "スィートパール"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "imageUrl": "",
+          "jan": "4580374761838",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "すけチョコ",
+          "label": "すけチョコ",
+          "aliases": [
+            "すけチョコ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "imageUrl": "",
+          "jan": "4580374761821",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "クリクリ",
+          "label": "クリクリ",
+          "aliases": [
+            "クリクリ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+          "imageUrl": "",
+          "jan": "4580374761623",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "17",
+          "name": "C.G.G",
+          "label": "17 C.G.G",
+          "aliases": [
+            "C.G.G"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+          "imageUrl": "",
+          "jan": "4573581500024",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "16",
+          "name": "ハリ砂夫",
+          "label": "16 ハリ砂夫",
+          "aliases": [
+            "ハリ砂夫"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+          "imageUrl": "",
+          "jan": "4573581500017",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "バレンシア",
+          "label": "バレンシア",
+          "aliases": [
+            "バレンシア"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+          "imageUrl": "",
+          "jan": "4580374761654",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "ミルクココア",
+          "label": "ミルクココア",
+          "aliases": [
+            "ミルクココア"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+          "imageUrl": "",
+          "jan": "4580374761609",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        }
+      ]
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー",
+      "model": "バービー SS",
+      "weight": 1.6,
+      "actionType": "SS",
+      "officialColorCount": 8,
+      "manufacturerAliases": [
+        "rob lure",
+        "ロブ・ルアー"
+      ],
+      "seriesAliases": [
+        "バービー"
+      ],
+      "modelAliases": [
+        "バービー SS"
+      ],
+      "productVerified": true,
+      "expectedManufacturerId": 71,
+      "category": "クランク",
+      "sourceUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "productSourceTier": "manufacturer",
+      "holdReason": "",
+      "colors": [
+        {
+          "code": "15",
+          "name": "クリペナプラス",
+          "label": "15 クリペナプラス",
+          "aliases": [
+            "クリペナプラス"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "imageUrl": "",
+          "jan": "4573581500031",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "クリピン",
+          "label": "クリピン",
+          "aliases": [
+            "クリピン"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "imageUrl": "",
+          "jan": "4580374760862",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "16",
+          "name": "ハリ砂夫",
+          "label": "16 ハリ砂夫",
+          "aliases": [
+            "ハリ砂夫"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "imageUrl": "",
+          "jan": "4573581500048",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "FM1",
+          "label": "FM1",
+          "aliases": [
+            "FM1"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "imageUrl": "",
+          "jan": "4580374760855",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "ミリタリスト",
+          "label": "ミリタリスト",
+          "aliases": [
+            "ミリタリスト"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "imageUrl": "",
+          "jan": "4573581510733",
+          "colorClass": "heroes",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "ツタンカーメン",
+          "label": "ツタンカーメン",
+          "aliases": [
+            "ツタンカーメン"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "imageUrl": "",
+          "jan": "4573581510740",
+          "colorClass": "heroes",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "みそピーグロー",
+          "label": "みそピーグロー",
+          "aliases": [
+            "みそピーグロー"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "imageUrl": "",
+          "jan": "4573581510757",
+          "colorClass": "heroes",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "とんこつ",
+          "label": "とんこつ",
+          "aliases": [
+            "とんこつ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "imageUrl": "",
+          "jan": "4580374760886",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "クリクリ",
+          "label": "クリクリ",
+          "aliases": [
+            "クリクリ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "imageUrl": "",
+          "jan": "4580374760879",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "ハムスター",
+          "label": "ハムスター",
+          "aliases": [
+            "ハムスター"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+          "imageUrl": "",
+          "jan": "4580374760831",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "黒坦々",
+          "label": "黒坦々",
+          "aliases": [
+            "黒坦々"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0025",
+          "imageUrl": "",
+          "jan": "4580374760893",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "17",
+          "name": "C.G.G",
+          "label": "17 C.G.G",
+          "aliases": [
+            "C.G.G"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0025",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0025",
+          "imageUrl": "",
+          "jan": "4573581500055",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        }
+      ]
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー",
+      "model": "バービー SSS",
+      "weight": 1.5,
+      "actionType": "SSS",
+      "officialColorCount": 10,
+      "manufacturerAliases": [
+        "rob lure",
+        "ロブ・ルアー"
+      ],
+      "seriesAliases": [
+        "バービー"
+      ],
+      "modelAliases": [
+        "バービー SSS"
+      ],
+      "productVerified": false,
+      "expectedManufacturerId": 71,
+      "category": "クランク",
+      "sourceUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "productSourceTier": "manufacturer",
+      "holdReason": "公式SSS 1.5gと販売店1.6gの表記差が未解決。別モデルとして登録しない。",
+      "colors": [
+        {
+          "code": "21",
+          "name": "オリーブチャート",
+          "label": "21 オリーブチャート",
+          "aliases": [
+            "オリーブチャート"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "imageUrl": "",
+          "jan": "4573581506279",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "23",
+          "name": "クリピン",
+          "label": "23 クリピン",
+          "aliases": [
+            "クリピン"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "imageUrl": "",
+          "jan": "4573581506293",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "20",
+          "name": "玉ウキ",
+          "label": "20 玉ウキ",
+          "aliases": [
+            "玉ウキ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "imageUrl": "",
+          "jan": "4573581506262",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "22",
+          "name": "カモフラオリーブ",
+          "label": "22 カモフラオリーブ",
+          "aliases": [
+            "カモフラオリーブ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "imageUrl": "",
+          "jan": "4573581506286",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "16",
+          "name": "ハリ砂夫",
+          "label": "16 ハリ砂夫",
+          "aliases": [
+            "ハリ砂夫"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "imageUrl": "",
+          "jan": "4573581506323",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "15",
+          "name": "クリペナプラス",
+          "label": "15 クリペナプラス",
+          "aliases": [
+            "クリペナプラス"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "imageUrl": "",
+          "jan": "4573581506316",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "17",
+          "name": "C.G.G",
+          "label": "17 C.G.G",
+          "aliases": [
+            "C.G.G"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "imageUrl": "",
+          "jan": "4573581506330",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "24",
+          "name": "マッディブルーバック",
+          "label": "24 マッディブルーバック",
+          "aliases": [
+            "マッディブルーバック"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "imageUrl": "",
+          "jan": "4573581506309",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "",
+          "name": "名古屋 手羽先",
+          "label": "名古屋 手羽先",
+          "aliases": [
+            "名古屋 手羽先"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+          "imageUrl": "",
+          "jan": "4580491411340",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        }
+      ]
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "weight": 1.6,
+      "actionType": "F",
+      "officialColorCount": 10,
+      "manufacturerAliases": [
+        "rob lure",
+        "ロブ・ルアー"
+      ],
+      "seriesAliases": [
+        "バービー ロング"
+      ],
+      "modelAliases": [
+        "バービー ロング"
+      ],
+      "productVerified": true,
+      "expectedManufacturerId": 71,
+      "category": "クランク",
+      "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "productSourceTier": "manufacturer",
+      "holdReason": "",
+      "colors": [
+        {
+          "code": "1",
+          "name": "スケスケオリーブ",
+          "label": "スケスケオリーブ",
+          "aliases": [
+            "1 スケスケオリーブ"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/01.png",
+          "jan": "4573581494835",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "2",
+          "name": "スネーキーグロー",
+          "label": "スネーキーグロー",
+          "aliases": [
+            "2 スネーキーグロー"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/02.png",
+          "jan": "4573581494842",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "3",
+          "name": "とんこつ",
+          "label": "とんこつ",
+          "aliases": [
+            "3 とんこつ"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/03.png",
+          "jan": "4573581494859",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "4",
+          "name": "玉ウキ",
+          "label": "玉ウキ",
+          "aliases": [
+            "4 玉ウキ"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/04.png",
+          "jan": "4573581494866",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "5",
+          "name": "オリーブチャート",
+          "label": "オリーブチャート",
+          "aliases": [
+            "5 オリーブチャート"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/05.png",
+          "jan": "4573581494873",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "6",
+          "name": "カモフラオリーブ",
+          "label": "カモフラオリーブ",
+          "aliases": [
+            "6 カモフラオリーブ"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/06.png",
+          "jan": "4573581494880",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "クリピン",
+          "label": "クリピン",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/07.png",
+          "jan": "",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "8",
+          "name": "アカキン",
+          "label": "アカキン",
+          "aliases": [
+            "8 アカキン"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0096",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/08-.png",
+          "jan": "4573581494903",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "9",
+          "name": "スケスケブラウン",
+          "label": "スケスケブラウン",
+          "aliases": [
+            "9 スケスケブラウン"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/09.png",
+          "jan": "4573581494910",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "が〜こちゃん",
+          "label": "が〜こちゃん",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2023/11/010.png",
+          "jan": "",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "10",
+          "name": "がーこちゃん",
+          "label": "10 がーこちゃん",
+          "aliases": [
+            "がーこちゃん"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "imageUrl": "",
+          "jan": "4573581494927",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": false,
+          "notes": "公式との表記差。同一色の可能性があるため保留。"
+        },
+        {
+          "code": "16",
+          "name": "ハリ砂夫",
+          "label": "16 ハリ砂夫",
+          "aliases": [
+            "ハリ砂夫"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "imageUrl": "",
+          "jan": "4573581500192",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "15",
+          "name": "クリペナプラス",
+          "label": "15 クリペナプラス",
+          "aliases": [
+            "クリペナプラス"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+          "imageUrl": "",
+          "jan": "4573581500185",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "17",
+          "name": "C.G.G",
+          "label": "17 C.G.G",
+          "aliases": [
+            "C.G.G"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0096",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0096",
+          "imageUrl": "",
+          "jan": "4573581500208",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        }
+      ]
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ロング",
+      "model": "バービー・ロング SS",
+      "weight": 1.8,
+      "actionType": "SS",
+      "officialColorCount": null,
+      "manufacturerAliases": [
+        "rob lure",
+        "ロブ・ルアー"
+      ],
+      "seriesAliases": [
+        "バービー ロング"
+      ],
+      "modelAliases": [
+        "バービー ロングSS"
+      ],
+      "productVerified": true,
+      "expectedManufacturerId": 71,
+      "category": "クランク",
+      "sourceUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "productSourceTier": "retailer",
+      "holdReason": "",
+      "colors": [
+        {
+          "code": "7",
+          "name": "クリピン",
+          "label": "7 クリピン",
+          "aliases": [
+            "クリピン"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "imageUrl": "",
+          "jan": "4573581515929",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "15",
+          "name": "クリペナプラス",
+          "label": "15 クリペナプラス",
+          "aliases": [
+            "クリペナプラス"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "imageUrl": "",
+          "jan": "4573581515943",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "16",
+          "name": "ハリ砂夫",
+          "label": "16 ハリ砂夫",
+          "aliases": [
+            "ハリ砂夫"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "imageUrl": "",
+          "jan": "4573581515950",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "6",
+          "name": "カモフラオリーブ",
+          "label": "6 カモフラオリーブ",
+          "aliases": [
+            "カモフラオリーブ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "imageUrl": "",
+          "jan": "4573581515912",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "3",
+          "name": "とんこつ",
+          "label": "3 とんこつ",
+          "aliases": [
+            "とんこつ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "imageUrl": "",
+          "jan": "4573581515905",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "1",
+          "name": "スケスケオリーブ",
+          "label": "1 スケスケオリーブ",
+          "aliases": [
+            "スケスケオリーブ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "imageUrl": "",
+          "jan": "4573581515899",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "8",
+          "name": "アカキン",
+          "label": "8 アカキン",
+          "aliases": [
+            "アカキン"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "imageUrl": "",
+          "jan": "4573581515936",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "17",
+          "name": "C.G.G",
+          "label": "17 C.G.G",
+          "aliases": [
+            "C.G.G"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "manufacturerUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+          "imageUrl": "",
+          "jan": "4573581515967",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        }
+      ]
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "weight": 2.6,
+      "actionType": "F",
+      "officialColorCount": 12,
+      "manufacturerAliases": [
+        "rob lure",
+        "ロブ・ルアー"
+      ],
+      "seriesAliases": [
+        "バービー ママ",
+        "ママバービー"
+      ],
+      "modelAliases": [
+        "ママバービー F"
+      ],
+      "productVerified": true,
+      "expectedManufacturerId": 71,
+      "category": "クランク",
+      "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "productSourceTier": "manufacturer",
+      "holdReason": "",
+      "colors": [
+        {
+          "code": "",
+          "name": "ミルキー",
+          "label": "ミルキー",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f01-ミルキー.jpg",
+          "jan": "4580491413306",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "クリクリ",
+          "label": "クリクリ",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f02-クリクリ.jpg",
+          "jan": "4580491413313",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "メタグリ夫",
+          "label": "メタグリ夫",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f03-メタグリ夫.jpg",
+          "jan": "",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "はいからさん",
+          "label": "はいからさん",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f04-はいからさん.jpg",
+          "jan": "4580491413337",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "スネーキーグロー",
+          "label": "スネーキーグロー",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&p=2&type=0049",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f05-スネーキーグロー.jpg",
+          "jan": "4580491413344",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "オリーブチャート",
+          "label": "オリーブチャート",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f06-オリーブチャート.jpg",
+          "jan": "",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "FM2",
+          "label": "FM2",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f07-FM2.jpg",
+          "jan": "4580491413368",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "ブルーバックチャート",
+          "label": "ブルーバックチャート",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f08-ブルーバックチャート.jpg",
+          "jan": "4580491413375",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "とんこつ",
+          "label": "とんこつ",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&p=2&type=0049",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f09-とんこつ.jpg",
+          "jan": "4580491413382",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "坦々麺",
+          "label": "坦々麺",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f10-坦々麺.jpg",
+          "jan": "4580491413399",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "フェアリーオレンジ",
+          "label": "フェアリーオレンジ",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f11-フェアリーオレンジ.jpg",
+          "jan": "4580491413405",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "カニミソグロー",
+          "label": "カニミソグロー",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f12-カニミソグロー.jpg",
+          "jan": "4580491413412",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "16",
+          "name": "ハリ砂夫",
+          "label": "16 ハリ砂夫",
+          "aliases": [
+            "ハリ砂夫"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "imageUrl": "",
+          "jan": "4573581500079",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "17",
+          "name": "C.G.G",
+          "label": "17 C.G.G",
+          "aliases": [
+            "C.G.G"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+          "imageUrl": "",
+          "jan": "4573581500086",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        }
+      ]
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "weight": 2.8,
+      "actionType": "SS",
+      "officialColorCount": 13,
+      "manufacturerAliases": [
+        "rob lure",
+        "ロブ・ルアー"
+      ],
+      "seriesAliases": [
+        "バービー ママ",
+        "ママバービー"
+      ],
+      "modelAliases": [
+        "ママバービー SS"
+      ],
+      "productVerified": true,
+      "expectedManufacturerId": 71,
+      "category": "クランク",
+      "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "productSourceTier": "manufacturer",
+      "holdReason": "",
+      "colors": [
+        {
+          "code": "2",
+          "name": "イチゴパフェ",
+          "label": "イチゴパフェ",
+          "aliases": [
+            "2 イチゴパフェ"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss01-イチゴパフェ.jpg",
+          "jan": "4580491414396",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "1",
+          "name": "ももいろメタリック",
+          "label": "ももいろメタリック",
+          "aliases": [
+            "1 ももいろメタリック"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss02-ももいろメタリック.jpg",
+          "jan": "4580491414389",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "3",
+          "name": "グローセサミン",
+          "label": "グローセサミン",
+          "aliases": [
+            "3 グローセサミン"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss03-グローセサミン.jpg",
+          "jan": "4580491414402",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "4",
+          "name": "マッティブルーバック",
+          "label": "マッティブルーバック",
+          "aliases": [
+            "4 マッティブルーバック"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss04-マッティブルーバック.jpg",
+          "jan": "4580491414419",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "5",
+          "name": "月城",
+          "label": "月城",
+          "aliases": [
+            "5 月城"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss05-月城.jpg",
+          "jan": "4580491414426",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "6",
+          "name": "オリーブチャート",
+          "label": "オリーブチャート",
+          "aliases": [
+            "6 オリーブチャート"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss06-オリーブチャート.jpg",
+          "jan": "4580491414433",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "7",
+          "name": "FM2",
+          "label": "FM2",
+          "aliases": [
+            "7 FM2"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss07-FM2.jpg",
+          "jan": "4580491414440",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "8",
+          "name": "おしるこ",
+          "label": "おしるこ",
+          "aliases": [
+            "8 おしるこ"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss08-おしるこ.jpg",
+          "jan": "4580491414457",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "とんこつ",
+          "label": "とんこつ",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss09-とんこつ.jpg",
+          "jan": "",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "坦々麺",
+          "label": "坦々麺",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss10-坦々麺.jpg",
+          "jan": "",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "11",
+          "name": "フェアリーオレンジ",
+          "label": "フェアリーオレンジ",
+          "aliases": [
+            "11 フェアリーオレンジ"
+          ],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss11-フェアリーオレンジ.jpg",
+          "jan": "4580491414488",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "ブルーデリック",
+          "label": "ブルーデリック",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss12-ブルーデリック.jpg",
+          "jan": "",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "",
+          "name": "みるき～",
+          "label": "みるき～",
+          "aliases": [],
+          "sourceUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "",
+          "imageUrl": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss13-みるき～.jpg",
+          "jan": "",
+          "colorClass": "standard",
+          "sourceTier": "manufacturer",
+          "verified": true,
+          "notes": "公式 dd.gallery-caption 原文"
+        },
+        {
+          "code": "10",
+          "name": "担々麺",
+          "label": "10 担々麺",
+          "aliases": [
+            "担々麺"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+          "manufacturerUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+          "imageUrl": "",
+          "jan": "4580491414471",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": false,
+          "notes": "公式との表記差。同一色の可能性があるため保留。"
+        }
+      ]
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ガール",
+      "model": "バービー・ガール F",
+      "weight": 0.7,
+      "actionType": "F",
+      "officialColorCount": null,
+      "manufacturerAliases": [
+        "rob lure",
+        "ロブ・ルアー"
+      ],
+      "seriesAliases": [
+        "バービー ガール"
+      ],
+      "modelAliases": [
+        "バービー ガール F"
+      ],
+      "productVerified": true,
+      "expectedManufacturerId": 71,
+      "category": "クランク",
+      "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+      "productSourceTier": "retailer",
+      "holdReason": "",
+      "colors": [
+        {
+          "code": "5",
+          "name": "ブルクリ(ブルーパールクリア)",
+          "label": "5 ブルクリ(ブルーパールクリア)",
+          "aliases": [
+            "ブルクリ(ブルーパールクリア)"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "imageUrl": "",
+          "jan": "4573581518999",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "3",
+          "name": "とんこつ",
+          "label": "3 とんこつ",
+          "aliases": [
+            "とんこつ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "imageUrl": "",
+          "jan": "4573581518975",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "15",
+          "name": "クリペナプラス",
+          "label": "15 クリペナプラス",
+          "aliases": [
+            "クリペナプラス"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "imageUrl": "",
+          "jan": "4573581519019",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "10",
+          "name": "がーこちゃん",
+          "label": "10 がーこちゃん",
+          "aliases": [
+            "がーこちゃん"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "imageUrl": "",
+          "jan": "4573581519002",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "21",
+          "name": "ただ巻バグ",
+          "label": "21 ただ巻バグ",
+          "aliases": [
+            "ただ巻バグ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "imageUrl": "",
+          "jan": "4573581519057",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "19",
+          "name": "キラキラ豆腐yoh!",
+          "label": "19 キラキラ豆腐yoh!",
+          "aliases": [
+            "キラキラ豆腐yoh!"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+          "imageUrl": "",
+          "jan": "4573581519033",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        }
+      ]
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "weight": 0.9,
+      "actionType": "SS",
+      "officialColorCount": null,
+      "manufacturerAliases": [
+        "rob lure",
+        "ロブ・ルアー"
+      ],
+      "seriesAliases": [
+        "バービー ガール"
+      ],
+      "modelAliases": [
+        "バービー ガール SS"
+      ],
+      "productVerified": true,
+      "expectedManufacturerId": 71,
+      "category": "クランク",
+      "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+      "productSourceTier": "retailer",
+      "holdReason": "",
+      "colors": [
+        {
+          "code": "1",
+          "name": "スケスケオリーブ",
+          "label": "1 スケスケオリーブ",
+          "aliases": [
+            "スケスケオリーブ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "imageUrl": "",
+          "jan": "4573581516551",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "3",
+          "name": "とんこつ",
+          "label": "3 とんこつ",
+          "aliases": [
+            "とんこつ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "imageUrl": "",
+          "jan": "4573581516568",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "15",
+          "name": "クリペナプラス",
+          "label": "15 クリペナプラス",
+          "aliases": [
+            "クリペナプラス"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "imageUrl": "",
+          "jan": "4573581516599",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "18",
+          "name": "ぽむプリ",
+          "label": "18 ぽむプリ",
+          "aliases": [
+            "ぽむプリ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "imageUrl": "",
+          "jan": "4573581516612",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "19",
+          "name": "キラキラ豆腐yoh!",
+          "label": "19 キラキラ豆腐yoh!",
+          "aliases": [
+            "キラキラ豆腐yoh!"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "imageUrl": "",
+          "jan": "4573581516629",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "20",
+          "name": "透け透けジンタ",
+          "label": "20 透け透けジンタ",
+          "aliases": [
+            "透け透けジンタ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "imageUrl": "",
+          "jan": "4573581516636",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "21",
+          "name": "ただ巻バグ",
+          "label": "21 ただ巻バグ",
+          "aliases": [
+            "ただ巻バグ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "imageUrl": "",
+          "jan": "4573581516643",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "6",
+          "name": "カモフラオリーブ",
+          "label": "6 カモフラオリーブ",
+          "aliases": [
+            "カモフラオリーブ"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "imageUrl": "",
+          "jan": "4573581516575",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        },
+        {
+          "code": "10",
+          "name": "がーこちゃん",
+          "label": "10 がーこちゃん",
+          "aliases": [
+            "がーこちゃん"
+          ],
+          "sourceUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "manufacturerUrl": "",
+          "retailerUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+          "imageUrl": "",
+          "jan": "4573581516582",
+          "colorClass": "unknown",
+          "sourceTier": "retailer",
+          "verified": true,
+          "notes": "販売店の商品別モデル・タイプ・重量・実名・JANを照合。通常色／限定の明記がない場合はunknown。"
+        }
+      ]
+    }
+  ]
+}
