@@ -95,7 +95,7 @@ test('user name duplicate and reserved candidate name are rejected without write
   assert.equal(await state(), before)
 })
 
-test('first catch commits initial 46 with fish snapshot and lure ownership atomically', async () => {
+test('first catch commits initial 46 with fish snapshot and automatic ownership', async () => {
   const id = await registerCatch(input({ fishSpeciesId: rainbowFishId, fishSizeCm: 30.5 }), { kind: 'catalog', variantId: 40 })
   const row = await db.catches.get(id)
   assert.equal(await db.fishSpecies.count(), 46)

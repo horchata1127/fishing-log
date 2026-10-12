@@ -16,6 +16,7 @@ onMounted(() => dialog.value?.showModal())
       <dt>釣行名（釣り場）</dt><dd>{{ summary.trip.fishingAreaName }}</dd>
       <dt>日付</dt><dd>{{ summary.trip.fishingDate.replaceAll('-', '/') }}</dd>
       <dt>関連する釣果</dt><dd>{{ summary.catchCount }}件</dd>
+      <dt>関連するバラシ</dt><dd>{{ summary.lostCount ?? 0 }}回</dd>
       <dt>放流・ペレット記録</dt><dd>{{ summary.eventCount }}件</dd>
     </dl>
     <p v-if="!summary.trip.endedAt" class="warning">この釣行は釣行中です。削除すると記録を続けられなくなります。</p>

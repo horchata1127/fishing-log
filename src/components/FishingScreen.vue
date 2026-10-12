@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from "vue"
+import { isCatch, countResults, lostDistanceLabels } from "../db/database"
 import TackleSnapshotDetails from './TackleSnapshotDetails.vue'
 import type {
   CatchRecord,
@@ -20,6 +21,7 @@ const emit = defineEmits<{
   home: []
   addCatch: []
   editCatch: [record: CatchRecord]
+  deleteCatch: [record: CatchRecord]
   endTrip: []
   recordEvent: [type: TripEventType]
   updateEvent: [event: TripEvent, dateTime: string]
@@ -48,11 +50,22 @@ function saveEdit(event: TripEvent) {
 
 const sortedEvents = computed(() => [...props.events].sort((a,b) => new Date(b.occurredAt).getTime()-new Date(a.occurredAt).getTime()))
 
-const catchCount = computed(() => props.catches.length)
+const catchCount = computed(() => props.catches.filter(isCatch).length)
+const results = computed(() => countResults(props.catches))
+const lureResults = computed(() => {
+  const groups = new Map<string, { label: string; catches: number; lost: number }>()
+  for (const row of props.catches) {
+    const key = row.lureVariantId !== undefined ? `variant:${row.lureVariantId}` : row.lureId !== undefined ? `owned:${row.lureId}` : JSON.stringify([row.lureName, row.lureColor])
+    const group = groups.get(key) ?? { label: [row.lureName || 'ルアー不明', row.lureColor].filter(Boolean).join('・'), catches: 0, lost: 0 }
+    if (isCatch(row)) group.catches++; else group.lost++
+    groups.set(key, group)
+  }
+  return [...groups.values()]
+})
 const fishCounts = computed(() => {
   const names = new Map<string, number>()
   const groups = new Map<string, number>()
-  for (const row of props.catches) {
+  for (const row of props.catches.filter(isCatch)) {
     const name = row.fishSpecies || '魚種未設定'
     const group = row.fishSpeciesGroup || '分類未設定'
     names.set(name, (names.get(name) ?? 0) + 1)
@@ -125,6 +138,8 @@ function fishingStyleName(style: FishingStyle) {
       </strong>
 
       <span>匹</span>
+      <p>キャッチ {{ catchCount }}匹／バラシ {{ results.lost }}回</p>
+      <p v-for="(label, key) in lostDistanceLabels" :key="key">{{ label }}：{{ results.distances[key] }}回</p>
     </div>
   </section>
 
@@ -200,20 +215,25 @@ function fishingStyleName(style: FishingStyle) {
     class="card history" aria-label="釣果履歴"
   >
     <h2>今日の釣果</h2>
+    <details><summary>ルアー別キャッチ・バラシ</summary>
+      <p v-for="(item, index) in lureResults" :key="index">{{ item.label }}：キャッチ {{ item.catches }}匹／バラシ {{ item.lost }}回</p>
+    </details>
     <details><summary>魚種・分類別の釣果数</summary>
       <p v-for="[name, count] in fishCounts.names" :key="name">{{ name }}：{{ count }}匹</p>
       <p v-for="[group, count] in fishCounts.groups" :key="group">{{ group }}：{{ count }}匹</p>
     </details>
 
     <div
-      v-for="(record, index) in [...catches].reverse()"
+      v-for="record in [...catches].reverse()"
       :key="record.id"
       class="catch-row"
     >
       <button type="button" class="edit-catch" :disabled="locationBusy" @click="emit('editCatch', record)">編集</button>
+      <button type="button" class="edit-catch" :disabled="locationBusy" @click="emit('deleteCatch', record)">削除</button>
       <div>
         <strong>
-          {{ catches.length - index }}匹目
+          {{ record.resultType === 'lost' ? 'バラシ' : 'キャッチ' }} {{ record.resultType === 'lost' && record.lostDistance ? lostDistanceLabels[record.lostDistance] : '' }}
+          <span v-if="isCatch(record)">{{ catches.slice(0, catches.indexOf(record) + 1).filter(isCatch).length }}匹目</span>
         </strong>
         <p>{{ record.fishSpecies || '魚種未設定' }}{{ record.fishSpeciesGroup ? `（${record.fishSpeciesGroup}）` : '' }}{{ record.fishSizeCm !== undefined ? ` / ${record.fishSizeCm}cm` : '' }}</p>
         <p v-if="record.locationSnapshot">{{ record.locationSnapshot.facilityName }}{{ record.locationSnapshot.zoneName ? ` / ${record.locationSnapshot.zoneName}` : '' }}</p>
@@ -390,6 +410,7 @@ function fishingStyleName(style: FishingStyle) {
 
 .catch-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
