@@ -1,0 +1,76 @@
+import { test, expect, restoreViaUI } from './fixtures'
+import { timelineScenario, timelineState } from '../timelineFixture'
+import { weatherScenario, weatherTripName, weatherTripId } from '../weatherFixture'
+
+const tripButton = new RegExp(weatherTripName.replace(/[（）]/g, '.'))
+test('PR4 Iwana total seven, 0.75/hour and all ten integer hour bars stay read-only and tappable', async ({ page }, info) => {
+  await restoreViaUI(page, timelineScenario())
+  let calls = 0; await page.route('https://archive-api.open-meteo.com/**', route => { calls++; return route.abort() })
+  const before = await timelineState(page)
+  await page.getByRole('button', { name: tripButton }).click()
+  const graph = page.getByRole('region', { name: '統合タイムライン', exact: true })
+  await expect(graph.locator('.catch-summary')).toContainText('総釣果：7匹')
+  await expect(graph.locator('.catch-summary')).toContainText('平均釣果ペース：0.75匹/時')
+  const bars = graph.locator('.hour-bar')
+  await expect(bars).toHaveCount(10)
+  expect(await bars.evaluateAll(elements => elements.map(e => Number((e as HTMLElement).dataset.count)))).toEqual([1,0,0,0,1,1,0,1,2,1])
+  await expect(graph.locator('.timeline-marker.catch')).toHaveCount(7); await expect(graph.locator('.temperature-line')).toHaveCount(1)
+  await graph.getByRole('button', { name: '2026-10-17 14時台：2匹', exact: true }).click()
+  await expect(graph.getByRole('status')).toHaveText('2026-10-17 14時台：2匹')
+  const box = await bars.last().boundingBox(); expect(box!.width).toBeGreaterThanOrEqual(44); expect(box!.height).toBeGreaterThanOrEqual(44)
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
+  expect(calls).toBe(0); expect(await timelineState(page)).toEqual(before)
+  await graph.screenshot({ path: info.outputPath('catch-summary-ui.png') })
+})
+
+test('PR4 area and unset filtering update bars and displayed count, preserving overall pace, weather and lost markers', async ({ page }) => {
+  const fixture = timelineScenario(), rows = fixture.data.catches!.filter(c => c.tripId === weatherTripId)
+  for (const row of rows.slice(0,2)) { row.zoneId = 'official:nihon-iwana-center:zero-1'; row.locationSnapshot.zoneName = 'ZERO号池第1' }
+  rows[6]!.zoneId = undefined; rows[6]!.locationSnapshot = undefined
+  fixture.data.catches!.push({ ...rows[1], id: 97000, resultType: 'lost', lostDistance: 'near' })
+  await restoreViaUI(page, fixture)
+  const before = await timelineState(page)
+  await page.getByRole('button', { name: tripButton }).click()
+  const graph = page.getByRole('region', { name: '統合タイムライン', exact: true }), summary = graph.locator('.catch-summary')
+  await expect(summary).toContainText('総釣果：7匹')
+  const paths = await graph.locator('.temperature-line').evaluateAll(elements => elements.map(e => e.getAttribute('d')))
+  const sum = () => graph.locator('.hour-bar').evaluateAll(elements => elements.reduce((n, e) => n + Number((e as HTMLElement).dataset.count), 0))
+  await graph.getByLabel('釣果・バラシのエリア').selectOption('id:official:nihon-iwana-center:pond-9')
+  await expect(summary).toContainText('表示中：5匹／全体：7匹'); expect(await sum()).toBe(5)
+  await graph.getByLabel('エリア未設定も含める').uncheck()
+  await expect(summary).toContainText('表示中：4匹／全体：7匹'); expect(await sum()).toBe(4)
+  await graph.getByLabel('釣果・バラシのエリア').selectOption('unset')
+  await expect(summary).toContainText('表示中：1匹／全体：7匹'); expect(await sum()).toBe(1)
+  await graph.getByLabel('釣果・バラシのエリア').selectOption('all')
+  await expect(summary).not.toContainText('表示中：'); expect(await sum()).toBe(7)
+  await expect(graph.locator('.timeline-marker.lost')).toHaveCount(1)
+  await expect(summary).toContainText('平均釣果ペース：0.75匹/時')
+  expect(await graph.locator('.temperature-line').evaluateAll(elements => elements.map(e => e.getAttribute('d')))).toEqual(paths)
+  expect(await timelineState(page)).toEqual(before)
+})
+
+test('PR4 no-weather midnight bins and ongoing lost-only trip have distinct dates, zero counts and no inferred end', async ({ page }) => {
+  const fixture = weatherScenario(), data = fixture.data as Record<string, any[]>
+  data.trips!.push({ id: 98000, fishingAreaName: '日付またぎ集計テスト', fishingDate: '2026-10-18', fishingStyle: 'AREA_TROUT', startedAt: '2026-10-18T23:30:00+09:00', endedAt: '2026-10-19T01:15:00+09:00' },
+    { id: 98001, fishingAreaName: '釣行中バラシのみ集計テスト', fishingDate: '2026-10-20', fishingStyle: 'AREA_TROUT', startedAt: '2026-10-20T06:00:00+09:00' })
+  data.catches!.push({ id: 98000, tripId: 98000, caughtAt: '2026-10-18T23:59:59.999+09:00' }, { id: 98001, tripId: 98000, caughtAt: '2026-10-19T00:00:00+09:00' },
+    { id: 98002, tripId: 98001, caughtAt: '2026-10-20T06:15:00+09:00', resultType: 'lost', lostDistance: 'near' })
+  await restoreViaUI(page, fixture)
+  const before = await timelineState(page)
+  await page.getByRole('button', { name: /日付またぎ集計テスト/ }).click()
+  const graph = page.getByRole('region', { name: '統合タイムライン', exact: true })
+  await expect(graph.locator('.catch-summary')).toContainText('総釣果：2匹'); await expect(graph.locator('.catch-summary')).toContainText('平均釣果ペース：1.14匹/時')
+  await expect(graph.locator('.hour-bar')).toHaveCount(3)
+  await expect(graph.getByRole('button', { name: '2026-10-18 23時台：1匹', exact: true })).toBeVisible()
+  await graph.getByRole('button', { name: '2026-10-19 0時台：1匹', exact: true }).click()
+  await expect(graph.getByRole('status')).toHaveText('2026-10-19 0時台：1匹')
+  await expect(graph.getByRole('button', { name: '2026-10-19 1時台：0匹', exact: true })).toBeVisible()
+  await expect(graph.locator('.temperature-line')).toHaveCount(0)
+  await page.getByRole('button', { name: '← ホーム', exact: true }).click()
+  await page.getByRole('button', { name: /釣行中バラシのみ集計テスト/ }).click()
+  await expect(graph.locator('.catch-summary')).toContainText('総釣果：0匹'); await expect(graph.locator('.catch-summary')).toContainText('平均釣果ペース：算出不可')
+  await expect(graph.getByText('終了時刻が未設定のため算出不可です。釣行中も現在時刻で補完しません。')).toBeVisible()
+  await expect(graph.getByRole('button', { name: '2026-10-20 6時台：0匹', exact: true })).toBeVisible()
+  await expect(graph.locator('.timeline-marker.lost')).toHaveCount(1)
+  expect(await timelineState(page)).toEqual(before)
+})

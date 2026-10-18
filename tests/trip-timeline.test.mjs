@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises'
 import ts from 'typescript'
 const source = await readFile(new URL('../src/utils/tripTimeline.ts', import.meta.url), 'utf8')
 const code = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText
-const { buildTripTimeline: build, layoutTimelineMarkers: layout, timelineTimestamp, formatTimelineTime, catchZoneKey } = await import(`data:text/javascript;base64,${Buffer.from(code).toString('base64')}`)
+const { buildCatchSummary: summarize, buildTripTimeline: build, layoutTimelineMarkers: layout, timelineTimestamp, formatTimelineTime, catchZoneKey } = await import(`data:text/javascript;base64,${Buffer.from(code).toString('base64')}`)
 const at = time => Date.parse(`2026-10-17T${time}:00+09:00`)
 const trip = { id: 1, startedAt: new Date('2026-10-16T21:03:12.160Z'), endedAt: new Date(at('15:25')), fishingDate: '2026-10-16' }
 const catches = ['06:21','10:13','11:22','13:57','14:21','14:53','15:16'].map((t, id) => ({ id, tripId: 1, caughtAt: new Date(at(t)), zoneId: 'pond9', locationSnapshot: { facilityName: '日本イワナセンター', zoneName: '9号池' } }))
@@ -62,4 +62,60 @@ test('invalid trip times use safe records/calendar fallback; out-of-range record
   const outside = build(trip, [{ ...catches[0], caughtAt: new Date(at('23:00')) }], [], [])
   assert.equal(outside.outside.length, 1); assert.equal(outside.markers.length, 0)
   assert.equal(build(trip, [{ ...catches[0], tripId: 2 }], [], [{ ...hours[0], tripId: 2 }]).markers.length, 0)
+})
+
+test('PR4 Iwana seven catches, zero hours and 0.75/hour pace use only existing catch records', () => {
+  const input = structuredClone({ trip, catches }), s = summarize(trip, catches)
+  assert.equal(s.total, 7); assert.equal(s.displayed, 7); assert.equal(s.pace.toFixed(2), '0.75')
+  assert.deepEqual(s.bins.map(b => b.label), Array.from({ length: 10 }, (_, i) => `${i + 6}時台`))
+  assert.deepEqual(s.bins.map(b => b.count), [1,0,0,0,1,1,0,1,2,1])
+  assert.equal(s.bins.reduce((n, b) => n + b.count, 0), s.displayed)
+  assert.deepEqual({ trip, catches }, input)
+})
+test('PR4 JST hour boundaries include 59:59.999 in the prior hour; exact end has no phantom empty hour', () => {
+  const start = new Date('2026-10-16T21:00:00Z'), end = new Date('2026-10-16T22:00:00Z')
+  const rows = [new Date(+end - 1), end].map((caughtAt, id) => ({ id, tripId: 1, caughtAt }))
+  assert.deepEqual(summarize({ ...trip, startedAt: start, endedAt: end }, rows).bins.map(b => [b.label,b.count]), [['6時台',1],['7時台',1]])
+  assert.deepEqual(summarize({ ...trip, startedAt: start, endedAt: end }, rows.slice(0,1)).bins.map(b => [b.label,b.count]), [['6時台',1]])
+})
+test('PR4 JST cross-midnight and repeated clock hours on different days never merge', () => {
+  const span = { id: 1, startedAt: new Date('2026-10-17T23:00:00+09:00'), endedAt: new Date('2026-10-19T01:00:00+09:00') }
+  const rows = ['2026-10-17T23:59:59+09:00','2026-10-18T00:00:00+09:00','2026-10-19T00:00:00+09:00'].map(caughtAt => ({ tripId: 1, caughtAt: new Date(caughtAt) }))
+  const s = summarize(span, rows)
+  assert.equal(s.bins.length, 26); assert.equal(s.bins[0].dayJst, '2026-10-17'); assert.equal(s.bins[1].dayJst, '2026-10-18'); assert.equal(s.bins.at(-1).dayJst, '2026-10-19')
+  assert.deepEqual(s.bins.filter(b => b.count).map(b => b.count), [1,1,1]); assert.equal(new Set(s.bins.map(b => b.key)).size, 26)
+})
+test('PR4 zero catches and lost-only trips retain zero bars and zero pace without weather', () => {
+  for (const rows of [[], catches.map(c => ({ ...c, resultType: 'lost' }))]) {
+    const s = summarize(trip, rows)
+    assert.equal(s.total, 0); assert.equal(s.pace, 0); assert.equal(s.bins.length, 10); assert(s.bins.every(b => b.count === 0))
+  }
+})
+test('PR4 zone and unset filters change bars only; whole-trip count, pace and hour bounds stay fixed', () => {
+  const rows = [...catches, { ...catches[0], id: 50, zoneId: undefined, locationSnapshot: undefined }, { ...catches[0], id: 51, zoneId: 'pond0' }, { ...catches[0], id: 52, resultType: 'lost' }, { ...catches[0], tripId: 2 }]
+  const all = summarize(trip, rows), filtered = summarize(trip, rows, 'id:pond9'), noUnset = summarize(trip, rows, 'id:pond9', false), unset = summarize(trip, rows, 'unset')
+  assert.equal(all.total, 9); assert.equal(filtered.displayed, 8); assert.equal(noUnset.displayed, 7); assert.equal(unset.displayed, 1)
+  for (const s of [filtered, noUnset, unset]) {
+    assert.equal(s.total, all.total); assert.equal(s.pace, all.pace); assert.deepEqual(s.bins.map(b => b.key), all.bins.map(b => b.key))
+    assert.equal(s.bins.reduce((n, b) => n + b.count, 0), s.displayed)
+  }
+})
+test('PR4 invalid/missing/reversed/zero period cannot use graph fallback or current time for pace', () => {
+  for (const override of [{ startedAt: undefined }, { endedAt: undefined }, { startedAt: null }, { startedAt: new Date(NaN) }, { endedAt: 'not a time' }, { startedAt: trip.endedAt }, { startedAt: new Date(+trip.endedAt + 1) }]) {
+    const s = summarize({ ...trip, ...override }, catches)
+    assert.equal(s.pace, null); assert.equal(s.total, 7); assert.equal(s.bins.reduce((n, b) => n + b.count, 0), 7)
+  }
+  assert.equal(summarize({ ...trip, endedAt: undefined }, catches).paceReason, 'missing-end')
+})
+test('PR4 invalid catch timestamps remain in explicit unknown bar and outside-time catches retain real hour', () => {
+  const rows = [...catches, { tripId: 1, caughtAt: undefined }, { tripId: 1, caughtAt: new Date(at('23:00')) }]
+  const s = summarize(trip, rows)
+  assert.equal(s.total, 9); assert.equal(s.unknownCount, 1); assert.equal(s.outsideCount, 1)
+  assert.equal(s.bins.at(-1).key, 'unknown'); assert.equal(s.bins.at(-1).count, 1)
+  assert.equal(s.bins.find(b => b.label === '23時台').count, 1); assert.equal(s.bins.reduce((n, b) => n + b.count, 0), 9)
+  assert.equal(summarize({}, rows).total, 0)
+})
+test('PR4 excessively large corrupt period is bounded without dropping catches or assigning invented hours', () => {
+  const s = summarize({ ...trip, startedAt: new Date('1900-01-01T00:00:00Z') }, catches)
+  assert.equal(s.periodTooLong, true); assert.equal(s.bins.length, 1); assert.equal(s.bins[0].timestamp, null); assert.equal(s.bins[0].count, 7)
 })

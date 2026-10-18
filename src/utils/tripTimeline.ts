@@ -106,3 +106,52 @@ export function layoutTimelineMarkers(markers: TimelineMarker[], start: number, 
   }
   return { markers: output, lanes, height: top + 44 }
 }
+
+export interface CatchHourBucket {
+  key: string
+  timestamp: number | null
+  dayJst: string
+  label: string
+  count: number
+}
+const hourMs = 3600000
+const hourFormatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit', hour: 'numeric', hourCycle: 'h23' })
+
+/** Read-only totals. Graph fallback bounds must never become the pace denominator. */
+export function buildCatchSummary(trip: FishingTrip, catches: CatchRecord[], zone = 'all', includeUnset = true) {
+  const all = catches.filter(row => trip.id !== undefined && row.tripId === trip.id && row.resultType !== 'lost')
+  const displayed = filterTimelineCatches(all, zone, includeUnset)
+  const start = timelineTimestamp(trip.startedAt), end = timelineTimestamp(trip.endedAt)
+  const duration = start !== null && end !== null && end > start ? end - start : null
+  const pace = duration === null ? null : all.length / (duration / hourMs)
+  const paceReason = trip.endedAt == null ? 'missing-end' : 'invalid-period'
+  const counts = new Map<number, number>()
+  let unknownCount = 0
+  for (const row of displayed) {
+    const time = timelineTimestamp(row.caughtAt)
+    if (time === null) unknownCount++
+    else { const hour = Math.floor(time / hourMs) * hourMs; counts.set(hour, (counts.get(hour) ?? 0) + 1) }
+  }
+  // Bounds use all catches, regardless of the zone, so filters don't hide empty hours.
+  const recordTimes = all.flatMap(row => { const time = timelineTimestamp(row.caughtAt); return time === null ? [] : [time] })
+  const times = [...recordTimes]
+  if (start !== null) times.push(start)
+  if (end !== null) times.push(duration === null ? end : end - 1)
+  const first = times.length ? Math.floor(times.reduce((a, b) => Math.min(a, b)) / hourMs) * hourMs : null
+  const last = times.length ? Math.floor(times.reduce((a, b) => Math.max(a, b)) / hourMs) * hourMs : null
+  const hourCount = first === null || last === null ? 0 : Math.round((last - first) / hourMs) + 1
+  // Protect a mobile renderer from corrupt dates spanning centuries. No time is invented.
+  const periodTooLong = hourCount > 24 * 366
+  const bins: CatchHourBucket[] = []
+  if (periodTooLong) bins.push({ key: 'unavailable', timestamp: null, dayJst: '', label: '期間過大', count: displayed.length - unknownCount })
+  else if (first !== null) for (let index = 0; index < hourCount; index++) {
+    const timestamp = first + index * hourMs
+    const parts = Object.fromEntries(hourFormatter.formatToParts(timestamp).map(part => [part.type, part.value]))
+    bins.push({ key: String(timestamp), timestamp, dayJst: `${parts.year}-${parts.month}-${parts.day}`, label: `${Number(parts.hour)}時台`, count: counts.get(timestamp) ?? 0 })
+  }
+  if (all.length !== recordTimes.length) {
+    bins.push({ key: 'unknown', timestamp: null, dayJst: '', label: '時刻不明', count: unknownCount })
+  }
+  return { total: all.length, displayed: displayed.length, pace, paceReason, bins, periodTooLong,
+    unknownCount, outsideCount: duration === null ? 0 : recordTimes.filter(time => time < start! || time > end!).length }
+}

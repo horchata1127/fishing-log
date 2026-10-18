@@ -92,6 +92,7 @@ test('missing trip times fall back to saved record bounds without changing weath
   const graph = page.getByRole('region', { name: '統合タイムライン', exact: true })
   await expect(graph.locator('.timeline-marker.catch')).toHaveCount(7)
   await expect(graph.getByText(/開始・終了時刻が揃わないため/)).toBeVisible()
+  await expect(graph.locator('.catch-summary')).toContainText('平均釣果ペース：算出不可')
   await expect(graph.locator('.temperature-line')).toHaveCount(1)
   const panel = page.getByRole('region', { name: '気象データ', exact: true }); await panel.locator('summary').click()
   await expect(panel.getByRole('button', { name: '過去の気象データを再取得', exact: true })).toBeDisabled()
