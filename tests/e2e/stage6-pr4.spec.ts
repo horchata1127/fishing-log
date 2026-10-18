@@ -1,16 +1,26 @@
 import { test, expect, readState, restoreViaUI, saveCatch } from './fixtures'
 import { stage6Candidate, stage6Backup } from '../stage6Fixture'
 
-test('PR4 pending startup, approved static application, Iwana all nine choices and catch/lost snapshots persist', async ({ page }) => {
+test('approved startup installs the initial master, repeats without changes, and Iwana catch/lost snapshots persist', async ({ page }) => {
   expect(await page.evaluate(async () => {
     const path = '/fishing-log/src/db/database.ts'
     return (await import(path)).db.facilities.count()
-  })).toBe(0)
-  // Simulate the separately approved static release in an isolated test origin.
-  expect(await page.evaluate(async master => {
+  })).toBe(50)
+  const beforeRestart = await page.evaluate(async () => {
+    const path = '/fishing-log/src/db/database.ts', { db } = await import(path)
+    return JSON.parse(JSON.stringify({ facilities: await db.facilities.toArray(), zones: await db.zones.toArray(), appMetadata: await db.appMetadata.toArray() }))
+  })
+  expect(beforeRestart.zones).toHaveLength(73)
+  expect(await page.evaluate(async () => {
     const path = '/fishing-log/src/utils/facilityRelease.ts'
-    return (await import(path)).initializeFacilityRelease({ status: 'approved', master })
-  }, stage6Candidate)).toBeUndefined()
+    return (await import(path)).initializeFacilityRelease()
+  })).toBeUndefined()
+  await page.reload()
+  await expect(page.getByRole('main')).not.toHaveAttribute('inert')
+  expect(await page.evaluate(async () => {
+    const path = '/fishing-log/src/db/database.ts', { db } = await import(path)
+    return JSON.parse(JSON.stringify({ facilities: await db.facilities.toArray(), zones: await db.zones.toArray(), appMetadata: await db.appMetadata.toArray() }))
+  })).toEqual(beforeRestart)
   await restoreViaUI(page, stage6Backup())
   const before = await readState(page)
   await page.getByRole('button', { name: '新しい釣行を開始' }).click()

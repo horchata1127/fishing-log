@@ -4,7 +4,8 @@ import { test, expect, restoreViaUI } from './fixtures'
 const facility = { id: 'official:e2e-f', name: '架空施設', prefecture: '長野県', address: null,
   facilityTypes: ['pond'], lureAllowed: true, operationStatus: 'open', officialUrl: null, sourceUrl: null,
   verifiedAt: null, aliases: [], zones: [{ id: 'official:e2e-z', name: '架空エリア', sortOrder: 1, sourceUrl: null }] }
-const master = (releaseOrder = 1) => ({ schemaVersion: 1, masterVersion: `sample-${releaseOrder}`, distributionMode: 'full', releaseOrder, facilities: [facility] })
+// Synthetic updates start after the real initial release; never weaken same-number conflict checks.
+const master = (releaseOrder = 2) => ({ schemaVersion: 1, masterVersion: `sample-${releaseOrder}`, distributionMode: 'full', releaseOrder, facilities: [facility] })
 const modules = { database: '/fishing-log/src/db/database.ts', storage: '/fishing-log/src/utils/facilityStorage.ts', backup: '/fishing-log/src/utils/backup.ts' }
 
 test('v6 restore retains current user rows, round trips references and rejects conflicts atomically', async ({ page }) => {

@@ -16,6 +16,7 @@ for (const [name, source] of Object.entries(sources)) {
   let code = ts.transpileModule(await readFile(new URL(`../src/${source}.ts`, import.meta.url), 'utf8'),
     { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText
   code = code.replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
+  code = code.replace("'./facility-master.v1.json'", JSON.stringify(new URL('../src/data/facility-master.v1.json', import.meta.url).href))
   for (const [dependency, target] of Object.entries(sources)) {
     for (const prefix of ['./', '../db/', '../utils/', '../data/']) code = code.replaceAll(`'${prefix}${target.split('/').at(-1)}'`, JSON.stringify(pathToFileURL(paths[dependency]).href))
   }
@@ -26,6 +27,7 @@ const { db } = await load('database')
 const { applyFacilityMaster } = await load('facilityStorage')
 const { validateFacilityMaster, planFacilityMasterUpdate, canonicalizeFacilityMaster, flattenFacilityMaster } = await load('facilityMaster')
 const { initializeFacilityRelease } = await load('facilityRelease')
+const { stage6FacilityRelease } = await load('stage6FacilityRelease')
 const { createBackup, importBackup } = await load('backup')
 const json = async name => JSON.parse(await readFile(new URL(`../docs/stage6-pr4/${name}`, import.meta.url), 'utf8'))
 const master = await json('facility-master.candidate.json'), research = await json('research-source.json'), audit = await json('audit.json')
@@ -49,6 +51,16 @@ async function seedLegacy() {
 }
 beforeEach(async () => { await db.open(); for (const t of db.tables) await t.clear() })
 after(async () => { db.close(); await rm(directory, { recursive: true }) })
+
+test('activation bundles exactly the approved audited candidate with the initial release identity', async () => {
+  const bytes = await readFile(new URL('../src/data/facility-master.v1.json', import.meta.url))
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), audit.candidateSha256)
+  assert.equal(stage6FacilityRelease.status, 'approved')
+  assert.deepEqual(stage6FacilityRelease.master, master)
+  assert.equal(stage6FacilityRelease.master.releaseOrder, 1)
+  assert.equal(stage6FacilityRelease.master.masterVersion, '1.0.0-stage6-50f73z')
+  assert.equal(validateFacilityMaster(stage6FacilityRelease.master).ok, true)
+})
 
 test('PR4 candidate: formal validation, 50/73, stable IDs, NFC names, order uniqueness and research provenance', async () => {
   assert.equal(validateFacilityMaster(master).ok, true)
@@ -108,7 +120,7 @@ test('PR4 approved startup works without network, repeats with zero writes and p
   globalThis.fetch = () => { throw new Error('Network forbidden') }
   const forbidden = () => { throw new Error('Repeated startup must not write') }
   try {
-    assert.equal(await initializeFacilityRelease({ status: 'approved', master }), undefined)
+    assert.equal(await initializeFacilityRelease(), undefined)
     const applied = await state()
     for (const [name, rows] of Object.entries(before)) {
       const pk = name === 'fishSpecies' ? 'fish_id' : name === 'appMetadata' ? 'key' : 'id'
@@ -116,7 +128,7 @@ test('PR4 approved startup works without network, repeats with zero writes and p
     }
     db.close(); await db.open()
     for (const table of db.tables) for (const hook of ['creating', 'updating', 'deleting']) db.table(table.name).hook(hook, forbidden)
-    try { assert.equal(await initializeFacilityRelease({ status: 'approved', master }), undefined) }
+    try { assert.equal(await initializeFacilityRelease(), undefined) }
     finally { for (const table of db.tables) for (const hook of ['creating', 'updating', 'deleting']) db.table(table.name).hook(hook).unsubscribe(forbidden) }
     assert.deepEqual(await state(), applied)
   } finally { globalThis.fetch = originalFetch }
@@ -136,7 +148,7 @@ for (const kind of ['newer', 'same-number-different']) test(`PR4 startup keeps a
 test('PR4 pending gate never accesses DB; startup apply failure leaves records intact', async () => {
   const original = db.transaction
   db.transaction = () => { throw new Error('No DB access allowed while pending') }
-  try { assert.equal(await initializeFacilityRelease(), undefined) } finally { db.transaction = original }
+  try { assert.equal(await initializeFacilityRelease({ status: 'pending' }), undefined) } finally { db.transaction = original }
   await db.trips.put({ id: 90, fishingAreaName: '過去自由入力', fishingDate: '2026-10-18', startedAt: new Date() })
   const before = await state()
   assert.match(await initializeFacilityRelease({ status: 'approved', master: research }), /更新できません/)

@@ -3,6 +3,7 @@ import { test as base, expect, type Page } from '@playwright/test'
 export const tableNames = ['trips', 'catches', 'tripEvents', 'lureManufacturers', 'lureSeries',
   'lureModels', 'lureVariants', 'myLures', 'rods', 'reels', 'lines', 'tackleSets'] as const
 export const fullTableNames = [...tableNames, 'fishSpecies'] as const
+export const completeTableNames = [...fullTableNames, 'facilities', 'zones', 'appMetadata'] as const
 export type Row = Record<string, any>
 export type State = Record<typeof fullTableNames[number], Row[]>
 
@@ -20,7 +21,7 @@ export function catalogFixture() {
 }
 
 /** 独立BrowserContextのDBを読み取り専用で観測。アプリ内部APIへの依存・書き込みなし。 */
-export async function readState(page: Page): Promise<State> {
+async function readTables(page: Page, names: readonly string[]): Promise<Record<string, Row[]>> {
   if (new URL(page.url()).origin !== 'http://127.0.0.1:4177') throw new Error('E2E専用origin以外へのDBアクセスを拒否')
   return page.evaluate(async names => {
     const database = await new Promise<IDBDatabase>((resolve, reject) => {
@@ -30,9 +31,9 @@ export async function readState(page: Page): Promise<State> {
       request.onsuccess = () => resolve(request.result)
     })
     try {
-      return await new Promise<State>((resolve, reject) => {
+      return await new Promise<Record<string, Row[]>>((resolve, reject) => {
         const transaction = database.transaction(names, 'readonly')
-        const data = {} as State
+        const data: Record<string, Row[]> = {}
         for (const name of names) {
           const request = transaction.objectStore(name).getAll()
           request.onsuccess = () => { data[name] = request.result }
@@ -42,8 +43,11 @@ export async function readState(page: Page): Promise<State> {
         transaction.onerror = () => reject(transaction.error)
       })
     } finally { database.close() }
-  }, [...fullTableNames])
+  }, [...names])
 }
+
+export async function readState(page: Page): Promise<State> { return await readTables(page, fullTableNames) as State }
+export async function readCompleteState(page: Page) { return readTables(page, completeTableNames) }
 
 export const test = base.extend<{ isolatedApp: void }>({
   isolatedApp: [async ({ page }, use) => {
@@ -56,6 +60,11 @@ export const test = base.extend<{ isolatedApp: void }>({
     })
     await page.goto('/')
     await expect(page.getByRole('heading', { name: '🎣 Fishing Log', exact: true })).toBeVisible()
+    await expect(page.getByRole('main')).not.toHaveAttribute('inert')
+    expect(await page.evaluate(async () => {
+      const path = '/fishing-log/src/db/database.ts', { db } = await import(path)
+      return { facilities: await db.facilities.count(), zones: await db.zones.count(), metadata: await db.appMetadata.get('facilityMaster') }
+    })).toMatchObject({ facilities: 50, zones: 73, metadata: { releaseOrder: 1, masterVersion: '1.0.0-stage6-50f73z' } })
     await expect.poll(async () => Object.values(await readState(page)).every(rows => rows.length === 0)).toBe(true)
     await use()
     expect(errors, '未処理のブラウザ例外').toEqual([])
