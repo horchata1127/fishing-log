@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises'
 import type { Page } from '@playwright/test'
-import { test, expect, catalogFixture, fullTableNames, readState, restoreViaUI, startTrip, selectCatalog, saveCatch } from './fixtures'
+import { test, expect, catalogFixture, completeTableNames, readCompleteState, readState, restoreViaUI, startTrip, selectCatalog, saveCatch } from './fixtures'
 
 const modal = (page: Page) => page.getByRole('dialog', { name: '釣果を登録', exact: true })
 const home = (page: Page) => page.getByRole('button', { name: '← ホーム', exact: true }).click()
@@ -103,19 +103,20 @@ test('E: 初期46種・ニジマス初期選択・ハコスチ/イワナ/独自�
   await expect(page.getByRole('region', { name: '釣果履歴' })).toContainText('魚種未設定')
 })
 
-test('F: v5全13テーブルのダウンロードと別Context復元で魚種・サイズ・スナップショットを保持', async ({ page, browser }, testInfo) => {
+test('F: v6全16テーブルのダウンロードと別Context復元で魚種・サイズ・スナップショットを保持', async ({ page, browser }, testInfo) => {
   const source = await prepareFishHistory(page)
   await home(page)
   const pending = page.waitForEvent('download')
   await page.getByRole('button', { name: '📦 データをバックアップ', exact: true }).click()
   const download = await pending
-  const path = testInfo.outputPath('synthetic-v5-fish-backup.json')
+  const path = testInfo.outputPath('synthetic-v6-fish-backup.json')
   await download.saveAs(path)
   const value = JSON.parse(await readFile(path, 'utf8'))
-  expect(value.version).toBe(5)
+  expect(value.version).toBe(6)
   expect(value.format).toBe('fishing-log-backup')
-  expect(Object.keys(value.data).sort()).toEqual([...fullTableNames].sort())
-  expect(value.data).toEqual(source)
+  expect(Object.keys(value.data).sort()).toEqual([...completeTableNames].sort())
+  expect(value.data).toEqual(await readCompleteState(page))
+  for (const [name, rows] of Object.entries(source)) expect(value.data[name]).toEqual(rows)
   const context = await browser.newContext({ viewport: page.viewportSize()!, isMobile: !!testInfo.project.use.isMobile,
     hasTouch: !!testInfo.project.use.hasTouch, locale: 'ja-JP', timezoneId: 'Asia/Tokyo', serviceWorkers: 'block' })
   try {
@@ -127,6 +128,7 @@ test('F: v5全13テーブルのダウンロードと別Context復元で魚種・
     await expect(restored.getByRole('heading', { name: '🎣 Fishing Log', exact: true })).toBeVisible()
     expect(Object.values(await readState(restored)).every(rows => rows.length === 0)).toBe(true)
     await restoreViaUI(restored, value)
+    expect(await readCompleteState(restored)).toEqual(value.data)
     expect(await readState(restored)).toEqual(source)
     await restored.getByRole('button', { name: /E2Eニレ池/ }).click()
     await expect(restored.getByRole('region', { name: '釣果履歴' })).toContainText('E2E独自ブランド（ブランドマス） / 32.5cm')

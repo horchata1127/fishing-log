@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises'
 import type { Page, Locator } from '@playwright/test'
-import { test, expect, catalogFixture, tableNames, readState, restoreViaUI,
+import { test, expect, catalogFixture, completeTableNames, readCompleteState, readState, restoreViaUI,
   startTrip, selectCatalog, saveCatch, registerTackleSet } from './fixtures'
 
 const catchDialog = (page: Page) => page.getByRole('dialog', { name: '釣果を登録', exact: true })
@@ -132,20 +132,21 @@ test('B: 初期候補・重複防止・セット・持参変更・巻き替え�
   await prepareTackleHistory(page)
 })
 
-test('C: v4全12テーブルをダウンロードし、別Contextへ復元して件数と3lb/3.5lb履歴を維持', async ({ page, browser }, testInfo) => {
+test('C: v6全16テーブルをダウンロードし、別Contextへ復元して件数と3lb/3.5lb履歴を維持', async ({ page, browser }, testInfo) => {
   const source = await prepareTackleHistory(page)
   await home(page)
   const downloadPromise = page.waitForEvent('download')
   await page.getByRole('button', { name: '📦 データをバックアップ', exact: true }).click()
   const download = await downloadPromise
   expect(download.suggestedFilename()).toMatch(/^fishing-log-backup-\d{4}-\d{2}-\d{2}\.json$/)
-  const path = testInfo.outputPath('synthetic-v4-backup.json')
+  const path = testInfo.outputPath('synthetic-v6-backup.json')
   await download.saveAs(path)
   const backup = JSON.parse(await readFile(path, 'utf8'))
   expect(backup.format).toBe('fishing-log-backup')
-  expect(backup.version).toBe(4)
-  expect(Object.keys(backup.data).sort()).toEqual([...tableNames].sort())
-  expect(backup.data).toEqual(Object.fromEntries(Object.entries(source).filter(([name]) => name !== 'fishSpecies')))
+  expect(backup.version).toBe(6)
+  expect(Object.keys(backup.data).sort()).toEqual([...completeTableNames].sort())
+  expect(backup.data).toEqual(await readCompleteState(page))
+  for (const [name, rows] of Object.entries(source)) expect(backup.data[name]).toEqual(rows)
   const set = backup.data.tackleSets[0]
   expect(backup.data.trips[0].tackleSetIds).toEqual([set.id])
   expect(backup.data.rods.some((row: { id: number }) => row.id === set.rodId)).toBe(true)
@@ -165,6 +166,7 @@ test('C: v4全12テーブルをダウンロードし、別Contextへ復元して
     await expect(restored.getByRole('heading', { name: '🎣 Fishing Log', exact: true })).toBeVisible()
     expect(Object.values(await readState(restored)).every(rows => rows.length === 0)).toBe(true)
     await restoreViaUI(restored, backup)
+    expect(await readCompleteState(restored)).toEqual(backup.data)
     expect(await readState(restored)).toEqual(source)
     await restored.getByRole('button', { name: /E2Eニレ池/ }).click()
     await expect(restored.getByRole('region', { name: '釣果履歴' })).toContainText('3匹目')
