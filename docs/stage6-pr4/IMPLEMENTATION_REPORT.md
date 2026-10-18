@@ -1,5 +1,7 @@
 # Stage6 PR4 実装報告（2026-10-18・承認待ち）
 
+最終レビューと追加検証は [FINAL_REVIEW.md](FINAL_REVIEW.md) を参照。コード面ではpending準備PRとしてマージ可能だが、現行main pushのPages自動配布と本番デプロイ禁止が両立しないため、運用上はマージ保留。
+
 最新 `origin/main` `c25220b7d7acd5ff4bf97bcfed5626930a66282b` から `feature/stage6-pr4-facility-master` を作成。開始時の追跡ファイル差分なし。既存未追跡ファイルの削除・上書き・ステージングなし。
 
 ## 採用方式
@@ -26,11 +28,12 @@ DB v7、バックアップv6、旧v1〜v5復元、PWA/SW設定、既存カタロ
 - `src/data/stage6FacilityRelease.ts`: 承認待ちレジストリと配布契約。
 - `src/utils/facilityRelease.ts`: 既存applyの承認ゲート付き起動呼出し。
 - `scripts/prepare-stage6-pr4.mjs`: 原本比較、候補生成、監査生成。出力は排他作成、既存ファイル上書き禁止。
-- `tests/stage6-pr4.test.mjs`: 9件の候補検証・非破壊・版競合・rollback・v6往復検証。
+- `tests/stage6-pr4.test.mjs`: 13件の候補検証・非破壊・版競合・rollback・v6往復・全フィールド監査・起動時no-op検証（初回9＋レビュー追加4）。
 - `tests/stage6Fixture.ts`: テストrunner専用の候補・合成RC23バックアップ。
 - `tests/e2e/stage6-pr4.spec.ts`: PC/モバイルの承認後経路模擬と9エリア選択・記録・再読込。
 - `tests/e2e/trip-locations.spec.ts`: 既存競合テストのダイアログ応答をクリックと並行処理。元のメッセージ/入力保持/DB不変の検証を維持。
 - `tests/offline/offline.spec.ts`: PC/モバイルの完全終了後の圏外cold startとキャッチ/バラシ・再起動保持を追加。
+- `scripts/review-stage6-approved.py`、`playwright.stage6-review.config.ts`、`tests/stage6-review/approved.spec.ts`: 一時コピーだけでapprovedな実ビルドを作り、初回自動適用・表示順・圏外再起動・全既存行保持を追加検証。`tsconfig.e2e.json` に型検査対象を追加。
 - `docs/stage6-pr4/`: この報告、監査、検証結果、PR本文、候補JSON、研究入力コピー、機械監査JSON、既存未追跡ファイルの不変ハッシュ証跡。`.gitattributes` で入力コピー/候補JSONの改行変換を防止し、Windows/Linuxで監査ハッシュを維持。
 
 ## 実機受入れ（承認・別途反映後）

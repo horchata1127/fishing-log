@@ -7,11 +7,13 @@
 - DB v7、backup v6、旧v1〜v5、退役・巻戻し拒否・同番号異内容拒否・rollbackを維持。釣行・catch/lost・myLures・全マスターの初期化なし。
 - 詳細: [実装](docs/stage6-pr4/IMPLEMENTATION_REPORT.md)、[監査](docs/stage6-pr4/MASTER_AUDIT.md)、[検証](docs/stage6-pr4/VALIDATION.md)、[機械監査](docs/stage6-pr4/audit.json)。
 
-検証: build成功、Node 378成功、E2E型検査成功、E2E 60成功（PC/モバイル各30）、オフライン18成功（各9）、diff check成功。バックアップv6全16テーブル往復・同名user保護・版競合・途中失敗rollback・候補の本番ビルド非同梱を確認しました。既存E2Eのalert/click待ち合わせだけ同期順を修正し、入力保持とDB不変の検証を維持しています。
+検証: build成功、Node 382成功、E2E型検査成功、E2E 60成功（PC/モバイル各30）、オフライン18成功（各9）、diff check成功。バックアップv6全16テーブル往復・同名user保護・版競合・途中失敗rollback・候補の本番ビルド非同梱を確認しました。既存E2Eのalert/click待ち合わせだけ同期順を修正し、入力保持とDB不変の検証を維持しています。
 
 承認後の静的同梱方式を採用したため、新規ファイル取込みUIはありません。E2Eは隔離originで承認後適用を模擬し、オフラインは合成v6 fixtureの準備後に圏外cold startを検証します。実機の復元操作は行っていません。
 
 **Draft・データ承認待ち。自動マージおよび本番デプロイ禁止。**
+
+最終レビュー: [FINAL_REVIEW.md](docs/stage6-pr4/FINAL_REVIEW.md)。追加後の単体382件、E2E60件、オフライン18件、隔離approvedビルド2件が成功。pending準備PRのコード面はマージ可能ですが、現行のmain pushでPagesへ自動配布するworkflowが有効なため、本番デプロイ禁止を維持する現状ではマージ保留です。配布workflowの停止または確実な手動承認等を先に整えてください。このPRではworkflow設定変更も配布有効化も行っていません。
 
 - [ ] 50施設・73エリアの内容/出典/収録範囲と残る未確認事項を承認。
 - [ ] イワセン9エリア・キングフィッシャー表示順修正を承認。

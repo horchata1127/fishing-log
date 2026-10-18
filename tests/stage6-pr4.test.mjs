@@ -24,7 +24,7 @@ for (const [name, source] of Object.entries(sources)) {
 const load = name => import(pathToFileURL(paths[name]).href)
 const { db } = await load('database')
 const { applyFacilityMaster } = await load('facilityStorage')
-const { validateFacilityMaster, planFacilityMasterUpdate, canonicalizeFacilityMaster } = await load('facilityMaster')
+const { validateFacilityMaster, planFacilityMasterUpdate, canonicalizeFacilityMaster, flattenFacilityMaster } = await load('facilityMaster')
 const { initializeFacilityRelease } = await load('facilityRelease')
 const { createBackup, importBackup } = await load('backup')
 const json = async name => JSON.parse(await readFile(new URL(`../docs/stage6-pr4/${name}`, import.meta.url), 'utf8'))
@@ -77,6 +77,60 @@ test('PR4 candidate: formal validation, 50/73, stable IDs, NFC names, order uniq
   assert.equal(plan.value.facilities.added.length, 50); assert.equal(plan.value.zones.added.length, 73)
   assert.equal(plan.value.applied.canonicalContent, canonicalizeFacilityMaster(master).value)
   assert.equal(plan.value.applied.releaseOrder, 1)
+})
+
+test('PR4 full candidate fields, parent IDs and display order match research plus the single audited correction', () => {
+  const fields = ['id', 'name', 'prefecture', 'address', 'facilityTypes', 'lureAllowed', 'operationStatus', 'officialUrl', 'sourceUrl', 'verifiedAt', 'aliases']
+  const zoneFields = ['id', 'name', 'sortOrder', 'sourceUrl']
+  const expected = research.facilities.map(f => ({ ...Object.fromEntries(fields.map(k => [k, copy(f[k])])),
+    zones: f.zones.map(z => Object.fromEntries(zoneFields.map(k => [k, copy(z[k])]))) }))
+  const fifth = expected.find(f => f.id === audit.correction.facilityId).zones.find(z => z.id === audit.correction.zoneId)
+  assert.equal(fifth.sortOrder, audit.correction.from)
+  fifth.sortOrder = audit.correction.to
+  assert.deepEqual(master.facilities, expected)
+  assert.deepEqual(audit.facilities, master.facilities.map(f => ({ id: f.id, name: f.name, zones: f.zones.length })))
+  const flat = flattenFacilityMaster(master)
+  assert.equal(flat.ok, true)
+  for (const f of expected) {
+    const zones = flat.value.zones.filter(z => z.facilityId === f.id)
+    const ordered = [...f.zones].sort((a, b) => a.sortOrder - b.sortOrder)
+    assert.deepEqual(zones.map(({ id, name, sortOrder, sourceUrl }) => ({ id, name, sortOrder, sourceUrl })), ordered)
+  }
+})
+
+test('PR4 approved startup works without network, repeats with zero writes and preserves all existing records', async () => {
+  await seedLegacy()
+  await db.facilities.put({ id: 'user:iwana', name: '日本イワナセンター', origin: 'user' })
+  await db.zones.put({ id: 'user:9', facilityId: 'user:iwana', name: '9号池', origin: 'user' })
+  await db.trips.update(40, { facilityId: 'user:iwana', currentZoneId: 'user:9' })
+  await db.catches.update(40, { facilityId: 'user:iwana', zoneId: 'user:9', locationSnapshot: { facilityName: '過去名', zoneName: '過去の池名' } })
+  const before = await state(), originalFetch = globalThis.fetch
+  globalThis.fetch = () => { throw new Error('Network forbidden') }
+  const forbidden = () => { throw new Error('Repeated startup must not write') }
+  try {
+    assert.equal(await initializeFacilityRelease({ status: 'approved', master }), undefined)
+    const applied = await state()
+    for (const [name, rows] of Object.entries(before)) {
+      const pk = name === 'fishSpecies' ? 'fish_id' : name === 'appMetadata' ? 'key' : 'id'
+      for (const row of rows) assert.deepEqual(applied[name].find(r => r[pk] === row[pk]), row)
+    }
+    db.close(); await db.open()
+    for (const table of db.tables) for (const hook of ['creating', 'updating', 'deleting']) db.table(table.name).hook(hook, forbidden)
+    try { assert.equal(await initializeFacilityRelease({ status: 'approved', master }), undefined) }
+    finally { for (const table of db.tables) for (const hook of ['creating', 'updating', 'deleting']) db.table(table.name).hook(hook).unsubscribe(forbidden) }
+    assert.deepEqual(await state(), applied)
+  } finally { globalThis.fetch = originalFetch }
+})
+
+for (const kind of ['newer', 'same-number-different']) test(`PR4 startup keeps all 16 stores when device metadata is ${kind}`, async () => {
+  await seedLegacy()
+  const existing = copy(master)
+  if (kind === 'newer') { existing.releaseOrder = 2; existing.masterVersion = 'already-applied-2' }
+  else existing.facilities[0].name += '別の正式配布'
+  await applyFacilityMaster(existing)
+  const before = await state()
+  assert.match(await initializeFacilityRelease({ status: 'approved', master }), kind === 'newer' ? /巻き戻し/ : /同じreleaseOrder/)
+  assert.deepEqual(await state(), before)
 })
 
 test('PR4 pending gate never accesses DB; startup apply failure leaves records intact', async () => {

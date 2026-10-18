@@ -9,5 +9,5 @@
     "noEmit": true,
     "skipLibCheck": true
   },
-  "include": ["playwright.config.ts", "playwright.offline.config.ts", "tests/e2e/**/*.ts", "tests/offline/**/*.ts"]
+  "include": ["playwright.config.ts", "playwright.offline.config.ts", "playwright.stage6-review.config.ts", "tests/e2e/**/*.ts", "tests/offline/**/*.ts", "tests/stage6-review/**/*.ts"]
 }
