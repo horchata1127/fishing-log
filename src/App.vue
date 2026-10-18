@@ -51,6 +51,7 @@ const editingTripTackles = ref(false)
 const savingTrip = ref(false)
 const newTripFacilityId = ref<string>(), newTripZoneId = ref<string>()
 const catchZoneId = ref<string>(), catchLocation = ref<CatchLocationSelection>()
+const catchAreaChanged = ref(false)
 const locationBusy = ref(false), savingLocation = ref(false), locationRefresh = ref(0)
 
 const myLureOptions = ref<LureOption[]>([])
@@ -443,7 +444,8 @@ async function editCatch(record: CatchRecord) {
     catchFishSize.value = record.fishSizeCm === undefined ? '' : String(record.fishSizeCm)
     catchTackleSetId.value = record.tackleSetId
     catchZoneId.value = record.zoneId
-    catchLocation.value = currentTrip.value.facilityId ? { expectedFacilityId: currentTrip.value.facilityId, expectedCurrentZoneId: currentTrip.value.currentZoneId, zoneId: record.zoneId } : undefined
+    catchAreaChanged.value = false
+    catchLocation.value = { expectedFacilityId: currentTrip.value.facilityId, expectedCurrentZoneId: currentTrip.value.currentZoneId, zoneId: record.zoneId }
     showCatchForm.value = true
   } catch (error) { alert(error instanceof Error ? error.message : String(error)) }
 }
@@ -474,6 +476,7 @@ async function addCatch() {
     await loadLocationChoices(trip.facilityId, trip.currentZoneId)
     currentTrip.value = trip
     catchZoneId.value = trip.currentZoneId
+    catchAreaChanged.value = false
     catchLocation.value = { expectedFacilityId: trip.facilityId, expectedCurrentZoneId: trip.currentZoneId, zoneId: trip.currentZoneId }
     await loadMyLureOptions()
     fishChoices.value = await loadFishChoices()
@@ -516,7 +519,7 @@ async function commitCatch(sameAsPrevious: boolean) {
         ? { kind: 'manual' as const, lureName: catchLureName.value, lureColor: catchLureColor.value }
         : catchSelection.value
       const input = { resultType: catchResultType.value, lostDistance: catchResultType.value === "lost" ? catchLostDistance.value : undefined, tripId: currentTrip.value.id, caughtAt: pendingCaughtAt.value,
-        location: editingCatch.value && catchZoneId.value === editingCatch.value.zoneId ? undefined : catchLocation.value ? { ...catchLocation.value, zoneId: catchZoneId.value } : undefined,
+        location: editingCatch.value && (!catchAreaChanged.value || (catchZoneId.value === editingCatch.value.zoneId && !(catchZoneId.value === undefined && editingCatch.value.locationSnapshot?.zoneName))) ? undefined : catchLocation.value ? { ...catchLocation.value, zoneId: catchZoneId.value } : undefined,
         tackleSetId: catchTackleSetId.value,
         fishSpeciesId: catchFishSpeciesId.value,
         fishSizeCm: catchFishSize.value.trim() ? Number(catchFishSize.value) : undefined,
@@ -524,7 +527,12 @@ async function commitCatch(sameAsPrevious: boolean) {
         action: editingCatch.value && catchAction.value === (editingCatch.value.action ?? '') ? editingCatch.value.action : catchAction.value || undefined,
         ...(catchActionLength.value === undefined ? {} : { actionLength: catchActionLength.value }), memo: catchMemo.value || undefined }
       if (editingCatch.value?.id) {
-        await updateCatch(editingCatch.value.id, input, catchSelection.value ? selection : undefined)
+        await updateCatch(editingCatch.value.id, { ...input,
+          resultType: catchResultType.value === (editingCatch.value.resultType ?? 'catch') ? editingCatch.value.resultType : catchResultType.value,
+          rangeLevel: catchRange.value === (editingCatch.value.rangeLevel ?? '') ? editingCatch.value.rangeLevel : input.rangeLevel,
+          retrieveSpeed: catchRetrieveSpeed.value === (editingCatch.value.retrieveSpeed ?? '') ? editingCatch.value.retrieveSpeed : input.retrieveSpeed,
+          memo: catchMemo.value === (editingCatch.value.memo ?? '') ? editingCatch.value.memo : input.memo,
+        }, catchSelection.value ? selection : undefined, editingCatch.value)
       } else await registerCatch(input, selection)
     }
   } catch (error) {
@@ -836,8 +844,10 @@ async function selectCurrentZone(zoneId: string | undefined) {
       v-model:lure-color="catchLureColor" v-model:range="catchRange" v-model:retrieve-speed="catchRetrieveSpeed"
       v-model:action="catchAction" v-model:action-length="catchActionLength" @select-lure="selectLure" @save="saveCatch"
       @same-as-previous="saveSameAsPrevious" @cancel="cancelCatch">
-      <template #location><FacilityPicker v-if="catchLocation?.expectedFacilityId" fixed :facility-id="catchLocation.expectedFacilityId" :trip-id="currentTrip?.id"
-        v-model:zone-id="catchZoneId" :retained-zone-id="editingCatch?.zoneId ?? catchLocation.expectedCurrentZoneId" zone-label="今回のエリア" :disabled="savingCatch" @busy="locationBusy = $event" /></template>
+      <template #location><FacilityPicker fixed catch-area :facility-id="catchLocation?.expectedFacilityId" :trip-id="currentTrip?.id"
+        :zone-id="catchZoneId" @update:zone-id="catchZoneId = $event; catchAreaChanged = true"
+        :retained-zone-id="editingCatch ? editingCatch.zoneId : catchLocation?.expectedCurrentZoneId" :retained-zone-name="editingCatch?.locationSnapshot?.zoneName"
+        zone-label="釣り場内のエリア" :disabled="savingCatch" @busy="locationBusy = $event" /></template>
     </CatchModal>
   </main>
 </template>
