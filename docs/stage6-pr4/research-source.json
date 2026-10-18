@@ -1,0 +1,1404 @@
+{
+  "schemaVersion": 1,
+  "masterVersion": "0.9.1-research-draft-iwana-zones",
+  "status": "research_draft_not_for_production",
+  "notes": "50施設固定。公式一次資料で確認できた事項のみ更新。ゾーン別の利用制限・イベント休止は別紙監査台帳で管理。正式full配布不可。 イワセン9エリア名はユーザー提供の公式ページ画像に基づく。最新の営業や放流情報として表示しない。取り込みは明示的なユーザー操作のみ。",
+  "facilities": [
+    {
+      "id": "official:asakawa-kokusai",
+      "name": "浅川国際鱒釣場",
+      "prefecture": "東京都",
+      "address": null,
+      "facilityTypes": [
+        "stream"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.asakoku-fishing.com/",
+      "sourceUrl": "https://www.asakoku-fishing.com/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "浅川国際"
+      ],
+      "zones": [],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:akigawa-kokusai",
+      "name": "秋川国際マス釣場",
+      "prefecture": "東京都",
+      "address": "東京都あきる野市養沢1311",
+      "facilityTypes": [
+        "stream"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://akigawagyokyo.or.jp/fish/",
+      "sourceUrl": "https://akigawagyokyo.or.jp/fish/rure/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "秋川国際"
+      ],
+      "zones": [
+        {
+          "id": "official:akigawa-kokusai:lure",
+          "name": "ルアー釣場",
+          "sortOrder": 1,
+          "sourceUrl": "https://akigawagyokyo.or.jp/fish/rure/"
+        }
+      ],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:tamako-ekimae",
+      "name": "多摩湖駅前フィッシングエリア",
+      "prefecture": "埼玉県",
+      "address": "埼玉県所沢市山口2964",
+      "facilityTypes": [
+        "pool"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://www.s-fishingarea.com/",
+      "sourceUrl": "https://www.kanritsuriba.com/tamako_fishingarea/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "多摩湖駅前",
+        "多摩湖FA"
+      ],
+      "zones": [],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:fishing-stage-sainokuni",
+      "name": "フィッシングステージ彩の国",
+      "prefecture": "埼玉県",
+      "address": "埼玉県比企郡川島町上八ツ林53-1",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://fs-sainokuni.jp/",
+      "sourceUrl": "https://fs-sainokuni.jp/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "彩の国フィッシングステージ"
+      ],
+      "zones": [],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:river-spot-hayato",
+      "name": "リヴァスポット早戸",
+      "prefecture": "神奈川県",
+      "address": "神奈川県相模原市緑区鳥屋3627",
+      "facilityTypes": [
+        "stream"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.hayatogawa.com/",
+      "sourceUrl": "https://www.hayatogawa.com/guide.php",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "verified",
+      "verificationBasis": "facility_site_direct_2026_10"
+    },
+    {
+      "id": "official:uratanzawa",
+      "name": "うらたんざわ渓流釣場",
+      "prefecture": "神奈川県",
+      "address": null,
+      "facilityTypes": [
+        "stream"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://uratanzawa.com/",
+      "sourceUrl": "https://uratanzawa.com/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "うらたんざわ渓流釣り場"
+      ],
+      "zones": [
+        {
+          "id": "official:uratanzawa:lure-fly-tenkara",
+          "name": "ルアー・フライ・テンカラエリア",
+          "sortOrder": 1,
+          "sourceUrl": "https://uratanzawa.com/point-guide/"
+        }
+      ],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:narago-fishing-center",
+      "name": "奈良子釣りセンター",
+      "prefecture": "山梨県",
+      "address": "山梨県大月市七保町奈良子10",
+      "facilityTypes": [
+        "pond",
+        "stream"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.narago.jp/",
+      "sourceUrl": "https://www.narago.jp/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "奈良子"
+      ],
+      "zones": [
+        {
+          "id": "official:narago-fishing-center:stream",
+          "name": "ストリームエリア",
+          "sortOrder": 1,
+          "sourceUrl": "https://www.kanritsuriba.com/cgi-bin/yamanashi/narako/profile.cgi"
+        },
+        {
+          "id": "official:narago-fishing-center:narago-pond",
+          "name": "ならご池",
+          "sortOrder": 2,
+          "sourceUrl": "https://www.kanritsuriba.com/cgi-bin/yamanashi/narako/profile.cgi"
+        },
+        {
+          "id": "official:narago-fishing-center:yamame-pond",
+          "name": "ヤマメ池",
+          "sortOrder": 3,
+          "sourceUrl": "https://www.kanritsuriba.com/cgi-bin/yamanashi/narako/profile.cgi"
+        }
+      ],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:nihon-iwana-center",
+      "name": "日本イワナセンター",
+      "prefecture": "群馬県",
+      "address": "群馬県沼田市利根町根利1994",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "unknown",
+      "officialUrl": "http://www7.wind.ne.jp/okutone/center/",
+      "sourceUrl": "https://www.kanritsuriba.com/iwana_center/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:nihon-iwana-center:zero-2",
+          "name": "ZERO号池第2",
+          "sortOrder": 1,
+          "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+          "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+        },
+        {
+          "id": "official:nihon-iwana-center:zero-1",
+          "name": "ZERO号池第1",
+          "sortOrder": 2,
+          "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+          "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+        },
+        {
+          "id": "official:nihon-iwana-center:pond-1",
+          "name": "1号池",
+          "sortOrder": 3,
+          "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+          "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+        },
+        {
+          "id": "official:nihon-iwana-center:pond-2",
+          "name": "2号池",
+          "sortOrder": 4,
+          "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+          "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+        },
+        {
+          "id": "official:nihon-iwana-center:pond-3-4",
+          "name": "3・4号池",
+          "sortOrder": 5,
+          "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+          "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+        },
+        {
+          "id": "official:nihon-iwana-center:pond-5-6",
+          "name": "5・6号池",
+          "sortOrder": 6,
+          "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+          "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+        },
+        {
+          "id": "official:nihon-iwana-center:pond-7",
+          "name": "7号池",
+          "sortOrder": 7,
+          "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+          "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+        },
+        {
+          "id": "official:nihon-iwana-center:pond-8",
+          "name": "8号池",
+          "sortOrder": 8,
+          "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+          "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+        },
+        {
+          "id": "official:nihon-iwana-center:pond-9",
+          "name": "9号池",
+          "sortOrder": 9,
+          "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+          "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+        }
+      ],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "directory_current_2026_02; primary_operator_current_status_unconfirmed; zone_names_from_user_official_website_screenshot_2026_10_14"
+    },
+    {
+      "id": "official:akaguna",
+      "name": "赤久縄",
+      "prefecture": "群馬県",
+      "address": "群馬県藤岡市上日野2-27",
+      "facilityTypes": [
+        "stream",
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://www.akaguna.net/",
+      "sourceUrl": "https://www.akaguna.net/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:akaguna:upstream-natural",
+          "name": "上流自然渓流エリア",
+          "sortOrder": 1,
+          "sourceUrl": "https://www.akaguna.net/"
+        },
+        {
+          "id": "official:akaguna:downstream-pond",
+          "name": "下流ポンドエリア",
+          "sortOrder": 2,
+          "sourceUrl": "https://www.akaguna.net/"
+        },
+        {
+          "id": "official:akaguna:dam-lake",
+          "name": "ダム湖",
+          "sortOrder": 3,
+          "sourceUrl": "https://www.akaguna.net/"
+        }
+      ],
+      "researchStatus": "verified",
+      "verificationBasis": "facility_site_direct_2026_10"
+    },
+    {
+      "id": "official:kaisei-forest-springs",
+      "name": "開成水辺フォレストスプリングス",
+      "prefecture": "神奈川県",
+      "address": null,
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://kaisei.forest-springs.com/",
+      "sourceUrl": "https://kaisei.forest-springs.com/field.html",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "開成フォレストスプリングス"
+      ],
+      "zones": [
+        {
+          "id": "official:kaisei-forest-springs:pond-1",
+          "name": "1",
+          "sortOrder": 1,
+          "sourceUrl": "https://kaisei.forest-springs.com/field.html"
+        },
+        {
+          "id": "official:kaisei-forest-springs:pond-2",
+          "name": "2",
+          "sortOrder": 2,
+          "sourceUrl": "https://kaisei.forest-springs.com/field.html"
+        },
+        {
+          "id": "official:kaisei-forest-springs:pond-3",
+          "name": "3",
+          "sortOrder": 3,
+          "sourceUrl": "https://kaisei.forest-springs.com/field.html"
+        }
+      ],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:nasu-shirakawa-forest-springs",
+      "name": "那須白河フォレストスプリングス",
+      "prefecture": "福島県",
+      "address": null,
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://shirakawa.forest-springs.com/",
+      "sourceUrl": "https://shirakawa.forest-springs.com/field.html",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:nasu-shirakawa-forest-springs:pond-1",
+          "name": "1",
+          "sortOrder": 1,
+          "sourceUrl": "https://shirakawa.forest-springs.com/field.html"
+        },
+        {
+          "id": "official:nasu-shirakawa-forest-springs:pond-2",
+          "name": "2",
+          "sortOrder": 2,
+          "sourceUrl": "https://shirakawa.forest-springs.com/field.html"
+        },
+        {
+          "id": "official:nasu-shirakawa-forest-springs:pond-3",
+          "name": "3",
+          "sortOrder": 3,
+          "sourceUrl": "https://shirakawa.forest-springs.com/field.html"
+        },
+        {
+          "id": "official:nasu-shirakawa-forest-springs:shallow",
+          "name": "シャローエリア",
+          "sortOrder": 4,
+          "sourceUrl": "https://shirakawa.forest-springs.com/field.html"
+        }
+      ],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:zao-forest-springs",
+      "name": "蔵王フォレストスプリングス",
+      "prefecture": "宮城県",
+      "address": null,
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://zao.forest-springs.com/",
+      "sourceUrl": "https://zao.forest-springs.com/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:kosuge-trout-garden",
+      "name": "小菅トラウトガーデン",
+      "prefecture": "山梨県",
+      "address": "山梨県北都留郡小菅村田元4103",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "http://kosuge-tg.com/",
+      "sourceUrl": "https://kosugetg.jugem.jp/?eid=197",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "operator_blog_confirms_user_provided_url; homepage_direct_access_failed"
+    },
+    {
+      "id": "official:susono-fishing-park",
+      "name": "すそのフィッシングパーク",
+      "prefecture": "静岡県",
+      "address": "静岡県裾野市富沢589-1",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.susono-f-park.com/",
+      "sourceUrl": "https://www.susono-f-park.com/n_info.html",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "すそパ"
+      ],
+      "zones": [
+        {
+          "id": "official:susono-fishing-park:upper",
+          "name": "上の池",
+          "sortOrder": 1,
+          "sourceUrl": "https://www.susono-f-park.com/diary/index06.html"
+        },
+        {
+          "id": "official:susono-fishing-park:lower",
+          "name": "下の池",
+          "sortOrder": 2,
+          "sourceUrl": "https://www.susono-f-park.com/diary/index06.html"
+        },
+        {
+          "id": "official:susono-fishing-park:mixed",
+          "name": "ミックスポンド",
+          "sortOrder": 3,
+          "sourceUrl": "https://www.susono-f-park.com/diary/index06.html"
+        }
+      ],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:higashiyamako",
+      "name": "東山湖フィッシングエリア",
+      "prefecture": "静岡県",
+      "address": "静岡県御殿場市東山1077",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://www.higashiyamako.com/",
+      "sourceUrl": "https://www.higashiyamako.com/info/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "東山湖フィッシングパーク"
+      ],
+      "zones": [],
+      "researchStatus": "verified",
+      "verificationBasis": "facility_site_direct"
+    },
+    {
+      "id": "official:nireike-hakuba",
+      "name": "白馬八方ニレ池フィッシングセンター",
+      "prefecture": "長野県",
+      "address": "長野県北安曇郡白馬村北城9338-13",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://www.nireike.com/",
+      "sourceUrl": "https://www.nireike.com/lureflyeria.htm",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "ニレ池",
+        "ニレ池FC"
+      ],
+      "zones": [
+        {
+          "id": "official:nireike-hakuba:lure-fly",
+          "name": "ルアー・フライエリア",
+          "sortOrder": 1,
+          "sourceUrl": "https://www.nireike.com/lureflyeria.htm"
+        },
+        {
+          "id": "official:nireike-hakuba:beginner-lure",
+          "name": "初心者お子様ルアーエリア",
+          "sortOrder": 2,
+          "sourceUrl": "https://www.nireike.com/lureflyeria.htm"
+        }
+      ],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:arcus-pond-utsunomiya",
+      "name": "アルクスポンド宇都宮",
+      "prefecture": "栃木県",
+      "address": "栃木県宇都宮市柳田町253",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.arcus-pond.com/wp/",
+      "sourceUrl": "https://www.arcus-pond.com/wp/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:anglers-park-kingfisher",
+      "name": "アングラーズパーク キングフィッシャー",
+      "prefecture": "栃木県",
+      "address": "栃木県大田原市乙連沢593",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://kingfisher-tochigi.com/",
+      "sourceUrl": "https://kingfisher-tochigi.com/trout",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "アングラーズパークキングフィッシャー"
+      ],
+      "zones": [
+        {
+          "id": "official:anglers-park-kingfisher:trout-5",
+          "name": "トラウトエリア5号池",
+          "sortOrder": 1,
+          "sourceUrl": "https://kingfisher-tochigi.com/trout"
+        },
+        {
+          "id": "official:anglers-park-kingfisher:trout-1",
+          "name": "トラウトエリア1号池",
+          "sortOrder": 1,
+          "sourceUrl": "https://kingfisher-tochigi.com/trout"
+        },
+        {
+          "id": "official:anglers-park-kingfisher:trout-2",
+          "name": "トラウトエリア2号池",
+          "sortOrder": 2,
+          "sourceUrl": "https://kingfisher-tochigi.com/trout"
+        },
+        {
+          "id": "official:anglers-park-kingfisher:trout-3",
+          "name": "トラウトエリア3号池",
+          "sortOrder": 3,
+          "sourceUrl": "https://kingfisher-tochigi.com/trout"
+        },
+        {
+          "id": "official:anglers-park-kingfisher:trout-4",
+          "name": "トラウトエリア4号池",
+          "sortOrder": 4,
+          "sourceUrl": "https://kingfisher-tochigi.com/trout"
+        }
+      ],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:berrypark-ouzenji",
+      "name": "ベリーパーク in フィッシュオン！王禅寺",
+      "prefecture": "神奈川県",
+      "address": "神奈川県川崎市麻生区王禅寺1227-2",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.fishon-oz.jp/",
+      "sourceUrl": "https://www.fishon-oz.jp/release/5091/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "ベリーパークINフィッシュオン王禅寺"
+      ],
+      "zones": [
+        {
+          "id": "official:berrypark-ouzenji:ichiro",
+          "name": "イチロー池",
+          "sortOrder": 1,
+          "sourceUrl": "https://www.fishon-oz.jp/release/5091/"
+        },
+        {
+          "id": "official:berrypark-ouzenji:jiro",
+          "name": "ジロー池",
+          "sortOrder": 2,
+          "sourceUrl": "https://www.fishon-oz.jp/release/5091/"
+        },
+        {
+          "id": "official:berrypark-ouzenji:saburo",
+          "name": "サブロー池",
+          "sortOrder": 3,
+          "sourceUrl": "https://www.fishon-oz.jp/release/5091/"
+        }
+      ],
+      "researchStatus": "partially_verified"
+    },
+    {
+      "id": "official:asaka-garden",
+      "name": "朝霞ガーデン",
+      "prefecture": "埼玉県",
+      "address": "埼玉県朝霞市田島2-8-1",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.a-garden.com/top.html",
+      "sourceUrl": "https://www.a-garden.com/top.html",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:kaga-fishing-area",
+      "name": "加賀フィッシングエリア",
+      "prefecture": "栃木県",
+      "address": "栃木県佐野市山形町48",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://kaga-fishingarea.jp/",
+      "sourceUrl": "https://kaga-fishingarea.jp/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:kaga-fishing-area:pond-1",
+          "name": "1号池",
+          "sortOrder": 1,
+          "sourceUrl": "https://kaga-fishingarea.jp/archives/news"
+        },
+        {
+          "id": "official:kaga-fishing-area:pond-2",
+          "name": "2号池",
+          "sortOrder": 2,
+          "sourceUrl": "https://kaga-fishingarea.jp/archives/news"
+        }
+      ],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:kawaba-fishing-plaza",
+      "name": "川場フィッシングプラザ",
+      "prefecture": "群馬県",
+      "address": "群馬県利根郡川場村大字荻室63",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.kawaba-fp.jp/",
+      "sourceUrl": "https://www.kawaba-fp.jp/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:kawaba-fishing-plaza:lure-fly-pond",
+          "name": "ルアー＆フライ池",
+          "sortOrder": 1,
+          "sourceUrl": "https://www.kawaba-fp.jp/facilities/"
+        }
+      ],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:fishon-shishidome",
+      "name": "BerryPark in FISH ON！鹿留",
+      "prefecture": "山梨県",
+      "address": "山梨県都留市鹿留1543",
+      "facilityTypes": [
+        "pond",
+        "stream"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.sisidome.jp/",
+      "sourceUrl": "https://www.sisidome.jp/facilities/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "フィッシュオン鹿留",
+        "鹿留"
+      ],
+      "zones": [
+        {
+          "id": "official:fishon-shishidome:shishidome-lake",
+          "name": "鹿留湖",
+          "sortOrder": 1,
+          "sourceUrl": "https://www.sisidome.jp/facilities/"
+        },
+        {
+          "id": "official:fishon-shishidome:pine-lake",
+          "name": "PINE LAKEかわせみ",
+          "sortOrder": 2,
+          "sourceUrl": "https://www.sisidome.jp/facilities/"
+        },
+        {
+          "id": "official:fishon-shishidome:native-area",
+          "name": "ネイティブエリア",
+          "sortOrder": 3,
+          "sourceUrl": "https://www.sisidome.jp/facilities/"
+        },
+        {
+          "id": "official:fishon-shishidome:river-area",
+          "name": "河川エリア",
+          "sortOrder": 4,
+          "sourceUrl": "https://www.sisidome.jp/facilities/"
+        }
+      ],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:walton-garden",
+      "name": "ウォルトンガーデン",
+      "prefecture": "千葉県",
+      "address": "千葉県成田市竜台96",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.waltongarden.net/",
+      "sourceUrl": "https://www.waltongarden.net/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:hamanako-fishing-resort",
+      "name": "浜名湖フィッシングリゾート",
+      "prefecture": "静岡県",
+      "address": "静岡県浜松市中央区雄踏町山崎4198-36",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.hamanako-fr.com/",
+      "sourceUrl": "https://www.hamanako-fr.com/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:hamanako-fishing-resort:lure-pond",
+          "name": "ルアーポンド",
+          "sortOrder": 1,
+          "sourceUrl": "https://www.hamanako-fr.com/"
+        }
+      ],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:kosuge-fishing-village",
+      "name": "小菅フィッシングヴィレッジ",
+      "prefecture": "山梨県",
+      "address": null,
+      "facilityTypes": [
+        "stream"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.fishingvillage.jp/",
+      "sourceUrl": "https://www.fishingvillage.jp/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "小菅フィッシングビレッジ"
+      ],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:narayamanuma",
+      "name": "なら山沼漁場",
+      "prefecture": "栃木県",
+      "address": "栃木県小山市飯塚1467",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://shimotsuga-fc.org/narayamanuma.html",
+      "sourceUrl": "https://shimotsuga-fc.org/narayamanuma.html",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:ooashigawa-fc",
+      "name": "大芦川F&Cフィールドビレッジ",
+      "prefecture": "栃木県",
+      "address": "栃木県鹿沼市下沢1037",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "http://park10.wakwak.com/~field-village",
+      "sourceUrl": "https://kanuma-kanko.jp/purpose/大芦川ｆ＆ｃフィールドビレッジ/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "municipal_tourism_official_site_listed_not_directly_verified"
+    },
+    {
+      "id": "official:mid-creek",
+      "name": "ミッドクリークフィッシングエリア",
+      "prefecture": "茨城県",
+      "address": "茨城県石岡市菖蒲沢80",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://midcreek.jp/",
+      "sourceUrl": "https://midcreek.jp/about.html",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:mid-creek:fall",
+          "name": "フォールポンド",
+          "sortOrder": 1,
+          "sourceUrl": "https://midcreek.jp/about.html"
+        },
+        {
+          "id": "official:mid-creek:shallow",
+          "name": "シャローポンド",
+          "sortOrder": 2,
+          "sourceUrl": "https://midcreek.jp/about.html"
+        },
+        {
+          "id": "official:mid-creek:main",
+          "name": "メインポンド",
+          "sortOrder": 3,
+          "sourceUrl": "https://midcreek.jp/about.html"
+        },
+        {
+          "id": "official:mid-creek:special",
+          "name": "スペシャルポンド",
+          "sortOrder": 4,
+          "sourceUrl": "https://midcreek.jp/about.html"
+        }
+      ],
+      "researchStatus": "verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:fishing-area-honobono",
+      "name": "フィッシングエリアほのぼの",
+      "prefecture": "福島県",
+      "address": null,
+      "facilityTypes": [
+        "pond",
+        "stream"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://sites.google.com/view/fa-honobono",
+      "sourceUrl": "https://sites.google.com/view/fa-honobono",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:fishing-area-honobono:pond-1",
+          "name": "1号池",
+          "sortOrder": 1,
+          "sourceUrl": "https://sites.google.com/view/fa-honobono"
+        },
+        {
+          "id": "official:fishing-area-honobono:pond-2",
+          "name": "2号池",
+          "sortOrder": 2,
+          "sourceUrl": "https://sites.google.com/view/fa-honobono"
+        },
+        {
+          "id": "official:fishing-area-honobono:pond-3",
+          "name": "3号池",
+          "sortOrder": 3,
+          "sourceUrl": "https://sites.google.com/view/fa-honobono"
+        },
+        {
+          "id": "official:fishing-area-honobono:stream",
+          "name": "ストリーム",
+          "sortOrder": 4,
+          "sourceUrl": "https://sites.google.com/view/fa-honobono"
+        }
+      ],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:waterpark-nagatoro",
+      "name": "ウォーターパーク長瀞 フィッシングエリア",
+      "prefecture": "埼玉県",
+      "address": "埼玉県秩父郡皆野町金崎1918-1",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://waterpark.jp/fishing/",
+      "sourceUrl": "https://waterpark.jp/fishing/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:ashigara-casting-area",
+      "name": "足柄キャスティングエリア",
+      "prefecture": "神奈川県",
+      "address": "神奈川県南足柄市矢倉沢1682",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "http://www.ashigara-ca.com/aca/",
+      "sourceUrl": "https://kanritsuriba.com/cgi-bin/kanagawa/ashigara-ca/profile.cgi",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "directory_and_booking_official_url_not_directly_verified"
+    },
+    {
+      "id": "official:fishing-field-nakatsugawa",
+      "name": "Fishing Field 中津川",
+      "prefecture": "神奈川県",
+      "address": "神奈川県愛甲郡愛川町田代2411-1",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.nakatugawa-gyokyou.jp/ffnakatugawa.html",
+      "sourceUrl": "https://www.nakatugawa-gyokyou.jp/ffnakatugawa.html",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "verified",
+      "verificationBasis": "operator_fishery_coop_2026_09"
+    },
+    {
+      "id": "official:308club",
+      "name": "308Club",
+      "prefecture": "栃木県",
+      "address": "栃木県矢板市長井2152-2",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://408club.com/308/index.html",
+      "sourceUrl": "https://408club.com/308/index.html",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "third_party_or_directory"
+    },
+    {
+      "id": "official:midori-fishing-area",
+      "name": "みどりフィッシングエリア",
+      "prefecture": "栃木県",
+      "address": "栃木県大田原市実取206",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://ms3103.blog.fc2.com/",
+      "sourceUrl": "https://www.kanritsuriba.com/midori_fishingarea/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "2026_07_directory_and_operator_blog"
+    },
+    {
+      "id": "official:408club",
+      "name": "408CLUB",
+      "prefecture": "栃木県",
+      "address": "栃木県塩谷郡塩谷町原荻野目582",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://408club.com/",
+      "sourceUrl": "https://408club.com/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:okutone-fishing-park",
+      "name": "おくとねフィッシングパーク",
+      "prefecture": "群馬県",
+      "address": "群馬県沼田市白沢町生枝857",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "http://www7.wind.ne.jp/okutone/index_o.htm",
+      "sourceUrl": "https://www.dan-b.com/fi_okutonefishing/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:okutone-fishing-park:pond-1",
+          "name": "1号池",
+          "sortOrder": 1,
+          "sourceUrl": "https://www.turinavi.info/spot/okutonefishingpark/"
+        },
+        {
+          "id": "official:okutone-fishing-park:pond-2",
+          "name": "2号池",
+          "sortOrder": 2,
+          "sourceUrl": "https://www.turinavi.info/spot/okutonefishingpark/"
+        }
+      ],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "regional_directory_lists_official_url_not_directly_verified; pond_count_sources_conflict"
+    },
+    {
+      "id": "official:kashimayari-garden",
+      "name": "フィッシングランド鹿島槍ガーデン",
+      "prefecture": "長野県",
+      "address": "長野県大町市平8589",
+      "facilityTypes": [
+        "pond",
+        "stream"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://kashimayari-garden.com/",
+      "sourceUrl": "https://kashimayari-garden.com/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:kashimayari-garden:pond-1",
+          "name": "1号池",
+          "sortOrder": 1,
+          "sourceUrl": "https://kashimayari-garden.com/"
+        },
+        {
+          "id": "official:kashimayari-garden:pond-2",
+          "name": "2号池",
+          "sortOrder": 2,
+          "sourceUrl": "https://kashimayari-garden.com/"
+        },
+        {
+          "id": "official:kashimayari-garden:pond-3",
+          "name": "3号池",
+          "sortOrder": 3,
+          "sourceUrl": "https://kashimayari-garden.com/"
+        }
+      ],
+      "researchStatus": "verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:hirayako-fishing-spot",
+      "name": "平谷湖フィッシングスポット",
+      "prefecture": "長野県",
+      "address": "長野県下伊那郡平谷村354",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://hirayako.com/",
+      "sourceUrl": "https://hirayako.com/area.php",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:hirayako-fishing-spot:beginners",
+          "name": "ビギナーズエリア",
+          "sortOrder": 1,
+          "sourceUrl": "https://hirayako.com/area.php"
+        },
+        {
+          "id": "official:hirayako-fishing-spot:event",
+          "name": "イベントエリア",
+          "sortOrder": 2,
+          "sourceUrl": "https://hirayako.com/area.php"
+        },
+        {
+          "id": "official:hirayako-fishing-spot:enjoy",
+          "name": "エンジョイエリア",
+          "sortOrder": 3,
+          "sourceUrl": "https://hirayako.com/area.php"
+        },
+        {
+          "id": "official:hirayako-fishing-spot:tournament",
+          "name": "トーナメントエリア",
+          "sortOrder": 4,
+          "sourceUrl": "https://hirayako.com/area.php"
+        },
+        {
+          "id": "official:hirayako-fishing-spot:expert",
+          "name": "エキスパートエリア",
+          "sortOrder": 5,
+          "sourceUrl": "https://hirayako.com/area.php"
+        }
+      ],
+      "researchStatus": "verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:oshino-fishing-area",
+      "name": "忍野フィッシングエリア",
+      "prefecture": "山梨県",
+      "address": "山梨県南都留郡忍野村忍草1660-80",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://www.mfi.or.jp/~bass/oshino.html",
+      "sourceUrl": "https://www.mfi.or.jp/~bass/oshino.html",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "verified",
+      "verificationBasis": "facility_site_direct"
+    },
+    {
+      "id": "official:ryugaike-fishing-park",
+      "name": "フィッシングパーク竜華池",
+      "prefecture": "山梨県",
+      "address": "山梨県甲府市古府中町3294",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://fishingmarketbear.wixsite.com/ryugaike",
+      "sourceUrl": "https://fishingmarketbear.wixsite.com/ryugaike",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:herb-no-sato-fishing",
+      "name": "ハーブの里フィッシングエリア",
+      "prefecture": "長野県",
+      "address": "長野県北安曇郡池田町会染9857",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "http://www13.plala.or.jp/herb-fa/",
+      "sourceUrl": "https://ikeda-kanko.jp/kanko/taiken/herb-fishingarea/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "town_tourism_site_official_url_listed_not_directly_verified"
+    },
+    {
+      "id": "official:azumino-fishing-center",
+      "name": "あづみ野フィッシングセンター",
+      "prefecture": "長野県",
+      "address": "長野県安曇野市穂高3581-1",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "http://azuminofishing.com/",
+      "sourceUrl": "https://www.kanritsuriba.com/azumino_fc/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "directory_official_site_unreachable"
+    },
+    {
+      "id": "official:trapon-kaida",
+      "name": "トラポン開田高原",
+      "prefecture": "長野県",
+      "address": "長野県木曽郡木曽町開田高原西野5227-618",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "unknown",
+      "officialUrl": "https://troutcampthoreau.com/",
+      "sourceUrl": "https://troutcampthoreau.com/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "needs_current_verification",
+      "verificationBasis": "operator_homepage_lists_trapon; 2026_opening_calendar_unconfirmed"
+    },
+    {
+      "id": "official:shirakobato-pool",
+      "name": "しらこばと水上公園 プールフィッシング",
+      "prefecture": "埼玉県",
+      "address": "埼玉県越谷市小曽川985",
+      "facilityTypes": [
+        "pool"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://parks.or.jp/shirakobatosuijo/guide/003/003811.html",
+      "sourceUrl": "https://parks.or.jp/shirakobatosuijo/guide/003/003811.html",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:shirakobato-pool:irregular-pool",
+          "name": "変形プール",
+          "sortOrder": 1,
+          "sourceUrl": "https://parks.or.jp/shirakobatosuijo/guide/003/003811.html"
+        },
+        {
+          "id": "official:shirakobato-pool:flowing-pool",
+          "name": "流水プール",
+          "sortOrder": 2,
+          "sourceUrl": "https://parks.or.jp/shirakobatosuijo/guide/003/003811.html"
+        }
+      ],
+      "researchStatus": "verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:kazo-hanasaki-pool",
+      "name": "加須はなさき水上公園 プールフィッシング",
+      "prefecture": "埼玉県",
+      "address": "埼玉県加須市水深1722",
+      "facilityTypes": [
+        "pool"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "seasonal",
+      "officialUrl": "https://www.parks.or.jp/kazohanasaki/guide/000/000031.html/1000",
+      "sourceUrl": "https://www.parks.or.jp/kazohanasaki/guide/000/000031.html/1000",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "official_site"
+    },
+    {
+      "id": "official:ygl-sport-fishing",
+      "name": "丹沢ヤドリキY.G.L.スポーツフィッシングエリア",
+      "prefecture": "神奈川県",
+      "address": "神奈川県足柄上郡松田町寄5573",
+      "facilityTypes": [
+        "stream"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "unknown",
+      "officialUrl": "https://ygl.jp/",
+      "sourceUrl": "https://ygl.jp/guide.html",
+      "verifiedAt": "2026-10-11",
+      "aliases": [
+        "YGLスポーツフィッシングエリア"
+      ],
+      "zones": [
+        {
+          "id": "official:ygl-zone-a",
+          "name": "Aエリア",
+          "sortOrder": 1,
+          "sourceUrl": "https://ygl.jp/guide.html"
+        },
+        {
+          "id": "official:ygl-zone-b",
+          "name": "Bエリア",
+          "sortOrder": 2,
+          "sourceUrl": "https://ygl.jp/guide.html"
+        },
+        {
+          "id": "official:ygl-zone-c",
+          "name": "Cエリア",
+          "sortOrder": 3,
+          "sourceUrl": "https://ygl.jp/guide.html"
+        },
+        {
+          "id": "official:ygl-zone-d",
+          "name": "Dエリア",
+          "sortOrder": 4,
+          "sourceUrl": "https://ygl.jp/guide.html"
+        },
+        {
+          "id": "official:ygl-zone-e",
+          "name": "Eエリア",
+          "sortOrder": 5,
+          "sourceUrl": "https://ygl.jp/guide.html"
+        }
+      ],
+      "researchStatus": "partially_verified",
+      "verificationBasis": "secondary_report_2026_09_22_says_high_water_closure; 2026_10_11_reopening_unconfirmed"
+    },
+    {
+      "id": "official:shylph-hakushu",
+      "name": "白州トラウトフィッシングエリア シルフ",
+      "prefecture": "山梨県",
+      "address": "山梨県北杜市白州町大坊1194-1",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://ameblo.jp/shylph114/",
+      "sourceUrl": "https://www.kanritsuriba.com/shylph/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "verified",
+      "verificationBasis": "third_party_or_directory"
+    },
+    {
+      "id": "official:westriver-auto-camp",
+      "name": "ウエストリバーオートキャンプ場 管理釣り場",
+      "prefecture": "山梨県",
+      "address": "山梨県南アルプス市須沢131",
+      "facilityTypes": [
+        "stream"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://westriver-camp.com/",
+      "sourceUrl": "https://westriver-camp.com/qanda/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [],
+      "researchStatus": "verified",
+      "verificationBasis": "facility_site_direct_2026_lure_allowed_river_managed"
+    },
+    {
+      "id": "official:hokkoji-no-mori",
+      "name": "アウトドアヴィレッジ発光路の森フィッシングエリア",
+      "prefecture": "栃木県",
+      "address": "栃木県鹿沼市上粕尾762-4",
+      "facilityTypes": [
+        "pond"
+      ],
+      "lureAllowed": true,
+      "operationStatus": "open",
+      "officialUrl": "https://ov-hokkojinomori-fa.jimdosite.com/",
+      "sourceUrl": "https://ov-hokkojinomori-fa.jimdosite.com/",
+      "verifiedAt": "2026-10-11",
+      "aliases": [],
+      "zones": [
+        {
+          "id": "official:hokkoji-pond-1",
+          "name": "1号池",
+          "sortOrder": 1,
+          "sourceUrl": "https://ov-hokkojinomori-fa.jimdosite.com/エリア案内/"
+        },
+        {
+          "id": "official:hokkoji-pond-2",
+          "name": "2号池",
+          "sortOrder": 2,
+          "sourceUrl": "https://ov-hokkojinomori-fa.jimdosite.com/エリア案内/"
+        },
+        {
+          "id": "official:hokkoji-pond-3",
+          "name": "3号池",
+          "sortOrder": 3,
+          "sourceUrl": "https://ov-hokkojinomori-fa.jimdosite.com/エリア案内/"
+        }
+      ],
+      "researchStatus": "verified",
+      "verificationBasis": "facility_site_direct; tourism_site_outdated_no_holiday"
+    }
+  ],
+  "distributionMode": "opt_in_import_draft",
+  "releaseOrder": 9
+}

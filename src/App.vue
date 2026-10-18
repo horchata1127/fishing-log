@@ -5,6 +5,7 @@ import FacilityPicker from './components/FacilityPicker.vue'
 import { changeCurrentZone, loadLocationChoices, type CatchLocationSelection } from './utils/tripLocations'
 import { offline } from './pwa'
 import { onMounted, onUnmounted, ref } from 'vue'
+import { initializeFacilityRelease } from './utils/facilityRelease'
 import CatchModal from './components/CatchModal.vue'
 import FishingScreen from './components/FishingScreen.vue'
 import MyLuresScreen from './components/MyLuresScreen.vue'
@@ -642,7 +643,11 @@ async function deleteAllData() {
   screen.value = 'home'
 }
 
+const initializingFacilityRelease = ref(true)
+const facilityReleaseError = ref<string>()
 onMounted(async () => {
+  facilityReleaseError.value = await initializeFacilityRelease()
+  initializingFacilityRelease.value = false
   await loadTrips()
 })
 async function selectCurrentZone(zoneId: string | undefined) {
@@ -657,9 +662,10 @@ async function selectCurrentZone(zoneId: string | undefined) {
 </script>
 
 <template>
+  <p v-if="facilityReleaseError" role="alert">{{ facilityReleaseError }}</p>
   <p v-if="restoringData" role="status">バックアップを復元しています…</p>
-  <main class="app" :inert="restoringData || offline.updating" :aria-busy="restoringData || offline.updating">
-    <OfflineStatus :safe="screen === 'home' && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
+  <main class="app" :inert="initializingFacilityRelease || restoringData || offline.updating" :aria-busy="initializingFacilityRelease || restoringData || offline.updating">
+    <OfflineStatus :safe="!initializingFacilityRelease && screen === 'home' && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
     <p v-if="connectionState === 'changed'" role="alert">別の画面でデータベースが更新されたため、この画面からは保存できません。入力中の内容をメモしてから、この画面を手動で再読み込みしてください。</p>
     <p v-else-if="connectionState === 'blocked'" role="alert">別のFishing Log画面がデータベースの更新を待たせています。その画面の入力を保存して閉じてください。自動で再読み込みはしません。</p>
     <!-- ホーム -->
