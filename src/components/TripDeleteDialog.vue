@@ -18,9 +18,10 @@ onMounted(() => dialog.value?.showModal())
       <dt>関連する釣果</dt><dd>{{ summary.catchCount }}件</dd>
       <dt>関連するバラシ</dt><dd>{{ summary.lostCount ?? 0 }}回</dd>
       <dt>放流・ペレット記録</dt><dd>{{ summary.eventCount }}件</dd>
+      <template v-if="summary.weatherLocationUpdatedAt"><dt>関連する気象データ</dt><dd>{{ summary.weatherHourCount ?? 0 }}時間分、手動地点と取得履歴</dd></template>
     </dl>
     <p v-if="!summary.trip.endedAt" class="warning">この釣行は釣行中です。削除すると記録を続けられなくなります。</p>
-    <p>この釣行と関連する釣果・放流・ペレット記録を削除します。元に戻せません。</p>
+    <p>この釣行と関連する釣果・放流・ペレット・気象記録を削除します。元に戻せません。</p>
     <p class="hint">他の釣行、所有ルアー、魚種マスター、タックルは残ります。</p>
     <p v-if="error" role="alert" class="warning">削除できませんでした。{{ error }}</p>
     <div class="actions">

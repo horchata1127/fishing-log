@@ -143,7 +143,7 @@ async function restoreData(event: Event) {
   }
 
   const ok = confirm(
-    'バックアップから復元すると、現在の釣行・釣果・ルアー・魚種・タックルなどの記録は置き換わるで。\n端末に追加した施設・エリアは残して、バックアップに含まれる施設・エリアを追加するで。\n同じ施設・エリアIDで内容が違う場合は、何も変更せず復元を中止するで。公式マスターは古い状態には戻さへん。\nほんまに復元する？'
+    'バックアップから復元すると、現在の釣行・釣果・ルアー・魚種・タックルなどの記録は置き換わるで。\n気象地点・気象データ・取得履歴も置き換わるで。旧形式に気象データがない場合、現在の気象データは引き継がへん。\n端末に追加した施設・エリアは残して、バックアップに含まれる施設・エリアを追加するで。\n同じ施設・エリアIDで内容が違う場合は、何も変更せず復元を中止するで。公式マスターは古い状態には戻さへん。\nほんまに復元する？'
   )
 
   if (!ok) {
@@ -611,6 +611,9 @@ async function deleteAllData() {
       db.trips,
       db.catches,
       db.tripEvents,
+      db.tripWeatherLocations,
+      db.tripWeatherHours,
+      db.tripWeatherRequests,
       db.lureManufacturers,
       db.lureSeries,
       db.lureModels,
@@ -630,6 +633,9 @@ async function deleteAllData() {
       await db.rods.clear()
       await db.lines.clear()
       await db.tripEvents.clear()
+      await db.tripWeatherHours.clear()
+      await db.tripWeatherRequests.clear()
+      await db.tripWeatherLocations.clear()
       await db.myLures.clear()
       await db.lureVariants.clear()
       await db.lureModels.clear()

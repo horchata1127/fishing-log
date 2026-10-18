@@ -180,7 +180,7 @@ test('RC24 v6 round trip retains all 16 stores, official/user places, tackle/fis
   await importBackup(new File([JSON.stringify(backup)], 'synthetic-rc24-v6.json'))
   assert.equal(await snapshot(), before)
   assert.equal(Object.hasOwn(await db.catches.get(legacyId), 'actionLength'), false)
-  assert.equal(db.verno, 7)
+  assert.equal(db.verno, 8)
 })
 
 test('RC24 late edit failure rolls back new length and owned lure without modifying legacy action or other tables', async () => {
@@ -208,7 +208,7 @@ test('RC23 legacy records and three lost distances stay separate with reused own
   const before = await snapshot()
   await importBackup(new File([JSON.stringify(await createBackup())], 'rc23.json'))
   assert.equal(await snapshot(), before)
-  assert.equal(db.verno, 7)
+  assert.equal(db.verno, 8)
 })
 
 test('RC23 invalid result/distance and invalid restored record reject without any writes', async () => {

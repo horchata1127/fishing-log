@@ -62,7 +62,7 @@ test('blocked upgrade and versionchange preserve form input and stop stale saves
     old.onversionchange = () => {}
     let blocked = false
     const upgraded = await new Promise<IDBDatabase>((resolve, reject) => {
-      const request = indexedDB.open('FishingLogDatabase', 80)
+      const request = indexedDB.open('FishingLogDatabase', old.version + 10)
       request.onblocked = () => { blocked = true; old.close() }
       request.onerror = () => reject(request.error); request.onsuccess = () => resolve(request.result)
     })

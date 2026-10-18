@@ -60,7 +60,7 @@ test('v6 to v7 preserves every record in all 13 stores and adds empty stores', a
   }
   for (const name of fullBackupTableNames) await legacy.table(name).put({ ...records[name], extension: { retained: true } })
   const before = copy(Object.fromEntries(await Promise.all(legacy.tables.map(async t => [t.name, await t.toArray()]))))
-  legacy.close(); await db.open(); assert.equal(db.verno, 7)
+  legacy.close(); await db.open(); assert.equal(db.verno, 8)
   const after = await state(); for (const name of fullBackupTableNames) assert.deepEqual(after[name], before[name])
   for (const name of ['facilities', 'zones', 'appMetadata']) assert.deepEqual(after[name], [])
 })
@@ -186,7 +186,7 @@ test('blocked v7 open waits for a legacy connection and reports ready after safe
   const pending = db.open()
   try {
     await blocked; assert.equal(databaseConnection.state, 'blocked'); legacy.close(); await pending
-    assert.equal(db.verno, 7); assert.equal(databaseConnection.state, 'ready')
+    assert.equal(db.verno, 8); assert.equal(databaseConnection.state, 'ready')
   } finally { legacy.on('versionchange').unsubscribe(keepOpen); db.on('blocked').unsubscribe(listener); legacy.close() }
 })
 test('unmodified legacy v6 connection releases upgrade and cannot erase added stores', async () => {
