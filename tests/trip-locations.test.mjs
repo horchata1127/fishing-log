@@ -39,6 +39,56 @@ async function setup() {
   const tripId = await createTrip(trip({ facilityId, currentZoneId: lower }))
   return { facilityId, lower, upper, tripId }
 }
+
+test('RC26 area edit sets, changes and clears zone without changing unrelated catch or any other table', async () => {
+  const { tripId, facilityId, lower, upper } = await setup()
+  const original = await savedCatch(tripId, { resultType: 'lost', lostDistance: 'near', rangeLevel: '中層', action: 'ただ巻き', actionLength: 'long', retrieveSpeed: '普通', fishSizeCm: 24 })
+  const otherTables = async () => JSON.stringify(Object.fromEntries(await Promise.all(db.tables.filter(t => t.name !== 'catches').map(async t => [t.name, await t.toArray()]))))
+  const before = await otherTables()
+  const unrelated = row => { const { facilityId, zoneId, locationSnapshot, ...rest } = row; return JSON.parse(JSON.stringify(rest)) }
+  for (const zoneId of [undefined, upper, lower, undefined]) {
+    const current = await db.catches.get(original.id)
+    await updateCatch(original.id, { ...current, location: { expectedFacilityId: facilityId, expectedCurrentZoneId: lower, zoneId } }, undefined, current)
+    const changed = await db.catches.get(original.id)
+    assert.equal(changed.zoneId, zoneId); assert.deepEqual(unrelated(changed), unrelated(original))
+    assert.equal(changed.locationSnapshot.facilityName, original.locationSnapshot.facilityName)
+    assert.equal(await otherTables(), before)
+  }
+})
+test('RC26 unresolved retained zone is readable and unchanged save retains its snapshot; forged selection rejects atomically', async () => {
+  const { tripId, facilityId, lower, upper } = await setup(), original = await savedCatch(tripId)
+  await db.catches.update(original.id, { zoneId: 'user:missing', locationSnapshot: { facilityName: '旧施設名', zoneName: '旧エリア' } })
+  const current = await db.catches.get(original.id), before = await state()
+  await loadLocationChoices(facilityId, 'user:missing', true); assert.equal(await state(), before)
+  await updateCatch(current.id, { ...current }, undefined, current)
+  assert.deepEqual(JSON.parse(JSON.stringify(await db.catches.get(current.id))), JSON.parse(JSON.stringify(current)))
+  const other = await addUserFacility('他施設'), foreign = await addUserZone(other, '他池'), protectedState = await state()
+  await assert.rejects(updateCatch(current.id, { ...current, location: { expectedFacilityId: facilityId, expectedCurrentZoneId: lower, zoneId: foreign } }))
+  assert.equal(await state(), protectedState)
+  await updateCatch(current.id, { ...current, location: { expectedFacilityId: facilityId, expectedCurrentZoneId: lower, zoneId: upper } })
+  assert.equal((await db.catches.get(current.id)).zoneId, upper)
+})
+test('RC26 no-facility and no-zone trips remain editable, canceled selection writes nothing, stale catch rejects', async () => {
+  const tripId = await createTrip(trip()), row = await savedCatch(tripId), before = await state()
+  assert.deepEqual((await loadLocationChoices(undefined, undefined, true)).zones, [])
+  const draft = { ...row, zoneId: 'user:draft' }; assert.notEqual(draft.zoneId, row.zoneId); assert.equal(await state(), before)
+  await updateCatch(row.id, { ...row }, undefined, row)
+  const current = await db.catches.get(row.id)
+  await db.catches.update(row.id, { memo: '別画面で編集' }); const changed = await state()
+  await assert.rejects(updateCatch(row.id, { ...current }, undefined, current), /別の画面/)
+  assert.equal(await state(), changed)
+})
+
+test('RC26 clearing snapshot-only legacy area keeps the recorded facility name and all non-area fields', async () => {
+  const tripId = await createTrip(trip()), row = await savedCatch(tripId)
+  await db.catches.update(row.id, { locationSnapshot: { facilityName: '旧釣り場名', zoneName: '旧エリア名' } })
+  const current = await db.catches.get(row.id)
+  await updateCatch(row.id, { ...current, location: { expectedFacilityId: undefined, expectedCurrentZoneId: undefined, zoneId: undefined } }, undefined, current)
+  const edited = await db.catches.get(row.id)
+  assert.deepEqual(edited.locationSnapshot, { facilityName: '旧釣り場名' })
+  const { locationSnapshot, ...rest } = edited, { locationSnapshot: oldSnapshot, ...old } = current
+  assert.deepEqual(JSON.parse(JSON.stringify(rest)), JSON.parse(JSON.stringify(old)))
+})
 const zone = () => ({ id: 'official:z', name: '公式架空池', sortOrder: 1, sourceUrl: null })
 const facility = () => ({ id: 'official:f', name: '公式架空施設', prefecture: '長野県', address: null, facilityTypes: ['pond'], lureAllowed: true,
   operationStatus: 'open', officialUrl: null, sourceUrl: null, verifiedAt: null, aliases: [], zones: [zone()] })

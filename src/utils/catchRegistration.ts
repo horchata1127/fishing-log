@@ -50,6 +50,10 @@ async function writeCatch(input: CatchInput, selection: LureSelection | undefine
   const trip = await db.trips.get(input.tripId)
   if (!trip || (!editing && trip.endedAt)) throw new Error('釣行が存在しないか、終了しています。')
   const place = editing && input.location === undefined ? { facilityId: editing.facilityId, zoneId: editing.zoneId, locationSnapshot: editing.locationSnapshot } : await resolveCatchLocation(trip, input.location)
+  if (editing && input.location !== undefined && trip.facilityId === undefined && input.location.zoneId === undefined) place.facilityId = editing.facilityId
+  if (editing && input.location !== undefined && editing.facilityId === place.facilityId && editing.locationSnapshot) {
+    place.locationSnapshot = { facilityName: editing.locationSnapshot.facilityName, ...(place.zoneId && place.locationSnapshot?.zoneName ? { zoneName: place.locationSnapshot.zoneName } : {}) }
+  }
   if (!(input.caughtAt instanceof Date) || !Number.isFinite(input.caughtAt.getTime())) throw new Error('釣果日時が不正です。')
   if (input.tackleSetId !== undefined && input.tackleSetId !== editing?.tackleSetId && !(trip.tackleSetIds ?? []).includes(input.tackleSetId)) {
     throw new Error('このセットは釣行の持参予定にありません。持参セットを変更するか、未指定で保存してください。')
@@ -187,10 +191,11 @@ export async function loadLureChoices() {
 }
 
 /** 編集では既存IDと親釣行を固定する。省略したルアー選択は履歴を保持する。 */
-export async function updateCatch(catchId: number, input: CatchInput, selection?: LureSelection): Promise<number> {
+export async function updateCatch(catchId: number, input: CatchInput, selection?: LureSelection, expected?: CatchRecord): Promise<number> {
   return db.transaction('rw', tables, async () => {
     const existing = await db.catches.get(catchId)
     if (!existing || existing.tripId !== input.tripId) throw new Error('編集対象または釣行IDが不正です。')
+    if (expected && JSON.stringify(existing) !== JSON.stringify(expected)) throw new Error('別の画面で釣果が変更されました。編集画面を開き直してください。')
     // 未変更のルアー参照とスナップショットは保持する。
     return writeCatch(input, selection, undefined, existing)
   })

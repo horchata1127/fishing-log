@@ -19,13 +19,13 @@ function name(value: string) {
 }
 const normalized = (value: string) => value.normalize('NFC').toLocaleLowerCase('ja-JP')
 
-export async function loadLocationChoices(facilityId?: string, retainedZoneId?: string) {
+export async function loadLocationChoices(facilityId?: string, retainedZoneId?: string, allowUnresolvedRetained = false) {
   return db.transaction('r', [db.facilities, db.zones], async () => {
     const facilities = (await db.facilities.toArray()).filter(f => !retired(f)).map(label)
     const facility = facilityId ? await db.facilities.get(facilityId) : undefined
     if (facilityId && !facility) throw new Error('施設の参照先がありません。保存できません。')
     const allZones = facilityId ? await db.zones.where('facilityId').equals(facilityId).toArray() : []
-    if (retainedZoneId && !allZones.some(z => z.id === retainedZoneId)) throw new Error('現在エリアの参照先・所属が不正です。')
+    if (retainedZoneId && !allowUnresolvedRetained && !allZones.some(z => z.id === retainedZoneId)) throw new Error('現在エリアの参照先・所属が不正です。')
     const zones = allZones.filter(z => !retired(z) || z.id === retainedZoneId).sort((a,b) =>
       Number(a.sortOrder ?? 0) - Number(b.sortOrder ?? 0) || a.id.localeCompare(b.id)).map(label)
     return { facilities, facility: facility ? label(facility) : undefined, zones }

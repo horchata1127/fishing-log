@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch, onUnmounted } from 'vue'
 import { loadLocationChoices, addUserFacility, addUserZone, type LocationChoice } from '../utils/tripLocations'
-const props = defineProps<{ facilityId?: string; zoneId?: string; retainedZoneId?: string; fixed?: boolean; tripId?: number; zoneLabel?: string; disabled?: boolean }>()
+const props = defineProps<{ facilityId?: string; zoneId?: string; retainedZoneId?: string; retainedZoneName?: string; catchArea?: boolean; fixed?: boolean; tripId?: number; zoneLabel?: string; disabled?: boolean }>()
 const emit = defineEmits<{ 'update:facilityId': [id: string | undefined]; 'update:zoneId': [id: string | undefined]; busy: [value: boolean] }>()
 const facilities = ref<LocationChoice[]>([]), zones = ref<LocationChoice[]>([]), facility = ref<LocationChoice>()
 const search = ref(''), editor = ref<'facility' | 'zone'>(), draft = ref(''), saving = ref(false), loading = ref(false), error = ref('')
@@ -14,7 +14,7 @@ let request = 0
 async function reload() {
   const key = ++request; loading.value = true
   try {
-    const data = await loadLocationChoices(props.facilityId, props.retainedZoneId)
+    const data = await loadLocationChoices(props.facilityId, props.retainedZoneId, props.catchArea)
     if (key !== request) return
     facilities.value = data.facilities; zones.value = data.zones; facility.value = data.facility; error.value = ''
   } catch (e) { if (key === request) error.value = e instanceof Error ? e.message : String(e) }
@@ -56,12 +56,17 @@ async function save() {
       <button type="button" :disabled="!!editor" @click="begin('facility')">施設を追加</button>
     </template>
     <p v-else-if="facility">{{ facility.name }} <small>{{ facility.retired ? '退役済み・継続中' : facility.origin === 'official' ? '公式' : 'ユーザー登録' }}</small></p>
-    <template v-if="facilityId">
+    <template v-if="facilityId || catchArea">
       <label>{{ zoneLabel ?? 'エリア（任意）' }}<select :aria-label="zoneLabel ?? 'エリア（任意）'" :value="zoneId ?? ''" :disabled="loading || !!error || !!editor" @change="emit('update:zoneId', ($event.target as HTMLSelectElement).value || undefined)">
         <option value="">エリア未指定</option>
+        <option v-if="catchArea && retainedZoneId && !zones.some(z => z.id === retainedZoneId)" :value="retainedZoneId" disabled>{{ retainedZoneName || retainedZoneId }}（参照先不明・現在の値を保持）</option>
         <option v-for="item in zones" :key="item.id" :value="item.id">{{ item.name }}（{{ item.retired ? '退役済み・継続中' : item.origin === 'official' ? '公式' : 'ユーザー登録' }}）</option>
       </select></label>
-      <button type="button" :disabled="loading || !!editor || !facility" @click="begin('zone')">この施設にエリアを追加</button>
+      <p v-if="catchArea && !facilityId">釣行に施設IDがないためエリアを選択できません。既存の値は変更しない限り保持します。</p>
+      <p v-else-if="catchArea && !zones.length && !loading">選択できるエリアが未登録です。未設定のまま編集できます。</p>
+      <p v-if="catchArea && retainedZoneId && !zones.some(z => z.id === retainedZoneId) && !loading">既存エリアを解決できません。変更せず保存すると元の値を保持します。</p>
+      <template v-if="catchArea && !retainedZoneId && retainedZoneName"><p>エリアIDのない旧名称「{{ retainedZoneName }}」を保持しています。変更は釣果の保存時に確定します。</p><button type="button" @click="emit('update:zoneId', undefined)">記録済みエリア名を未設定に戻す</button></template>
+      <button v-if="facilityId" type="button" :disabled="loading || !!editor || !facility" @click="begin('zone')">この施設にエリアを追加</button>
     </template>
     <div v-if="editor" class="addition">
       <label>{{ editor === 'facility' ? '追加する施設名' : '追加するエリア名' }}<input v-model="draft" type="text" maxlength="200" @keydown.enter.prevent="save" /></label>

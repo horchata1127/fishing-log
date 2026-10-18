@@ -1,5 +1,5 @@
 import { test, expect, chromium } from '@playwright/test'
-import { mkdtemp } from 'node:fs/promises'
+import { mkdtemp, readFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { timelineScenario, timelineState } from '../timelineFixture'
@@ -52,5 +52,24 @@ test('cached timeline and explicit same-facility location reuse work after full 
     await page.getByRole('region', { name: '気象データ', exact: true }).locator('summary').click()
     await expect(page.getByLabel('緯度', { exact: true })).toHaveValue('36.611')
     await expect(page.getByLabel('以前の地点候補')).toHaveCount(0)
+    // RC26: edit existing catch offline, retain across full restart and v7 backup restore.
+    await page.getByRole('button', { name: '← ホーム', exact: true }).click()
+    await page.getByRole('button', { name: new RegExp(weatherTripName.replace(/[（）]/g, '.')) }).click()
+    await page.getByRole('region', { name: '釣果履歴', exact: true }).getByRole('button', { name: '編集', exact: true }).first().click()
+    const modal = page.getByRole('dialog', { name: '釣果を編集', exact: true })
+    await modal.getByLabel('釣り場内のエリア', { exact: true }).selectOption('official:nihon-iwana-center:zero-1')
+    await modal.getByRole('button', { name: '保存する', exact: true }).click(); await expect(modal).toHaveCount(0)
+    const edited = await timelineState(page)
+    for (const name of Object.keys(saved)) if (name !== 'catches') expect(edited[name]).toEqual(saved[name])
+    expect(edited.catches!.find(c => c.id === 95006).zoneId).toBe('official:nihon-iwana-center:zero-1')
+    await context.close(); context = await launch(true); page = context.pages()[0]!; await page.goto(url)
+    expect(await timelineState(page)).toEqual(edited)
+    const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: '📦 データをバックアップ', exact: true }).click()])
+    const path = info.outputPath('rc26-v7.json'); await download.saveAs(path); const backup = JSON.parse(await readFile(path,'utf-8'))
+    expect(backup.version).toBe(7); expect(Object.keys(backup.data)).toHaveLength(19)
+    page.on('dialog', d => d.accept())
+    await page.getByTestId('restore-backup').setInputFiles({ name: 'rc26-v7.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(backup)) })
+    await expect.poll(async () => (await timelineState(page)).catches).toEqual(edited.catches)
+    expect(await timelineState(page)).toEqual(edited)
   } finally { await context.close() }
 })
