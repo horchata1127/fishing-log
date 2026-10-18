@@ -6,10 +6,84 @@ import { rc20Fixture } from '../rc20Fixture'
 import { rc22Fixture } from '../rc22Fixture'
 import { rc23Fixture } from '../rc23Fixture'
 import { stage6Backup } from '../stage6Fixture'
+import { rc24Fixture } from '../rc24Fixture'
 
 const origin = 'http://127.0.0.1:4188'
 const url = `${origin}/fishing-log/`
 const names = ['trips', 'catches', 'tripEvents', 'lureManufacturers', 'lureSeries', 'lureModels', 'lureVariants', 'myLures', 'rods', 'reels', 'lines', 'tackleSets', 'fishSpecies']
+
+test('RC24 editing vetoes SW update and action lengths, legacy absence, Iwana snapshots and v6 survive offline cold starts', async ({}, info) => {
+  await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
+  const profile = await mkdtemp(join(tmpdir(), 'fishing-rc24-offline-')), mobile = info.project.name.includes('mobile')
+  const launch = (offline = false) => chromium.launchPersistentContext(profile, { serviceWorkers: 'allow', offline,
+    viewport: mobile ? { width: 390, height: 844 } : { width: 1280, height: 800 }, isMobile: mobile, hasTouch: mobile,
+    locale: 'ja-JP', timezoneId: 'Asia/Tokyo' })
+  let context = await launch()
+  try {
+    let page = context.pages()[0]!
+    await page.goto(url); await ready(page)
+    page.on('dialog', d => d.accept())
+    await page.getByTestId('restore-backup').setInputFiles({ name: 'synthetic-rc24-legacy.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(rc24Fixture())) })
+    await expect.poll(async () => (await database(page)).catches!.some(r => r.id === 90000)).toBe(true)
+    const before = await database(page, false, true)
+    await page.getByRole('button', { name: /RC24旧記録/ }).click()
+    const history = page.getByRole('region', { name: '釣果履歴' })
+    await history.locator('.catch-row').filter({ hasText: 'ユーザー独自の旧アクション' }).getByRole('button', { name: '編集', exact: true }).click()
+    const editor = page.getByRole('dialog', { name: '釣果を編集', exact: true })
+    await editor.getByLabel('アクション', { exact: true }).selectOption('マジックジャーク')
+    await editor.getByLabel('アクションの長さ', { exact: true }).selectOption('long')
+    await fetch(`${origin}/__test/version?v=B`, { method: 'POST' })
+    await page.evaluate(async () => { await (await navigator.serviceWorker.getRegistration())!.update() })
+    await expect(page.getByRole('button', { name: '更新して再読み込み', exact: true })).toBeDisabled()
+    await expect(editor.getByLabel('アクションの長さ', { exact: true })).toHaveValue('long')
+    await expect(editor.getByLabel('アクション', { exact: true })).toHaveValue('マジックジャーク')
+    expect(await database(page, false, true)).toEqual(before)
+    await editor.getByRole('button', { name: 'キャンセル', exact: true }).click()
+    expect(await database(page, false, true)).toEqual(before)
+    await page.getByRole('button', { name: '← ホーム', exact: true }).click()
+    await page.getByRole('button', { name: '後で', exact: true }).click()
+    await context.close(); context = await launch(true); page = context.pages()[0]!
+    await page.goto(url); expect(await database(page, false, true)).toEqual(before)
+    await page.getByRole('button', { name: /RC24旧記録/ }).click()
+    for (const lost of [false, true]) {
+      if (lost) await page.getByRole('group', { name: '現在のエリア', exact: true }).getByLabel('現在のエリア', { exact: true }).selectOption('official:nihon-iwana-center:zero-2')
+      await page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
+      const modal = page.getByRole('dialog', { name: '釣果を登録', exact: true })
+      await expect(modal.getByLabel('アクションの長さ', { exact: true })).toHaveValue('normal')
+      await modal.getByLabel('アクション', { exact: true }).selectOption(lost ? 'ボトムステイ' : 'マジックジャーク')
+      await modal.getByLabel('アクションの長さ', { exact: true }).selectOption(lost ? 'long' : 'short')
+      if (lost) { await modal.getByRole('button', { name: 'バラシ', exact: true }).click(); await modal.getByRole('button', { name: '沖', exact: true }).click() }
+      await modal.getByRole('button', { name: '保存する', exact: true }).click(); await expect(modal).not.toBeVisible()
+    }
+    // A persistent-profile restart creates a new Page; rebuild locators for that Page.
+    await page.getByRole('region', { name: '釣果履歴' }).getByRole('button', { name: '編集', exact: true }).first().click()
+    const offlineEditor = page.getByRole('dialog', { name: '釣果を編集', exact: true })
+    await offlineEditor.getByLabel('アクション', { exact: true }).selectOption('ドリフト')
+    await offlineEditor.getByLabel('アクションの長さ', { exact: true }).selectOption('normal')
+    await offlineEditor.getByRole('button', { name: '保存する', exact: true }).click(); await expect(offlineEditor).not.toBeVisible()
+    const saved = await database(page, false, true)
+    expect(saved.catches!.at(-2)).toMatchObject({ action: 'マジックジャーク', actionLength: 'short', locationSnapshot: { facilityName: '日本イワナセンター', zoneName: '9号池' } })
+    expect(saved.catches!.at(-1)).toMatchObject({ resultType: 'lost', action: 'ドリフト', actionLength: 'normal', locationSnapshot: { facilityName: '日本イワナセンター', zoneName: 'ZERO号池第2' } })
+    for (const [name, rows] of Object.entries(before)) {
+      const pk = name === 'fishSpecies' ? 'fish_id' : name === 'appMetadata' ? 'key' : 'id'
+      for (const row of rows) expect(saved[name]!.find(r => r[pk] === row[pk])).toEqual(name === 'trips' && row.id === 90000 ? { ...row, currentZoneId: 'official:nihon-iwana-center:zero-2' } : row)
+    }
+    await context.close(); context = await launch(true); page = context.pages()[0]!
+    await page.goto(url); expect(await database(page, false, true)).toEqual(saved)
+    await page.getByRole('button', { name: /RC24旧記録/ }).click()
+    await page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
+    const modal = page.getByRole('dialog', { name: '釣果を登録', exact: true })
+    await modal.getByRole('button', { name: /前回と同じ/ }).click(); await expect(modal).not.toBeVisible()
+    const final = await database(page, false, true)
+    expect(final.catches!.at(-1)).toMatchObject({ action: 'ドリフト', actionLength: 'normal' })
+    expect(final.catches!.find(r => r.id === 90000)).not.toHaveProperty('actionLength')
+    await page.getByRole('button', { name: '← ホーム', exact: true }).click()
+    const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: '📦 データをバックアップ', exact: true }).click()])
+    const path = info.outputPath('rc24-offline-v6.json'); await download.saveAs(path)
+    const backup = JSON.parse(await readFile(path, 'utf8'))
+    expect(backup.version).toBe(6); expect(Object.keys(backup.data)).toHaveLength(16); expect(backup.data).toEqual(final)
+  } finally { await context.close() }
+})
 
 test('PR4 50/73 candidate remains selectable and records catch/lost after complete offline cold start', async ({}, info) => {
   await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })

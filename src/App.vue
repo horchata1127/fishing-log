@@ -24,6 +24,7 @@ import {
   databaseConnection,
   subscribeDatabaseConnection,
   type LostDistance,
+  type ActionLength,
   type CatchRecord,
   type FishingStyle,
   type FishingTrip,
@@ -185,6 +186,7 @@ async function restoreData(event: Event) {
   catchRange.value = ''
   catchRetrieveSpeed.value = ''
   catchAction.value = ''
+  catchActionLength.value = 'normal'
   trips.value = []
   myLureOptions.value = []
   catalogOptions.value = []
@@ -230,6 +232,7 @@ const catchLureColor = ref('')
 const catchRange = ref('')
 const catchRetrieveSpeed = ref('')
 const catchAction = ref('')
+const catchActionLength = ref<ActionLength | undefined>('normal')
 const catchSelection = ref<LureSelection | null>(null)
 
 function selectLure(selection: LureSelection) {
@@ -434,6 +437,7 @@ async function editCatch(record: CatchRecord) {
     catchRange.value = record.rangeLevel ?? ''
     catchRetrieveSpeed.value = record.retrieveSpeed ?? ''
     catchAction.value = record.action ?? ''
+    catchActionLength.value = record.actionLength
     catchMemo.value = record.memo ?? ''
     catchFishSpeciesId.value = record.fishSpeciesId
     catchFishSize.value = record.fishSizeCm === undefined ? '' : String(record.fishSizeCm)
@@ -462,6 +466,7 @@ async function addCatch() {
   catchRange.value = ''
   catchRetrieveSpeed.value = ''
   catchAction.value = ''
+  catchActionLength.value = 'normal'
 
   try {
     const trip = currentTrip.value?.id ? await db.trips.get(currentTrip.value.id) : undefined
@@ -516,7 +521,8 @@ async function commitCatch(sameAsPrevious: boolean) {
         fishSpeciesId: catchFishSpeciesId.value,
         fishSizeCm: catchFishSize.value.trim() ? Number(catchFishSize.value) : undefined,
         rangeLevel: catchRange.value || undefined, retrieveSpeed: catchRetrieveSpeed.value || undefined,
-        action: catchAction.value || undefined, memo: catchMemo.value || undefined }
+        action: editingCatch.value && catchAction.value === (editingCatch.value.action ?? '') ? editingCatch.value.action : catchAction.value || undefined,
+        ...(catchActionLength.value === undefined ? {} : { actionLength: catchActionLength.value }), memo: catchMemo.value || undefined }
       if (editingCatch.value?.id) {
         await updateCatch(editingCatch.value.id, input, catchSelection.value ? selection : undefined)
       } else await registerCatch(input, selection)
@@ -822,7 +828,7 @@ async function selectCurrentZone(zoneId: string | undefined) {
       :catalog="catalogOptions" :recent-lures="recentLures" :selection="catchSelection" :saving="savingCatch"
       :has-previous-catch="!editingCatch && catches.length > 0" :my-lures="myLureOptions" v-model:lure-name="catchLureName"
       v-model:lure-color="catchLureColor" v-model:range="catchRange" v-model:retrieve-speed="catchRetrieveSpeed"
-      v-model:action="catchAction" @select-lure="selectLure" @save="saveCatch"
+      v-model:action="catchAction" v-model:action-length="catchActionLength" @select-lure="selectLure" @save="saveCatch"
       @same-as-previous="saveSameAsPrevious" @cancel="cancelCatch">
       <template #location><FacilityPicker v-if="catchLocation?.expectedFacilityId" fixed :facility-id="catchLocation.expectedFacilityId" :trip-id="currentTrip?.id"
         v-model:zone-id="catchZoneId" :retained-zone-id="editingCatch?.zoneId ?? catchLocation.expectedCurrentZoneId" zone-label="今回のエリア" :disabled="savingCatch" @busy="locationBusy = $event" /></template>

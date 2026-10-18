@@ -1,4 +1,4 @@
-import { db, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch, validateCatchResult } from '../db/database'
+import { db, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch, validateCatchResult, validateCatchAction } from '../db/database'
 import { facilityTableNames, validateFacilityStorage, readFacilityStorage, mergeFacilityStorage, validateLocationReferences, type FacilityStorage } from './facilityStorage'
 
 export const backupTableNames = [
@@ -194,6 +194,7 @@ export function validateBackup(value: unknown): RestoredData {
         case 'catches':
           if (Number(backup.version) < 5 && (row.fishSpeciesId !== undefined || row.fishSpeciesGroup !== undefined)) fail(path, '魚種参照にはv5形式が必要です')
           validateCatchResult(row)
+          validateCatchAction(row)
           validateFishCatch(row, fishIds)
           reference(row, 'tripId', 'trips', path)
           reference(row, 'lureId', 'myLures', path, true)

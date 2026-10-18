@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import type { LureOption, LureSelection, RecentLure } from '../utils/catchRegistration';
-import type { LostDistance, TackleSet } from '../db/database';
+import { catchActions, actionLengthLabels, type ActionLength, type LostDistance, type TackleSet } from '../db/database';
 import type { FishSpecies } from '../db/database';
 import FishSpeciesPicker from './FishSpeciesPicker.vue';
 
@@ -29,6 +29,7 @@ const props = defineProps<{
   range: string;
   retrieveSpeed: string;
   action: string;
+  actionLength?: ActionLength;
 }>();
 
 const emit = defineEmits<{
@@ -50,7 +51,12 @@ const emit = defineEmits<{
   "update:range": [value: string];
   "update:retrieveSpeed": [value: string];
   "update:action": [value: string];
+  'update:actionLength': [value: ActionLength];
 }>();
+
+// An old free-form action must remain selectable without renaming or enum coercion.
+const actionOptions = computed(() => props.action && !(catchActions as readonly string[]).includes(props.action)
+  ? [props.action, ...catchActions] : catchActions);
 
 function localDateTime(date: Date) {
   const pad = (n: number) => String(n).padStart(2, '0');
@@ -368,6 +374,7 @@ function selectRecent(recent: RecentLure) {
         <span>アクション</span>
 
         <select
+          aria-label="アクション"
           :value="action"
           @change="
             emit(
@@ -377,16 +384,14 @@ function selectRecent(recent: RecentLure) {
           "
         >
           <option value="">未選択</option>
-          <option value="ただ巻き">ただ巻き</option>
-          <option value="ストップ＆ゴー">ストップ＆ゴー</option>
-          <option value="トゥイッチ">トゥイッチ</option>
-          <option value="ジャーク">ジャーク</option>
-          <option value="シェイク">シェイク</option>
-          <option value="シミーフォール">シミーフォール</option>
-          <option value="シミーアップ">シミーアップ</option>
-          <option value="リフト＆フォール">リフト＆フォール</option>
-          <option value="ステイ">ステイ</option>
-          <option value="その他">その他</option>
+          <option v-for="value in actionOptions" :key="value" :value="value">{{ value }}</option>
+        </select>
+      </label>
+
+      <label class="catch-field">
+        <span>アクションの長さ</span>
+        <select aria-label="アクションの長さ" :value="actionLength ?? 'normal'" @change="emit('update:actionLength', ($event.target as HTMLSelectElement).value as ActionLength)">
+          <option v-for="(label, value) in actionLengthLabels" :key="value" :value="value">{{ label }}</option>
         </select>
       </label>
 

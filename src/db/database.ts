@@ -35,6 +35,19 @@ export interface TripEvent {
 }
 
 export type LostDistance = "offshore" | "near" | "landing"
+export const catchActions = ['ただ巻き', 'ストップ＆ゴー', 'トゥイッチ', 'ジャーク', 'シェイク',
+  'シミーフォール', 'シミーアップ', 'リフト＆フォール', 'ステイ', 'マジックジャーク', 'デジ巻き',
+  'ボトムノック', 'ボトムバンプ', 'ボトムトレース', 'ドリフト', 'ダート', 'ボトムステイ', 'その他'] as const
+export const actionLengthLabels = { short: '短い', normal: '普通', long: '長い' } as const
+export type ActionLength = keyof typeof actionLengthLabels
+/** Display fallback only: never persist a default into a legacy record. */
+export function actionLengthLabel(value?: ActionLength) { return actionLengthLabels[value ?? 'normal'] }
+export function validateCatchAction(row: Record<string, unknown>) {
+  if (row.action !== undefined && typeof row.action !== 'string') throw new Error('アクションは文字列で指定してください。')
+  if (row.actionLength !== undefined && (typeof row.actionLength !== 'string' || !Object.hasOwn(actionLengthLabels, row.actionLength))) {
+    throw new Error('アクションの長さは短い・普通・長いから選択してください。')
+  }
+}
 export const lostDistanceLabels = { offshore: "沖", near: "手前", landing: "キャッチ直前" } as const
 export function isCatch(row: { resultType?: string }) { return row.resultType !== "lost" }
 export function countResults(rows: CatchRecord[]) {
@@ -66,6 +79,7 @@ export interface CatchRecord {
   rangeLevel?: string
   retrieveSpeed?: string
   action?: string
+  actionLength?: ActionLength
 
   fishSpecies?: string
   fishSpeciesId?: string

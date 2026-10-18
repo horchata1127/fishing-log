@@ -27,7 +27,7 @@ for (const [name, source] of [['tripLocations', 'utils/tripLocations.ts'], ['fac
     .replace("'../data/fishMaster'", JSON.stringify(pathToFileURL(paths.fishMaster).href))
   await writeFile(paths[name], code)
 }
-const { db, ownershipStatus, countResults } = await import(pathToFileURL(paths.database).href)
+const { db, ownershipStatus, countResults, catchActions, actionLengthLabels, actionLengthLabel } = await import(pathToFileURL(paths.database).href)
 const { deleteCatch, updateCatch, registerCatch, registerSameAsPrevious, loadLureChoices } = await import(pathToFileURL(paths.catchRegistration).href)
 const { createBackup, importBackup, validateBackup } = await import(pathToFileURL(paths.backup).href)
 const { descriptor } = parse(await readFile(new URL('../src/components/CatchModal.vue', import.meta.url), 'utf8'))
@@ -37,6 +37,7 @@ await writeFile(paths.fishPicker, compile(compileScript(pickerDescriptor, { id: 
   .replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
   .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href)))
 await writeFile(paths.modal, compile(script.content).replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
+  .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
   .replace("'./FishSpeciesPicker.vue'", JSON.stringify(pathToFileURL(paths.fishPicker).href)))
 const template = compileTemplate({ source: descriptor.template.content, filename: 'CatchModal.vue', id: 'catch-test',
   compilerOptions: { bindingMetadata: script.bindings, expressionPlugins: ['typescript'] } })
@@ -74,6 +75,122 @@ beforeEach(async () => {
 const input = (time = '2026-10-10T01:00:00Z') => ({ tripId: 60, caughtAt: new Date(time), rangeLevel: '表層' })
 const catalog = { kind: 'catalog', variantId: 40 }
 const snapshot = async () => JSON.stringify(await Promise.all(db.tables.map(async table => [table.name, await table.orderBy(table.schema.primKey.name).toArray()])))
+
+test('RC24 action options retain all old labels, add eight unique types, and display missing length only as normal', () => {
+  const old = ['ただ巻き', 'ストップ＆ゴー', 'トゥイッチ', 'ジャーク', 'シェイク', 'シミーフォール', 'シミーアップ', 'リフト＆フォール', 'ステイ', 'その他']
+  const added = ['マジックジャーク', 'デジ巻き', 'ボトムノック', 'ボトムバンプ', 'ボトムトレース', 'ドリフト', 'ダート', 'ボトムステイ']
+  assert.equal(catchActions.length, 18)
+  assert.equal(new Set(catchActions).size, 18)
+  for (const label of [...old, ...added]) assert.ok(catchActions.includes(label))
+  assert.deepEqual(actionLengthLabels, { short: '短い', normal: '普通', long: '長い' })
+  assert.equal(actionLengthLabel(), '普通')
+})
+
+for (const resultType of ['catch', 'lost']) for (const actionLength of ['short', 'normal', 'long']) {
+  test(`RC24 ${resultType} stores and edits ${actionLength}, reuses owned lure and retains unrelated stores`, async () => {
+    const before = JSON.parse(await snapshot())
+    const result = { resultType, ...(resultType === 'lost' ? { lostDistance: 'near' } : {}) }
+    const id = await registerCatch({ ...input(), ...result, action: 'マジックジャーク', actionLength }, catalog)
+    const saved = await db.catches.get(id)
+    assert.equal(saved.actionLength, actionLength); assert.equal(saved.action, 'マジックジャーク')
+    const next = actionLength === 'long' ? 'short' : 'long'
+    await updateCatch(id, { ...input(), ...result, actionLength: next })
+    assert.equal((await db.catches.get(id)).actionLength, next)
+    assert.equal((await db.catches.get(id)).action, 'マジックジャーク')
+    await updateCatch(id, { ...input(), ...result, memo: '長さ以外の編集' })
+    assert.equal((await db.catches.get(id)).actionLength, next)
+    assert.equal(await db.myLures.count(), 4)
+    const after = new Map(JSON.parse(await snapshot()))
+    for (const [table, rows] of before) {
+      if (table === 'catches') continue
+      if (table === 'myLures') for (const row of rows) assert.deepEqual(after.get(table).find(r => r.id === row.id), row)
+      else assert.deepEqual(after.get(table), rows)
+    }
+  })
+}
+
+test('RC24 legacy action and absent length survive viewing, cancel and unrelated edit; explicit normal remains distinct', async () => {
+  const id = await db.catches.add({ ...input(), action: '旧記録の独自アクション' })
+  const before = await snapshot()
+  const ui = setupModal(await loadLureChoices())
+  ui.props.action = '旧記録の独自アクション'
+  assert.equal(ui.state.actionOptions.value.filter(v => v === ui.props.action).length, 1)
+  const cancel = findCancel(await renderModal(ui.props, ui.state))
+  cancel.props.onClick()
+  assert.equal(ui.props.actionLength, undefined)
+  assert.equal(await snapshot(), before)
+  await updateCatch(id, { ...input(), action: ui.props.action, memo: '関連しない編集' })
+  const legacy = await db.catches.get(id)
+  assert.equal(legacy.action, ui.props.action)
+  assert.equal(Object.hasOwn(legacy, 'actionLength'), false)
+  await updateCatch(id, { ...input(), actionLength: 'normal' })
+  assert.equal((await db.catches.get(id)).actionLength, 'normal')
+})
+
+for (const length of [undefined, 'short', 'normal', 'long']) test(`RC24 previous shortcut inherits ${length ?? 'missing'} length without changing source or later normal input`, async () => {
+  const id = await registerCatch({ ...input(), action: '旧自由入力', ...(length ? { actionLength: length } : {}) }, { kind: 'manual', lureName: '手入力', lureColor: '' })
+  const source = await db.catches.get(id)
+  const copied = await db.catches.get(await registerSameAsPrevious(60, new Date('2026-10-10T02:00:00Z'), undefined, { resultType: 'lost', lostDistance: 'offshore' }))
+  assert.equal(copied.action, source.action)
+  assert.equal(copied.actionLength, length)
+  assert.equal(Object.hasOwn(copied, 'actionLength'), length !== undefined)
+  assert.deepEqual(await db.catches.get(id), source)
+  const fresh = await db.catches.get(await registerCatch({ ...input('2026-10-10T03:00:00Z'), actionLength: 'normal' }, { kind: 'manual', lureName: '', lureColor: '' }))
+  assert.equal(fresh.actionLength, 'normal'); assert.equal(copied.actionLength, length)
+  assert.equal(await db.myLures.count(), 3)
+})
+
+for (const bad of ['medium', 'SHORT', null, 0, true, {}, [], '__proto__']) test(`RC24 rejects length ${JSON.stringify(bad)} in register/edit/v6 restore atomically`, async () => {
+  const { applyFacilityMaster } = await import(pathToFileURL(paths.facilityStorage).href)
+  await applyFacilityMaster(JSON.parse(await readFile(new URL('../src/data/facility-master.v1.json', import.meta.url), 'utf8')))
+  const id = await registerCatch({ ...input(), actionLength: 'normal' }, { kind: 'manual', lureName: '', lureColor: '' })
+  const backup = await createBackup(), before = await snapshot()
+  assert.equal(backup.version, 6)
+  await assert.rejects(registerCatch({ ...input(), actionLength: bad }, catalog), /アクションの長さ/)
+  assert.equal(await snapshot(), before)
+  await assert.rejects(updateCatch(id, { ...input(), actionLength: bad }, catalog), /アクションの長さ/)
+  assert.equal(await snapshot(), before)
+  backup.data.catches[0].actionLength = bad
+  await assert.rejects(importBackup(new File([JSON.stringify(backup)], 'invalid-rc24-v6.json')), /アクションの長さ/)
+  assert.equal(await snapshot(), before)
+})
+
+test('RC24 v6 round trip retains all 16 stores, official/user places, tackle/fish snapshots and mixed missing/explicit lengths', async () => {
+  const { applyFacilityMaster } = await import(pathToFileURL(paths.facilityStorage).href)
+  await applyFacilityMaster(JSON.parse(await readFile(new URL('../src/data/facility-master.v1.json', import.meta.url), 'utf8')))
+  const facilityId = 'official:nihon-iwana-center', zoneId = `${facilityId}:pond-9`
+  await db.facilities.put({ id: 'user:iwana', name: '日本イワナセンター', origin: 'user' })
+  await db.zones.put({ id: 'user:9', facilityId: 'user:iwana', name: '9号池', origin: 'user' })
+  await db.rods.put({ id: 1, manufacturer: '架空', modelName: 'ロッド', active: true })
+  await db.lines.put({ id: 1, material: 'ナイロン', strengthLb: 3, active: true })
+  await db.reels.put({ id: 1, manufacturer: '架空', modelName: 'リール', mainLineId: 1, active: true })
+  await db.tackleSets.put({ id: 1, name: 'セット', rodId: 1, reelId: 1, active: true })
+  await db.tripEvents.put({ id: 1, tripId: 60, type: 'stocking', occurredAt: input().caughtAt })
+  await db.trips.update(60, { facilityId, currentZoneId: zoneId, tackleSetIds: [1] })
+  const legacyId = await db.catches.add({ ...input(), action: '旧自由入力', facilityId, zoneId,
+    locationSnapshot: { facilityName: '保存時施設名', zoneName: '保存時エリア名' } })
+  for (const [i, actionLength] of ['short', 'normal', 'long'].entries()) {
+    for (const resultType of ['catch', 'lost']) await registerCatch({ ...input(`2026-10-10T0${i + 2}:00:00Z`), action: 'ボトムステイ', actionLength,
+      resultType, ...(resultType === 'lost' ? { lostDistance: 'landing' } : {}), tackleSetId: 1, fishSpeciesId: 'F001',
+      location: { expectedFacilityId: facilityId, expectedCurrentZoneId: zoneId, zoneId } }, catalog)
+  }
+  const backup = await createBackup(), before = await snapshot()
+  assert.equal(backup.version, 6); assert.equal(Object.keys(backup.data).length, 16)
+  assert.equal(Object.hasOwn(backup.data.catches.find(r => r.id === legacyId), 'actionLength'), false)
+  await importBackup(new File([JSON.stringify(backup)], 'synthetic-rc24-v6.json'))
+  assert.equal(await snapshot(), before)
+  assert.equal(Object.hasOwn(await db.catches.get(legacyId), 'actionLength'), false)
+  assert.equal(db.verno, 7)
+})
+
+test('RC24 late edit failure rolls back new length and owned lure without modifying legacy action or other tables', async () => {
+  const id = await db.catches.add({ ...input(), action: '旧自由入力' }), before = await snapshot()
+  const fail = () => { throw new Error('RC24 injected late failure') }
+  db.catches.hook('updating', fail)
+  try { await assert.rejects(updateCatch(id, { ...input(), actionLength: 'long' }, catalog), /injected late failure/) }
+  finally { db.catches.hook('updating').unsubscribe(fail) }
+  assert.equal(await snapshot(), before)
+})
 
 test('RC23 legacy records and three lost distances stay separate with reused ownership and backup round-trip', async () => {
   await db.myLures.update(50, { ownershipStatus: 'owned' })
