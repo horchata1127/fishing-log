@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch, onUnmounted } from 'vue'
 import { loadLocationChoices, addUserFacility, addUserZone, type LocationChoice } from '../utils/tripLocations'
-const props = defineProps<{ facilityId?: string; zoneId?: string; retainedZoneId?: string; retainedZoneName?: string; catchArea?: boolean; fixed?: boolean; tripId?: number; zoneLabel?: string; disabled?: boolean }>()
+const props = defineProps<{ facilityId?: string; zoneId?: string; retainedZoneId?: string; retainedZoneName?: string; retainedFacilityId?: string; catchArea?: boolean; fixed?: boolean; tripId?: number; zoneLabel?: string; disabled?: boolean }>()
 const emit = defineEmits<{ 'update:facilityId': [id: string | undefined]; 'update:zoneId': [id: string | undefined]; busy: [value: boolean] }>()
 const facilities = ref<LocationChoice[]>([]), zones = ref<LocationChoice[]>([]), facility = ref<LocationChoice>()
 const search = ref(''), editor = ref<'facility' | 'zone'>(), draft = ref(''), saving = ref(false), loading = ref(false), error = ref('')
@@ -65,6 +65,7 @@ async function save() {
       <p v-if="catchArea && !facilityId">釣行に施設IDがないためエリアを選択できません。既存の値は変更しない限り保持します。</p>
       <p v-else-if="catchArea && !zones.length && !loading">選択できるエリアが未登録です。未設定のまま編集できます。</p>
       <p v-if="catchArea && retainedZoneId && !zones.some(z => z.id === retainedZoneId) && !loading">既存エリアを解決できません。変更せず保存すると元の値を保持します。</p>
+      <p v-if="catchArea && retainedFacilityId && retainedFacilityId !== facilityId && retainedZoneId">旧施設のエリアです（{{ retainedFacilityId }}）。新施設のエリアには自動変換しません。変更しなければ保持します。</p>
       <template v-if="catchArea && !retainedZoneId && retainedZoneName"><p>エリアIDのない旧名称「{{ retainedZoneName }}」を保持しています。変更は釣果の保存時に確定します。</p><button type="button" @click="emit('update:zoneId', undefined)">記録済みエリア名を未設定に戻す</button></template>
       <button v-if="facilityId" type="button" :disabled="loading || !!editor || !facility" @click="begin('zone')">この施設にエリアを追加</button>
     </template>

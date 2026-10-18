@@ -23,6 +23,7 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits<{
+  editFacility: []
   home: []
   addCatch: []
   editCatch: [record: CatchRecord]
@@ -149,6 +150,7 @@ function fishingStyleName(style: FishingStyle) {
   </section>
 
   <slot name="location" />
+  <section class="card" aria-label="釣り場・施設"><h2>釣り場・施設</h2><p>現在の施設名：{{ trip.fishingAreaName }}</p><p>施設ID：{{ trip.facilityId || '未設定' }}</p><button class="back-button" type="button" :disabled="locationBusy" @click="emit('editFacility')">施設を設定・変更</button></section>
   <button
     v-if="!trip.endedAt"
     class="catch-button" :disabled="locationBusy"
@@ -249,6 +251,7 @@ function fishingStyleName(style: FishingStyle) {
         </strong>
         <p>{{ record.fishSpecies || '魚種未設定' }}{{ record.fishSpeciesGroup ? `（${record.fishSpeciesGroup}）` : '' }}{{ record.fishSizeCm !== undefined ? ` / ${record.fishSizeCm}cm` : '' }}</p>
         <p v-if="record.locationSnapshot">{{ record.locationSnapshot.facilityName }}{{ record.locationSnapshot.zoneName ? ` / ${record.locationSnapshot.zoneName}` : '' }}</p>
+        <p v-if="trip.facilityId && record.facilityId !== trip.facilityId && (record.zoneId || record.locationSnapshot?.zoneName)">旧施設・所属未確認のエリア（保存済みの所属を保持）</p>
         <p v-if="record.memo">{{ record.memo }}</p>
         <p class="catch-action">アクション: {{ record.action || '未選択' }} / 長さ: {{ actionLengthLabel(record.actionLength) }}</p>
 
