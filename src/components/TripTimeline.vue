@@ -2,13 +2,15 @@
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import type { CatchRecord, FishingTrip, TripWeatherHour, TripWeatherLocation, TripWeatherRequest } from '../db/database'
 import { lostDistanceLabels } from '../db/database'
-import { buildTripTimeline, formatTimelineTime, layoutTimelineMarkers, markerLabels, markerSymbols, type TimelineEvent, type TimelineMarker } from '../utils/tripTimeline'
+import { buildCatchSummary, buildTripTimeline, formatTimelineTime, layoutTimelineMarkers, markerLabels, markerSymbols, type TimelineEvent, type TimelineMarker } from '../utils/tripTimeline'
+import HourlyCatchChart from './HourlyCatchChart.vue'
 import WeatherAttribution from './WeatherAttribution.vue'
 
 const props = defineProps<{ trip: FishingTrip; catches: CatchRecord[]; events: TimelineEvent[]; hours: TripWeatherHour[]; requests: TripWeatherRequest[]; location?: TripWeatherLocation; weatherError?: string }>()
 const zone = ref('all'), includeUnset = ref(true), zoom = ref(1), viewport = ref(340)
 const scroll = ref<HTMLElement>(), dialog = ref<HTMLDialogElement>(), selected = ref<TimelineMarker | null>(null)
 const model = computed(() => buildTripTimeline(props.trip, props.catches, props.events, props.hours, zone.value, includeUnset.value))
+const summary = computed(() => buildCatchSummary(props.trip, props.catches, zone.value, includeUnset.value))
 const width = computed(() => Math.max(300, viewport.value) * zoom.value)
 const layout = computed(() => model.value.range ? layoutTimelineMarkers(model.value.markers, model.value.range.start, model.value.range.end, width.value) : null)
 const clipId = computed(() => `timeline-plot-${props.trip.id ?? 'unknown'}`)
@@ -49,6 +51,14 @@ watch(model, value => { if (selected.value && ![...value.markers, ...value.unkno
 <template>
   <section class="card timeline" aria-label="統合タイムライン">
     <h2>統合タイムライン</h2>
+    <div class="catch-summary" aria-label="釣行全体の釣果サマリー">
+      <strong>総釣果：{{ summary.total }}匹</strong>
+      <span>平均釣果ペース：{{ summary.pace === null ? '算出不可' : `${summary.pace.toFixed(2)}匹/時` }}</span>
+      <span v-if="zone !== 'all'">表示中：{{ summary.displayed }}匹／全体：{{ summary.total }}匹</span>
+    </div>
+    <p v-if="summary.pace === null">{{ summary.paceReason === 'missing-end' ? '終了時刻が未設定のため算出不可です。釣行中も現在時刻で補完しません。' : '開始・終了時刻が不正・欠損、逆転、または経過時間が0のため算出不可です。' }}</p>
+    <p v-else>平均は釣行の開始〜終了の経過時間と全体の釣果数から算出します。</p>
+    <p v-if="summary.outsideCount">釣行時間外の釣果{{ summary.outsideCount }}匹も、元の記録時刻で集計に含めます。</p>
     <p>横軸は日本時間（JST）。マーカーをタップすると記録の詳細を確認できます。</p>
     <div class="controls">
       <label v-if="model.zones.length">釣果・バラシのエリア
@@ -81,6 +91,7 @@ watch(model, value => { if (selected.value && ![...value.markers, ...value.unkno
       </div>
     </div>
     <p>線は保存済みの毎正時のモデル推定値を直線で結んでいます。欠損や時間の抜けでは線を切ります。釣果時刻の気温の算出・実測表示は行いません。</p>
+    <HourlyCatchChart :key="trip.id" :trip-id="trip.id" :bins="summary.bins" :total="summary.displayed" :unknown-count="summary.unknownCount" :period-too-long="summary.periodTooLong" />
     <div v-if="model.unknown.length" class="unplaced">
       <template v-if="unknownEvents.length"><h3>時刻不明イベント</h3><p>時刻を補完せず、時間軸の外に表示します。</p><button v-for="m in unknownEvents" :key="m.key" type="button" @click="select(m)">{{ markerTitle(m) }}：{{ (m.record as TimelineEvent).note || 'メモなし' }}</button></template>
       <template v-if="unknownCatches.length"><h3>時刻不明の釣果・バラシ</h3><button v-for="m in unknownCatches" :key="m.key" type="button" @click="select(m)">{{ markerTitle(m) }}</button></template>
@@ -106,6 +117,7 @@ watch(model, value => { if (selected.value && ![...value.markers, ...value.unkno
 
 <style scoped>
 .timeline { min-width:0; padding:18px; border-radius:16px; background:var(--surface, #fff); color:var(--text); overflow-wrap:anywhere; }
+.catch-summary { display:flex; flex-wrap:wrap; gap:6px 14px; padding:10px; border:1px solid #d3dadd; border-radius:8px; font-size:14px; }
 h2 { margin-top:0; font-size:19px; } p { font-size:13px; line-height:1.65; } .controls { display:grid; gap:10px; } label { display:grid; gap:5px; font-size:14px; } select { width:100%; min-height:44px; font:inherit; color:var(--text); background:var(--surface, #fff); border:1px solid #aab4be; border-radius:8px; } .check { display:flex; align-items:center; min-height:44px; } .check input { width:22px; height:22px; }
 .legend { display:flex; flex-wrap:wrap; gap:8px 14px; padding:0; list-style:none; font-size:13px; } .temperature { color:#a34111; } .catch { color:#126652; } .lost { color:#a12d40; } .stocking { color:#2857a0; } .pellet { color:#795012; }
 .timeline-scroll { max-width:100%; overflow-x:auto; overscroll-behavior-x:contain; border:1px solid #d3dadd; border-radius:8px; } .canvas { position:relative; } svg { display:block; } svg text { fill:var(--text); font-size:11px; } .grid { stroke:#cbd3d9; stroke-width:1; stroke-dasharray:3 3; } .temperature-line { fill:none; stroke:#c56832; stroke-width:2.5; } .temperature-point { fill:#c56832; }
