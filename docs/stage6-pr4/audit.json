@@ -1,0 +1,373 @@
+{
+  "approval": "pending",
+  "proposedReleaseOrder": 1,
+  "proposedMasterVersion": "1.0.0-stage6-50f73z",
+  "sources": [
+    {
+      "name": "Fishing_Log_Stage6_施設マスター_50施設_精度改善ドラフト_v0.9.json",
+      "sha256": "9de6b4d81471317041a8d5b3dc848775eff448ca73b7e8ed38da5a192d0e676b"
+    },
+    {
+      "name": "FishingLog_Stage6_50facilities_73zones_draft.json",
+      "sha256": "ba6dd6eb2c9ae209efcbea4a7abcb227332c40b3d082f13fac5afba926657eed"
+    }
+  ],
+  "original": {
+    "facilities": 50,
+    "zones": 64
+  },
+  "candidate": {
+    "facilities": 50,
+    "zones": 73
+  },
+  "operationStatus": {
+    "open": 33,
+    "seasonal": 14,
+    "unknown": 3
+  },
+  "researchStatus": {
+    "partially_verified": 35,
+    "verified": 14,
+    "needs_current_verification": 1
+  },
+  "prefecture": {
+    "東京都": 2,
+    "埼玉県": 6,
+    "神奈川県": 7,
+    "山梨県": 8,
+    "群馬県": 4,
+    "福島県": 2,
+    "宮城県": 1,
+    "静岡県": 3,
+    "長野県": 6,
+    "栃木県": 9,
+    "千葉県": 1,
+    "茨城県": 1
+  },
+  "missingAddress": 7,
+  "noZones": 27,
+  "iwana": [
+    {
+      "id": "official:nihon-iwana-center:zero-2",
+      "name": "ZERO号池第2",
+      "sortOrder": 1,
+      "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+      "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+    },
+    {
+      "id": "official:nihon-iwana-center:zero-1",
+      "name": "ZERO号池第1",
+      "sortOrder": 2,
+      "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+      "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+    },
+    {
+      "id": "official:nihon-iwana-center:pond-1",
+      "name": "1号池",
+      "sortOrder": 3,
+      "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+      "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+    },
+    {
+      "id": "official:nihon-iwana-center:pond-2",
+      "name": "2号池",
+      "sortOrder": 4,
+      "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+      "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+    },
+    {
+      "id": "official:nihon-iwana-center:pond-3-4",
+      "name": "3・4号池",
+      "sortOrder": 5,
+      "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+      "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+    },
+    {
+      "id": "official:nihon-iwana-center:pond-5-6",
+      "name": "5・6号池",
+      "sortOrder": 6,
+      "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+      "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+    },
+    {
+      "id": "official:nihon-iwana-center:pond-7",
+      "name": "7号池",
+      "sortOrder": 7,
+      "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+      "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+    },
+    {
+      "id": "official:nihon-iwana-center:pond-8",
+      "name": "8号池",
+      "sortOrder": 8,
+      "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+      "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+    },
+    {
+      "id": "official:nihon-iwana-center:pond-9",
+      "name": "9号池",
+      "sortOrder": 9,
+      "sourceUrl": "http://www7.wind.ne.jp/okutone/center/index.htm",
+      "verificationBasis": "user_supplied_official_website_screenshot_2026-10-14"
+    }
+  ],
+  "correction": {
+    "facilityId": "official:anglers-park-kingfisher",
+    "zoneId": "official:anglers-park-kingfisher:trout-5",
+    "from": 1,
+    "to": 5
+  },
+  "facilities": [
+    {
+      "id": "official:asakawa-kokusai",
+      "name": "浅川国際鱒釣場",
+      "zones": 0
+    },
+    {
+      "id": "official:akigawa-kokusai",
+      "name": "秋川国際マス釣場",
+      "zones": 1
+    },
+    {
+      "id": "official:tamako-ekimae",
+      "name": "多摩湖駅前フィッシングエリア",
+      "zones": 0
+    },
+    {
+      "id": "official:fishing-stage-sainokuni",
+      "name": "フィッシングステージ彩の国",
+      "zones": 0
+    },
+    {
+      "id": "official:river-spot-hayato",
+      "name": "リヴァスポット早戸",
+      "zones": 0
+    },
+    {
+      "id": "official:uratanzawa",
+      "name": "うらたんざわ渓流釣場",
+      "zones": 1
+    },
+    {
+      "id": "official:narago-fishing-center",
+      "name": "奈良子釣りセンター",
+      "zones": 3
+    },
+    {
+      "id": "official:nihon-iwana-center",
+      "name": "日本イワナセンター",
+      "zones": 9
+    },
+    {
+      "id": "official:akaguna",
+      "name": "赤久縄",
+      "zones": 3
+    },
+    {
+      "id": "official:kaisei-forest-springs",
+      "name": "開成水辺フォレストスプリングス",
+      "zones": 3
+    },
+    {
+      "id": "official:nasu-shirakawa-forest-springs",
+      "name": "那須白河フォレストスプリングス",
+      "zones": 4
+    },
+    {
+      "id": "official:zao-forest-springs",
+      "name": "蔵王フォレストスプリングス",
+      "zones": 0
+    },
+    {
+      "id": "official:kosuge-trout-garden",
+      "name": "小菅トラウトガーデン",
+      "zones": 0
+    },
+    {
+      "id": "official:susono-fishing-park",
+      "name": "すそのフィッシングパーク",
+      "zones": 3
+    },
+    {
+      "id": "official:higashiyamako",
+      "name": "東山湖フィッシングエリア",
+      "zones": 0
+    },
+    {
+      "id": "official:nireike-hakuba",
+      "name": "白馬八方ニレ池フィッシングセンター",
+      "zones": 2
+    },
+    {
+      "id": "official:arcus-pond-utsunomiya",
+      "name": "アルクスポンド宇都宮",
+      "zones": 0
+    },
+    {
+      "id": "official:anglers-park-kingfisher",
+      "name": "アングラーズパーク キングフィッシャー",
+      "zones": 5
+    },
+    {
+      "id": "official:berrypark-ouzenji",
+      "name": "ベリーパーク in フィッシュオン！王禅寺",
+      "zones": 3
+    },
+    {
+      "id": "official:asaka-garden",
+      "name": "朝霞ガーデン",
+      "zones": 0
+    },
+    {
+      "id": "official:kaga-fishing-area",
+      "name": "加賀フィッシングエリア",
+      "zones": 2
+    },
+    {
+      "id": "official:kawaba-fishing-plaza",
+      "name": "川場フィッシングプラザ",
+      "zones": 1
+    },
+    {
+      "id": "official:fishon-shishidome",
+      "name": "BerryPark in FISH ON！鹿留",
+      "zones": 4
+    },
+    {
+      "id": "official:walton-garden",
+      "name": "ウォルトンガーデン",
+      "zones": 0
+    },
+    {
+      "id": "official:hamanako-fishing-resort",
+      "name": "浜名湖フィッシングリゾート",
+      "zones": 1
+    },
+    {
+      "id": "official:kosuge-fishing-village",
+      "name": "小菅フィッシングヴィレッジ",
+      "zones": 0
+    },
+    {
+      "id": "official:narayamanuma",
+      "name": "なら山沼漁場",
+      "zones": 0
+    },
+    {
+      "id": "official:ooashigawa-fc",
+      "name": "大芦川F&Cフィールドビレッジ",
+      "zones": 0
+    },
+    {
+      "id": "official:mid-creek",
+      "name": "ミッドクリークフィッシングエリア",
+      "zones": 4
+    },
+    {
+      "id": "official:fishing-area-honobono",
+      "name": "フィッシングエリアほのぼの",
+      "zones": 4
+    },
+    {
+      "id": "official:waterpark-nagatoro",
+      "name": "ウォーターパーク長瀞 フィッシングエリア",
+      "zones": 0
+    },
+    {
+      "id": "official:ashigara-casting-area",
+      "name": "足柄キャスティングエリア",
+      "zones": 0
+    },
+    {
+      "id": "official:fishing-field-nakatsugawa",
+      "name": "Fishing Field 中津川",
+      "zones": 0
+    },
+    {
+      "id": "official:308club",
+      "name": "308Club",
+      "zones": 0
+    },
+    {
+      "id": "official:midori-fishing-area",
+      "name": "みどりフィッシングエリア",
+      "zones": 0
+    },
+    {
+      "id": "official:408club",
+      "name": "408CLUB",
+      "zones": 0
+    },
+    {
+      "id": "official:okutone-fishing-park",
+      "name": "おくとねフィッシングパーク",
+      "zones": 2
+    },
+    {
+      "id": "official:kashimayari-garden",
+      "name": "フィッシングランド鹿島槍ガーデン",
+      "zones": 3
+    },
+    {
+      "id": "official:hirayako-fishing-spot",
+      "name": "平谷湖フィッシングスポット",
+      "zones": 5
+    },
+    {
+      "id": "official:oshino-fishing-area",
+      "name": "忍野フィッシングエリア",
+      "zones": 0
+    },
+    {
+      "id": "official:ryugaike-fishing-park",
+      "name": "フィッシングパーク竜華池",
+      "zones": 0
+    },
+    {
+      "id": "official:herb-no-sato-fishing",
+      "name": "ハーブの里フィッシングエリア",
+      "zones": 0
+    },
+    {
+      "id": "official:azumino-fishing-center",
+      "name": "あづみ野フィッシングセンター",
+      "zones": 0
+    },
+    {
+      "id": "official:trapon-kaida",
+      "name": "トラポン開田高原",
+      "zones": 0
+    },
+    {
+      "id": "official:shirakobato-pool",
+      "name": "しらこばと水上公園 プールフィッシング",
+      "zones": 2
+    },
+    {
+      "id": "official:kazo-hanasaki-pool",
+      "name": "加須はなさき水上公園 プールフィッシング",
+      "zones": 0
+    },
+    {
+      "id": "official:ygl-sport-fishing",
+      "name": "丹沢ヤドリキY.G.L.スポーツフィッシングエリア",
+      "zones": 5
+    },
+    {
+      "id": "official:shylph-hakushu",
+      "name": "白州トラウトフィッシングエリア シルフ",
+      "zones": 0
+    },
+    {
+      "id": "official:westriver-auto-camp",
+      "name": "ウエストリバーオートキャンプ場 管理釣り場",
+      "zones": 0
+    },
+    {
+      "id": "official:hokkoji-no-mori",
+      "name": "アウトドアヴィレッジ発光路の森フィッシングエリア",
+      "zones": 3
+    }
+  ],
+  "candidateSha256": "30514d6674b413a70e9d830b4e5a4230bc83b13feb4e2f876daeadd67d33fb9c"
+}

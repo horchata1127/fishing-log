@@ -5,10 +5,54 @@ import { join } from 'node:path'
 import { rc20Fixture } from '../rc20Fixture'
 import { rc22Fixture } from '../rc22Fixture'
 import { rc23Fixture } from '../rc23Fixture'
+import { stage6Backup } from '../stage6Fixture'
 
 const origin = 'http://127.0.0.1:4188'
 const url = `${origin}/fishing-log/`
 const names = ['trips', 'catches', 'tripEvents', 'lureManufacturers', 'lureSeries', 'lureModels', 'lureVariants', 'myLures', 'rods', 'reels', 'lines', 'tackleSets', 'fishSpecies']
+
+test('PR4 50/73 candidate remains selectable and records catch/lost after complete offline cold start', async ({}, info) => {
+  await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
+  const profile = await mkdtemp(join(tmpdir(), 'fishing-stage6-pr4-offline-'))
+  const launch = (offline = false) => chromium.launchPersistentContext(profile, { serviceWorkers: 'allow', offline,
+    viewport: info.project.name.includes('mobile') ? { width: 390, height: 844 } : { width: 1280, height: 800 }, locale: 'ja-JP', timezoneId: 'Asia/Tokyo' })
+  let context = await launch()
+  try {
+    let page = context.pages()[0]!
+    await page.goto(url); await ready(page)
+    page.on('dialog', dialog => dialog.accept())
+    // Fixture provisioning via existing restore UI; static approval remains pending in this build.
+    await page.getByTestId('restore-backup').setInputFiles({ name: 'isolated-stage6-v6.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(stage6Backup())) })
+    await expect.poll(async () => (await database(page, false, true)).facilities!.length).toBe(51)
+    const before = await database(page, false, true)
+    await context.close(); context = await launch(true); page = context.pages()[0]!
+    await page.goto(url)
+    expect(await database(page, false, true)).toEqual(before)
+    await page.getByRole('button', { name: '新しい釣行を開始' }).click()
+    await page.getByLabel('施設を検索', { exact: true }).fill('イワナ')
+    await page.getByLabel('管理釣り場', { exact: true }).selectOption('official:nihon-iwana-center')
+    const zones = page.getByLabel('エリア（任意）', { exact: true })
+    await expect(zones.locator('option')).toHaveCount(10)
+    await zones.selectOption('official:nihon-iwana-center:pond-9')
+    await page.getByRole('button', { name: '🎣 釣行開始', exact: true }).click()
+    for (const lost of [false, true]) {
+      if (lost) await page.getByRole('group', { name: '現在のエリア', exact: true }).getByLabel('現在のエリア', { exact: true }).selectOption('official:nihon-iwana-center:zero-1')
+      await page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
+      const modal = page.getByRole('dialog', { name: '釣果を登録', exact: true })
+      if (lost) { await modal.getByRole('button', { name: 'バラシ', exact: true }).click(); await modal.getByRole('button', { name: '手前', exact: true }).click() }
+      await modal.getByRole('button', { name: '保存する', exact: true }).click()
+      await expect(modal).not.toBeVisible()
+    }
+    const saved = await database(page, false, true)
+    expect(saved.catches!.at(-2).locationSnapshot).toEqual({ facilityName: '日本イワナセンター', zoneName: '9号池' })
+    expect(saved.catches!.at(-1).locationSnapshot).toEqual({ facilityName: '日本イワナセンター', zoneName: 'ZERO号池第1' })
+    expect(saved.catches!.at(-1).resultType).toBe('lost')
+    for (const key of ['myLures', 'lureVariants', 'tackleSets', 'facilities', 'zones', 'appMetadata']) expect(saved[key]).toEqual(before[key])
+    for (const row of before.catches!) expect(saved.catches!.find(r => r.id === row.id)).toEqual(row)
+    await context.close(); context = await launch(true); page = context.pages()[0]!
+    await page.goto(url); expect(await database(page, false, true)).toEqual(saved)
+  } finally { await context.close() }
+})
 
 test('RC23 lost records persist offline across full profile restart without changing RC22 history', async ({}, info) => {
   await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })

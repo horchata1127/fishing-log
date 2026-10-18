@@ -1,0 +1,16 @@
+{
+  "verifiedUnchanged": true,
+  "files": {
+    "Fishing_Log_Stage7_PR本文_2026-10-11.md": "b19afbf9dd2d57ccea5f441394049f19134d4a045b87b22e8bc202d3e0ec367d",
+    "docs/catalog-handoff/CODEX_CATALOG_HANDOFF.md": "54237087cfa9ebb6592c65e1af3b643c5563961690514472623eea38e34b472f",
+    "docs/catalog-handoff/fishing_log_catalog_1886_only.json": "87b20a0b3f1ae94ab57ca4ff59036fd49e117e43204265fa19f301e88f3537f1",
+    "docs/catalog-handoff/noa_otsuka_expanded.json": "5976037a9eaaf67e1f5b154db2793d36afa5aecb92a61a84d35e9e7a7f5d7427",
+    "docs/fishing-log-fish-master-draft-2026-10-10.csv": "cc682f34916d1d3c6b05967888548b6d322db2847aedc8ae3cb294e7394d972a",
+    "docs/fishing-log-fish-master-draft-2026-10-10.xlsx": "b6c3ef779436ee8897e884942c9161693c8342d5519506070ce0ead59f5c0053",
+    "docs/fishing-log-iphone-import-v4-2026-10-10.json": "2e96e93c6adc43ad62098272a0439380ced52acf5c6c87bc55892851aaec6075",
+    "docs/rc19/RC19_IMPLEMENTATION_UPDATED.md": "e05bb6c703687df0a5a1ce1efda3b61f56a1abb70c41756f4cae80d0cd3001e7",
+    "docs/rc19/RC19_VALIDATION_UPDATED.md": "25f43c191c8cf79465b57e9d127724232be4f91e5848acd42515713607c62ed1",
+    "docs/rc21/Fishing Log 最新ルアーカタログ RC21.xlsx": "7f7dfe5209737cc671cf703b290339fdeeb55043c4c60b1bafe0b6ca94e9f7d9",
+    "src/components/MyLuresScreen.backup.vue": "90031e928a2f6b294b7919aaab69793eba4dc567ee70e1208e68426c49bbfbb6"
+  }
+}

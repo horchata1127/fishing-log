@@ -150,8 +150,11 @@ test('concurrent current-zone change rejects stale modal without losing input or
     await changeCurrentZone(row.id, undefined, row.currentZoneId)
   }, databaseModule)
   const before = await state(page)
-  const message = page.waitForEvent('dialog'); await modal.getByRole('button', { name: '保存する', exact: true }).click()
-  const dialog = await message; expect(dialog.message()).toContain('別の画面'); await dialog.accept()
+  // Accept while the click is still pending: mobile Chromium can wait for alert dismissal.
+  const message = page.waitForEvent('dialog').then(async dialog => {
+    expect(dialog.message()).toContain('別の画面'); await dialog.accept()
+  })
+  await Promise.all([message, modal.getByRole('button', { name: '保存する', exact: true }).click()])
   await expect(modal.getByLabel('全長（cm・任意）', { exact: true })).toHaveValue('30')
   expect(await state(page)).toEqual(before)
   await modal.getByRole('button', { name: 'キャンセル', exact: true }).click()

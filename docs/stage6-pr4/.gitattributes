@@ -1,0 +1,3 @@
+# Preserve audit hashes across Windows/Linux checkouts.
+research-source.json -text
+facility-master.candidate.json -text
