@@ -1,4 +1,4 @@
-import { db, isUsableOwnedLure, validateFishCatch, validateCatchResult, type CatchRecord } from '../db/database'
+import { db, isUsableOwnedLure, validateFishCatch, validateCatchResult, validateCatchAction, type CatchRecord } from '../db/database'
 import { snapshotTackle, tackleTables } from './tackleManagement'
 import { fishSnapshot } from './fishSpecies'
 import { resolveCatchLocation, type CatchLocationSelection } from './tripLocations'
@@ -45,6 +45,7 @@ async function catalogNames(variantId: number) {
 
 async function writeCatch(input: CatchInput, selection: LureSelection | undefined, previousFish?: CatchRecord, editing?: CatchRecord): Promise<number> {
   validateCatchResult(input as unknown as Record<string, unknown>)
+  validateCatchAction(input as unknown as Record<string, unknown>)
   if (input.fishSizeCm !== undefined && (!Number.isFinite(input.fishSizeCm) || input.fishSizeCm <= 0)) throw new Error('全長は0より大きい数値（cm）を入力してください。')
   const trip = await db.trips.get(input.tripId)
   if (!trip || (!editing && trip.endedAt)) throw new Error('釣行が存在しないか、終了しています。')
@@ -84,6 +85,10 @@ async function writeCatch(input: CatchInput, selection: LureSelection | undefine
   }
   // 呼び出し側から古いIDが混入しても、選択結果以外のIDを保存しない。
   const record = { ...input } as CatchRecord
+  // Missing input preserves an edited value; legacy absence remains physically absent.
+  const actionLength = input.actionLength ?? editing?.actionLength
+  if (actionLength === undefined) delete record.actionLength
+  else record.actionLength = actionLength
   delete record.id
   delete record.lureId
   delete record.lureVariantId
@@ -98,6 +103,7 @@ async function writeCatch(input: CatchInput, selection: LureSelection | undefine
   if (input.fishSpeciesId !== undefined) delete record.fishSpecies
   const complete = { ...record, ...fish, ...lure, ...place, ...(tackleSnapshot ? { tackleSnapshot } : {}) }
   validateFishCatch(complete as unknown as Record<string, unknown>)
+  validateCatchAction(complete as unknown as Record<string, unknown>)
   if (editing) {
     const patch = { ...complete, lureId: lure.lureId, lureVariantId: lure.lureVariantId,
       fishSpeciesId: input.fishSpeciesId, fishSpecies: fish.fishSpecies, fishSpeciesGroup: fish.fishSpeciesGroup,
@@ -128,7 +134,8 @@ export async function registerSameAsPrevious(tripId: number, caughtAt: Date, loc
     // 第4弾以前の意味が確認できないIDだけの記録は自動コピーしない。
     return writeCatch({ tripId, caughtAt, location, ...result, tackleSetId: previous.tackleSnapshot ? previous.tackleSetId : undefined,
       rangeLevel: previous.rangeLevel, retrieveSpeed: previous.retrieveSpeed,
-      action: previous.action, fishSpecies: previous.fishSpecies, fishSpeciesId: previous.fishSpeciesId }, selection, previous)
+      action: previous.action, ...(previous.actionLength === undefined ? {} : { actionLength: previous.actionLength }),
+      fishSpecies: previous.fishSpecies, fishSpeciesId: previous.fishSpeciesId }, selection, previous)
   })
 }
 

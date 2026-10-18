@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from "vue"
-import { isCatch, countResults, lostDistanceLabels } from "../db/database"
+import { isCatch, countResults, lostDistanceLabels, actionLengthLabel } from "../db/database"
 import TackleSnapshotDetails from './TackleSnapshotDetails.vue'
 import type {
   CatchRecord,
@@ -202,6 +202,10 @@ function fishingStyleName(style: FishingStyle) {
       <span>アクション</span>
       <strong>{{ lastCatch?.action || "未選択" }}</strong>
     </div>
+    <div v-if="lastCatch" class="setting">
+      <span>アクションの長さ</span>
+      <strong>{{ actionLengthLabel(lastCatch.actionLength) }}</strong>
+    </div>
 
     <div class="setting">
       <span>タックル</span>
@@ -238,14 +242,14 @@ function fishingStyleName(style: FishingStyle) {
         <p>{{ record.fishSpecies || '魚種未設定' }}{{ record.fishSpeciesGroup ? `（${record.fishSpeciesGroup}）` : '' }}{{ record.fishSizeCm !== undefined ? ` / ${record.fishSizeCm}cm` : '' }}</p>
         <p v-if="record.locationSnapshot">{{ record.locationSnapshot.facilityName }}{{ record.locationSnapshot.zoneName ? ` / ${record.locationSnapshot.zoneName}` : '' }}</p>
         <p v-if="record.memo">{{ record.memo }}</p>
+        <p class="catch-action">アクション: {{ record.action || '未選択' }} / 長さ: {{ actionLengthLabel(record.actionLength) }}</p>
 
         <small
           v-if="
             record.lureName ||
             record.lureColor ||
             record.rangeLevel ||
-            record.retrieveSpeed ||
-            record.action
+            record.retrieveSpeed
           "
           class="catch-lure"
         >
@@ -260,8 +264,7 @@ function fishingStyleName(style: FishingStyle) {
           <span
             v-if="
               record.rangeLevel ||
-              record.retrieveSpeed ||
-              record.action
+              record.retrieveSpeed
             "
             class="catch-condition"
           >
@@ -273,9 +276,6 @@ function fishingStyleName(style: FishingStyle) {
               ・{{ record.retrieveSpeed }}
             </template>
 
-            <template v-if="record.action">
-              ・{{ record.action }}
-            </template>
           </span>
         </small>
         <TackleSnapshotDetails v-if="record.tackleSnapshot" :snapshot="record.tackleSnapshot" />
