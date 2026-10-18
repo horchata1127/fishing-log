@@ -1,0 +1,771 @@
+{
+  "schemaVersion": 1,
+  "researchDate": "2026-10-18",
+  "approvalStatus": "pending",
+  "distributionEnabled": false,
+  "coordinateSystem": "WGS84",
+  "sourceMasterPath": "src/data/facility-master.v1.json",
+  "sourceMasterSha256": "30514d6674b413a70e9d830b4e5a4230bc83b13feb4e2f876daeadd67d33fb9c",
+  "facilities": [
+    {
+      "facilityId": "official:asakawa-kokusai",
+      "name": "浅川国際鱒釣場",
+      "address": "東京都八王子市裏高尾町1277",
+      "latitude": 35.6399002,
+      "longitude": 139.2451477,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.asakoku-fishing.com/",
+        "https://www.google.com/maps/place/%E6%B5%85%E5%B7%9D%E5%9B%BD%E9%9A%9B%E3%83%9E%E3%82%B9%E9%87%A3%E5%A0%B4/@35.6399002,139.2451477,17z/data=!3m1!4b1!4m6!3m5!1s0x6019197536aeb605:0xe24986116858b1ef!8m2!3d35.6399002!4d139.2451477!16s%2Fg%2F1thw_h52?entry=tts&g_ep=EgoyMDI2MDMxMC4wIPu8ASoASAFQAw%3D%3D&skid=05cb240b-5f08-41f8-af06-78984e65308d",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E6%B5%85%E5%B7%9D%E5%9B%BD%E9%9A%9B%E9%B1%92%E9%87%A3%E5%A0%B4+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%85%AB%E7%8E%8B%E5%AD%90%E5%B8%82%E8%A3%8F%E9%AB%98%E5%B0%BE%E7%94%BA1277"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式短縮リンクの施設ピンと施設名検索の同一featureIdのピンに約64mの差。公式リンク側を採用し、精密な入口位置とは扱わない。"
+    },
+    {
+      "facilityId": "official:akigawa-kokusai",
+      "name": "秋川国際マス釣場",
+      "address": "東京都あきる野市養沢1311",
+      "latitude": 35.7364475,
+      "longitude": 139.1866586,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://akigawagyokyo.or.jp/fish/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E7%A7%8B%E5%B7%9D%E5%9B%BD%E9%9A%9B%E3%83%9E%E3%82%B9%E9%87%A3%E5%A0%B4+%E6%9D%B1%E4%BA%AC%E9%83%BD%E3%81%82%E3%81%8D%E3%82%8B%E9%87%8E%E5%B8%82%E9%A4%8A%E6%B2%A21311"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:tamako-ekimae",
+      "name": "多摩湖駅前フィッシングエリア",
+      "address": "埼玉県所沢市山口2964",
+      "latitude": null,
+      "longitude": null,
+      "pointType": null,
+      "verificationStatus": "conflicting_sources",
+      "sourceUrls": [
+        "https://www.s-fishingarea.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E5%A4%9A%E6%91%A9%E6%B9%96%E9%A7%85%E5%89%8D%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E5%9F%BC%E7%8E%89%E7%9C%8C%E6%89%80%E6%B2%A2%E5%B8%82%E5%B1%B1%E5%8F%A32964"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式JSON-LDは35.76794682781842,139.44487521413126、公式埋込地図の施設ピンは35.7689977,139.4439257。約145m離れ、地点の意味を確定できない。"
+    },
+    {
+      "facilityId": "official:fishing-stage-sainokuni",
+      "name": "フィッシングステージ彩の国",
+      "address": "埼玉県比企郡川島町上八ツ林53-1",
+      "latitude": 35.9970291,
+      "longitude": 139.4651528,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://fs-sainokuni.jp/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E5%BD%A9%E3%81%AE%E5%9B%BD+%E5%9F%BC%E7%8E%89%E7%9C%8C%E6%AF%94%E4%BC%81%E9%83%A1%E5%B7%9D%E5%B3%B6%E7%94%BA%E4%B8%8A%E5%85%AB%E3%83%84%E6%9E%9753-1"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式短縮リンクは番地ピン。施設名・同番地の施設POIを照合し、施設POIを候補にした。"
+    },
+    {
+      "facilityId": "official:river-spot-hayato",
+      "name": "リヴァスポット早戸",
+      "address": "神奈川県相模原市緑区鳥屋3627",
+      "latitude": 35.5211251,
+      "longitude": 139.1950259,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.hayatogawa.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%83%AA%E3%83%B4%E3%82%A1%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%E6%97%A9%E6%88%B8+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E7%9B%B8%E6%A8%A1%E5%8E%9F%E5%B8%82%E7%B7%91%E5%8C%BA%E9%B3%A5%E5%B1%8B3627"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:uratanzawa",
+      "name": "うらたんざわ渓流釣場",
+      "address": "神奈川県相模原市緑区青根3769-1",
+      "latitude": 35.5203793,
+      "longitude": 139.0988615,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://uratanzawa.com/access/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%81%86%E3%82%89%E3%81%9F%E3%82%93%E3%81%96%E3%82%8F%E6%B8%93%E6%B5%81%E9%87%A3%E5%A0%B4+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E7%9B%B8%E6%A8%A1%E5%8E%9F%E5%B8%82%E7%B7%91%E5%8C%BA%E9%9D%92%E6%A0%B93769-1"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:narago-fishing-center",
+      "name": "奈良子釣りセンター",
+      "address": "山梨県大月市七保町奈良子10",
+      "latitude": 35.6608646,
+      "longitude": 138.9493978,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.narago.jp/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E5%A5%88%E8%89%AF%E5%AD%90%E9%87%A3%E3%82%8A%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC+%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%A4%A7%E6%9C%88%E5%B8%82%E4%B8%83%E4%BF%9D%E7%94%BA%E5%A5%88%E8%89%AF%E5%AD%9010"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:nihon-iwana-center",
+      "name": "日本イワナセンター",
+      "address": "群馬県沼田市利根町根利1994",
+      "latitude": 36.6107647,
+      "longitude": 139.1938799,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "http://www7.wind.ne.jp/okutone/center/",
+        "https://www.japan47go.travel/ja/detail/a14dabf8-4544-4efc-bd97-2c1882a69203",
+        "https://www.dan-b.com/shops/map/fi_nihoniwana/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E6%97%A5%E6%9C%AC%E3%82%A4%E3%83%AF%E3%83%8A%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC+%E7%BE%A4%E9%A6%AC%E7%9C%8C%E6%B2%BC%E7%94%B0%E5%B8%82%E5%88%A9%E6%A0%B9%E7%94%BA%E6%A0%B9%E5%88%A91994"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式住所・施設名を日本観光振興協会JAPAN 47 GOの構造化座標と照合。だんべー地図36.611000,139.194042および地図POI36.610988,139.194015は約29m以内。住所検索の根利代表点は7245m離れ不採用。受付・駐車場入口は未確認。"
+    },
+    {
+      "facilityId": "official:akaguna",
+      "name": "赤久縄",
+      "address": "群馬県藤岡市上日野2-27",
+      "latitude": 36.1665218,
+      "longitude": 138.8634366,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.akaguna.net/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E8%B5%A4%E4%B9%85%E7%B8%84+%E7%BE%A4%E9%A6%AC%E7%9C%8C%E8%97%A4%E5%B2%A1%E5%B8%82%E4%B8%8A%E6%97%A5%E9%87%8E2-27"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式サイトbusinessLocationCoordinatesと施設POIは約53mの差。施設名・番地一致のPOIを施設代表点として採用。"
+    },
+    {
+      "facilityId": "official:kaisei-forest-springs",
+      "name": "開成水辺フォレストスプリングス",
+      "address": "神奈川県足柄上郡開成町吉田島3338",
+      "latitude": 35.3379133,
+      "longitude": 139.1319937,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://kaisei.forest-springs.com/accsess.html",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E9%96%8B%E6%88%90%E6%B0%B4%E8%BE%BA%E3%83%95%E3%82%A9%E3%83%AC%E3%82%B9%E3%83%88%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B9+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%B6%B3%E6%9F%84%E4%B8%8A%E9%83%A1%E9%96%8B%E6%88%90%E7%94%BA%E5%90%89%E7%94%B0%E5%B3%B63338"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:nasu-shirakawa-forest-springs",
+      "name": "那須白河フォレストスプリングス",
+      "address": "福島県西白河郡西郷村小田倉字金子石16",
+      "latitude": 37.1039091,
+      "longitude": 140.1305022,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://shirakawa.forest-springs.com/accsess.html",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E9%82%A3%E9%A0%88%E7%99%BD%E6%B2%B3%E3%83%95%E3%82%A9%E3%83%AC%E3%82%B9%E3%83%88%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B9+%E7%A6%8F%E5%B3%B6%E7%9C%8C%E8%A5%BF%E7%99%BD%E6%B2%B3%E9%83%A1%E8%A5%BF%E9%83%B7%E6%9D%91%E5%B0%8F%E7%94%B0%E5%80%89%E5%AD%97%E9%87%91%E5%AD%90%E7%9F%B316"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式アクセス地図は敷地内FSカフェのピン。カフェ点を施設中心へ転用せず、住所・施設名が一致する施設POIを候補にした。"
+    },
+    {
+      "facilityId": "official:zao-forest-springs",
+      "name": "蔵王フォレストスプリングス",
+      "address": "宮城県刈田郡蔵王町遠刈田温泉字七日原1-121",
+      "latitude": 38.122964,
+      "longitude": 140.564626,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://zao.forest-springs.com/accsess.html",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E8%94%B5%E7%8E%8B%E3%83%95%E3%82%A9%E3%83%AC%E3%82%B9%E3%83%88%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B9+%E5%AE%AE%E5%9F%8E%E7%9C%8C%E5%88%88%E7%94%B0%E9%83%A1%E8%94%B5%E7%8E%8B%E7%94%BA%E9%81%A0%E5%88%88%E7%94%B0%E6%B8%A9%E6%B3%89%E5%AD%97%E4%B8%83%E6%97%A5%E5%8E%9F1-121"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:kosuge-trout-garden",
+      "name": "小菅トラウトガーデン",
+      "address": "山梨県北都留郡小菅村田元4103",
+      "latitude": 35.7572263,
+      "longitude": 138.9513908,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "http://kosuge-tg.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E5%B0%8F%E8%8F%85%E3%83%88%E3%83%A9%E3%82%A6%E3%83%88%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3+%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8C%97%E9%83%BD%E7%95%99%E9%83%A1%E5%B0%8F%E8%8F%85%E6%9D%91%E7%94%B0%E5%85%834103"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:susono-fishing-park",
+      "name": "すそのフィッシングパーク",
+      "address": "静岡県裾野市富沢589-1",
+      "latitude": 35.16375,
+      "longitude": 138.893772,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.susono-f-park.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%81%99%E3%81%9D%E3%81%AE%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%91%E3%83%BC%E3%82%AF+%E9%9D%99%E5%B2%A1%E7%9C%8C%E8%A3%BE%E9%87%8E%E5%B8%82%E5%AF%8C%E6%B2%A2589-1",
+        "http://www.susono-f-park.com/"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:higashiyamako",
+      "name": "東山湖フィッシングエリア",
+      "address": "静岡県御殿場市東山1077",
+      "latitude": 35.2912367,
+      "longitude": 138.9567314,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.higashiyamako.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E6%9D%B1%E5%B1%B1%E6%B9%96%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E9%9D%99%E5%B2%A1%E7%9C%8C%E5%BE%A1%E6%AE%BF%E5%A0%B4%E5%B8%82%E6%9D%B1%E5%B1%B11077"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:nireike-hakuba",
+      "name": "白馬八方ニレ池フィッシングセンター",
+      "address": "長野県北安曇郡白馬村北城9338-13",
+      "latitude": 36.7067947,
+      "longitude": 137.8430938,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.nireike.com/",
+        "https://www.google.com/maps/place/%E7%99%BD%E9%A6%AC%E5%85%AB%E6%96%B9%E3%83%8B%E3%83%AC%E6%B1%A0%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/@36.7067947,137.8430938,15z/data=!4m6!3m5!1s0x5ff7cde6b1ece9cf:0xd9c50fca054a7cf0!8m2!3d36.7067947!4d137.8430938!16s%2Fg%2F1tt1sk04?sa=X&ved=2ahUKEwj18v-L6oOAAxVIqFYBHc55AlYQ_BJ6BAglEAA&ved=2ahUKEwj18v-L6oOAAxVIqFYBHc55AlYQ_BJ6BAg3EAg&entry=tts&shorturl=1",
+        "https://www.nireike.com/nireikemap.htm",
+        "https://www.nireike.com/map.jpg",
+        "https://www.go-nagano.net/nature-and-outdoors/themelist/detail/id21207",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E7%99%BD%E9%A6%AC%E5%85%AB%E6%96%B9%E3%83%8B%E3%83%AC%E6%B1%A0%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC+%E9%95%B7%E9%87%8E%E7%9C%8C%E5%8C%97%E5%AE%89%E6%9B%87%E9%83%A1%E7%99%BD%E9%A6%AC%E6%9D%91%E5%8C%97%E5%9F%8E9338-13"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式住所・案内図map.jpgと長野県公式観光サイトの同施設欄のGoogle Mapsリンクを照合。施設名検索の同一featureId・座標とも一致。公式旧MapFanリンクの測地系は確定せず換算・採用しない。入口位置は未確認。"
+    },
+    {
+      "facilityId": "official:arcus-pond-utsunomiya",
+      "name": "アルクスポンド宇都宮",
+      "address": "栃木県宇都宮市柳田町253",
+      "latitude": 36.5542027,
+      "longitude": 139.9542258,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.arcus-pond.com/wp/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%82%A2%E3%83%AB%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%B3%E3%83%89%E5%AE%87%E9%83%BD%E5%AE%AE+%E6%A0%83%E6%9C%A8%E7%9C%8C%E5%AE%87%E9%83%BD%E5%AE%AE%E5%B8%82%E6%9F%B3%E7%94%B0%E7%94%BA253"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:anglers-park-kingfisher",
+      "name": "アングラーズパーク キングフィッシャー",
+      "address": "栃木県大田原市乙連沢593",
+      "latitude": 36.9123902,
+      "longitude": 140.0722755,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://kingfisher-tochigi.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%82%A2%E3%83%B3%E3%82%B0%E3%83%A9%E3%83%BC%E3%82%BA%E3%83%91%E3%83%BC%E3%82%AF+%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC+%E6%A0%83%E6%9C%A8%E7%9C%8C%E5%A4%A7%E7%94%B0%E5%8E%9F%E5%B8%82%E4%B9%99%E9%80%A3%E6%B2%A2593"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:berrypark-ouzenji",
+      "name": "ベリーパーク in フィッシュオン！王禅寺",
+      "address": "神奈川県川崎市麻生区王禅寺1227-2",
+      "latitude": 35.5906992,
+      "longitude": 139.5229674,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.fishon-oz.jp/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%83%99%E3%83%AA%E3%83%BC%E3%83%91%E3%83%BC%E3%82%AF+in+%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%AA%E3%83%B3%EF%BC%81%E7%8E%8B%E7%A6%85%E5%AF%BA+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%B7%9D%E5%B4%8E%E5%B8%82%E9%BA%BB%E7%94%9F%E5%8C%BA%E7%8E%8B%E7%A6%85%E5%AF%BA1227-2"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:asaka-garden",
+      "name": "朝霞ガーデン",
+      "address": "埼玉県朝霞市田島2-8-1",
+      "latitude": 35.8172644,
+      "longitude": 139.6083629,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.a-garden.com/top.html",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E6%9C%9D%E9%9C%9E%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3+%E5%9F%BC%E7%8E%89%E7%9C%8C%E6%9C%9D%E9%9C%9E%E5%B8%82%E7%94%B0%E5%B3%B62-8-1",
+        "http://www.a-garden.com/top.html"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:kaga-fishing-area",
+      "name": "加賀フィッシングエリア",
+      "address": "栃木県佐野市山形町48",
+      "latitude": 36.374561,
+      "longitude": 139.546799,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://kaga-fishingarea.jp/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E5%8A%A0%E8%B3%80%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E6%A0%83%E6%9C%A8%E7%9C%8C%E4%BD%90%E9%87%8E%E5%B8%82%E5%B1%B1%E5%BD%A2%E7%94%BA48"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:kawaba-fishing-plaza",
+      "name": "川場フィッシングプラザ",
+      "address": "群馬県利根郡川場村大字荻室63",
+      "latitude": 36.6920721,
+      "longitude": 139.1076981,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.kawaba-fp.jp/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E5%B7%9D%E5%A0%B4%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%97%E3%83%A9%E3%82%B6+%E7%BE%A4%E9%A6%AC%E7%9C%8C%E5%88%A9%E6%A0%B9%E9%83%A1%E5%B7%9D%E5%A0%B4%E6%9D%91%E5%A4%A7%E5%AD%97%E8%8D%BB%E5%AE%A463"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "正式マスター・公式サイトは「荻室」、地図は「萩室」の表記。公式短縮リンクの施設ピンと施設名検索は同じ地点。住所表記の修正は別途承認が必要。"
+    },
+    {
+      "facilityId": "official:fishon-shishidome",
+      "name": "BerryPark in FISH ON！鹿留",
+      "address": "山梨県都留市鹿留1543",
+      "latitude": 35.5077572,
+      "longitude": 138.8912072,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.sisidome.jp/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=BerryPark+in+FISH+ON%EF%BC%81%E9%B9%BF%E7%95%99+%E5%B1%B1%E6%A2%A8%E7%9C%8C%E9%83%BD%E7%95%99%E5%B8%82%E9%B9%BF%E7%95%991543"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:walton-garden",
+      "name": "ウォルトンガーデン",
+      "address": "千葉県成田市竜台96",
+      "latitude": 35.8600308,
+      "longitude": 140.28463,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.waltongarden.net/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%82%A6%E3%82%A9%E3%83%AB%E3%83%88%E3%83%B3%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3+%E5%8D%83%E8%91%89%E7%9C%8C%E6%88%90%E7%94%B0%E5%B8%82%E7%AB%9C%E5%8F%B096"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:hamanako-fishing-resort",
+      "name": "浜名湖フィッシングリゾート",
+      "address": "静岡県浜松市中央区雄踏町山崎4198-36",
+      "latitude": 34.708707,
+      "longitude": 137.6155897,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.hamanako-fr.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E6%B5%9C%E5%90%8D%E6%B9%96%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%9B%84%E8%B8%8F%E7%94%BA%E5%B1%B1%E5%B4%8E4198-36"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:kosuge-fishing-village",
+      "name": "小菅フィッシングヴィレッジ",
+      "address": "山梨県北都留郡小菅村4383",
+      "latitude": 35.7591825,
+      "longitude": 138.9459936,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.fishingvillage.jp/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E5%B0%8F%E8%8F%85%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%B4%E3%82%A3%E3%83%AC%E3%83%83%E3%82%B8+%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8C%97%E9%83%BD%E7%95%99%E9%83%A1%E5%B0%8F%E8%8F%85%E6%9D%914383"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:narayamanuma",
+      "name": "なら山沼漁場",
+      "address": "栃木県小山市飯塚1467",
+      "latitude": 36.377125,
+      "longitude": 139.797048,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://shimotsuga-fc.org/narayamanuma.html",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%81%AA%E3%82%89%E5%B1%B1%E6%B2%BC%E6%BC%81%E5%A0%B4+%E6%A0%83%E6%9C%A8%E7%9C%8C%E5%B0%8F%E5%B1%B1%E5%B8%82%E9%A3%AF%E5%A1%9A1467"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:ooashigawa-fc",
+      "name": "大芦川F&Cフィールドビレッジ",
+      "address": "栃木県鹿沼市下沢1037",
+      "latitude": 36.592211,
+      "longitude": 139.6949,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "http://park10.wakwak.com/~field-village",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E5%A4%A7%E8%8A%A6%E5%B7%9DF%26C%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E3%83%93%E3%83%AC%E3%83%83%E3%82%B8+%E6%A0%83%E6%9C%A8%E7%9C%8C%E9%B9%BF%E6%B2%BC%E5%B8%82%E4%B8%8B%E6%B2%A21037"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式サイトはフレーム構成。施設名と正式マスター番地が一致する地図POIを候補にした。今回の公式本文では番地の再確認はできていない。"
+    },
+    {
+      "facilityId": "official:mid-creek",
+      "name": "ミッドクリークフィッシングエリア",
+      "address": "茨城県石岡市菖蒲沢80",
+      "latitude": 36.1883736,
+      "longitude": 140.1575165,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://midcreek.jp/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%83%9F%E3%83%83%E3%83%89%E3%82%AF%E3%83%AA%E3%83%BC%E3%82%AF%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E8%8C%A8%E5%9F%8E%E7%9C%8C%E7%9F%B3%E5%B2%A1%E5%B8%82%E8%8F%96%E8%92%B2%E6%B2%A280"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:fishing-area-honobono",
+      "name": "フィッシングエリアほのぼの",
+      "address": "福島県東白川郡矢祭町下関河内字岩落7-1",
+      "latitude": 36.820245,
+      "longitude": 140.458102,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://sites.google.com/view/fa-honobono",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2%E3%81%BB%E3%81%AE%E3%81%BC%E3%81%AE+%E7%A6%8F%E5%B3%B6%E7%9C%8C%E6%9D%B1%E7%99%BD%E5%B7%9D%E9%83%A1%E7%9F%A2%E7%A5%AD%E7%94%BA%E4%B8%8B%E9%96%A2%E6%B2%B3%E5%86%85%E5%AD%97%E5%B2%A9%E8%90%BD7-1"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式q指定ピンを採用。施設POIと約4mの差。地図住所は下関河内表木上台で、公式の字岩落7-1とは字の表記が異なる。"
+    },
+    {
+      "facilityId": "official:waterpark-nagatoro",
+      "name": "ウォーターパーク長瀞 フィッシングエリア",
+      "address": "埼玉県秩父郡皆野町金崎1918-1",
+      "latitude": 36.081191,
+      "longitude": 139.106555,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://waterpark.jp/fishing/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%91%E3%83%BC%E3%82%AF%E9%95%B7%E7%80%9E+%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E5%9F%BC%E7%8E%89%E7%9C%8C%E7%A7%A9%E7%88%B6%E9%83%A1%E7%9A%86%E9%87%8E%E7%94%BA%E9%87%91%E5%B4%8E1918-1"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:ashigara-casting-area",
+      "name": "足柄キャスティングエリア",
+      "address": "神奈川県南足柄市矢倉沢1682",
+      "latitude": 35.3232522,
+      "longitude": 139.0526914,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "http://www.ashigara-ca.com/aca/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E8%B6%B3%E6%9F%84%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%8D%97%E8%B6%B3%E6%9F%84%E5%B8%82%E7%9F%A2%E5%80%89%E6%B2%A21682"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:fishing-field-nakatsugawa",
+      "name": "Fishing Field 中津川",
+      "address": "神奈川県愛甲郡愛川町田代2411-1",
+      "latitude": 35.5247402,
+      "longitude": 139.2831648,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.nakatugawa-gyokyou.jp/ffnakatugawa.html",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=Fishing+Field+%E4%B8%AD%E6%B4%A5%E5%B7%9D+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%84%9B%E7%94%B2%E9%83%A1%E6%84%9B%E5%B7%9D%E7%94%BA%E7%94%B0%E4%BB%A32411-1"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:308club",
+      "name": "308Club",
+      "address": "栃木県矢板市長井2152-2",
+      "latitude": 36.8373409,
+      "longitude": 139.8813701,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://408club.com/308/index.html",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=308Club+%E6%A0%83%E6%9C%A8%E7%9C%8C%E7%9F%A2%E6%9D%BF%E5%B8%82%E9%95%B7%E4%BA%952152-2"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:midori-fishing-area",
+      "name": "みどりフィッシングエリア",
+      "address": "栃木県大田原市実取206",
+      "latitude": 36.833852,
+      "longitude": 140.0056639,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://ms3103.blog.fc2.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%81%BF%E3%81%A9%E3%82%8A%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E6%A0%83%E6%9C%A8%E7%9C%8C%E5%A4%A7%E7%94%B0%E5%8E%9F%E5%B8%82%E5%AE%9F%E5%8F%96206"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:408club",
+      "name": "408CLUB",
+      "address": "栃木県塩谷郡塩谷町原荻野目582",
+      "latitude": 36.7625499,
+      "longitude": 139.8682257,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://408club.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=408CLUB+%E6%A0%83%E6%9C%A8%E7%9C%8C%E5%A1%A9%E8%B0%B7%E9%83%A1%E5%A1%A9%E8%B0%B7%E7%94%BA%E5%8E%9F%E8%8D%BB%E9%87%8E%E7%9B%AE582"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式地図は緯度経度指定の独自ピン、施設POIと約64mの差。施設名と番地が一致するPOIを候補にした。入口の精度は未確認。"
+    },
+    {
+      "facilityId": "official:okutone-fishing-park",
+      "name": "おくとねフィッシングパーク",
+      "address": "群馬県沼田市白沢町生枝857",
+      "latitude": 36.666315,
+      "longitude": 139.153864,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "http://www7.wind.ne.jp/okutone/index_o.htm",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%81%8A%E3%81%8F%E3%81%A8%E3%81%AD%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%91%E3%83%BC%E3%82%AF+%E7%BE%A4%E9%A6%AC%E7%9C%8C%E6%B2%BC%E7%94%B0%E5%B8%82%E7%99%BD%E6%B2%A2%E7%94%BA%E7%94%9F%E6%9E%9D857"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:kashimayari-garden",
+      "name": "フィッシングランド鹿島槍ガーデン",
+      "address": "長野県大町市平8589",
+      "latitude": 36.5832507,
+      "longitude": 137.8039635,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://kashimayari-garden.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E9%B9%BF%E5%B3%B6%E6%A7%8D%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3+%E9%95%B7%E9%87%8E%E7%9C%8C%E5%A4%A7%E7%94%BA%E5%B8%82%E5%B9%B38589"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:hirayako-fishing-spot",
+      "name": "平谷湖フィッシングスポット",
+      "address": "長野県下伊那郡平谷村354",
+      "latitude": null,
+      "longitude": null,
+      "pointType": null,
+      "verificationStatus": "conflicting_sources",
+      "sourceUrls": [
+        "https://hirayako.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E5%B9%B3%E8%B0%B7%E6%B9%96%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88+%E9%95%B7%E9%87%8E%E7%9C%8C%E4%B8%8B%E4%BC%8A%E9%82%A3%E9%83%A1%E5%B9%B3%E8%B0%B7%E6%9D%91354"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "正式マスター住所は平谷村354、公式問い合わせページの釣場住所は平谷村737-181（スキー場1511と区別）。住所解決前の座標採用を保留。"
+    },
+    {
+      "facilityId": "official:oshino-fishing-area",
+      "name": "忍野フィッシングエリア",
+      "address": "山梨県南都留郡忍野村忍草1660-80",
+      "latitude": 35.4607158,
+      "longitude": 138.850371,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://www.mfi.or.jp/~bass/oshino.html",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E5%BF%8D%E9%87%8E%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E5%BF%8D%E9%87%8E%E6%9D%91%E5%BF%8D%E8%8D%891660-80"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:ryugaike-fishing-park",
+      "name": "フィッシングパーク竜華池",
+      "address": "山梨県甲府市古府中町3294",
+      "latitude": 35.6879679,
+      "longitude": 138.5810645,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://fishingmarketbear.wixsite.com/ryugaike",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%91%E3%83%BC%E3%82%AF%E7%AB%9C%E8%8F%AF%E6%B1%A0+%E5%B1%B1%E6%A2%A8%E7%9C%8C%E7%94%B2%E5%BA%9C%E5%B8%82%E5%8F%A4%E5%BA%9C%E4%B8%AD%E7%94%BA3294"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:herb-no-sato-fishing",
+      "name": "ハーブの里フィッシングエリア",
+      "address": "長野県北安曇郡池田町会染9857",
+      "latitude": null,
+      "longitude": null,
+      "pointType": null,
+      "verificationStatus": "unconfirmed",
+      "sourceUrls": [
+        "http://www13.plala.or.jp/herb-fa/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%83%8F%E3%83%BC%E3%83%96%E3%81%AE%E9%87%8C%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E9%95%B7%E9%87%8E%E7%9C%8C%E5%8C%97%E5%AE%89%E6%9B%87%E9%83%A1%E6%B1%A0%E7%94%B0%E7%94%BA%E4%BC%9A%E6%9F%939857"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "正式マスターの公式サイトはHTTP/HTTPSとも取得タイムアウト。地図POIは得られたが公式との位置照合が未了。"
+    },
+    {
+      "facilityId": "official:azumino-fishing-center",
+      "name": "あづみ野フィッシングセンター",
+      "address": "長野県安曇野市穂高3581-1",
+      "latitude": 36.3370859,
+      "longitude": 137.9056672,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "http://azuminofishing.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%81%82%E3%81%A5%E3%81%BF%E9%87%8E%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC+%E9%95%B7%E9%87%8E%E7%9C%8C%E5%AE%89%E6%9B%87%E9%87%8E%E5%B8%82%E7%A9%82%E9%AB%983581-1"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式地図は穂高3581の住所ピン。枝番3581-1と施設名が一致する施設POIを候補にした。"
+    },
+    {
+      "facilityId": "official:trapon-kaida",
+      "name": "トラポン開田高原",
+      "address": "長野県木曽郡木曽町開田高原西野5227-618",
+      "latitude": null,
+      "longitude": null,
+      "pointType": null,
+      "verificationStatus": "unconfirmed",
+      "sourceUrls": [
+        "https://troutcampthoreau.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%83%88%E3%83%A9%E3%83%9D%E3%83%B3%E9%96%8B%E7%94%B0%E9%AB%98%E5%8E%9F+%E9%95%B7%E9%87%8E%E7%9C%8C%E6%9C%A8%E6%9B%BD%E9%83%A1%E6%9C%A8%E6%9B%BD%E7%94%BA%E9%96%8B%E7%94%B0%E9%AB%98%E5%8E%9F%E8%A5%BF%E9%87%8E5227-618"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "正式マスターの公式URLは現在トラウトキャンプソローのページ。トラポン開田高原との関係・所在地を今回取得した本文で再確認できず、地図POIのみでは採用しない。"
+    },
+    {
+      "facilityId": "official:shirakobato-pool",
+      "name": "しらこばと水上公園 プールフィッシング",
+      "address": "埼玉県越谷市小曽川985",
+      "latitude": 35.911373,
+      "longitude": 139.747578,
+      "pointType": "park_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://parks.or.jp/shirakobatosuijo/guide/003/003811.html",
+        "https://parks.or.jp/shirakobatosuijo/guide/006/006639.html",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%81%97%E3%82%89%E3%81%93%E3%81%B0%E3%81%A8%E6%B0%B4%E4%B8%8A%E5%85%AC%E5%9C%92+%E3%83%97%E3%83%BC%E3%83%AB%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0+%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%B6%8A%E8%B0%B7%E5%B8%82%E5%B0%8F%E6%9B%BD%E5%B7%9D985"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公園運営者の案内地図の座標指定。公園代表点として記録し、プール釣場・受付・駐車場入口を意味しない。公園POIとは約60mの差。"
+    },
+    {
+      "facilityId": "official:kazo-hanasaki-pool",
+      "name": "加須はなさき水上公園 プールフィッシング",
+      "address": "埼玉県加須市水深1722",
+      "latitude": null,
+      "longitude": null,
+      "pointType": null,
+      "verificationStatus": "conflicting_sources",
+      "sourceUrls": [
+        "https://www.parks.or.jp/kazohanasaki/guide/000/000031.html/1000",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E5%8A%A0%E9%A0%88%E3%81%AF%E3%81%AA%E3%81%95%E3%81%8D%E6%B0%B4%E4%B8%8A%E5%85%AC%E5%9C%92+%E3%83%97%E3%83%BC%E3%83%AB%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0+%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%8A%A0%E9%A0%88%E5%B8%82%E6%B0%B4%E6%B7%B11722"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式アクセス地図のq=locは36.101433,139.630700、地図の公園POIは36.1014335,139.6328889。約197mの差。プール釣場・入口との対応未確認。"
+    },
+    {
+      "facilityId": "official:ygl-sport-fishing",
+      "name": "丹沢ヤドリキY.G.L.スポーツフィッシングエリア",
+      "address": "神奈川県足柄上郡松田町寄5573",
+      "latitude": null,
+      "longitude": null,
+      "pointType": null,
+      "verificationStatus": "unconfirmed",
+      "sourceUrls": [
+        "https://ygl.jp/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E4%B8%B9%E6%B2%A2%E3%83%A4%E3%83%89%E3%83%AA%E3%82%ADY.G.L.%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%B6%B3%E6%9F%84%E4%B8%8A%E9%83%A1%E6%9D%BE%E7%94%B0%E7%94%BA%E5%AF%845573"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式埋込地図の返答に施設ピンがなく、施設名検索はPOINT#1というPOI。公式案内との同一性・地点の意味を確定できない。"
+    },
+    {
+      "facilityId": "official:shylph-hakushu",
+      "name": "白州トラウトフィッシングエリア シルフ",
+      "address": "山梨県北杜市白州町大坊1194-1",
+      "latitude": 35.7671405,
+      "longitude": 138.3132999,
+      "pointType": "facility_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://ameblo.jp/shylph114/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E7%99%BD%E5%B7%9E%E3%83%88%E3%83%A9%E3%82%A6%E3%83%88%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E3%82%B7%E3%83%AB%E3%83%95+%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8C%97%E6%9D%9C%E5%B8%82%E7%99%BD%E5%B7%9E%E7%94%BA%E5%A4%A7%E5%9D%8A1194-1"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式案内の施設名・所在地と地図の施設POIを照合。現地測量・入口位置の確認は未実施。"
+    },
+    {
+      "facilityId": "official:westriver-auto-camp",
+      "name": "ウエストリバーオートキャンプ場 管理釣り場",
+      "address": "山梨県南アルプス市須沢131",
+      "latitude": 35.652797,
+      "longitude": 138.40589,
+      "pointType": "campground_representative",
+      "verificationStatus": "source_cross_checked",
+      "sourceUrls": [
+        "https://westriver-camp.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%82%A6%E3%82%A8%E3%82%B9%E3%83%88%E3%83%AA%E3%83%90%E3%83%BC%E3%82%AA%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4+%E7%AE%A1%E7%90%86%E9%87%A3%E3%82%8A%E5%A0%B4+%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E3%82%A2%E3%83%AB%E3%83%97%E3%82%B9%E5%B8%82%E9%A0%88%E6%B2%A2131"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "公式埋込地図と地図検索のキャンプ場POIが一致。キャンプ場全体の代表点で、管理釣り場や駐車場入口の個別位置ではない。住所の須沢/須澤は表記差。"
+    },
+    {
+      "facilityId": "official:hokkoji-no-mori",
+      "name": "アウトドアヴィレッジ発光路の森フィッシングエリア",
+      "address": "栃木県鹿沼市上粕尾762-4",
+      "latitude": null,
+      "longitude": null,
+      "pointType": null,
+      "verificationStatus": "conflicting_sources",
+      "sourceUrls": [
+        "https://ov-hokkojinomori-fa.jimdosite.com/",
+        "https://maps.google.com/maps?output=embed&hl=ja&q=%E3%82%A2%E3%82%A6%E3%83%88%E3%83%89%E3%82%A2%E3%83%B4%E3%82%A3%E3%83%AC%E3%83%83%E3%82%B8%E7%99%BA%E5%85%89%E8%B7%AF%E3%81%AE%E6%A3%AE%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%AA%E3%82%A2+%E6%A0%83%E6%9C%A8%E7%9C%8C%E9%B9%BF%E6%B2%BC%E5%B8%82%E4%B8%8A%E7%B2%95%E5%B0%BE762-4"
+      ],
+      "checkedOn": "2026-10-18",
+      "notes": "正式マスター住所は上粕尾762-4、施設名検索の地図POIは上粕尾900。公式ページで番地の裏付けを得られず、同一地点と断定しない。"
+    }
+  ]
+}
