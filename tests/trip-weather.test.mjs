@@ -9,7 +9,7 @@ import { createHash } from 'node:crypto'
 import ts from 'typescript'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-weather-'))
-const names = { database: 'db/database', facilityMaster: 'utils/facilityMaster', facilityStorage: 'utils/facilityStorage', backup: 'utils/backup', weather: 'utils/tripWeather', deletion: 'utils/tripDeletion' }
+const names = { database: 'db/database', facilityMaster: 'utils/facilityMaster', facilityStorage: 'utils/facilityStorage', backup: 'utils/backup', weather: 'utils/tripWeather', deletion: 'utils/tripDeletion', reuse: 'utils/weatherLocationReuse' }
 const paths = Object.fromEntries(Object.keys(names).map(n => [n, join(directory, `${n}.mjs`)]))
 const compile = code => ts.transpileModule(code, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText
 const databaseSource = await readFile(new URL('../src/db/database.ts', import.meta.url), 'utf8')
@@ -23,6 +23,7 @@ const { fetchTripWeather, saveWeatherLocation, readTripWeather, parseWeatherResp
 const { applyFacilityMaster } = await import(pathToFileURL(paths.facilityStorage).href)
 const { createBackup, importBackup, validateBackup } = await import(pathToFileURL(paths.backup).href)
 const { getTripDeletionSummary, deleteFishingTrip } = await import(pathToFileURL(paths.deletion).href)
+const { findReusableWeatherLocations, reuseWeatherLocation } = await import(pathToFileURL(paths.reuse).href)
 const rawBytes = await readFile(new URL('./fixtures/rc25-iwana-2026-10-17.open-meteo.json', import.meta.url))
 const actual = JSON.parse(rawBytes), copy = value => JSON.parse(JSON.stringify(value))
 const provenance = JSON.parse(await readFile(new URL('./fixtures/rc25-iwana-2026-10-17.provenance.json', import.meta.url), 'utf8'))
@@ -180,4 +181,48 @@ test('v7 to v8 migration is additive and preserves all 16 populated legacy table
     for (const [name, rows] of Object.entries(before)) assert.deepEqual(copy(await upgraded.table(name).toArray()), rows)
     for (const name of weatherTableNames) assert.equal(await upgraded.table(name).count(), 0)
   } finally { upgraded.close() }
+})
+
+// PR3: run against the same isolated v8 DB and full v7 backup coverage as PR2.
+async function reuseTarget(id = 2, facilityId = 'official:nihon-iwana-center') {
+  await db.trips.put({ ...(await db.trips.get(1)), id, facilityId, startedAt: new Date('2026-10-18T00:00:00Z'), endedAt: new Date('2026-10-18T06:00:00Z') })
+}
+test('PR3 manual candidates require earlier identical facility IDs, never name matching, and discovery changes no table', async () => {
+  await acquire(); await reuseTarget(); await reuseTarget(3, 'user:weather'); await reuseTarget(4, undefined)
+  await db.trips.update(4, { facilityId: undefined })
+  const full = () => Promise.all(db.tables.map(t => t.toArray())).then(copy)
+  const before = await full(), candidates = await findReusableWeatherLocations(2)
+  assert.equal(candidates.length, 1); assert.equal(candidates[0].sourceTripId, 1)
+  assert.deepEqual(await findReusableWeatherLocations(3), []); assert.deepEqual(await findReusableWeatherLocations(4), [])
+  await db.trips.update(2, { startedAt: new Date('2026-10-15T00:00:00Z') })
+  assert.deepEqual(await findReusableWeatherLocations(2), [])
+  await db.trips.update(2, { startedAt: new Date('2026-10-18T00:00:00Z') })
+  assert.deepEqual(await full(), before)
+})
+test('PR3 explicit reuse writes only target location; keeps all original records and full v7 backup round trip', async () => {
+  await acquire(); await reuseTarget()
+  const before = await snapshot(), weather = await readTripWeather(1)
+  const [candidate] = await findReusableWeatherLocations(2)
+  await reuseWeatherLocation(2, candidate)
+  assert.equal((await db.tripWeatherLocations.get(2)).latitude, candidate.latitude)
+  assert.deepEqual(await readTripWeather(1), weather); assert.deepEqual(await snapshot(), before)
+  assert.deepEqual(await findReusableWeatherLocations(2), [])
+  await assert.rejects(reuseWeatherLocation(2, candidate))
+  const exported = await createBackup(); assert.equal(exported.version, 7); assert.equal(Object.keys(exported.data).length, 19)
+  const tables = copy(await Promise.all(db.tables.map(t => t.toArray())))
+  await importBackup({ text: async () => JSON.stringify(exported) }); assert.deepEqual(copy(await Promise.all(db.tables.map(t => t.toArray()))), tables)
+  assert.equal(db.verno, 8)
+})
+test('PR3 multiple points remain distinct; identical points grouped; stale source cannot overwrite target', async () => {
+  await saveWeatherLocation(1, 36.611, 139.194); await reuseTarget(2); await reuseTarget(3)
+  await db.trips.update(3, { startedAt: new Date('2026-10-17T12:00:00Z') }); await saveWeatherLocation(3, 36.612, 139.195)
+  await reuseTarget(4); await db.trips.update(4, { startedAt: new Date('2026-10-17T13:00:00Z') }); await saveWeatherLocation(4, 36.611, 139.194)
+  const candidates = await findReusableWeatherLocations(2)
+  assert.equal(candidates.length, 2); assert.equal(candidates.find(c => c.latitude === 36.611).uses, 2)
+  const candidate = candidates.find(c => c.sourceTripId === 3)
+  await saveWeatherLocation(3, 37, 140)
+  await assert.rejects(reuseWeatherLocation(2, candidate)); assert.equal(await db.tripWeatherLocations.get(2), undefined)
+  const [fresh] = await findReusableWeatherLocations(2)
+  await db.trips.update(2, { facilityId: 'user:weather' })
+  await assert.rejects(reuseWeatherLocation(2, fresh)); assert.equal(await db.tripWeatherLocations.get(2), undefined)
 })
