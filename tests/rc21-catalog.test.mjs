@@ -81,7 +81,7 @@ test('preview is read-only; 282 colors, 18 models, 8 unique series; preserve eve
   await applyRc21Catalog(again.comparisonToken)
   assert.deepEqual(await state(), saved)
   db.close(); await db.open()
-  assert.equal(db.verno, 7)
+  assert.equal(db.verno, 8)
   assert.deepEqual(await state(), saved)
   assert.equal((await previewRc20Catalog()).addedColors, 0)
 })

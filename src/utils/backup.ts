@@ -1,4 +1,5 @@
-import { db, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch, validateCatchResult, validateCatchAction } from '../db/database'
+import { db, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch, validateCatchResult, validateCatchAction,
+  weatherTableNames, weatherFields, validateWeatherLocation, validateWeatherHour, validateWeatherRequest } from '../db/database'
 import { facilityTableNames, validateFacilityStorage, readFacilityStorage, mergeFacilityStorage, validateLocationReferences, type FacilityStorage } from './facilityStorage'
 
 export const backupTableNames = [
@@ -10,12 +11,12 @@ export const allBackupTableNames = [...backupTableNames, ...tackleTableNames] as
 export const fullBackupTableNames = [...allBackupTableNames, 'fishSpecies'] as const
 type TableName = typeof allBackupTableNames[number]
 type Row = Record<string, unknown>
-type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>> & { fishSpecies?: Row[] } & Partial<FacilityStorage>
-export const completeBackupTableNames = [...fullBackupTableNames, ...facilityTableNames] as const
+type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>> & { fishSpecies?: Row[] } & Partial<FacilityStorage> & Partial<Record<typeof weatherTableNames[number], Row[]>>
+export const completeBackupTableNames = [...fullBackupTableNames, ...facilityTableNames, ...weatherTableNames] as const
 
 export interface FishingLogBackup {
   format: 'fishing-log-backup'
-  version: 1 | 2 | 3 | 4 | 5 | 6
+  version: 1 | 2 | 3 | 4 | 5 | 6 | 7
   exportedAt: string
   data: {
     trips: unknown[]
@@ -34,6 +35,9 @@ export interface FishingLogBackup {
     facilities?: unknown[]
     zones?: unknown[]
     appMetadata?: unknown[]
+    tripWeatherLocations?: unknown[]
+    tripWeatherHours?: unknown[]
+    tripWeatherRequests?: unknown[]
   }
 }
 
@@ -87,7 +91,7 @@ function dateTime(value: unknown, path: string): Date {
 /** 書き込み前に全テーブルを検証し、入力を変更せずDateを復元する。 */
 export function validateBackup(value: unknown): RestoredData {
   const backup = object(value, 'ルート')
-  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6].includes(backup.version as number)) {
+  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6, 7].includes(backup.version as number)) {
     fail('format/version', '対応するFishing Logバックアップではありません')
   }
   dateTime(backup.exportedAt, 'exportedAt')
@@ -96,7 +100,7 @@ export function validateBackup(value: unknown): RestoredData {
   const ids = {} as Record<TableName, Set<number>>
   const fishIds = new Set<string>()
   const fishNames = new Set<string>()
-  if (backup.version === 5 || backup.version === 6) {
+  if (Number(backup.version) >= 5) {
     if (!Array.isArray(source.fishSpecies)) fail('data.fishSpecies', '配列が必要です')
     data.fishSpecies = source.fishSpecies.map(entry => {
       validateFishSpecies(entry)
@@ -259,7 +263,7 @@ export function validateBackup(value: unknown): RestoredData {
       }
     })
   }
-  if (backup.version === 6) {
+  if (Number(backup.version) >= 6) {
     const facilities = validateFacilityStorage(source)
     Object.assign(data, facilities)
     validateLocationReferences(data, facilities)
@@ -268,6 +272,41 @@ export function validateBackup(value: unknown): RestoredData {
     for (const row of [...data.trips, ...data.catches]) {
       if (['facilityId', 'currentZoneId', 'zoneId', 'locationSnapshot'].some(key => row[key] !== undefined)) fail('場所参照', '場所参照にはv6形式が必要です')
     }
+  }
+  if (backup.version === 7) {
+    for (const name of weatherTableNames) {
+      if (!Array.isArray(source[name])) fail(`data.${name}`, '配列が必要です')
+      data[name] = (source[name] as unknown[]).map(value => ({ ...object(value, name) }))
+    }
+    const locations = new Set<number>(), requests = new Map<number, Row>(), hourKeys = new Set<string>()
+    for (const row of data.tripWeatherLocations!) {
+      validateWeatherLocation(row)
+      if (!ids.trips.has(row.tripId) || locations.has(row.tripId)) fail('tripWeatherLocations', '釣行参照または地点の重複が不正です')
+      locations.add(row.tripId)
+    }
+    for (const row of data.tripWeatherRequests!) {
+      validateWeatherRequest(row)
+      if (!locations.has(row.tripId) || requests.has(row.id!)) fail('tripWeatherRequests', '地点参照または取得IDの重複が不正です')
+      requests.set(row.id!, row as unknown as Row)
+    }
+    const grouped = new Map<number, Row[]>()
+    for (const row of data.tripWeatherHours!) {
+      validateWeatherHour(row)
+      const request = requests.get(row.requestId), key = `${row.tripId}:${row.timestamp}`
+      if (!request || request.tripId !== row.tripId || !['complete','partial'].includes(request.status as string) || request.fetchedAt !== row.fetchedAt || hourKeys.has(key)) fail('tripWeatherHours', '取得参照・時刻重複が不正です')
+      const start = Date.parse(`${request.startDayJst}T00:00:00+09:00`), end = Date.parse(`${request.endDayJst}T00:00:00+09:00`) + 86400000
+      if (row.timestamp < start || row.timestamp >= end || end - start > 366 * 86400000) fail('tripWeatherHours', '取得期間と時刻が一致しません')
+      hourKeys.add(key)
+      const hours = grouped.get(row.tripId) ?? []; hours.push(row as unknown as Row); grouped.set(row.tripId, hours)
+    }
+    for (const hours of grouped.values()) {
+      const first = hours[0]!, request = requests.get(first.requestId as number)!
+      const expected = (Date.parse(`${request.endDayJst}T00:00:00+09:00`) - Date.parse(`${request.startDayJst}T00:00:00+09:00`)) / 3600000 + 24
+      if (hours.some(h => h.requestId !== first.requestId) || hours.length !== expected ||
+          hours.reduce((count, h) => count + weatherFields.filter(f => h[f] === null).length, 0) !== request.missingValues) fail('tripWeatherHours', '保存時間帯・欠損情報が一致しません')
+    }
+  } else {
+    for (const name of weatherTableNames) if (source[name] !== undefined) fail(`data.${name}`, '気象データにはv7形式が必要です')
   }
   return data
 }
@@ -282,11 +321,16 @@ export async function createBackup(): Promise<FishingLogBackup> {
   })
   const hasFacilities = facilityTableNames.some(name => data[name].length > 0) ||
     [...data.trips, ...data.catches].some(row => ['facilityId', 'currentZoneId', 'zoneId', 'locationSnapshot'].some(key => (row as Row)[key] !== undefined))
-  if (hasFacilities) {
+  const hasWeather = weatherTableNames.some(name => data[name].length > 0)
+  if (hasFacilities || hasWeather) {
     const storage = validateFacilityStorage(data)
     validateLocationReferences(data as { trips: Row[]; catches: Row[] }, storage)
-    return { format: 'fishing-log-backup', version: 6, exportedAt: new Date().toISOString(), data }
+    if (!hasWeather) for (const name of weatherTableNames) delete (data as Partial<typeof data>)[name]
+    const backup: FishingLogBackup = { format: 'fishing-log-backup', version: hasWeather ? 7 : 6, exportedAt: new Date().toISOString(), data }
+    if (hasWeather) validateBackup(JSON.parse(JSON.stringify(backup)))
+    return backup
   }
+  for (const name of weatherTableNames) delete (data as Partial<typeof data>)[name]
   for (const name of facilityTableNames) delete (data as Partial<typeof data>)[name]
   // タックル関連データはv4。未導入データは従来のv2/v3形式との互換性を保つ。
   const hasTackle = tackleTableNames.some(name => data[name].length > 0) ||
@@ -332,9 +376,12 @@ export async function importBackup(file: File): Promise<void> {
     validateLocationReferences(data, merged)
     for (const name of fullBackupTableNames) await db.table(name).clear()
     for (const name of fullBackupTableNames) await db.table(name).bulkAdd(data[name] ?? [])
+    // A restore replaces trip IDs: never attach pre-restore weather to a different trip.
+    for (const name of weatherTableNames) await db.table(name).clear()
+    for (const name of weatherTableNames) await db.table(name).bulkAdd(data[name] ?? [])
     await db.facilities.bulkPut(merged.facilities)
     await db.zones.bulkPut(merged.zones)
     await db.appMetadata.bulkPut(merged.appMetadata)
-    // Only the original 13 stores are replaced. New stores are merged without clear/delete.
+    // Facility/zone/master stores retain the existing merge and conflict protections.
   })
 }

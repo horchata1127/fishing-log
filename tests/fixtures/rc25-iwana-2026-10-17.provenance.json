@@ -1,0 +1,20 @@
+{
+  "sourceUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=36.611&longitude=139.194&start_date=2026-10-17&end_date=2026-10-17&hourly=temperature_2m%2Cprecipitation%2Cwind_speed_10m%2Crelative_humidity_2m%2Csurface_pressure%2Cweather_code&timezone=Asia%2FTokyo&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm",
+  "retrievedAt": "2026-10-18T10:12:32.934282+00:00",
+  "sha256": "13e33781dfc868e5facb3e642ad02205cc35659cc19bf58eb25fcac2986e4111",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Weather data by Open-Meteo.com",
+  "attributionUrl": "https://open-meteo.com/",
+  "testOnly": true,
+  "manualTestLocation": {
+    "latitude": 36.611,
+    "longitude": 139.194
+  },
+  "responseGrid": {
+    "latitude": 36.590508,
+    "longitude": 139.12303,
+    "elevation": 736.0
+  },
+  "modifications": "None: raw API response; not a facility coordinate release"
+}

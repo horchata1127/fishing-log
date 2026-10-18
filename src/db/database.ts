@@ -34,6 +34,129 @@ export interface TripEvent {
   note?: string
 }
 
+// RC25: UTC milliseconds for joins with catches.caughtAt / tripEvents.occurredAt.
+export interface TripWeatherLocation {
+  tripId: number
+  latitude: number
+  longitude: number
+  locationSource: 'manual'
+  coordinateSystem: 'WGS84'
+  facilityId?: string
+  facilityName: string
+  updatedAt: string
+}
+export const weatherFields = ['temperatureC', 'precipitationMm', 'windSpeedMs', 'relativeHumidityPct', 'surfacePressureHpa', 'weatherCode'] as const
+export const weatherUnits = { temperatureC: '°C', precipitationMm: 'mm', windSpeedMs: 'm/s', relativeHumidityPct: '%', surfacePressureHpa: 'hPa', weatherCode: 'wmo code' } as const
+export interface TripWeatherHour {
+  tripId: number
+  timestamp: number
+  temperatureC: number | null
+  precipitationMm: number | null
+  windSpeedMs: number | null
+  relativeHumidityPct: number | null
+  surfacePressureHpa: number | null
+  weatherCode: number | null
+  requestId: number
+  fetchedAt: string
+}
+export interface TripWeatherRequest {
+  id?: number
+  tripId: number
+  status: 'pending' | 'complete' | 'partial' | 'unavailable' | 'error' | 'superseded'
+  createdAt: string
+  fetchedAt?: string
+  apiName: 'Open-Meteo Historical Weather API'
+  endpoint: 'https://archive-api.open-meteo.com/v1/archive'
+  license: 'CC BY 4.0'
+  licenseUrl: 'https://creativecommons.org/licenses/by/4.0/'
+  attribution: 'Weather data by Open-Meteo.com'
+  sourceUrl: 'https://open-meteo.com/'
+  units: typeof weatherUnits
+  model: 'best_match'
+  startDayJst: string
+  endDayJst: string
+  tripStartedAt: string
+  tripEndedAt?: string
+  location: TripWeatherLocation
+  response?: { latitude: number; longitude: number; elevation: number | null; timezone: string; timezoneAbbreviation: string; utcOffsetSeconds: number }
+  missingHours?: number
+  missingValues?: number
+  message?: string
+}
+export const weatherTableNames = ['tripWeatherLocations', 'tripWeatherHours', 'tripWeatherRequests'] as const
+export function jstDay(value: Date | number): string {
+  const date = new Date(value)
+  if (!Number.isFinite(date.getTime())) throw new Error('釣行日時が不正です。')
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(date)
+}
+export function weatherTripRange(trip: FishingTrip) {
+  const start = new Date(trip.startedAt), end = new Date(trip.endedAt ?? trip.startedAt)
+  if (!Number.isFinite(start.getTime()) || !Number.isFinite(end.getTime()) || end < start) throw new Error('釣行の開始・終了日時を確認してください。')
+  return { startDayJst: jstDay(start), endDayJst: jstDay(end) }
+}
+function weatherObject(value: unknown): Record<string, unknown> {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('気象データの形式が不正です。')
+  return value as Record<string, unknown>
+}
+function weatherId(value: unknown) {
+  if (!Number.isSafeInteger(value) || (value as number) <= 0) throw new Error('気象データのIDが不正です。')
+}
+function utcString(value: unknown) {
+  if (typeof value !== 'string' || !Number.isFinite(Date.parse(value)) || new Date(value).toISOString() !== value) throw new Error('気象データのUTC日時が不正です。')
+}
+export function validateWeatherCoordinates(latitude: unknown, longitude: unknown) {
+  if (typeof latitude !== 'number' || !Number.isFinite(latitude) || latitude < -90 || latitude > 90 ||
+      typeof longitude !== 'number' || !Number.isFinite(longitude) || longitude < -180 || longitude > 180) throw new Error('緯度は-90〜90、経度は-180〜180の数値を入力してください。')
+}
+export function validateWeatherLocation(value: unknown): asserts value is TripWeatherLocation {
+  const row = weatherObject(value); weatherId(row.tripId); validateWeatherCoordinates(row.latitude, row.longitude); utcString(row.updatedAt)
+  if (row.locationSource !== 'manual' || row.coordinateSystem !== 'WGS84' || typeof row.facilityName !== 'string' ||
+      (row.facilityId !== undefined && typeof row.facilityId !== 'string')) throw new Error('気象地点の設定方法・施設情報が不正です。')
+}
+export function validateWeatherHour(value: unknown): asserts value is TripWeatherHour {
+  const row = weatherObject(value); weatherId(row.tripId); weatherId(row.requestId); utcString(row.fetchedAt)
+  if (!Number.isSafeInteger(row.timestamp) || (row.timestamp as number) % 3600000 !== 0 || !Number.isFinite(new Date(row.timestamp as number).getTime())) throw new Error('気象時刻が不正です。')
+  for (const field of weatherFields) {
+    const n = row[field]
+    if (n !== null && (typeof n !== 'number' || !Number.isFinite(n))) throw new Error(`気象値 ${field} が不正です。`)
+    if (n === null) continue
+    if ((field === 'precipitationMm' || field === 'windSpeedMs' || field === 'surfacePressureHpa') && (n as number) < 0) throw new Error('気象値の範囲が不正です。')
+    if (field === 'relativeHumidityPct' && ((n as number) < 0 || (n as number) > 100)) throw new Error('湿度の範囲が不正です。')
+    if (field === 'weatherCode' && (!Number.isInteger(n) || ![0,1,2,3,45,48,51,53,55,56,57,61,63,65,66,67,71,73,75,77,80,81,82,85,86,95,96,99].includes(n as number))) throw new Error('天気コードが不正です。')
+  }
+}
+export function validateWeatherRequest(value: unknown): asserts value is TripWeatherRequest {
+  const row = weatherObject(value); weatherId(row.id); weatherId(row.tripId); utcString(row.createdAt); validateWeatherLocation(row.location)
+  if (row.location.tripId !== row.tripId || row.apiName !== 'Open-Meteo Historical Weather API' || row.endpoint !== 'https://archive-api.open-meteo.com/v1/archive' ||
+      row.license !== 'CC BY 4.0' || row.licenseUrl !== 'https://creativecommons.org/licenses/by/4.0/' || row.sourceUrl !== 'https://open-meteo.com/' ||
+      row.attribution !== 'Weather data by Open-Meteo.com' || row.model !== 'best_match' || !['pending','complete','partial','unavailable','error','superseded'].includes(row.status as string)) throw new Error('気象取得の出典・状態が不正です。')
+  const units = weatherObject(row.units)
+  if (weatherFields.some(f => units[f] !== weatherUnits[f])) throw new Error('保存気象データの単位が不正です。')
+  utcString(row.tripStartedAt); if (row.tripEndedAt !== undefined) utcString(row.tripEndedAt)
+  for (const field of ['startDayJst','endDayJst']) {
+    const s = row[field]
+    if (typeof s !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(s) || !Number.isFinite(Date.parse(s)) || new Date(s).toISOString().slice(0,10) !== s) throw new Error('気象対象日が不正です。')
+  }
+  if ((row.startDayJst as string) > (row.endDayJst as string)) throw new Error('気象対象期間が不正です。')
+  const range = weatherTripRange({ startedAt: new Date(row.tripStartedAt as string), endedAt: row.tripEndedAt ? new Date(row.tripEndedAt as string) : undefined } as FishingTrip)
+  if (range.startDayJst !== row.startDayJst || range.endDayJst !== row.endDayJst) throw new Error('気象取得の対象日と開始・終了日時が一致しません。')
+  if (row.fetchedAt !== undefined) utcString(row.fetchedAt)
+  if (row.message !== undefined && (typeof row.message !== 'string' || row.message.length > 1000)) throw new Error('気象取得メッセージが不正です。')
+  if (row.response !== undefined) {
+    const response = weatherObject(row.response); validateWeatherCoordinates(response.latitude, response.longitude)
+    if ((response.elevation !== null && (typeof response.elevation !== 'number' || !Number.isFinite(response.elevation))) || response.timezone !== 'Asia/Tokyo' || response.utcOffsetSeconds !== 32400 || typeof response.timezoneAbbreviation !== 'string') throw new Error('気象応答の地点・タイムゾーンが不正です。')
+  }
+  for (const field of ['missingHours','missingValues']) if (row[field] !== undefined && (!Number.isSafeInteger(row[field]) || (row[field] as number) < 0)) throw new Error('気象欠損情報が不正です。')
+  const hours = (Date.parse(row.endDayJst as string) - Date.parse(row.startDayJst as string)) / 3600000 + 24
+  if (hours > 366 * 24 || (row.missingHours !== undefined && (row.missingHours as number) > hours) ||
+      (row.missingValues !== undefined && (row.missingValues as number) > hours * weatherFields.length)) throw new Error('気象期間・欠損情報の範囲が不正です。')
+  if (row.status === 'complete' || row.status === 'partial') {
+    if (!row.response || !row.fetchedAt || row.missingHours === undefined || row.missingValues === undefined) throw new Error('気象取得の成功情報が不足しています。')
+    if (row.status === 'complete' && (row.missingHours !== 0 || row.missingValues !== 0)) throw new Error('欠損のある気象データを完全とは扱えません。')
+    if (row.status === 'partial' && (!(row.missingValues as number) || row.missingValues === hours * weatherFields.length)) throw new Error('一部欠損の状態が不正です。')
+  }
+}
+
 export type LostDistance = "offshore" | "near" | "landing"
 export const catchActions = ['ただ巻き', 'ストップ＆ゴー', 'トゥイッチ', 'ジャーク', 'シェイク',
   'シミーフォール', 'シミーアップ', 'リフト＆フォール', 'ステイ', 'マジックジャーク', 'デジ巻き',
@@ -308,6 +431,9 @@ export const db = new Dexie('FishingLogDatabase') as Dexie & {
   trips: EntityTable<FishingTrip, 'id'>
   catches: EntityTable<CatchRecord, 'id'>
   tripEvents: EntityTable<TripEvent, 'id'>
+  tripWeatherLocations: Table<TripWeatherLocation, number>
+  tripWeatherHours: Table<TripWeatherHour, [number, number]>
+  tripWeatherRequests: EntityTable<TripWeatherRequest, 'id'>
 
   lureManufacturers: EntityTable<LureManufacturer, 'id'>
   lureSeries: EntityTable<LureSeries, 'id'>
@@ -371,6 +497,9 @@ db.version(6).stores({ fishSpecies: 'fish_id, group, display_name, origin' })
 
 // Additive only: existing stores, keys and records remain untouched. No seed or migration writes.
 db.version(7).stores({ facilities: 'id, origin, prefecture', zones: 'id, facilityId, origin', appMetadata: 'key' })
+
+// Only add stores; no upgrade callback, backfill, or modification of the 16 existing stores.
+db.version(8).stores({ tripWeatherLocations: 'tripId', tripWeatherHours: '[tripId+timestamp], tripId, timestamp, requestId', tripWeatherRequests: '++id, tripId, createdAt' })
 
 export const databaseConnection = { state: 'ready' as 'ready' | 'changed' | 'blocked' }
 const connectionListeners = new Set<(state: typeof databaseConnection.state) => void>()

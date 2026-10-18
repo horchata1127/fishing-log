@@ -2,6 +2,7 @@
 import { computed, ref } from "vue"
 import { isCatch, countResults, lostDistanceLabels, actionLengthLabel } from "../db/database"
 import TackleSnapshotDetails from './TackleSnapshotDetails.vue'
+import TripWeatherPanel from './TripWeatherPanel.vue'
 import type {
   CatchRecord,
   FishingStyle,
@@ -213,6 +214,8 @@ function fishingStyleName(style: FishingStyle) {
     </div>
     <TackleSnapshotDetails v-if="lastCatch?.tackleSnapshot" :snapshot="lastCatch.tackleSnapshot" />
   </section>
+
+  <TripWeatherPanel :key="trip.id" :trip="trip" />
 
   <section
     v-if="catches.length"
