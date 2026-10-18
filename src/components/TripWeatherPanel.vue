@@ -34,7 +34,7 @@ async function load() {
   try { candidates.value = await findReusableWeatherLocations(props.trip.id); selectedCandidate.value = ''; reuseError.value = '' }
   catch { reuseError.value = '以前の地点候補を読み込めませんでした。手動入力は利用できます。' }
 }
-watch(() => props.trip.id, async () => {
+watch(() => [props.trip.id, props.trip.facilityId], async () => {
   controller.value?.abort(); error.value = ''; message.value = ''
   try { await load(); latitude.value = view.value.location ? String(view.value.location.latitude) : ''; longitude.value = view.value.location ? String(view.value.location.longitude) : '' }
   catch { error.value = '保存済み気象データを読み込めませんでした。'; emit('loadError', error.value) }
@@ -96,6 +96,7 @@ async function retrieve() {
         <button type="submit" :disabled="busy || !range">地点を保存</button>
       </form>
       <p v-if="view.location">使用座標：{{ view.location.latitude }}, {{ view.location.longitude }}（手動設定）</p>
+      <p v-if="view.location && view.location.facilityId !== trip.facilityId" class="notice">保存済み地点は変更前の施設「{{ view.location.facilityName }}」のままです。気象・座標は自動変更しません。取得前に必要な地点を確認してください。</p>
       <p v-if="locationChanged && view.location">入力を変更した場合は、先に地点を保存してください。</p>
       <p>無料APIは非商用利用向けです。取得時に地点座標と対象日をOpen-Meteoへ送信します。データの提供に数日かかることがあります。</p>
       <p v-if="view.hours.length">再取得に成功すると、この釣行の保存済み気象を更新します。取得失敗時は保持します。</p>

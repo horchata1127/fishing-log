@@ -119,3 +119,14 @@ test('PR4 excessively large corrupt period is bounded without dropping catches o
   const s = summarize({ ...trip, startedAt: new Date('1900-01-01T00:00:00Z') }, catches)
   assert.equal(s.periodTooLong, true); assert.equal(s.bins.length, 1); assert.equal(s.bins[0].timestamp, null); assert.equal(s.bins[0].count, 7)
 })
+
+test('RC27 legacy/unresolved areas have distinct filter keys and never merge with current facility counts', () => {
+  const linked = { ...trip,facilityId:'official:new' }, zones = new Map([['pond9','official:new']])
+  const rows = [{ ...catches[0],facilityId:'official:old' },{ ...catches[1],facilityId:'official:new' },{ ...catches[2],facilityId:'official:new',zoneId:'missing' }]
+  const model = build(linked,rows,[],[], 'all',true,zones)
+  assert.equal(model.zones.length,3); assert.equal(model.zones.filter(z => z.label.startsWith('旧施設')).length,2)
+  const current = summarize(linked,rows,'id:pond9',true,zones)
+  assert.equal(current.total,3); assert.equal(current.displayed,1); assert.equal(current.bins.reduce((n,b) => n+b.count,0),1)
+  const old = model.zones.find(z => z.key.startsWith('previous:'))
+  assert.equal(build(linked,rows,[],[],old.key,true,zones).markers.length,1)
+})

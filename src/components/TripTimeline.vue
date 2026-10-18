@@ -1,16 +1,23 @@
 <script setup lang="ts">
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import type { CatchRecord, FishingTrip, TripWeatherHour, TripWeatherLocation, TripWeatherRequest } from '../db/database'
-import { lostDistanceLabels } from '../db/database'
-import { buildCatchSummary, buildTripTimeline, formatTimelineTime, layoutTimelineMarkers, markerLabels, markerSymbols, type TimelineEvent, type TimelineMarker } from '../utils/tripTimeline'
+import { db, lostDistanceLabels } from '../db/database'
+import { catchZoneKey, buildCatchSummary, buildTripTimeline, formatTimelineTime, layoutTimelineMarkers, markerLabels, markerSymbols, type TimelineEvent, type TimelineMarker } from '../utils/tripTimeline'
 import HourlyCatchChart from './HourlyCatchChart.vue'
 import WeatherAttribution from './WeatherAttribution.vue'
 
 const props = defineProps<{ trip: FishingTrip; catches: CatchRecord[]; events: TimelineEvent[]; hours: TripWeatherHour[]; requests: TripWeatherRequest[]; location?: TripWeatherLocation; weatherError?: string }>()
 const zone = ref('all'), includeUnset = ref(true), zoom = ref(1), viewport = ref(340)
 const scroll = ref<HTMLElement>(), dialog = ref<HTMLDialogElement>(), selected = ref<TimelineMarker | null>(null)
-const model = computed(() => buildTripTimeline(props.trip, props.catches, props.events, props.hours, zone.value, includeUnset.value))
-const summary = computed(() => buildCatchSummary(props.trip, props.catches, zone.value, includeUnset.value))
+const zoneFacilities = ref<Map<string,string>>()
+let ownershipRequest = 0
+watch(() => [props.trip.id,props.trip.facilityId,props.catches], async () => {
+  const request = ++ownershipRequest
+  try { const zones = await db.zones.toArray(); if (request === ownershipRequest) zoneFacilities.value = new Map(zones.map(z => [z.id,z.facilityId])) }
+  catch { if (request === ownershipRequest) zoneFacilities.value = new Map() }
+}, { immediate:true })
+const model = computed(() => buildTripTimeline(props.trip, props.catches, props.events, props.hours, zone.value, includeUnset.value,zoneFacilities.value))
+const summary = computed(() => buildCatchSummary(props.trip, props.catches, zone.value, includeUnset.value,zoneFacilities.value))
 const width = computed(() => Math.max(300, viewport.value) * zoom.value)
 const layout = computed(() => model.value.range ? layoutTimelineMarkers(model.value.markers, model.value.range.start, model.value.range.end, width.value) : null)
 const clipId = computed(() => `timeline-plot-${props.trip.id ?? 'unknown'}`)
@@ -41,10 +48,12 @@ onMounted(() => {
   observer = new ResizeObserver(entries => { const entry = entries[0]; if (entry && entry.contentRect.width > 0) viewport.value = entry.contentRect.width })
   observer.observe(scroll.value)
 })
-onUnmounted(() => observer?.disconnect())
+onUnmounted(() => { observer?.disconnect(); ownershipRequest++ })
 function close() { dialog.value?.close(); selected.value = null }
 async function select(marker: TimelineMarker) { selected.value = marker; await nextTick(); dialog.value?.showModal() }
 watch(() => props.trip.id, () => { close(); zone.value = 'all'; includeUnset.value = true; zoom.value = 1 })
+watch(() => props.trip.facilityId, () => { close(); zone.value = 'all' })
+watch(() => model.value.zones, zones => { if (zone.value !== 'all' && zone.value !== 'unset' && !zones.some(z => z.key === zone.value)) zone.value = 'all' })
 watch(model, value => { if (selected.value && ![...value.markers, ...value.unknown, ...value.outside].some(m => m.key === selected.value!.key)) close() })
 </script>
 
@@ -108,6 +117,7 @@ watch(model, value => { if (selected.value && ![...value.markers, ...value.unkno
       <h3 id="timeline-record-title">{{ markerTitle(selected) }}</h3>
       <p v-if="selected.precision === 'approximate'">概算時刻の記録です。正確な時刻とは区別して表示しています。</p>
       <p v-if="selected.timestamp === null">正確な時刻は記録されていません。</p>
+      <p v-if="selectedCatch && catchZoneKey(selectedCatch,trip.facilityId,zoneFacilities).startsWith('previous:')">旧施設・所属未確認のエリアです。新施設のエリアには変換していません。</p>
       <dl v-if="selectedCatch"><dt>ルアー</dt><dd>{{ selectedCatch.lureName || '未記録' }} {{ selectedCatch.lureColor || '' }}</dd><dt>魚種</dt><dd>{{ selectedCatch.fishSpecies || '未記録' }}</dd><dt>エリア</dt><dd>{{ selectedCatch.locationSnapshot?.zoneName || '未設定' }}</dd><dt>施設</dt><dd>{{ selectedCatch.locationSnapshot?.facilityName || '未記録' }}</dd><template v-if="selectedCatch.fishSizeCm !== undefined"><dt>全長</dt><dd>{{ selectedCatch.fishSizeCm }} cm</dd></template><template v-if="selectedCatch.lostDistance"><dt>バラシの距離</dt><dd>{{ lostDistanceLabels[selectedCatch.lostDistance] }}</dd></template><dt>メモ</dt><dd>{{ selectedCatch.memo || 'なし' }}</dd></dl>
       <p v-if="selectedEvent">{{ selectedEvent.note || 'メモなし' }}</p>
       <button type="button" autofocus @click="close">記録の詳細を閉じる</button>

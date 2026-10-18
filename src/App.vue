@@ -7,6 +7,7 @@ import { offline } from './pwa'
 import { onMounted, onUnmounted, ref } from 'vue'
 import { initializeFacilityRelease } from './utils/facilityRelease'
 import CatchModal from './components/CatchModal.vue'
+import TripFacilityEditor from './components/TripFacilityEditor.vue'
 import FishingScreen from './components/FishingScreen.vue'
 import MyLuresScreen from './components/MyLuresScreen.vue'
 import TackleManagementScreen from './components/TackleManagementScreen.vue'
@@ -53,6 +54,7 @@ const newTripFacilityId = ref<string>(), newTripZoneId = ref<string>()
 const catchZoneId = ref<string>(), catchLocation = ref<CatchLocationSelection>()
 const catchAreaChanged = ref(false)
 const locationBusy = ref(false), savingLocation = ref(false), locationRefresh = ref(0)
+const editingTripFacility = ref(false)
 
 const myLureOptions = ref<LureOption[]>([])
 const catalogOptions = ref<LureOption[]>([])
@@ -679,13 +681,17 @@ async function selectCurrentZone(zoneId: string | undefined) {
   } catch (error) { alert(error instanceof Error ? error.message : String(error)) }
   finally { savingLocation.value = false; locationRefresh.value++ }
 }
+async function facilityLinked(trip: FishingTrip) {
+  currentTrip.value = trip; locationRefresh.value++; editingTripFacility.value = false
+  try { await loadTrips() } catch { alert('施設は保存済みですが、一覧を更新できませんでした。') }
+}
 </script>
 
 <template>
   <p v-if="facilityReleaseError" role="alert">{{ facilityReleaseError }}</p>
   <p v-if="restoringData" role="status">バックアップを復元しています…</p>
   <main class="app" :inert="initializingFacilityRelease || restoringData || offline.updating" :aria-busy="initializingFacilityRelease || restoringData || offline.updating">
-    <OfflineStatus :safe="!initializingFacilityRelease && screen === 'home' && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
+    <OfflineStatus :safe="!initializingFacilityRelease && screen === 'home' && !editingTripFacility && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
     <p v-if="connectionState === 'changed'" role="alert">別の画面でデータベースが更新されたため、この画面からは保存できません。入力中の内容をメモしてから、この画面を手動で再読み込みしてください。</p>
     <p v-else-if="connectionState === 'blocked'" role="alert">別のFishing Log画面がデータベースの更新を待たせています。その画面の入力を保存して閉じてください。自動で再読み込みはしません。</p>
     <!-- ホーム -->
@@ -808,7 +814,7 @@ async function selectCurrentZone(zoneId: string | undefined) {
 
     <!-- 釣行中 -->
 
-    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch" @delete-catch="removeCatch" @home="goHome"
+    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch || editingTripFacility" @edit-facility="editingTripFacility = true" @delete-catch="removeCatch" @home="goHome"
       @add-catch="addCatch" @edit-catch="editCatch" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @update-event="updateTripEvent" @end-trip="endTrip">
       <template #location><FacilityPicker v-if="currentTrip.facilityId" :key="locationRefresh" fixed :facility-id="currentTrip.facilityId" :trip-id="currentTrip.id"
         :zone-id="currentTrip.currentZoneId" :retained-zone-id="currentTrip.currentZoneId" zone-label="現在のエリア" :disabled="!!currentTrip.endedAt || savingLocation || showCatchForm"
@@ -834,6 +840,7 @@ async function selectCurrentZone(zoneId: string | undefined) {
 
     <p v-if="recordStatus && screen === 'fishing'" role="status">{{ recordStatus }}</p>
     <!-- 釣果入力モーダル -->
+    <TripFacilityEditor v-if="editingTripFacility && currentTrip" :trip="currentTrip" @saved="facilityLinked" @cancel="editingTripFacility = false" />
     <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt" :editing="!!editingCatch" @update:caught-at="pendingCaughtAt = $event" v-model:memo="catchMemo"
       v-model:result-type="catchResultType" v-model:lost-distance="catchLostDistance"
       :location-busy="locationBusy || savingLocation"
@@ -846,7 +853,7 @@ async function selectCurrentZone(zoneId: string | undefined) {
       @same-as-previous="saveSameAsPrevious" @cancel="cancelCatch">
       <template #location><FacilityPicker fixed catch-area :facility-id="catchLocation?.expectedFacilityId" :trip-id="currentTrip?.id"
         :zone-id="catchZoneId" @update:zone-id="catchZoneId = $event; catchAreaChanged = true"
-        :retained-zone-id="editingCatch ? editingCatch.zoneId : catchLocation?.expectedCurrentZoneId" :retained-zone-name="editingCatch?.locationSnapshot?.zoneName"
+        :retained-zone-id="editingCatch ? editingCatch.zoneId : catchLocation?.expectedCurrentZoneId" :retained-zone-name="editingCatch?.locationSnapshot?.zoneName" :retained-facility-id="editingCatch?.facilityId"
         zone-label="釣り場内のエリア" :disabled="savingCatch" @busy="locationBusy = $event" /></template>
     </CatchModal>
   </main>

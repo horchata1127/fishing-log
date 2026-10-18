@@ -9,7 +9,7 @@ import ts from 'typescript'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-location-test-'))
 const sources = { database: 'db/database.ts', facilityMaster: 'utils/facilityMaster.ts', facilityStorage: 'utils/facilityStorage.ts', tripLocations: 'utils/tripLocations.ts',
-  tackleManagement: 'utils/tackleManagement.ts', catchRegistration: 'utils/catchRegistration.ts', fishSpecies: 'utils/fishSpecies.ts', fishMaster: 'data/fishMaster.ts', backup: 'utils/backup.ts' }
+  tackleManagement: 'utils/tackleManagement.ts', catchRegistration: 'utils/catchRegistration.ts', fishSpecies: 'utils/fishSpecies.ts', fishMaster: 'data/fishMaster.ts', backup: 'utils/backup.ts', tripFacilityLink:'utils/tripFacilityLink.ts' }
 const paths = Object.fromEntries(Object.keys(sources).map(n => [n, join(directory, `${n}.mjs`)]))
 for (const [name, source] of Object.entries(sources)) {
   let code = ts.transpileModule(await readFile(new URL(`../src/${source}`, import.meta.url), 'utf8'), {
@@ -27,6 +27,7 @@ const { createTrip } = await import(pathToFileURL(paths.tackleManagement).href)
 const { updateCatch, registerCatch, registerSameAsPrevious } = await import(pathToFileURL(paths.catchRegistration).href)
 const { applyFacilityMaster } = await import(pathToFileURL(paths.facilityStorage).href)
 const { createBackup, validateBackup, importBackup } = await import(pathToFileURL(paths.backup).href)
+const { previewTripFacilityLink, saveTripFacilityLink, listLinkableFacilities } = await import(pathToFileURL(paths.tripFacilityLink).href)
 after(async () => { db.close(); for (const file of Object.values(paths)) await unlink(file); await rmdir(directory) })
 beforeEach(async () => { await db.open(); for (const table of db.tables) await table.clear() })
 const trip = extra => ({ fishingAreaName: '架空釣り場', fishingDate: '2026-10-11', startedAt: new Date('2026-10-11T00:00:00Z'), ...extra })
@@ -93,6 +94,50 @@ const zone = () => ({ id: 'official:z', name: '公式架空池', sortOrder: 1, s
 const facility = () => ({ id: 'official:f', name: '公式架空施設', prefecture: '長野県', address: null, facilityTypes: ['pond'], lureAllowed: true,
   operationStatus: 'open', officialUrl: null, sourceUrl: null, verifiedAt: null, aliases: [], zones: [zone()] })
 const master = (order, facilities) => ({ schemaVersion: 1, masterVersion: `test-${order}`, distributionMode: 'full', releaseOrder: order, facilities })
+
+async function linkSetup(located = false) {
+  await applyFacilityMaster(master(1,[facility(),{ ...facility(),id:'official:other',name:'別の正式施設',zones:[] }]))
+  const id = await createTrip(trip(located ? { facilityId:'official:f',currentZoneId:'official:z' } : { fishingAreaName:'未登録の自由入力名' }))
+  await savedCatch(id); await savedCatch(id,{ resultType:'lost',lostDistance:'near' })
+  return id
+}
+test('RC27 preview/cancel is readonly; manual linking updates only trip ID/name fields and keeps all other 18 tables', async () => {
+  const id = await linkSetup(), before = await state(), original = await db.trips.get(id)
+  const preview = await previewTripFacilityLink(id,'official:f')
+  assert.equal(await state(),before); assert.equal(preview.affected.length,0); assert.equal((await db.trips.get(id)).fishingAreaName,'未登録の自由入力名')
+  const saved = await saveTripFacilityLink(preview,false)
+  assert.deepEqual(saved,{ ...original,facilityId:'official:f',fishingAreaName:'公式架空施設' })
+  const after = JSON.parse(await state()), old = JSON.parse(before)
+  for (const key of Object.keys(old)) if (key !== 'trips') assert.deepEqual(after[key],old[key])
+  assert.equal((await listLinkableFacilities()).length,2)
+})
+test('RC27 facility change requires consent for catch/lost legacy areas and current area; preserves all catch snapshots and backup', async () => {
+  const id = await linkSetup(true), before = await state(), preview = await previewTripFacilityLink(id,'official:other')
+  assert.equal(preview.affected.length,2); assert.equal(preview.clearCurrentZone,true)
+  await assert.rejects(saveTripFacilityLink(preview,false),/確認/); assert.equal(await state(),before)
+  await saveTripFacilityLink(preview,true)
+  const after = JSON.parse(await state()), old = JSON.parse(before)
+  for (const key of Object.keys(old)) if (key !== 'trips') assert.deepEqual(after[key],old[key])
+  assert.equal((await db.trips.get(id)).currentZoneId,undefined)
+  const backup = JSON.parse(JSON.stringify(await createBackup())); validateBackup(backup)
+  await importBackup({ text:async () => JSON.stringify(backup) })
+  assert.deepEqual((await db.catches.toArray()).map(c => c.zoneId),['official:z','official:z'])
+})
+test('RC27 rejects nonexistent/user/retired targets without creating IDs or changing free text', async () => {
+  const id = await linkSetup(), user = await addUserFacility('任意施設')
+  await db.facilities.update('official:other',{ catalogState:'retired' })
+  const before = await state()
+  for (const target of ['official:missing',user,'official:other','']) await assert.rejects(previewTripFacilityLink(id,target))
+  assert.equal(await state(),before)
+})
+test('RC27 stale catch/master previews reject and write failure leaves original data intact', async () => {
+  const id = await linkSetup(), preview = await previewTripFacilityLink(id,'official:f'), row = await db.catches.where('tripId').equals(id).first()
+  await db.catches.update(row.id,{memo:'別画面の変更'}); const changed = await state()
+  await assert.rejects(saveTripFacilityLink(preview,true),/変更/); assert.equal(await state(),changed)
+  const fresh = await previewTripFacilityLink(id,'official:f'), update = db.trips.update
+  try { db.trips.update = async () => { throw Error('保存障害') }; await assert.rejects(saveTripFacilityLink(fresh,true),/保存障害/) } finally { db.trips.update = update }
+  assert.equal(await state(),changed)
+})
 
 test('zero facilities: free input catch and same-as-previous retain legacy fields without location', async () => {
   assert.deepEqual((await loadLocationChoices()).facilities, [])

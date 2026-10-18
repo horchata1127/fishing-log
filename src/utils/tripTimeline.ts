@@ -20,23 +20,23 @@ export function timelineTimestamp(value: unknown): number | null {
 export function formatTimelineTime(time: number, short = false) {
   return new Intl.DateTimeFormat('ja-JP', { timeZone: 'Asia/Tokyo', ...(short ? {} : { year: 'numeric' as const }), month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(time))
 }
-export function catchZoneKey(row: CatchRecord) {
-  if (row.zoneId) return `id:${row.zoneId}`
-  if (row.locationSnapshot?.zoneName) return `snapshot:${JSON.stringify([row.facilityId ?? row.locationSnapshot.facilityName, row.locationSnapshot.zoneName])}`
-  return 'unset'
+export function catchZoneKey(row: CatchRecord, facilityId?: string, zoneFacilities?: ReadonlyMap<string, string>) {
+  const key = row.zoneId ? `id:${row.zoneId}` : row.locationSnapshot?.zoneName ? `snapshot:${JSON.stringify([row.facilityId ?? row.locationSnapshot.facilityName, row.locationSnapshot.zoneName])}` : 'unset'
+  return key !== 'unset' && facilityId && (row.facilityId !== facilityId || (row.zoneId && zoneFacilities && zoneFacilities.get(row.zoneId) !== facilityId)) ? `previous:${JSON.stringify([row.facilityId ?? null,key])}` : key
 }
-export function timelineZones(catches: CatchRecord[]) {
+export function timelineZones(catches: CatchRecord[], facilityId?: string, zoneFacilities?: ReadonlyMap<string, string>) {
   const groups = new Map<string, { key: string; label: string; count: number }>()
   for (const row of catches) {
-    const key = catchZoneKey(row)
+    const key = catchZoneKey(row,facilityId,zoneFacilities)
     if (key === 'unset') continue
-    const group = groups.get(key) ?? { key, label: row.locationSnapshot?.zoneName || '名称の記録がないエリア', count: 0 }
+    const name = row.locationSnapshot?.zoneName || '名称の記録がないエリア'
+    const group = groups.get(key) ?? { key, label: key.startsWith('previous:') ? `旧施設・所属未確認：${row.locationSnapshot?.facilityName || row.facilityId || '施設不明'}／${name}` : name, count: 0 }
     group.count++; groups.set(key, group)
   }
   return [...groups.values()].sort((a, b) => a.label.localeCompare(b.label, 'ja') || a.key.localeCompare(b.key))
 }
-export function filterTimelineCatches(catches: CatchRecord[], zone = 'all', includeUnset = true) {
-  return catches.filter(row => zone === 'all' || catchZoneKey(row) === zone || (zone !== 'unset' && includeUnset && catchZoneKey(row) === 'unset'))
+export function filterTimelineCatches(catches: CatchRecord[], zone = 'all', includeUnset = true, facilityId?: string, zoneFacilities?: ReadonlyMap<string, string>) {
+  return catches.filter(row => zone === 'all' || catchZoneKey(row,facilityId,zoneFacilities) === zone || (zone !== 'unset' && includeUnset && catchZoneKey(row,facilityId,zoneFacilities) === 'unset'))
 }
 function orderedMarkers(catches: CatchRecord[], events: TimelineEvent[]) {
   const markers: TimelineMarker[] = catches.map((record, index) => ({ key: `catch:${record.id ?? `index-${index}`}`, kind: record.resultType === 'lost' ? 'lost' : 'catch', timestamp: timelineTimestamp(record.caughtAt), precision: 'exact', record }))
@@ -49,11 +49,11 @@ function orderedMarkers(catches: CatchRecord[], events: TimelineEvent[]) {
   return markers.sort((a, b) => (a.timestamp ?? Infinity) - (b.timestamp ?? Infinity) ||
     Object.keys(markerLabels).indexOf(a.kind) - Object.keys(markerLabels).indexOf(b.kind) || (a.record.id ?? 0) - (b.record.id ?? 0) || a.key.localeCompare(b.key))
 }
-export function buildTripTimeline(trip: FishingTrip, catches: CatchRecord[], events: TimelineEvent[], hours: TripWeatherHour[], zone = 'all', includeUnset = true) {
+export function buildTripTimeline(trip: FishingTrip, catches: CatchRecord[], events: TimelineEvent[], hours: TripWeatherHour[], zone = 'all', includeUnset = true, zoneFacilities?: ReadonlyMap<string, string>) {
   const own = <T extends { tripId: number }>(rows: T[]) => rows.filter(row => trip.id !== undefined && row.tripId === trip.id)
   const allCatches = own(catches), allEvents = own(events), allHours = own(hours)
   const allMarkers = orderedMarkers(allCatches, allEvents)
-  const markers = orderedMarkers(filterTimelineCatches(allCatches, zone, includeUnset), allEvents)
+  const markers = orderedMarkers(filterTimelineCatches(allCatches, zone, includeUnset,trip.facilityId,zoneFacilities), allEvents)
   const start = timelineTimestamp(trip.startedAt), end = timelineTimestamp(trip.endedAt)
   const times = [...allMarkers.flatMap(m => m.timestamp === null ? [] : [m.timestamp]), ...allHours.map(h => timelineTimestamp(h.timestamp)).filter((t): t is number => t !== null)]
   let range: { start: number; end: number; reason: 'trip' | 'records' | 'calendar' } | null = null
@@ -84,7 +84,7 @@ export function buildTripTimeline(trip: FishingTrip, catches: CatchRecord[], eve
     if (valid) segment.push({ timestamp: hour.timestamp, temperatureC: hour.temperatureC! })
   }
   if (segment.length) segments.push(segment)
-  return { range, markers: visible, unknown, outside, segments, zones: timelineZones(allCatches) }
+  return { range, markers: visible, unknown, outside, segments, zones: timelineZones(allCatches,trip.facilityId,zoneFacilities) }
 }
 
 /** Minimum 44px hit targets. Collision lanes keep simultaneous/nearby records separately tappable. */
@@ -118,9 +118,9 @@ const hourMs = 3600000
 const hourFormatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit', hour: 'numeric', hourCycle: 'h23' })
 
 /** Read-only totals. Graph fallback bounds must never become the pace denominator. */
-export function buildCatchSummary(trip: FishingTrip, catches: CatchRecord[], zone = 'all', includeUnset = true) {
+export function buildCatchSummary(trip: FishingTrip, catches: CatchRecord[], zone = 'all', includeUnset = true, zoneFacilities?: ReadonlyMap<string, string>) {
   const all = catches.filter(row => trip.id !== undefined && row.tripId === trip.id && row.resultType !== 'lost')
-  const displayed = filterTimelineCatches(all, zone, includeUnset)
+  const displayed = filterTimelineCatches(all, zone, includeUnset,trip.facilityId,zoneFacilities)
   const start = timelineTimestamp(trip.startedAt), end = timelineTimestamp(trip.endedAt)
   const duration = start !== null && end !== null && end > start ? end - start : null
   const pace = duration === null ? null : all.length / (duration / hourMs)
