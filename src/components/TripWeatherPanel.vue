@@ -2,9 +2,12 @@
 import { computed, onUnmounted, ref, watch } from 'vue'
 import { weatherTripRange, type FishingTrip } from '../db/database'
 import { fetchTripWeather, readTripWeather, saveWeatherLocation } from '../utils/tripWeather'
+import { findReusableWeatherLocations, reuseWeatherLocation, type ReusableWeatherLocation } from '../utils/weatherLocationReuse'
 import WeatherAttribution from './WeatherAttribution.vue'
 
 const props = defineProps<{ trip: FishingTrip }>()
+const emit = defineEmits<{ loaded: [data: Awaited<ReturnType<typeof readTripWeather>>]; loadError: [message: string] }>()
+const candidates = ref<ReusableWeatherLocation[]>([]), selectedCandidate = ref(''), reuseError = ref('')
 const view = ref<Awaited<ReturnType<typeof readTripWeather>>>({ location: undefined, hours: [], requests: [] })
 const latitude = ref(''), longitude = ref(''), busy = ref(false), message = ref(''), error = ref('')
 const controller = ref<AbortController>()
@@ -15,19 +18,26 @@ const locationChanged = computed(() => latitude.value.trim() === '' || longitude
   Number(latitude.value) !== view.value.location?.latitude || Number(longitude.value) !== view.value.location?.longitude)
 const dataLocationChanged = computed(() => savedRequest.value && view.value.location &&
   (savedRequest.value.location.latitude !== view.value.location.latitude || savedRequest.value.location.longitude !== view.value.location.longitude))
-const dataPeriodChanged = computed(() => savedRequest.value && (savedRequest.value.tripStartedAt !== new Date(props.trip.startedAt).toISOString() ||
-  savedRequest.value.tripEndedAt !== (props.trip.endedAt ? new Date(props.trip.endedAt).toISOString() : undefined)))
+const safeIso = (value: Date | undefined) => {
+  const time = value == null ? NaN : new Date(value).getTime()
+  return Number.isFinite(time) ? new Date(time).toISOString() : undefined
+}
+const dataPeriodChanged = computed(() => savedRequest.value && (savedRequest.value.tripStartedAt !== safeIso(props.trip.startedAt) ||
+  savedRequest.value.tripEndedAt !== safeIso(props.trip.endedAt)))
 const statusLabels = { pending: '前回の取得が未完了です。手動で再試行できます。', complete: '取得済み', partial: '一部欠損・未提供あり', unavailable: 'アーカイブ提供待ち・再試行可能', error: '取得失敗・再試行可能', superseded: '別の取得操作により保存を中止' }
 const displayTime = (value: number | string) => new Intl.DateTimeFormat('ja-JP', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(value))
 const value = (n: number | null) => n === null ? '—' : String(n)
 async function load() {
   if (!props.trip.id) return
   view.value = await readTripWeather(props.trip.id)
+  emit('loaded', view.value)
+  try { candidates.value = await findReusableWeatherLocations(props.trip.id); selectedCandidate.value = ''; reuseError.value = '' }
+  catch { reuseError.value = '以前の地点候補を読み込めませんでした。手動入力は利用できます。' }
 }
 watch(() => props.trip.id, async () => {
   controller.value?.abort(); error.value = ''; message.value = ''
   try { await load(); latitude.value = view.value.location ? String(view.value.location.latitude) : ''; longitude.value = view.value.location ? String(view.value.location.longitude) : '' }
-  catch { error.value = '保存済み気象データを読み込めませんでした。' }
+  catch { error.value = '保存済み気象データを読み込めませんでした。'; emit('loadError', error.value) }
 }, { immediate: true })
 onUnmounted(() => controller.value?.abort())
 async function saveLocation() {
@@ -37,6 +47,17 @@ async function saveLocation() {
   busy.value = true
   try { await saveWeatherLocation(props.trip.id, Number(latitude.value), Number(longitude.value)); await load(); message.value = '手動地点を保存しました。気象の取得には下のボタンを押してください。' }
   catch (e) { error.value = e instanceof Error ? e.message : '地点を保存できませんでした。' }
+  finally { busy.value = false }
+}
+async function confirmReuse() {
+  const candidate = candidates.value.find(c => String(c.sourceTripId) === selectedCandidate.value)
+  if (busy.value || !props.trip.id || !candidate) return
+  busy.value = true; error.value = ''; message.value = ''
+  try {
+    await reuseWeatherLocation(props.trip.id, candidate); await load()
+    latitude.value = String(view.value.location!.latitude); longitude.value = String(view.value.location!.longitude)
+    message.value = '選択した地点を保存しました。気象の取得には下のボタンを押してください。'
+  } catch (e) { error.value = e instanceof Error ? e.message : '地点を保存できませんでした。' }
   finally { busy.value = false }
 }
 async function retrieve() {
@@ -59,6 +80,15 @@ async function retrieve() {
       <p v-if="!trip.endedAt">釣行中は開始日のみを対象にします。終了後に再取得すると終了日まで含みます。自動通信は行いません。</p>
       <p role="status">取得状態：{{ busy ? '処理中…' : latest ? statusLabels[latest.status] : '未取得' }}</p>
       <p v-if="latest?.message && !error">{{ latest.message }}</p>
+      <fieldset v-if="!view.location && candidates.length">
+        <legend>同じ施設で以前保存した地点</legend>
+        <p>同じ施設IDの過去の手動地点です。選択後、保存ボタンで確認してください。自動取得は行いません。</p>
+        <p v-if="candidates.length > 1" class="notice">異なる座標が複数あります。使用する地点を確認してください。</p>
+        <label>以前の地点候補<select v-model="selectedCandidate" :disabled="busy"><option value="">候補を選択</option><option v-for="c in candidates" :key="c.sourceTripId" :value="String(c.sourceTripId)">{{ c.latitude }}, {{ c.longitude }} ／ {{ displayTime(c.sourceStartedAt) }} ／ {{ c.sourceName }}（{{ c.uses }}釣行）</option></select></label>
+        <button type="button" :disabled="busy || !selectedCandidate" @click="confirmReuse">選択した地点をこの釣行に保存</button>
+      </fieldset>
+      <p v-if="reuseError" role="alert">{{ reuseError }}</p>
+      <p v-if="!trip.facilityId && !view.location">施設IDがないため以前の地点候補は表示しません。施設名の一致だけでは再利用しません。</p>
       <form @submit.prevent="saveLocation">
         <p>手動地点（WGS84）。未承認の施設座標は使用しません。</p>
         <label>緯度<input v-model="latitude" type="text" inputmode="decimal" autocomplete="off" :disabled="busy" placeholder="緯度（-90〜90）" /></label>
@@ -91,7 +121,7 @@ async function retrieve() {
 </template>
 <style scoped>
 .weather-panel { min-width:0; overflow-wrap:anywhere; } summary { cursor:pointer; font-size:18px; font-weight:700; min-height:44px; padding-top:10px; }
-form { display:grid; gap:10px; } label { display:grid; gap:5px; } input { box-sizing:border-box; width:100%; min-height:44px; padding:10px; font:inherit; border:1px solid #ccd3d8; border-radius:8px; }
+select { width:100%; min-height:44px; font:inherit; } fieldset { min-width:0; margin:12px 0; border:1px solid #ccd3d8; border-radius:8px; } form { display:grid; gap:10px; } label { display:grid; gap:5px; } input { box-sizing:border-box; width:100%; min-height:44px; padding:10px; font:inherit; border:1px solid #ccd3d8; border-radius:8px; }
 button { min-height:44px; width:100%; padding:10px; margin-top:8px; font:inherit; border:1px solid #ccd3d8; border-radius:8px; background:white; color:var(--text); } button:disabled { opacity:.55; }
 .weather-table { max-width:100%; overflow-x:auto; } table { border-collapse:collapse; white-space:nowrap; font-size:13px; } th,td { border-bottom:1px solid #ddd; padding:10px; text-align:right; } caption { text-align:left; font-weight:700; } .notice { border-left:3px solid #997329; padding-left:10px; } [role=alert] { color:#9b2424; }
 </style>

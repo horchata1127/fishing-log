@@ -3,6 +3,10 @@ import { computed, ref } from "vue"
 import { isCatch, countResults, lostDistanceLabels, actionLengthLabel } from "../db/database"
 import TackleSnapshotDetails from './TackleSnapshotDetails.vue'
 import TripWeatherPanel from './TripWeatherPanel.vue'
+import TripTimeline from './TripTimeline.vue'
+import type { readTripWeather } from '../utils/tripWeather'
+const timelineWeather = ref<Awaited<ReturnType<typeof readTripWeather>>>({ location: undefined, hours: [], requests: [] })
+const timelineWeatherError = ref('')
 import type {
   CatchRecord,
   FishingStyle,
@@ -215,7 +219,8 @@ function fishingStyleName(style: FishingStyle) {
     <TackleSnapshotDetails v-if="lastCatch?.tackleSnapshot" :snapshot="lastCatch.tackleSnapshot" />
   </section>
 
-  <TripWeatherPanel :key="trip.id" :trip="trip" />
+  <TripTimeline :key="trip.id" :trip="trip" :catches="catches" :events="events" :hours="timelineWeather.hours" :requests="timelineWeather.requests" :location="timelineWeather.location" :weather-error="timelineWeatherError" />
+  <TripWeatherPanel :key="trip.id" :trip="trip" @loaded="timelineWeather = $event; timelineWeatherError = ''" @load-error="timelineWeatherError = $event" />
 
   <section
     v-if="catches.length"
