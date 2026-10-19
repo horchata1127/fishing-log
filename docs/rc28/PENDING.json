@@ -1,0 +1,278 @@
+[
+  {
+    "series": "Tearo",
+    "name": "ゴールド",
+    "weight": 1.6,
+    "jan": "456021211675",
+    "reason": "公式JANの桁数・チェック桁が不正です。重量と色は確認済みのため、JANを空欄で登録します",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/tearo/"
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "氷河",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "氷河",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "山葵",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "山葵",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "ババシャツ",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "ババシャツ",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "ダイゴマイトマッデｲー",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "ダイゴマイトマッデｲー",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "エンドチャッピー",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "エンドチャッピー",
+    "confirmedWeights": [
+      0.6
+    ],
+    "unverifiedWeights": [
+      0.4,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "いちごみるく",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "いちごみるく",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "コハク",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "コハク",
+    "confirmedWeights": [
+      0.6,
+      0.8
+    ],
+    "unverifiedWeights": [
+      0.4
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "くさだんご",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "くさだんご",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "ももまんじゅう",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "ももまんじゅう",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "エンドインパクト",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "エンドインパクト",
+    "confirmedWeights": [
+      0.4,
+      0.6
+    ],
+    "unverifiedWeights": [
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "マエチンオレンジ",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "マエチンオレンジ",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "オリーブ",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "オリーブ",
+    "confirmedWeights": [
+      0.4,
+      0.6
+    ],
+    "unverifiedWeights": [
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "ピンク",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "ピンク",
+    "confirmedWeights": [
+      0.4,
+      0.6
+    ],
+    "unverifiedWeights": [
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "イエローオリーブ",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "イエローオリーブ",
+    "confirmedWeights": [
+      0.4
+    ],
+    "unverifiedWeights": [
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "ピカグロー",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "ピカグロー",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "フォアグラ",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "フォアグラ",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "キャビア",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "キャビア",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "マサのドクリンゴ",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "マサのドクリンゴ",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "コウキブラウン",
+    "reason": "重量別の販売を確認できたものだけ追加します。未確認重量: 0.4g, 0.6g, 0.8g",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "caption": "コウキブラウン",
+    "confirmedWeights": [],
+    "unverifiedWeights": [
+      0.4,
+      0.6,
+      0.8
+    ]
+  },
+  {
+    "series": "Chibi Quattro Spoon",
+    "name": "掲載サイズ数と仕様表の差",
+    "reason": "公式見出しは5サイズ、現行仕様表は0.4g・0.6g・0.8gの3サイズです。残る2サイズは特定せず保留します"
+  },
+  {
+    "series": "Wah",
+    "name": "RCワウ37 FⅡ 1091",
+    "reason": "FⅡ向け1091カラーの販売根拠は未確認です。HFの色を流用しません"
+  },
+  {
+    "series": "REKUZE",
+    "name": "重量未設定の既存REKUZE",
+    "reason": "既存モデル226は重量不明でMK2SSS表記の色が登録されています。既存IDを保持し、重量別モデルとは統合しません"
+  }
+]
