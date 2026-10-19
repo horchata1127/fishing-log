@@ -25,3 +25,6 @@ test-results/
 *.sln
 *.sw?
 offline-test-results/
+
+# Private device backup used only for local read-only analysis.
+docs/fishing-log-backup-*.json

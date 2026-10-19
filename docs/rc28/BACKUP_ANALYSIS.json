@@ -1,0 +1,134 @@
+{
+  "version": 7,
+  "exportedAt": "2026-10-19T10:59:21.272Z",
+  "valid": true,
+  "counts": {
+    "lureManufacturers": 80,
+    "lureSeries": 147,
+    "lureModels": 331,
+    "lureVariants": 2307,
+    "myLures": 9
+  },
+  "ids": {
+    "lureManufacturers": {
+      "min": 1,
+      "max": 80,
+      "positiveSafeIntegers": true
+    },
+    "lureSeries": {
+      "min": 1,
+      "max": 818,
+      "positiveSafeIntegers": true
+    },
+    "lureModels": {
+      "min": 1,
+      "max": 1826,
+      "positiveSafeIntegers": true
+    },
+    "lureVariants": {
+      "min": 1,
+      "max": 9017,
+      "positiveSafeIntegers": true
+    }
+  },
+  "normalizedDuplicates": {
+    "lureManufacturers": [],
+    "lureSeries": [
+      [
+        76,
+        77
+      ],
+      [
+        131,
+        132
+      ]
+    ],
+    "lureModels": [
+      [
+        27,
+        28
+      ],
+      [
+        29,
+        30
+      ],
+      [
+        33,
+        44
+      ],
+      [
+        37,
+        45
+      ],
+      [
+        39,
+        46
+      ],
+      [
+        47,
+        56
+      ],
+      [
+        51,
+        57
+      ]
+    ],
+    "lureVariants": [
+      [
+        246,
+        247
+      ]
+    ]
+  },
+  "references": [
+    {
+      "table": "lureSeries",
+      "field": "manufacturerId",
+      "present": 147,
+      "broken": 0
+    },
+    {
+      "table": "lureModels",
+      "field": "seriesId",
+      "present": 331,
+      "broken": 0
+    },
+    {
+      "table": "lureVariants",
+      "field": "modelId",
+      "present": 2307,
+      "broken": 0
+    },
+    {
+      "table": "myLures",
+      "field": "variantId",
+      "present": 9,
+      "broken": 0
+    },
+    {
+      "table": "catches",
+      "field": "lureId",
+      "present": 9,
+      "broken": 0
+    },
+    {
+      "table": "catches",
+      "field": "lureVariantId",
+      "present": 9,
+      "broken": 0
+    },
+    {
+      "table": "catches",
+      "field": "tripId",
+      "present": 11,
+      "broken": 0
+    }
+  ],
+  "preview": {
+    "addedColors": 369,
+    "retainedColors": 0,
+    "pendingItems": 23,
+    "addedModels": 20,
+    "addedSeries": 5
+  }
+}
