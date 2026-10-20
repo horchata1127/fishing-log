@@ -23,6 +23,7 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits<{
+  editInformation: []
   editFacility: []
   home: []
   addCatch: []
@@ -149,6 +150,8 @@ function fishingStyleName(style: FishingStyle) {
     </div>
   </section>
 
+  <button v-if="trip.endedAt" type="button" class="back-button" :disabled="locationBusy" @click="emit('editInformation')">釣行情報を編集</button>
+  <p v-if="trip.weather">天気：{{ trip.weather }}</p>
   <slot name="location" />
   <section class="card" aria-label="釣り場・施設"><h2>釣り場・施設</h2><p>現在の施設名：{{ trip.fishingAreaName }}</p><p>施設ID：{{ trip.facilityId || '未設定' }}</p><button class="back-button" type="button" :disabled="locationBusy" @click="emit('editFacility')">施設を設定・変更</button></section>
   <button

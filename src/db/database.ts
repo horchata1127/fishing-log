@@ -11,6 +11,7 @@ export type FishingStyle =
 export interface FishingTrip {
   id?: number
   fishingAreaName: string
+  /** Device-local calendar day (YYYY-MM-DD), not a UTC timestamp. */
   fishingDate: string
   fishingStyle: FishingStyle
   weather?: string
