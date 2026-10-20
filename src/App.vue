@@ -7,6 +7,8 @@ import { offline } from './pwa'
 import { onMounted, onUnmounted, ref } from 'vue'
 import { initializeFacilityRelease } from './utils/facilityRelease'
 import CatchModal from './components/CatchModal.vue'
+import TripInformationEditor from './components/TripInformationEditor.vue'
+import { localCalendarDate, validateCalendarDate } from './utils/calendarDate'
 import TripFacilityEditor from './components/TripFacilityEditor.vue'
 import FishingScreen from './components/FishingScreen.vue'
 import MyLuresScreen from './components/MyLuresScreen.vue'
@@ -55,6 +57,7 @@ const catchZoneId = ref<string>(), catchLocation = ref<CatchLocationSelection>()
 const catchAreaChanged = ref(false)
 const locationBusy = ref(false), savingLocation = ref(false), locationRefresh = ref(0)
 const editingTripFacility = ref(false)
+const editingTripInformation = ref(false)
 
 const myLureOptions = ref<LureOption[]>([])
 const catalogOptions = ref<LureOption[]>([])
@@ -218,7 +221,7 @@ const currentTrip = ref<FishingTrip | null>(null)
 
 // 新規釣行
 const newTripArea = ref('')
-const newTripDate = ref(new Date().toISOString().slice(0, 10))
+const newTripDate = ref(localCalendarDate())
 const newTripStyle = ref<FishingStyle>('AREA_TROUT')
 const newTripWeather = ref('')
 
@@ -336,7 +339,7 @@ async function loadMyLureOptions() {
 async function openNewTrip() {
   newTripFacilityId.value = undefined; newTripZoneId.value = undefined
   newTripArea.value = ''
-  newTripDate.value = new Date().toISOString().slice(0, 10)
+  newTripDate.value = localCalendarDate()
   newTripStyle.value = 'AREA_TROUT'
   newTripWeather.value = ''
   tripSetSelection.value = []
@@ -365,6 +368,7 @@ async function startTrip() {
   }
   savingTrip.value = true
   try {
+    validateCalendarDate(trip.fishingDate)
     if (trip.facilityId) {
       const selected = await loadLocationChoices(trip.facilityId)
       trip.fishingAreaName = selected.facility!.name
@@ -685,13 +689,20 @@ async function facilityLinked(trip: FishingTrip) {
   currentTrip.value = trip; locationRefresh.value++; editingTripFacility.value = false
   try { await loadTrips() } catch { alert('施設は保存済みですが、一覧を更新できませんでした。') }
 }
+
+async function tripInformationSaved(trip: FishingTrip) {
+  currentTrip.value = trip
+  editingTripInformation.value = false
+  try { await loadTrips() }
+  catch { recordStatus.value = '釣行情報は保存済みです。一覧を更新できなかったため、再読み込みしてください。' }
+}
 </script>
 
 <template>
   <p v-if="facilityReleaseError" role="alert">{{ facilityReleaseError }}</p>
   <p v-if="restoringData" role="status">バックアップを復元しています…</p>
   <main class="app" :inert="initializingFacilityRelease || restoringData || offline.updating" :aria-busy="initializingFacilityRelease || restoringData || offline.updating">
-    <OfflineStatus :safe="!initializingFacilityRelease && screen === 'home' && !editingTripFacility && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
+    <OfflineStatus :safe="!initializingFacilityRelease && screen === 'home' && !editingTripFacility && !editingTripInformation && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
     <p v-if="connectionState === 'changed'" role="alert">別の画面でデータベースが更新されたため、この画面からは保存できません。入力中の内容をメモしてから、この画面を手動で再読み込みしてください。</p>
     <p v-else-if="connectionState === 'blocked'" role="alert">別のFishing Log画面がデータベースの更新を待たせています。その画面の入力を保存して閉じてください。自動で再読み込みはしません。</p>
     <!-- ホーム -->
@@ -814,7 +825,7 @@ async function facilityLinked(trip: FishingTrip) {
 
     <!-- 釣行中 -->
 
-    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch || editingTripFacility" @edit-facility="editingTripFacility = true" @delete-catch="removeCatch" @home="goHome"
+    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch || editingTripFacility || editingTripInformation" @edit-information="editingTripInformation = true" @edit-facility="editingTripFacility = true" @delete-catch="removeCatch" @home="goHome"
       @add-catch="addCatch" @edit-catch="editCatch" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @update-event="updateTripEvent" @end-trip="endTrip">
       <template #location><FacilityPicker v-if="currentTrip.facilityId" :key="locationRefresh" fixed :facility-id="currentTrip.facilityId" :trip-id="currentTrip.id"
         :zone-id="currentTrip.currentZoneId" :retained-zone-id="currentTrip.currentZoneId" zone-label="現在のエリア" :disabled="!!currentTrip.endedAt || savingLocation || showCatchForm"
@@ -822,7 +833,7 @@ async function facilityLinked(trip: FishingTrip) {
     </FishingScreen>
 
     <button v-if="screen === 'fishing' && currentTrip" type="button" class="delete-trip-button"
-      :disabled="preparingTripDeletion || deletingTrip || savingCatch || savingTrip || locationBusy || savingLocation || showCatchForm || editingTripTackles"
+      :disabled="preparingTripDeletion || deletingTrip || savingCatch || savingTrip || locationBusy || savingLocation || showCatchForm || editingTripTackles || editingTripInformation"
       @click="requestTripDeletion">{{ preparingTripDeletion ? '削除対象を確認中…' : 'この釣行を削除' }}</button>
 
     <TripDeleteDialog v-if="tripDeletionSummary" :summary="tripDeletionSummary" :busy="deletingTrip" :error="tripDeletionError"
@@ -840,6 +851,7 @@ async function facilityLinked(trip: FishingTrip) {
 
     <p v-if="recordStatus && screen === 'fishing'" role="status">{{ recordStatus }}</p>
     <!-- 釣果入力モーダル -->
+    <TripInformationEditor v-if="editingTripInformation && currentTrip" :trip="currentTrip" @saved="tripInformationSaved" @cancel="editingTripInformation = false" />
     <TripFacilityEditor v-if="editingTripFacility && currentTrip" :trip="currentTrip" @saved="facilityLinked" @cancel="editingTripFacility = false" />
     <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt" :editing="!!editingCatch" @update:caught-at="pendingCaughtAt = $event" v-model:memo="catchMemo"
       v-model:result-type="catchResultType" v-model:lost-distance="catchLostDistance"
