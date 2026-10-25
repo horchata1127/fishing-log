@@ -7,8 +7,11 @@ import { previewRc20Catalog, applyRc20Catalog, rc20DiffCsv, type Rc20Preview } f
 import { previewRc21Catalog, applyRc21Catalog, rc21DiffCsv, type Rc21Preview } from './utils/rc21Catalog'
 import { previewRc22Catalog, applyRc22Catalog, rc22DiffCsv, type Rc22Preview } from './utils/rc22Catalog'
 import { previewRc28Catalog, applyRc28Catalog, rc28DiffCsv, type Rc28Preview } from './utils/rc28Catalog'
+import { previewRc30Catalog, applyRc30Catalog, rc30DiffCsv, type Rc30Preview } from './utils/rc30Catalog'
+import { rc30Pending } from './data/rc30Catalog'
 import { rc28Pending } from './data/rc28Catalog'
 
+const rc30Preview = shallowRef<Rc30Preview | null>(null)
 const rc28Preview = shallowRef<Rc28Preview | null>(null)
 
 const rc22Preview = shallowRef<Rc22Preview | null>(null)
@@ -32,19 +35,49 @@ const pendingSeed = shallowRef<unknown>(null)
 const preview = shallowRef<CatalogPreview | null>(null)
 const rc20Preview = shallowRef<Rc20Preview | null>(null)
 // Read-only UI state for deferring application updates during import/preview.
-defineExpose({ busy, preview: computed(() => preview.value ?? rc20Preview.value ?? rc21Preview.value ?? rc22Preview.value ?? rc28Preview.value) })
+defineExpose({ busy, preview: computed(() => preview.value ?? rc20Preview.value ?? rc21Preview.value ?? rc22Preview.value ?? rc28Preview.value ?? rc30Preview.value) })
 const tableLabels = {
   lureManufacturers: 'メーカー', lureSeries: 'シリーズ',
   lureModels: 'モデル', lureVariants: 'カラー',
 }
 
 function cancelPreview() {
+  rc30Preview.value = null
   rc28Preview.value = null
   pendingSeed.value = null
   preview.value = null
   rc20Preview.value = null
   rc21Preview.value = null
   rc22Preview.value = null
+}
+
+async function checkRc30() {
+  if (busy.value) return
+  cancelPreview(); busy.value = true
+  try {
+    rc30Preview.value = await previewRc30Catalog()
+    message.value = 'RC30の事前照合が完了しました。まだ反映していません。'
+  } catch (error) { message.value = `RC30確認失敗: ${String(error)}` }
+  finally { busy.value = false }
+}
+async function applyRc30() {
+  const checked = rc30Preview.value
+  if (busy.value || !checked?.addedColors) return
+  busy.value = true
+  try {
+    await exportBackup()
+    const result = await applyRc30Catalog(checked.comparisonToken)
+    message.value = `RC30反映完了: ${result.addedColors}色追加・${result.retainedColors}色保持・${result.pendingColors}件保留。`
+    cancelPreview()
+  } catch (error) { message.value = `RC30反映失敗: ${String(error)}`; cancelPreview() }
+  finally { busy.value = false }
+}
+function downloadRc30Diff() {
+  if (!rc30Preview.value) return
+  const url = URL.createObjectURL(new Blob([rc30DiffCsv(rc30Preview.value)], { type: 'text/csv;charset=utf-8' }))
+  const link = document.createElement('a')
+  link.href = url; link.download = 'RC30_CATALOG_DIFF_DEVICE.csv'; link.click()
+  setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
 
 async function checkRc28() {
@@ -166,7 +199,7 @@ function downloadRc21Diff() {
 }
 
 async function addRc19() {
-  if (busy.value || preview.value || rc20Preview.value || rc21Preview.value || rc22Preview.value || rc28Preview.value) return
+  if (busy.value || preview.value || rc20Preview.value || rc21Preview.value || rc22Preview.value || rc28Preview.value || rc30Preview.value) return
   busy.value = true
   try {
     message.value = `RC19対象カタログ: ${await registerRc19HuntGrande()}件追加しました。`
@@ -226,7 +259,7 @@ async function applyCatalog() {
     <button type="button" :disabled="busy" @click="backup">① 全データをバックアップ</button>
     <button type="button" :disabled="busy" @click="fileInput?.click()">② カタログJSONを事前確認</button>
     <p>RC19確認済み：HUNT GRANDE 1.3g / T-15 シルバー・T-18 黄茶次郎</p>
-    <button type="button" :disabled="busy || !!preview || !!rc20Preview || !!rc21Preview || !!rc22Preview || !!rc28Preview" @click="addRc19">RC19のHUNT GRANDE 1.3g・2色を追加</button>
+    <button type="button" :disabled="busy || !!preview || !!rc20Preview || !!rc21Preview || !!rc22Preview || !!rc28Preview || !!rc30Preview" @click="addRc19">RC19のHUNT GRANDE 1.3g・2色を追加</button>
     <p>RC20：HUNT GRANDE 1.3gの30色と、4メーカーの公式確認済みカラーを補完します。</p>
     <button type="button" :disabled="busy" @click="checkRc20">RC20の追加予定を確認</button>
     <p>RC21：ベルベットアーツ11モデル・213色、ロブルアー7モデル・69色を事前照合します。</p>
@@ -235,9 +268,30 @@ async function applyCatalog() {
     <button type="button" :disabled="busy" @click="checkRc22">RC22の追加予定を確認</button>
     <p>RC28：RCワウ2モデルとTIMONスプーン6シリーズの確認済みカラーを追加します。</p>
     <button type="button" :disabled="busy" @click="checkRc28">RC28の追加予定を確認</button>
+    <p>USSA：S・XS・ノンラトル・Fat USSA Jr. XSの確認済みカラーを追加します。既存の汎用USSAは保持します。</p>
+    <button type="button" :disabled="busy" @click="checkRc30">RC30 USSAの追加予定を確認</button>
     <input ref="fileInput" type="file" accept=".json,application/json" hidden @change="importFile" />
     <p v-if="message" role="status">{{ message }}</p>
     <p class="note">所有ルアーは追加・変更されません。釣行・釣果も変更しません。</p>
+    <section v-if="rc30Preview" class="preview" aria-label="RC30カタログの事前確認">
+      <h3>RC30の追加予定</h3>
+      <p>追加 {{ rc30Preview.addedColors }}色・登録済み {{ rc30Preview.retainedColors }}色・保留 {{ rc30Preview.pendingColors }}件</p>
+      <p>新しいモデル {{ rc30Preview.addedModels }}件・シリーズ {{ rc30Preview.addedSeries }}件</p>
+      <p class="note">追加ボタンで変更前のバックアップも保存します。反映後にもバックアップを保存してください。所有登録はマイルアーで行います。既存の汎用USSAや釣果名は保持します。</p>
+      <details><summary>モデル・カラーごとの出典と照合結果</summary>
+        <ul><li v-for="(row, index) in rc30Preview.rows" :key="index">
+          {{ row.series }} / {{ row.model }} / {{ row.color }}：{{ row.action === 'add' ? '追加' : row.action === 'keep' ? '登録済み' : '保留' }}
+          <span v-if="row.existingId">（既存ID {{ row.existingId }}）</span> {{ row.reason }}
+          <a :href="row.sourceUrl" target="_blank" rel="noopener noreferrer">出典</a>
+        </li></ul>
+      </details>
+      <details><summary>未確認事項</summary>
+        <ul><li v-for="(item, index) in rc30Pending" :key="index">{{ item.series }} / {{ item.name }}：{{ item.reason }}</li></ul>
+      </details>
+      <button type="button" :disabled="busy" @click="downloadRc30Diff">照合結果をCSVで保存</button>
+      <button type="button" :disabled="busy || !rc30Preview.addedColors" @click="applyRc30">RC30の確認済みカタログを追加</button>
+      <button type="button" :disabled="busy" @click="cancelPreview">RC30の追加をキャンセル</button>
+    </section>
     <section v-if="rc28Preview" class="preview" aria-label="RC28カタログの事前確認">
       <h3>RC28の追加予定</h3>
       <p>追加 {{ rc28Preview.addedColors }}色・登録済み {{ rc28Preview.retainedColors }}色・保留 {{ rc28Preview.pendingColors }}件</p>

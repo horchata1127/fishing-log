@@ -215,6 +215,7 @@ export function validateBackup(value: unknown): RestoredData {
           row.caughtAt = dateTime(row.caughtAt, `${path}.caughtAt`)
           break
         case 'tripEvents':
+          for (const field of ['note', 'facilityId', 'zoneId', 'zoneName']) if (row[field] !== undefined) string(row[field], `${path}.${field}`)
           reference(row, 'tripId', 'trips', path)
           if (row.type !== 'stocking' && row.type !== 'pellet') fail(`${path}.type`, 'イベント種別が不正です')
           row.occurredAt = dateTime(row.occurredAt, `${path}.occurredAt`)

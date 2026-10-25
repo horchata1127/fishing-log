@@ -304,31 +304,6 @@ async function recordTripEvent(type: TripEventType) {
   }
 }
 
-async function updateTripEvent(event: TripEvent, dateTime: string) {
-  if (!event.id || !currentTrip.value?.id || event.tripId !== currentTrip.value.id) return
-  const occurredAt = new Date(dateTime)
-  if (!Number.isFinite(occurredAt.getTime())) {
-    alert('日時を確認してな。')
-    return
-  }
-  const startedAt = new Date(currentTrip.value.startedAt)
-  if (occurredAt < startedAt) {
-    alert('釣行開始より前の日時にはできへんで。')
-    return
-  }
-  if (currentTrip.value.endedAt && occurredAt > new Date(currentTrip.value.endedAt)) {
-    alert('釣行終了より後の日時にはできへんで。')
-    return
-  }
-  try {
-    await db.tripEvents.update(event.id, { occurredAt })
-    await loadTripEvents()
-  } catch (error) {
-    console.error('イベント時刻の更新に失敗しました', error)
-    alert('時刻の修正に失敗したで。')
-  }
-}
-
 async function loadMyLureOptions() {
   const options = await loadLureChoices()
   myLureOptions.value = options.owned
@@ -826,7 +801,7 @@ async function tripInformationSaved(trip: FishingTrip) {
     <!-- 釣行中 -->
 
     <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch || editingTripFacility || editingTripInformation" @edit-information="editingTripInformation = true" @edit-facility="editingTripFacility = true" @delete-catch="removeCatch" @home="goHome"
-      @add-catch="addCatch" @edit-catch="editCatch" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @update-event="updateTripEvent" @end-trip="endTrip">
+      @add-catch="addCatch" @edit-catch="editCatch" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @events-changed="loadTripEvents" @end-trip="endTrip">
       <template #location><FacilityPicker v-if="currentTrip.facilityId" :key="locationRefresh" fixed :facility-id="currentTrip.facilityId" :trip-id="currentTrip.id"
         :zone-id="currentTrip.currentZoneId" :retained-zone-id="currentTrip.currentZoneId" zone-label="現在のエリア" :disabled="!!currentTrip.endedAt || savingLocation || showCatchForm"
         @update:zone-id="selectCurrentZone" @busy="locationBusy = $event" /></template>

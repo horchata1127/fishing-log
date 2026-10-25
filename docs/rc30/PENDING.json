@@ -1,0 +1,22 @@
+[
+  {
+    "series": "USSA",
+    "name": "26佐野",
+    "reason": "River Roadの列名は26佐野。他店の26ノブとの対応が不明なため保留。"
+  },
+  {
+    "series": "USSA",
+    "name": "ハラオリ",
+    "reason": "既存汎用USSAの色を保持。S/XS/NRへの割当根拠は未確認。"
+  },
+  {
+    "series": "USSA",
+    "name": "クリアシルバー",
+    "reason": "ユーザー記録名を保持。クリアーホロとの同一性は未確認。"
+  },
+  {
+    "series": "USSA",
+    "name": "XS/NR ミルクココア・NR C付き2色",
+    "reason": "共通セレクターには存在するがJANがないため対象外。"
+  }
+]
