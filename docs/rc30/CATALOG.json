@@ -1,0 +1,1858 @@
+[
+  {
+    "manufacturer": "RODIO CRAFT",
+    "manufacturerAliases": [
+      "ロデオクラフト",
+      "RodioCraft"
+    ],
+    "series": "USSA",
+    "seriesAliases": [
+      "ウッサ"
+    ],
+    "model": "USSA S",
+    "modelAliases": [
+      "ウッサS"
+    ],
+    "weight": 2.7,
+    "length": 30,
+    "category": "クランク",
+    "actionType": "S",
+    "reuseWithoutWeight": true,
+    "buoyancy": "シンキング",
+    "rattle": "なし",
+    "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+    "colors": [
+      {
+        "code": "1",
+        "name": "クリアー（マット）",
+        "label": "1 クリアー（マット）",
+        "aliases": [
+          "クリアー（マット）"
+        ],
+        "jan": "4573151210759",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #1 クリアー（マット）"
+      },
+      {
+        "code": "2",
+        "name": "K.F III（レッドグロー）",
+        "label": "2 K.F III（レッドグロー）",
+        "aliases": [
+          "K.F III（レッドグロー）"
+        ],
+        "jan": "4573151210766",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #2 K.F III（レッドグロー）"
+      },
+      {
+        "code": "3",
+        "name": "S.M VI",
+        "label": "3 S.M VI",
+        "aliases": [
+          "S.M VI"
+        ],
+        "jan": "4573151210773",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #3 S.M VI"
+      },
+      {
+        "code": "3",
+        "name": "S.M VI C",
+        "label": "3 S.M VI C",
+        "aliases": [
+          "S.MⅥ C"
+        ],
+        "jan": "4573632514611",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常・クリアリップ",
+        "evidence": "S / #3 S.MⅥ C"
+      },
+      {
+        "code": "4",
+        "name": "K.F V（FKB）",
+        "label": "4 K.F V（FKB）",
+        "aliases": [
+          "K.F V（FKB)"
+        ],
+        "jan": "4573151210780",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #4 K.F V（FKB)"
+      },
+      {
+        "code": "5",
+        "name": "M.M III",
+        "label": "5 M.M III",
+        "aliases": [
+          "M.M III"
+        ],
+        "jan": "4573151210797",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #5 M.M III"
+      },
+      {
+        "code": "6",
+        "name": "ミルクココア",
+        "label": "6 ミルクココア",
+        "aliases": [
+          "ミルクココア"
+        ],
+        "jan": "4573151210803",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #6 ミルクココア"
+      },
+      {
+        "code": "7",
+        "name": "さちおの茶",
+        "label": "7 さちおの茶",
+        "aliases": [
+          "さちおの茶"
+        ],
+        "jan": "4573151210810",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #7 さちおの茶"
+      },
+      {
+        "code": "8",
+        "name": "キラキラ",
+        "label": "8 キラキラ",
+        "aliases": [
+          "キラキラ"
+        ],
+        "jan": "4573151210827",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #8 キラキラ"
+      },
+      {
+        "code": "9",
+        "name": "FWS",
+        "label": "9 FWS",
+        "aliases": [
+          "FWS"
+        ],
+        "jan": "4573151224909",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #9 FWS"
+      },
+      {
+        "code": "10",
+        "name": "黄/緑",
+        "label": "10 黄/緑",
+        "aliases": [
+          "黄/緑"
+        ],
+        "jan": "4573151224916",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #10 黄/緑"
+      },
+      {
+        "code": "11",
+        "name": "2014ノブカラー",
+        "label": "11 2014ノブカラー",
+        "aliases": [
+          "2014ノブカラー"
+        ],
+        "jan": "4573151224923",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #11 2014ノブカラー"
+      },
+      {
+        "code": "12",
+        "name": "蛍光ピンク",
+        "label": "12 蛍光ピンク",
+        "aliases": [
+          "蛍光ピンク"
+        ],
+        "jan": "4573151224930",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #12 蛍光ピンク"
+      },
+      {
+        "code": "13",
+        "name": "大人の黒金",
+        "label": "13 大人の黒金",
+        "aliases": [
+          "大人の黒金"
+        ],
+        "jan": "4573151236483",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #13 大人の黒金"
+      },
+      {
+        "code": "14",
+        "name": "2015ノブカラー",
+        "label": "14 2015ノブカラー",
+        "aliases": [
+          "2015ノブカラー"
+        ],
+        "jan": "4573151236490",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #14 2015ノブカラー"
+      },
+      {
+        "code": "15",
+        "name": "黒まんじゅう",
+        "label": "15 黒まんじゅう",
+        "aliases": [
+          "黒まんじゅう",
+          "クロまんじゅう"
+        ],
+        "jan": "4573151236506",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #15 黒まんじゅう"
+      },
+      {
+        "code": "16",
+        "name": "ニホンザリガニ",
+        "label": "16 ニホンザリガニ",
+        "aliases": [
+          "ニホンザリガニ"
+        ],
+        "jan": "4573151236513",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #16 ニホンザリガニ"
+      },
+      {
+        "code": "17",
+        "name": "光合成の夏",
+        "label": "17 光合成の夏",
+        "aliases": [
+          "光合成の夏"
+        ],
+        "jan": "4573151236520",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #17 光合成の夏"
+      },
+      {
+        "code": "18",
+        "name": "16ノブ",
+        "label": "18 16ノブ",
+        "aliases": [
+          "16ノブ"
+        ],
+        "jan": "4573151265803",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #18 16ノブ"
+      },
+      {
+        "code": "19",
+        "name": "19ノブ",
+        "label": "19 19ノブ",
+        "aliases": [
+          "19ノブ"
+        ],
+        "jan": "4573151265810",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #19 19ノブ"
+      },
+      {
+        "code": "20",
+        "name": "20安塚",
+        "label": "20 20安塚",
+        "aliases": [
+          "20安塚"
+        ],
+        "jan": "4573151265827",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #20 20安塚"
+      },
+      {
+        "code": "21",
+        "name": "RCポテトヘッド",
+        "label": "21 RCポテトヘッド",
+        "aliases": [
+          "RCポテトヘッド"
+        ],
+        "jan": "4573151265834",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #21 RCポテトヘッド"
+      },
+      {
+        "code": "22",
+        "name": "19早乙女",
+        "label": "22 19早乙女",
+        "aliases": [
+          "'19早乙女"
+        ],
+        "jan": "4573151270470",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #22 '19早乙女"
+      },
+      {
+        "code": "23",
+        "name": "20井野",
+        "label": "23 20井野",
+        "aliases": [
+          "'20井野"
+        ],
+        "jan": "4573151270487",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #23 '20井野"
+      },
+      {
+        "code": "24",
+        "name": "24ノブ",
+        "label": "24 24ノブ",
+        "aliases": [
+          "'24ノブ"
+        ],
+        "jan": "4573151270494",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #24 '24ノブ"
+      },
+      {
+        "code": "25",
+        "name": "ラーテル",
+        "label": "25 ラーテル",
+        "aliases": [
+          "ラーテル"
+        ],
+        "jan": "4573151270500",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #25 ラーテル"
+      },
+      {
+        "code": "26",
+        "name": "FOCUSオリーブ",
+        "label": "26 FOCUSオリーブ",
+        "aliases": [
+          "FOCUSオリーブ"
+        ],
+        "jan": "4573151270517",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #26 FOCUSオリーブ"
+      },
+      {
+        "code": "26",
+        "name": "FOCUSオリーブC",
+        "label": "26 FOCUSオリーブC",
+        "aliases": [
+          "FOCUSオリーブC"
+        ],
+        "jan": "4573632514628",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常・クリアリップ",
+        "evidence": "S / #26 FOCUSオリーブC"
+      },
+      {
+        "code": "27",
+        "name": "21ノブ",
+        "label": "27 21ノブ",
+        "aliases": [
+          "'21ノブ"
+        ],
+        "jan": "4573632514635",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #27 '21ノブ"
+      },
+      {
+        "code": "28",
+        "name": "FOCUSおまめ",
+        "label": "28 FOCUSおまめ",
+        "aliases": [
+          "FOCUSおまめ"
+        ],
+        "jan": "4573632514642",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S / #28 FOCUSおまめ"
+      },
+      {
+        "code": "",
+        "name": "スケスケクリアー",
+        "label": "スケスケクリアー",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://island.shop-pro.jp/?pid=182831994",
+        "sourceTier": "retailer",
+        "colorClass": "有頂天",
+        "evidence": "スケスケクリアー"
+      },
+      {
+        "code": "",
+        "name": "スケスケピンク",
+        "label": "スケスケピンク",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://island.shop-pro.jp/?pid=182831994",
+        "sourceTier": "retailer",
+        "colorClass": "有頂天",
+        "evidence": "スケスケピンク"
+      },
+      {
+        "code": "",
+        "name": "オラオラオレンジ",
+        "label": "オラオラオレンジ",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://island.shop-pro.jp/?pid=182831994",
+        "sourceTier": "retailer",
+        "colorClass": "有頂天",
+        "evidence": "オラオラオレンジ"
+      },
+      {
+        "code": "",
+        "name": "26松本",
+        "label": "26松本",
+        "aliases": [
+          "'26松本"
+        ],
+        "jan": "",
+        "sourceUrl": "https://riverroad1091.shop/?pid=193297586",
+        "sourceTier": "retailer",
+        "colorClass": "2026シグネイチャー",
+        "evidence": "26松本"
+      },
+      {
+        "code": "",
+        "name": "26福田",
+        "label": "26福田",
+        "aliases": [
+          "'26福田"
+        ],
+        "jan": "",
+        "sourceUrl": "https://riverroad1091.shop/?pid=193297586",
+        "sourceTier": "retailer",
+        "colorClass": "2026シグネイチャー",
+        "evidence": "26福田"
+      },
+      {
+        "code": "",
+        "name": "26早乙女",
+        "label": "26早乙女",
+        "aliases": [
+          "'26早乙女"
+        ],
+        "jan": "",
+        "sourceUrl": "https://riverroad1091.shop/?pid=193297586",
+        "sourceTier": "retailer",
+        "colorClass": "2026シグネイチャー",
+        "evidence": "26早乙女"
+      },
+      {
+        "code": "",
+        "name": "26井野",
+        "label": "26井野",
+        "aliases": [
+          "'26井野"
+        ],
+        "jan": "",
+        "sourceUrl": "https://riverroad1091.shop/?pid=193297586",
+        "sourceTier": "retailer",
+        "colorClass": "2026シグネイチャー",
+        "evidence": "26井野"
+      },
+      {
+        "code": "",
+        "name": "26ノブ",
+        "label": "26ノブ",
+        "aliases": [
+          "'26ノブ"
+        ],
+        "jan": "",
+        "sourceUrl": "https://andfield365.jp/products/ロデオクラフト-ウッサ-2026-シグネイチャーカラー",
+        "sourceTier": "retailer",
+        "colorClass": "2026シグネイチャー",
+        "evidence": "26ノブ"
+      },
+      {
+        "code": "",
+        "name": "一網打尽",
+        "label": "一網打尽",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://riverroad1091.shop/?pid=145456100",
+        "sourceTier": "retailer",
+        "colorClass": "River Road別注",
+        "evidence": "一網打尽"
+      },
+      {
+        "code": "",
+        "name": "三ケ日みかん",
+        "label": "三ケ日みかん",
+        "aliases": [
+          "三ヶ日みかん"
+        ],
+        "jan": "",
+        "sourceUrl": "https://any-netshop.shop-pro.jp/?pid=182928376",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "三ケ日みかん"
+      },
+      {
+        "code": "",
+        "name": "1091 オレンジクラウン",
+        "label": "1091 オレンジクラウン",
+        "aliases": [
+          "1091オレンジクラウン",
+          "オレンジクラウン"
+        ],
+        "jan": "",
+        "sourceUrl": "https://any-netshop.shop-pro.jp/?pid=182928376",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "1091 オレンジクラウン"
+      },
+      {
+        "code": "",
+        "name": "キラキラウォーターメロン",
+        "label": "キラキラウォーターメロン",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://any-netshop.shop-pro.jp/?pid=182928376",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "キラキラウォーターメロン"
+      },
+      {
+        "code": "",
+        "name": "1091 18井野",
+        "label": "1091 18井野",
+        "aliases": [
+          "18井野",
+          "18井野/1091"
+        ],
+        "jan": "",
+        "sourceUrl": "https://any-netshop.shop-pro.jp/?pid=182928376",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "1091 18井野"
+      },
+      {
+        "code": "",
+        "name": "カフェシャレッドグロー",
+        "label": "カフェシャレッドグロー",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://store.shopping.yahoo.co.jp/backlash/y-4573151227955.html",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "カフェシャレッドグロー"
+      },
+      {
+        "code": "",
+        "name": "Gパン",
+        "label": "Gパン",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://store.shopping.yahoo.co.jp/backlash/y-4573151227955.html",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "Gパン"
+      },
+      {
+        "code": "",
+        "name": "栃おとめ",
+        "label": "栃おとめ",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.jointer.jp/product/detail/rodio_craft_ussa/",
+        "sourceTier": "retailer",
+        "colorClass": "JOINTER別注",
+        "evidence": "栃おとめ"
+      },
+      {
+        "code": "",
+        "name": "スケペレット",
+        "label": "スケペレット",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.jointer.jp/product/detail/rodio_craft_ussa/",
+        "sourceTier": "retailer",
+        "colorClass": "JOINTER別注",
+        "evidence": "スケペレット"
+      },
+      {
+        "code": "",
+        "name": "腹黒",
+        "label": "腹黒",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.jointer.jp/product/detail/rodio_craft_ussa/",
+        "sourceTier": "retailer",
+        "colorClass": "JOINTER別注",
+        "evidence": "腹黒"
+      }
+    ]
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "manufacturerAliases": [
+      "ロデオクラフト",
+      "RodioCraft"
+    ],
+    "series": "USSA",
+    "seriesAliases": [
+      "ウッサ"
+    ],
+    "model": "USSA XS",
+    "modelAliases": [
+      "ウッサXS",
+      "USSA XS Rattle"
+    ],
+    "weight": 2.9,
+    "length": 30,
+    "category": "クランク",
+    "actionType": "XS",
+    "reuseWithoutWeight": true,
+    "buoyancy": "エキストラシンキング",
+    "rattle": "ガラスラトル×2",
+    "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+    "colors": [
+      {
+        "code": "1",
+        "name": "クリアー（マット）",
+        "label": "1 クリアー（マット）",
+        "aliases": [
+          "クリアー（マット）"
+        ],
+        "jan": "4573632514659",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #1 クリアー（マット）"
+      },
+      {
+        "code": "2",
+        "name": "K.F III（レッドグロー）",
+        "label": "2 K.F III（レッドグロー）",
+        "aliases": [
+          "K.F III（レッドグロー）"
+        ],
+        "jan": "4573151230870",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #2 K.F III（レッドグロー）"
+      },
+      {
+        "code": "3",
+        "name": "S.M VI",
+        "label": "3 S.M VI",
+        "aliases": [
+          "S.M VI"
+        ],
+        "jan": "4573151230887",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #3 S.M VI"
+      },
+      {
+        "code": "3",
+        "name": "S.M VI C",
+        "label": "3 S.M VI C",
+        "aliases": [
+          "S.MⅥ C"
+        ],
+        "jan": "4573632514666",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常・クリアリップ",
+        "evidence": "XS Rattle/ラトル / #3 S.MⅥ C"
+      },
+      {
+        "code": "4",
+        "name": "K.F V（FKB）",
+        "label": "4 K.F V（FKB）",
+        "aliases": [
+          "K.F V（FKB)"
+        ],
+        "jan": "4573151230894",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #4 K.F V（FKB)"
+      },
+      {
+        "code": "5",
+        "name": "M.M III",
+        "label": "5 M.M III",
+        "aliases": [
+          "M.M III"
+        ],
+        "jan": "4573151230900",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #5 M.M III"
+      },
+      {
+        "code": "7",
+        "name": "さちおの茶",
+        "label": "7 さちおの茶",
+        "aliases": [
+          "さちおの茶"
+        ],
+        "jan": "4573151230917",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #7 さちおの茶"
+      },
+      {
+        "code": "8",
+        "name": "キラキラ",
+        "label": "8 キラキラ",
+        "aliases": [
+          "キラキラ"
+        ],
+        "jan": "4573151230924",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #8 キラキラ"
+      },
+      {
+        "code": "9",
+        "name": "FWS",
+        "label": "9 FWS",
+        "aliases": [
+          "FWS"
+        ],
+        "jan": "4573151230931",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #9 FWS"
+      },
+      {
+        "code": "10",
+        "name": "黄/緑",
+        "label": "10 黄/緑",
+        "aliases": [
+          "黄/緑"
+        ],
+        "jan": "4573151230948",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #10 黄/緑"
+      },
+      {
+        "code": "11",
+        "name": "2014ノブカラー",
+        "label": "11 2014ノブカラー",
+        "aliases": [
+          "2014ノブカラー"
+        ],
+        "jan": "4573151230955",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #11 2014ノブカラー"
+      },
+      {
+        "code": "12",
+        "name": "蛍光ピンク",
+        "label": "12 蛍光ピンク",
+        "aliases": [
+          "蛍光ピンク"
+        ],
+        "jan": "4573151230962",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #12 蛍光ピンク"
+      },
+      {
+        "code": "13",
+        "name": "大人の黒金",
+        "label": "13 大人の黒金",
+        "aliases": [
+          "大人の黒金"
+        ],
+        "jan": "4573151236537",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #13 大人の黒金"
+      },
+      {
+        "code": "14",
+        "name": "2015ノブカラー",
+        "label": "14 2015ノブカラー",
+        "aliases": [
+          "2015ノブカラー"
+        ],
+        "jan": "4573151236544",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #14 2015ノブカラー"
+      },
+      {
+        "code": "15",
+        "name": "黒まんじゅう",
+        "label": "15 黒まんじゅう",
+        "aliases": [
+          "黒まんじゅう",
+          "クロまんじゅう"
+        ],
+        "jan": "4573151236551",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #15 黒まんじゅう"
+      },
+      {
+        "code": "16",
+        "name": "ニホンザリガニ",
+        "label": "16 ニホンザリガニ",
+        "aliases": [
+          "ニホンザリガニ"
+        ],
+        "jan": "4573151236568",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #16 ニホンザリガニ"
+      },
+      {
+        "code": "17",
+        "name": "光合成の夏",
+        "label": "17 光合成の夏",
+        "aliases": [
+          "光合成の夏"
+        ],
+        "jan": "4573151236575",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #17 光合成の夏"
+      },
+      {
+        "code": "18",
+        "name": "16ノブ",
+        "label": "18 16ノブ",
+        "aliases": [
+          "16ノブ"
+        ],
+        "jan": "4573151265841",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #18 16ノブ"
+      },
+      {
+        "code": "19",
+        "name": "19ノブ",
+        "label": "19 19ノブ",
+        "aliases": [
+          "19ノブ"
+        ],
+        "jan": "4573151265858",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #19 19ノブ"
+      },
+      {
+        "code": "20",
+        "name": "20安塚",
+        "label": "20 20安塚",
+        "aliases": [
+          "20安塚"
+        ],
+        "jan": "4573151265865",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #20 20安塚"
+      },
+      {
+        "code": "21",
+        "name": "RCポテトヘッド",
+        "label": "21 RCポテトヘッド",
+        "aliases": [
+          "RCポテトヘッド"
+        ],
+        "jan": "4573151265872",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #21 RCポテトヘッド"
+      },
+      {
+        "code": "22",
+        "name": "19早乙女",
+        "label": "22 19早乙女",
+        "aliases": [
+          "'19早乙女"
+        ],
+        "jan": "4573151271125",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #22 '19早乙女"
+      },
+      {
+        "code": "23",
+        "name": "20井野",
+        "label": "23 20井野",
+        "aliases": [
+          "'20井野"
+        ],
+        "jan": "4573151271132",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #23 '20井野"
+      },
+      {
+        "code": "24",
+        "name": "24ノブ",
+        "label": "24 24ノブ",
+        "aliases": [
+          "'24ノブ"
+        ],
+        "jan": "4573151271149",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #24 '24ノブ"
+      },
+      {
+        "code": "25",
+        "name": "ラーテル",
+        "label": "25 ラーテル",
+        "aliases": [
+          "ラーテル"
+        ],
+        "jan": "4573151271156",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #25 ラーテル"
+      },
+      {
+        "code": "26",
+        "name": "FOCUSオリーブ",
+        "label": "26 FOCUSオリーブ",
+        "aliases": [
+          "FOCUSオリーブ"
+        ],
+        "jan": "4573151271163",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #26 FOCUSオリーブ"
+      },
+      {
+        "code": "26",
+        "name": "FOCUSオリーブC",
+        "label": "26 FOCUSオリーブC",
+        "aliases": [
+          "FOCUSオリーブC"
+        ],
+        "jan": "4573632514673",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常・クリアリップ",
+        "evidence": "XS Rattle/ラトル / #26 FOCUSオリーブC"
+      },
+      {
+        "code": "27",
+        "name": "21ノブ",
+        "label": "27 21ノブ",
+        "aliases": [
+          "'21ノブ"
+        ],
+        "jan": "4573632514680",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #27 '21ノブ"
+      },
+      {
+        "code": "28",
+        "name": "FOCUSおまめ",
+        "label": "28 FOCUSおまめ",
+        "aliases": [
+          "FOCUSおまめ"
+        ],
+        "jan": "4573632514697",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS Rattle/ラトル / #28 FOCUSおまめ"
+      },
+      {
+        "code": "",
+        "name": "スケスケクリアー",
+        "label": "スケスケクリアー",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://island.shop-pro.jp/?pid=182831994",
+        "sourceTier": "retailer",
+        "colorClass": "有頂天",
+        "evidence": "スケスケクリアー"
+      },
+      {
+        "code": "",
+        "name": "スケスケピンク",
+        "label": "スケスケピンク",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://island.shop-pro.jp/?pid=182831994",
+        "sourceTier": "retailer",
+        "colorClass": "有頂天",
+        "evidence": "スケスケピンク"
+      },
+      {
+        "code": "",
+        "name": "オラオラオレンジ",
+        "label": "オラオラオレンジ",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://island.shop-pro.jp/?pid=182831994",
+        "sourceTier": "retailer",
+        "colorClass": "有頂天",
+        "evidence": "オラオラオレンジ"
+      },
+      {
+        "code": "",
+        "name": "26松本",
+        "label": "26松本",
+        "aliases": [
+          "'26松本"
+        ],
+        "jan": "",
+        "sourceUrl": "https://riverroad1091.shop/?pid=193297586",
+        "sourceTier": "retailer",
+        "colorClass": "2026シグネイチャー",
+        "evidence": "26松本"
+      },
+      {
+        "code": "",
+        "name": "26福田",
+        "label": "26福田",
+        "aliases": [
+          "'26福田"
+        ],
+        "jan": "",
+        "sourceUrl": "https://riverroad1091.shop/?pid=193297586",
+        "sourceTier": "retailer",
+        "colorClass": "2026シグネイチャー",
+        "evidence": "26福田"
+      },
+      {
+        "code": "",
+        "name": "26早乙女",
+        "label": "26早乙女",
+        "aliases": [
+          "'26早乙女"
+        ],
+        "jan": "",
+        "sourceUrl": "https://riverroad1091.shop/?pid=193297586",
+        "sourceTier": "retailer",
+        "colorClass": "2026シグネイチャー",
+        "evidence": "26早乙女"
+      },
+      {
+        "code": "",
+        "name": "26井野",
+        "label": "26井野",
+        "aliases": [
+          "'26井野"
+        ],
+        "jan": "",
+        "sourceUrl": "https://riverroad1091.shop/?pid=193297586",
+        "sourceTier": "retailer",
+        "colorClass": "2026シグネイチャー",
+        "evidence": "26井野"
+      },
+      {
+        "code": "",
+        "name": "26ノブ",
+        "label": "26ノブ",
+        "aliases": [
+          "'26ノブ"
+        ],
+        "jan": "",
+        "sourceUrl": "https://andfield365.jp/products/ロデオクラフト-ウッサ-2026-シグネイチャーカラー",
+        "sourceTier": "retailer",
+        "colorClass": "2026シグネイチャー",
+        "evidence": "26ノブ"
+      },
+      {
+        "code": "",
+        "name": "一網打尽",
+        "label": "一網打尽",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://riverroad1091.shop/?pid=145456100",
+        "sourceTier": "retailer",
+        "colorClass": "River Road別注",
+        "evidence": "一網打尽"
+      },
+      {
+        "code": "",
+        "name": "三ケ日みかん",
+        "label": "三ケ日みかん",
+        "aliases": [
+          "三ヶ日みかん"
+        ],
+        "jan": "",
+        "sourceUrl": "https://any-netshop.shop-pro.jp/?pid=182928518",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "三ケ日みかん"
+      },
+      {
+        "code": "",
+        "name": "1091 オレンジクラウン",
+        "label": "1091 オレンジクラウン",
+        "aliases": [
+          "1091オレンジクラウン",
+          "オレンジクラウン"
+        ],
+        "jan": "",
+        "sourceUrl": "https://any-netshop.shop-pro.jp/?pid=182928518",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "1091 オレンジクラウン"
+      },
+      {
+        "code": "",
+        "name": "キラキラウォーターメロン",
+        "label": "キラキラウォーターメロン",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://any-netshop.shop-pro.jp/?pid=182928518",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "キラキラウォーターメロン"
+      },
+      {
+        "code": "",
+        "name": "1091 18井野",
+        "label": "1091 18井野",
+        "aliases": [
+          "18井野",
+          "18井野/1091"
+        ],
+        "jan": "",
+        "sourceUrl": "https://any-netshop.shop-pro.jp/?pid=182928518",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "1091 18井野"
+      },
+      {
+        "code": "",
+        "name": "カフェシャレッドグロー",
+        "label": "カフェシャレッドグロー",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://store.shopping.yahoo.co.jp/backlash/y-4573151249339.html",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "カフェシャレッドグロー"
+      },
+      {
+        "code": "",
+        "name": "Gパン",
+        "label": "Gパン",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://store.shopping.yahoo.co.jp/backlash/y-4573151249339.html",
+        "sourceTier": "retailer",
+        "colorClass": "1091",
+        "evidence": "Gパン"
+      }
+    ]
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "manufacturerAliases": [
+      "ロデオクラフト",
+      "RodioCraft"
+    ],
+    "series": "USSA",
+    "seriesAliases": [
+      "ウッサ"
+    ],
+    "model": "USSA XS Non Rattle",
+    "modelAliases": [
+      "ウッサXSノンラトル",
+      "USSA XS NR"
+    ],
+    "weight": 2.9,
+    "length": 30,
+    "category": "クランク",
+    "actionType": "XS",
+    "reuseWithoutWeight": true,
+    "buoyancy": "エキストラシンキング",
+    "rattle": "なし",
+    "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+    "colors": [
+      {
+        "code": "1",
+        "name": "クリアー（マット）",
+        "label": "1 クリアー（マット）",
+        "aliases": [
+          "クリアー（マット）"
+        ],
+        "jan": "4573632514703",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #1 クリアー（マット）"
+      },
+      {
+        "code": "2",
+        "name": "K.F III（レッドグロー）",
+        "label": "2 K.F III（レッドグロー）",
+        "aliases": [
+          "K.F III（レッドグロー）"
+        ],
+        "jan": "4573151245058",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #2 K.F III（レッドグロー）"
+      },
+      {
+        "code": "3",
+        "name": "S.M VI",
+        "label": "3 S.M VI",
+        "aliases": [
+          "S.M VI"
+        ],
+        "jan": "4573151245065",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #3 S.M VI"
+      },
+      {
+        "code": "4",
+        "name": "K.F V（FKB）",
+        "label": "4 K.F V（FKB）",
+        "aliases": [
+          "K.F V（FKB)"
+        ],
+        "jan": "4573151245072",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #4 K.F V（FKB)"
+      },
+      {
+        "code": "5",
+        "name": "M.M III",
+        "label": "5 M.M III",
+        "aliases": [
+          "M.M III"
+        ],
+        "jan": "4573151245089",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #5 M.M III"
+      },
+      {
+        "code": "7",
+        "name": "さちおの茶",
+        "label": "7 さちおの茶",
+        "aliases": [
+          "さちおの茶"
+        ],
+        "jan": "4573151245096",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #7 さちおの茶"
+      },
+      {
+        "code": "8",
+        "name": "キラキラ",
+        "label": "8 キラキラ",
+        "aliases": [
+          "キラキラ"
+        ],
+        "jan": "4573151245102",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #8 キラキラ"
+      },
+      {
+        "code": "9",
+        "name": "FWS",
+        "label": "9 FWS",
+        "aliases": [
+          "FWS"
+        ],
+        "jan": "4573151245119",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #9 FWS"
+      },
+      {
+        "code": "10",
+        "name": "黄/緑",
+        "label": "10 黄/緑",
+        "aliases": [
+          "黄/緑"
+        ],
+        "jan": "4573151245126",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #10 黄/緑"
+      },
+      {
+        "code": "11",
+        "name": "2014ノブカラー",
+        "label": "11 2014ノブカラー",
+        "aliases": [
+          "2014ノブカラー"
+        ],
+        "jan": "4573151245133",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #11 2014ノブカラー"
+      },
+      {
+        "code": "12",
+        "name": "蛍光ピンク",
+        "label": "12 蛍光ピンク",
+        "aliases": [
+          "蛍光ピンク"
+        ],
+        "jan": "4573151245140",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #12 蛍光ピンク"
+      },
+      {
+        "code": "13",
+        "name": "大人の黒金",
+        "label": "13 大人の黒金",
+        "aliases": [
+          "大人の黒金"
+        ],
+        "jan": "4573151245157",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #13 大人の黒金"
+      },
+      {
+        "code": "14",
+        "name": "2015ノブカラー",
+        "label": "14 2015ノブカラー",
+        "aliases": [
+          "2015ノブカラー"
+        ],
+        "jan": "4573151245164",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #14 2015ノブカラー"
+      },
+      {
+        "code": "15",
+        "name": "黒まんじゅう",
+        "label": "15 黒まんじゅう",
+        "aliases": [
+          "黒まんじゅう",
+          "クロまんじゅう"
+        ],
+        "jan": "4573151245171",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #15 黒まんじゅう"
+      },
+      {
+        "code": "16",
+        "name": "ニホンザリガニ",
+        "label": "16 ニホンザリガニ",
+        "aliases": [
+          "ニホンザリガニ"
+        ],
+        "jan": "4573151245188",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #16 ニホンザリガニ"
+      },
+      {
+        "code": "17",
+        "name": "光合成の夏",
+        "label": "17 光合成の夏",
+        "aliases": [
+          "光合成の夏"
+        ],
+        "jan": "4573151245195",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #17 光合成の夏"
+      },
+      {
+        "code": "18",
+        "name": "16ノブ",
+        "label": "18 16ノブ",
+        "aliases": [
+          "16ノブ"
+        ],
+        "jan": "4573151265889",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #18 16ノブ"
+      },
+      {
+        "code": "19",
+        "name": "19ノブ",
+        "label": "19 19ノブ",
+        "aliases": [
+          "19ノブ"
+        ],
+        "jan": "4573151265896",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #19 19ノブ"
+      },
+      {
+        "code": "20",
+        "name": "20安塚",
+        "label": "20 20安塚",
+        "aliases": [
+          "20安塚"
+        ],
+        "jan": "4573151265902",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #20 20安塚"
+      },
+      {
+        "code": "21",
+        "name": "RCポテトヘッド",
+        "label": "21 RCポテトヘッド",
+        "aliases": [
+          "RCポテトヘッド"
+        ],
+        "jan": "4573151265919",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #21 RCポテトヘッド"
+      },
+      {
+        "code": "22",
+        "name": "19早乙女",
+        "label": "22 19早乙女",
+        "aliases": [
+          "'19早乙女"
+        ],
+        "jan": "4573151271170",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #22 '19早乙女"
+      },
+      {
+        "code": "23",
+        "name": "20井野",
+        "label": "23 20井野",
+        "aliases": [
+          "'20井野"
+        ],
+        "jan": "4573151271187",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #23 '20井野"
+      },
+      {
+        "code": "24",
+        "name": "24ノブ",
+        "label": "24 24ノブ",
+        "aliases": [
+          "'24ノブ"
+        ],
+        "jan": "4573151271194",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #24 '24ノブ"
+      },
+      {
+        "code": "25",
+        "name": "ラーテル",
+        "label": "25 ラーテル",
+        "aliases": [
+          "ラーテル"
+        ],
+        "jan": "4573151271200",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #25 ラーテル"
+      },
+      {
+        "code": "26",
+        "name": "FOCUSオリーブ",
+        "label": "26 FOCUSオリーブ",
+        "aliases": [
+          "FOCUSオリーブ"
+        ],
+        "jan": "4573151271217",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #26 FOCUSオリーブ"
+      },
+      {
+        "code": "27",
+        "name": "21ノブ",
+        "label": "27 21ノブ",
+        "aliases": [
+          "'21ノブ"
+        ],
+        "jan": "4573632514734",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #27 '21ノブ"
+      },
+      {
+        "code": "28",
+        "name": "FOCUSおまめ",
+        "label": "28 FOCUSおまめ",
+        "aliases": [
+          "FOCUSおまめ"
+        ],
+        "jan": "4573632514741",
+        "sourceUrl": "https://t-route.net/products/ussa-rodiocraft",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "XS No Rattle/ノンラトル / #28 FOCUSおまめ"
+      }
+    ]
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "manufacturerAliases": [
+      "ロデオクラフト",
+      "RodioCraft"
+    ],
+    "series": "USSA",
+    "seriesAliases": [
+      "ウッサ"
+    ],
+    "model": "Fat USSA Jr. XS",
+    "modelAliases": [
+      "ファットウッサJr.XS",
+      "Fat USSA Jr. XS 1.7g"
+    ],
+    "weight": 1.7,
+    "length": 24,
+    "category": "クランク",
+    "actionType": "XS",
+    "reuseWithoutWeight": true,
+    "buoyancy": "エキストラシンキング",
+    "rattle": "ガラスラトル×1",
+    "sourceUrl": "https://riverroad1091.shop/?pid=193025491",
+    "colors": [
+      {
+        "code": "1",
+        "name": "クリアー（マット）",
+        "label": "1 クリアー（マット）",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "クリアー（マット）"
+      },
+      {
+        "code": "3",
+        "name": "S.M VI C",
+        "label": "3 S.M VI C",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "S.M VI C"
+      },
+      {
+        "code": "7",
+        "name": "さちおの茶",
+        "label": "7 さちおの茶",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "さちおの茶"
+      },
+      {
+        "code": "8",
+        "name": "キラキラ",
+        "label": "8 キラキラ",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "キラキラ"
+      },
+      {
+        "code": "11",
+        "name": "2014ノブカラー",
+        "label": "11 2014ノブカラー",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "2014ノブカラー"
+      },
+      {
+        "code": "12",
+        "name": "蛍光ピンク",
+        "label": "12 蛍光ピンク",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "蛍光ピンク"
+      },
+      {
+        "code": "14",
+        "name": "2015ノブカラー",
+        "label": "14 2015ノブカラー",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "2015ノブカラー"
+      },
+      {
+        "code": "15",
+        "name": "黒まんじゅう",
+        "label": "15 黒まんじゅう",
+        "aliases": [
+          "クロまんじゅう"
+        ],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "黒まんじゅう"
+      },
+      {
+        "code": "20",
+        "name": "20安塚",
+        "label": "20 20安塚",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "20安塚"
+      },
+      {
+        "code": "21",
+        "name": "RCポテトヘッド",
+        "label": "21 RCポテトヘッド",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "RCポテトヘッド"
+      },
+      {
+        "code": "22",
+        "name": "19早乙女",
+        "label": "22 19早乙女",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "19早乙女"
+      },
+      {
+        "code": "23",
+        "name": "20井野",
+        "label": "23 20井野",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "20井野"
+      },
+      {
+        "code": "24",
+        "name": "24ノブ",
+        "label": "24 24ノブ",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "24ノブ"
+      },
+      {
+        "code": "25",
+        "name": "ラーテル",
+        "label": "25 ラーテル",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "ラーテル"
+      },
+      {
+        "code": "26",
+        "name": "FOCUSオリーブ C",
+        "label": "26 FOCUSオリーブ C",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "FOCUSオリーブ C"
+      },
+      {
+        "code": "27",
+        "name": "21ノブ",
+        "label": "27 21ノブ",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "21ノブ"
+      },
+      {
+        "code": "28",
+        "name": "FOCUSおまめ",
+        "label": "28 FOCUSおまめ",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "FOCUSおまめ"
+      },
+      {
+        "code": "29",
+        "name": "クリアーホロ",
+        "label": "29 クリアーホロ",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "クリアーホロ"
+      },
+      {
+        "code": "30",
+        "name": "まほ丸",
+        "label": "30 まほ丸",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "まほ丸"
+      },
+      {
+        "code": "31",
+        "name": "クリアーピンク",
+        "label": "31 クリアーピンク",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://www.kitiya.jp/?pid=192717778",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "クリアーピンク"
+      },
+      {
+        "code": "",
+        "name": "大人の黒金",
+        "label": "大人の黒金",
+        "aliases": [],
+        "jan": "",
+        "sourceUrl": "https://riverroad1091.shop/?pid=193025491",
+        "sourceTier": "retailer",
+        "colorClass": "通常",
+        "evidence": "Jr XSの商品別選択肢に掲載。番号は未確認"
+      }
+    ]
+  }
+]

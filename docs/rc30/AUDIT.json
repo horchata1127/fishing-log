@@ -1,0 +1,25 @@
+{
+  "researchedAtJst": "2026-10-25",
+  "baselineCommit": "627885e",
+  "routeEvidenceSha256": "2d418f6f60f1ad593d03d53924e422c2c14a54572c78803bd62eac560fdcfbfa",
+  "modelCounts": {
+    "USSA S": 48,
+    "USSA XS": 44,
+    "USSA XS Non Rattle": 27,
+    "Fat USSA Jr. XS": 21
+  },
+  "modelColorPairs": 140,
+  "routePairs": 90,
+  "routePairsWithoutJan": [
+    "XS No Rattle/ノンラトル / #3 S.MⅥ C",
+    "XS No Rattle/ノンラトル / #6 ミルクココア",
+    "XS No Rattle/ノンラトル / #26 FOCUSオリーブC",
+    "XS Rattle/ラトル / #6 ミルクココア"
+  ],
+  "duplicatePairsRemoved": 0,
+  "syntheticBaselineRetained": 0,
+  "syntheticRepeatRetained": 140,
+  "syntheticAliasRetained": 3,
+  "pendingGroups": 4,
+  "note": "Counts use synthetic baseline only. Device-specific additions/duplicates require the read-only app preview."
+}

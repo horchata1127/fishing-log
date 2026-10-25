@@ -32,7 +32,11 @@ export interface TripEvent {
   tripId: number
   type: TripEventType
   occurredAt: Date
+  timePrecision?: 'exact' | 'approximate' | 'unknown'
   note?: string
+  facilityId?: string
+  zoneId?: string
+  zoneName?: string
 }
 
 // RC25: UTC milliseconds for joins with catches.caughtAt / tripEvents.occurredAt.
@@ -259,7 +263,7 @@ export interface LureModel {
   lengthMm?: number
   weightG?: number
   category?: LureCategory
-  actionType?: 'F' | 'SS' | 'SSS'
+  actionType?: 'F' | 'SS' | 'SSS' | 'S' | 'XS'
 }
 
 /*
@@ -273,7 +277,7 @@ export interface LureVariant {
   modelId: number
   colorName: string
   catalogEvidence?: {
-    revision: 'RC22' | 'RC28'; colorClass: string; sourceTier: string
+    revision: 'RC22' | 'RC28' | 'RC30'; colorClass: string; sourceTier: string
     manufacturerUrl: string; retailerUrl: string; jan: string; originalName: string
     colorCode?: string; weightG?: number; lengthMm?: number; buoyancy?: string; rattle?: string; productUrl?: string
   }

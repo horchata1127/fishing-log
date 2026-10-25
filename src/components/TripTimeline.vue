@@ -17,6 +17,8 @@ watch(() => [props.trip.id,props.trip.facilityId,props.catches], async () => {
   catch { if (request === ownershipRequest) zoneFacilities.value = new Map() }
 }, { immediate:true })
 const model = computed(() => buildTripTimeline(props.trip, props.catches, props.events, props.hours, zone.value, includeUnset.value,zoneFacilities.value))
+const chronological = computed(() => [...model.value.markers, ...model.value.outside, ...model.value.unknown]
+  .sort((a, b) => (a.timestamp ?? Infinity) - (b.timestamp ?? Infinity) || a.key.localeCompare(b.key)))
 const summary = computed(() => buildCatchSummary(props.trip, props.catches, zone.value, includeUnset.value,zoneFacilities.value))
 const width = computed(() => Math.max(300, viewport.value) * zoom.value)
 const layout = computed(() => model.value.range ? layoutTimelineMarkers(model.value.markers, model.value.range.start, model.value.range.end, width.value) : null)
@@ -113,6 +115,11 @@ watch(model, value => { if (selected.value && ![...value.markers, ...value.unkno
       <p v-if="location && (request.location.latitude !== location.latitude || request.location.longitude !== location.longitude)">現在の手動地点と異なる、前回取得地点の気象データを表示しています。</p>
     </div></details>
     <WeatherAttribution />
+    <details><summary>釣果・イベントの時系列一覧</summary>
+      <ol aria-label="釣果・イベントの時系列一覧"><li v-for="marker in chronological" :key="marker.key">
+        <button type="button" @click="select(marker)">{{ markerTitle(marker) }}</button>
+      </li></ol>
+    </details>
     <dialog v-if="selected" ref="dialog" class="marker-dialog" aria-labelledby="timeline-record-title" @cancel.prevent="close">
       <h3 id="timeline-record-title">{{ markerTitle(selected) }}</h3>
       <p v-if="selected.precision === 'approximate'">概算時刻の記録です。正確な時刻とは区別して表示しています。</p>
@@ -120,6 +127,7 @@ watch(model, value => { if (selected.value && ![...value.markers, ...value.unkno
       <p v-if="selectedCatch && catchZoneKey(selectedCatch,trip.facilityId,zoneFacilities).startsWith('previous:')">旧施設・所属未確認のエリアです。新施設のエリアには変換していません。</p>
       <dl v-if="selectedCatch"><dt>ルアー</dt><dd>{{ selectedCatch.lureName || '未記録' }} {{ selectedCatch.lureColor || '' }}</dd><dt>魚種</dt><dd>{{ selectedCatch.fishSpecies || '未記録' }}</dd><dt>エリア</dt><dd>{{ selectedCatch.locationSnapshot?.zoneName || '未設定' }}</dd><dt>施設</dt><dd>{{ selectedCatch.locationSnapshot?.facilityName || '未記録' }}</dd><template v-if="selectedCatch.fishSizeCm !== undefined"><dt>全長</dt><dd>{{ selectedCatch.fishSizeCm }} cm</dd></template><template v-if="selectedCatch.lostDistance"><dt>バラシの距離</dt><dd>{{ lostDistanceLabels[selectedCatch.lostDistance] }}</dd></template><dt>メモ</dt><dd>{{ selectedCatch.memo || 'なし' }}</dd></dl>
       <p v-if="selectedEvent">{{ selectedEvent.note || 'メモなし' }}</p>
+      <p v-if="selectedEvent?.zoneId">対象エリア：{{ selectedEvent.zoneName || selectedEvent.zoneId }}</p>
       <button type="button" autofocus @click="close">記録の詳細を閉じる</button>
     </dialog>
   </section>

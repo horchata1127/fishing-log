@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import {
   db, isCatch,
   type LureManufacturer,
@@ -91,6 +91,10 @@ const choices = computed(() => {
   if (activeStep.value === 'model') return availableModels.value.map(x => x.name)
   return availableColors.value.map(x => x.colorName)
 })
+const colorSearch = ref('')
+watch(activeStep, () => { colorSearch.value = '' })
+const filteredChoices = computed(() => activeStep.value === 'color'
+  ? choices.value.filter(name => normalized(name).includes(normalized(colorSearch.value))) : choices.value)
 const canOpenStep = (step: Step) => {
   if (step === 'manufacturer') return true
   if (step === 'series') return !!selectedManufacturer.value
@@ -419,12 +423,13 @@ onMounted(async () => {
           </button>
         </div>
         <p class="choice-caption">{{ steps.find(x => x.key === activeStep)?.label }}をスクロールして選んでな</p>
+        <label v-if="activeStep === 'color'">カラーを検索<input v-model="colorSearch" type="search" /></label>
         <div class="choice-list" role="group" :aria-label="`${steps.find(x => x.key === activeStep)?.label}の候補`">
-          <button v-for="(value, index) in choices" :key="`${index}-${value}`" type="button"
+          <button v-for="(value, index) in filteredChoices" :key="`${index}-${value}`" type="button"
             class="choice-row" :class="{ selected: stepValues[activeStep] === value }" @click="choose(value)">
             <span>{{ value }}</span><span v-if="stepValues[activeStep] === value" aria-label="選択中">✓</span>
           </button>
-          <p v-if="choices.length === 0" class="empty">候補がないで。「手入力」に切り替えて登録してな。</p>
+          <p v-if="filteredChoices.length === 0" class="empty">該当するカラー・候補がありません。検索条件を変えるか手入力してください。</p>
         </div>
         <p class="selected-summary">選択中：{{ manufacturerName || '—' }} / {{ seriesName || '—' }} / {{ modelName || '—' }} / {{ colorName || '—' }}</p>
       </template>

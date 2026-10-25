@@ -4,6 +4,9 @@ import { isCatch, countResults, lostDistanceLabels, actionLengthLabel } from "..
 import TackleSnapshotDetails from './TackleSnapshotDetails.vue'
 import TripWeatherPanel from './TripWeatherPanel.vue'
 import TripTimeline from './TripTimeline.vue'
+import TripEventEditor from './TripEventEditor.vue'
+import { deleteTripEvent } from '../utils/tripEvents'
+import { formatTimelineTime, timelineTimestamp } from '../utils/tripTimeline'
 import type { readTripWeather } from '../utils/tripWeather'
 const timelineWeather = ref<Awaited<ReturnType<typeof readTripWeather>>>({ location: undefined, hours: [], requests: [] })
 const timelineWeatherError = ref('')
@@ -31,28 +34,25 @@ const emit = defineEmits<{
   deleteCatch: [record: CatchRecord]
   endTrip: []
   recordEvent: [type: TripEventType]
-  updateEvent: [event: TripEvent, dateTime: string]
+  eventsChanged: []
   editTackles: []
 }>()
 
-const editingEventId = ref<number | null>(null)
-const eventDateTime = ref('')
-
-function toLocalDateTime(date: Date) {
-  const d = new Date(date)
-  const pad = (n: number) => String(n).padStart(2, '0')
-  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`
+const editingEvent = ref<TripEvent>()
+const eventEditorOpen = ref(false)
+const eventBusy = ref(false)
+function eventTimeLabel(event: TripEvent) {
+  const timestamp = event.timePrecision === 'unknown' ? null : timelineTimestamp(event.occurredAt)
+  return timestamp === null ? '時刻不明' : `${event.timePrecision === 'approximate' ? '約 ' : ''}${formatTimelineTime(timestamp)}`
 }
-
-function beginEdit(event: TripEvent) {
-  editingEventId.value = event.id ?? null
-  eventDateTime.value = toLocalDateTime(event.occurredAt)
-}
-
-function saveEdit(event: TripEvent) {
-  if (!eventDateTime.value) return
-  emit('updateEvent', event, eventDateTime.value)
-  editingEventId.value = null
+function openEvent(event?: TripEvent) { editingEvent.value = event; eventEditorOpen.value = true }
+function eventSaved() { eventEditorOpen.value = false; emit('eventsChanged') }
+async function removeEvent(event: TripEvent) {
+  if (eventBusy.value || !confirm('このイベントを削除しますか？')) return
+  eventBusy.value = true
+  try { await deleteTripEvent(event); emit('eventsChanged') }
+  catch (e) { alert(e instanceof Error ? e.message : '削除できませんでした。') }
+  finally { eventBusy.value = false }
 }
 
 const sortedEvents = computed(() => [...props.events].sort((a,b) => new Date(b.occurredAt).getTime()-new Date(a.occurredAt).getTime()))
@@ -168,19 +168,18 @@ function fishingStyleName(style: FishingStyle) {
       <button type="button" class="event-button stocking" @click="emit('recordEvent', 'stocking')">🐟 放流を記録</button>
       <button type="button" class="event-button pellet" @click="emit('recordEvent', 'pellet')">🟤 ペレットを記録</button>
     </div>
-    <p class="event-hint">ボタンを押した時刻で記録するで。あとから時刻も修正できるよ。</p>
+    <button type="button" class="edit-catch" :disabled="locationBusy || eventBusy" @click="openEvent()">イベント追加</button>
+    <p class="event-hint">日時は日本時間です。記録後も種別・日時・エリア・メモを編集できます。</p>
     <p v-if="!sortedEvents.length" class="event-hint">イベントはまだ記録されてへんで。</p>
     <div v-for="event in sortedEvents" :key="event.id" class="event-entry">
       <div class="event-entry-head">
         <strong>{{ event.type === 'stocking' ? '🐟 放流' : '🟤 ペレット' }}</strong>
-        <span>{{ new Date(event.occurredAt).toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' }) }}</span>
-        <button type="button" class="edit-time" @click="beginEdit(event)">時刻修正</button>
+        <span>{{ eventTimeLabel(event) }}</span>
+        <button type="button" class="edit-catch" :disabled="locationBusy || eventBusy" @click="openEvent(event)">編集</button>
+        <button type="button" class="edit-catch" :disabled="locationBusy || eventBusy" @click="removeEvent(event)">削除</button>
       </div>
-      <div v-if="editingEventId === event.id" class="event-editor">
-        <input v-model="eventDateTime" type="datetime-local" aria-label="イベントの日時" />
-        <button type="button" @click="saveEdit(event)">保存</button>
-        <button type="button" @click="editingEventId = null">やめる</button>
-      </div>
+      <p v-if="event.zoneId">{{ event.zoneName || event.zoneId }}</p>
+      <p v-if="event.note">{{ event.note }}</p>
     </div>
   </section>
 
@@ -224,6 +223,7 @@ function fishingStyleName(style: FishingStyle) {
     <TackleSnapshotDetails v-if="lastCatch?.tackleSnapshot" :snapshot="lastCatch.tackleSnapshot" />
   </section>
 
+  <TripEventEditor v-if="eventEditorOpen" :trip="trip" :event="editingEvent" @saved="eventSaved" @cancel="eventEditorOpen = false" />
   <TripTimeline :key="trip.id" :trip="trip" :catches="catches" :events="events" :hours="timelineWeather.hours" :requests="timelineWeather.requests" :location="timelineWeather.location" :weather-error="timelineWeatherError" />
   <TripWeatherPanel :key="trip.id" :trip="trip" @loaded="timelineWeather = $event; timelineWeatherError = ''" @load-error="timelineWeatherError = $event" />
 
@@ -490,13 +490,9 @@ function fishingStyleName(style: FishingStyle) {
 .event-button.stocking { background:#e7f4fd; color:#155e82; }
 .event-button.pellet { background:#fff0dc; color:#885014; }
 .event-hint { font-size:12px; color:var(--text-muted); margin:12px 0; }
-.event-entry { border-top:1px solid #edf0f2; padding:12px 0; }
+.event-entry { border-top:1px solid #edf0f2; padding:12px 0; overflow-wrap:anywhere; }
 .event-entry-head { display:flex; align-items:center; flex-wrap:wrap; gap:10px; }
 .event-entry-head span { margin-left:auto; }
-.edit-time { border:1px solid #d9dee3; border-radius:8px; background:white; color:#13795b; padding:7px; }
-.event-editor { display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
-.event-editor input { min-width:190px; flex:1; padding:8px; border:1px solid #d9dee3; border-radius:8px; }
-.event-editor button { padding:8px; border:1px solid #d9dee3; border-radius:8px; background:white; color:#13795b; }
 @media(max-width:360px) { .event-buttons { grid-template-columns:1fr; } }
 </style>
 
