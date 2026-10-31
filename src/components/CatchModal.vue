@@ -345,6 +345,7 @@ function chooseDictionary(lure: LureOption) {
                 {{ lure.seriesName }}
               </small>
               <VisualColorPreview v-if="lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
+              <small v-if="lure.visualProfile && !lure.visualProfile.confirmed && !lure.visualProfile.userEdited">推定配色・未確認</small>
             </button>
           </div>
 

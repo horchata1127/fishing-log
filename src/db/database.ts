@@ -337,7 +337,7 @@ export interface VisualState {
   confirmed: boolean
   revision: number
   updatedAt: string
-  evidence?: { sourceUrl?: string; imageHash?: string; estimatorVersion?: string; confidence?: number }
+  evidence?: { sourceUrl?: string; imageHash?: string; estimatorVersion?: string; confidence?: number; inputName?: string; basis?: string[] }
 }
 export interface LureVisualProfile extends VisualState {
   id: string
@@ -388,7 +388,9 @@ export function visualNaturalKey(value: VisualIdentity): string {
 }
 export function visualIdentityForVariant(variant: LureVariant, model: LureModel, series: LureSeries, manufacturer: LureManufacturer): VisualIdentity {
   if (variant.modelId !== model.id || model.seriesId !== series.id || series.manufacturerId !== manufacturer.id) throw new Error('配色: 親参照が一致しません。')
-  const code = variant.catalogEvidence?.colorCode || variant.colorName.normalize('NFKC').match(/^([A-Za-z]+-?[A-Za-z0-9]+)\s+/)?.[1]
+  // A plain English word (All, Ghost, Light...) is a name, not an implicit code.
+  // Explicit evidence may still carry a legitimate alphabetic manufacturer code.
+  const code = variant.catalogEvidence?.colorCode || variant.colorName.normalize('NFKC').match(/^([A-Za-z]+-?[A-Za-z0-9]*\d[A-Za-z0-9-]*)\s+/)?.[1]
   return { manufacturer: manufacturer.name, series: series.name, model: model.name,
     color: { kind: code ? 'code' : 'name', value: code || variant.catalogEvidence?.originalName || variant.colorName } }
 }
@@ -425,7 +427,8 @@ export function validateVisualRecord(table: typeof visualTableNames[number], val
   if (row.origin === 'user' && row.userEdited !== true) throw new Error('配色: ユーザー配色には編集保護が必要です。')
   if (row.evidence !== undefined) {
     const evidence = visualObject(row.evidence)
-    for (const field of ['sourceUrl', 'imageHash', 'estimatorVersion']) if (evidence[field] !== undefined) visualText(evidence[field])
+    for (const field of ['sourceUrl', 'imageHash', 'estimatorVersion', 'inputName']) if (evidence[field] !== undefined) visualText(evidence[field])
+    if (evidence.basis !== undefined && (!Array.isArray(evidence.basis) || evidence.basis.some(v => typeof v !== 'string' || !v.trim()))) throw new Error('配色: 推定根拠が不正です。')
     if (evidence.sourceUrl !== undefined && !/^https?:\/\//.test(evidence.sourceUrl as string)) throw new Error('配色: 出典URLが不正です。')
     if (evidence.confidence !== undefined && (typeof evidence.confidence !== 'number' || !Number.isFinite(evidence.confidence) || evidence.confidence < 0 || evidence.confidence > 1)) throw new Error('配色: 確信度が不正です。')
   }

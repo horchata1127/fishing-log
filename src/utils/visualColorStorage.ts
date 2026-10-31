@@ -37,6 +37,20 @@ export async function saveTemporaryColor(value: TemporaryLureColor, expectedRevi
   })
 }
 
+/** Atomic add-only batch. Validate catalog once; never overwrite any existing profile. */
+export async function addInferredVisualProfiles(values: LureVisualProfile[]): Promise<void> {
+  const rows = structuredClone(values)
+  return db.transaction('rw', [db.lureVisualProfiles, ...catalogTables], async () => {
+    for (const row of rows) {
+      validateVisualRecord('lureVisualProfiles', row)
+      if (!['name', 'photo'].includes(row.origin) || row.userEdited || row.confirmed || row.revision !== 1 || row.variantId === undefined) throw new Error('推定配色の新規追加状態が不正です。')
+    }
+    validateVisualReferences(rows, [], await catalog())
+    // Unique indexes enforce IDs, natural keys, and official IDs for both old and new rows.
+    await db.lureVisualProfiles.bulkAdd(rows)
+  })
+}
+
 export function createVisualSnapshot(appearance: VisualAppearance, state: Pick<VisualState, 'origin' | 'confirmed'>): VisualColorSnapshot {
   validateVisualAppearance(appearance)
   const used = new Set(Object.values(appearance.regions).flatMap(r => r!.colors))

@@ -5,6 +5,7 @@ import type { LureOption } from '../utils/catchRegistration'
 import { saveRepresentative, linkCatchAppearance, linkTemporaryAppearance } from '../utils/visualColorStorage'
 import VisualColorEditor from './VisualColorEditor.vue'
 import VisualColorPreview from './VisualColorPreview.vue'
+import AutoColorImportPanel from './AutoColorImportPanel.vue'
 
 const props = defineProps<{ catalog: LureOption[]; owned: LureOption[]; sourceCatch?: CatchRecord; selectEnabled?: boolean }>()
 const emit = defineEmits<{ close: []; updated: []; select: [option: LureOption] }>()
@@ -70,6 +71,7 @@ async function link(row: LureOption) {
           <button type="button" @click="editing = undefined">配色編集をキャンセル</button>
         </template>
         <template v-else>
+          <AutoColorImportPanel v-if="!selectEnabled && !sourceCatch && !sourceTemporary" @updated="emit('updated')" />
           <details v-if="!sourceCatch && !sourceTemporary && temporary.length"><summary>保存済みの未紐付け仮カラー（{{ temporary.length }}件）</summary>
             <article v-for="entry in temporary" :key="entry.id"><strong>{{ entry.name || '仮カラー' }}</strong><VisualColorPreview :appearance="entry.appearance" /><button type="button" @click="sourceTemporary = JSON.parse(JSON.stringify(entry))">この仮カラーの紐付け先を選ぶ</button></article>
           </details>
@@ -85,6 +87,8 @@ async function link(row: LureOption) {
           <article v-for="row in candidates.slice(0, limit)" :key="row.variantId" :data-variant-id="row.variantId">
             <strong>{{ row.modelName }} / {{ row.colorName }}</strong><small>{{ row.manufacturerName }}</small>
             <VisualColorPreview v-if="row.visualColorSnapshot" :appearance="row.visualColorSnapshot.appearance" :color-values="row.visualColorSnapshot.colorValues" /><small v-else>代表配色は未登録</small>
+            <small v-if="row.visualProfile">{{ row.visualProfile.userEdited || row.visualProfile.confirmed ? '手動編集・確認済み' : row.visualProfile.origin === 'photo' ? '写真推定・未確認' : '名称推定・未確認' }}</small>
+            <details v-if="row.visualProfile?.evidence?.basis"><summary>推定根拠</summary>{{ row.visualProfile.evidence.inputName }}：{{ row.visualProfile.evidence.basis.join('、') }}（確信度目安 {{ Math.round((row.visualProfile.evidence.confidence ?? 0) * 100) }}%）</details>
             <button type="button" @click="edit(row)">代表配色を編集</button>
             <button v-if="sourceCatch || sourceTemporary" type="button" @click="link(row)">この仮配色を紐付け</button>
             <button v-else-if="selectEnabled" type="button" @click="emit('select', row)">この公式カラーを選ぶ</button>

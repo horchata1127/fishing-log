@@ -1,0 +1,1439 @@
+{
+  "input": "docs/fishing-log-backup-2026-10-20.json",
+  "inputCatalogSha256": "e3ddd03bdda55d19dfd43a8d9328783e141321269312e1afec99c8a0f09b2b56",
+  "isolation": "fake-indexeddb; catalog arrays only; no browser DB or personal arrays restored",
+  "catalogDeltas": [
+    {
+      "version": "RC30",
+      "added": 140,
+      "held": 4
+    },
+    {
+      "version": "RC31",
+      "added": 83,
+      "held": 0
+    }
+  ],
+  "catalogCounts": {
+    "lureManufacturers": 81,
+    "lureSeries": 155,
+    "lureModels": 362,
+    "lureVariants": 2899
+  },
+  "total": 2899,
+  "uniqueNames": 1123,
+  "nameInferences": 1410,
+  "photoInferences": 0,
+  "unknown": 1489,
+  "uniqueNormalizedNames": 1108,
+  "attributeOnly": 243,
+  "bundledImageUrlMetadata": 35,
+  "verifiedPhotoInputs": 0,
+  "methods": {
+    "explicitTerms": 1294,
+    "conventionalTerms": 116,
+    "photo": 0,
+    "unknown": 1489
+  },
+  "confidenceCounts": {
+    "0.85": 310,
+    "0.65": 116,
+    "0.55": 984
+  },
+  "firstApply": {
+    "added": 1404,
+    "kept": 0,
+    "protected": 0,
+    "held": 22,
+    "unknown": 1473,
+    "elapsedMs": 80
+  },
+  "secondApply": {
+    "added": 0,
+    "kept": 1404,
+    "protected": 0,
+    "held": 22,
+    "unknown": 1473
+  },
+  "profilesAfterRestore": 1404,
+  "backupVersion": 8,
+  "catalogUnchanged": true,
+  "heldReasons": {
+    "公式カラーの自然キーまたはIDが重複しています": 22
+  },
+  "personalCounts": {
+    "myLures": 0,
+    "catches": 0,
+    "trips": 0
+  },
+  "byModel": [
+    {
+      "manufacturer": "HMKL",
+      "series": "HMKL SHAD",
+      "model": "HMKL SHAD 55 F AREA ver.",
+      "total": 4,
+      "name": 2,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "HMKL SHAD",
+      "model": "HMKL SHAD 65 MR AREA ver.",
+      "total": 6,
+      "name": 6,
+      "unknown": 0
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "HMKL SHAD",
+      "model": "HMKL SHAD 65 MR SP 40 AREA ver.",
+      "total": 6,
+      "name": 5,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "HMKL SHAD",
+      "model": "HMKL SHAD 65 SR AREA ver.",
+      "total": 6,
+      "name": 6,
+      "unknown": 0
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "K-I MINNOW",
+      "model": "K-I MINNOW 50 F1",
+      "total": 39,
+      "name": 22,
+      "unknown": 17
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "K-I MINNOW",
+      "model": "K-I MINNOW 50F1",
+      "total": 39,
+      "name": 22,
+      "unknown": 17
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "K-I MINNOW",
+      "model": "K-I MINNOW 65F1",
+      "total": 29,
+      "name": 20,
+      "unknown": 9
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "ZAGGER",
+      "model": "ZAGGER",
+      "total": 1,
+      "name": 0,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "ZAGGER",
+      "model": "ZAGGER 50 F1",
+      "total": 20,
+      "name": 12,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "ZAGGER",
+      "model": "ZAGGER 50B1 Heavy",
+      "total": 26,
+      "name": 12,
+      "unknown": 14
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Air Blow",
+      "model": "Micro Air Blow",
+      "total": 13,
+      "name": 5,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Air Blow",
+      "model": "Surface Air Blow",
+      "total": 14,
+      "name": 6,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "CRA-PEA",
+      "model": "MEDIUM CRA-PEA",
+      "total": 1,
+      "name": 0,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Flat Cra-Pea",
+      "model": "Flat Cra-Pea DR",
+      "total": 2,
+      "name": 2,
+      "unknown": 0
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Flat Cra-Pea",
+      "model": "Flat Cra-Pea MR",
+      "total": 3,
+      "name": 3,
+      "unknown": 0
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Flat Cra-Pea",
+      "model": "Flat Cra-Pea SR",
+      "total": 3,
+      "name": 3,
+      "unknown": 0
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Micro Cra-Pea",
+      "model": "Micro Cra-Pea DR 2H",
+      "total": 6,
+      "name": 0,
+      "unknown": 6
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Micro Cra-Pea",
+      "model": "Micro Cra-Pea DR 2H SS",
+      "total": 6,
+      "name": 1,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Micro Cra-Pea",
+      "model": "Micro Cra-Pea MR",
+      "total": 1,
+      "name": 0,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Micro Cra-Pea",
+      "model": "Micro Cra-Pea SR",
+      "total": 3,
+      "name": 2,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "POKO POKO CRA-PEA",
+      "model": "POKO POKO CRA-PEA",
+      "total": 11,
+      "name": 3,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Prop Cra-Pea",
+      "model": "Prop Cra-Pea 2H",
+      "total": 12,
+      "name": 3,
+      "unknown": 9
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Wah",
+      "model": "WAH 26HF",
+      "total": 11,
+      "name": 3,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Wah",
+      "model": "WAH 33F",
+      "total": 11,
+      "name": 3,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Wah",
+      "model": "WAH 33SDS",
+      "total": 1,
+      "name": 0,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Wah",
+      "model": "WAH 40F",
+      "total": 11,
+      "name": 3,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "BF",
+      "model": "BF 0.5g",
+      "total": 3,
+      "name": 0,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "DRIFT SPIN",
+      "model": "DRIFT SPIN 1.3g",
+      "total": 1,
+      "name": 0,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "Fat MOCA Jr.",
+      "model": "Fat MOCA Jr. DR-SS",
+      "total": 3,
+      "name": 0,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "JEKYLL Jr.",
+      "model": "JEKYLL Jr. 1.1g",
+      "total": 7,
+      "name": 0,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "MOCA",
+      "model": "MOCA DR Rattle 2HOOK",
+      "total": 3,
+      "name": 0,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "MOCA",
+      "model": "MOCA DR-SS 2HOOK",
+      "total": 3,
+      "name": 0,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "MOCA",
+      "model": "MOCA SR-SS",
+      "total": 28,
+      "name": 8,
+      "unknown": 20
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "NOA",
+      "model": "NOA 1.5g",
+      "total": 86,
+      "name": 35,
+      "unknown": 51
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "NOA",
+      "model": "NOA 1.8g",
+      "total": 86,
+      "name": 35,
+      "unknown": 51
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "QM",
+      "model": "QM 2.8g",
+      "total": 7,
+      "name": 0,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "USSA",
+      "model": "USSA",
+      "total": 1,
+      "name": 0,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "AR-S Trout Model SH",
+      "model": "AR-S SH 1.5g",
+      "total": 8,
+      "name": 0,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "AR-S Trout Model SH",
+      "model": "AR-S SH 2.0g",
+      "total": 8,
+      "name": 0,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "Caddis",
+      "model": "Caddis",
+      "total": 16,
+      "name": 10,
+      "unknown": 6
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "DD PANISH AREA R",
+      "model": "DD PANISH AREA 55R",
+      "total": 10,
+      "name": 7,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "DD PANISH AREA R",
+      "model": "DD PANISH AREA 65R",
+      "total": 10,
+      "name": 7,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "HIKARU! KOIKACHAN",
+      "model": "HIKARU! KOIKACHAN",
+      "total": 16,
+      "name": 3,
+      "unknown": 13
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "HIKINAMI",
+      "model": "HIKINAMI F",
+      "total": 14,
+      "name": 4,
+      "unknown": 10
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "HIKINAMI",
+      "model": "HIKINAMI HF",
+      "total": 14,
+      "name": 4,
+      "unknown": 10
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "PANISH AREA",
+      "model": "PANISH AREA 55R",
+      "total": 10,
+      "name": 7,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "PANISH AREA",
+      "model": "PANISH AREA 70R",
+      "total": 10,
+      "name": 7,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "Puppet",
+      "model": "Puppet More",
+      "total": 14,
+      "name": 9,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "Puppet",
+      "model": "PUPPET SURFACE",
+      "total": 17,
+      "name": 9,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "STILL AREA",
+      "model": "STILL AREA 48HF",
+      "total": 16,
+      "name": 12,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "STILL AREA",
+      "model": "STILL AREA T2",
+      "total": 14,
+      "name": 11,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "STILL AREA",
+      "model": "STILL AREA TUNE",
+      "total": 16,
+      "name": 10,
+      "unknown": 6
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "TICTAC LIPPER",
+      "model": "TICTAC LIPPER HS",
+      "total": 14,
+      "name": 6,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "TICTAC LIPPER",
+      "model": "TICTAC LIPPER S",
+      "total": 14,
+      "name": 6,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "ZURUBEE",
+      "model": "Large ZURUBEE",
+      "total": 14,
+      "name": 7,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "ZURUBEE",
+      "model": "Small ZURUBEE",
+      "total": 14,
+      "name": 7,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Chibi PaniCra",
+      "model": "Chibi PaniCra DR",
+      "total": 30,
+      "name": 16,
+      "unknown": 14
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Chibi PaniCra",
+      "model": "Chibi PaniCra DR-SS",
+      "total": 30,
+      "name": 15,
+      "unknown": 15
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Chibi PaniCra",
+      "model": "Chibi PaniCra SR",
+      "total": 30,
+      "name": 16,
+      "unknown": 14
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Chibi PaniCra",
+      "model": "Chibi PaniCra SR-SS",
+      "total": 17,
+      "name": 13,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Chibi Pepino",
+      "model": "Chibi Pepino MR",
+      "total": 12,
+      "name": 8,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "DEKA Mitts DRY",
+      "model": "DEKA Mitts DRY",
+      "total": 18,
+      "name": 10,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "DEKA Mitts DRY",
+      "model": "DEKA Mitts DRY Rattle",
+      "total": 8,
+      "name": 4,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "KUROBALL",
+      "model": "KUROBALL 2.0g",
+      "total": 20,
+      "name": 14,
+      "unknown": 6
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "KUROBALL",
+      "model": "KUROBALL 3.0g",
+      "total": 20,
+      "name": 14,
+      "unknown": 6
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "KUROBALL γ",
+      "model": "KUROBALL γ 2.0g",
+      "total": 10,
+      "name": 8,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "KUROBALL γ",
+      "model": "KUROBALL γ 2.5g",
+      "total": 10,
+      "name": 8,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "METAL KUROBALL",
+      "model": "METAL KUROBALL 2.3g",
+      "total": 12,
+      "name": 7,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "METAL KUROBALL",
+      "model": "METAL KUROBALL 3.5g",
+      "total": 12,
+      "name": 7,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "MICRO PANICRA",
+      "model": "MICRO PANICRA MR-F Rattle",
+      "total": 12,
+      "name": 8,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "MICRO PANICRA",
+      "model": "MICRO PANICRA MR-SS",
+      "total": 12,
+      "name": 8,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "MITTS DRY 2Hook",
+      "model": "MITTS DRY 2Hook",
+      "total": 8,
+      "name": 2,
+      "unknown": 6
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "MITTS DRY 2Hook",
+      "model": "MITTS DRY RATTLE 2Hook",
+      "total": 8,
+      "name": 2,
+      "unknown": 6
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "PaniCra DR Rattle",
+      "model": "PaniCra DR Rattle",
+      "total": 10,
+      "name": 8,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Prikkey",
+      "model": "Prikkey",
+      "total": 10,
+      "name": 6,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE",
+      "total": 1,
+      "name": 1,
+      "unknown": 0
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "SLIDON",
+      "model": "SLIDON60F",
+      "total": 10,
+      "name": 5,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンDR",
+      "total": 15,
+      "name": 6,
+      "unknown": 9
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "total": 15,
+      "name": 6,
+      "unknown": 9
+    },
+    {
+      "manufacturer": "なぶら家",
+      "series": "ACCURACY",
+      "model": "ACCURACY 0.9g",
+      "total": 1,
+      "name": 0,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "アールグラット",
+      "series": "BOTTOM SATAN",
+      "model": "BOTTOM SATAN 2.0g",
+      "total": 1,
+      "name": 1,
+      "unknown": 0
+    },
+    {
+      "manufacturer": "ディープパラドックス",
+      "series": "KID",
+      "model": "KID 0.6g",
+      "total": 2,
+      "name": 1,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "ヴァルケイン",
+      "series": "CIRCLE",
+      "model": "CIRCLE 2.8g",
+      "total": 1,
+      "name": 1,
+      "unknown": 0
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "K-I MINNOW",
+      "model": "K-I MINNOW 65 SS",
+      "total": 8,
+      "name": 6,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "CALMO",
+      "model": "CALMO MR-F",
+      "total": 12,
+      "name": 8,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "ディスプラウト",
+      "series": "EAGLE PLAYER",
+      "model": "EAGLE PLAYER 50slim/GJ",
+      "total": 12,
+      "name": 9,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Wah",
+      "model": "WAH 37F",
+      "total": 11,
+      "name": 3,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "NOA",
+      "model": "NOA 2.1g",
+      "total": 86,
+      "name": 35,
+      "unknown": 51
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Futten",
+      "model": "Futten FS",
+      "total": 8,
+      "name": 5,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "KIBIpani",
+      "model": "KIBIpani MR",
+      "total": 15,
+      "name": 10,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "KIBIpani",
+      "model": "KIBIpani MR-SS",
+      "total": 14,
+      "name": 9,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "SMITH",
+      "series": "Puppet",
+      "model": "VA PUPPET SURFACE",
+      "total": 8,
+      "name": 6,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "inch Crank",
+      "model": "inch Crank TR",
+      "total": 21,
+      "name": 11,
+      "unknown": 10
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "inch Crank",
+      "model": "inch Crank TR BONE",
+      "total": 6,
+      "name": 4,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "inch Crank",
+      "model": "inch Crank MR",
+      "total": 8,
+      "name": 3,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "inch Crank",
+      "model": "inch Crank MR SP",
+      "total": 15,
+      "name": 5,
+      "unknown": 10
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "inch Crank",
+      "model": "inch Crank Une-R",
+      "total": 34,
+      "name": 21,
+      "unknown": 13
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "inch Crank",
+      "model": "inch Crank DR",
+      "total": 6,
+      "name": 3,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "HMKL",
+      "series": "inch Crank",
+      "model": "inch Crank MR SS",
+      "total": 4,
+      "name": 2,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "ダイワ",
+      "series": "PRESSO DOUBLE CLUTCH F",
+      "model": "PRESSO DOUBLE CLUTCH 45F1",
+      "total": 17,
+      "name": 10,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "ダイワ",
+      "series": "PRESSO DOUBLE CLUTCH F",
+      "model": "PRESSO DOUBLE CLUTCH 45S",
+      "total": 5,
+      "name": 4,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "ダイワ",
+      "series": "PRESSO DOUBLE CLUTCH F",
+      "model": "PRESSO DOUBLE CLUTCH 48F",
+      "total": 19,
+      "name": 12,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "ダイワ",
+      "series": "PRESSO DOUBLE CLUTCH F",
+      "model": "PRESSO DOUBLE CLUTCH 60F1",
+      "total": 23,
+      "name": 15,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "ダイワ",
+      "series": "PRESSO DOUBLE CLUTCH F",
+      "model": "PRESSO DOUBLE CLUTCH 60SHF",
+      "total": 19,
+      "name": 12,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "ダイワ",
+      "series": "PRESSO DOUBLE CLUTCH F",
+      "model": "PRESSO DOUBLE CLUTCH 60SS",
+      "total": 8,
+      "name": 8,
+      "unknown": 0
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "NOA Jr.",
+      "model": "NOA Jr. 0.9g",
+      "total": 86,
+      "name": 35,
+      "unknown": 51
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "NOA Jr.",
+      "model": "NOA Jr. 1.4g",
+      "total": 86,
+      "name": 35,
+      "unknown": 51
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "NOA S",
+      "model": "NOA S 1.0g",
+      "total": 86,
+      "name": 35,
+      "unknown": 51
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "NOA Jr.",
+      "model": "NOA Jr. 1.2g",
+      "total": 86,
+      "name": 35,
+      "unknown": 51
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "NOA S",
+      "model": "NOA S 1.4g",
+      "total": 86,
+      "name": 35,
+      "unknown": 51
+    },
+    {
+      "manufacturer": "ニュードロワー",
+      "series": "HUNT GRANDE",
+      "model": "HUNT GRANDE 1.3g",
+      "total": 30,
+      "name": 6,
+      "unknown": 24
+    },
+    {
+      "manufacturer": "1089工房",
+      "series": "さかさにょろ",
+      "model": "さかさにょろ 35FS",
+      "total": 9,
+      "name": 4,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "1089工房",
+      "series": "さかさにょろ",
+      "model": "さかさにょろ 60FS",
+      "total": 11,
+      "name": 4,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "ベルベットアーツ",
+      "series": "フォルテ",
+      "model": "フォルテ 0.6g",
+      "total": 21,
+      "name": 20,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "ベルベットアーツ",
+      "series": "フォルテ",
+      "model": "フォルテ 0.9g",
+      "total": 25,
+      "name": 23,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "ベルベットアーツ",
+      "series": "フォルテ",
+      "model": "フォルテ 1.5g",
+      "total": 20,
+      "name": 17,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "ベルベットアーツ",
+      "series": "フォルテ",
+      "model": "フォルテ 1.8g",
+      "total": 27,
+      "name": 24,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "ベルベットアーツ",
+      "series": "フォルテ",
+      "model": "フォルテ 2.1g",
+      "total": 20,
+      "name": 17,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "ベルベットアーツ",
+      "series": "デイジー",
+      "model": "デイジー 0.4g",
+      "total": 20,
+      "name": 18,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "ベルベットアーツ",
+      "series": "デイジー",
+      "model": "デイジー 0.8g",
+      "total": 23,
+      "name": 22,
+      "unknown": 1
+    },
+    {
+      "manufacturer": "ベルベットアーツ",
+      "series": "デイジー",
+      "model": "デイジー 1.3g",
+      "total": 20,
+      "name": 18,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "ベルベットアーツ",
+      "series": "デイジー",
+      "model": "デイジー 2.5g",
+      "total": 21,
+      "name": 19,
+      "unknown": 2
+    },
+    {
+      "manufacturer": "ベルベットアーツ",
+      "series": "ゴーレム",
+      "model": "ゴーレム 2.2g",
+      "total": 7,
+      "name": 3,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "ベルベットアーツ",
+      "series": "ゴーレム",
+      "model": "ゴーレム 2.9g",
+      "total": 9,
+      "name": 5,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "total": 12,
+      "name": 5,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "total": 12,
+      "name": 5,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "チェルシー",
+      "model": "チェルシー SS",
+      "total": 9,
+      "name": 4,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "チェルシー",
+      "model": "チェルシー F",
+      "total": 8,
+      "name": 5,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "total": 10,
+      "name": 4,
+      "unknown": 6
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "total": 10,
+      "name": 4,
+      "unknown": 6
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "もぐたそ",
+      "model": "もぐたそ",
+      "total": 8,
+      "name": 5,
+      "unknown": 3
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー",
+      "model": "バービー F",
+      "total": 14,
+      "name": 5,
+      "unknown": 9
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー",
+      "model": "バービー SS",
+      "total": 12,
+      "name": 1,
+      "unknown": 11
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "total": 13,
+      "name": 6,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ロング",
+      "model": "バービー・ロング SS",
+      "total": 8,
+      "name": 3,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "total": 14,
+      "name": 5,
+      "unknown": 9
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "total": 13,
+      "name": 6,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ガール",
+      "model": "バービー・ガール F",
+      "total": 6,
+      "name": 1,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "ロブルアー",
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "total": 9,
+      "name": 2,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Wah",
+      "model": "WAH 37HF",
+      "total": 25,
+      "name": 6,
+      "unknown": 19
+    },
+    {
+      "manufacturer": "Lucky Craft",
+      "series": "Wah",
+      "model": "WAH 37FⅡ",
+      "total": 26,
+      "name": 6,
+      "unknown": 20
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Tearo",
+      "model": "Tearo 1.3g",
+      "total": 32,
+      "name": 20,
+      "unknown": 12
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Tearo",
+      "model": "Tearo 1.6g",
+      "total": 34,
+      "name": 21,
+      "unknown": 13
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Tearo",
+      "model": "Tearo 1.9g",
+      "total": 26,
+      "name": 17,
+      "unknown": 9
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "total": 17,
+      "name": 7,
+      "unknown": 10
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "total": 19,
+      "name": 9,
+      "unknown": 10
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1.2g",
+      "total": 17,
+      "name": 8,
+      "unknown": 9
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Apeed!",
+      "model": "Apeed! 2.3g",
+      "total": 14,
+      "name": 7,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Apeed!",
+      "model": "Apeed! 2.7g",
+      "total": 14,
+      "name": 7,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Apeed!",
+      "model": "Apeed! 3.3g",
+      "total": 10,
+      "name": 6,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "total": 15,
+      "name": 4,
+      "unknown": 11
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "total": 15,
+      "name": 8,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1.7g",
+      "total": 15,
+      "name": 5,
+      "unknown": 10
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Chibi Quattro Spoon",
+      "model": "Chibi Quattro Spoon 0.4g",
+      "total": 17,
+      "name": 8,
+      "unknown": 9
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Chibi Quattro Spoon",
+      "model": "Chibi Quattro Spoon 0.6g",
+      "total": 17,
+      "name": 7,
+      "unknown": 10
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.1g",
+      "total": 12,
+      "name": 5,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.4g",
+      "total": 12,
+      "name": 5,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.1g",
+      "total": 12,
+      "name": 5,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.9g",
+      "total": 12,
+      "name": 5,
+      "unknown": 7
+    },
+    {
+      "manufacturer": "TIMON",
+      "series": "Chibi Quattro Spoon",
+      "model": "Chibi Quattro Spoon 0.8g",
+      "total": 8,
+      "name": 4,
+      "unknown": 4
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "USSA",
+      "model": "USSA S",
+      "total": 48,
+      "name": 13,
+      "unknown": 35
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "USSA",
+      "model": "USSA XS",
+      "total": 44,
+      "name": 12,
+      "unknown": 32
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "USSA",
+      "model": "USSA XS Non Rattle",
+      "total": 27,
+      "name": 6,
+      "unknown": 21
+    },
+    {
+      "manufacturer": "RODIO CRAFT",
+      "series": "USSA",
+      "model": "Fat USSA Jr. XS",
+      "total": 21,
+      "name": 6,
+      "unknown": 15
+    },
+    {
+      "manufacturer": "PALMS",
+      "series": "Powale",
+      "model": "PO-32F",
+      "total": 12,
+      "name": 3,
+      "unknown": 9
+    },
+    {
+      "manufacturer": "PALMS",
+      "series": "Powale",
+      "model": "PO-22F",
+      "total": 12,
+      "name": 3,
+      "unknown": 9
+    },
+    {
+      "manufacturer": "PALMS",
+      "series": "Powale",
+      "model": "PO-32FR",
+      "total": 7,
+      "name": 2,
+      "unknown": 5
+    },
+    {
+      "manufacturer": "PALMS",
+      "series": "GANOFF",
+      "model": "GA-24S",
+      "total": 16,
+      "name": 5,
+      "unknown": 11
+    },
+    {
+      "manufacturer": "PALMS",
+      "series": "GANOFF",
+      "model": "GA-24HS",
+      "total": 16,
+      "name": 5,
+      "unknown": 11
+    },
+    {
+      "manufacturer": "PALMS",
+      "series": "GANOFF",
+      "model": "GA-31S",
+      "total": 10,
+      "name": 2,
+      "unknown": 8
+    },
+    {
+      "manufacturer": "PALMS",
+      "series": "Galette",
+      "model": "GL-31F",
+      "total": 10,
+      "name": 3,
+      "unknown": 7
+    }
+  ]
+}
