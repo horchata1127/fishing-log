@@ -79,7 +79,7 @@ test('preview/cancel is read-only; first apply adds 28 HUNT colors, preserves ev
     if (table !== 'lureVariants') assert.deepEqual(after[table], rows)
   }
   assert.equal((await db.lureVariants.where('modelId').equals(305).toArray()).length, 30)
-  assert.equal(db.verno, 8)
+  assert.equal(db.verno, 9)
   const again = await previewRc20Catalog()
   assert.equal(again.addedColors, 0)
   await applyRc20Catalog(again.comparisonToken)

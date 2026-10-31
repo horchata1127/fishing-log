@@ -60,7 +60,7 @@ test('v6 to v7 preserves every record in all 13 stores and adds empty stores', a
   }
   for (const name of fullBackupTableNames) await legacy.table(name).put({ ...records[name], extension: { retained: true } })
   const before = copy(Object.fromEntries(await Promise.all(legacy.tables.map(async t => [t.name, await t.toArray()]))))
-  legacy.close(); await db.open(); assert.equal(db.verno, 8)
+  legacy.close(); await db.open(); assert.equal(db.verno, 9)
   const after = await state(); for (const name of fullBackupTableNames) assert.deepEqual(after[name], before[name])
   for (const name of ['facilities', 'zones', 'appMetadata']) assert.deepEqual(after[name], [])
 })
@@ -171,7 +171,7 @@ test('v6 rejects malformed file empty text version and missing nullable/new tabl
 })
 test('versionchange closes stale connection without reopen or input-clearing reload', async () => {
   const Dexie = (await import('dexie')).default
-  const next = new Dexie(db.name); next.version(8).stores({ extraTestOnly: 'id' })
+  const next = new Dexie(db.name); next.version(10).stores({ extraTestOnly: 'id' })
   await next.open(); assert.equal(databaseConnection.state, 'changed'); assert.equal(db.isOpen(), false)
   await assert.rejects(db.trips.toArray(), /closed/i)
   next.close(); await next.delete()
@@ -186,7 +186,7 @@ test('blocked v7 open waits for a legacy connection and reports ready after safe
   const pending = db.open()
   try {
     await blocked; assert.equal(databaseConnection.state, 'blocked'); legacy.close(); await pending
-    assert.equal(db.verno, 8); assert.equal(databaseConnection.state, 'ready')
+    assert.equal(db.verno, 9); assert.equal(databaseConnection.state, 'ready')
   } finally { legacy.on('versionchange').unsubscribe(keepOpen); db.on('blocked').unsubscribe(listener); legacy.close() }
 })
 test('unmodified legacy v6 connection releases upgrade and cannot erase added stores', async () => {

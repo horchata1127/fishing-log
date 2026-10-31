@@ -1,5 +1,7 @@
 import { db, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch, validateCatchResult, validateCatchAction,
-  weatherTableNames, weatherFields, validateWeatherLocation, validateWeatherHour, validateWeatherRequest } from '../db/database'
+  weatherTableNames, weatherFields, validateWeatherLocation, validateWeatherHour, validateWeatherRequest,
+  visualTableNames, validateVisualRecord, validateVisualSnapshot, validateVisualReferences,
+  type LureVisualProfile, type TemporaryLureColor } from '../db/database'
 import { facilityTableNames, validateFacilityStorage, readFacilityStorage, mergeFacilityStorage, validateLocationReferences, type FacilityStorage } from './facilityStorage'
 
 export const backupTableNames = [
@@ -11,12 +13,12 @@ export const allBackupTableNames = [...backupTableNames, ...tackleTableNames] as
 export const fullBackupTableNames = [...allBackupTableNames, 'fishSpecies'] as const
 type TableName = typeof allBackupTableNames[number]
 type Row = Record<string, unknown>
-type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>> & { fishSpecies?: Row[] } & Partial<FacilityStorage> & Partial<Record<typeof weatherTableNames[number], Row[]>>
-export const completeBackupTableNames = [...fullBackupTableNames, ...facilityTableNames, ...weatherTableNames] as const
+type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>> & { fishSpecies?: Row[] } & Partial<FacilityStorage> & Partial<Record<typeof weatherTableNames[number], Row[]>> & { lureVisualProfiles?: LureVisualProfile[]; temporaryLureColors?: TemporaryLureColor[] }
+export const completeBackupTableNames = [...fullBackupTableNames, ...facilityTableNames, ...weatherTableNames, ...visualTableNames] as const
 
 export interface FishingLogBackup {
   format: 'fishing-log-backup'
-  version: 1 | 2 | 3 | 4 | 5 | 6 | 7
+  version: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
   exportedAt: string
   data: {
     trips: unknown[]
@@ -38,6 +40,8 @@ export interface FishingLogBackup {
     tripWeatherLocations?: unknown[]
     tripWeatherHours?: unknown[]
     tripWeatherRequests?: unknown[]
+    lureVisualProfiles?: unknown[]
+    temporaryLureColors?: unknown[]
   }
 }
 
@@ -91,7 +95,7 @@ function dateTime(value: unknown, path: string): Date {
 /** 書き込み前に全テーブルを検証し、入力を変更せずDateを復元する。 */
 export function validateBackup(value: unknown): RestoredData {
   const backup = object(value, 'ルート')
-  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6, 7].includes(backup.version as number)) {
+  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6, 7, 8].includes(backup.version as number)) {
     fail('format/version', '対応するFishing Logバックアップではありません')
   }
   dateTime(backup.exportedAt, 'exportedAt')
@@ -196,6 +200,10 @@ export function validateBackup(value: unknown): RestoredData {
           break
         }
         case 'catches':
+          if (row.visualColorSnapshot !== undefined) {
+            if (Number(backup.version) < 8) fail(path, '配色にはv8形式が必要です')
+            validateVisualSnapshot(row.visualColorSnapshot)
+          }
           if (Number(backup.version) < 5 && (row.fishSpeciesId !== undefined || row.fishSpeciesGroup !== undefined)) fail(path, '魚種参照にはv5形式が必要です')
           validateCatchResult(row)
           validateCatchAction(row)
@@ -274,7 +282,7 @@ export function validateBackup(value: unknown): RestoredData {
       if (['facilityId', 'currentZoneId', 'zoneId', 'locationSnapshot'].some(key => row[key] !== undefined)) fail('場所参照', '場所参照にはv6形式が必要です')
     }
   }
-  if (backup.version === 7) {
+  if (Number(backup.version) >= 7) {
     for (const name of weatherTableNames) {
       if (!Array.isArray(source[name])) fail(`data.${name}`, '配列が必要です')
       data[name] = (source[name] as unknown[]).map(value => ({ ...object(value, name) }))
@@ -309,6 +317,30 @@ export function validateBackup(value: unknown): RestoredData {
   } else {
     for (const name of weatherTableNames) if (source[name] !== undefined) fail(`data.${name}`, '気象データにはv7形式が必要です')
   }
+  if (backup.version === 8) {
+    for (const name of visualTableNames) {
+      const entries = source[name]
+      if (!Array.isArray(entries)) fail(name, '配列が必要です')
+      const seen = new Set<string>(), keys = new Set<string>(), variants = new Set<number>()
+      const rows = entries.map(entry => {
+        validateVisualRecord(name, entry)
+        const row = structuredClone(entry) as LureVisualProfile & TemporaryLureColor
+        if (seen.has(row.id)) fail(name, 'IDが重複しています')
+        seen.add(row.id)
+        if (name === 'lureVisualProfiles') {
+          if (keys.has(row.naturalKey) || row.variantId !== undefined && variants.has(row.variantId)) fail(name, '自然キーまたはカラー参照が重複しています')
+          keys.add(row.naturalKey)
+          if (row.variantId !== undefined) variants.add(row.variantId)
+        }
+        return row
+      })
+      if (name === 'lureVisualProfiles') data.lureVisualProfiles = rows
+      else data.temporaryLureColors = rows
+    }
+    validateVisualReferences(data.lureVisualProfiles!, data.temporaryLureColors!, data as unknown as Parameters<typeof validateVisualReferences>[2])
+  } else {
+    for (const name of visualTableNames) if (source[name] !== undefined) fail(name, '配色辞書にはv8形式が必要です')
+  }
   return data
 }
 
@@ -320,6 +352,13 @@ export async function createBackup(): Promise<FishingLogBackup> {
     }))
     return result
   })
+  const hasVisual = visualTableNames.some(name => data[name].length > 0) || data.catches.some(row => (row as Row).visualColorSnapshot !== undefined)
+  if (hasVisual) {
+    const backup: FishingLogBackup = { format: 'fishing-log-backup', version: 8, exportedAt: new Date().toISOString(), data }
+    validateBackup(JSON.parse(JSON.stringify(backup)))
+    return backup
+  }
+  for (const name of visualTableNames) delete (data as Partial<typeof data>)[name]
   const hasFacilities = facilityTableNames.some(name => data[name].length > 0) ||
     [...data.trips, ...data.catches].some(row => ['facilityId', 'currentZoneId', 'zoneId', 'locationSnapshot'].some(key => (row as Row)[key] !== undefined))
   const hasWeather = weatherTableNames.some(name => data[name].length > 0)
@@ -375,6 +414,23 @@ export async function importBackup(file: File): Promise<void> {
       facilities: data.facilities ?? [], zones: data.zones ?? [], appMetadata: data.appMetadata ?? [],
     })
     validateLocationReferences(data, merged)
+    // Legacy backups carry no visual dictionary. Preserve values and identities,
+    // but detach every local ID: restored IDs may now identify different lures.
+    if (data.lureVisualProfiles === undefined) {
+      for (const p of await db.lureVisualProfiles.toArray()) {
+        delete p.variantId
+        await db.lureVisualProfiles.put(p)
+      }
+      for (const t of await db.temporaryLureColors.toArray()) {
+        delete t.modelId
+        delete t.linkedVariantId
+        await db.temporaryLureColors.put(t)
+      }
+    } else {
+      for (const name of visualTableNames) await db.table(name).clear()
+      await db.lureVisualProfiles.bulkAdd(data.lureVisualProfiles)
+      await db.temporaryLureColors.bulkAdd(data.temporaryLureColors!)
+    }
     for (const name of fullBackupTableNames) await db.table(name).clear()
     for (const name of fullBackupTableNames) await db.table(name).bulkAdd(data[name] ?? [])
     // A restore replaces trip IDs: never attach pre-restore weather to a different trip.

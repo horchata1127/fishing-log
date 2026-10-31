@@ -91,7 +91,7 @@ test('read-only preview, 89 colors/8 models/4 series, all records unchanged, rep
   assert.deepEqual(await state(),saved)
   assert.equal((await previewRc20Catalog()).addedColors,0)
   assert.equal((await previewRc21Catalog()).addedColors,0)
-  db.close(); await db.open(); assert.equal(db.verno,8)
+  db.close(); await db.open(); assert.equal(db.verno, 9)
   assert.deepEqual(await state(),saved)
 })
 

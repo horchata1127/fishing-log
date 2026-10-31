@@ -167,9 +167,10 @@ test('v7 backup round trip includes all 19 tables; malformed weather rejected at
 })
 test('v7 to v8 migration is additive and preserves all 16 populated legacy tables', async () => {
   const before = await snapshot(), marker = "new Dexie('FishingLogDatabase')", name = "new Dexie('FishingLogWeatherMigrationTest')"
+  delete before.lureVisualProfiles; delete before.temporaryLureColors
   const legacyFile = join(directory, 'legacy7.mjs'), upgradedFile = join(directory, 'upgraded8.mjs')
   await writeFile(legacyFile, compile(databaseSource.slice(0, databaseSource.indexOf('db.version(8)')).replace(marker, name)).replace("'dexie'", JSON.stringify(import.meta.resolve('dexie'))))
-  await writeFile(upgradedFile, compile(databaseSource.replace(marker, name)).replace("'dexie'", JSON.stringify(import.meta.resolve('dexie'))))
+  await writeFile(upgradedFile, compile(databaseSource.slice(0, databaseSource.indexOf('db.version(9)')).replace(marker, name)).replace("'dexie'", JSON.stringify(import.meta.resolve('dexie'))))
   const { db: legacy } = await import(pathToFileURL(legacyFile).href)
   for (const [name, rows] of Object.entries(before)) await legacy.table(name).bulkAdd(rows.map(row => ({ ...row,
     ...(name === 'trips' ? { startedAt: new Date(row.startedAt), endedAt: new Date(row.endedAt) } : {}),
@@ -211,7 +212,7 @@ test('PR3 explicit reuse writes only target location; keeps all original records
   const exported = await createBackup(); assert.equal(exported.version, 7); assert.equal(Object.keys(exported.data).length, 19)
   const tables = copy(await Promise.all(db.tables.map(t => t.toArray())))
   await importBackup({ text: async () => JSON.stringify(exported) }); assert.deepEqual(copy(await Promise.all(db.tables.map(t => t.toArray()))), tables)
-  assert.equal(db.verno, 8)
+  assert.equal(db.verno, 9)
 })
 test('PR3 multiple points remain distinct; identical points grouped; stale source cannot overwrite target', async () => {
   await saveWeatherLocation(1, 36.611, 139.194); await reuseTarget(2); await reuseTarget(3)

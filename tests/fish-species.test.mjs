@@ -230,7 +230,7 @@ test('v5 to v7 migration preserves all 12 tables and does not invent fish assign
   const before = await Promise.all(legacy.tables.map(async table => [table.name, await table.toArray()]))
   legacy.close()
   await db.open()
-  assert.equal(db.verno, 8)
+  assert.equal(db.verno, 9)
   for (const [name, rows] of before) assert.deepEqual(await db.table(name).toArray(), rows)
   assert.equal(await db.fishSpecies.count(), 0)
   assert.equal((await db.catches.get(90)).fishSpeciesId, undefined)

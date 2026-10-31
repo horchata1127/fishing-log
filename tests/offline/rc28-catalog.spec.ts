@@ -59,6 +59,9 @@ test('RC28 precached catalog applies after offline cold start; references and v7
     await page.getByRole('button',{name:'📦 データをバックアップ',exact:true}).click()
     const path=info.outputPath('synthetic-rc28-offline-v7.json');await(await download).saveAs(path)
     const backup=JSON.parse(await readFile(path,'utf8'))
-    expect(backup.version).toBe(7);expect(backup.data).toEqual(saved)
+    // Empty RC32 stores are deliberately omitted from legacy v7 exports.
+    const { lureVisualProfiles, temporaryLureColors, ...legacyData } = saved
+    expect(lureVisualProfiles).toEqual([]);expect(temporaryLureColors).toEqual([])
+    expect(backup.version).toBe(7);expect(backup.data).toEqual(legacyData)
   }finally{await context.close()}
 })

@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, ref, watch } from "vue";
 import type { LureOption, LureSelection, RecentLure } from '../utils/catchRegistration';
 import { catchActions, actionLengthLabels, type ActionLength, type LostDistance, type TackleSet } from '../db/database';
 import type { FishSpecies } from '../db/database';
 import FishSpeciesPicker from './FishSpeciesPicker.vue';
+import VisualColorEditor from './VisualColorEditor.vue';
+import VisualColorPreview from './VisualColorPreview.vue';
+import VisualDictionaryPanel from './VisualDictionaryPanel.vue';
+import type { VisualColorSnapshot } from '../db/database';
 
 const props = defineProps<{
   resultType?: "catch" | "lost";
@@ -30,6 +34,8 @@ const props = defineProps<{
   retrieveSpeed: string;
   action: string;
   actionLength?: ActionLength;
+  visualColorSnapshot?: VisualColorSnapshot;
+  visualCategory?: string;
 }>();
 
 const emit = defineEmits<{
@@ -52,6 +58,8 @@ const emit = defineEmits<{
   "update:retrieveSpeed": [value: string];
   "update:action": [value: string];
   'update:actionLength': [value: ActionLength];
+  'update:visualColorSnapshot': [value: VisualColorSnapshot | null];
+  refreshChoices: [];
 }>();
 
 // An old free-form action must remain selectable without renaming or enum coercion.
@@ -63,12 +71,15 @@ function localDateTime(date: Date) {
   return `${date.getFullYear()}-${pad(date.getMonth()+1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
 }
 const showLurePicker = ref(false);
+const showDictionary = ref(false);
 const showManualInput = ref(false);
 const lureSearch = ref("");
 const lureManufacturer = ref("");
 const lureCategory = ref("");
 const pickerMode = ref<'owned' | 'catalog'>('owned');
 const catalogModel = ref<number | ''>('');
+const lureLimit = ref(50);
+watch([lureSearch, lureManufacturer, lureCategory, catalogModel, pickerMode], () => { lureLimit.value = 50; });
 const pickerOptions = computed(() => pickerMode.value === 'catalog' ? props.catalog : props.myLures);
 const lureCategories = ['スプーン','クランク','ミノー','トップ','バイブレーション','その他'];
 const lureManufacturers = computed(() => [...new Set(pickerOptions.value.map(l => l.manufacturerName))].sort((a,b) => a.localeCompare(b,'ja')));
@@ -76,7 +87,7 @@ const lureManufacturers = computed(() => [...new Set(pickerOptions.value.map(l =
 const selectedMyLure = computed(() => {
   const selection = props.selection;
   return selection?.kind === 'owned' ? props.myLures.find(lure => lure.id === selection.myLureId)
-    : selection?.kind === 'catalog' ? props.catalog.find(lure => lure.variantId === selection.variantId) : undefined;
+    : selection?.kind === 'catalog' || selection?.kind === 'linked' ? props.catalog.find(lure => lure.variantId === selection.variantId) : undefined;
 });
 
 const filteredMyLures = computed(() => {
@@ -118,6 +129,7 @@ function selectMyLure(lure: LureOption) {
     ? { kind: 'catalog', variantId: lure.variantId } : { kind: 'owned', myLureId: lure.id });
   emit("update:lureName", lure.modelName);
   emit("update:lureColor", lure.colorName);
+  emit('update:visualColorSnapshot', lure.visualColorSnapshot ? JSON.parse(JSON.stringify(lure.visualColorSnapshot)) : null);
 
   showManualInput.value = false;
   showLurePicker.value = false;
@@ -133,8 +145,14 @@ function selectRecent(recent: RecentLure) {
   emit('selectLure', recent.selection);
   emit('update:lureName', recent.lureName);
   emit('update:lureColor', recent.lureColor);
+  emit('update:visualColorSnapshot', recent.visualColorSnapshot ? JSON.parse(JSON.stringify(recent.visualColorSnapshot)) : null);
   showManualInput.value = recent.selection.kind === 'manual';
   showLurePicker.value = false;
+}
+function chooseDictionary(lure: LureOption) {
+  pickerMode.value = 'catalog';
+  selectMyLure(lure);
+  showDictionary.value = false;
 }
 </script>
 
@@ -220,6 +238,10 @@ function selectRecent(recent: RecentLure) {
         </button>
       </div>
 
+      <VisualColorEditor :model-value="visualColorSnapshot" :category="visualCategory" @update:model-value="emit('update:visualColorSnapshot', $event)" />
+      <button type="button" @click="showDictionary = true">色から探す・代表配色を編集</button>
+      <VisualDictionaryPanel v-if="showDictionary" :catalog="catalog" :owned="myLures" select-enabled @close="showDictionary = false" @updated="emit('refreshChoices')" @select="chooseDictionary" />
+
       <!-- 手入力 -->
       <div v-if="showManualInput" class="manual-input-area">
         <label class="catch-field">
@@ -271,7 +293,8 @@ function selectRecent(recent: RecentLure) {
           <div v-if="recentLures.length" class="lure-picker-list">
             <strong>最近使用</strong>
             <button v-for="recent in recentLures" :key="recent.key" type="button" class="picker-lure-button" @click="selectRecent(recent)">
-              {{ recent.lureName }} ・ {{ recent.lureColor }}
+              {{ recent.lureName || '仮配色' }} ・ {{ recent.lureColor }}
+              <VisualColorPreview v-if="recent.visualColorSnapshot" :appearance="recent.visualColorSnapshot.appearance" :color-values="recent.visualColorSnapshot.colorValues" />
             </button>
           </div>
           <div class="picker-category-filters">
@@ -302,7 +325,7 @@ function selectRecent(recent: RecentLure) {
           <p v-if="pickerMode === 'catalog'" class="no-lures">未登録のルアーは、釣果の保存時にマイルアーへ1個登録します。</p>
           <div v-if="visibleLures.length > 0" class="lure-picker-list">
             <button
-              v-for="lure in visibleLures"
+              v-for="lure in visibleLures.slice(0, lureLimit)"
               :key="lure.id"
               type="button"
               class="picker-lure-button"
@@ -323,10 +346,13 @@ function selectRecent(recent: RecentLure) {
                 ・
                 {{ lure.seriesName }}
               </small>
+              <VisualColorPreview v-if="lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
+              <small v-if="lure.visualProfile && !lure.visualProfile.confirmed && !lure.visualProfile.userEdited">推定配色・未確認</small>
             </button>
           </div>
 
           <p v-else class="no-lures">{{ pickerMode === 'catalog' && !catalogModel ? 'モデルを選択してください。' : '該当するルアーがありません。' }}</p>
+          <button v-if="visibleLures.length > lureLimit" type="button" @click="lureLimit += 50">さらに50件表示（全{{ visibleLures.length }}件）</button>
 
           <button type="button" class="picker-manual-button" @click="openManualInput">
             ✏️ マスターにないルアーを手入力
