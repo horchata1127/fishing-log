@@ -2,6 +2,7 @@
 import { computed, ref } from "vue"
 import { isCatch, countResults, lostDistanceLabels, actionLengthLabel } from "../db/database"
 import TackleSnapshotDetails from './TackleSnapshotDetails.vue'
+import VisualColorPreview from './VisualColorPreview.vue'
 import TripWeatherPanel from './TripWeatherPanel.vue'
 import TripTimeline from './TripTimeline.vue'
 import TripEventEditor from './TripEventEditor.vue'
@@ -62,7 +63,7 @@ const results = computed(() => countResults(props.catches))
 const lureResults = computed(() => {
   const groups = new Map<string, { label: string; catches: number; lost: number }>()
   for (const row of props.catches) {
-    const key = row.lureVariantId !== undefined ? `variant:${row.lureVariantId}` : row.lureId !== undefined ? `owned:${row.lureId}` : JSON.stringify([row.lureName, row.lureColor])
+    const key = (row.lureVariantId !== undefined ? `variant:${row.lureVariantId}` : row.lureId !== undefined ? `owned:${row.lureId}` : JSON.stringify([row.lureName, row.lureColor])) + (row.visualColorSnapshot ? JSON.stringify(row.visualColorSnapshot.appearance) : '')
     const group = groups.get(key) ?? { label: [row.lureName || 'ルアー不明', row.lureColor].filter(Boolean).join('・'), catches: 0, lost: 0 }
     if (isCatch(row)) group.catches++; else group.lost++
     groups.set(key, group)
@@ -256,6 +257,7 @@ function fishingStyleName(style: FishingStyle) {
         <p v-if="record.locationSnapshot">{{ record.locationSnapshot.facilityName }}{{ record.locationSnapshot.zoneName ? ` / ${record.locationSnapshot.zoneName}` : '' }}</p>
         <p v-if="trip.facilityId && record.facilityId !== trip.facilityId && (record.zoneId || record.locationSnapshot?.zoneName)">旧施設・所属未確認のエリア（保存済みの所属を保持）</p>
         <p v-if="record.memo">{{ record.memo }}</p>
+        <VisualColorPreview v-if="record.visualColorSnapshot" :appearance="record.visualColorSnapshot.appearance" :color-values="record.visualColorSnapshot.colorValues" />
         <p class="catch-action">アクション: {{ record.action || '未選択' }} / 長さ: {{ actionLengthLabel(record.actionLength) }}</p>
 
         <small

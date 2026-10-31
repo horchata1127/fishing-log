@@ -1,4 +1,4 @@
-import { db, isUsableOwnedLure, validateFishCatch, validateCatchResult, validateCatchAction, type CatchRecord } from '../db/database'
+import { db, isUsableOwnedLure, validateFishCatch, validateCatchResult, validateCatchAction, validateVisualSnapshot, type VisualColorSnapshot, type CatchRecord } from '../db/database'
 import { snapshotTackle, tackleTables } from './tackleManagement'
 import { fishSnapshot } from './fishSpecies'
 import { resolveCatchLocation, type CatchLocationSelection } from './tripLocations'
@@ -20,13 +20,14 @@ export interface LureOption {
 }
 
 export interface RecentLure {
+  visualColorSnapshot?: VisualColorSnapshot
   key: string
   lureName: string
   lureColor: string
   selection: LureSelection
 }
 
-type CatchInput = Omit<CatchRecord, 'id' | 'lureId' | 'lureVariantId' | 'lureName' | 'lureColor' | 'tackleSnapshot' | 'facilityId' | 'zoneId' | 'locationSnapshot'> & { location?: CatchLocationSelection }
+type CatchInput = Omit<CatchRecord, 'id' | 'lureId' | 'lureVariantId' | 'lureName' | 'lureColor' | 'tackleSnapshot' | 'facilityId' | 'zoneId' | 'locationSnapshot' | 'visualColorSnapshot'> & { location?: CatchLocationSelection; visualColorSnapshot?: VisualColorSnapshot | null }
 const tables = [db.trips, db.catches, db.myLures, db.lureVariants, db.lureModels, db.lureSeries, db.lureManufacturers, ...tackleTables, db.fishSpecies, db.facilities, db.zones]
 
 function requireId(id: number) {
@@ -44,6 +45,7 @@ async function catalogNames(variantId: number) {
 }
 
 async function writeCatch(input: CatchInput, selection: LureSelection | undefined, previousFish?: CatchRecord, editing?: CatchRecord): Promise<number> {
+  if (input.visualColorSnapshot != null) validateVisualSnapshot(input.visualColorSnapshot)
   validateCatchResult(input as unknown as Record<string, unknown>)
   validateCatchAction(input as unknown as Record<string, unknown>)
   if (input.fishSizeCm !== undefined && (!Number.isFinite(input.fishSizeCm) || input.fishSizeCm <= 0)) throw new Error('全長は0より大きい数値（cm）を入力してください。')
@@ -89,6 +91,7 @@ async function writeCatch(input: CatchInput, selection: LureSelection | undefine
   }
   // 呼び出し側から古いIDが混入しても、選択結果以外のIDを保存しない。
   const record = { ...input } as CatchRecord
+  if (input.visualColorSnapshot === null) delete record.visualColorSnapshot
   // Missing input preserves an edited value; legacy absence remains physically absent.
   const actionLength = input.actionLength ?? editing?.actionLength
   if (actionLength === undefined) delete record.actionLength
@@ -113,6 +116,8 @@ async function writeCatch(input: CatchInput, selection: LureSelection | undefine
       fishSpeciesId: input.fishSpeciesId, fishSpecies: fish.fishSpecies, fishSpeciesGroup: fish.fishSpeciesGroup,
       resultType: input.resultType, lostDistance: input.lostDistance,
       tackleSnapshot, facilityId: place.facilityId, zoneId: place.zoneId, locationSnapshot: place.locationSnapshot }
+    // A newly selected lure must not inherit the previous lure's saved appearance.
+    if (input.visualColorSnapshot === null || selection && input.visualColorSnapshot === undefined && editing.visualColorSnapshot !== undefined) patch.visualColorSnapshot = undefined
     await db.catches.update(editing.id!, patch)
     return editing.id!
   }
@@ -136,7 +141,7 @@ export async function registerSameAsPrevious(tripId: number, caughtAt: Date, loc
       : previous.lureVariantId !== undefined ? { kind: 'catalog', variantId: previous.lureVariantId }
       : { kind: 'manual', lureName: previous.lureName ?? '', lureColor: previous.lureColor ?? '' }
     // 第4弾以前の意味が確認できないIDだけの記録は自動コピーしない。
-    return writeCatch({ tripId, caughtAt, location, ...result, tackleSetId: previous.tackleSnapshot ? previous.tackleSetId : undefined,
+    return writeCatch({ tripId, caughtAt, location, ...result, ...(previous.visualColorSnapshot ? { visualColorSnapshot: structuredClone(previous.visualColorSnapshot) } : {}), tackleSetId: previous.tackleSnapshot ? previous.tackleSetId : undefined,
       rangeLevel: previous.rangeLevel, retrieveSpeed: previous.retrieveSpeed,
       action: previous.action, ...(previous.actionLength === undefined ? {} : { actionLength: previous.actionLength }),
       fishSpecies: previous.fishSpecies, fishSpeciesId: previous.fishSpeciesId }, selection, previous)
@@ -177,10 +182,11 @@ export async function loadLureChoices() {
       const option = record.lureId !== undefined ? ownedMap.get(record.lureId) : undefined
       if (record.lureId !== undefined && !option) continue
       const variant = record.lureVariantId !== undefined ? catalogMap.get(record.lureVariantId) : undefined
-      const key = option || variant ? `variant:${(option ?? variant)!.variantId}` : `manual:${JSON.stringify([record.lureName, record.lureColor])}`
-      if (seen.has(key) || (!option && !record.lureName && !record.lureColor)) continue
+      const visualKey = record.visualColorSnapshot ? JSON.stringify(record.visualColorSnapshot.appearance) : ''
+      const key = (option || variant ? `variant:${(option ?? variant)!.variantId}` : `manual:${JSON.stringify([record.lureName, record.lureColor])}`) + visualKey
+      if (seen.has(key) || (!option && !record.lureName && !record.lureColor && !record.visualColorSnapshot)) continue
       seen.add(key)
-      recent.push({ key, lureName: option?.modelName ?? record.lureName ?? '',
+      recent.push({ key, ...(record.visualColorSnapshot ? { visualColorSnapshot: structuredClone(record.visualColorSnapshot) } : {}), lureName: option?.modelName ?? record.lureName ?? '',
         lureColor: option?.colorName ?? record.lureColor ?? '',
         selection: option ? { kind: 'owned', myLureId: option.id }
           : variant ? { kind: 'catalog', variantId: variant.variantId }

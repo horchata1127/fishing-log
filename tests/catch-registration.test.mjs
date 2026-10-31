@@ -36,7 +36,8 @@ const { descriptor: pickerDescriptor } = parse(await readFile(new URL('../src/co
 await writeFile(paths.fishPicker, compile(compileScript(pickerDescriptor, { id: 'fish-picker-test' }).content)
   .replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
   .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href)))
-await writeFile(paths.modal, compile(script.content).replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
+// Child color widgets are covered by browser tests; this harness tests modal routing.
+await writeFile(paths.modal, compile(script.content).replace(/import VisualColorEditor from ['"]\.\/VisualColorEditor.vue['"];?/, 'const VisualColorEditor = { render: () => null };').replace(/import VisualColorPreview from ['"]\.\/VisualColorPreview.vue['"];?/, 'const VisualColorPreview = { render: () => null };').replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
   .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
   .replace("'./FishSpeciesPicker.vue'", JSON.stringify(pathToFileURL(paths.fishPicker).href)))
 const template = compileTemplate({ source: descriptor.template.content, filename: 'CatchModal.vue', id: 'catch-test',
@@ -75,6 +76,45 @@ beforeEach(async () => {
 const input = (time = '2026-10-10T01:00:00Z') => ({ tripId: 60, caughtAt: new Date(time), rangeLevel: '表層' })
 const catalog = { kind: 'catalog', variantId: 40 }
 const snapshot = async () => JSON.stringify(await Promise.all(db.tables.map(async table => [table.name, await table.orderBy(table.schema.primKey.name).toArray()])))
+
+test('RC32 snapshot persists, is reused as a value, survives memo edits, and clears on lure reselection', async () => {
+  const saved = { version: 1, appearance: { version: 1, paletteVersion: 1, layout: 'generic', regions: { whole: { colors: ['red'], attributes: [] } } },
+    colorValues: { red: '#FF0000' }, origin: 'user', confirmed: true }
+  const manual = { kind: 'manual', lureName: '仮ルアー', lureColor: '赤' }
+  const before = await db.myLures.toArray()
+  const id = await registerCatch({ ...input(), visualColorSnapshot: saved }, manual)
+  saved.colorValues.red = '#AA0000'
+  const original = (await db.catches.get(id)).visualColorSnapshot
+  assert.equal(original.colorValues.red, '#FF0000')
+  await updateCatch(id, { ...input(), memo: '配色以外の編集' })
+  assert.deepEqual((await db.catches.get(id)).visualColorSnapshot, original)
+  const reused = await registerSameAsPrevious(60, new Date('2026-10-10T02:00:00Z'))
+  assert.deepEqual((await db.catches.get(reused)).visualColorSnapshot, original)
+  assert.deepEqual(await db.myLures.toArray(), before)
+  await updateCatch(id, input(), { kind: 'manual', lureName: '別ルアー', lureColor: '青' })
+  assert.equal((await db.catches.get(id)).visualColorSnapshot, undefined)
+  const old = await registerCatch(input('2026-10-10T03:00:00Z'), manual)
+  await updateCatch(old, { ...input('2026-10-10T03:00:00Z'), memo: '旧形式' })
+  assert.equal(Object.hasOwn(await db.catches.get(old), 'visualColorSnapshot'), false)
+  const beforeBad = await snapshot()
+  await assert.rejects(registerCatch({ ...input(), visualColorSnapshot: { ...saved, colorValues: {} } }, catalog))
+  assert.equal(await snapshot(), beforeBad)
+})
+
+test('RC32 color-only catches keep distinct recent appearances, support explicit clear, and preserve ownership', async () => {
+  const before = await db.myLures.toArray()
+  const saved = { version: 1, appearance: { version: 1, paletteVersion: 1, layout: 'generic', regions: { whole: { colors: ['red'], attributes: [], pattern: 'spots' } } }, colorValues: { red: '#FF0000' }, origin: 'user', confirmed: true }
+  const selection = { kind: 'manual', lureName: '', lureColor: '' }
+  const a = await registerCatch({ ...input(), visualColorSnapshot: saved }, selection)
+  const other = structuredClone(saved); other.appearance.regions.whole.pattern = 'marble'
+  await registerCatch({ ...input('2026-10-10T02:00:00Z'), visualColorSnapshot: other }, selection)
+  const choices = await loadLureChoices()
+  assert.equal(choices.recent.length, 2)
+  assert.deepEqual(choices.recent.map(r => r.visualColorSnapshot.appearance.regions.whole.pattern), ['marble', 'spots'])
+  await updateCatch(a, { ...input(), visualColorSnapshot: null })
+  assert.equal((await db.catches.get(a)).visualColorSnapshot, undefined)
+  assert.deepEqual(await db.myLures.toArray(), before)
+})
 
 test('RC24 action options retain all old labels, add eight unique types, and display missing length only as normal', () => {
   const old = ['ただ巻き', 'ストップ＆ゴー', 'トゥイッチ', 'ジャーク', 'シェイク', 'シミーフォール', 'シミーアップ', 'リフト＆フォール', 'ステイ', 'その他']
@@ -180,7 +220,7 @@ test('RC24 v6 round trip retains all 16 stores, official/user places, tackle/fis
   await importBackup(new File([JSON.stringify(backup)], 'synthetic-rc24-v6.json'))
   assert.equal(await snapshot(), before)
   assert.equal(Object.hasOwn(await db.catches.get(legacyId), 'actionLength'), false)
-  assert.equal(db.verno, 8)
+  assert.equal(db.verno, 9)
 })
 
 test('RC24 late edit failure rolls back new length and owned lure without modifying legacy action or other tables', async () => {
@@ -208,7 +248,7 @@ test('RC23 legacy records and three lost distances stay separate with reused own
   const before = await snapshot()
   await importBackup(new File([JSON.stringify(await createBackup())], 'rc23.json'))
   assert.equal(await snapshot(), before)
-  assert.equal(db.verno, 8)
+  assert.equal(db.verno, 9)
 })
 
 test('RC23 invalid result/distance and invalid restored record reject without any writes', async () => {

@@ -4,7 +4,7 @@ import OfflineStatus from './components/OfflineStatus.vue'
 import FacilityPicker from './components/FacilityPicker.vue'
 import { changeCurrentZone, loadLocationChoices, type CatchLocationSelection } from './utils/tripLocations'
 import { offline } from './pwa'
-import { onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { initializeFacilityRelease } from './utils/facilityRelease'
 import CatchModal from './components/CatchModal.vue'
 import TripInformationEditor from './components/TripInformationEditor.vue'
@@ -35,6 +35,7 @@ import {
   type TripEventType,
   type TackleSet,
   type FishSpecies,
+  type VisualColorSnapshot,
 } from './db/database'
 
 type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures' | 'tackles' | 'fish-species'
@@ -240,9 +241,26 @@ const catchRetrieveSpeed = ref('')
 const catchAction = ref('')
 const catchActionLength = ref<ActionLength | undefined>('normal')
 const catchSelection = ref<LureSelection | null>(null)
+const catchVisualSnapshot = ref<VisualColorSnapshot | null>(null)
+const catchVisualDirty = ref(false)
+const catchVisualCategory = computed(() => {
+  const selection = catchSelection.value
+  if (selection?.kind === 'manual') return 'その他'
+  const option = selection?.kind === 'owned' ? myLureOptions.value.find(l => l.id === selection.myLureId)
+    : catalogOptions.value.find(l => l.variantId === (selection?.kind === 'catalog' ? selection.variantId : editingCatch.value?.lureVariantId))
+  return option?.category ?? 'その他'
+})
+function updateVisualSnapshot(value: VisualColorSnapshot | null) {
+  catchVisualSnapshot.value = value
+  catchVisualDirty.value = true
+}
 
 function selectLure(selection: LureSelection) {
+  const keepManualAppearance = selection.kind === 'manual' && !catchSelection.value && !editingCatch.value?.lureVariantId && !editingCatch.value?.lureId
   catchSelection.value = selection
+  if (keepManualAppearance) return
+  catchVisualSnapshot.value = null
+  catchVisualDirty.value = true
 }
 
 function formatDate(date: string) {
@@ -412,6 +430,8 @@ async function editCatch(record: CatchRecord) {
     catchResultType.value = record.resultType ?? "catch"
     catchLostDistance.value = record.lostDistance
     editingCatch.value = record
+    catchVisualSnapshot.value = record.visualColorSnapshot ? JSON.parse(JSON.stringify(record.visualColorSnapshot)) : null
+    catchVisualDirty.value = false
     pendingCaughtAt.value = new Date(record.caughtAt)
     catchSelection.value = null
     catchLureName.value = record.lureName ?? ''
@@ -441,6 +461,8 @@ async function addCatch() {
   catchLostDistance.value = undefined
   editingCatch.value = null
   catchMemo.value = ''
+  catchVisualSnapshot.value = null
+  catchVisualDirty.value = false
   pendingCaughtAt.value = new Date()
 
   catchSelection.value = null
@@ -500,6 +522,7 @@ async function commitCatch(sameAsPrevious: boolean) {
         ? { kind: 'manual' as const, lureName: catchLureName.value, lureColor: catchLureColor.value }
         : catchSelection.value
       const input = { resultType: catchResultType.value, lostDistance: catchResultType.value === "lost" ? catchLostDistance.value : undefined, tripId: currentTrip.value.id, caughtAt: pendingCaughtAt.value,
+        ...(catchVisualDirty.value ? { visualColorSnapshot: catchVisualSnapshot.value ? JSON.parse(JSON.stringify(catchVisualSnapshot.value)) as VisualColorSnapshot : null } : {}),
         location: editingCatch.value && (!catchAreaChanged.value || (catchZoneId.value === editingCatch.value.zoneId && !(catchZoneId.value === undefined && editingCatch.value.locationSnapshot?.zoneName))) ? undefined : catchLocation.value ? { ...catchLocation.value, zoneId: catchZoneId.value } : undefined,
         tackleSetId: catchTackleSetId.value,
         fishSpeciesId: catchFishSpeciesId.value,
@@ -829,6 +852,7 @@ async function tripInformationSaved(trip: FishingTrip) {
     <TripInformationEditor v-if="editingTripInformation && currentTrip" :trip="currentTrip" @saved="tripInformationSaved" @cancel="editingTripInformation = false" />
     <TripFacilityEditor v-if="editingTripFacility && currentTrip" :trip="currentTrip" @saved="facilityLinked" @cancel="editingTripFacility = false" />
     <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt" :editing="!!editingCatch" @update:caught-at="pendingCaughtAt = $event" v-model:memo="catchMemo"
+      :visual-color-snapshot="catchVisualSnapshot ?? undefined" :visual-category="catchVisualCategory" @update:visual-color-snapshot="updateVisualSnapshot"
       v-model:result-type="catchResultType" v-model:lost-distance="catchLostDistance"
       :location-busy="locationBusy || savingLocation"
       :fish-choices="fishChoices" v-model:fish-species-id="catchFishSpeciesId" v-model:fish-size="catchFishSize"

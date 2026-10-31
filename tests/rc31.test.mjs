@@ -69,7 +69,7 @@ test('CSV parity, additive 1/3/7/83, two applications, reopen and v7 restore pre
   const again=await previewRc31Catalog()
   assert.deepEqual([again.addedManufacturers,again.addedSeries,again.addedModels,again.addedColors,again.retainedColors,again.pendingColors],[0,0,0,0,83,0])
   await applyRc31Catalog(again.comparisonToken); assert.deepEqual(await state(),saved)
-  db.close();await db.open();assert.equal(db.verno,8);assert.deepEqual(await state(),saved)
+  db.close();await db.open();assert.equal(db.verno, 9);assert.deepEqual(await state(),saved)
   const backup=await createBackup();assert.equal(backup.version,7)
   await importBackup(new File([JSON.stringify(backup)],'synthetic-rc31-v7.json'))
   assert.deepEqual(await state(),saved)

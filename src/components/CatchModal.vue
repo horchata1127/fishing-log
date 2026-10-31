@@ -4,6 +4,9 @@ import type { LureOption, LureSelection, RecentLure } from '../utils/catchRegist
 import { catchActions, actionLengthLabels, type ActionLength, type LostDistance, type TackleSet } from '../db/database';
 import type { FishSpecies } from '../db/database';
 import FishSpeciesPicker from './FishSpeciesPicker.vue';
+import VisualColorEditor from './VisualColorEditor.vue';
+import VisualColorPreview from './VisualColorPreview.vue';
+import type { VisualColorSnapshot } from '../db/database';
 
 const props = defineProps<{
   resultType?: "catch" | "lost";
@@ -30,6 +33,8 @@ const props = defineProps<{
   retrieveSpeed: string;
   action: string;
   actionLength?: ActionLength;
+  visualColorSnapshot?: VisualColorSnapshot;
+  visualCategory?: string;
 }>();
 
 const emit = defineEmits<{
@@ -52,6 +57,7 @@ const emit = defineEmits<{
   "update:retrieveSpeed": [value: string];
   "update:action": [value: string];
   'update:actionLength': [value: ActionLength];
+  'update:visualColorSnapshot': [value: VisualColorSnapshot | null];
 }>();
 
 // An old free-form action must remain selectable without renaming or enum coercion.
@@ -133,6 +139,7 @@ function selectRecent(recent: RecentLure) {
   emit('selectLure', recent.selection);
   emit('update:lureName', recent.lureName);
   emit('update:lureColor', recent.lureColor);
+  emit('update:visualColorSnapshot', recent.visualColorSnapshot ? JSON.parse(JSON.stringify(recent.visualColorSnapshot)) : null);
   showManualInput.value = recent.selection.kind === 'manual';
   showLurePicker.value = false;
 }
@@ -220,6 +227,8 @@ function selectRecent(recent: RecentLure) {
         </button>
       </div>
 
+      <VisualColorEditor :model-value="visualColorSnapshot" :category="visualCategory" @update:model-value="emit('update:visualColorSnapshot', $event)" />
+
       <!-- 手入力 -->
       <div v-if="showManualInput" class="manual-input-area">
         <label class="catch-field">
@@ -271,7 +280,8 @@ function selectRecent(recent: RecentLure) {
           <div v-if="recentLures.length" class="lure-picker-list">
             <strong>最近使用</strong>
             <button v-for="recent in recentLures" :key="recent.key" type="button" class="picker-lure-button" @click="selectRecent(recent)">
-              {{ recent.lureName }} ・ {{ recent.lureColor }}
+              {{ recent.lureName || '仮配色' }} ・ {{ recent.lureColor }}
+              <VisualColorPreview v-if="recent.visualColorSnapshot" :appearance="recent.visualColorSnapshot.appearance" :color-values="recent.visualColorSnapshot.colorValues" />
             </button>
           </div>
           <div class="picker-category-filters">

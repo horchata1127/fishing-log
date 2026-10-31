@@ -79,7 +79,7 @@ test('read-only preview; additive update retains every record/ID; repeat, reopen
   const again=await previewRc28Catalog()
   assert.equal(again.addedColors,0);assert.equal(again.pendingColors,rc28Pending.length)
   await applyRc28Catalog(again.comparisonToken);assert.deepEqual(await state(),saved)
-  db.close();await db.open();assert.equal(db.verno,8);assert.deepEqual(await state(),saved)
+  db.close();await db.open();assert.equal(db.verno, 9);assert.deepEqual(await state(),saved)
   const backup=await createBackup()
   assert.equal(backup.version,7)
   validateBackup(JSON.parse(JSON.stringify(backup)))

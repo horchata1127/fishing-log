@@ -190,6 +190,8 @@ export function validateCatchResult(row: Record<string, unknown>) {
 }
 
 export interface CatchRecord {
+  /** Value copy at recording time; never refreshed from the dictionary automatically. */
+  visualColorSnapshot?: VisualColorSnapshot
   resultType?: "catch" | "lost"
   lostDistance?: LostDistance
   id?: number
@@ -280,6 +282,184 @@ export interface LureVariant {
     revision: 'RC22' | 'RC28' | 'RC30' | 'RC31'; colorClass: string; sourceTier: string
     manufacturerUrl: string; retailerUrl: string; jan: string; originalName: string
     colorCode?: string; weightG?: number; lengthMm?: number; buoyancy?: string; rattle?: string; productUrl?: string
+  }
+}
+
+// RC32 Phase 1: fixed IDs are independent of display order. No startup seeding.
+export const visualPalette = [
+  ['white', 'ホワイト', '#FFFFFF'], ['ivory', 'アイボリー', '#FFFFF0'],
+  ['cream', 'クリーム', '#FFF2CC'], ['beige', 'ベージュ', '#D9C3A5'],
+  ['light-gray', 'ライトグレー', '#D3D3D3'], ['gray', 'グレー', '#808080'],
+  ['dark-gray', 'ダークグレー', '#404040'], ['black', 'ブラック', '#101010'],
+  ['silver', 'シルバー', '#C0C0C0'], ['gold', 'ゴールド', '#D4AF37'],
+  ['copper', 'カッパー', '#B87333'], ['bronze', 'ブロンズ', '#CD7F32'],
+  ['lemon', 'レモン', '#FFF44F'], ['yellow', 'イエロー', '#FFD700'],
+  ['mustard', 'マスタード', '#C5A028'], ['chartreuse', 'チャート', '#C8FF00'],
+  ['lime', 'ライム', '#80FF00'], ['light-green', 'ライトグリーン', '#90EE90'],
+  ['green', 'グリーン', '#008000'], ['dark-green', 'ダークグリーン', '#006400'],
+  ['olive', 'オリーブ', '#808000'], ['khaki', 'カーキ', '#8A865D'],
+  ['mint', 'ミント', '#98FFCC'], ['teal', 'ティール', '#008080'],
+  ['cyan', 'シアン', '#00FFFF'], ['sky-blue', 'スカイブルー', '#87CEEB'],
+  ['blue', 'ブルー', '#0066FF'], ['dark-blue', 'ダークブルー', '#003399'],
+  ['navy', 'ネイビー', '#000080'], ['lavender', 'ラベンダー', '#B8A0D8'],
+  ['purple', 'パープル', '#800080'], ['violet', 'バイオレット', '#8F00FF'],
+  ['magenta', 'マゼンタ', '#FF00FF'], ['light-pink', 'ライトピンク', '#FFB6C1'],
+  ['pink', 'ピンク', '#FF69B4'], ['hot-pink', 'ホットピンク', '#FF1493'],
+  ['salmon', 'サーモン', '#FA8072'], ['coral', 'コーラル', '#FF7F50'],
+  ['orange', 'オレンジ', '#FF8800'], ['dark-orange', 'ダークオレンジ', '#E65C00'],
+  ['red', 'レッド', '#FF0000'], ['dark-red', 'ダークレッド', '#8B0000'],
+  ['wine', 'ワイン', '#722F37'], ['peach', 'ピーチ', '#FFDAB9'],
+  ['tan', 'タン', '#D2B48C'], ['brown', 'ブラウン', '#8B4513'],
+  ['dark-brown', 'ダークブラウン', '#4B2E20'], ['ochre', 'オーカー', '#CC7722'],
+] as const
+export const visualAttributes = [
+  ['metallic', 'メタリック'], ['pearl', 'パール'], ['glitter', 'ラメ'],
+  ['hologram', 'ホログラム'], ['glow', 'グロー'], ['uv', 'UV反応'],
+  ['fluorescent', '蛍光'], ['transparent', '透明'], ['translucent', '半透明'],
+  ['matte', 'マット'], ['gloss', '光沢'], ['iridescent', '偏光'],
+] as const
+export type VisualColorId = typeof visualPalette[number][0]
+export type VisualAttributeId = typeof visualAttributes[number][0]
+export const visualPatterns = [['single', '単色'], ['two-tone', 'ツートン'], ['gradient', 'グラデーション'], ['spots', '斑点'], ['marble', 'マーブル']] as const
+export type VisualPattern = typeof visualPatterns[number][0]
+export interface VisualRegion { colors: VisualColorId[]; attributes: VisualAttributeId[]; pattern?: VisualPattern }
+type Regions<K extends string> = Partial<Record<K, VisualRegion>>
+export type VisualAppearance = { version: 1; paletteVersion: 1 } & (
+  | { layout: 'spoon'; regions: Regions<'front' | 'back'> }
+  | { layout: 'body'; regions: Regions<'dorsal' | 'side' | 'belly'> }
+  | { layout: 'generic'; regions: Regions<'whole'> }
+)
+export interface VisualModelIdentity { manufacturer: string; series: string; model: string }
+export interface VisualIdentity extends VisualModelIdentity { color: { kind: 'code' | 'name'; value: string } }
+export interface VisualState {
+  origin: 'user' | 'photo' | 'name'
+  userEdited: boolean
+  confirmed: boolean
+  revision: number
+  updatedAt: string
+  evidence?: { sourceUrl?: string; imageHash?: string; estimatorVersion?: string; confidence?: number }
+}
+export interface LureVisualProfile extends VisualState {
+  id: string
+  /** Absent after legacy restore: identity remains, but no unsafe local reference. */
+  variantId?: number
+  identity: VisualIdentity
+  naturalKey: string
+  appearance: VisualAppearance
+}
+export interface TemporaryLureColor extends VisualState {
+  id: string
+  name?: string
+  modelId?: number
+  modelIdentity?: VisualModelIdentity
+  linkedVariantId?: number
+  linkedIdentity?: VisualIdentity
+  appearance: VisualAppearance
+}
+export interface VisualColorSnapshot {
+  version: 1
+  appearance: VisualAppearance
+  /** Resolved rendering values preserve historical appearance after palette changes. */
+  colorValues: Partial<Record<VisualColorId, string>>
+  origin: VisualState['origin']
+  confirmed: boolean
+}
+export const visualTableNames = ['lureVisualProfiles', 'temporaryLureColors'] as const
+
+function visualObject(value: unknown): Record<string, unknown> {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('配色: オブジェクトが必要です。')
+  return value as Record<string, unknown>
+}
+function visualText(value: unknown) {
+  if (typeof value !== 'string' || !value.trim()) throw new Error('配色: 空でない文字列が必要です。')
+  return value
+}
+const identityPart = (s: string) => s.normalize('NFKC').replace(/\s/g, '').toLowerCase()
+export function visualModelKey(value: VisualModelIdentity): string {
+  const row = visualObject(value)
+  return JSON.stringify(['manufacturer', 'series', 'model'].map(k => identityPart(visualText(row[k]))))
+}
+export function visualNaturalKey(value: VisualIdentity): string {
+  visualModelKey(value)
+  const color = visualObject(value.color)
+  if (color.kind !== 'code' && color.kind !== 'name') throw new Error('配色: カラー識別種別が不正です。')
+  const text = identityPart(visualText(color.value))
+  return JSON.stringify([visualModelKey(value), color.kind, color.kind === 'code' ? text.replace(/[-‐‑–—−]/g, '') : text])
+}
+export function validateVisualAppearance(value: unknown): asserts value is VisualAppearance {
+  const row = visualObject(value)
+  const layouts: Record<string, string[]> = { spoon: ['front', 'back'], body: ['dorsal', 'side', 'belly'], generic: ['whole'] }
+  if (row.version !== 1 || row.paletteVersion !== 1 || typeof row.layout !== 'string' || !Object.hasOwn(layouts, row.layout)) throw new Error('配色: 形式・辞書版・部位構成が不正です。')
+  const regions = visualObject(row.regions)
+  for (const [name, value] of Object.entries(regions)) {
+    if (!layouts[row.layout]!.includes(name)) throw new Error('配色: 未対応の部位です。')
+    const region = visualObject(value)
+    // Optional for Phase 1 compatibility. Never backfill old records.
+    if (region.pattern !== undefined && !visualPatterns.some(p => p[0] === region.pattern)) throw new Error('配色: 模様が不正です。')
+    for (const [field, allowed] of [['colors', visualPalette.map(c => c[0])], ['attributes', visualAttributes.map(a => a[0])]] as const) {
+      const values = region[field]
+      if (!Array.isArray(values) || new Set(values).size !== values.length || values.some(v => !(allowed as readonly unknown[]).includes(v))) throw new Error('配色: 色・属性が不正または重複しています。')
+    }
+  }
+}
+export function validateVisualSnapshot(value: unknown): asserts value is VisualColorSnapshot {
+  const row = visualObject(value)
+  validateVisualAppearance(row.appearance)
+  if (row.version !== 1 || !['user', 'photo', 'name'].includes(row.origin as string) || typeof row.confirmed !== 'boolean') throw new Error('配色: スナップショットの状態が不正です。')
+  const values = visualObject(row.colorValues)
+  const used = new Set(Object.values(row.appearance.regions).flatMap(r => r!.colors))
+  if (Object.keys(values).length !== used.size || [...used].some(id => typeof values[id] !== 'string' || !/^#[0-9a-f]{6}$/i.test(values[id] as string))) throw new Error('配色: スナップショットの描画値が不足または不正です。')
+}
+export function validateVisualRecord(table: typeof visualTableNames[number], value: unknown): void {
+  const row = visualObject(value)
+  if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(visualText(row.id))) throw new Error('配色: UUIDが必要です。')
+  validateVisualAppearance(row.appearance)
+  if (!['user', 'photo', 'name'].includes(row.origin as string) || typeof row.userEdited !== 'boolean' || typeof row.confirmed !== 'boolean' ||
+      !Number.isSafeInteger(row.revision) || (row.revision as number) <= 0 || typeof row.updatedAt !== 'string' || !Number.isFinite(Date.parse(row.updatedAt)) || new Date(row.updatedAt).toISOString() !== row.updatedAt) throw new Error('配色: 編集状態・版・日時が不正です。')
+  if (row.origin === 'user' && row.userEdited !== true) throw new Error('配色: ユーザー配色には編集保護が必要です。')
+  if (row.evidence !== undefined) {
+    const evidence = visualObject(row.evidence)
+    for (const field of ['sourceUrl', 'imageHash', 'estimatorVersion']) if (evidence[field] !== undefined) visualText(evidence[field])
+    if (evidence.sourceUrl !== undefined && !/^https?:\/\//.test(evidence.sourceUrl as string)) throw new Error('配色: 出典URLが不正です。')
+    if (evidence.confidence !== undefined && (typeof evidence.confidence !== 'number' || !Number.isFinite(evidence.confidence) || evidence.confidence < 0 || evidence.confidence > 1)) throw new Error('配色: 確信度が不正です。')
+  }
+  for (const field of ['variantId', 'modelId', 'linkedVariantId']) if (row[field] !== undefined && (!Number.isSafeInteger(row[field]) || (row[field] as number) <= 0)) throw new Error('配色: 参照IDが不正です。')
+  if (table === 'lureVisualProfiles') {
+    if (row.naturalKey !== visualNaturalKey(row.identity as VisualIdentity)) throw new Error('配色: 自然キーが一致しません。')
+  } else {
+    if (row.name !== undefined) visualText(row.name)
+    if (row.modelIdentity !== undefined) visualModelKey(row.modelIdentity as VisualModelIdentity)
+    if (row.linkedIdentity !== undefined) visualNaturalKey(row.linkedIdentity as VisualIdentity)
+    if (row.modelId !== undefined && row.modelIdentity === undefined || row.linkedVariantId !== undefined && row.linkedIdentity === undefined) throw new Error('配色: 参照には自然キーが必要です。')
+  }
+}
+
+/** Validate identities against a catalog snapshot, without opening a database. */
+export function validateVisualReferences(profiles: LureVisualProfile[], temporary: TemporaryLureColor[], catalog: {
+  lureManufacturers: LureManufacturer[]; lureSeries: LureSeries[]; lureModels: LureModel[]; lureVariants: LureVariant[]
+}): void {
+  const manufacturers = new Map(catalog.lureManufacturers.map(r => [r.id, r]))
+  const series = new Map(catalog.lureSeries.map(r => [r.id, r]))
+  const models = new Map(catalog.lureModels.map(r => [r.id, r]))
+  const variants = new Map(catalog.lureVariants.map(r => [r.id, r]))
+  const modelIdentity = (id: number): VisualModelIdentity => {
+    const m = models.get(id), s = m && series.get(m.seriesId), maker = s && manufacturers.get(s.manufacturerId)
+    if (!m || !s || !maker) throw new Error('配色: モデル参照先がありません。')
+    return { manufacturer: maker.name, series: s.name, model: m.name }
+  }
+  const check = (id: number, identity: VisualIdentity) => {
+    const v = variants.get(id)
+    if (!v) throw new Error('配色: カラー参照先がありません。')
+    const color = identity.color.kind === 'code' ? v.catalogEvidence?.colorCode || v.colorName.normalize('NFKC').match(/^([A-Za-z]+-?[A-Za-z0-9]+)\s+/)?.[1] : v.catalogEvidence?.originalName || v.colorName
+    if (!color || visualNaturalKey({ ...modelIdentity(v.modelId), color: { kind: identity.color.kind, value: color } }) !== visualNaturalKey(identity)) throw new Error('配色: 参照IDと自然キーが一致しません。')
+  }
+  for (const p of profiles) if (p.variantId !== undefined) check(p.variantId, p.identity)
+  for (const t of temporary) {
+    if (t.modelId !== undefined && visualModelKey(modelIdentity(t.modelId)) !== visualModelKey(t.modelIdentity!)) throw new Error('配色: モデルIDと自然キーが一致しません。')
+    if (t.linkedVariantId !== undefined) {
+      check(t.linkedVariantId, t.linkedIdentity!)
+      if (t.modelId !== undefined && variants.get(t.linkedVariantId)!.modelId !== t.modelId) throw new Error('配色: 仮カラーのモデルと公式カラーが一致しません。')
+    }
   }
 }
 
@@ -454,6 +634,8 @@ export const db = new Dexie('FishingLogDatabase') as Dexie & {
   facilities: Table<FlatOfficialFacility | UserFacility, string>
   zones: Table<FlatOfficialZone | UserZone, string>
   appMetadata: EntityTable<AppliedMaster & { key: 'facilityMaster' }, 'key'>
+  lureVisualProfiles: Table<LureVisualProfile, string>
+  temporaryLureColors: Table<TemporaryLureColor, string>
 }
 
 /*
@@ -506,6 +688,12 @@ db.version(7).stores({ facilities: 'id, origin, prefecture', zones: 'id, facilit
 
 // Only add stores; no upgrade callback, backfill, or modification of the 16 existing stores.
 db.version(8).stores({ tripWeatherLocations: 'tripId', tripWeatherHours: '[tripId+timestamp], tripId, timestamp, requestId', tripWeatherRequests: '++id, tripId, createdAt' })
+
+// RC32: additive stores only. No upgrade writes, seed, backfill or ownership changes.
+db.version(9).stores({
+  lureVisualProfiles: 'id, &variantId, &naturalKey',
+  temporaryLureColors: 'id, modelId, linkedVariantId',
+})
 
 export const databaseConnection = { state: 'ready' as 'ready' | 'changed' | 'blocked' }
 const connectionListeners = new Set<(state: typeof databaseConnection.state) => void>()

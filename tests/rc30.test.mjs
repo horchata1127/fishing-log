@@ -95,7 +95,7 @@ test('additive catalog, frozen product evidence, all original IDs and references
   assert.equal(saved.lureModels.find(m=>m.name==='Fat USSA Jr. XS').weightG,1.7)
   const again=await previewRc30Catalog();assert.equal(again.addedColors,0);assert.equal(again.retainedColors,140)
   await applyRc30Catalog(again.comparisonToken);assert.deepEqual(await state(),saved)
-  db.close();await db.open();assert.equal(db.verno,8);assert.deepEqual(await state(),saved)
+  db.close();await db.open();assert.equal(db.verno, 9);assert.deepEqual(await state(),saved)
   const backup=await createBackup();await importBackup(new File([JSON.stringify(backup)],'synthetic.json'));assert.deepEqual(await state(),saved)
 })
 test('aliases retain IDs, distinct C colors coexist, same color in another model is independent',async()=>{
