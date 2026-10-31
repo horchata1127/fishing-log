@@ -6,6 +6,7 @@ import type { FishSpecies } from '../db/database';
 import FishSpeciesPicker from './FishSpeciesPicker.vue';
 import VisualColorEditor from './VisualColorEditor.vue';
 import VisualColorPreview from './VisualColorPreview.vue';
+import VisualDictionaryPanel from './VisualDictionaryPanel.vue';
 import type { VisualColorSnapshot } from '../db/database';
 
 const props = defineProps<{
@@ -58,6 +59,7 @@ const emit = defineEmits<{
   "update:action": [value: string];
   'update:actionLength': [value: ActionLength];
   'update:visualColorSnapshot': [value: VisualColorSnapshot | null];
+  refreshChoices: [];
 }>();
 
 // An old free-form action must remain selectable without renaming or enum coercion.
@@ -69,6 +71,7 @@ function localDateTime(date: Date) {
   return `${date.getFullYear()}-${pad(date.getMonth()+1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
 }
 const showLurePicker = ref(false);
+const showDictionary = ref(false);
 const showManualInput = ref(false);
 const lureSearch = ref("");
 const lureManufacturer = ref("");
@@ -82,7 +85,7 @@ const lureManufacturers = computed(() => [...new Set(pickerOptions.value.map(l =
 const selectedMyLure = computed(() => {
   const selection = props.selection;
   return selection?.kind === 'owned' ? props.myLures.find(lure => lure.id === selection.myLureId)
-    : selection?.kind === 'catalog' ? props.catalog.find(lure => lure.variantId === selection.variantId) : undefined;
+    : selection?.kind === 'catalog' || selection?.kind === 'linked' ? props.catalog.find(lure => lure.variantId === selection.variantId) : undefined;
 });
 
 const filteredMyLures = computed(() => {
@@ -124,6 +127,7 @@ function selectMyLure(lure: LureOption) {
     ? { kind: 'catalog', variantId: lure.variantId } : { kind: 'owned', myLureId: lure.id });
   emit("update:lureName", lure.modelName);
   emit("update:lureColor", lure.colorName);
+  emit('update:visualColorSnapshot', lure.visualColorSnapshot ? JSON.parse(JSON.stringify(lure.visualColorSnapshot)) : null);
 
   showManualInput.value = false;
   showLurePicker.value = false;
@@ -142,6 +146,11 @@ function selectRecent(recent: RecentLure) {
   emit('update:visualColorSnapshot', recent.visualColorSnapshot ? JSON.parse(JSON.stringify(recent.visualColorSnapshot)) : null);
   showManualInput.value = recent.selection.kind === 'manual';
   showLurePicker.value = false;
+}
+function chooseDictionary(lure: LureOption) {
+  pickerMode.value = 'catalog';
+  selectMyLure(lure);
+  showDictionary.value = false;
 }
 </script>
 
@@ -228,6 +237,8 @@ function selectRecent(recent: RecentLure) {
       </div>
 
       <VisualColorEditor :model-value="visualColorSnapshot" :category="visualCategory" @update:model-value="emit('update:visualColorSnapshot', $event)" />
+      <button type="button" @click="showDictionary = true">色から探す・代表配色を編集</button>
+      <VisualDictionaryPanel v-if="showDictionary" :catalog="catalog" :owned="myLures" select-enabled @close="showDictionary = false" @updated="emit('refreshChoices')" @select="chooseDictionary" />
 
       <!-- 手入力 -->
       <div v-if="showManualInput" class="manual-input-area">
@@ -333,6 +344,7 @@ function selectRecent(recent: RecentLure) {
                 ・
                 {{ lure.seriesName }}
               </small>
+              <VisualColorPreview v-if="lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
             </button>
           </div>
 

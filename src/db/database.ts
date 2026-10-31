@@ -386,6 +386,12 @@ export function visualNaturalKey(value: VisualIdentity): string {
   const text = identityPart(visualText(color.value))
   return JSON.stringify([visualModelKey(value), color.kind, color.kind === 'code' ? text.replace(/[-‐‑–—−]/g, '') : text])
 }
+export function visualIdentityForVariant(variant: LureVariant, model: LureModel, series: LureSeries, manufacturer: LureManufacturer): VisualIdentity {
+  if (variant.modelId !== model.id || model.seriesId !== series.id || series.manufacturerId !== manufacturer.id) throw new Error('配色: 親参照が一致しません。')
+  const code = variant.catalogEvidence?.colorCode || variant.colorName.normalize('NFKC').match(/^([A-Za-z]+-?[A-Za-z0-9]+)\s+/)?.[1]
+  return { manufacturer: manufacturer.name, series: series.name, model: model.name,
+    color: { kind: code ? 'code' : 'name', value: code || variant.catalogEvidence?.originalName || variant.colorName } }
+}
 export function validateVisualAppearance(value: unknown): asserts value is VisualAppearance {
   const row = visualObject(value)
   const layouts: Record<string, string[]> = { spoon: ['front', 'back'], body: ['dorsal', 'side', 'belly'], generic: ['whole'] }

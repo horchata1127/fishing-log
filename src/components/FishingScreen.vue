@@ -32,6 +32,7 @@ const emit = defineEmits<{
   home: []
   addCatch: []
   editCatch: [record: CatchRecord]
+  linkColor: [record: CatchRecord]
   deleteCatch: [record: CatchRecord]
   endTrip: []
   recordEvent: [type: TripEventType]
@@ -247,6 +248,7 @@ function fishingStyleName(style: FishingStyle) {
       class="catch-row"
     >
       <button type="button" class="edit-catch" :disabled="locationBusy" @click="emit('editCatch', record)">編集</button>
+      <button v-if="record.visualColorSnapshot && record.lureId === undefined && record.lureVariantId === undefined" type="button" class="edit-catch" :disabled="locationBusy" @click="emit('linkColor', record)">公式カラーへ紐付け</button>
       <button type="button" class="edit-catch" :disabled="locationBusy" @click="emit('deleteCatch', record)">削除</button>
       <div>
         <strong>

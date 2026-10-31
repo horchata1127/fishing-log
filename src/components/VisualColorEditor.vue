@@ -23,7 +23,8 @@ function update(next?: VisualRegion) {
   const regions = appearance.regions as Record<string, VisualRegion>
   if (next) regions[active.value] = next
   else delete regions[active.value]
-  emit('update:modelValue', Object.keys(regions).length ? createVisualSnapshot(appearance, { origin: 'user', confirmed: true }) : null)
+  // Keep an explicitly chosen layout while the last color is being replaced.
+  emit('update:modelValue', createVisualSnapshot(appearance, { origin: 'user', confirmed: true }))
 }
 function toggleColor(id: VisualColorId) {
   const next = region.value ? JSON.parse(JSON.stringify(region.value)) as VisualRegion : { colors: [], attributes: [] }

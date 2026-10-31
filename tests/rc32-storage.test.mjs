@@ -25,7 +25,7 @@ await writeFile(paths.legacy, compile(databaseSource.slice(0, databaseSource.ind
 const schema = await import(pathToFileURL(paths.database).href)
 const { db, visualPalette, visualAttributes, visualNaturalKey, validateVisualAppearance, validateVisualSnapshot } = schema
 const { createBackup, validateBackup, importBackup } = await import(pathToFileURL(paths.backup).href)
-const { saveVisualProfile, saveTemporaryColor, createVisualSnapshot } = await import(pathToFileURL(paths.storage).href)
+const { saveVisualProfile, saveTemporaryColor, createVisualSnapshot, saveRepresentative, readVisualProfiles, linkCatchAppearance, linkTemporaryAppearance } = await import(pathToFileURL(paths.storage).href)
 const { rc30Fixture } = await import(pathToFileURL(paths.fixture).href)
 const copy = x => structuredClone(x)
 const json = x => JSON.parse(JSON.stringify(x))
@@ -239,4 +239,82 @@ test('v8 restore and legacy detachment roll back all tables after a mid-write fa
     finally { db.catches.hook('creating').unsubscribe(fail) }
     assert.deepEqual(await state(), before)
   }
+})
+
+test('Phase 3 representative edits require identity and revision, protect inference, and leave every historical row unchanged', async () => {
+  const before = await state()
+  await saveRepresentative(386, identity(), appearance())
+  const [p] = await readVisualProfiles()
+  assert.equal(p.userEdited, true); assert.equal(p.confirmed, true)
+  const a = appearance(); a.regions.front.colors = ['blue']
+  await assert.rejects(saveRepresentative(386, identity(), a))
+  await assert.rejects(saveRepresentative(386, identity(), a, { id: p.id, revision: 0 }))
+  await saveRepresentative(386, identity(), a, { id: p.id, revision: p.revision })
+  assert.equal(await saveVisualProfile({ ...p, revision: 3, origin: 'photo', userEdited: false, confirmed: false }, 2), 'protected')
+  for (const [table, rows] of Object.entries(before)) if (!schema.visualTableNames.includes(table)) assert.deepEqual(await db.table(table).toArray(), rows)
+  const backup = await createBackup(); await importBackup(file(backup))
+  assert.deepEqual((await readVisualProfiles())[0].appearance, a)
+})
+
+test('Phase 3 ambiguous natural keys and wrong ID/identity are rejected without writes', async () => {
+  const before = await state()
+  await assert.rejects(saveRepresentative(999, identity(), appearance()))
+  await assert.rejects(saveRepresentative(386, { ...identity(), model: 'wrong' }, appearance()))
+  assert.deepEqual(await state(), before)
+  await db.lureVariants.add({ id: 999, modelId: 144, colorName: 'ハラオリ' })
+  const duplicate = await state()
+  await assert.rejects(saveRepresentative(386, identity(), appearance()), /複数/)
+  assert.deepEqual(await state(), duplicate)
+})
+
+test('Phase 3 linking a provisional catch preserves snapshot, ownership and existing representative, stores linked alternative, and round trips', async () => {
+  const snap = createVisualSnapshot(appearance(), status())
+  await db.catches.add({ id: 99, tripId: 13, caughtAt: new Date('2026-10-31T00:00:00Z'), lureName: '仮', visualColorSnapshot: snap })
+  const representative = appearance(); representative.regions.front.colors = ['blue']
+  await saveRepresentative(386, identity(), representative)
+  const p = (await readVisualProfiles())[0], expected = await db.catches.get(99), before = await state()
+  await linkCatchAppearance(expected, 386, identity())
+  const linked = await db.catches.get(99)
+  assert.equal(linked.lureVariantId, 386); assert.equal(linked.lureName, 'USSA'); assert.equal(linked.lureId, undefined)
+  assert.deepEqual(linked.visualColorSnapshot, snap)
+  assert.deepEqual((await readVisualProfiles())[0], p)
+  const [alternative] = await db.temporaryLureColors.toArray()
+  assert.deepEqual(alternative.appearance, snap.appearance); assert.equal(alternative.linkedVariantId, 386)
+  for (const [table, rows] of Object.entries(before)) if (!['catches', 'temporaryLureColors'].includes(table)) assert.deepEqual(await db.table(table).toArray(), rows)
+  const stateBefore = await state()
+  await assert.rejects(linkCatchAppearance(expected, 386, identity()))
+  assert.deepEqual(await state(), stateBefore)
+  await importBackup(file(await createBackup())); assert.deepEqual(await state(), stateBefore)
+})
+
+test('Phase 3 linking creates a missing representative, reconnects detached profiles explicitly, and is atomic on late failure', async () => {
+  const snap = createVisualSnapshot(appearance(), status())
+  await db.catches.add({ id: 99, tripId: 13, caughtAt: new Date('2026-10-31T00:00:00Z'), visualColorSnapshot: snap })
+  const expected = await db.catches.get(99), before = await state()
+  const fail = () => { throw new Error('synthetic link failure') }
+  db.catches.hook('updating', fail)
+  try { await assert.rejects(linkCatchAppearance(expected, 386, identity()), /synthetic link failure/) }
+  finally { db.catches.hook('updating').unsubscribe(fail) }
+  assert.deepEqual(await state(), before)
+  await linkCatchAppearance(expected, 386, identity())
+  assert.deepEqual((await readVisualProfiles())[0].appearance, snap.appearance)
+  const profile = (await readVisualProfiles())[0]
+  await db.lureVisualProfiles.update(profile.id, { variantId: undefined })
+  assert.equal((await readVisualProfiles()).length, 0)
+  await db.catches.add({ ...expected, id: 100 })
+  await linkCatchAppearance(await db.catches.get(100), 386, identity())
+  assert.equal((await readVisualProfiles())[0].id, profile.id)
+})
+
+test('Phase 3 standalone temporary colors link safely without modifying any historical or owned records', async () => {
+  const entry = temporary(); delete entry.linkedVariantId; delete entry.linkedIdentity
+  await saveTemporaryColor(entry)
+  const before = await state()
+  await linkTemporaryAppearance(entry, 386, identity())
+  const linked = await db.temporaryLureColors.get(entry.id)
+  assert.equal(linked.linkedVariantId, 386); assert.deepEqual(linked.appearance, entry.appearance)
+  for (const [table, rows] of Object.entries(before)) if (!schema.visualTableNames.includes(table)) assert.deepEqual(await db.table(table).toArray(), rows)
+  await assert.rejects(linkTemporaryAppearance(entry, 386, identity()))
+  await importBackup(file(await createBackup()))
+  assert.deepEqual(await db.temporaryLureColors.get(entry.id), linked)
 })

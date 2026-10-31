@@ -7,6 +7,7 @@ import { offline } from './pwa'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { initializeFacilityRelease } from './utils/facilityRelease'
 import CatchModal from './components/CatchModal.vue'
+import VisualDictionaryPanel from './components/VisualDictionaryPanel.vue'
 import TripInformationEditor from './components/TripInformationEditor.vue'
 import { localCalendarDate, validateCalendarDate } from './utils/calendarDate'
 import TripFacilityEditor from './components/TripFacilityEditor.vue'
@@ -243,11 +244,17 @@ const catchActionLength = ref<ActionLength | undefined>('normal')
 const catchSelection = ref<LureSelection | null>(null)
 const catchVisualSnapshot = ref<VisualColorSnapshot | null>(null)
 const catchVisualDirty = ref(false)
+const dictionaryOpen = ref(false), dictionarySource = ref<CatchRecord>()
+async function openVisualDictionary(record?: CatchRecord) {
+  try { await loadMyLureOptions(); dictionarySource.value = record; dictionaryOpen.value = true }
+  catch (error) { alert(error instanceof Error ? error.message : String(error)) }
+}
+async function dictionaryUpdated() { await Promise.all([loadMyLureOptions(), loadCatches()]) }
 const catchVisualCategory = computed(() => {
   const selection = catchSelection.value
   if (selection?.kind === 'manual') return 'その他'
   const option = selection?.kind === 'owned' ? myLureOptions.value.find(l => l.id === selection.myLureId)
-    : catalogOptions.value.find(l => l.variantId === (selection?.kind === 'catalog' ? selection.variantId : editingCatch.value?.lureVariantId))
+    : catalogOptions.value.find(l => l.variantId === (selection?.kind === 'catalog' || selection?.kind === 'linked' ? selection.variantId : editingCatch.value?.lureVariantId))
   return option?.category ?? 'その他'
 })
 function updateVisualSnapshot(value: VisualColorSnapshot | null) {
@@ -716,6 +723,7 @@ async function tripInformationSaved(trip: FishingTrip) {
       <button class="primary-button" @click="openNewTrip">＋ 新しい釣行を開始</button>
 
       <button class="secondary-button" @click="openMyLures">🎣 マイルアー</button>
+      <button class="secondary-button" @click="openVisualDictionary()">ビジュアルカラー辞書</button>
       <button class="secondary-button" @click="screen = 'tackles'">タックル管理</button>
       <button class="secondary-button" @click="screen = 'fish-species'">魚種マスター管理</button>
 
@@ -824,7 +832,7 @@ async function tripInformationSaved(trip: FishingTrip) {
     <!-- 釣行中 -->
 
     <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch || editingTripFacility || editingTripInformation" @edit-information="editingTripInformation = true" @edit-facility="editingTripFacility = true" @delete-catch="removeCatch" @home="goHome"
-      @add-catch="addCatch" @edit-catch="editCatch" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @events-changed="loadTripEvents" @end-trip="endTrip">
+      @add-catch="addCatch" @edit-catch="editCatch" @link-color="openVisualDictionary" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @events-changed="loadTripEvents" @end-trip="endTrip">
       <template #location><FacilityPicker v-if="currentTrip.facilityId" :key="locationRefresh" fixed :facility-id="currentTrip.facilityId" :trip-id="currentTrip.id"
         :zone-id="currentTrip.currentZoneId" :retained-zone-id="currentTrip.currentZoneId" zone-label="現在のエリア" :disabled="!!currentTrip.endedAt || savingLocation || showCatchForm"
         @update:zone-id="selectCurrentZone" @busy="locationBusy = $event" /></template>
@@ -853,6 +861,7 @@ async function tripInformationSaved(trip: FishingTrip) {
     <TripFacilityEditor v-if="editingTripFacility && currentTrip" :trip="currentTrip" @saved="facilityLinked" @cancel="editingTripFacility = false" />
     <CatchModal v-if="showCatchForm && pendingCaughtAt" :caught-at="pendingCaughtAt" :editing="!!editingCatch" @update:caught-at="pendingCaughtAt = $event" v-model:memo="catchMemo"
       :visual-color-snapshot="catchVisualSnapshot ?? undefined" :visual-category="catchVisualCategory" @update:visual-color-snapshot="updateVisualSnapshot"
+      @refresh-choices="loadMyLureOptions"
       v-model:result-type="catchResultType" v-model:lost-distance="catchLostDistance"
       :location-busy="locationBusy || savingLocation"
       :fish-choices="fishChoices" v-model:fish-species-id="catchFishSpeciesId" v-model:fish-size="catchFishSize"
@@ -867,6 +876,7 @@ async function tripInformationSaved(trip: FishingTrip) {
         :retained-zone-id="editingCatch ? editingCatch.zoneId : catchLocation?.expectedCurrentZoneId" :retained-zone-name="editingCatch?.locationSnapshot?.zoneName" :retained-facility-id="editingCatch?.facilityId"
         zone-label="釣り場内のエリア" :disabled="savingCatch" @busy="locationBusy = $event" /></template>
     </CatchModal>
+    <VisualDictionaryPanel v-if="dictionaryOpen" :catalog="catalogOptions" :owned="myLureOptions" :source-catch="dictionarySource" @close="dictionaryOpen = false; dictionarySource = undefined" @updated="dictionaryUpdated" />
   </main>
 </template>
 

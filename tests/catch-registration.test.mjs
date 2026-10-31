@@ -37,7 +37,7 @@ await writeFile(paths.fishPicker, compile(compileScript(pickerDescriptor, { id: 
   .replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
   .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href)))
 // Child color widgets are covered by browser tests; this harness tests modal routing.
-await writeFile(paths.modal, compile(script.content).replace(/import VisualColorEditor from ['"]\.\/VisualColorEditor.vue['"];?/, 'const VisualColorEditor = { render: () => null };').replace(/import VisualColorPreview from ['"]\.\/VisualColorPreview.vue['"];?/, 'const VisualColorPreview = { render: () => null };').replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
+await writeFile(paths.modal, compile(script.content).replace(/import VisualDictionaryPanel from ['"]\.\/VisualDictionaryPanel.vue['"];?/, 'const VisualDictionaryPanel = { render: () => null };').replace(/import VisualColorEditor from ['"]\.\/VisualColorEditor.vue['"];?/, 'const VisualColorEditor = { render: () => null };').replace(/import VisualColorPreview from ['"]\.\/VisualColorPreview.vue['"];?/, 'const VisualColorPreview = { render: () => null };').replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
   .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
   .replace("'./FishSpeciesPicker.vue'", JSON.stringify(pathToFileURL(paths.fishPicker).href)))
 const template = compileTemplate({ source: descriptor.template.content, filename: 'CatchModal.vue', id: 'catch-test',
@@ -114,6 +114,24 @@ test('RC32 color-only catches keep distinct recent appearances, support explicit
   await updateCatch(a, { ...input(), visualColorSnapshot: null })
   assert.equal((await db.catches.get(a)).visualColorSnapshot, undefined)
   assert.deepEqual(await db.myLures.toArray(), before)
+})
+
+test('Phase 3 validated representative becomes candidate icon; linked selection and previous reuse never create ownership', async () => {
+  const { visualNaturalKey } = await import(pathToFileURL(paths.database).href)
+  const identity = { manufacturer: 'Maker', series: 'Series', model: 'Model', color: { kind: 'name', value: 'Color' } }
+  const appearance = { version: 1, paletteVersion: 1, layout: 'generic', regions: { whole: { colors: ['red'], attributes: [] } } }
+  await db.lureVisualProfiles.put({ id: '00000000-0000-4000-8000-000000000001', variantId: 40, identity, naturalKey: visualNaturalKey(identity), appearance, origin: 'user', userEdited: true, confirmed: true, revision: 1, updatedAt: '2026-10-31T00:00:00.000Z' })
+  const before = await db.myLures.toArray()
+  const choices = await loadLureChoices(), option = choices.catalog.find(c => c.variantId === 40)
+  assert.deepEqual(option.visualColorSnapshot.appearance, appearance)
+  assert.deepEqual(option.identity, identity)
+  const id = await registerCatch({ ...input(), visualColorSnapshot: option.visualColorSnapshot }, { kind: 'linked', variantId: 40 })
+  const next = await registerSameAsPrevious(60, new Date('2026-10-10T02:00:00Z'))
+  assert.equal((await db.catches.get(next)).lureId, undefined)
+  assert.deepEqual((await db.catches.get(next)).visualColorSnapshot, (await db.catches.get(id)).visualColorSnapshot)
+  assert.deepEqual(await db.myLures.toArray(), before)
+  await db.lureVariants.update(40, { colorName: '別の色' })
+  assert.equal((await loadLureChoices()).catalog.find(c => c.variantId === 40).visualColorSnapshot, undefined)
 })
 
 test('RC24 action options retain all old labels, add eight unique types, and display missing length only as normal', () => {

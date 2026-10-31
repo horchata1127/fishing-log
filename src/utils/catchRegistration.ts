@@ -1,4 +1,5 @@
-import { db, isUsableOwnedLure, validateFishCatch, validateCatchResult, validateCatchAction, validateVisualSnapshot, type VisualColorSnapshot, type CatchRecord } from '../db/database'
+import { db, isUsableOwnedLure, validateFishCatch, validateCatchResult, validateCatchAction, validateVisualSnapshot,
+  validateVisualReferences, validateVisualRecord, visualIdentityForVariant, visualPalette, type VisualIdentity, type LureVisualProfile, type VisualColorSnapshot, type CatchRecord } from '../db/database'
 import { snapshotTackle, tackleTables } from './tackleManagement'
 import { fishSnapshot } from './fishSpecies'
 import { resolveCatchLocation, type CatchLocationSelection } from './tripLocations'
@@ -6,9 +7,13 @@ import { resolveCatchLocation, type CatchLocationSelection } from './tripLocatio
 export type LureSelection =
   | { kind: 'owned'; myLureId: number }
   | { kind: 'catalog'; variantId: number }
+  | { kind: 'linked'; variantId: number }
   | { kind: 'manual'; lureName: string; lureColor: string }
 
 export interface LureOption {
+  identity?: VisualIdentity
+  visualColorSnapshot?: VisualColorSnapshot
+  visualProfile?: LureVisualProfile
   id: number
   variantId: number
   modelId: number
@@ -76,6 +81,8 @@ async function writeCatch(input: CatchInput, selection: LureSelection | undefine
     const owned = await db.myLures.get(selection.myLureId)
     if (!owned || !isUsableOwnedLure(owned)) throw new Error('前回または選択したルアーは実所有として確認できません。カタログなどから選び直してください。')
     lure = { ...await catalogNames(owned.variantId), lureId: selection.myLureId }
+  } else if (selection.kind === 'linked') {
+    lure = await catalogNames(selection.variantId)
   } else {
     const names = await catalogNames(selection.variantId)
     const candidates = (await db.myLures.where('variantId').equals(selection.variantId).toArray())
@@ -138,7 +145,7 @@ export async function registerSameAsPrevious(tripId: number, caughtAt: Date, loc
     if (!previous) throw new Error('前回の釣果がありません。')
     const selection: LureSelection = previous.lureId !== undefined
       ? { kind: 'owned', myLureId: previous.lureId }
-      : previous.lureVariantId !== undefined ? { kind: 'catalog', variantId: previous.lureVariantId }
+      : previous.lureVariantId !== undefined ? { kind: 'linked', variantId: previous.lureVariantId }
       : { kind: 'manual', lureName: previous.lureName ?? '', lureColor: previous.lureColor ?? '' }
     // 第4弾以前の意味が確認できないIDだけの記録は自動コピーしない。
     return writeCatch({ tripId, caughtAt, location, ...result, ...(previous.visualColorSnapshot ? { visualColorSnapshot: structuredClone(previous.visualColorSnapshot) } : {}), tackleSetId: previous.tackleSnapshot ? previous.tackleSetId : undefined,
@@ -150,7 +157,7 @@ export async function registerSameAsPrevious(tripId: number, caughtAt: Date, loc
 
 /** 全カタログと実所有候補を一括取得。最近使用はコミット済み釣果だけから算出する。 */
 export async function loadLureChoices() {
-  return db.transaction('r', tables, async () => {
+  return db.transaction('r', [...tables, db.lureVisualProfiles], async () => {
     const [manufacturers, series, models, variants, myLures, catches] = await Promise.all([
       db.lureManufacturers.toArray(), db.lureSeries.toArray(), db.lureModels.toArray(),
       db.lureVariants.toArray(), db.myLures.toArray(), db.catches.orderBy('caughtAt').reverse().toArray(),
@@ -158,13 +165,23 @@ export async function loadLureChoices() {
     const manufacturerMap = new Map(manufacturers.map(row => [row.id, row]))
     const seriesMap = new Map(series.map(row => [row.id, row]))
     const modelMap = new Map(models.map(row => [row.id, row]))
+    const profiles = await db.lureVisualProfiles.toArray()
+    const validProfiles = profiles.filter(p => {
+      if (p.variantId === undefined) return false
+      try { validateVisualRecord('lureVisualProfiles', p); validateVisualReferences([p], [], { lureManufacturers: manufacturers, lureSeries: series, lureModels: models, lureVariants: variants }); return true }
+      catch { return false }
+    })
     const catalog: LureOption[] = []
     for (const variant of variants) {
       const model = modelMap.get(variant.modelId)
       const parent = model && seriesMap.get(model.seriesId)
       const manufacturer = parent && manufacturerMap.get(parent.manufacturerId)
       if (!variant.id || !model?.id || !parent || !manufacturer) continue
+      const profile = validProfiles.find(p => p.variantId === variant.id)
+      const colors = profile ? new Set(Object.values(profile.appearance.regions).flatMap(r => r!.colors)) : new Set<string>()
       catalog.push({ id: variant.id, variantId: variant.id, modelId: model.id,
+        identity: visualIdentityForVariant(variant, model, parent, manufacturer),
+        ...(profile ? { visualProfile: profile, visualColorSnapshot: { version: 1 as const, appearance: structuredClone(profile.appearance), colorValues: Object.fromEntries(visualPalette.filter(c => colors.has(c[0])).map(c => [c[0], c[2]])), origin: profile.origin, confirmed: profile.confirmed } } : {}),
         manufacturerName: manufacturer.name, seriesName: parent.name, modelName: model.name,
         colorName: variant.colorName, category: model.category ?? 'その他' })
     }
@@ -189,7 +206,7 @@ export async function loadLureChoices() {
       recent.push({ key, ...(record.visualColorSnapshot ? { visualColorSnapshot: structuredClone(record.visualColorSnapshot) } : {}), lureName: option?.modelName ?? record.lureName ?? '',
         lureColor: option?.colorName ?? record.lureColor ?? '',
         selection: option ? { kind: 'owned', myLureId: option.id }
-          : variant ? { kind: 'catalog', variantId: variant.variantId }
+          : variant ? { kind: 'linked', variantId: variant.variantId }
           : { kind: 'manual', lureName: record.lureName ?? '', lureColor: record.lureColor ?? '' } })
     }
     return { catalog, owned, recent }
