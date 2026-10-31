@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, ref, watch } from "vue";
 import type { LureOption, LureSelection, RecentLure } from '../utils/catchRegistration';
 import { catchActions, actionLengthLabels, type ActionLength, type LostDistance, type TackleSet } from '../db/database';
 import type { FishSpecies } from '../db/database';
@@ -78,6 +78,8 @@ const lureManufacturer = ref("");
 const lureCategory = ref("");
 const pickerMode = ref<'owned' | 'catalog'>('owned');
 const catalogModel = ref<number | ''>('');
+const lureLimit = ref(50);
+watch([lureSearch, lureManufacturer, lureCategory, catalogModel, pickerMode], () => { lureLimit.value = 50; });
 const pickerOptions = computed(() => pickerMode.value === 'catalog' ? props.catalog : props.myLures);
 const lureCategories = ['スプーン','クランク','ミノー','トップ','バイブレーション','その他'];
 const lureManufacturers = computed(() => [...new Set(pickerOptions.value.map(l => l.manufacturerName))].sort((a,b) => a.localeCompare(b,'ja')));
@@ -323,7 +325,7 @@ function chooseDictionary(lure: LureOption) {
           <p v-if="pickerMode === 'catalog'" class="no-lures">未登録のルアーは、釣果の保存時にマイルアーへ1個登録します。</p>
           <div v-if="visibleLures.length > 0" class="lure-picker-list">
             <button
-              v-for="lure in visibleLures"
+              v-for="lure in visibleLures.slice(0, lureLimit)"
               :key="lure.id"
               type="button"
               class="picker-lure-button"
@@ -350,6 +352,7 @@ function chooseDictionary(lure: LureOption) {
           </div>
 
           <p v-else class="no-lures">{{ pickerMode === 'catalog' && !catalogModel ? 'モデルを選択してください。' : '該当するルアーがありません。' }}</p>
+          <button v-if="visibleLures.length > lureLimit" type="button" @click="lureLimit += 50">さらに50件表示（全{{ visibleLures.length }}件）</button>
 
           <button type="button" class="picker-manual-button" @click="openManualInput">
             ✏️ マスターにないルアーを手入力

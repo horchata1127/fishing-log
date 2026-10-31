@@ -707,7 +707,7 @@ async function tripInformationSaved(trip: FishingTrip) {
   <p v-if="facilityReleaseError" role="alert">{{ facilityReleaseError }}</p>
   <p v-if="restoringData" role="status">バックアップを復元しています…</p>
   <main class="app" :inert="initializingFacilityRelease || restoringData || offline.updating" :aria-busy="initializingFacilityRelease || restoringData || offline.updating">
-    <OfflineStatus :safe="!initializingFacilityRelease && screen === 'home' && !editingTripFacility && !editingTripInformation && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
+    <OfflineStatus :safe="!initializingFacilityRelease && screen === 'home' && !dictionaryOpen && !editingTripFacility && !editingTripInformation && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
     <p v-if="connectionState === 'changed'" role="alert">別の画面でデータベースが更新されたため、この画面からは保存できません。入力中の内容をメモしてから、この画面を手動で再読み込みしてください。</p>
     <p v-else-if="connectionState === 'blocked'" role="alert">別のFishing Log画面がデータベースの更新を待たせています。その画面の入力を保存して閉じてください。自動で再読み込みはしません。</p>
     <!-- ホーム -->
