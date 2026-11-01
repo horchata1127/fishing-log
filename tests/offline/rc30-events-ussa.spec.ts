@@ -3,6 +3,10 @@ import { mkdtemp, readFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { rc30Fixture } from '../rc30Fixture'
+import { checkMaster, applyMaster, masterHome } from '../masterUiHelpers'
+import { registerOfflineCatalogRegression, offlineState } from './masterCatalogRegression'
+import { rc30Catalog } from '../../src/data/rc30Catalog'
+registerOfflineCatalogRegression(30, rc30Fixture, rc30Catalog)
 
 test('RC30 PWA offline restart keeps event edits and additive USSA catalog', async ({}, info) => {
   const origin = 'http://127.0.0.1:4188', url = `${origin}/fishing-log/`
@@ -26,9 +30,7 @@ test('RC30 PWA offline restart keeps event edits and additive USSA catalog', asy
     await expect(page.getByRole('button', { name: /白馬八方ニレ池/ })).toBeVisible()
     await context.close(); context = await launch(true); page = context.pages()[0]!
     await page.goto(url)
-    await page.getByRole('button', { name: 'RC30 USSAの追加予定を確認', exact: true }).click()
-    await page.getByRole('button', { name: 'RC30の確認済みカタログを追加', exact: true }).click()
-    await expect(page.getByRole('status')).toContainText('140色追加')
+    await checkMaster(page); await applyMaster(page); await masterHome(page)
     await page.getByRole('button', { name: /白馬八方ニレ池/ }).click()
     await page.getByRole('button', { name: 'イベント追加', exact: true }).click()
     const editor = page.getByRole('dialog', { name: 'イベント追加', exact: true })
@@ -41,14 +43,14 @@ test('RC30 PWA offline restart keeps event edits and additive USSA catalog', asy
     await expect(page.locator('.event-entry')).toContainText('圏外で保存')
     await expect(page.locator('.event-entry')).toContainText('10:30')
     await page.getByRole('button', { name: '← ホーム', exact: true }).click()
-    await page.getByRole('button', { name: 'RC30 USSAの追加予定を確認', exact: true }).click()
-    const preview = page.getByRole('region', { name: 'RC30カタログの事前確認', exact: true })
-    await expect(preview).toContainText('追加 0色・登録済み 140色')
-    await preview.getByRole('button', { name: 'RC30の追加をキャンセル', exact: true }).click()
+    await checkMaster(page); const repeat = await applyMaster(page)
+    for (const row of await repeat.locator('tbody tr').all()) expect(await row.locator('td').first().textContent()).toBe('0')
+    await masterHome(page)
     const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: '📦 データをバックアップ', exact: true }).click()])
     const path = info.outputPath('rc30-offline-v7.json'); await download.saveAs(path)
-    const backup = JSON.parse(await readFile(path, 'utf8')); expect(backup.version).toBe(7)
-    expect(backup.data.tripEvents).toHaveLength(1); expect(backup.data.lureVariants).toHaveLength(141)
+    const backup = JSON.parse(await readFile(path, 'utf8')); expect(backup.version).toBe(9)
+    expect(backup.data.tripEvents).toHaveLength(1)
+    expect(backup.data).toEqual(await offlineState(page))
     expect(backup.data.catches).toEqual(JSON.parse(JSON.stringify(rc30Fixture().data.catches)).map((c: Record<string, unknown>) => ({ ...c, caughtAt: new Date(c.caughtAt as string).toISOString() })))
   } finally { await context.close() }
 })

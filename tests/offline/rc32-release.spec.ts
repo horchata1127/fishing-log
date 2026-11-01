@@ -23,7 +23,7 @@ async function state(page: Page) {
   })
 }
 
-test('RC32辞書編集中はPWA更新を延期し、更新と圏外再起動で全21テーブルを保持する', async ({}, info) => {
+test('RC32辞書編集中はPWA更新を延期し、更新と圏外再起動で全22テーブルを保持する', async ({}, info) => {
   await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
   const profile = await mkdtemp(join(tmpdir(), 'fishing-rc32-release-')), mobile = info.project.name.includes('mobile')
   const launch = (offline = false) => chromium.launchPersistentContext(profile, { offline, serviceWorkers: 'allow',
@@ -71,6 +71,8 @@ test('RC32辞書編集中はPWA更新を延期し、更新と圏外再起動で�
     const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: '📦 データをバックアップ', exact: true }).click()])
     const path = info.outputPath('synthetic-release-v8.json'); await download.saveAs(path)
     const backup = JSON.parse(await readFile(path, 'utf8'))
-    expect(backup.version).toBe(8); expect(backup.data).toEqual(beforeUpdate)
+    const { lureMasterImportHistory, ...legacyData } = beforeUpdate
+    expect(lureMasterImportHistory).toEqual([])
+    expect(backup.version).toBe(8); expect(backup.data).toEqual(legacyData)
   } finally { await context.close() }
 })
