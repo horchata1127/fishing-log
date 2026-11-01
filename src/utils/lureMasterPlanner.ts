@@ -108,14 +108,15 @@ function findColor(variants: LureVariant[], all: LureVariant[], c: MasterColor, 
 }
 
 function variantValue(t: MasterTarget, c: MasterColor, modelId: number): LureVariant {
-  const revision = c.sources.find(s => ['RC22', 'RC28', 'RC30', 'RC31', 'RC33'].includes(s.revision))?.revision
+  // The unified apply persists provenance for new legacy-pack colors too. Existing variants remain untouched.
+  const revision = c.sources.find(s => ['RC22', 'RC28', 'RC30', 'RC31', 'RC33'].includes(s.revision))?.revision ?? c.sources.at(-1)!.revision
   return { modelId, colorName: c.label,
-    ...(!revision ? {} : { catalogEvidence: {
-      revision: revision as NonNullable<LureVariant['catalogEvidence']>['revision'], colorClass: c.colorClass, sourceTier: c.sourceTier,
+    catalogEvidence: {
+      revision, colorClass: c.colorClass, sourceTier: c.sourceTier,
       manufacturerUrl: c.manufacturerUrl, retailerUrl: c.retailerUrl, jan: c.jan, originalName: c.name,
       ...(revision === 'RC22' ? {} : { colorCode: c.code, weightG: t.weight, lengthMm: t.length,
         buoyancy: t.buoyancy, rattle: t.rattle, productUrl: revision === 'RC33' ? c.sourceUrl : t.sourceUrl }),
-    } }),
+    },
   }
 }
 

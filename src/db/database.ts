@@ -279,7 +279,7 @@ export interface LureVariant {
   modelId: number
   colorName: string
   catalogEvidence?: {
-    revision: 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33'; colorClass: string; sourceTier: string
+    revision: 'RC19' | 'RC20' | 'RC21' | 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33'; colorClass: string; sourceTier: string
     manufacturerUrl: string; retailerUrl: string; jan: string; originalName: string
     colorCode?: string; weightG?: number; lengthMm?: number; buoyancy?: string; rattle?: string; productUrl?: string
   }
@@ -632,6 +632,8 @@ export interface LureMasterImportRecord extends LureMasterHistoryBase {
   kind: 'import'; status: LureMasterImportStatus
   masterVersion: string; manifestHash: string; matchingVersion: number
   options: { includePurchases: boolean }; counts: LureMasterHistoryCounts
+  /** Only this protocol's runs may be recovered while holding its browser-wide Web Lock. */
+  executionProtocol?: 'rc34-web-lock-v1'
   details?: { naturalKey: string; reason: string }[]
   error?: { code: string; message: string }
 }
@@ -676,7 +678,8 @@ export function validateLureMasterHistoryRecord(value: unknown): asserts value i
     return
   }
   if (row.kind !== 'import') throw new Error('更新履歴: 種別が不正です')
-  historyFields(row, [...base, 'masterVersion', 'manifestHash', 'matchingVersion', 'options', 'counts', 'details', 'error'])
+  historyFields(row, [...base, 'masterVersion', 'manifestHash', 'matchingVersion', 'options', 'counts', 'details', 'error', 'executionProtocol'])
+  if (row.executionProtocol !== undefined && row.executionProtocol !== 'rc34-web-lock-v1') throw new Error('更新履歴: 実行プロトコルが不正です')
   historyText(row.masterVersion)
   if (typeof row.manifestHash !== 'string' || !/^[0-9a-f]{64}$/.test(row.manifestHash) ||
     !Number.isSafeInteger(row.matchingVersion) || (row.matchingVersion as number) < 1) throw new Error('更新履歴: 内容ハッシュ・照合規則版が不正です')
