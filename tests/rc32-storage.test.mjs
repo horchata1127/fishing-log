@@ -81,7 +81,7 @@ test('v8 to v9 preserves all 19 populated tables, primary keys, indexes, and aut
     const before = Object.fromEntries(await Promise.all(legacy.tables.map(async t => [t.name, await t.toArray()])))
     const schemas = Object.fromEntries(legacy.tables.map(t => [t.name, [t.schema.primKey.src, t.schema.indexes.map(i => i.src)]]))
     legacy.close(); await db.open()
-    assert.equal(db.verno, 9); assert.equal(db.tables.length, 21)
+    assert.equal(db.verno, 10); assert.equal(db.tables.length, 22)
     for (const [table, rows] of Object.entries(before)) {
       assert.deepEqual(await db.table(table).toArray(), rows, table)
       assert.deepEqual([db.table(table).schema.primKey.src, db.table(table).schema.indexes.map(i => i.src)], schemas[table])
