@@ -2,7 +2,7 @@ import { performance } from 'node:perf_hooks'
 import { test, expect, restoreViaUI, startTrip, readState } from './fixtures'
 import { rc32ReleaseFixture } from '../rc32ReleaseFixture'
 
-test('ブラウザーのRC31相当DB v8をv9へ更新して旧19テーブルの全レコードを保持し、自動取り込みしない', async ({ browser }, info) => {
+test('ブラウザーのRC31相当DB v8を現行v10へ更新して旧19テーブルの全レコードを保持し、自動取り込みしない', async ({ browser }, info) => {
   const context = await browser.newContext({ locale: 'ja-JP', timezoneId: 'Asia/Tokyo' })
   const page = await context.newPage(), errors: string[] = []
   page.on('pageerror', error => errors.push(error.message))
@@ -59,15 +59,15 @@ test('ブラウザーのRC31相当DB v8をv9へ更新して旧19テーブルの�
         return { version: db.version, data }
       } finally { db.close() }
     })
-    expect(after.version).toBe(90); expect(Object.keys(after.data)).toHaveLength(21)
+    expect(after.version).toBe(100); expect(Object.keys(after.data)).toHaveLength(22)
     for (const [name, rows] of Object.entries(baseline.data)) {
       const canonical = rows.map(row => { const result = { ...row }; for (const field of name === 'trips' ? ['startedAt', 'endedAt'] : name === 'catches' ? ['caughtAt'] : name === 'tripEvents' ? ['occurredAt'] : []) if (result[field]) result[field] = new Date(result[field]).toISOString(); return result })
       if (['facilities', 'zones', 'appMetadata'].includes(name)) for (const row of canonical) expect(after.data[name]).toContainEqual(row)
       else expect(after.data[name]).toEqual(canonical)
     }
-    expect(after.data.lureVisualProfiles).toEqual([]); expect(after.data.temporaryLureColors).toEqual([])
+    expect(after.data.lureVisualProfiles).toEqual([]); expect(after.data.temporaryLureColors).toEqual([]); expect(after.data.lureMasterImportHistory).toEqual([])
     expect(errors).toEqual([])
-    await info.attach('native-upgrade', { body: JSON.stringify({ from: 80, to: 90, retainedTables: 19, variants: after.data.lureVariants!.length, weatherHours: after.data.tripWeatherHours!.length }), contentType: 'application/json' })
+    await info.attach('native-upgrade', { body: JSON.stringify({ from: 80, to: 100, retainedTables: 19, variants: after.data.lureVariants!.length, weatherHours: after.data.tripWeatherHours!.length }), contentType: 'application/json' })
   } finally { await context.close() }
 })
 

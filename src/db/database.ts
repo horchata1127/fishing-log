@@ -279,7 +279,7 @@ export interface LureVariant {
   modelId: number
   colorName: string
   catalogEvidence?: {
-    revision: 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33'; colorClass: string; sourceTier: string
+    revision: 'RC19' | 'RC20' | 'RC21' | 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33'; colorClass: string; sourceTier: string
     manufacturerUrl: string; retailerUrl: string; jan: string; originalName: string
     colorCode?: string; weightG?: number; lengthMm?: number; buoyancy?: string; rattle?: string; productUrl?: string
   }
@@ -622,6 +622,124 @@ export function validateTackleRecord(table: TackleTable, value: unknown): assert
   if (row.year !== undefined && (typeof row.year !== 'number' || !Number.isSafeInteger(row.year) || row.year <= 0)) throw new Error('年式が不正です。')
 }
 
+export const lureMasterHistoryCountTables = ['lureManufacturers', 'lureSeries', 'lureModels', 'lureVariants', 'myLures', 'lureVisualProfiles'] as const
+export type LureMasterHistoryCounts = Record<typeof lureMasterHistoryCountTables[number], { added: number; retained: number; held: number }>
+export type LureMasterImportStatus = 'running' | 'succeeded' | 'succeeded_with_holds' | 'no_changes' | 'failed' | 'interrupted'
+interface LureMasterHistoryBase {
+  id: string; contextId: string; sequence: number; startedAt: string; completedAt?: string
+}
+export interface LureMasterImportRecord extends LureMasterHistoryBase {
+  kind: 'import'; status: LureMasterImportStatus
+  masterVersion: string; manifestHash: string; matchingVersion: number
+  options: { includePurchases: boolean }; counts: LureMasterHistoryCounts
+  /** Only this protocol's runs may be recovered while holding its browser-wide Web Lock. */
+  executionProtocol?: 'rc34-web-lock-v1'
+  details?: { naturalKey: string; reason: string }[]
+  error?: { code: string; message: string }
+}
+export interface LureMasterRestoreRecord extends LureMasterHistoryBase {
+  kind: 'restore'; status: 'succeeded'; completedAt: string
+  sourceBackupVersion: number; sourceExportedAt: string; previousContextId?: string
+}
+export type LureMasterHistoryRecord = LureMasterImportRecord | LureMasterRestoreRecord
+export function emptyLureMasterHistoryCounts(): LureMasterHistoryCounts {
+  return Object.fromEntries(lureMasterHistoryCountTables.map(name => [name, { added: 0, retained: 0, held: 0 }])) as LureMasterHistoryCounts
+}
+const historyUuid = (value: unknown) => typeof value === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/.test(value)
+function historyObject(value: unknown): Record<string, unknown> {
+  if (!value || typeof value !== 'object' || Array.isArray(value) || Object.getPrototypeOf(value) !== Object.prototype) throw new Error('更新履歴: オブジェクトが必要です')
+  return value as Record<string, unknown>
+}
+function historyFields(row: Record<string, unknown>, allowed: readonly string[]) {
+  if (Object.keys(row).some(key => !allowed.includes(key))) throw new Error('更新履歴: 未対応フィールドがあります')
+}
+function historyTime(value: unknown) {
+  if (typeof value !== 'string' || !Number.isFinite(Date.parse(value)) || new Date(value).toISOString() !== value) throw new Error('更新履歴: UTC ISO日時が不正です')
+}
+function historyText(value: unknown) {
+  if (typeof value !== 'string' || !value.trim() || value.length > 4000) throw new Error('更新履歴: 文字列が不正です')
+}
+/** Strict JSON-compatible records: no local lure/trip references, no invented legacy dates. */
+export function validateLureMasterHistoryRecord(value: unknown): asserts value is LureMasterHistoryRecord {
+  const row = historyObject(value)
+  if (!historyUuid(row.id) || !historyUuid(row.contextId) || !Number.isSafeInteger(row.sequence) || (row.sequence as number) < 1) throw new Error('更新履歴: UUID・順序番号が不正です')
+  historyTime(row.startedAt)
+  if (row.completedAt !== undefined) {
+    historyTime(row.completedAt)
+    if ((row.completedAt as string) < (row.startedAt as string)) throw new Error('更新履歴: 完了日時が開始前です')
+  }
+  const base = ['id', 'kind', 'contextId', 'sequence', 'startedAt', 'completedAt', 'status']
+  if (row.kind === 'restore') {
+    historyFields(row, [...base, 'sourceBackupVersion', 'sourceExportedAt', 'previousContextId'])
+    if (row.status !== 'succeeded' || row.completedAt === undefined || !Number.isInteger(row.sourceBackupVersion) ||
+      (row.sourceBackupVersion as number) < 1 || (row.sourceBackupVersion as number) > 9 ||
+      row.previousContextId !== undefined && !historyUuid(row.previousContextId)) throw new Error('更新履歴: 復元イベントが不正です')
+    historyTime(row.sourceExportedAt)
+    return
+  }
+  if (row.kind !== 'import') throw new Error('更新履歴: 種別が不正です')
+  historyFields(row, [...base, 'masterVersion', 'manifestHash', 'matchingVersion', 'options', 'counts', 'details', 'error', 'executionProtocol'])
+  if (row.executionProtocol !== undefined && row.executionProtocol !== 'rc34-web-lock-v1') throw new Error('更新履歴: 実行プロトコルが不正です')
+  historyText(row.masterVersion)
+  if (typeof row.manifestHash !== 'string' || !/^[0-9a-f]{64}$/.test(row.manifestHash) ||
+    !Number.isSafeInteger(row.matchingVersion) || (row.matchingVersion as number) < 1) throw new Error('更新履歴: 内容ハッシュ・照合規則版が不正です')
+  const options = historyObject(row.options); historyFields(options, ['includePurchases'])
+  if (typeof options.includePurchases !== 'boolean') throw new Error('更新履歴: 所有オプションが不正です')
+  const counts = historyObject(row.counts); historyFields(counts, lureMasterHistoryCountTables)
+  let added = 0, held = 0
+  for (const name of lureMasterHistoryCountTables) {
+    const count = historyObject(counts[name]); historyFields(count, ['added', 'retained', 'held'])
+    for (const field of ['added', 'retained', 'held']) if (!Number.isSafeInteger(count[field]) || (count[field] as number) < 0) throw new Error('更新履歴: 件数は非負の整数で指定してください')
+    added += count.added as number; held += count.held as number
+  }
+  if (row.details !== undefined) {
+    if (!Array.isArray(row.details)) throw new Error('更新履歴: 詳細は配列で指定してください')
+    for (const item of row.details) {
+      const detail = historyObject(item); historyFields(detail, ['naturalKey', 'reason'])
+      historyText(detail.naturalKey); historyText(detail.reason)
+    }
+  }
+  const statuses: LureMasterImportStatus[] = ['running', 'succeeded', 'succeeded_with_holds', 'no_changes', 'failed', 'interrupted']
+  if (!statuses.includes(row.status as LureMasterImportStatus)) throw new Error('更新履歴: 状態が不正です')
+  if ((row.status === 'running') !== (row.completedAt === undefined)) throw new Error('更新履歴: 状態と完了日時が一致しません')
+  const unsuccessful = row.status === 'failed' || row.status === 'interrupted'
+  if (unsuccessful) {
+    const error = historyObject(row.error); historyFields(error, ['code', 'message']); historyText(error.code); historyText(error.message)
+  } else if (row.error !== undefined) throw new Error('更新履歴: 成功・実行中にエラーは記録できません')
+  if ((row.status === 'running' || unsuccessful || row.status === 'no_changes') && added !== 0 ||
+    row.status === 'no_changes' && held !== 0 || row.status === 'succeeded' && (added === 0 || held !== 0) ||
+    row.status === 'succeeded_with_holds' && held === 0) throw new Error('更新履歴: 状態と実件数が一致しません')
+}
+export function lureMasterHistoryValue(value: unknown): string {
+  const sorted = (v: unknown): unknown => Array.isArray(v) ? v.map(sorted) : v && typeof v === 'object'
+    ? Object.fromEntries(Object.entries(v).sort(([a], [b]) => a < b ? -1 : a > b ? 1 : 0).map(([k, x]) => [k, sorted(x)])) : v
+  return JSON.stringify(sorted(value))
+}
+export function mergeLureMasterHistory(existing: readonly LureMasterHistoryRecord[], incoming: readonly LureMasterHistoryRecord[]) {
+  const result = new Map<string, LureMasterHistoryRecord>()
+  for (const rows of [existing, incoming]) {
+    const seen = new Set<string>()
+    for (const row of rows) {
+      validateLureMasterHistoryRecord(row)
+      if (seen.has(row.id)) throw new Error('更新履歴: 入力UUIDが重複しています')
+      seen.add(row.id)
+      const before = result.get(row.id)
+      if (before && lureMasterHistoryValue(before) !== lureMasterHistoryValue(row)) throw new Error(`更新履歴: UUID ${row.id} の内容が競合しています`)
+      result.set(row.id, structuredClone(row))
+    }
+  }
+  return [...result.values()]
+}
+/** Sequence is a local event order, never evidence that any master version is currently applied. */
+export function lureMasterHistoryHead(rows: readonly LureMasterHistoryRecord[]) {
+  return [...rows].sort((a, b) => b.sequence - a.sequence || a.id.localeCompare(b.id))[0]
+}
+export function nextLureMasterHistorySequence(rows: readonly LureMasterHistoryRecord[]) {
+  const sequence = (lureMasterHistoryHead(rows)?.sequence ?? 0) + 1
+  if (!Number.isSafeInteger(sequence)) throw new Error('更新履歴: 順序番号の上限に達しました')
+  return sequence
+}
+
 export const db = new Dexie('FishingLogDatabase') as Dexie & {
   trips: EntityTable<FishingTrip, 'id'>
   catches: EntityTable<CatchRecord, 'id'>
@@ -645,6 +763,7 @@ export const db = new Dexie('FishingLogDatabase') as Dexie & {
   appMetadata: EntityTable<AppliedMaster & { key: 'facilityMaster' }, 'key'>
   lureVisualProfiles: Table<LureVisualProfile, string>
   temporaryLureColors: Table<TemporaryLureColor, string>
+  lureMasterImportHistory: Table<LureMasterHistoryRecord, string>
 }
 
 /*
@@ -703,6 +822,9 @@ db.version(9).stores({
   lureVisualProfiles: 'id, &variantId, &naturalKey',
   temporaryLureColors: 'id, modelId, linkedVariantId',
 })
+
+// RC34 Phase 2: only a new empty store. No upgrade callback, seed or writes to the existing 21 stores.
+db.version(10).stores({ lureMasterImportHistory: 'id, contextId, sequence, startedAt, kind, status' })
 
 export const databaseConnection = { state: 'ready' as 'ready' | 'changed' | 'blocked' }
 const connectionListeners = new Set<(state: typeof databaseConnection.state) => void>()

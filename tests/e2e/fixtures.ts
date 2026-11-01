@@ -48,6 +48,7 @@ async function readTables(page: Page, names: readonly string[]): Promise<Record<
 
 export async function readState(page: Page): Promise<State> { return await readTables(page, fullTableNames) as State }
 export async function readCompleteState(page: Page) { return readTables(page, completeTableNames) }
+export async function readAllState(page: Page) { return readTables(page, [...completeTableNames, 'tripWeatherLocations', 'tripWeatherHours', 'tripWeatherRequests', 'lureVisualProfiles', 'temporaryLureColors', 'lureMasterImportHistory']) }
 
 export const test = base.extend<{ isolatedApp: void }>({
   isolatedApp: [async ({ page }, use) => {

@@ -1,3 +1,4 @@
+import { checkMaster, applyMaster, masterHome } from '../masterUiHelpers'
 import { test, expect, catalogFixture, readState, restoreViaUI, startTrip, selectCatalog, saveCatch } from './fixtures'
 
 test('終了済み釣行の編集・キャンセル・再読込でIDと件数を保持する', async ({ page }) => {
@@ -38,15 +39,14 @@ test('終了済み釣行の編集・キャンセル・再読込でIDと件数を
 test('RC19カラー追加は所有と釣果を変更せず、カタログ選択から保存できる', async ({ page }) => {
   await restoreViaUI(page, catalogFixture())
   const before = await readState(page)
-  const add = page.getByRole('button', { name: 'RC19のHUNT GRANDE 1.3g・2色を追加', exact: true })
-  await add.click()
-  await expect(page.getByRole('status')).toContainText('5件追加')
+  await checkMaster(page); await applyMaster(page)
   const added = await readState(page)
   expect(added.myLures).toEqual(before.myLures)
   expect(added.catches).toEqual(before.catches)
-  await add.click()
-  await expect(page.getByRole('status')).toContainText('0件追加')
+  expect(added.lureVariants.some(v => v.colorName === 'T-18 黄茶次郎（KICYAJIRO）')).toBe(true)
+  await checkMaster(page); await applyMaster(page)
   expect(await readState(page)).toEqual(added)
+  await masterHome(page)
   await startTrip(page)
   await page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
   const modal = page.getByRole('dialog', { name: '釣果を登録', exact: true })

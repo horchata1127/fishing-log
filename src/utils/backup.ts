@@ -1,7 +1,8 @@
 import { db, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch, validateCatchResult, validateCatchAction,
   weatherTableNames, weatherFields, validateWeatherLocation, validateWeatherHour, validateWeatherRequest,
   visualTableNames, validateVisualRecord, validateVisualSnapshot, validateVisualReferences,
-  type LureVisualProfile, type TemporaryLureColor } from '../db/database'
+  mergeLureMasterHistory, lureMasterHistoryHead, nextLureMasterHistorySequence, validateLureMasterHistoryRecord,
+  type LureMasterHistoryRecord, type LureMasterRestoreRecord, type LureVisualProfile, type TemporaryLureColor } from '../db/database'
 import { facilityTableNames, validateFacilityStorage, readFacilityStorage, mergeFacilityStorage, validateLocationReferences, type FacilityStorage } from './facilityStorage'
 
 export const backupTableNames = [
@@ -13,12 +14,12 @@ export const allBackupTableNames = [...backupTableNames, ...tackleTableNames] as
 export const fullBackupTableNames = [...allBackupTableNames, 'fishSpecies'] as const
 type TableName = typeof allBackupTableNames[number]
 type Row = Record<string, unknown>
-type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>> & { fishSpecies?: Row[] } & Partial<FacilityStorage> & Partial<Record<typeof weatherTableNames[number], Row[]>> & { lureVisualProfiles?: LureVisualProfile[]; temporaryLureColors?: TemporaryLureColor[] }
-export const completeBackupTableNames = [...fullBackupTableNames, ...facilityTableNames, ...weatherTableNames, ...visualTableNames] as const
+type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>> & { fishSpecies?: Row[] } & Partial<FacilityStorage> & Partial<Record<typeof weatherTableNames[number], Row[]>> & { lureVisualProfiles?: LureVisualProfile[]; temporaryLureColors?: TemporaryLureColor[]; lureMasterImportHistory?: LureMasterHistoryRecord[] }
+export const completeBackupTableNames = [...fullBackupTableNames, ...facilityTableNames, ...weatherTableNames, ...visualTableNames, 'lureMasterImportHistory'] as const
 
 export interface FishingLogBackup {
   format: 'fishing-log-backup'
-  version: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
+  version: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
   exportedAt: string
   data: {
     trips: unknown[]
@@ -42,6 +43,7 @@ export interface FishingLogBackup {
     tripWeatherRequests?: unknown[]
     lureVisualProfiles?: unknown[]
     temporaryLureColors?: unknown[]
+    lureMasterImportHistory?: unknown[]
   }
 }
 
@@ -95,7 +97,7 @@ function dateTime(value: unknown, path: string): Date {
 /** 書き込み前に全テーブルを検証し、入力を変更せずDateを復元する。 */
 export function validateBackup(value: unknown): RestoredData {
   const backup = object(value, 'ルート')
-  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6, 7, 8].includes(backup.version as number)) {
+  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6, 7, 8, 9].includes(backup.version as number)) {
     fail('format/version', '対応するFishing Logバックアップではありません')
   }
   dateTime(backup.exportedAt, 'exportedAt')
@@ -317,7 +319,7 @@ export function validateBackup(value: unknown): RestoredData {
   } else {
     for (const name of weatherTableNames) if (source[name] !== undefined) fail(`data.${name}`, '気象データにはv7形式が必要です')
   }
-  if (backup.version === 8) {
+  if (Number(backup.version) >= 8) {
     for (const name of visualTableNames) {
       const entries = source[name]
       if (!Array.isArray(entries)) fail(name, '配列が必要です')
@@ -341,6 +343,10 @@ export function validateBackup(value: unknown): RestoredData {
   } else {
     for (const name of visualTableNames) if (source[name] !== undefined) fail(name, '配色辞書にはv8形式が必要です')
   }
+  if (backup.version === 9) {
+    if (!Array.isArray(source.lureMasterImportHistory)) fail('lureMasterImportHistory', '配列が必要です')
+    data.lureMasterImportHistory = mergeLureMasterHistory([], source.lureMasterImportHistory as LureMasterHistoryRecord[])
+  } else if (source.lureMasterImportHistory !== undefined) fail('lureMasterImportHistory', '更新履歴にはv9形式が必要です')
   return data
 }
 
@@ -352,6 +358,12 @@ export async function createBackup(): Promise<FishingLogBackup> {
     }))
     return result
   })
+  if (data.lureMasterImportHistory.length > 0) {
+    const backup: FishingLogBackup = { format: 'fishing-log-backup', version: 9, exportedAt: new Date().toISOString(), data }
+    validateBackup(JSON.parse(JSON.stringify(backup)))
+    return backup
+  }
+  delete (data as Partial<typeof data>).lureMasterImportHistory
   const hasVisual = visualTableNames.some(name => data[name].length > 0) || data.catches.some(row => (row as Row).visualColorSnapshot !== undefined)
   if (hasVisual) {
     const backup: FishingLogBackup = { format: 'fishing-log-backup', version: 8, exportedAt: new Date().toISOString(), data }
@@ -410,6 +422,20 @@ export async function importBackup(file: File): Promise<void> {
   }
   const data = validateBackup(value)
   await db.transaction('rw', completeBackupTableNames.map(name => db.table(name)), async () => {
+    // Detect UUID conflicts before clearing or writing any restored data, in the same transaction.
+    const currentHistory = await db.lureMasterImportHistory.toArray()
+    const history = mergeLureMasterHistory(currentHistory, data.lureMasterImportHistory ?? [])
+    let restoreEvent: LureMasterRestoreRecord | undefined
+    // Preserve legacy output formats until history is actually introduced. With no history there is no
+    // previous successful import to misattribute. A v9 restore explicitly introduces a context even if empty.
+    if (history.length || data.lureMasterImportHistory !== undefined) {
+      const now = new Date().toISOString(), source = value as FishingLogBackup
+      restoreEvent = { id: crypto.randomUUID(), kind: 'restore', status: 'succeeded',
+        contextId: crypto.randomUUID(), sequence: nextLureMasterHistorySequence(history), startedAt: now, completedAt: now,
+        sourceBackupVersion: source.version, sourceExportedAt: new Date(source.exportedAt).toISOString(),
+        ...(currentHistory.length ? { previousContextId: lureMasterHistoryHead(currentHistory)!.contextId } : {}) }
+      validateLureMasterHistoryRecord(restoreEvent)
+    }
     const merged = mergeFacilityStorage(await readFacilityStorage(), {
       facilities: data.facilities ?? [], zones: data.zones ?? [], appMetadata: data.appMetadata ?? [],
     })
@@ -439,6 +465,9 @@ export async function importBackup(file: File): Promise<void> {
     await db.facilities.bulkPut(merged.facilities)
     await db.zones.bulkPut(merged.zones)
     await db.appMetadata.bulkPut(merged.appMetadata)
+    const existingIds = new Set(currentHistory.map(row => row.id))
+    await db.lureMasterImportHistory.bulkAdd(history.filter(row => !existingIds.has(row.id)))
+    if (restoreEvent) await db.lureMasterImportHistory.add(restoreEvent)
     // Facility/zone/master stores retain the existing merge and conflict protections.
   })
 }

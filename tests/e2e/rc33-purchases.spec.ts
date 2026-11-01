@@ -1,29 +1,25 @@
+import { checkMaster, applyMaster, masterHome } from '../masterUiHelpers'
+import { assertPack } from './masterCatalogRegression'
+import { rc33Catalog } from '../../src/data/rc33Catalog'
 import { test, expect, catalogFixture, readState, restoreViaUI, startTrip, saveCatch } from './fixtures'
 
 test('RC33 preview/cancel, purchases, repeat, dictionary reverse lookup and catch SVG', async ({ page }) => {
   await restoreViaUI(page, catalogFixture())
   const before = await readState(page)
-  const check = page.getByRole('button', { name: 'RC33 購入品・カラーの追加予定を確認', exact: true })
-  const preview = page.getByRole('region', { name: 'RC33取り込みの事前確認', exact: true })
-  await check.click()
-  await expect(preview).toContainText('追加 61色・登録済み 0色・保留 0件')
-  await expect(preview).toContainText('所有追加 11個')
+  await checkMaster(page)
+  await expect(page.getByRole('region', { name: '統一マスターの差分プレビュー', exact: true })).toContainText('所有オプション：OFF')
   expect(await readState(page)).toEqual(before)
-  await preview.getByRole('button', { name: 'RC33の追加をキャンセル', exact: true }).click()
+  await page.getByRole('button', { name: '更新を取り消す', exact: true }).click()
   expect(await readState(page)).toEqual(before)
-  await check.click()
-  await preview.getByRole('button', { name: 'RC33の確認済みデータを追加', exact: true }).click()
-  await expect(preview).toHaveCount(0)
+  await checkMaster(page, true); await applyMaster(page)
   const saved = await readState(page)
-  expect(saved.lureVariants).toHaveLength(63)
+  assertPack(saved, rc33Catalog, before)
   expect(saved.myLures).toHaveLength(14)
   expect(saved.myLures.slice(0, 3)).toEqual(before.myLures)
-  await check.click()
-  await expect(preview).toContainText('追加 0色・登録済み 61色・保留 0件')
-  await expect(preview).toContainText('所有追加 0個・既存所有保持 11個')
-  await expect(preview.getByRole('button', { name: 'RC33の確認済みデータを追加', exact: true })).toBeDisabled()
-  await preview.getByRole('button', { name: 'RC33の追加をキャンセル', exact: true }).click()
-  await page.reload()
+  await checkMaster(page, true); const result = await applyMaster(page)
+  for (const row of await result.locator('tbody tr').all()) expect(await row.locator('td').first().textContent()).toBe('0')
+  expect(await readState(page)).toEqual(saved)
+  await masterHome(page); await page.reload()
   expect(await readState(page)).toEqual(saved)
   const red = saved.lureVariants.find(v => v.colorName === '04 クリアーレッド')!
   await page.getByRole('button', { name: 'ビジュアルカラー辞書', exact: true }).click()

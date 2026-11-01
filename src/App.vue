@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LureCatalogImportPanel from './LureCatalogImportPanel.vue'
+import LureMasterScreen from './components/LureMasterScreen.vue'
 import OfflineStatus from './components/OfflineStatus.vue'
 import FacilityPicker from './components/FacilityPicker.vue'
 import { changeCurrentZone, loadLocationChoices, type CatchLocationSelection } from './utils/tripLocations'
@@ -39,7 +39,7 @@ import {
   type VisualColorSnapshot,
 } from './db/database'
 
-type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures' | 'tackles' | 'fish-species'
+type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures' | 'tackles' | 'fish-species' | 'lure-master'
 const connectionState = ref(databaseConnection.state)
 const unsubscribeConnection = subscribeDatabaseConnection(state => { connectionState.value = state })
 onUnmounted(unsubscribeConnection)
@@ -707,7 +707,7 @@ async function tripInformationSaved(trip: FishingTrip) {
   <p v-if="facilityReleaseError" role="alert">{{ facilityReleaseError }}</p>
   <p v-if="restoringData" role="status">バックアップを復元しています…</p>
   <main class="app" :inert="initializingFacilityRelease || restoringData || offline.updating" :aria-busy="initializingFacilityRelease || restoringData || offline.updating">
-    <OfflineStatus :safe="!initializingFacilityRelease && screen === 'home' && !dictionaryOpen && !editingTripFacility && !editingTripInformation && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
+    <OfflineStatus :safe="!initializingFacilityRelease && (screen === 'home' || screen === 'lure-master') && !dictionaryOpen && !editingTripFacility && !editingTripInformation && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
     <p v-if="connectionState === 'changed'" role="alert">別の画面でデータベースが更新されたため、この画面からは保存できません。入力中の内容をメモしてから、この画面を手動で再読み込みしてください。</p>
     <p v-else-if="connectionState === 'blocked'" role="alert">別のFishing Log画面がデータベースの更新を待たせています。その画面の入力を保存して閉じてください。自動で再読み込みはしません。</p>
     <!-- ホーム -->
@@ -737,10 +737,7 @@ async function tripInformationSaved(trip: FishingTrip) {
         <input class="restore-input" data-testid="restore-backup" type="file" accept=".json,application/json" @change="restoreData" />
       </label>
 
-<!-- ルアーマスタ取り込み -->
-<section class="card">
-  <LureCatalogImportPanel ref="catalogPanel" />
-</section>
+      <button class="secondary-button" @click="screen = 'lure-master'">ルアーマスター管理</button>
 
 
       <section class="card">
@@ -748,7 +745,7 @@ async function tripInformationSaved(trip: FishingTrip) {
 
         <p v-if="trips.length === 0" class="empty">まだ釣行記録がないで。</p>
 
-        <button v-for="trip in trips" :key="trip.id" class="trip-row" @click="openTrip(trip)">
+        <button v-for="trip in trips" :key="trip.id" class="trip-row" :data-trip-id="trip.id" @click="openTrip(trip)">
           <div>
             <strong>
               {{ trip.fishingAreaName }}
@@ -769,6 +766,7 @@ async function tripInformationSaved(trip: FishingTrip) {
     </template>
 
     <!-- マイルアー -->
+    <LureMasterScreen v-else-if="screen === 'lure-master'" ref="catalogPanel" @back="goHome" />
     <MyLuresScreen v-else-if="screen === 'my-lures'" @back="goHome" @select-lure="openLureDetail" />
     <TackleManagementScreen v-else-if="screen === 'tackles'" @back="goHome" />
     <FishSpeciesScreen v-else-if="screen === 'fish-species'" @back="goHome" />
