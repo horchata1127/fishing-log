@@ -11,6 +11,27 @@ import { previewRc30Catalog, applyRc30Catalog, rc30DiffCsv, type Rc30Preview } f
 import { previewRc31Catalog, applyRc31Catalog, rc31DiffCsv, type Rc31Preview } from './utils/rc31Catalog'
 import { rc30Pending } from './data/rc30Catalog'
 import { rc28Pending } from './data/rc28Catalog'
+import { previewRc33Catalog, applyRc33Catalog, type Rc33Preview } from './utils/rc33Catalog'
+
+const rc33Preview = shallowRef<Rc33Preview | null>(null)
+async function checkRc33() {
+  if (busy.value) return
+  cancelPreview(); busy.value = true
+  try { rc33Preview.value = await previewRc33Catalog() }
+  catch (error) { message.value = `RC33確認失敗: ${String(error)}` }
+  finally { busy.value = false }
+}
+async function applyRc33() {
+  if (busy.value || !rc33Preview.value) return
+  busy.value = true
+  try {
+    await exportBackup()
+    const result = await applyRc33Catalog(rc33Preview.value.comparisonToken)
+    message.value = `RC33反映完了: ${result.addedColors}色・所有${result.addedOwned}個・公式画像配色${result.photoColors}件・仮配色${result.provisionalColors}件追加。`
+    cancelPreview()
+  } catch (error) { message.value = `RC33反映失敗: ${String(error)}`; cancelPreview() }
+  finally { busy.value = false }
+}
 
 const rc31Preview = shallowRef<Rc31Preview | null>(null)
 const rc30Preview = shallowRef<Rc30Preview | null>(null)
@@ -37,13 +58,14 @@ const pendingSeed = shallowRef<unknown>(null)
 const preview = shallowRef<CatalogPreview | null>(null)
 const rc20Preview = shallowRef<Rc20Preview | null>(null)
 // Read-only UI state for deferring application updates during import/preview.
-defineExpose({ busy, preview: computed(() => preview.value ?? rc20Preview.value ?? rc21Preview.value ?? rc22Preview.value ?? rc28Preview.value ?? rc30Preview.value ?? rc31Preview.value) })
+defineExpose({ busy, preview: computed(() => preview.value ?? rc20Preview.value ?? rc21Preview.value ?? rc22Preview.value ?? rc28Preview.value ?? rc30Preview.value ?? rc31Preview.value ?? rc33Preview.value) })
 const tableLabels = {
   lureManufacturers: 'メーカー', lureSeries: 'シリーズ',
   lureModels: 'モデル', lureVariants: 'カラー',
 }
 
 function cancelPreview() {
+  rc33Preview.value = null
   rc31Preview.value = null
   rc30Preview.value = null
   rc28Preview.value = null
@@ -231,7 +253,7 @@ function downloadRc21Diff() {
 }
 
 async function addRc19() {
-  if (busy.value || preview.value || rc20Preview.value || rc21Preview.value || rc22Preview.value || rc28Preview.value || rc30Preview.value || rc31Preview.value) return
+  if (busy.value || preview.value || rc20Preview.value || rc21Preview.value || rc22Preview.value || rc28Preview.value || rc30Preview.value || rc31Preview.value || rc33Preview.value) return
   busy.value = true
   try {
     message.value = `RC19対象カタログ: ${await registerRc19HuntGrande()}件追加しました。`
@@ -286,12 +308,28 @@ async function applyCatalog() {
 
 <template>
   <section class="catalog-import">
-    <h2>ルアーマスター RC31対応</h2>
+    <h2>ルアーマスター RC33対応</h2>
+    <button type="button" :disabled="busy" @click="checkRc33">RC33 購入品・カラーの追加予定を確認</button>
+    <section v-if="rc33Preview" class="preview" aria-label="RC33取り込みの事前確認">
+      <h3>RC33の追加予定</h3>
+      <p>追加 {{ rc33Preview.addedColors }}色・登録済み {{ rc33Preview.retainedColors }}色・保留 {{ rc33Preview.heldColors }}件</p>
+      <p>所有追加 {{ rc33Preview.addedOwned }}個・既存所有保持 {{ rc33Preview.retainedOwned }}個</p>
+      <p>公式画像配色 {{ rc33Preview.photoColors }}件・仮配色 {{ rc33Preview.provisionalColors }}件・未確認 {{ rc33Preview.unknownColors }}件</p>
+      <p>既存の所有レコードは非アクティブ・所有未確認を含めて保持します。公式画像配色は写っている面のみです。</p>
+      <details><summary>カラーと出典を確認</summary><ul>
+        <li v-for="(row, index) in rc33Preview.rows" :key="index">
+          {{ row.manufacturer }} / {{ row.model }} / {{ row.name }}：{{ { add: '追加', keep: '保持', hold: '保留' }[row.catalog] }}・所有 {{ { add: '追加', keep: '保持', none: '追加なし' }[row.ownership] }}・配色 {{ { photo: '公式画像確認', name: '仮配色', unknown: '未確認', keep: '保持' }[row.visual] }} {{ row.reason }}
+          <a :href="row.sourceUrl" target="_blank" rel="noopener noreferrer">出典</a>
+        </li>
+      </ul></details>
+      <button type="button" :disabled="busy || !(rc33Preview.addedColors || rc33Preview.addedOwned || rc33Preview.photoColors || rc33Preview.provisionalColors)" @click="applyRc33">RC33の確認済みデータを追加</button>
+      <button type="button" :disabled="busy" @click="cancelPreview">RC33の追加をキャンセル</button>
+    </section>
     <p>先にバックアップを保存・確認してから、RC18の専用JSONを読み込んでな。</p>
     <button type="button" :disabled="busy" @click="backup">① 全データをバックアップ</button>
     <button type="button" :disabled="busy" @click="fileInput?.click()">② カタログJSONを事前確認</button>
     <p>RC19確認済み：HUNT GRANDE 1.3g / T-15 シルバー・T-18 黄茶次郎</p>
-    <button type="button" :disabled="busy || !!preview || !!rc20Preview || !!rc21Preview || !!rc22Preview || !!rc28Preview || !!rc30Preview || !!rc31Preview" @click="addRc19">RC19のHUNT GRANDE 1.3g・2色を追加</button>
+    <button type="button" :disabled="busy || !!preview || !!rc20Preview || !!rc21Preview || !!rc22Preview || !!rc28Preview || !!rc30Preview || !!rc31Preview || !!rc33Preview" @click="addRc19">RC19のHUNT GRANDE 1.3g・2色を追加</button>
     <p>RC20：HUNT GRANDE 1.3gの30色と、4メーカーの公式確認済みカラーを補完します。</p>
     <button type="button" :disabled="busy" @click="checkRc20">RC20の追加予定を確認</button>
     <p>RC21：ベルベットアーツ11モデル・213色、ロブルアー7モデル・69色を事前照合します。</p>

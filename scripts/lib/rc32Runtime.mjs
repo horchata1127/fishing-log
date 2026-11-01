@@ -10,9 +10,9 @@ export async function createRc32Runtime() {
   const directory = await mkdtemp(join(tmpdir(), 'fishing-log-rc32-batch-'))
   const sources = { database: 'src/db/database.ts', inference: 'src/utils/autoColorInference.ts', importer: 'src/utils/autoColorImport.ts',
     storage: 'src/utils/visualColorStorage.ts', backup: 'src/utils/backup.ts', facilityStorage: 'src/utils/facilityStorage.ts', facilityMaster: 'src/utils/facilityMaster.ts',
-    rc30: 'src/utils/rc30Catalog.ts', rc31: 'src/utils/rc31Catalog.ts', data30: 'src/data/rc30Catalog.ts', data31: 'src/data/rc31Catalog.ts', data22: 'src/data/rc22Catalog.ts' }
+    rc30: 'src/utils/rc30Catalog.ts', rc31: 'src/utils/rc31Catalog.ts', rc33: 'src/utils/rc33Catalog.ts', data33: 'src/data/rc33Catalog.ts', data30: 'src/data/rc30Catalog.ts', data31: 'src/data/rc31Catalog.ts', data22: 'src/data/rc22Catalog.ts' }
   const paths = Object.fromEntries(Object.keys(sources).map(n => [n, join(directory, n + '.mjs')]))
-  const imports = { '../db/database': 'database', './autoColorInference': 'inference', './visualColorStorage': 'storage', './facilityStorage': 'facilityStorage', './facilityMaster': 'facilityMaster', '../data/rc30Catalog': 'data30', '../data/rc31Catalog': 'data31' }
+  const imports = { '../db/database': 'database', './autoColorInference': 'inference', './visualColorStorage': 'storage', './facilityStorage': 'facilityStorage', './facilityMaster': 'facilityMaster', '../data/rc30Catalog': 'data30', '../data/rc31Catalog': 'data31', '../data/rc33Catalog': 'data33' }
   for (const [name, path] of Object.entries(sources)) {
     let code = ts.transpileModule(await readFile(path, 'utf8'), { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText
     for (const [from, to] of Object.entries({ dexie: import.meta.resolve('dexie'), ...Object.fromEntries(Object.entries(imports).map(([key, value]) => [key, pathToFileURL(paths[value]).href])) })) code = code.replaceAll(`'${from}'`, JSON.stringify(to)).replaceAll(JSON.stringify(from), JSON.stringify(to))
