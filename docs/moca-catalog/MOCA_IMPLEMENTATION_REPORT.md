@@ -63,4 +63,6 @@ Draft PRのレビュー担当: ユーザー・ようこちゃん（GitHub: `horc
 - RC36: [PR #36](https://github.com/horchata1127/fishing-log/pull/36)、マージ時刻2026-11-03 20:16:15 JST
 - 作業ブランチ: `feature/rc37-moca-catalog`
 - 既存未追跡資料、`docs/rc37/` の元依頼・原本バックアップ、`MyLuresScreen.backup.vue` 等はコミット対象外。
-- コミット・Draft PR: 作成後に追記。
+- 実装・検証コミット: `8b0cf7b`（`feat(rc37): supplement verified MOCA models and colors with preservation audit`）
+- Draft PR: [#37](https://github.com/horchata1127/fishing-log/pull/37)、base=`main`、head=`feature/rc37-moca-catalog`。open / draftとして作成。`horchata1127` を本文のレビュー担当に指定し、承認・マージは未実施。
+- 本レポートのPR情報追記は後続のdocsコミット。最終HEADは同PRのコミット一覧で確認できる。
