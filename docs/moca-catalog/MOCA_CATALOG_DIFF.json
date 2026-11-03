@@ -1,0 +1,2013 @@
+{
+  "checkedAt": "2026-11-03",
+  "inputSha256": "967721d46faec28670d8de3824c46272773597457fc1908c92c2d7d71842881b",
+  "backupVersion": 8,
+  "existing": {
+    "manufacturers": [
+      {
+        "name": "RODIO CRAFT",
+        "id": 6
+      }
+    ],
+    "series": [
+      {
+        "name": "MOCA",
+        "manufacturerId": 6,
+        "id": 91
+      },
+      {
+        "name": "Fat MOCA Jr.",
+        "manufacturerId": 6,
+        "id": 96
+      }
+    ],
+    "models": [
+      {
+        "name": "Fat MOCA Jr. DR-SS",
+        "seriesId": 96,
+        "category": "クランク",
+        "id": 122
+      },
+      {
+        "name": "MOCA",
+        "seriesId": 91,
+        "category": "クランク",
+        "id": 127
+      },
+      {
+        "name": "MOCA DR Rattle 2HOOK",
+        "seriesId": 91,
+        "category": "クランク",
+        "id": 128
+      },
+      {
+        "name": "MOCA DR-SS 2HOOK",
+        "seriesId": 91,
+        "category": "クランク",
+        "id": 129
+      },
+      {
+        "name": "MOCA SR-SS",
+        "seriesId": 91,
+        "category": "クランク",
+        "id": 130
+      },
+      {
+        "name": "MOCA SR-SS Rattle",
+        "seriesId": 91,
+        "category": "クランク",
+        "id": 131
+      }
+    ],
+    "variants": [
+      {
+        "colorName": "うぐいすもち",
+        "modelId": 122,
+        "id": 290
+      },
+      {
+        "colorName": "さくらもち",
+        "modelId": 122,
+        "id": 291
+      },
+      {
+        "colorName": "寿",
+        "modelId": 122,
+        "id": 292
+      },
+      {
+        "colorName": "うぐいすもち",
+        "modelId": 128,
+        "id": 300
+      },
+      {
+        "colorName": "さくらもち",
+        "modelId": 128,
+        "id": 301
+      },
+      {
+        "colorName": "寿",
+        "modelId": 128,
+        "id": 302
+      },
+      {
+        "colorName": "うぐいすもち",
+        "modelId": 129,
+        "id": 303
+      },
+      {
+        "colorName": "さくらもち",
+        "modelId": 129,
+        "id": 304
+      },
+      {
+        "colorName": "寿",
+        "modelId": 129,
+        "id": 305
+      },
+      {
+        "colorName": "#1 クリアー（マット）",
+        "modelId": 130,
+        "id": 306
+      },
+      {
+        "colorName": "#11 ミルクココア",
+        "modelId": 130,
+        "id": 307
+      },
+      {
+        "colorName": "#12 FWS",
+        "modelId": 130,
+        "id": 308
+      },
+      {
+        "colorName": "#14 クロザリガニ",
+        "modelId": 130,
+        "id": 309
+      },
+      {
+        "colorName": "#16 あおさ",
+        "modelId": 130,
+        "id": 310
+      },
+      {
+        "colorName": "#17 キラキラ",
+        "modelId": 130,
+        "id": 311
+      },
+      {
+        "colorName": "#18 黄／緑",
+        "modelId": 130,
+        "id": 312
+      },
+      {
+        "colorName": "#19 2014福田カラー",
+        "modelId": 130,
+        "id": 313
+      },
+      {
+        "colorName": "#2 K.F III（レッドグロー）",
+        "modelId": 130,
+        "id": 314
+      },
+      {
+        "colorName": "#20 2014ノブカラー",
+        "modelId": 130,
+        "id": 315
+      },
+      {
+        "colorName": "#21 蛍光ピンク",
+        "modelId": 130,
+        "id": 316
+      },
+      {
+        "colorName": "#22 さちおの茶",
+        "modelId": 130,
+        "id": 317
+      },
+      {
+        "colorName": "#23 2015ノブカラー",
+        "modelId": 130,
+        "id": 318
+      },
+      {
+        "colorName": "#24 黒まんじゅう",
+        "modelId": 130,
+        "id": 319
+      },
+      {
+        "colorName": "#25 ゆだお",
+        "modelId": 130,
+        "id": 320
+      },
+      {
+        "colorName": "#26 UFO",
+        "modelId": 130,
+        "id": 321
+      },
+      {
+        "colorName": "#27 16ノブ",
+        "modelId": 130,
+        "id": 322
+      },
+      {
+        "colorName": "#3 S.M VI",
+        "modelId": 130,
+        "id": 323
+      },
+      {
+        "colorName": "#31 19ノブ",
+        "modelId": 130,
+        "id": 324
+      },
+      {
+        "colorName": "#32 20安塚",
+        "modelId": 130,
+        "id": 325
+      },
+      {
+        "colorName": "#33 RCポテトヘッド",
+        "modelId": 130,
+        "id": 326
+      },
+      {
+        "colorName": "#34 '19早乙女",
+        "modelId": 130,
+        "id": 327
+      },
+      {
+        "colorName": "#35 '20井野",
+        "modelId": 130,
+        "id": 328
+      },
+      {
+        "colorName": "#36 '24ノブ",
+        "modelId": 130,
+        "id": 329
+      },
+      {
+        "colorName": "#37 ラーテル",
+        "modelId": 130,
+        "id": 330
+      },
+      {
+        "colorName": "#38 FOCUSオリーブ",
+        "modelId": 130,
+        "id": 331
+      },
+      {
+        "colorName": "#4 K.F V（FKB）",
+        "modelId": 130,
+        "id": 332
+      },
+      {
+        "colorName": "#5 M.M III",
+        "modelId": 130,
+        "id": 333
+      }
+    ],
+    "owned": [
+      {
+        "variantId": 318,
+        "active": true,
+        "ownershipStatus": "owned",
+        "id": 8623
+      },
+      {
+        "variantId": 324,
+        "active": true,
+        "ownershipStatus": "owned",
+        "id": 8624
+      }
+    ],
+    "visualProfiles": [
+      {
+        "id": "064af1e0-e8f7-4078-8f2a-f80a7c04629c",
+        "variantId": 314,
+        "identity": {
+          "manufacturer": "RODIO CRAFT",
+          "series": "MOCA",
+          "model": "MOCA SR-SS",
+          "color": {
+            "kind": "name",
+            "value": "#2 K.F III（レッドグロー）"
+          }
+        },
+        "naturalKey": "[\"[\\\"rodiocraft\\\",\\\"moca\\\",\\\"mocasr-ss\\\"]\",\"name\",\"#2k.fiii(レッドグロー)\"]",
+        "appearance": {
+          "version": 1,
+          "paletteVersion": 1,
+          "layout": "generic",
+          "regions": {
+            "whole": {
+              "colors": [
+                "red"
+              ],
+              "attributes": [
+                "glow"
+              ]
+            }
+          }
+        },
+        "origin": "name",
+        "userEdited": false,
+        "confirmed": false,
+        "revision": 1,
+        "updatedAt": "2026-10-31T03:52:10.736Z",
+        "evidence": {
+          "estimatorVersion": "rc32-name-v1",
+          "inputName": "#2 K.F III（レッドグロー）",
+          "basis": [
+            "red: レッド",
+            "glow: グロー"
+          ],
+          "confidence": 0.55
+        }
+      },
+      {
+        "id": "2575eb26-5e21-4eb9-aa6c-b8796e497b73",
+        "variantId": 306,
+        "identity": {
+          "manufacturer": "RODIO CRAFT",
+          "series": "MOCA",
+          "model": "MOCA SR-SS",
+          "color": {
+            "kind": "name",
+            "value": "#1 クリアー（マット）"
+          }
+        },
+        "naturalKey": "[\"[\\\"rodiocraft\\\",\\\"moca\\\",\\\"mocasr-ss\\\"]\",\"name\",\"#1クリアー(マット)\"]",
+        "appearance": {
+          "version": 1,
+          "paletteVersion": 1,
+          "layout": "generic",
+          "regions": {
+            "whole": {
+              "colors": [],
+              "attributes": [
+                "transparent",
+                "matte"
+              ]
+            }
+          }
+        },
+        "origin": "name",
+        "userEdited": false,
+        "confirmed": false,
+        "revision": 1,
+        "updatedAt": "2026-10-31T03:52:10.736Z",
+        "evidence": {
+          "estimatorVersion": "rc32-name-v1",
+          "inputName": "#1 クリアー（マット）",
+          "basis": [
+            "transparent: クリア",
+            "matte: マット"
+          ],
+          "confidence": 0.55
+        }
+      },
+      {
+        "id": "43649eb2-767d-4f64-91c7-85a41f7de3b0",
+        "variantId": 316,
+        "identity": {
+          "manufacturer": "RODIO CRAFT",
+          "series": "MOCA",
+          "model": "MOCA SR-SS",
+          "color": {
+            "kind": "name",
+            "value": "#21 蛍光ピンク"
+          }
+        },
+        "naturalKey": "[\"[\\\"rodiocraft\\\",\\\"moca\\\",\\\"mocasr-ss\\\"]\",\"name\",\"#21蛍光ピンク\"]",
+        "appearance": {
+          "version": 1,
+          "paletteVersion": 1,
+          "layout": "generic",
+          "regions": {
+            "whole": {
+              "colors": [
+                "pink"
+              ],
+              "attributes": [
+                "fluorescent"
+              ]
+            }
+          }
+        },
+        "origin": "name",
+        "userEdited": false,
+        "confirmed": false,
+        "revision": 1,
+        "updatedAt": "2026-10-31T03:52:10.736Z",
+        "evidence": {
+          "estimatorVersion": "rc32-name-v1",
+          "inputName": "#21 蛍光ピンク",
+          "basis": [
+            "fluorescent: 蛍光",
+            "pink: ピンク"
+          ],
+          "confidence": 0.85
+        }
+      },
+      {
+        "id": "47a7c1ce-46e6-4455-afd2-bde55ba04c26",
+        "variantId": 310,
+        "identity": {
+          "manufacturer": "RODIO CRAFT",
+          "series": "MOCA",
+          "model": "MOCA SR-SS",
+          "color": {
+            "kind": "name",
+            "value": "#16 あおさ"
+          }
+        },
+        "naturalKey": "[\"[\\\"rodiocraft\\\",\\\"moca\\\",\\\"mocasr-ss\\\"]\",\"name\",\"#16あおさ\"]",
+        "appearance": {
+          "version": 1,
+          "paletteVersion": 1,
+          "layout": "generic",
+          "regions": {
+            "whole": {
+              "colors": [
+                "blue"
+              ],
+              "attributes": []
+            }
+          }
+        },
+        "origin": "name",
+        "userEdited": false,
+        "confirmed": false,
+        "revision": 1,
+        "updatedAt": "2026-10-31T03:52:10.736Z",
+        "evidence": {
+          "estimatorVersion": "rc32-name-v1",
+          "inputName": "#16 あおさ",
+          "basis": [
+            "blue: アオ"
+          ],
+          "confidence": 0.55
+        }
+      },
+      {
+        "id": "50969f88-1305-483d-9082-08674c82aaf3",
+        "variantId": 309,
+        "identity": {
+          "manufacturer": "RODIO CRAFT",
+          "series": "MOCA",
+          "model": "MOCA SR-SS",
+          "color": {
+            "kind": "name",
+            "value": "#14 クロザリガニ"
+          }
+        },
+        "naturalKey": "[\"[\\\"rodiocraft\\\",\\\"moca\\\",\\\"mocasr-ss\\\"]\",\"name\",\"#14クロザリガニ\"]",
+        "appearance": {
+          "version": 1,
+          "paletteVersion": 1,
+          "layout": "generic",
+          "regions": {
+            "whole": {
+              "colors": [
+                "black"
+              ],
+              "attributes": []
+            }
+          }
+        },
+        "origin": "name",
+        "userEdited": false,
+        "confirmed": false,
+        "revision": 1,
+        "updatedAt": "2026-10-31T03:52:10.736Z",
+        "evidence": {
+          "estimatorVersion": "rc32-name-v1",
+          "inputName": "#14 クロザリガニ",
+          "basis": [
+            "black: クロ"
+          ],
+          "confidence": 0.55
+        }
+      },
+      {
+        "id": "624d5270-768f-480b-b5f5-dca9110a4761",
+        "variantId": 312,
+        "identity": {
+          "manufacturer": "RODIO CRAFT",
+          "series": "MOCA",
+          "model": "MOCA SR-SS",
+          "color": {
+            "kind": "name",
+            "value": "#18 黄／緑"
+          }
+        },
+        "naturalKey": "[\"[\\\"rodiocraft\\\",\\\"moca\\\",\\\"mocasr-ss\\\"]\",\"name\",\"#18黄/緑\"]",
+        "appearance": {
+          "version": 1,
+          "paletteVersion": 1,
+          "layout": "generic",
+          "regions": {
+            "whole": {
+              "colors": [
+                "yellow",
+                "green"
+              ],
+              "attributes": []
+            }
+          }
+        },
+        "origin": "name",
+        "userEdited": false,
+        "confirmed": false,
+        "revision": 1,
+        "updatedAt": "2026-10-31T03:52:10.736Z",
+        "evidence": {
+          "estimatorVersion": "rc32-name-v1",
+          "inputName": "#18 黄／緑",
+          "basis": [
+            "yellow: 黄",
+            "green: 緑"
+          ],
+          "confidence": 0.85
+        }
+      },
+      {
+        "id": "cc9e29ad-c1ed-4259-b85a-d5163070a9c8",
+        "variantId": 319,
+        "identity": {
+          "manufacturer": "RODIO CRAFT",
+          "series": "MOCA",
+          "model": "MOCA SR-SS",
+          "color": {
+            "kind": "name",
+            "value": "#24 黒まんじゅう"
+          }
+        },
+        "naturalKey": "[\"[\\\"rodiocraft\\\",\\\"moca\\\",\\\"mocasr-ss\\\"]\",\"name\",\"#24黒まんじゅう\"]",
+        "appearance": {
+          "version": 1,
+          "paletteVersion": 1,
+          "layout": "generic",
+          "regions": {
+            "whole": {
+              "colors": [
+                "black",
+                "brown"
+              ],
+              "attributes": []
+            }
+          }
+        },
+        "origin": "name",
+        "userEdited": false,
+        "confirmed": false,
+        "revision": 1,
+        "updatedAt": "2026-10-31T03:52:10.736Z",
+        "evidence": {
+          "estimatorVersion": "rc32-name-v1",
+          "inputName": "#24 黒まんじゅう",
+          "basis": [
+            "conventional:black-manju: 黒マンジュウ"
+          ],
+          "confidence": 0.65
+        }
+      },
+      {
+        "id": "d38f5c1d-c7c7-40bf-b159-57ee817d671d",
+        "variantId": 331,
+        "identity": {
+          "manufacturer": "RODIO CRAFT",
+          "series": "MOCA",
+          "model": "MOCA SR-SS",
+          "color": {
+            "kind": "name",
+            "value": "#38 FOCUSオリーブ"
+          }
+        },
+        "naturalKey": "[\"[\\\"rodiocraft\\\",\\\"moca\\\",\\\"mocasr-ss\\\"]\",\"name\",\"#38focusオリーブ\"]",
+        "appearance": {
+          "version": 1,
+          "paletteVersion": 1,
+          "layout": "generic",
+          "regions": {
+            "whole": {
+              "colors": [
+                "olive"
+              ],
+              "attributes": []
+            }
+          }
+        },
+        "origin": "name",
+        "userEdited": false,
+        "confirmed": false,
+        "revision": 1,
+        "updatedAt": "2026-10-31T03:52:10.736Z",
+        "evidence": {
+          "estimatorVersion": "rc32-name-v1",
+          "inputName": "#38 FOCUSオリーブ",
+          "basis": [
+            "olive: オリーブ"
+          ],
+          "confidence": 0.55
+        }
+      }
+    ]
+  },
+  "totals": {
+    "existingModels": 6,
+    "existingColors": 37,
+    "owned": 2,
+    "addedModels": 10,
+    "addedColors": 180,
+    "retainedColors": 9,
+    "heldColors": 14
+  },
+  "targets": [
+    {
+      "model": "MOCA SR-HF 2HOOK",
+      "sourceUrl": "https://www.backlash.co.jp/item/4571385603859/",
+      "weight": 1.6,
+      "buoyancy": "HF",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "1",
+          "name": "#1 クリアー",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "2",
+          "name": "#2 KF3",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "20",
+          "name": "#20 2014ノブカラー",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "22",
+          "name": "#22 さちおの茶",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "23",
+          "name": "#23 2015ノブカラー",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "24",
+          "name": "#24 黒まんじゅう",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "33",
+          "name": "#33 RCポテトヘッド",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "39",
+          "name": "#39 クリアーピンク",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "40",
+          "name": "#40 マッディトップ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "41",
+          "name": "#41 カゲロウ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "42",
+          "name": "#42 まほ丸ダブル",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "MOCA SR-FⅡ 2HOOK",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151265520/",
+      "weight": 2.1,
+      "buoyancy": "FⅡ",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "27",
+          "name": "#27 16ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "31",
+          "name": "#31 19ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "32",
+          "name": "#32 20安塚",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "33",
+          "name": "#33 RCポテトヘッド",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "MOCA SR-SS",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151265568/",
+      "weight": 2.3,
+      "buoyancy": "SS",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "27",
+          "name": "#27 16ノブ",
+          "action": "keep",
+          "existingId": 322,
+          "reason": ""
+        },
+        {
+          "code": "31",
+          "name": "#31 19ノブ",
+          "action": "keep",
+          "existingId": 324,
+          "reason": ""
+        },
+        {
+          "code": "32",
+          "name": "#32 20安塚",
+          "action": "keep",
+          "existingId": 325,
+          "reason": ""
+        },
+        {
+          "code": "33",
+          "name": "#33 RCポテトヘッド",
+          "action": "keep",
+          "existingId": 326,
+          "reason": ""
+        },
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "keep",
+          "existingId": 327,
+          "reason": ""
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "keep",
+          "existingId": 328,
+          "reason": ""
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "keep",
+          "existingId": 329,
+          "reason": ""
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "keep",
+          "existingId": 330,
+          "reason": ""
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "keep",
+          "existingId": 331,
+          "reason": ""
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "MOCA SR-SS Rattle",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151272429/",
+      "weight": 2.4,
+      "buoyancy": "SS",
+      "rattle": "rattle",
+      "rows": [
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "MOCA DR-F 2HOOK",
+      "sourceUrl": "https://www.kitiya.jp/?pid=83772673",
+      "weight": 1.9,
+      "buoyancy": "F",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "",
+          "name": "クリアー（マット）",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "K.F 3（レッドグロー）",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "S.M 6",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "K.F 5（FKB）",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "M.M 3",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ミルクココア",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "FWS",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "黒ザリガニ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "あおさ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "キラキラ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "黄/緑",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "2014福田カラー",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "2014ノブカラー",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "蛍光ピンク",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "さちおの茶",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "2015 ノブカラー",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "黒まんじゅう",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ゆだお",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "UFO",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "27",
+          "name": "#27 16ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "31",
+          "name": "#31 19ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "32",
+          "name": "#32 20安塚",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "33",
+          "name": "#33 RCポテトヘッド",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "MOCA DR-SS 2HOOK",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151265728/",
+      "weight": 2.3,
+      "buoyancy": "SS",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "27",
+          "name": "#27 16ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "31",
+          "name": "#31 19ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "32",
+          "name": "#32 20安塚",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "33",
+          "name": "#33 RCポテトヘッド",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "K.F 3（レッドグロー）",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "S.M 6",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "K.F 5（FKB）",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "M.M 3",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "K.Y 6",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ベージュ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ピンクバックチャート",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ミルクココア",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "FWS",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "黒ザリガニ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "あおさ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "キラキラ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "黄/緑",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "2014福田カラー",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "2014ノブカラー",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "蛍光ピンク",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "さちおの茶",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "2015 ノブカラー",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "黒まんじゅう",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ゆだお",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "UFO",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "クリアー(マット)",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "MOCA DR-F Rattle 2HOOK",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151272276/",
+      "weight": 2.1,
+      "buoyancy": "F",
+      "rattle": "rattle",
+      "rows": [
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        }
+      ]
+    },
+    {
+      "model": "MOCA DR-SS Rattle 2HOOK",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151272320/",
+      "weight": 2.4,
+      "buoyancy": "SS",
+      "rattle": "rattle",
+      "rows": [
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "hold",
+          "reason": "Error: 既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください"
+        }
+      ]
+    },
+    {
+      "model": "Fat MOCA Jr. SR-F",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151272375/",
+      "weight": 1.4,
+      "buoyancy": "F",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "Fat MOCA Jr. SR-SS",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151272122/",
+      "weight": 1.6,
+      "buoyancy": "SS",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "Fat MOCA Jr. DR-F",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151272221/",
+      "weight": 1.5,
+      "buoyancy": "F",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "Fat MOCA Jr. DR-SS",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151270371/",
+      "weight": 1.6,
+      "buoyancy": "SS",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "Fat MOCA Jr. SR-HF Rattle",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151269818/",
+      "weight": 1.3,
+      "buoyancy": "HF",
+      "rattle": "rattle",
+      "rows": [
+        {
+          "code": "1",
+          "name": "#1 クリアー",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "2",
+          "name": "#2 クリアーパール",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "3",
+          "name": "#3 クリアーピンク",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "4",
+          "name": "#4 ゴールデントップ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "5",
+          "name": "#5 マッディトップ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "6",
+          "name": "#6 曇天",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "7",
+          "name": "#7 カゲロウ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "8",
+          "name": "#8 まほ丸",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "9",
+          "name": "#9 2015ノブカラー",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "10",
+          "name": "#10 黒まんじゅう",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "11",
+          "name": "#11 RCポテトヘッド",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "Petit MOCA SR-F",
+      "sourceUrl": "https://www.proshoptomo.com/?pid=95981385",
+      "weight": 1,
+      "buoyancy": "F",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "",
+          "name": "クリアー（マット）",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "Ｋ．Ｆ３",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "Ｓ．Ｍ６",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "Ｍ．Ｍ３",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ミルクココア",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ＦＷＳ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "２０１４福田",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "２０１４ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "蛍光ピンク",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "さちおの茶",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "１６ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "１９ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "２０安塚",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ＲＣポテトヘッド",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "１９早乙女",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "２０井野",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "２４ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ラーテル",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ＦＯＣＵＳオリーブ",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "Petit MOCA SR-FⅡ",
+      "sourceUrl": "https://www.proshoptomo.com/?pid=95981679",
+      "weight": 1.1,
+      "buoyancy": "FⅡ",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "",
+          "name": "クリアー（マット）",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "Ｓ．Ｍ　６",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "Ｋ．Ｆ　５",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "Ｍ．Ｍ　３",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "Ｋ．Ｙ　６",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ベージュ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ピンクバックチャート",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "キャンディミックス",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "１６ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "１９ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "２０安塚",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ＲＣポテトヘッド",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "１９早乙女",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "２０井野",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "２４ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ラーテル",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "",
+          "name": "ＦＯＣＵＳオリーブ",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "Petit MOCA SR-SS",
+      "sourceUrl": "https://www.backlash.co.jp/item/4573151265384/",
+      "weight": 1.2,
+      "buoyancy": "SS",
+      "rattle": "none",
+      "rows": [
+        {
+          "code": "27",
+          "name": "#27 16ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "31",
+          "name": "#31 19ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "32",
+          "name": "#32 20安塚",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "33",
+          "name": "#33 RCポテトヘッド",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "34",
+          "name": "#34 19早乙女",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "35",
+          "name": "#35 20井野",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "36",
+          "name": "#36 24ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "37",
+          "name": "#37 ラーテル",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "38",
+          "name": "#38 FOCUSオリーブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "43",
+          "name": "#43 21ノブ",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "code": "44",
+          "name": "#44 フォーカスおまめ",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    }
+  ],
+  "pending": [
+    {
+      "revision": "RC37",
+      "detail": {
+        "series": "MOCA",
+        "name": "MOCA DR Rattle 2HOOK",
+        "reason": "既存モデルはF/SS未指定。DR-FとDR-SS両方のラトル製品が存在し同一性未確認。名称・IDを保持し両候補の追加を保留。"
+      }
+    },
+    {
+      "revision": "RC37",
+      "detail": {
+        "series": "MOCA",
+        "name": "2026-11-03 多摩湖MVP ミルクココア（暫定）",
+        "reason": "ユーザー申告の個体カラーは未確定。販売店の#11 ミルクココアと同一個体とは断定しない。釣果・MVPは自動変更しない。 https://bfarm.buyshop.jp/items/93854850"
+      }
+    },
+    {
+      "revision": "RC37",
+      "detail": {
+        "series": "Petit MOCA",
+        "name": "Petit MOCA DR-F",
+        "reason": "商品と8色の選択肢は確認。重量の一次販売資料を確認できず今回は保留。 https://www.proshoptomo.com/?pid=95982330"
+      }
+    },
+    {
+      "revision": "RC37",
+      "detail": {
+        "series": "MOCA",
+        "name": "MOCA / MOCA SR-F",
+        "reason": "既存のMOCAはタイプ未指定。旧SR-Fとの対応を推測しない。"
+      }
+    }
+  ]
+}

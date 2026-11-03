@@ -320,9 +320,10 @@ export interface LureVariant {
   modelId: number
   colorName: string
   catalogEvidence?: {
-    revision: 'RC19' | 'RC20' | 'RC21' | 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33'; colorClass: string; sourceTier: string
+    revision: 'RC19' | 'RC20' | 'RC21' | 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33' | 'RC37'; colorClass: string; sourceTier: string
     manufacturerUrl: string; retailerUrl: string; jan: string; originalName: string
     colorCode?: string; weightG?: number; lengthMm?: number; buoyancy?: string; rattle?: string; productUrl?: string
+    verified?: boolean; checkedAt?: string; verificationStatus?: string
   }
 }
 
