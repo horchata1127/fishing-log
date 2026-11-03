@@ -1,4 +1,4 @@
-import { db, validateWeatherObservation, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch, validateCatchResult, validateCatchAction,
+import { db, validateTripSummaryMvp, validateWeatherObservation, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch, validateCatchResult, validateCatchAction,
   weatherTableNames, weatherFields, validateWeatherLocation, validateWeatherHour, validateWeatherRequest,
   visualTableNames, validateVisualRecord, validateVisualSnapshot, validateVisualReferences,
   mergeLureMasterHistory, lureMasterHistoryHead, nextLureMasterHistorySequence, validateLureMasterHistoryRecord,
@@ -19,7 +19,7 @@ export const completeBackupTableNames = [...fullBackupTableNames, ...facilityTab
 
 export interface FishingLogBackup {
   format: 'fishing-log-backup'
-  version: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+  version: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11
   exportedAt: string
   data: {
     trips: unknown[]
@@ -97,7 +97,7 @@ function dateTime(value: unknown, path: string): Date {
 /** 書き込み前に全テーブルを検証し、入力を変更せずDateを復元する。 */
 export function validateBackup(value: unknown): RestoredData {
   const backup = object(value, 'ルート')
-  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6, 7, 8, 9, 10].includes(backup.version as number)) {
+  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].includes(backup.version as number)) {
     fail('format/version', '対応するFishing Logバックアップではありません')
   }
   dateTime(backup.exportedAt, 'exportedAt')
@@ -185,6 +185,10 @@ export function validateBackup(value: unknown): RestoredData {
       }
       switch (table) {
         case 'trips': {
+          if (row.summaryMvp !== undefined) {
+            if (Number(backup.version) < 11) fail(path, 'MVP指定にはv11形式が必要です')
+            validateTripSummaryMvp(row.summaryMvp)
+          }
           if (row.tackleSetIds !== undefined) {
             if (Number(backup.version) < 4 || !Array.isArray(row.tackleSetIds)) fail(`${path}.tackleSetIds`, 'v4以降のセットID配列が必要です')
             if (new Set(row.tackleSetIds).size !== row.tackleSetIds.length) fail(path, '持参セットが重複しています')
@@ -365,8 +369,9 @@ export async function createBackup(): Promise<FishingLogBackup> {
     return result
   })
   const hasObservations = [...data.catches, ...data.tripEvents].some(row => (row as Row).weatherObservation !== undefined || (row as Row).type === 'weather')
-  if (hasObservations || data.lureMasterImportHistory.length > 0) {
-    const backup: FishingLogBackup = { format: 'fishing-log-backup', version: hasObservations ? 10 : 9, exportedAt: new Date().toISOString(), data }
+  const hasMvp = data.trips.some(row => (row as Row).summaryMvp !== undefined)
+  if (hasMvp || hasObservations || data.lureMasterImportHistory.length > 0) {
+    const backup: FishingLogBackup = { format: 'fishing-log-backup', version: hasMvp ? 11 : hasObservations ? 10 : 9, exportedAt: new Date().toISOString(), data }
     validateBackup(JSON.parse(JSON.stringify(backup)))
     return backup
   }

@@ -20,9 +20,19 @@ export interface FishingTrip {
   startedAt: Date
   endedAt?: Date
   memo?: string
+  summaryMvp?: TripSummaryMvp
   tackleSetIds?: number[]
   facilityId?: string
   currentZoneId?: string
+}
+
+export interface TripSummaryMvp { name: string; color?: string; provisional?: boolean }
+export function validateTripSummaryMvp(value: unknown): asserts value is TripSummaryMvp {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('MVPの形式が不正です。')
+  const row = value as Record<string, unknown>
+  if (typeof row.name !== 'string' || !row.name.trim() || row.name.length > 200 ||
+      (row.color !== undefined && (typeof row.color !== 'string' || row.color.length > 200)) ||
+      (row.provisional !== undefined && typeof row.provisional !== 'boolean')) throw new Error('MVPのルアー名・カラーを確認してください。')
 }
 
 export const skyLabels = { sunny: '☀️ 晴れ', hazy: '🌤️ 薄曇り', cloudy: '☁️ 曇り', rain: '🌧️ 雨' } as const
@@ -703,7 +713,7 @@ export function validateLureMasterHistoryRecord(value: unknown): asserts value i
   if (row.kind === 'restore') {
     historyFields(row, [...base, 'sourceBackupVersion', 'sourceExportedAt', 'previousContextId'])
     if (row.status !== 'succeeded' || row.completedAt === undefined || !Number.isInteger(row.sourceBackupVersion) ||
-      (row.sourceBackupVersion as number) < 1 || (row.sourceBackupVersion as number) > 10 ||
+      (row.sourceBackupVersion as number) < 1 || (row.sourceBackupVersion as number) > 11 ||
       row.previousContextId !== undefined && !historyUuid(row.previousContextId)) throw new Error('更新履歴: 復元イベントが不正です')
     historyTime(row.sourceExportedAt)
     return

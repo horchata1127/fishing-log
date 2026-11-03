@@ -5,6 +5,7 @@ import TackleSnapshotDetails from './TackleSnapshotDetails.vue'
 import VisualColorPreview from './VisualColorPreview.vue'
 import TripWeatherPanel from './TripWeatherPanel.vue'
 import TripTimeline from './TripTimeline.vue'
+import TripSummaryPanel from './TripSummaryPanel.vue'
 import TripMemoEditor from './TripMemoEditor.vue'
 import TripEventEditor from './TripEventEditor.vue'
 import { deleteTripEvent } from '../utils/tripEvents'
@@ -28,6 +29,7 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits<{
+  summarySaved: [trip: FishingTrip]
   memoSaved: [trip: FishingTrip]
   editInformation: []
   editFacility: []
@@ -231,6 +233,7 @@ function fishingStyleName(style: FishingStyle) {
     <TackleSnapshotDetails v-if="lastCatch?.tackleSnapshot" :snapshot="lastCatch.tackleSnapshot" />
   </section>
 
+  <TripSummaryPanel :key="trip.id" :trip="trip" :catches="catches" :events="events" :disabled="locationBusy" @saved="emit('summarySaved', $event)" />
   <TripMemoEditor :key="trip.id" :trip="trip" @saved="emit('memoSaved', $event)" />
   <TripEventEditor v-if="eventEditorOpen" :weather="weatherEditor" :previous="previousObservation" :trip="trip" :event="editingEvent" @saved="eventSaved" @cancel="eventEditorOpen = false" />
   <TripTimeline :key="trip.id" :trip="trip" :catches="catches" :events="events" :hours="timelineWeather.hours" :requests="timelineWeather.requests" :location="timelineWeather.location" :weather-error="timelineWeatherError" />
