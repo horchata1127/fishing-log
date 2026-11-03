@@ -194,6 +194,7 @@ function chooseDictionary(lure: LureOption) {
         <input type="datetime-local" step="1" aria-label="釣果日時" :value="localDateTime(caughtAt)" @input="emit('update:caughtAt', new Date(($event.target as HTMLInputElement).value))" />
       </label>
       <slot name="location" />
+      <slot name="weather" />
       <button v-if="hasPreviousCatch" class="same-button" :disabled="locationBusy || (resultType === 'lost' && !lostDistance)" @click="emit('sameAsPrevious')">
         ⚡ 前回と同じ
       </button>

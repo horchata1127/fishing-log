@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { computed, ref } from "vue"
-import { isCatch, countResults, lostDistanceLabels, actionLengthLabel } from "../db/database"
+import { isCatch, countResults, lostDistanceLabels, actionLengthLabel, observationLabel } from "../db/database"
 import TackleSnapshotDetails from './TackleSnapshotDetails.vue'
 import VisualColorPreview from './VisualColorPreview.vue'
 import TripWeatherPanel from './TripWeatherPanel.vue'
 import TripTimeline from './TripTimeline.vue'
+import TripMemoEditor from './TripMemoEditor.vue'
 import TripEventEditor from './TripEventEditor.vue'
 import { deleteTripEvent } from '../utils/tripEvents'
 import { formatTimelineTime, timelineTimestamp } from '../utils/tripTimeline'
@@ -27,6 +28,7 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits<{
+  memoSaved: [trip: FishingTrip]
   editInformation: []
   editFacility: []
   home: []
@@ -42,12 +44,14 @@ const emit = defineEmits<{
 
 const editingEvent = ref<TripEvent>()
 const eventEditorOpen = ref(false)
+const weatherEditor = ref(false)
+const previousObservation = computed(() => [...props.events.map(e => ({ time: new Date(e.occurredAt).getTime(), value: e.weatherObservation })), ...props.catches.map(c => ({ time: new Date(c.caughtAt).getTime(), value: c.weatherObservation }))].filter(e => e.value).sort((a,b) => b.time-a.time)[0]?.value)
 const eventBusy = ref(false)
 function eventTimeLabel(event: TripEvent) {
   const timestamp = event.timePrecision === 'unknown' ? null : timelineTimestamp(event.occurredAt)
   return timestamp === null ? '時刻不明' : `${event.timePrecision === 'approximate' ? '約 ' : ''}${formatTimelineTime(timestamp)}`
 }
-function openEvent(event?: TripEvent) { editingEvent.value = event; eventEditorOpen.value = true }
+function openEvent(event?: TripEvent, weather = false) { editingEvent.value = event; weatherEditor.value = weather; eventEditorOpen.value = true }
 function eventSaved() { eventEditorOpen.value = false; emit('eventsChanged') }
 async function removeEvent(event: TripEvent) {
   if (eventBusy.value || !confirm('このイベントを削除しますか？')) return
@@ -122,6 +126,7 @@ function fishingStyleName(style: FishingStyle) {
     </span>
   </header>
 
+  <button type="button" class="back-button" :disabled="locationBusy" @click="openEvent(undefined, true)">気象を記録</button>
   <section class="trip-card">
     <div>
       <span class="label">釣り場</span>
@@ -165,7 +170,7 @@ function fishingStyleName(style: FishingStyle) {
   </button>
 
   <section class="card event-card">
-    <h2>📣 放流・ペレット記録</h2>
+    <h2>📣 放流・ペレット・気象記録</h2>
     <div v-if="!trip.endedAt" class="event-buttons">
       <button type="button" class="event-button stocking" @click="emit('recordEvent', 'stocking')">🐟 放流を記録</button>
       <button type="button" class="event-button pellet" @click="emit('recordEvent', 'pellet')">🟤 ペレットを記録</button>
@@ -175,12 +180,13 @@ function fishingStyleName(style: FishingStyle) {
     <p v-if="!sortedEvents.length" class="event-hint">イベントはまだ記録されてへんで。</p>
     <div v-for="event in sortedEvents" :key="event.id" class="event-entry">
       <div class="event-entry-head">
-        <strong>{{ event.type === 'stocking' ? '🐟 放流' : '🟤 ペレット' }}</strong>
+        <strong>{{ event.type === 'weather' ? observationLabel(event.weatherObservation) : event.type === 'stocking' ? '🐟 放流' : '🟤 ペレット' }}</strong>
         <span>{{ eventTimeLabel(event) }}</span>
         <button type="button" class="edit-catch" :disabled="locationBusy || eventBusy" @click="openEvent(event)">編集</button>
         <button type="button" class="edit-catch" :disabled="locationBusy || eventBusy" @click="removeEvent(event)">削除</button>
       </div>
       <p v-if="event.zoneId">{{ event.zoneName || event.zoneId }}</p>
+      <p v-if="event.weatherObservation?.note">{{ event.weatherObservation.note }}</p>
       <p v-if="event.note">{{ event.note }}</p>
     </div>
   </section>
@@ -225,7 +231,8 @@ function fishingStyleName(style: FishingStyle) {
     <TackleSnapshotDetails v-if="lastCatch?.tackleSnapshot" :snapshot="lastCatch.tackleSnapshot" />
   </section>
 
-  <TripEventEditor v-if="eventEditorOpen" :trip="trip" :event="editingEvent" @saved="eventSaved" @cancel="eventEditorOpen = false" />
+  <TripMemoEditor :key="trip.id" :trip="trip" @saved="emit('memoSaved', $event)" />
+  <TripEventEditor v-if="eventEditorOpen" :weather="weatherEditor" :previous="previousObservation" :trip="trip" :event="editingEvent" @saved="eventSaved" @cancel="eventEditorOpen = false" />
   <TripTimeline :key="trip.id" :trip="trip" :catches="catches" :events="events" :hours="timelineWeather.hours" :requests="timelineWeather.requests" :location="timelineWeather.location" :weather-error="timelineWeatherError" />
   <TripWeatherPanel :key="trip.id" :trip="trip" @loaded="timelineWeather = $event; timelineWeatherError = ''" @load-error="timelineWeatherError = $event" />
 

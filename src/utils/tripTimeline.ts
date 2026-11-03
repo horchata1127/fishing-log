@@ -1,7 +1,7 @@
 import type { CatchRecord, FishingTrip, TripEvent, TripWeatherHour } from '../db/database'
 
 export type TimelineEvent = Omit<TripEvent, 'occurredAt'> & { occurredAt?: Date | string | number; timePrecision?: 'exact' | 'approximate' | 'unknown' }
-export type MarkerKind = 'catch' | 'lost' | 'stocking' | 'pellet'
+export type MarkerKind = 'catch' | 'lost' | 'stocking' | 'pellet' | 'weather'
 export interface TimelineMarker {
   key: string
   kind: MarkerKind
@@ -9,8 +9,8 @@ export interface TimelineMarker {
   precision: 'exact' | 'approximate' | 'unknown'
   record: CatchRecord | TimelineEvent
 }
-export const markerLabels: Record<MarkerKind, string> = { catch: '釣果', lost: 'バラシ', stocking: '放流', pellet: 'ペレット散布' }
-export const markerSymbols: Record<MarkerKind, string> = { catch: '●', lost: '×', stocking: '◆', pellet: '▲' }
+export const markerLabels: Record<MarkerKind, string> = { catch: '釣果', lost: 'バラシ', stocking: '放流', pellet: 'ペレット散布', weather: '気象・環境' }
+export const markerSymbols: Record<MarkerKind, string> = { catch: '●', lost: '×', stocking: '◆', pellet: '▲', weather: '☁' }
 export function timelineTimestamp(value: unknown): number | null {
   // Never interpret missing values as epoch zero or timezone-free text as the device's local time.
   if (!(value instanceof Date) && typeof value !== 'number' && !(typeof value === 'string' && /T.*(?:Z|[+-]\d{2}:\d{2})$/.test(value))) return null
@@ -40,8 +40,11 @@ export function filterTimelineCatches(catches: CatchRecord[], zone = 'all', incl
 }
 function orderedMarkers(catches: CatchRecord[], events: TimelineEvent[]) {
   const markers: TimelineMarker[] = catches.map((record, index) => ({ key: `catch:${record.id ?? `index-${index}`}`, kind: record.resultType === 'lost' ? 'lost' : 'catch', timestamp: timelineTimestamp(record.caughtAt), precision: 'exact', record }))
+  for (const [index, record] of catches.entries()) if (record.weatherObservation) {
+    markers.push({ key: `catch-weather:${record.id ?? `index-${index}`}`, kind: 'weather', timestamp: timelineTimestamp(record.caughtAt), precision: 'exact', record })
+  }
   for (const [index, record] of events.entries()) {
-    if (record.type !== 'stocking' && record.type !== 'pellet') continue
+    if (record.type !== 'stocking' && record.type !== 'pellet' && record.type !== 'weather') continue
     const timestamp = record.timePrecision === 'unknown' ? null : timelineTimestamp(record.occurredAt)
     markers.push({ key: `event:${record.id ?? `index-${index}`}`, kind: record.type, timestamp, precision: timestamp === null ? 'unknown' : record.timePrecision === 'approximate' ? 'approximate' : 'exact', record })
   }
@@ -93,6 +96,7 @@ export function layoutTimelineMarkers(markers: TimelineMarker[], start: number, 
   const lanes: { kind: MarkerKind; y: number }[] = []
   let top = 190
   for (const kind of Object.keys(markerLabels) as MarkerKind[]) {
+    if (kind === 'weather' && !markers.some(m => m.kind === kind)) continue
     const lastX: number[] = []
     lanes.push({ kind, y: top + 22 })
     for (const marker of markers.filter(m => m.kind === kind)) {
@@ -118,7 +122,7 @@ const hourMs = 3600000
 const hourFormatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit', hour: 'numeric', hourCycle: 'h23' })
 
 /** Read-only totals. Graph fallback bounds must never become the pace denominator. */
-export function buildCatchSummary(trip: FishingTrip, catches: CatchRecord[], zone = 'all', includeUnset = true, zoneFacilities?: ReadonlyMap<string, string>) {
+export function buildCatchSummary(trip: FishingTrip, catches: CatchRecord[], zone = 'all', includeUnset = true, zoneFacilities?: ReadonlyMap<string, string>, weatherTimes: readonly number[] = []) {
   const all = catches.filter(row => trip.id !== undefined && row.tripId === trip.id && row.resultType !== 'lost')
   const displayed = filterTimelineCatches(all, zone, includeUnset,trip.facilityId,zoneFacilities)
   const start = timelineTimestamp(trip.startedAt), end = timelineTimestamp(trip.endedAt)
@@ -134,7 +138,7 @@ export function buildCatchSummary(trip: FishingTrip, catches: CatchRecord[], zon
   }
   // Bounds use all catches, regardless of the zone, so filters don't hide empty hours.
   const recordTimes = all.flatMap(row => { const time = timelineTimestamp(row.caughtAt); return time === null ? [] : [time] })
-  const times = [...recordTimes]
+  const times = [...recordTimes, ...weatherTimes.filter(time => Number.isFinite(time) && Number.isFinite(new Date(time).getTime()))]
   if (start !== null) times.push(start)
   if (end !== null) times.push(duration === null ? end : end - 1)
   const first = times.length ? Math.floor(times.reduce((a, b) => Math.min(a, b)) / hourMs) * hourMs : null

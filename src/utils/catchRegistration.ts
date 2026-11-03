@@ -1,4 +1,4 @@
-import { db, isUsableOwnedLure, validateFishCatch, validateCatchResult, validateCatchAction, validateVisualSnapshot,
+import { db, validateWeatherObservation, isUsableOwnedLure, validateFishCatch, validateCatchResult, validateCatchAction, validateVisualSnapshot,
   validateVisualReferences, validateVisualRecord, visualIdentityForVariant, visualPalette, type VisualIdentity, type LureVisualProfile, type VisualColorSnapshot, type CatchRecord } from '../db/database'
 import { snapshotTackle, tackleTables } from './tackleManagement'
 import { fishSnapshot } from './fishSpecies'
@@ -51,6 +51,7 @@ async function catalogNames(variantId: number) {
 
 async function writeCatch(input: CatchInput, selection: LureSelection | undefined, previousFish?: CatchRecord, editing?: CatchRecord): Promise<number> {
   if (input.visualColorSnapshot != null) validateVisualSnapshot(input.visualColorSnapshot)
+  if (input.weatherObservation !== undefined) validateWeatherObservation(input.weatherObservation)
   validateCatchResult(input as unknown as Record<string, unknown>)
   validateCatchAction(input as unknown as Record<string, unknown>)
   if (input.fishSizeCm !== undefined && (!Number.isFinite(input.fishSizeCm) || input.fishSizeCm <= 0)) throw new Error('全長は0より大きい数値（cm）を入力してください。')
@@ -139,7 +140,7 @@ export async function registerCatch(input: CatchInput, selection: LureSelection)
 }
 
 /** 同じ釣行の最新保存済み釣果だけを再利用し、未確認IDは拒否する。 */
-export async function registerSameAsPrevious(tripId: number, caughtAt: Date, location?: CatchLocationSelection, result?: { resultType: "catch" | "lost"; lostDistance?: CatchRecord["lostDistance"] }): Promise<number> {
+export async function registerSameAsPrevious(tripId: number, caughtAt: Date, location?: CatchLocationSelection, result?: { weatherObservation?: CatchRecord["weatherObservation"]; resultType: "catch" | "lost"; lostDistance?: CatchRecord["lostDistance"] }): Promise<number> {
   return db.transaction('rw', tables, async () => {
     const previous = (await db.catches.where('tripId').equals(tripId).sortBy('caughtAt')).at(-1)
     if (!previous) throw new Error('前回の釣果がありません。')

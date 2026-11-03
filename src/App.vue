@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import WeatherObservationInput from './components/WeatherObservationInput.vue'
+import type { WeatherObservation } from './db/database'
 import LureMasterScreen from './components/LureMasterScreen.vue'
 import OfflineStatus from './components/OfflineStatus.vue'
 import FacilityPicker from './components/FacilityPicker.vue'
@@ -234,6 +236,8 @@ const catchResultType = ref<'catch' | 'lost'>('catch')
 const catchLostDistance = ref<LostDistance | undefined>()
 const recordStatus = ref('')
 const catchMemo = ref('')
+const catchObservation = ref<WeatherObservation>()
+const previousObservation = computed(() => [...tripEvents.value.map(e => ({ time: new Date(e.occurredAt).getTime(), value: e.weatherObservation })), ...catches.value.map(c => ({ time: new Date(c.caughtAt).getTime(), value: c.weatherObservation }))].filter(e => e.value).sort((a,b) => b.time-a.time)[0]?.value)
 const pendingCaughtAt = ref<Date | null>(null)
 const catchLureName = ref('')
 const catchLureColor = ref('')
@@ -448,6 +452,7 @@ async function editCatch(record: CatchRecord) {
     catchAction.value = record.action ?? ''
     catchActionLength.value = record.actionLength
     catchMemo.value = record.memo ?? ''
+    catchObservation.value = record.weatherObservation ? JSON.parse(JSON.stringify(record.weatherObservation)) : undefined
     catchFishSpeciesId.value = record.fishSpeciesId
     catchFishSize.value = record.fishSizeCm === undefined ? '' : String(record.fishSizeCm)
     catchTackleSetId.value = record.tackleSetId
@@ -468,6 +473,7 @@ async function addCatch() {
   catchLostDistance.value = undefined
   editingCatch.value = null
   catchMemo.value = ''
+  catchObservation.value = undefined
   catchVisualSnapshot.value = null
   catchVisualDirty.value = false
   pendingCaughtAt.value = new Date()
@@ -523,12 +529,12 @@ async function commitCatch(sameAsPrevious: boolean) {
   savingCatch.value = true
   try {
     if (sameAsPrevious) {
-      await registerSameAsPrevious(currentTrip.value.id, pendingCaughtAt.value, catchLocation.value ? { ...catchLocation.value, zoneId: catchZoneId.value } : undefined, { resultType: catchResultType.value, lostDistance: catchResultType.value === "lost" ? catchLostDistance.value : undefined })
+      await registerSameAsPrevious(currentTrip.value.id, pendingCaughtAt.value, catchLocation.value ? { ...catchLocation.value, zoneId: catchZoneId.value } : undefined, { weatherObservation: catchObservation.value ? JSON.parse(JSON.stringify(catchObservation.value)) as WeatherObservation : undefined, resultType: catchResultType.value, lostDistance: catchResultType.value === "lost" ? catchLostDistance.value : undefined })
     } else {
       const selection = catchSelection.value?.kind === 'manual' || !catchSelection.value
         ? { kind: 'manual' as const, lureName: catchLureName.value, lureColor: catchLureColor.value }
         : catchSelection.value
-      const input = { resultType: catchResultType.value, lostDistance: catchResultType.value === "lost" ? catchLostDistance.value : undefined, tripId: currentTrip.value.id, caughtAt: pendingCaughtAt.value,
+      const input = { weatherObservation: catchObservation.value ? JSON.parse(JSON.stringify(catchObservation.value)) as WeatherObservation : undefined, resultType: catchResultType.value, lostDistance: catchResultType.value === "lost" ? catchLostDistance.value : undefined, tripId: currentTrip.value.id, caughtAt: pendingCaughtAt.value,
         ...(catchVisualDirty.value ? { visualColorSnapshot: catchVisualSnapshot.value ? JSON.parse(JSON.stringify(catchVisualSnapshot.value)) as VisualColorSnapshot : null } : {}),
         location: editingCatch.value && (!catchAreaChanged.value || (catchZoneId.value === editingCatch.value.zoneId && !(catchZoneId.value === undefined && editingCatch.value.locationSnapshot?.zoneName))) ? undefined : catchLocation.value ? { ...catchLocation.value, zoneId: catchZoneId.value } : undefined,
         tackleSetId: catchTackleSetId.value,
@@ -829,7 +835,7 @@ async function tripInformationSaved(trip: FishingTrip) {
 
     <!-- 釣行中 -->
 
-    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch || editingTripFacility || editingTripInformation" @edit-information="editingTripInformation = true" @edit-facility="editingTripFacility = true" @delete-catch="removeCatch" @home="goHome"
+    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch || editingTripFacility || editingTripInformation" @memo-saved="currentTrip = $event" @edit-information="editingTripInformation = true" @edit-facility="editingTripFacility = true" @delete-catch="removeCatch" @home="goHome"
       @add-catch="addCatch" @edit-catch="editCatch" @link-color="openVisualDictionary" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @events-changed="loadTripEvents" @end-trip="endTrip">
       <template #location><FacilityPicker v-if="currentTrip.facilityId" :key="locationRefresh" fixed :facility-id="currentTrip.facilityId" :trip-id="currentTrip.id"
         :zone-id="currentTrip.currentZoneId" :retained-zone-id="currentTrip.currentZoneId" zone-label="現在のエリア" :disabled="!!currentTrip.endedAt || savingLocation || showCatchForm"
@@ -869,6 +875,7 @@ async function tripInformationSaved(trip: FishingTrip) {
       v-model:lure-color="catchLureColor" v-model:range="catchRange" v-model:retrieve-speed="catchRetrieveSpeed"
       v-model:action="catchAction" v-model:action-length="catchActionLength" @select-lure="selectLure" @save="saveCatch"
       @same-as-previous="saveSameAsPrevious" @cancel="cancelCatch">
+      <template #weather><details><summary>気象・環境を記録（任意）</summary><WeatherObservationInput v-model="catchObservation" :previous="previousObservation" :disabled="savingCatch" /></details></template>
       <template #location><FacilityPicker fixed catch-area :facility-id="catchLocation?.expectedFacilityId" :trip-id="currentTrip?.id"
         :zone-id="catchZoneId" @update:zone-id="catchZoneId = $event; catchAreaChanged = true"
         :retained-zone-id="editingCatch ? editingCatch.zoneId : catchLocation?.expectedCurrentZoneId" :retained-zone-name="editingCatch?.locationSnapshot?.zoneName" :retained-facility-id="editingCatch?.facilityId"

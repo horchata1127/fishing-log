@@ -1,4 +1,4 @@
-import { db, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch, validateCatchResult, validateCatchAction,
+import { db, validateWeatherObservation, tackleTableNames, validateTackleRecord, validateFishSpecies, validateFishCatch, validateCatchResult, validateCatchAction,
   weatherTableNames, weatherFields, validateWeatherLocation, validateWeatherHour, validateWeatherRequest,
   visualTableNames, validateVisualRecord, validateVisualSnapshot, validateVisualReferences,
   mergeLureMasterHistory, lureMasterHistoryHead, nextLureMasterHistorySequence, validateLureMasterHistoryRecord,
@@ -19,7 +19,7 @@ export const completeBackupTableNames = [...fullBackupTableNames, ...facilityTab
 
 export interface FishingLogBackup {
   format: 'fishing-log-backup'
-  version: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+  version: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
   exportedAt: string
   data: {
     trips: unknown[]
@@ -97,7 +97,7 @@ function dateTime(value: unknown, path: string): Date {
 /** 書き込み前に全テーブルを検証し、入力を変更せずDateを復元する。 */
 export function validateBackup(value: unknown): RestoredData {
   const backup = object(value, 'ルート')
-  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6, 7, 8, 9].includes(backup.version as number)) {
+  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6, 7, 8, 9, 10].includes(backup.version as number)) {
     fail('format/version', '対応するFishing Logバックアップではありません')
   }
   dateTime(backup.exportedAt, 'exportedAt')
@@ -179,6 +179,10 @@ export function validateBackup(value: unknown): RestoredData {
           fail(`${path}.${field}`, '数値が不正です')
         }
       }
+      if (row.weatherObservation !== undefined) {
+        if (Number(backup.version) < 10 || !['catches', 'tripEvents'].includes(table)) fail(path, '気象記録にはv10形式が必要です')
+        validateWeatherObservation(row.weatherObservation)
+      }
       switch (table) {
         case 'trips': {
           if (row.tackleSetIds !== undefined) {
@@ -227,7 +231,9 @@ export function validateBackup(value: unknown): RestoredData {
         case 'tripEvents':
           for (const field of ['note', 'facilityId', 'zoneId', 'zoneName']) if (row[field] !== undefined) string(row[field], `${path}.${field}`)
           reference(row, 'tripId', 'trips', path)
-          if (row.type !== 'stocking' && row.type !== 'pellet') fail(`${path}.type`, 'イベント種別が不正です')
+          if (row.type !== 'stocking' && row.type !== 'pellet' && row.type !== 'weather') fail(`${path}.type`, 'イベント種別が不正です')
+          if (row.type === 'weather' && (Number(backup.version) < 10 || row.weatherObservation === undefined)) fail(path, '気象イベントにはv10の観測記録が必要です')
+          if (row.type !== 'weather' && row.weatherObservation !== undefined) fail(path, '気象記録のイベント種別が不正です')
           row.occurredAt = dateTime(row.occurredAt, `${path}.occurredAt`)
           break
         case 'lureManufacturers':
@@ -343,7 +349,7 @@ export function validateBackup(value: unknown): RestoredData {
   } else {
     for (const name of visualTableNames) if (source[name] !== undefined) fail(name, '配色辞書にはv8形式が必要です')
   }
-  if (backup.version === 9) {
+  if (Number(backup.version) >= 9) {
     if (!Array.isArray(source.lureMasterImportHistory)) fail('lureMasterImportHistory', '配列が必要です')
     data.lureMasterImportHistory = mergeLureMasterHistory([], source.lureMasterImportHistory as LureMasterHistoryRecord[])
   } else if (source.lureMasterImportHistory !== undefined) fail('lureMasterImportHistory', '更新履歴にはv9形式が必要です')
@@ -358,8 +364,9 @@ export async function createBackup(): Promise<FishingLogBackup> {
     }))
     return result
   })
-  if (data.lureMasterImportHistory.length > 0) {
-    const backup: FishingLogBackup = { format: 'fishing-log-backup', version: 9, exportedAt: new Date().toISOString(), data }
+  const hasObservations = [...data.catches, ...data.tripEvents].some(row => (row as Row).weatherObservation !== undefined || (row as Row).type === 'weather')
+  if (hasObservations || data.lureMasterImportHistory.length > 0) {
+    const backup: FishingLogBackup = { format: 'fishing-log-backup', version: hasObservations ? 10 : 9, exportedAt: new Date().toISOString(), data }
     validateBackup(JSON.parse(JSON.stringify(backup)))
     return backup
   }
