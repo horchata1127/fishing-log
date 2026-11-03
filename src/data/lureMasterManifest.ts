@@ -6,9 +6,10 @@ import { rc28Catalog, rc28Pending } from './rc28Catalog'
 import { rc30Catalog, rc30Pending } from './rc30Catalog'
 import { rc31Catalog } from './rc31Catalog'
 import { rc33Catalog } from './rc33Catalog'
+import { rc37Catalog, rc37Pending } from './rc37Catalog'
 
-export type CatalogRevision = 'RC19' | 'RC20' | 'RC21' | 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33'
-export type MatchingRule = 'legacy' | 'barbie' | 'classified' | 'palms' | 'rc33'
+export type CatalogRevision = 'RC19' | 'RC20' | 'RC21' | 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33' | 'RC37'
+export type MatchingRule = 'legacy' | 'barbie' | 'classified' | 'palms' | 'rc33' | 'moca'
 interface InputColor {
   name: string; code: string; label?: string; aliases?: readonly string[]; sourceUrl?: string
   sourceTier?: string; colorClass?: string; jan?: string; manufacturerUrl?: string; retailerUrl?: string
@@ -21,6 +22,7 @@ interface InputTarget {
   colors: readonly InputColor[]; category?: string; actionType?: LureModel['actionType']; sourceUrl?: string
   allowNewModel?: boolean; productVerified?: boolean; holdReason?: string; reuseWithoutWeight?: boolean
   buoyancy?: string; rattle?: string
+  blockedModelAliases?: readonly string[]
 }
 export interface MasterColor {
   name: string; code: string; label: string; aliases: string[]; colorClass: string; jan: string
@@ -36,6 +38,7 @@ export interface MasterTarget {
   sourceUrl: string; rule: MatchingRule; revisions: CatalogRevision[]
   allowNewManufacturer: boolean; allowNewModel: boolean; requireWeight: boolean
   productVerified: boolean; holdReason: string; colors: MasterColor[]
+  blockedModelAliases?: string[]
 }
 export interface MasterManifest {
   masterVersion: string; matchingVersion: number; targets: MasterTarget[]
@@ -62,13 +65,14 @@ const barbieProducts = [
 
 function adapt(t: InputTarget, revision: CatalogRevision): MasterTarget {
   const rule: MatchingRule = revision === 'RC22' ? 'barbie' : revision === 'RC28' || revision === 'RC30' ? 'classified'
-    : revision === 'RC31' ? 'palms' : revision === 'RC33' ? 'rc33' : 'legacy'
+    : revision === 'RC31' ? 'palms' : revision === 'RC33' ? 'rc33' : revision === 'RC37' ? 'moca' : 'legacy'
   return {
     key: targetKey(t), manufacturer: t.manufacturer, series: t.series, model: t.model, weight: t.weight,
     length: t.length, manufacturerAliases: [...t.manufacturerAliases], seriesAliases: [...t.seriesAliases], modelAliases: [...t.modelAliases],
+    ...(t.blockedModelAliases?.length ? { blockedModelAliases: [...t.blockedModelAliases] } : {}),
     category: (t.category ?? 'スプーン') as LureCategory, actionType: t.actionType, buoyancy: t.buoyancy, rattle: t.rattle,
     sourceUrl: t.sourceUrl ?? t.colors[0]?.sourceUrl ?? '', rule, revisions: [revision],
-    allowNewManufacturer: ['RC19', 'RC31', 'RC33'].includes(revision),
+    allowNewManufacturer: ['RC19', 'RC31', 'RC33', 'RC37'].includes(revision),
     allowNewModel: t.allowNewModel ?? true,
     requireWeight: revision === 'RC21' || revision === 'RC22' || (rule === 'classified' && !t.reuseWithoutWeight),
     productVerified: (t.productVerified ?? true) && (revision !== 'RC22' || barbieProducts.some(([name, type, weight]) =>
@@ -138,7 +142,7 @@ function buildManifest(): MasterManifest {
   ] }
   const packs: [CatalogRevision, readonly InputTarget[]][] = [
     ['RC19', [rc19]], ['RC20', rc20Catalog], ['RC21', rc21Catalog], ['RC22', rc22Catalog],
-    ['RC28', rc28Catalog], ['RC30', rc30Catalog], ['RC31', rc31Catalog], ['RC33', rc33Catalog],
+    ['RC28', rc28Catalog], ['RC30', rc30Catalog], ['RC31', rc31Catalog], ['RC33', rc33Catalog], ['RC37', rc37Catalog],
   ]
   const targets = new Map<string, MasterTarget>()
   for (const [revision, pack] of packs) for (const input of pack) {
@@ -146,9 +150,10 @@ function buildManifest(): MasterManifest {
     if (existing) merge(existing, target)
     else targets.set(target.key, target)
   }
-  const manifest: MasterManifest = { masterVersion: 'RC34-phase1', matchingVersion: 1, targets: [...targets.values()],
+  const manifest: MasterManifest = { masterVersion: 'RC37-moca-2026-11-03', matchingVersion: 2, targets: [...targets.values()],
     pending: [...rc28Pending.map(detail => ({ revision: 'RC28' as const, detail: structuredClone(detail) })),
-      ...rc30Pending.map(detail => ({ revision: 'RC30' as const, detail: structuredClone(detail) }))] }
+      ...rc30Pending.map(detail => ({ revision: 'RC30' as const, detail: structuredClone(detail) })),
+      ...rc37Pending.map(detail => ({ revision: 'RC37' as const, detail: structuredClone(detail) }))] }
   validateLureMasterManifest(manifest)
   return manifest
 }
