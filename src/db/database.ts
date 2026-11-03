@@ -25,12 +25,42 @@ export interface FishingTrip {
   currentZoneId?: string
 }
 
-export type TripEventType = 'stocking' | 'pellet'
+export const skyLabels = { sunny: '☀️ 晴れ', hazy: '🌤️ 薄曇り', cloudy: '☁️ 曇り', rain: '🌧️ 雨' } as const
+export const windLabels = { calm: '無風', light: '弱い', moderate: '普通', strong: '強い' } as const
+export const weatherChangeLabels = {
+  sunAppeared: '☀️ 日が出た', sunHidden: '🌥️ 日が陰った', clouding: '☁️ 曇ってきた',
+  rainStarted: '🌧️ 雨が降り始めた', rainStopped: '🌤️ 雨が止んだ', windStarted: '💨 風が吹き始めた',
+  windStronger: '🌬️ 風が強まった', windWeaker: '🍃 風が弱まった', windStopped: '風が止んだ',
+  windTurned: '風向きが変わった', waterCloudier: '水が濁ってきた', waterClearer: '濁りが薄くなった',
+  flowStronger: '流れが強まった', flowWeaker: '流れが弱まった',
+} as const
+export interface WeatherObservation {
+  source: 'observed'
+  sky?: keyof typeof skyLabels
+  wind?: keyof typeof windLabels
+  changes: (keyof typeof weatherChangeLabels)[]
+  note?: string
+}
+export function validateWeatherObservation(value: unknown): asserts value is WeatherObservation {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('気象記録の形式が不正です。')
+  const row = value as Record<string, unknown>
+  if (row.source !== 'observed' || !Array.isArray(row.changes) || new Set(row.changes).size !== row.changes.length ||
+      row.changes.some(key => typeof key !== 'string' || !Object.hasOwn(weatherChangeLabels, key)) ||
+      (row.sky !== undefined && (typeof row.sky !== 'string' || !Object.hasOwn(skyLabels, row.sky))) ||
+      (row.wind !== undefined && (typeof row.wind !== 'string' || !Object.hasOwn(windLabels, row.wind))) ||
+      (row.note !== undefined && typeof row.note !== 'string') ||
+      (!row.sky && !row.wind && !row.changes.length && !(typeof row.note === 'string' && row.note.trim()))) throw new Error('気象条件または変化を選択してください。')
+}
+export function observationLabel(value?: WeatherObservation) {
+  return value ? [value.sky ? skyLabels[value.sky] : '', value.wind ? `風：${windLabels[value.wind]}` : '', ...value.changes.map(key => weatherChangeLabels[key])].filter(Boolean).join('・') || '気象メモ' : '未入力'
+}
+export type TripEventType = 'stocking' | 'pellet' | 'weather'
 
 export interface TripEvent {
   id?: number
   tripId: number
   type: TripEventType
+  weatherObservation?: WeatherObservation
   occurredAt: Date
   timePrecision?: 'exact' | 'approximate' | 'unknown'
   note?: string
@@ -190,6 +220,7 @@ export function validateCatchResult(row: Record<string, unknown>) {
 }
 
 export interface CatchRecord {
+  weatherObservation?: WeatherObservation
   /** Value copy at recording time; never refreshed from the dictionary automatically. */
   visualColorSnapshot?: VisualColorSnapshot
   resultType?: "catch" | "lost"
@@ -672,7 +703,7 @@ export function validateLureMasterHistoryRecord(value: unknown): asserts value i
   if (row.kind === 'restore') {
     historyFields(row, [...base, 'sourceBackupVersion', 'sourceExportedAt', 'previousContextId'])
     if (row.status !== 'succeeded' || row.completedAt === undefined || !Number.isInteger(row.sourceBackupVersion) ||
-      (row.sourceBackupVersion as number) < 1 || (row.sourceBackupVersion as number) > 9 ||
+      (row.sourceBackupVersion as number) < 1 || (row.sourceBackupVersion as number) > 10 ||
       row.previousContextId !== undefined && !historyUuid(row.previousContextId)) throw new Error('更新履歴: 復元イベントが不正です')
     historyTime(row.sourceExportedAt)
     return

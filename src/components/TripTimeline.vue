@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import type { CatchRecord, FishingTrip, TripWeatherHour, TripWeatherLocation, TripWeatherRequest } from '../db/database'
-import { db, lostDistanceLabels } from '../db/database'
+import { db, lostDistanceLabels, observationLabel } from '../db/database'
 import { catchZoneKey, buildCatchSummary, buildTripTimeline, formatTimelineTime, layoutTimelineMarkers, markerLabels, markerSymbols, type TimelineEvent, type TimelineMarker } from '../utils/tripTimeline'
 import HourlyCatchChart from './HourlyCatchChart.vue'
 import WeatherAttribution from './WeatherAttribution.vue'
 
 const props = defineProps<{ trip: FishingTrip; catches: CatchRecord[]; events: TimelineEvent[]; hours: TripWeatherHour[]; requests: TripWeatherRequest[]; location?: TripWeatherLocation; weatherError?: string }>()
+const showWeather = ref(true)
 const zone = ref('all'), includeUnset = ref(true), zoom = ref(1), viewport = ref(340)
 const scroll = ref<HTMLElement>(), dialog = ref<HTMLDialogElement>(), selected = ref<TimelineMarker | null>(null)
 const zoneFacilities = ref<Map<string,string>>()
@@ -19,9 +20,10 @@ watch(() => [props.trip.id,props.trip.facilityId,props.catches], async () => {
 const model = computed(() => buildTripTimeline(props.trip, props.catches, props.events, props.hours, zone.value, includeUnset.value,zoneFacilities.value))
 const chronological = computed(() => [...model.value.markers, ...model.value.outside, ...model.value.unknown]
   .sort((a, b) => (a.timestamp ?? Infinity) - (b.timestamp ?? Infinity) || a.key.localeCompare(b.key)))
-const summary = computed(() => buildCatchSummary(props.trip, props.catches, zone.value, includeUnset.value,zoneFacilities.value))
+const summary = computed(() => buildCatchSummary(props.trip, props.catches, zone.value, includeUnset.value,zoneFacilities.value,
+  chronological.value.flatMap(m => m.kind === 'weather' && m.timestamp !== null ? [m.timestamp] : [])))
 const width = computed(() => Math.max(300, viewport.value) * zoom.value)
-const layout = computed(() => model.value.range ? layoutTimelineMarkers(model.value.markers, model.value.range.start, model.value.range.end, width.value) : null)
+const layout = computed(() => model.value.range ? layoutTimelineMarkers(model.value.markers.filter(m => showWeather.value || m.kind !== 'weather'), model.value.range.start, model.value.range.end, width.value) : null)
 const clipId = computed(() => `timeline-plot-${props.trip.id ?? 'unknown'}`)
 const x = (time: number) => 84 + (time - model.value.range!.start) / (model.value.range!.end - model.value.range!.start) * (width.value - 112)
 const temperatures = computed(() => model.value.segments.flatMap(segment => segment.map(p => p.temperatureC)))
@@ -38,11 +40,11 @@ const usedRequests = computed(() => {
   const ids = new Set(props.hours.filter(h => h.tripId === props.trip.id).map(h => h.requestId))
   return props.requests.filter(r => r.tripId === props.trip.id && ids.has(r.id!))
 })
-const unknownEvents = computed(() => model.value.unknown.filter(m => m.kind === 'stocking' || m.kind === 'pellet'))
+const unknownEvents = computed(() => model.value.unknown.filter(m => m.kind === 'stocking' || m.kind === 'pellet' || m.kind === 'weather'))
 const unknownCatches = computed(() => model.value.unknown.filter(m => m.kind === 'catch' || m.kind === 'lost'))
 const selectedCatch = computed(() => selected.value && ['catch','lost'].includes(selected.value.kind) ? selected.value.record as CatchRecord : null)
-const selectedEvent = computed(() => selected.value && ['stocking','pellet'].includes(selected.value.kind) ? selected.value.record as TimelineEvent : null)
-const markerTitle = (marker: TimelineMarker) => `${markerLabels[marker.kind]} ${marker.timestamp === null ? '時刻不明' : `${marker.precision === 'approximate' ? '約 ' : ''}${formatTimelineTime(marker.timestamp)}`}`
+const selectedEvent = computed(() => selected.value && ['stocking','pellet','weather'].includes(selected.value.kind) ? selected.value.record as TimelineEvent : null)
+const markerTitle = (marker: TimelineMarker) => `${markerLabels[marker.kind]}${marker.kind === 'weather' ? ' ' + observationLabel(marker.record.weatherObservation) : ''} ${marker.timestamp === null ? '時刻不明' : `${marker.precision === 'approximate' ? '約 ' : ''}${formatTimelineTime(marker.timestamp)}`}`
 let observer: ResizeObserver | undefined
 onMounted(() => {
   if (!scroll.value) return
@@ -56,7 +58,12 @@ async function select(marker: TimelineMarker) { selected.value = marker; await n
 watch(() => props.trip.id, () => { close(); zone.value = 'all'; includeUnset.value = true; zoom.value = 1 })
 watch(() => props.trip.facilityId, () => { close(); zone.value = 'all' })
 watch(() => model.value.zones, zones => { if (zone.value !== 'all' && zone.value !== 'unset' && !zones.some(z => z.key === zone.value)) zone.value = 'all' })
-watch(model, value => { if (selected.value && ![...value.markers, ...value.unknown, ...value.outside].some(m => m.key === selected.value!.key)) close() })
+watch(model, value => {
+  if (!selected.value) return
+  const current = [...value.markers, ...value.unknown, ...value.outside].find(m => m.key === selected.value!.key)
+  if (current) selected.value = current
+  else close()
+})
 </script>
 
 <template>
@@ -71,7 +78,7 @@ watch(model, value => { if (selected.value && ![...value.markers, ...value.unkno
     <p v-else>平均は釣行の開始〜終了の経過時間と全体の釣果数から算出します。</p>
     <p v-if="summary.outsideCount">釣行時間外の釣果{{ summary.outsideCount }}匹も、元の記録時刻で集計に含めます。</p>
     <p>横軸は日本時間（JST）。マーカーをタップすると記録の詳細を確認できます。</p>
-    <div class="controls">
+    <div class="controls"><label class="check"><input v-model="showWeather" type="checkbox" />気象イベントを表示</label>
       <label v-if="model.zones.length">釣果・バラシのエリア
         <select v-model="zone"><option value="all">すべてのエリア</option><option value="unset">エリア未設定のみ</option><option v-for="item in model.zones" :key="item.key" :value="item.key">{{ item.label }}（{{ item.count }}件）</option></select>
       </label>
@@ -102,7 +109,7 @@ watch(model, value => { if (selected.value && ![...value.markers, ...value.unkno
       </div>
     </div>
     <p>線は保存済みの毎正時のモデル推定値を直線で結んでいます。欠損や時間の抜けでは線を切ります。釣果時刻の気温の算出・実測表示は行いません。</p>
-    <HourlyCatchChart :key="trip.id" :trip-id="trip.id" :bins="summary.bins" :total="summary.displayed" :unknown-count="summary.unknownCount" :period-too-long="summary.periodTooLong" />
+    <HourlyCatchChart :key="trip.id" :trip-id="trip.id" :weather-markers="showWeather ? chronological.filter(m => m.kind === 'weather') : []" @select-weather="select" :bins="summary.bins" :total="summary.displayed" :unknown-count="summary.unknownCount" :period-too-long="summary.periodTooLong" />
     <div v-if="model.unknown.length" class="unplaced">
       <template v-if="unknownEvents.length"><h3>時刻不明イベント</h3><p>時刻を補完せず、時間軸の外に表示します。</p><button v-for="m in unknownEvents" :key="m.key" type="button" @click="select(m)">{{ markerTitle(m) }}：{{ (m.record as TimelineEvent).note || 'メモなし' }}</button></template>
       <template v-if="unknownCatches.length"><h3>時刻不明の釣果・バラシ</h3><button v-for="m in unknownCatches" :key="m.key" type="button" @click="select(m)">{{ markerTitle(m) }}</button></template>
@@ -114,6 +121,7 @@ watch(model, value => { if (selected.value && ![...value.markers, ...value.unkno
       <p>取得期間：{{ request.startDayJst }} 〜 {{ request.endDayJst }}。取得日時：{{ request.fetchedAt ? formatTimelineTime(Date.parse(request.fetchedAt)) : '未記録' }} JST</p>
       <p v-if="location && (request.location.latitude !== location.latitude || request.location.longitude !== location.longitude)">現在の手動地点と異なる、前回取得地点の気象データを表示しています。</p>
     </div></details>
+    <p v-if="chronological.some(m => m.kind === 'weather')">☁ は手入力の観測記録です。以下の出典は取得した気温データに適用されます。</p>
     <WeatherAttribution />
     <details><summary>釣果・イベントの時系列一覧</summary>
       <ol aria-label="釣果・イベントの時系列一覧"><li v-for="marker in chronological" :key="marker.key">
@@ -126,6 +134,7 @@ watch(model, value => { if (selected.value && ![...value.markers, ...value.unkno
       <p v-if="selected.timestamp === null">正確な時刻は記録されていません。</p>
       <p v-if="selectedCatch && catchZoneKey(selectedCatch,trip.facilityId,zoneFacilities).startsWith('previous:')">旧施設・所属未確認のエリアです。新施設のエリアには変換していません。</p>
       <dl v-if="selectedCatch"><dt>ルアー</dt><dd>{{ selectedCatch.lureName || '未記録' }} {{ selectedCatch.lureColor || '' }}</dd><dt>魚種</dt><dd>{{ selectedCatch.fishSpecies || '未記録' }}</dd><dt>エリア</dt><dd>{{ selectedCatch.locationSnapshot?.zoneName || '未設定' }}</dd><dt>施設</dt><dd>{{ selectedCatch.locationSnapshot?.facilityName || '未記録' }}</dd><template v-if="selectedCatch.fishSizeCm !== undefined"><dt>全長</dt><dd>{{ selectedCatch.fishSizeCm }} cm</dd></template><template v-if="selectedCatch.lostDistance"><dt>バラシの距離</dt><dd>{{ lostDistanceLabels[selectedCatch.lostDistance] }}</dd></template><dt>メモ</dt><dd>{{ selectedCatch.memo || 'なし' }}</dd></dl>
+      <p v-if="selected.kind === 'weather'">{{ observationLabel(selected.record.weatherObservation) }}<br />{{ selected.record.weatherObservation?.note }}</p>
       <p v-if="selectedEvent">{{ selectedEvent.note || 'メモなし' }}</p>
       <p v-if="selectedEvent?.zoneId">対象エリア：{{ selectedEvent.zoneName || selectedEvent.zoneId }}</p>
       <button type="button" autofocus @click="close">記録の詳細を閉じる</button>
