@@ -835,7 +835,7 @@ async function tripInformationSaved(trip: FishingTrip) {
 
     <!-- 釣行中 -->
 
-    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch || editingTripFacility || editingTripInformation" @memo-saved="currentTrip = $event" @edit-information="editingTripInformation = true" @edit-facility="editingTripFacility = true" @delete-catch="removeCatch" @home="goHome"
+    <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch || editingTripFacility || editingTripInformation" @summary-saved="currentTrip = $event" @memo-saved="currentTrip = $event" @edit-information="editingTripInformation = true" @edit-facility="editingTripFacility = true" @delete-catch="removeCatch" @home="goHome"
       @add-catch="addCatch" @edit-catch="editCatch" @link-color="openVisualDictionary" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @events-changed="loadTripEvents" @end-trip="endTrip">
       <template #location><FacilityPicker v-if="currentTrip.facilityId" :key="locationRefresh" fixed :facility-id="currentTrip.facilityId" :trip-id="currentTrip.id"
         :zone-id="currentTrip.currentZoneId" :retained-zone-id="currentTrip.currentZoneId" zone-label="現在のエリア" :disabled="!!currentTrip.endedAt || savingLocation || showCatchForm"
