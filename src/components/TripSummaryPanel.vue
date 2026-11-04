@@ -71,7 +71,7 @@ async function share() {
   try {
     const result = await shareReport(file.value, shareText.value, imageUrl.value)
     imageStatus.value = result === 'shared' ? '共有先へ画像を渡しました。投稿は共有先で確認してください。' : result === 'cancelled' ? '共有をキャンセルしました。' : '画像の共有を利用できないためPNGの保存を開始しました。文面をコピーして画像を添付できます。'
-  } catch { error.value = '共有できませんでした。「画像で保存」または画像の長押しをお試しください。' }
+  } catch { error.value = '共有できませんでした。保存ボタンまたは画像の長押しをお試しください。' }
   finally { sharing.value = false }
 }
 async function copyText() {
@@ -114,7 +114,7 @@ async function copyText() {
       <p>1080 × 1350pxのPNGを作成します。設定や記録を変えた場合は作成し直してください。</p>
       <button type="button" :disabled="generating || sharing" @click="generate">{{ generating ? '画像を作成中…' : '画像プレビューを作成' }}</button>
       <img v-if="imageUrl" :src="imageUrl" class="preview" alt="釣行レポートPNGのプレビュー" width="1080" height="1350" />
-      <div class="actions"><button type="button" :disabled="!file || generating || sharing" @click="saveImage">画像で保存</button><button type="button" :disabled="!file || generating || sharing" @click="share">共有</button></div>
+      <div class="actions"><button type="button" :disabled="!file || generating || sharing" @click="saveImage">{{ mode === 'summary' ? 'サマリー画像を保存' : '画像で保存' }}</button><button type="button" :disabled="!file || generating || sharing" @click="share">共有</button></div>
       <p v-if="imageStatus" role="status">{{ imageStatus }}</p>
       <p>iPhoneではプレビュー画像の長押しから保存することもできます。共有先でXを選ぶか、画像を保存して投稿画面に添付してください。</p>
       <label>投稿文<textarea readonly rows="4" :value="shareText" /></label>

@@ -41,7 +41,7 @@ test('RC36 summary/MVP v11 backup, PNG matches preview, file sharing and RC35 co
     const bytes = await (await fetch((image as HTMLImageElement).src)).arrayBuffer()
     return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), byte => byte.toString(16).padStart(2, '0')).join('')
   })
-  const [download] = await Promise.all([page.waitForEvent('download'), panel.getByRole('button', { name: '画像で保存', exact: true }).click()])
+  const [download] = await Promise.all([page.waitForEvent('download'), panel.getByRole('button', { name: 'サマリー画像を保存', exact: true }).click()])
   const pngPath = info.outputPath('rc36-summary.png'); await download.saveAs(pngPath)
   const png = await readFile(pngPath)
   expect(png.subarray(0, 8).toString('hex')).toBe('89504e470d0a1a0a')
