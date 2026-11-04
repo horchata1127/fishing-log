@@ -11,6 +11,22 @@ export async function renderReportPng(element: HTMLElement): Promise<Blob> {
   })
   return new Promise((resolve, reject) => canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('PNGを生成できませんでした。もう一度お試しください。')), 'image/png'))
 }
+/** Dedicated timeline artboard. Reject oversized output rather than silently crop records. */
+export async function renderTimelinePng(element: HTMLElement): Promise<Blob> {
+  await document.fonts.ready
+  const height = Math.max(1600, Math.ceil(element.getBoundingClientRect().height))
+  if (height > 12000 || element.scrollWidth > 1080) throw new Error('画像が大きすぎます。表示対象やエリアを絞って作成し直してください。記録は変更されていません。')
+  const { default: html2canvas } = await import('html2canvas')
+  const canvas = await html2canvas(element, {
+    width: 1080, height, scale: 1, backgroundColor: '#f4f8f5', logging: false,
+    windowWidth: 1200, windowHeight: Math.max(1600, height), scrollX: 0, scrollY: 0,
+    onclone(document) {
+      const stage = document.querySelector<HTMLElement>('[data-timeline-image-stage]')
+      if (stage) { stage.style.left = '0'; stage.style.top = '0' }
+    },
+  })
+  return new Promise((resolve, reject) => canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('タイムラインPNGを生成できませんでした。表示対象を減らすか、もう一度お試しください。')), 'image/png'))
+}
 export function downloadReport(file: File, existingUrl?: string) {
   const url = existingUrl ?? URL.createObjectURL(file)
   const link = document.createElement('a')

@@ -37,7 +37,7 @@ test('RC36 first PNG generation works offline after PWA restart, MVP persists an
     await panel.getByText('サマリー画像・共有', { exact: true }).click()
     await panel.getByRole('button', { name: '画像プレビューを作成', exact: true }).click()
     await expect(panel.getByRole('img')).toBeVisible()
-    const [download] = await Promise.all([page.waitForEvent('download'), panel.getByRole('button', { name: '画像で保存', exact: true }).click()])
+    const [download] = await Promise.all([page.waitForEvent('download'), panel.getByRole('button', { name: 'サマリー画像を保存', exact: true }).click()])
     const path = info.outputPath('rc36-offline.png'); await download.saveAs(path)
     const png = await readFile(path)
     expect(png.readUInt32BE(16)).toBe(1080); expect(png.readUInt32BE(20)).toBe(1350)

@@ -52,7 +52,7 @@ test('RC38 explicit ownership, duplicate prevention, catch edit, MVP and PNG use
   await expect(page.locator('[data-report-card]')).toContainText('さちおの茶')
   await panel.getByRole('button', { name: '画像プレビューを作成', exact: true }).click()
   await expect(panel.getByRole('img', { name: '釣行レポートPNGのプレビュー' })).toBeVisible()
-  const [download] = await Promise.all([page.waitForEvent('download'), panel.getByRole('button', { name: '画像で保存', exact: true }).click()])
+  const [download] = await Promise.all([page.waitForEvent('download'), panel.getByRole('button', { name: 'サマリー画像を保存', exact: true }).click()])
   const path = info.outputPath('rc38-tea-summary.png'); await download.saveAs(path)
   expect((await readFile(path)).subarray(0, 8).toString('hex')).toBe('89504e470d0a1a0a')
 })

@@ -5,6 +5,7 @@ import { db, lostDistanceLabels, observationLabel } from '../db/database'
 import { catchZoneKey, buildCatchSummary, buildTripTimeline, formatTimelineTime, layoutTimelineMarkers, markerLabels, markerSymbols, type TimelineEvent, type TimelineMarker } from '../utils/tripTimeline'
 import HourlyCatchChart from './HourlyCatchChart.vue'
 import WeatherAttribution from './WeatherAttribution.vue'
+import TimelineImageExport from './TimelineImageExport.vue'
 
 const props = defineProps<{ trip: FishingTrip; catches: CatchRecord[]; events: TimelineEvent[]; hours: TripWeatherHour[]; requests: TripWeatherRequest[]; location?: TripWeatherLocation; weatherError?: string }>()
 const showWeather = ref(true)
@@ -18,6 +19,8 @@ watch(() => [props.trip.id,props.trip.facilityId,props.catches], async () => {
   catch { if (request === ownershipRequest) zoneFacilities.value = new Map() }
 }, { immediate:true })
 const model = computed(() => buildTripTimeline(props.trip, props.catches, props.events, props.hours, zone.value, includeUnset.value,zoneFacilities.value))
+const imageScope = computed(() => zone.value === 'all' ? 'すべてのエリア' : zone.value === 'unset' ? 'エリア未設定のみ'
+  : `${model.value.zones.find(item => item.key === zone.value)?.label ?? '選択中のエリア'}${includeUnset.value ? '（未設定を含む）' : ''}`)
 const chronological = computed(() => [...model.value.markers, ...model.value.outside, ...model.value.unknown]
   .sort((a, b) => (a.timestamp ?? Infinity) - (b.timestamp ?? Infinity) || a.key.localeCompare(b.key)))
 const summary = computed(() => buildCatchSummary(props.trip, props.catches, zone.value, includeUnset.value,zoneFacilities.value,
@@ -123,6 +126,7 @@ watch(model, value => {
     </div></details>
     <p v-if="chronological.some(m => m.kind === 'weather')">☁ は手入力の観測記録です。以下の出典は取得した気温データに適用されます。</p>
     <WeatherAttribution />
+    <TimelineImageExport :trip="trip" :model="model" :scope="imageScope" :weather-error="weatherError" />
     <details><summary>釣果・イベントの時系列一覧</summary>
       <ol aria-label="釣果・イベントの時系列一覧"><li v-for="marker in chronological" :key="marker.key">
         <button type="button" @click="select(marker)">{{ markerTitle(marker) }}</button>
