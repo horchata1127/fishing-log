@@ -70,5 +70,7 @@ ID128のF/SS、既存3色の限定区分、Petit DR-F重量、全世界の旧色
 - 開始main / origin/main: `23e0774`、RC37 [PR #37](https://github.com/horchata1127/fishing-log/pull/37) マージ済み。
 - 作業ブランチ: `feature/rc38-moca-dr-f-rattle`。
 - 元依頼・原本バックアップ・既存の未追跡資料・`MyLuresScreen.backup.vue` はコミット対象外。
-- コミットとDraft PRの実情報は作成後に本節へ追記する。
+- 実装・検証コミット: `a375ffa18712dbde26366969a2d224d8beafbce8`（`feat(rc38): separate MOCA DR rattle types and supplement verified colors`）。
+- Draft PR: [#38](https://github.com/horchata1127/fishing-log/pull/38)、base=`main`、head=`feature/rc38-moca-dr-f-rattle`。open / draftで作成、未マージ。
+- 本Git情報の追記は後続docsコミット。最終HEADは同PRのコミット一覧で確認できる。
 - レビュー担当: ユーザー本人（GitHub: `horchata1127`）・ようこちゃん。承認前にマージしない。自己レビュー依頼の代わりにPR本文へ共同レビュー待ちを明記する。
