@@ -1,0 +1,406 @@
+{
+  "checkedAt": "2026-11-04",
+  "inputSha256": "bbced67dc4fc321897c4ce5e76522b161cc9b933cd5747b89ee542e44f2343e1",
+  "backupVersion": 9,
+  "totals": {
+    "addedModels": 2,
+    "addedColors": 26,
+    "retainedColors": 0,
+    "heldColors": 0
+  },
+  "ambiguousModel": {
+    "name": "MOCA DR Rattle 2HOOK",
+    "seriesId": 91,
+    "category": "クランク",
+    "id": 128
+  },
+  "ambiguousColors": [
+    {
+      "colorName": "うぐいすもち",
+      "modelId": 128,
+      "id": 300
+    },
+    {
+      "colorName": "さくらもち",
+      "modelId": 128,
+      "id": 301
+    },
+    {
+      "colorName": "寿",
+      "modelId": 128,
+      "id": 302
+    }
+  ],
+  "targets": [
+    {
+      "model": "MOCA DR-F Rattle 2HOOK",
+      "weightG": 2.1,
+      "lengthMm": 30,
+      "buoyancy": "F",
+      "rattle": "rattle",
+      "colors": [
+        {
+          "name": "19早乙女",
+          "code": "34",
+          "jan": "4573151272276",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=184665235",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "20井野",
+          "code": "35",
+          "jan": "4573151272283",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=184665281",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "24ノブ",
+          "code": "36",
+          "jan": "4573151272290",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=184665342",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "ラーテル",
+          "code": "37",
+          "jan": "",
+          "sourceUrl": "https://www.backlash.co.jp/item/4573151272276/",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "FOCUSオリーブ",
+          "code": "38",
+          "jan": "4573151272313",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=184665432",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "21ノブ",
+          "code": "43",
+          "jan": "",
+          "sourceUrl": "https://www.backlash.co.jp/item/4573151272276/",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "フォーカスおまめ",
+          "code": "44",
+          "jan": "",
+          "sourceUrl": "https://www.backlash.co.jp/item/4573151272276/",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "RCポテトヘッド",
+          "code": "",
+          "jan": "4573151265711",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=179903731",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "19ノブ",
+          "code": "",
+          "jan": "4573151265698",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=179903727",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "クリアー(マット)",
+          "code": "",
+          "jan": "4573151255927",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=171853453",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "さちおの茶",
+          "code": "",
+          "jan": "4573151245423",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=156192039",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "黒まんじゅう",
+          "code": "",
+          "jan": "4573151236445",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=146121715",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "2015 ノブ",
+          "code": "",
+          "jan": "4573151232638",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=139676373",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "蛍光ピンク",
+          "code": "",
+          "jan": "4573151232621",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=139676366",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "2014 ノブ",
+          "code": "",
+          "jan": "4573151232614",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=139676354",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "黄/緑",
+          "code": "",
+          "jan": "4573151232607",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=139676333",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "キラキラ",
+          "code": "",
+          "jan": "4573151232591",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=139676319",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "S.M VI",
+          "code": "",
+          "jan": "4573151232553",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=139676302",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "K.FⅢ（レッドグロー）",
+          "code": "",
+          "jan": "4573151232546",
+          "sourceUrl": "https://fishing-shop-jh.com/?pid=139676267",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "model": "MOCA DR-SS Rattle 2HOOK",
+      "weightG": 2.4,
+      "lengthMm": 30,
+      "buoyancy": "SS",
+      "rattle": "rattle",
+      "colors": [
+        {
+          "name": "19早乙女",
+          "code": "34",
+          "jan": "",
+          "sourceUrl": "https://www.backlash.co.jp/item/4573151272320/",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "20井野",
+          "code": "35",
+          "jan": "",
+          "sourceUrl": "https://www.backlash.co.jp/item/4573151272320/",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "24ノブ",
+          "code": "36",
+          "jan": "",
+          "sourceUrl": "https://www.backlash.co.jp/item/4573151272320/",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "ラーテル",
+          "code": "37",
+          "jan": "",
+          "sourceUrl": "https://www.backlash.co.jp/item/4573151272320/",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "FOCUSオリーブ",
+          "code": "38",
+          "jan": "",
+          "sourceUrl": "https://www.backlash.co.jp/item/4573151272320/",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "21ノブ",
+          "code": "43",
+          "jan": "",
+          "sourceUrl": "https://www.backlash.co.jp/item/4573151272320/",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        },
+        {
+          "name": "フォーカスおまめ",
+          "code": "44",
+          "jan": "",
+          "sourceUrl": "https://www.backlash.co.jp/item/4573151272320/",
+          "colorClass": "standard",
+          "action": "add",
+          "reason": ""
+        }
+      ]
+    }
+  ],
+  "trips": [
+    {
+      "id": 15,
+      "summaryMvp": null
+    }
+  ],
+  "candidates": [
+    {
+      "id": 40,
+      "tripId": 15,
+      "caughtAt": "2026-11-03T02:15:10.857Z",
+      "resultType": "lost",
+      "before": {
+        "lureId": 8623,
+        "lureVariantId": 318,
+        "lureName": "MOCA SR-SS",
+        "lureColor": "#23 2015ノブカラー"
+      },
+      "proposed": {
+        "lureName": "MOCA DR-F Rattle 2HOOK",
+        "lureColor": "さちおの茶",
+        "ids": "適用先端末で作成されたvariantと所有IDを通常編集画面で選択"
+      },
+      "status": "別カラー・別所有ID。変更対象と断定せず個別確認"
+    },
+    {
+      "id": 41,
+      "tripId": 15,
+      "caughtAt": "2026-11-03T03:50:51.777Z",
+      "resultType": "catch",
+      "before": {
+        "lureId": 8624,
+        "lureVariantId": 324,
+        "lureName": "MOCA SR-SS",
+        "lureColor": "#31 19ノブ"
+      },
+      "proposed": {
+        "lureName": "MOCA DR-F Rattle 2HOOK",
+        "lureColor": "さちおの茶",
+        "ids": "適用先端末で作成されたvariantと所有IDを通常編集画面で選択"
+      },
+      "status": "4キャッチと同じ所有IDの関連バラシ候補。本人確認後に個別編集"
+    },
+    {
+      "id": 42,
+      "tripId": 15,
+      "caughtAt": "2026-11-03T03:53:30.956Z",
+      "resultType": "lost",
+      "before": {
+        "lureId": 8624,
+        "lureVariantId": 324,
+        "lureName": "MOCA SR-SS",
+        "lureColor": "#31 19ノブ"
+      },
+      "proposed": {
+        "lureName": "MOCA DR-F Rattle 2HOOK",
+        "lureColor": "さちおの茶",
+        "ids": "適用先端末で作成されたvariantと所有IDを通常編集画面で選択"
+      },
+      "status": "4キャッチと同じ所有IDの関連バラシ候補。本人確認後に個別編集"
+    },
+    {
+      "id": 43,
+      "tripId": 15,
+      "caughtAt": "2026-11-03T03:56:05.471Z",
+      "resultType": "catch",
+      "before": {
+        "lureId": 8624,
+        "lureVariantId": 324,
+        "lureName": "MOCA SR-SS",
+        "lureColor": "#31 19ノブ"
+      },
+      "proposed": {
+        "lureName": "MOCA DR-F Rattle 2HOOK",
+        "lureColor": "さちおの茶",
+        "ids": "適用先端末で作成されたvariantと所有IDを通常編集画面で選択"
+      },
+      "status": "4キャッチと同じ所有IDの関連バラシ候補。本人確認後に個別編集"
+    },
+    {
+      "id": 44,
+      "tripId": 15,
+      "caughtAt": "2026-11-03T04:28:25.104Z",
+      "resultType": "catch",
+      "before": {
+        "lureId": 8624,
+        "lureVariantId": 324,
+        "lureName": "MOCA SR-SS",
+        "lureColor": "#31 19ノブ"
+      },
+      "proposed": {
+        "lureName": "MOCA DR-F Rattle 2HOOK",
+        "lureColor": "さちおの茶",
+        "ids": "適用先端末で作成されたvariantと所有IDを通常編集画面で選択"
+      },
+      "status": "4キャッチと同じ所有IDの関連バラシ候補。本人確認後に個別編集"
+    },
+    {
+      "id": 45,
+      "tripId": 15,
+      "caughtAt": "2026-11-03T04:36:26.724Z",
+      "resultType": "catch",
+      "before": {
+        "lureId": 8624,
+        "lureVariantId": 324,
+        "lureName": "MOCA SR-SS",
+        "lureColor": "#31 19ノブ"
+      },
+      "proposed": {
+        "lureName": "MOCA DR-F Rattle 2HOOK",
+        "lureColor": "さちおの茶",
+        "ids": "適用先端末で作成されたvariantと所有IDを通常編集画面で選択"
+      },
+      "status": "4キャッチと同じ所有IDの関連バラシ候補。本人確認後に個別編集"
+    }
+  ],
+  "automaticCatchEdits": false,
+  "automaticOwnership": false
+}

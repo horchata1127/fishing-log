@@ -524,16 +524,18 @@ test('backup rejects mismatched owned and catalog references even when both IDs 
   assert.throws(() => validateBackup(backup), /一致しません/)
 })
 
-test('new manual ownership registration marks owned and preserves duplicate-individual design', async t => {
+test('ownership registration reuses an owned lure by default; explicit separate individuals remain possible', async t => {
   t.mock.method(console, 'warn', () => {}) // setup単体ではonMountedが登録されない。
   t.mock.method(console, 'log', () => {})
   const state = myLuresScreen.setup({}, { expose() {}, emit() {} })
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 3; i++) {
     state.manufacturerName.value = 'Maker'
     state.seriesName.value = 'Series'
     state.modelName.value = 'Model'
     state.colorName.value = 'Color'
+    state.addAnotherIndividual.value = i === 2
     await state.addMyLure()
+    assert.equal((await db.myLures.toArray()).filter(row => row.ownershipStatus === 'owned').length, i === 2 ? 2 : 1)
   }
   const rows = await db.myLures.toArray()
   const owned = rows.filter(row => row.ownershipStatus === 'owned')

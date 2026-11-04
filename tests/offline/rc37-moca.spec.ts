@@ -22,6 +22,9 @@ test('MOCA supplementation applies offline and survives persistent cold restart 
     await checkMaster(page); await applyMaster(page)
     const saved = await offlineState(page)
     expect(saved.lureVariants!.filter(v => v.catalogEvidence?.revision === 'RC37')).toHaveLength(180)
+    expect(saved.lureVariants!.filter(v => v.catalogEvidence?.revision === 'RC38')).toHaveLength(26)
+    const floating = saved.lureModels!.find(m => m.name === 'MOCA DR-F Rattle 2HOOK')!
+    expect(saved.lureVariants!.find(v => v.modelId === floating.id && v.colorName === 'さちおの茶')!.catalogEvidence.jan).toBe('4573151245423')
     for (const [table, rows] of Object.entries(before)) {
       expect(saved[table]).toEqual(expect.arrayContaining(rows))
       if (!['lureManufacturers', 'lureSeries', 'lureModels', 'lureVariants', 'lureVisualProfiles', 'lureMasterImportHistory'].includes(table)) expect(saved[table]).toEqual(rows)
