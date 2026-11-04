@@ -86,4 +86,6 @@ E2Eではプレビュー生成・保存・共有・失敗再試行・フィル�
 
 - ベース: `origin/main` / `6a425c6`、RC38 [PR #38](https://github.com/horchata1127/fishing-log/pull/38) マージ済み。
 - ブランチ: `feature/rc39-timeline-image-export`。
-- コミット・Draft PRの情報は作成後に追記する。ユーザー承認前にマージしない。
+- 実装コミット: `36ad85b1b11def963bd64d9ef59d9b23f723c261`（`feat(rc39): export trip timelines as standalone PNG images`）。
+- Draft PR: [#39](https://github.com/horchata1127/fishing-log/pull/39)、base=`main`、head=`feature/rc39-timeline-image-export`。open / draftで作成、未マージ。
+- 本Git情報の追記は後続docsコミット。同PRのコミット一覧に最終HEADを記録する。ユーザー本人・ようこちゃんの共同レビュー待ちで、承認前にマージしない。
