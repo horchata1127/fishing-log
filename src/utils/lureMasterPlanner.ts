@@ -111,12 +111,13 @@ function findColor(variants: LureVariant[], all: LureVariant[], c: MasterColor, 
 
 function variantValue(t: MasterTarget, c: MasterColor, modelId: number): LureVariant {
   // The unified apply persists provenance for new legacy-pack colors too. Existing variants remain untouched.
-  const revision = c.sources.find(s => ['RC22', 'RC28', 'RC30', 'RC31', 'RC33', 'RC37'].includes(s.revision))?.revision ?? c.sources.at(-1)!.revision
+  const revision = c.sources.some(s => s.revision === 'RC38') ? 'RC38' : c.sources.find(s => ['RC22', 'RC28', 'RC30', 'RC31', 'RC33', 'RC37'].includes(s.revision))?.revision ?? c.sources.at(-1)!.revision
   return { modelId, colorName: c.label,
     catalogEvidence: {
       revision, colorClass: c.colorClass, sourceTier: c.sourceTier,
       manufacturerUrl: c.manufacturerUrl, retailerUrl: c.retailerUrl, jan: c.jan, originalName: c.name,
       ...(revision === 'RC37' ? { verified: c.verified, checkedAt: '2026-11-03', verificationStatus: 'retailer-confirmed' } : {}),
+      ...(revision === 'RC38' ? { verified: c.verified, checkedAt: '2026-11-04', verificationStatus: 'retailer-confirmed' } : {}),
       ...(revision === 'RC22' ? {} : { colorCode: c.code, weightG: t.weight, lengthMm: t.length,
         buoyancy: t.buoyancy, rattle: t.rattle, productUrl: revision === 'RC33' ? c.sourceUrl : t.sourceUrl }),
     },
@@ -164,7 +165,7 @@ export function planLureMaster(snapshot: LureMasterSnapshot, options: LureMaster
         if (!maker && !t.allowNewManufacturer) throw new Error('対象メーカーが見つかりません')
         let parent = one(s.lureSeries.filter(p => maker && p.manufacturerId === maker.id && matches(p.name, t.series, t.seriesAliases, t)), t.series)
         const parentIds = new Set(s.lureSeries.filter(p => maker && p.manufacturerId === maker.id).map(p => p.id))
-        if (t.blockedModelAliases?.length && s.lureModels.some(m => parentIds.has(m.seriesId) &&
+        if (!t.preserveAmbiguousModel && t.blockedModelAliases?.length && s.lureModels.some(m => parentIds.has(m.seriesId) &&
           t.blockedModelAliases!.some(alias => key(m.name, t) === key(alias, t)))) throw new Error('既存のMOCA DR RattleはF/SS未確認です。モデルの同一性を確認してください')
         if (s.lureModels.some(m => parentIds.has(m.seriesId) && m.seriesId !== parent?.id && matches(m.name, t.model, t.modelAliases, t))) throw new Error('同名モデルが別シリーズにあります')
         let model = one(s.lureModels.filter(m => parent && m.seriesId === parent.id && matches(m.name, t.model, t.modelAliases, t)), t.model)

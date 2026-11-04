@@ -7,8 +7,9 @@ import { rc30Catalog, rc30Pending } from './rc30Catalog'
 import { rc31Catalog } from './rc31Catalog'
 import { rc33Catalog } from './rc33Catalog'
 import { rc37Catalog, rc37Pending } from './rc37Catalog'
+import { rc38Catalog } from './rc38Catalog'
 
-export type CatalogRevision = 'RC19' | 'RC20' | 'RC21' | 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33' | 'RC37'
+export type CatalogRevision = 'RC19' | 'RC20' | 'RC21' | 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33' | 'RC37' | 'RC38'
 export type MatchingRule = 'legacy' | 'barbie' | 'classified' | 'palms' | 'rc33' | 'moca'
 interface InputColor {
   name: string; code: string; label?: string; aliases?: readonly string[]; sourceUrl?: string
@@ -23,6 +24,7 @@ interface InputTarget {
   allowNewModel?: boolean; productVerified?: boolean; holdReason?: string; reuseWithoutWeight?: boolean
   buoyancy?: string; rattle?: string
   blockedModelAliases?: readonly string[]
+  preserveAmbiguousModel?: boolean
 }
 export interface MasterColor {
   name: string; code: string; label: string; aliases: string[]; colorClass: string; jan: string
@@ -39,6 +41,7 @@ export interface MasterTarget {
   allowNewManufacturer: boolean; allowNewModel: boolean; requireWeight: boolean
   productVerified: boolean; holdReason: string; colors: MasterColor[]
   blockedModelAliases?: string[]
+  preserveAmbiguousModel?: boolean
 }
 export interface MasterManifest {
   masterVersion: string; matchingVersion: number; targets: MasterTarget[]
@@ -65,14 +68,15 @@ const barbieProducts = [
 
 function adapt(t: InputTarget, revision: CatalogRevision): MasterTarget {
   const rule: MatchingRule = revision === 'RC22' ? 'barbie' : revision === 'RC28' || revision === 'RC30' ? 'classified'
-    : revision === 'RC31' ? 'palms' : revision === 'RC33' ? 'rc33' : revision === 'RC37' ? 'moca' : 'legacy'
+    : revision === 'RC31' ? 'palms' : revision === 'RC33' ? 'rc33' : ['RC37', 'RC38'].includes(revision) ? 'moca' : 'legacy'
   return {
     key: targetKey(t), manufacturer: t.manufacturer, series: t.series, model: t.model, weight: t.weight,
     length: t.length, manufacturerAliases: [...t.manufacturerAliases], seriesAliases: [...t.seriesAliases], modelAliases: [...t.modelAliases],
     ...(t.blockedModelAliases?.length ? { blockedModelAliases: [...t.blockedModelAliases] } : {}),
+    ...(t.preserveAmbiguousModel ? { preserveAmbiguousModel: true } : {}),
     category: (t.category ?? 'スプーン') as LureCategory, actionType: t.actionType, buoyancy: t.buoyancy, rattle: t.rattle,
     sourceUrl: t.sourceUrl ?? t.colors[0]?.sourceUrl ?? '', rule, revisions: [revision],
-    allowNewManufacturer: ['RC19', 'RC31', 'RC33', 'RC37'].includes(revision),
+    allowNewManufacturer: ['RC19', 'RC31', 'RC33', 'RC37', 'RC38'].includes(revision),
     allowNewModel: t.allowNewModel ?? true,
     requireWeight: revision === 'RC21' || revision === 'RC22' || (rule === 'classified' && !t.reuseWithoutWeight),
     productVerified: (t.productVerified ?? true) && (revision !== 'RC22' || barbieProducts.some(([name, type, weight]) =>
@@ -95,7 +99,9 @@ function merge(existing: MasterTarget, incoming: MasterTarget) {
   const rc21Extension = existing.revisions.includes('RC20') && incoming.revisions[0] === 'RC21'
   const rc19Extension = existing.revisions.includes('RC19') && incoming.revisions[0] === 'RC20'
   const rc33Enrichment = existing.revisions.includes('RC31') && incoming.revisions[0] === 'RC33' && existing.model === 'GA-24S'
-  if (!(rc21Extension || rc19Extension || rc33Enrichment)) throw new Error(`未確認のRC間重複: ${incoming.key}`)
+  const rc38Enrichment = existing.revisions.includes('RC37') && incoming.revisions[0] === 'RC38' &&
+    ['MOCA DR-F Rattle 2HOOK', 'MOCA DR-SS Rattle 2HOOK'].includes(existing.model)
+  if (!(rc21Extension || rc19Extension || rc33Enrichment || rc38Enrichment)) throw new Error(`未確認のRC間重複: ${incoming.key}`)
   for (const field of ['weight', 'length', 'actionType'] as const) {
     if (existing[field] !== undefined && incoming[field] !== undefined && existing[field] !== incoming[field]) throw new Error(`マニフェスト属性矛盾: ${field}`)
   }
@@ -106,6 +112,7 @@ function merge(existing: MasterTarget, incoming: MasterTarget) {
     existing.productVerified = incoming.productVerified
   }
   existing.revisions.push(...incoming.revisions)
+  if (rc38Enrichment) existing.preserveAmbiguousModel = incoming.preserveAmbiguousModel
   for (const field of ['manufacturerAliases', 'seriesAliases', 'modelAliases'] as const) existing[field] = union(existing[field], incoming[field])
   for (const color of incoming.colors) {
     const found = existing.colors.find(c => colorKey(c) === colorKey(color))
@@ -114,6 +121,7 @@ function merge(existing: MasterTarget, incoming: MasterTarget) {
     const sources = [...found.sources, ...color.sources], aliases = union([...found.aliases, found.label], color.aliases)
     // RC20 supplies the official RC19 label; RC33 enriches the PALMS entry without changing its spelling/rule.
     if (rc19Extension) Object.assign(found, color)
+    if (rc38Enrichment) Object.assign(found, color)
     if (rc33Enrichment) Object.assign(found, { purchase: color.purchase, appearance: color.appearance, imageUrl: color.imageUrl })
     found.sources = sources; found.aliases = aliases
   }
@@ -134,7 +142,7 @@ export function validateLureMasterManifest(manifest: MasterManifest): void {
   }
 }
 
-function buildManifest(): MasterManifest {
+export function buildManifest(includeRC38 = true): MasterManifest {
   const hunt = rc20Catalog[0]!
   const rc19: InputTarget = { ...hunt, colors: [
     { code: 'T-15', name: 'シルバー', label: 'T-15 シルバー（SILVER）', aliases: ['シルバー', 'silver'] },
@@ -144,16 +152,21 @@ function buildManifest(): MasterManifest {
     ['RC19', [rc19]], ['RC20', rc20Catalog], ['RC21', rc21Catalog], ['RC22', rc22Catalog],
     ['RC28', rc28Catalog], ['RC30', rc30Catalog], ['RC31', rc31Catalog], ['RC33', rc33Catalog], ['RC37', rc37Catalog],
   ]
+  if (includeRC38) packs.push(['RC38', rc38Catalog])
   const targets = new Map<string, MasterTarget>()
   for (const [revision, pack] of packs) for (const input of pack) {
     const target = adapt(input, revision), existing = targets.get(target.key)
     if (existing) merge(existing, target)
     else targets.set(target.key, target)
   }
-  const manifest: MasterManifest = { masterVersion: 'RC37-moca-2026-11-03', matchingVersion: 2, targets: [...targets.values()],
+  const manifest: MasterManifest = { masterVersion: includeRC38 ? 'RC38-moca-rattle-2026-11-04' : 'RC37-moca-2026-11-03', matchingVersion: includeRC38 ? 3 : 2, targets: [...targets.values()],
     pending: [...rc28Pending.map(detail => ({ revision: 'RC28' as const, detail: structuredClone(detail) })),
       ...rc30Pending.map(detail => ({ revision: 'RC30' as const, detail: structuredClone(detail) })),
-      ...rc37Pending.map(detail => ({ revision: 'RC37' as const, detail: structuredClone(detail) }))] }
+      ...rc37Pending.map(detail => ({ revision: 'RC37' as const, detail: includeRC38 && detail.name === 'MOCA DR Rattle 2HOOK'
+        ? { ...detail, reason: '既存ID・名称・カラーを型式不明のまま保持。RC38で型式確定済みDR-F/DR-SSラトルを別モデルとして追加。既存個体の型式同定は引き続き保留。' }
+        : includeRC38 && detail.name.startsWith('2026-11-03 多摩湖MVP')
+          ? { ...detail, name: '2026-11-03 多摩湖MVP 再指定待ち', reason: 'RC38の本人申告でDR-Fラトル／さちおの茶と確定。釣果の個別確認・編集後、通常サマリー画面でMVPを再指定する。自動変更しない。' }
+        : structuredClone(detail) }))] }
   validateLureMasterManifest(manifest)
   return manifest
 }

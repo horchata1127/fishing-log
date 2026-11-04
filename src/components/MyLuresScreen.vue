@@ -14,6 +14,7 @@ const emit = defineEmits<{
   back: []
   selectLure: [id: number]
 }>()
+const addAnotherIndividual = ref(false)
 
 interface MyLureView {
   myLure: MyLure
@@ -367,11 +368,10 @@ async function addMyLure() {
           color
         )
 
-        await db.myLures.add({
-          variantId,
-          active: true,
-          ownershipStatus: 'owned',
-        })
+        const existing = await db.myLures.where('variantId').equals(variantId).toArray()
+        if (addAnotherIndividual.value || !existing.some(isUsableOwnedLure)) {
+          await db.myLures.add({ variantId, active: true, ownershipStatus: 'owned' })
+        }
       }
     )
 
@@ -380,6 +380,7 @@ async function addMyLure() {
     modelName.value = ''
     colorName.value = ''
     activeStep.value = 'manufacturer'
+    addAnotherIndividual.value = false
 
     await loadMyLures()
     await loadCatalog()
@@ -441,6 +442,7 @@ onMounted(async () => {
         <label><span>カラー</span><input v-model="colorName" type="text" autocomplete="off" placeholder="カラー名" /></label>
       </template>
 
+      <label><input v-model="addAnotherIndividual" type="checkbox" />同じカラーの別個体として追加する</label>
       <button class="register-button" :disabled="saving" @click="addMyLure">
         {{ saving ? "登録中…" : "＋ マイルアーに登録" }}
       </button>
