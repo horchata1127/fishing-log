@@ -66,6 +66,7 @@ const editingTripInformation = ref(false)
 const myLureOptions = ref<LureOption[]>([])
 const catalogOptions = ref<LureOption[]>([])
 const recentLures = ref<RecentLure[]>([])
+const previousLureModel = ref<{ id: number; name: string }>()
 const savingCatch = ref(false)
 const restoringData = ref(false)
 const tripDeletionSummary = ref<TripDeletionSummary | null>(null)
@@ -334,10 +335,11 @@ async function recordTripEvent(type: TripEventType) {
 }
 
 async function loadMyLureOptions() {
-  const options = await loadLureChoices()
+  const options = await loadLureChoices(currentTrip.value?.id)
   myLureOptions.value = options.owned
   catalogOptions.value = options.catalog
   recentLures.value = options.recent
+  previousLureModel.value = options.previousModel
 }
 
 async function openNewTrip() {
@@ -871,6 +873,7 @@ async function tripInformationSaved(trip: FishingTrip) {
       :fish-choices="fishChoices" v-model:fish-species-id="catchFishSpeciesId" v-model:fish-size="catchFishSize"
       :tackle-sets="catchTackleOptions" v-model:tackle-set-id="catchTackleSetId"
       :catalog="catalogOptions" :recent-lures="recentLures" :selection="catchSelection" :saving="savingCatch"
+      :previous-model="previousLureModel"
       :has-previous-catch="!editingCatch && catches.length > 0" :my-lures="myLureOptions" v-model:lure-name="catchLureName"
       v-model:lure-color="catchLureColor" v-model:range="catchRange" v-model:retrieve-speed="catchRetrieveSpeed"
       v-model:action="catchAction" v-model:action-length="catchActionLength" @select-lure="selectLure" @save="saveCatch"
