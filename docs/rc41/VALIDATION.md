@@ -2,6 +2,23 @@
 
 実施日: 2026-11-15。全テストは合成データと専用origin／一時プロファイルを使用。ユーザーのバックアップファイルに対する破壊的テストは実施していない。
 
+## UI導線改善の追加検証
+
+「現在のエリア」直下へのボタン移設と、未登録時の作成導線を追加した後、次を実行した。今回の変更は画面3コンポーネントとE2E・文書のみで、DB・バックアップ・マップ保存・イベント保存処理は変更していない。
+
+- `npm.cmd run build` / `npm.cmd run test:e2e:typecheck`: 成功。
+- 下記の関連E2E: 24件成功（デスクトップ／iPhone相当Chromium）。
+- `npx.cmd playwright test -c playwright.offline.config.ts -g RC41`: 2件成功。
+- `git diff --check`: 成功。
+
+```powershell
+npx.cmd playwright test tests/e2e/rc41-navigation.spec.ts tests/e2e/rc41-area-maps.spec.ts tests/e2e/fishing-log.spec.ts tests/e2e/rc35-weather-notes.spec.ts
+```
+
+ボタンの配置順、補足の読み上げ、44px以上の高さ、12px以上の間隔、幅1280／390／320pxでの非重複・横はみ出しなしを確認。Tabでの個別フォーカス、フォーカス枠、Enter／Spaceでの起動、Escapeでの終了を確認した。未登録時の作成導線では、管理画面のキャンセルと保存の両方でメモ・日時が維持され、戻った後の候補更新・選択欄へのフォーカス・通常のイベント保存を確認した。モバイルのセクション画像も目視確認した。
+
+実機iPhone Safari／WebKitは引き続き未検証。釣行メモの競合エラーは今回の対象外であり、処理を変更していない。
+
 ## 実行結果
 
 | 検証 | 結果 |

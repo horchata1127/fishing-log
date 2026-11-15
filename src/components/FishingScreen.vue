@@ -167,6 +167,17 @@ function fishingStyleName(style: FishingStyle) {
   <button v-if="trip.endedAt" type="button" class="back-button" :disabled="locationBusy" @click="emit('editInformation')">釣行情報を編集</button>
   <p v-if="trip.weather">天気：{{ trip.weather }}</p>
   <slot name="location" />
+  <section class="card position-actions" aria-label="釣り座・エリアマップ">
+    <h2>釣り座・エリアマップ</h2>
+    <button type="button" class="position-action" aria-label="エリアマップ管理" aria-describedby="map-management-hint" :disabled="locationBusy" @click="mapManagerOpen=true">
+      <span class="position-action-icon" aria-hidden="true">🗺️</span>
+      <span><strong>エリアマップ管理</strong><small id="map-management-hint">ポンド・河川の形状や流れ込みを設定</small></span>
+    </button>
+    <button type="button" class="position-action" aria-label="釣り座を記録" aria-describedby="position-record-hint" :disabled="locationBusy" @click="openEvent(undefined,false,true)">
+      <span class="position-action-icon" aria-hidden="true">📍</span>
+      <span><strong>釣り座を記録</strong><small id="position-record-hint">登録済みマップから現在の釣り座を指定</small></span>
+    </button>
+  </section>
   <section class="card" aria-label="釣り場・施設"><h2>釣り場・施設</h2><p>現在の施設名：{{ trip.fishingAreaName }}</p><p>施設ID：{{ trip.facilityId || '未設定' }}</p><button class="back-button" type="button" :disabled="locationBusy" @click="emit('editFacility')">施設を設定・変更</button></section>
   <button
     v-if="!trip.endedAt"
@@ -241,10 +252,8 @@ function fishingStyleName(style: FishingStyle) {
 
   <TripSummaryPanel :key="trip.id" :trip="trip" :catches="catches" :events="events" :disabled="locationBusy" @saved="emit('summarySaved', $event)" />
   <TripMemoEditor :key="trip.id" :trip="trip" @saved="emit('memoSaved', $event)" />
-  <button type="button" class="back-button" :disabled="locationBusy" @click="mapManagerOpen=true">エリアマップ管理</button>
-  <button type="button" class="back-button" :disabled="locationBusy" @click="openEvent(undefined,false,true)">釣り座を記録</button>
   <AreaMapManager v-if="mapManagerOpen" :facility-id="trip.facilityId" :trip-id="trip.id" @close="mapManagerOpen=false;emit('mapsChanged')" />
-  <TripEventEditor v-if="eventEditorOpen" :position="positionEditor" :previous-position="previousPosition" :weather="weatherEditor" :previous="previousObservation" :trip="trip" :event="editingEvent" @saved="eventSaved" @cancel="eventEditorOpen = false" />
+  <TripEventEditor v-if="eventEditorOpen" :position="positionEditor" :previous-position="previousPosition" :weather="weatherEditor" :previous="previousObservation" :trip="trip" :event="editingEvent" @maps-changed="emit('mapsChanged')" @saved="eventSaved" @cancel="eventEditorOpen = false" />
   <TripTimeline :key="trip.id" :trip="trip" :catches="catches" :events="events" :hours="timelineWeather.hours" :requests="timelineWeather.requests" :location="timelineWeather.location" :weather-error="timelineWeatherError" />
   <TripWeatherPanel :key="trip.id" :trip="trip" @loaded="timelineWeather = $event; timelineWeatherError = ''" @load-error="timelineWeatherError = $event" />
 
@@ -339,6 +348,19 @@ function fishingStyleName(style: FishingStyle) {
 </template>
 
 <style scoped>
+.position-actions { display: grid; gap: 12px; }
+.position-actions h2 { margin: 0 0 4px; }
+.position-action {
+  display: flex; align-items: center; gap: 12px; width: 100%; min-width: 0;
+  min-height: 64px; padding: 14px; border: 1px solid #b5cdc3; border-radius: 12px;
+  background: #f2f8f5; color: #17212b; text-align: left; font: inherit; cursor: pointer;
+}
+.position-action > span:last-child { min-width: 0; overflow-wrap: anywhere; }
+.position-action strong, .position-action small { display: block; }
+.position-action small { margin-top: 4px; color: #52606b; line-height: 1.5; }
+.position-action-icon { flex: 0 0 auto; font-size: 24px; }
+.position-action:focus-visible { outline: 3px solid #126652; outline-offset: 3px; }
+.position-action:disabled { opacity: .55; cursor: default; }
 .header {
   display: flex;
   align-items: center;

@@ -3,9 +3,11 @@ import { onMounted, ref, toRaw } from 'vue'
 import { db, type FishingTrip, type TripEvent, type FishingPosition, type WeatherObservation } from '../db/database'
 import { eventDateTime, saveTripEvent, type EventInput } from '../utils/tripEvents'
 import FishingPositionInput from './FishingPositionInput.vue'
+import AreaMapManager from './AreaMapManager.vue'
 import WeatherObservationInput from './WeatherObservationInput.vue'
 const props = defineProps<{ trip: FishingTrip; event?: TripEvent; weather?: boolean; previous?: WeatherObservation; position?: boolean; previousPosition?: FishingPosition }>()
-const emit = defineEmits<{ saved: []; cancel: [] }>()
+const emit = defineEmits<{ saved: []; cancel: []; mapsChanged: [] }>()
+const mapManagerOpen = ref(false), mapRefresh = ref(0)
 const trip = structuredClone(toRaw(props.trip)), original = props.event ? structuredClone(toRaw(props.event)) : undefined
 const initialOccurredAt = trip.endedAt ? new Date(trip.startedAt) : new Date()
 const draft = ref<EventInput>({ type: original?.type ?? (props.position ? 'position' : props.weather ? 'weather' : 'stocking'), dateTime: original ? original.timePrecision === 'unknown' ? '' : eventDateTime(new Date(original.occurredAt)) : trip.endedAt ? eventDateTime(new Date(Math.ceil(new Date(trip.startedAt).getTime() / 60000) * 60000)) : eventDateTime(new Date()), fishingPosition: original?.fishingPosition ?? (!original && props.position && props.previousPosition?.snapshot.facilityId===trip.facilityId ? props.previousPosition : undefined), weatherObservation: original?.weatherObservation, note: original?.note ?? '', zoneId: original?.zoneId ?? (props.position && props.previousPosition?.snapshot.facilityId===trip.facilityId ? props.previousPosition?.snapshot.zoneId : '') ?? '' })
@@ -31,13 +33,14 @@ async function save() {
       <label>イベント種別<select v-model="draft.type" :disabled="busy"><option value="stocking">放流</option><option value="pellet">ペレット</option><option value="weather">気象・環境</option><option value="position">釣り座移動</option></select></label>
       <label>発生日時（日本時間）<input v-model="draft.dateTime" type="datetime-local" required :disabled="busy" /></label>
       <WeatherObservationInput v-if="draft.type === 'weather'" v-model="draft.weatherObservation" :previous="previous" :disabled="busy" />
-      <FishingPositionInput v-if="draft.type==='position'" :facility-id="trip.facilityId" :model-value="draft.fishingPosition" :disabled="busy" @update:model-value="draft.fishingPosition=$event;draft.zoneId=$event?.snapshot.zoneId??''" />
+      <FishingPositionInput v-if="draft.type==='position'" :facility-id="trip.facilityId" :model-value="draft.fishingPosition" :disabled="busy" :refresh-key="mapRefresh" @create-map="mapManagerOpen=true" @update:model-value="draft.fishingPosition=$event;draft.zoneId=$event?.snapshot.zoneId??''" />
       <label v-else>対象エリア<select v-model="draft.zoneId" :disabled="busy"><option value="">指定なし</option><option v-if="original?.zoneId && !zones.some(z => z.id === original?.zoneId)" :value="original.zoneId">{{ original.zoneName || original.zoneId }}（保存済み）</option><option v-for="zone in zones" :key="zone.id" :value="zone.id">{{ zone.name }}</option></select></label>
       <label>メモ<textarea v-model="draft.note" rows="3" :disabled="busy" /></label>
       <p v-if="error" role="alert">{{ error }}</p>
       <button type="submit" :disabled="busy">保存</button>
       <button type="button" :disabled="busy" @click="emit('cancel')">キャンセル</button>
     </form>
+    <AreaMapManager v-if="mapManagerOpen" :facility-id="trip.facilityId" :trip-id="trip.id" @close="mapManagerOpen=false;mapRefresh++;emit('mapsChanged')" />
   </dialog>
 </template>
 <style scoped>
