@@ -11,6 +11,7 @@ const path=computed(()=>props.map.outline.map((p,i)=>`${i?'L':'M'}${p.x} ${p.y}`
 const displayFeatures=computed(()=>[...props.map.features].sort((a,b)=>Number(a.id===props.selectedFeature)-Number(b.id===props.selectedFeature)))
 const spot=computed(()=>props.anchor?shorePoint(props.map.outline,props.anchor):undefined)
 const angle=computed(()=>(props.castDirection??0)*Math.PI/180)
+const northRadians=computed(()=>(props.map.northAngle??0)*Math.PI/180)
 const pointers=new Map<number,{x:number;y:number}>()
 let start={x:0,y:0}, last={x:0,y:0}, drag='', moved=false, pinchDistance=0
 const length=()=>{const a=[...pointers.values()];return a.length<2?0:Math.hypot(a[1]!.x-a[0]!.x,a[1]!.y-a[0]!.y)}
@@ -68,7 +69,8 @@ function featureArrow(segment:number,t:number,type:string){
       <button type="button" aria-label="マップを上へ" @click="pan(0,-.15)">↑</button><button type="button" aria-label="マップを下へ" @click="pan(0,.15)">↓</button>
       <button type="button" @click="zoom=1;vx=0;vy=0">全体表示</button>
     </div>
-    <svg ref="svg" :viewBox="view" role="img" :aria-label="`${map.name}のエリアマップ`" :class="{interactive:mode!=='view'}" @pointerdown="down" @pointermove="move" @pointerup="up" @pointercancel="pointers.delete($event.pointerId)">
+    <div class="map-viewport">
+    <svg ref="svg" class="map-water" :viewBox="view" role="img" :aria-label="`${map.name}のエリアマップ`" :class="{interactive:mode!=='view'}" @pointerdown="down" @pointermove="move" @pointerup="up" @pointercancel="pointers.delete($event.pointerId)">
       <defs><marker :id="`arrow-${map.id}`" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke" /></marker></defs>
       <path :d="path" fill="#d9f1f7" stroke="#277185" stroke-width=".008" />
       <g v-for="feature in displayFeatures" :key="feature.id" :data-feature-id="feature.id" :data-drag="mode!=='view'&&mode!=='position'?'feature:'+feature.id:undefined">
@@ -86,11 +88,26 @@ function featureArrow(segment:number,t:number,type:string){
         <line v-if="castDirection!==undefined" :x1="spot.x" :y1="spot.y" :x2="spot.x+.16*Math.cos(angle)" :y2="spot.y+.16*Math.sin(angle)" stroke="#c53059" stroke-width=".012" :marker-end="`url(#arrow-${map.id})`" />
       </g>
     </svg>
+    <div class="map-compass" data-testid="map-compass" role="img" :aria-label="map.northAngle===undefined?'北方向：未設定（上向き0度は目安）':`北方向：${map.northAngle}度（マップ上から時計回り・手動設定）`" :data-north-angle="map.northAngle??0" :data-configured="map.northAngle!==undefined">
+      <svg class="compass-icon" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" fill="white" stroke="#bbc8cd" />
+        <g :transform="`rotate(${map.northAngle??0} 24 24)`" data-testid="compass-needle">
+          <path d="M24 13 L30 31 L24 27 L18 31 Z" :fill="map.northAngle===undefined?'#7b8790':'#126652'" />
+        </g>
+        <text :x="24+17*Math.sin(northRadians)" :y="27-17*Math.cos(northRadians)" text-anchor="middle" font-size="10" font-weight="bold" fill="#17212b">N</text>
+      </svg>
+      <span>{{ map.northAngle===undefined?'北：未設定':`北 ${map.northAngle}°` }}</span>
+      <span v-if="map.northAngle!==undefined">手動</span>
+    </div>
+    </div>
     <p v-if="mode!=='view'" class="hint">岸をタップして指定。マーカーはドラッグで調整できます。2本指で拡大・移動、背景ドラッグで移動。</p>
     <p v-if="notice" role="status">{{ notice }}</p>
   </div>
 </template>
 <style scoped>
-.map-canvas { min-width:0; } svg { display:block; width:100%; aspect-ratio:1; background:#f5f5ef; border-radius:12px; } svg.interactive { touch-action:none; user-select:none; }
+.map-canvas { min-width:0; } .map-water { display:block; width:100%; aspect-ratio:1; background:#f5f5ef; border-radius:12px; } svg.interactive { touch-action:none; user-select:none; }
+.map-viewport { position:relative; }
+.map-compass { position:absolute; top:6px; right:6px; display:grid; justify-items:center; padding:3px; border-radius:8px; background:rgb(255 255 255 / 90%); font-size:10px; line-height:1.3; color:#17212b; pointer-events:none; user-select:none; }
+.compass-icon { display:block; width:40px; height:40px; }
 .map-tools { display:flex; flex-wrap:wrap; gap:4px; margin:8px 0; }.map-tools button { min-width:44px; min-height:44px; padding:7px; border:1px solid #b5c6cc; border-radius:8px; background:white;color:#17212b; font:inherit; }.hint { font-size:12px; color:#52606b; }
 </style>

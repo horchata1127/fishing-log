@@ -11,6 +11,50 @@ import { catalogFixture } from '../e2e/fixtures'
 import { rc41Fixture } from '../rc41Fixture'
 import { createRc41Map, recordRc41Position } from '../rc41UiHelpers'
 
+test('RC41 compass persists offline and v12 retains current north separately from historical snapshots',async({},info)=>{
+  await fetch(`${origin}/__test/version?v=A`,{method:'POST'})
+  const profile=await mkdtemp(join(tmpdir(),'fishing-rc41-compass-offline-')),mobile=info.project.name.includes('mobile')
+  const launch=(offline=false)=>chromium.launchPersistentContext(profile,{serviceWorkers:'allow',offline,viewport:mobile?{width:390,height:844}:{width:1280,height:800},isMobile:mobile,hasTouch:mobile,locale:'ja-JP',timezoneId:'Asia/Tokyo'})
+  let context=await launch()
+  try{
+    let page=context.pages()[0]!
+    await page.goto(url);await ready(page);page.on('dialog',d=>d.accept())
+    await page.getByTestId('restore-backup').setInputFiles({name:'rc41-compass-synthetic.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(rc41Fixture()))})
+    await expect.poll(async()=>(await database(page)).trips!.some(r=>r.id===1)).toBe(true)
+    await context.close();context=await launch(true);page=context.pages()[0]!
+    await page.goto(url);await page.locator('.trip-row[data-trip-id="1"]').click()
+    await createRc41Map(page,'方位圏外','P01',false)
+    const setNorth=async(value:string)=>{
+      await page.getByRole('button',{name:'エリアマップ管理',exact:true}).click()
+      const manager=page.getByRole('dialog',{name:'エリアマップ管理',exact:true})
+      await manager.getByRole('button',{name:'編集：方位圏外',exact:true}).click()
+      await manager.getByLabel('北方向を設定する（手動）',{exact:true}).check()
+      await manager.getByLabel('北方向の角度（度）',{exact:true}).fill(value)
+      await manager.getByRole('button',{name:'マップを保存',exact:true}).click()
+      await expect(manager.getByRole('button',{name:'編集：方位圏外',exact:true})).toBeVisible()
+      await manager.getByRole('button',{name:'閉じる',exact:true}).click()
+    }
+    await setNorth('135');await recordRc41Position(page,'方位圏外');await setNorth('315')
+    const saved=await database(page)
+    expect(saved.tripEvents![0]!.fishingPosition.snapshot.northAngle).toBe(135)
+    await page.getByRole('button',{name:'← ホーム',exact:true}).click()
+    const [download]=await Promise.all([page.waitForEvent('download'),page.getByRole('button',{name:'📦 データをバックアップ',exact:true}).click()])
+    const path=info.outputPath('rc41-offline-compass-v12.json');await download.saveAs(path)
+    const backup=JSON.parse(await readFile(path,'utf8'));expect(backup.version).toBe(12)
+    expect(backup.data.areaMaps[0].northAngle).toBe(315);expect(backup.data.tripEvents[0].fishingPosition.snapshot.northAngle).toBe(135)
+    await context.close();context=await launch(true);page=context.pages()[0]!
+    await page.goto(url);expect(await database(page)).toEqual(saved)
+    await page.locator('.trip-row[data-trip-id="1"]').click()
+    await page.getByText('釣り座の詳細',{exact:true}).click()
+    await expect(page.locator('.event-entry').getByTestId('map-compass')).toHaveAttribute('data-north-angle','135')
+    await page.getByRole('button',{name:'エリアマップ管理',exact:true}).click()
+    const manager=page.getByRole('dialog',{name:'エリアマップ管理',exact:true})
+    await manager.getByRole('button',{name:'編集：方位圏外',exact:true}).click()
+    await expect(manager.getByLabel('北方向の角度（度）',{exact:true})).toHaveValue('315')
+    await expect(manager.getByTestId('map-compass')).toHaveAttribute('data-north-angle','315')
+  }finally{await context.close()}
+})
+
 test('RC41 home menu creates and edits a reusable map offline before any trip',async({},info)=>{
   await fetch(`${origin}/__test/version?v=A`,{method:'POST'})
   const profile=await mkdtemp(join(tmpdir(),'fishing-rc41-home-offline-')),mobile=info.project.name.includes('mobile')

@@ -121,3 +121,41 @@ test('RC41 v12 round trip, repeated restore, malformed map rollback and legacy r
  const missing=structuredClone(backup);missing.data.areaMaps=[];validateBackup(missing)
  assert.throws(()=>validateFishingPosition({...position(m),castDirection:NaN}))
 })
+
+test('RC41 north is optional, explicit zero differs from legacy absence, and old snapshots never inherit later bearings',async()=>{
+ const original=await saveAreaMap(map()),trip=await db.trips.get(1)
+ const id=await saveTripEvent(trip,{type:'position',dateTime:'2026-11-15T10:00',zoneId:original.zoneId,note:'legacy',fishingPosition:position(original)})
+ assert.equal(Object.hasOwn(original,'northAngle'),false)
+ let current=await saveAreaMap({...original,northAngle:0},original)
+ assert.equal(current.northAngle,0);assert.equal(Object.hasOwn(current,'northAngle'),true)
+ const zeroBackup=json(await createBackup());assert.equal(zeroBackup.data.areaMaps[0].northAngle,0);validateBackup(zeroBackup)
+ current=await saveAreaMap({...current,northAngle:359},current)
+ const newId=await saveTripEvent(trip,{type:'position',dateTime:'2026-11-15T11:00',zoneId:current.zoneId,note:'manual',fishingPosition:position(current)})
+ const saved=await db.tripEvents.get(id)
+ assert.equal(Object.hasOwn(saved.fishingPosition.snapshot,'northAngle'),false)
+ assert.equal((await db.tripEvents.get(newId)).fishingPosition.snapshot.northAngle,359)
+ const backup=json(await createBackup());assert.equal(backup.version,12);assert.equal(db.verno,11)
+ await importBackup({text:async()=>JSON.stringify(backup)})
+ assert.equal((await db.areaMaps.get(current.id)).northAngle,359)
+ assert.deepEqual((await db.tripEvents.get(id)).fishingPosition,saved.fishingPosition)
+ assert.equal((await db.tripEvents.get(newId)).fishingPosition.snapshot.northAngle,359)
+ const cleared={...current};delete cleared.northAngle
+ current=await saveAreaMap(cleared,current)
+ assert.equal(Object.hasOwn(current,'northAngle'),false)
+ assert.equal((await db.tripEvents.get(newId)).fishingPosition.snapshot.northAngle,359)
+})
+
+for(const value of [null,-1,360,1.5,NaN,Infinity,'90',true,false,{},[]])test(`RC41 rejects invalid north angle ${String(value)} in maps, snapshots and v12 restore without writes`,async()=>{
+ const current=await saveAreaMap({...map(),northAngle:90})
+ await saveTripEvent(await db.trips.get(1),{type:'position',dateTime:'2026-11-15T10:00',zoneId:current.zoneId,note:'snapshot validation',fishingPosition:position(current)})
+ assert.throws(()=>validateAreaMap({...current,northAngle:value}))
+ const p=position(current);p.snapshot.northAngle=value
+ assert.throws(()=>validateFishingPosition(p))
+ const before=await all()
+ await assert.rejects(saveAreaMap({...current,northAngle:value},current))
+ const backup=json(await createBackup());backup.data.areaMaps[0].northAngle=value
+ await assert.rejects(importBackup({text:async()=>JSON.stringify(backup)}))
+ backup.data.areaMaps[0].northAngle=90;backup.data.tripEvents[0].fishingPosition.snapshot.northAngle=value
+ await assert.rejects(importBackup({text:async()=>JSON.stringify(backup)}))
+ assert.deepEqual(await all(),before)
+})

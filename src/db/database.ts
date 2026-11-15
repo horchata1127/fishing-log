@@ -85,6 +85,8 @@ export interface ShoreAnchor { segment: number; t: number }
 export interface WaterFeature { id: string; type: 'inlet' | 'outlet'; anchor: ShoreAnchor; label?: string; memo?: string }
 export interface AreaMap {
   id: string; facilityId: string; zoneId: string; name: string
+  // Clockwise from map-up. Absence is unconfigured; even an explicit 0 is manual, not measured.
+  northAngle?: number
   waterType: 'pond' | 'river'; templateId: string; outline: MapPoint[]; features: WaterFeature[]
   revision: number; createdAt: string; updatedAt: string; deletedAt?: string
 }
@@ -135,6 +137,7 @@ export function validateAreaMap(value: unknown): asserts value is AreaMap {
     !new RegExp(m.waterType==='pond' ? '^P0[1-8]$' : '^R0[1-5]$').test(m.templateId) || !validMapOutline(m.outline) ||
     !Number.isSafeInteger(m.revision) || m.revision<1 || !date(m.createdAt) || !date(m.updatedAt) || m.updatedAt<m.createdAt ||
     m.deletedAt!==undefined && !date(m.deletedAt) || !Array.isArray(m.features) || m.features.length>100) throw new Error('マップの形状・名称・版情報が不正です。')
+  if (m.northAngle!==undefined && (!Number.isInteger(m.northAngle) || m.northAngle<0 || m.northAngle>359)) throw new Error('北方向は0〜359度の整数で設定してください。')
   const ids = new Set<string>()
   for (const feature of m.features) {
     if (!feature || !text(feature.id) || ids.has(feature.id) || !['inlet','outlet'].includes(feature.type) ||

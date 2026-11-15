@@ -34,6 +34,13 @@ function edit(map?:AreaMap){
   draft.value=map?copy(map):{id:crypto.randomUUID(),facilityId:facility.value,zoneId:'',name:'',waterType:'pond',templateId:'P01',outline:mapTemplate('P01'),features:[],revision:1,createdAt:now,updatedAt:now}
 }
 function update(map:AreaMap){if(!draft.value)return;history.value.push(copy(draft.value));if(history.value.length>100)history.value.shift();draft.value=map}
+function setNorth(configured:boolean){
+  const map=copy(draft.value!)
+  if(configured)map.northAngle=map.northAngle??0
+  else delete map.northAngle
+  update(map)
+}
+function changeNorth(value:string){update({...draft.value!,northAngle:value.trim()===''?NaN:Number(value)})}
 function template(id:string){if(!draft.value)return;if(draft.value.features.length&&!confirm('テンプレートを変更すると特徴物の配置を解除します。変更しますか？'))return;update({...draft.value,templateId:id,waterType:id.startsWith('P')?'pond':'river',outline:mapTemplate(id),features:[]});selectedFeature.value=''}
 function transform(kind:'rotate'|'flip'|'wider'|'taller'){try{update({...draft.value!,outline:transformMapOutline(draft.value!.outline,kind)});error.value=''}catch(e){error.value=String(e)}}
 function changeFeature(field:'label'|'memo',value:string){update({...draft.value!,features:draft.value!.features.map(f=>f.id===selectedFeature.value?{...f,[field]:value}:f)})}
@@ -70,6 +77,11 @@ function cancel(){if(busy.value)return;if(draft.value){draft.value=undefined;err
         <label v-if="!draft.zoneId">新規エリア名（必須）<input v-model="newZone" placeholder="例：奥のポンド" maxlength="100" /></label>
         <label>水域種別<select aria-label="水域種別" :value="draft.waterType" @change="template(($event.target as HTMLSelectElement).value==='pond'?'P01':'R01')"><option value="pond">ポンド</option><option value="river">河川</option></select></label>
         <label>形状テンプレート<select aria-label="形状テンプレート" :value="draft.templateId" @change="template(($event.target as HTMLSelectElement).value)"><option v-for="t in mapTemplates.filter(t=>t[0].startsWith(draft!.waterType==='pond'?'P':'R'))" :key="t[0]" :value="t[0]">{{ t[0] }} {{ t[1] }}</option></select></label>
+        <fieldset class="north-settings"><legend>マップの北方向</legend>
+          <label class="north-toggle"><input type="checkbox" :checked="draft.northAngle!==undefined" @change="setNorth(($event.target as HTMLInputElement).checked)" />北方向を設定する（手動）</label>
+          <label>北方向の角度（度）<input type="number" inputmode="numeric" min="0" max="359" step="1" :disabled="draft.northAngle===undefined" :value="draft.northAngle??0" @input="changeNorth(($event.target as HTMLInputElement).value)" /></label>
+          <p>マップ上方向が0度、時計回りに右90度・下180度・左270度。未設定の上向き表示は目安です。GPS・センサーによる実測値ではありません。</p>
+        </fieldset>
         <div class="tools"><button type="button" @click="transform('rotate')">90度回転</button><button type="button" @click="transform('flip')">左右反転</button><button type="button" @click="transform('wider')">横長に</button><button type="button" @click="transform('taller')">縦長に</button></div>
         <div class="tools" role="group" aria-label="マップ編集ツール"><button v-for="tool in ([['pan','表示移動'],['outline','詳細な形状編集'],['inlet','インレット追加'],['outlet','アウトレット追加']] as const)" :key="tool[0]" type="button" :aria-pressed="mode===tool[0]" @click="mode=tool[0]">{{ tool[1] }}</button></div>
         <AreaMapCanvas :map="draft" :mode="mode" :selected-feature="selectedFeature" @update:map="update" @select-feature="selectedFeature=$event" />
@@ -84,4 +96,10 @@ function cancel(){if(busy.value)return;if(draft.value){draft.value=undefined;err
 </template>
 <style scoped>
 dialog{box-sizing:border-box;width:min(580px,calc(100% - 20px));max-height:90dvh;overflow:auto;padding:18px;border:0;border-radius:18px;color:#17212b;background:white}dialog::backdrop{background:rgb(0 0 0 / 45%)}fieldset{border:0;padding:0;min-width:0}label{display:grid;gap:6px;margin:12px 0}input,select,textarea,button{box-sizing:border-box;min-height:44px;min-width:0;padding:10px;font:inherit;border:1px solid #bdc9ce;border-radius:8px;background:white;color:inherit}input,select,textarea{width:100%}button{margin:4px;overflow-wrap:anywhere}.tools{display:flex;flex-wrap:wrap;gap:4px}.tools button{flex:1 1 100px;margin:0}.map-card{border-bottom:1px solid #ccc;padding:12px 0}.map-card>span{margin-left:12px}.preview{width:110px;margin-top:8px}
+</style>
+<style scoped>
+.north-settings { margin:12px 0; padding:10px; border:1px solid #bdc9ce; border-radius:10px; }
+.north-toggle { display:flex; align-items:center; gap:8px; }
+.north-toggle input { flex:0 0 24px; width:24px; min-height:24px; height:24px; }
+.north-settings p { font-size:12px; line-height:1.5; }
 </style>
