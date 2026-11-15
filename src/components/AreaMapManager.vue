@@ -9,9 +9,23 @@ const emit=defineEmits<{close:[]}>()
 const dialog=ref<HTMLDialogElement>(),facility=ref(props.facilityId??''),facilities=ref<{id:string;name:string}[]>([]),zones=ref<{id:string;name:string}[]>([]),maps=ref<AreaMap[]>([])
 const draft=ref<AreaMap>(),original=ref<AreaMap>(),newZone=ref(''),mode=ref<'pan'|'outline'|'inlet'|'outlet'>('pan'),selectedFeature=ref(''),error=ref(''),busy=ref(false)
 const history=ref<AreaMap[]>([])
+const facilitySearch=ref(''),loading=ref(false)
+const selectedFacility=computed(()=>facilities.value.find(f=>f.id===facility.value))
+const filteredFacilities=computed(()=>facilities.value.filter(f=>f.id===facility.value || f.name.toLocaleLowerCase('ja-JP').includes(facilitySearch.value.trim().toLocaleLowerCase('ja-JP'))))
 const feature=computed(()=>draft.value?.features.find(f=>f.id===selectedFeature.value))
 const copy=<T,>(v:T):T=>JSON.parse(JSON.stringify(v))
-async function load(){error.value='';try{zones.value=facility.value?(await db.zones.where('facilityId').equals(facility.value).toArray()).filter(z=>z.origin==='user'||z.catalogState!=='retired').map(z=>({id:z.id,name:String(z.name)})):[];maps.value=facility.value?(await db.areaMaps.where('facilityId').equals(facility.value).toArray()).filter(m=>!m.deletedAt):[]}catch(e){error.value=String(e)}}
+let loadRequest=0
+async function load(){
+  const request=++loadRequest,id=facility.value
+  error.value='';loading.value=true;zones.value=[];maps.value=[]
+  try{
+    const [areaRows,mapRows]=id?await Promise.all([db.zones.where('facilityId').equals(id).toArray(),db.areaMaps.where('facilityId').equals(id).toArray()]):[[],[]]
+    if(request!==loadRequest)return
+    zones.value=areaRows.filter(z=>z.origin==='user'||z.catalogState!=='retired').map(z=>({id:z.id,name:String(z.name)}))
+    maps.value=mapRows.filter(m=>!m.deletedAt)
+  }catch(e){if(request===loadRequest)error.value=String(e)}
+  finally{if(request===loadRequest)loading.value=false}
+}
 onMounted(async()=>{dialog.value?.showModal();facilities.value=(await db.facilities.toArray()).filter(f=>f.origin==='user'||f.catalogState!=='retired'||f.id===props.facilityId).map(f=>({id:f.id,name:String(f.name)}));await load()})
 watch(facility,load)
 function edit(map?:AreaMap){
@@ -33,17 +47,21 @@ function cancel(){if(busy.value)return;if(draft.value){draft.value=undefined;err
 <template>
   <dialog ref="dialog" aria-label="エリアマップ管理" @cancel.prevent="cancel">
     <h2>{{ draft?'エリアマップを編集':'エリアマップ管理' }}</h2>
+    <p aria-label="選択中の施設">選択中の施設：{{ selectedFacility?.name || (facility ? facility : '未選択') }}</p>
     <fieldset :disabled="busy">
       <template v-if="!draft">
-        <label>釣り場<select aria-label="釣り場" v-model="facility"><option value="">施設を選択</option><option v-for="f in facilities" :key="f.id" :value="f.id">{{ f.name }}</option></select></label>
+        <label>施設を検索<input v-model="facilitySearch" type="search" placeholder="施設名で検索" /></label>
+        <label>釣り場<select aria-label="釣り場" v-model="facility"><option value="">施設を選択</option><option v-for="f in filteredFacilities" :key="f.id" :value="f.id">{{ f.name }}</option></select></label>
+        <p v-if="loading" role="status">マップを読み込み中…</p>
+        <p v-else-if="facilitySearch.trim()&&!filteredFacilities.some(f=>f.name.toLocaleLowerCase('ja-JP').includes(facilitySearch.trim().toLocaleLowerCase('ja-JP')))">該当する施設がありません。検索条件を変更してください。</p>
         <p v-if="!facility">既存の施設設定から釣り場を登録・選択してください。</p>
-        <p v-else-if="!maps.length">この釣り場にはマップがありません。</p>
+        <p v-else-if="!loading&&!maps.length">この釣り場にはマップがありません。</p>
         <article v-for="map in maps" :key="map.id" class="map-card">
           <strong>{{ map.name }}</strong><span>{{ map.waterType==='pond'?'ポンド':'河川' }}</span>
           <div class="preview"><AreaMapCanvas :map="map" mode="view" /></div>
           <button type="button" @click="edit(map)">編集：{{ map.name }}</button><button type="button" @click="remove(map)">削除：{{ map.name }}</button>
         </article>
-        <button type="button" :disabled="!facility" @click="edit()">＋エリアを追加</button>
+        <button type="button" :disabled="!facility||loading||!!error" @click="edit()">＋エリアを追加</button>
         <button type="button" @click="emit('close')">閉じる</button>
       </template>
       <template v-else>

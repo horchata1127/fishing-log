@@ -2,6 +2,26 @@
 
 実施日: 2026-11-15。全テストは合成データと専用origin／一時プロファイルを使用。ユーザーのバックアップファイルに対する破壊的テストは実施していない。
 
+## メインメニュー導線の追加検証
+
+`App.vue` に既存の管理モーダルを開くボタンを追加し、`AreaMapManager.vue` に施設検索・選択中の施設表示・施設切替時の読み込み保護を追加した。DBスキーマ・バックアップv12・保存処理は変更していない。
+
+- `npm.cmd run build` / `npm.cmd run test:e2e:typecheck`: 成功。
+- 下記2コマンドによる関連E2E: 計34件成功（14件＋20件、デスクトップ／iPhone相当Chromium）。
+- `npx.cmd playwright test -c playwright.offline.config.ts -g RC41`: 4件成功。
+- `git diff --check`: 成功。
+
+```powershell
+npx.cmd playwright test tests/e2e/rc41-home-maps.spec.ts tests/e2e/rc41-navigation.spec.ts tests/e2e/rc41-area-maps.spec.ts
+npx.cmd playwright test tests/e2e/fishing-log.spec.ts tests/e2e/rc35-weather-notes.spec.ts tests/e2e/rc40-color-change.spec.ts
+```
+
+釣行が0件の状態でメインメニューから施設検索・選択、マップ新規登録・編集、ホームへの復帰、後の釣行での位置記録を確認した。現地編集後もホームに同じIDのマップが表示され、エリアIDも保持する。検索結果がなくても選択中施設を維持し、施設切替で別施設の一覧が混ざらないことを確認。管理操作で既存の釣行・釣果・イベント・ルアー・所有データが変わらないことも確認した。
+
+本番の圏外テストでは、釣行未開始のままネットワーク無効で起動し、ホームから施設検索・マップ作成、再起動後の再編集、v12出力を確認した。管理モーダル表示中のPWA更新ボタンが無効になることも確認。既存の釣行中の作成・編集・釣り座記録の圏外テストも成功した。
+
+実機iPhone Safari／WebKitとE2E全スイートは未検証。今回の画面変更では単体テストの再実行は行わず、型チェック・関連E2E・本番圏外テストで検証した。
+
 ## UI導線改善の追加検証
 
 「現在のエリア」直下へのボタン移設と、未登録時の作成導線を追加した後、次を実行した。今回の変更は画面3コンポーネントとE2E・文書のみで、DB・バックアップ・マップ保存・イベント保存処理は変更していない。

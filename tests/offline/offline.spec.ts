@@ -11,6 +11,52 @@ import { catalogFixture } from '../e2e/fixtures'
 import { rc41Fixture } from '../rc41Fixture'
 import { createRc41Map, recordRc41Position } from '../rc41UiHelpers'
 
+test('RC41 home menu creates and edits a reusable map offline before any trip',async({},info)=>{
+  await fetch(`${origin}/__test/version?v=A`,{method:'POST'})
+  const profile=await mkdtemp(join(tmpdir(),'fishing-rc41-home-offline-')),mobile=info.project.name.includes('mobile')
+  const launch=(offline=false)=>chromium.launchPersistentContext(profile,{serviceWorkers:'allow',offline,viewport:mobile?{width:390,height:844}:{width:1280,height:800},isMobile:mobile,hasTouch:mobile,locale:'ja-JP',timezoneId:'Asia/Tokyo'})
+  let context=await launch()
+  try{
+    let page=context.pages()[0]!
+    await page.goto(url);await ready(page)
+    const before=await database(page);expect(before.trips).toHaveLength(0)
+    // The home modal must veto an update while an editor could contain unsaved work.
+    await page.getByRole('button',{name:'エリアマップ管理',exact:true}).click()
+    await fetch(`${origin}/__test/version?v=B`,{method:'POST'})
+    await page.evaluate(async()=>{await(await navigator.serviceWorker.getRegistration())!.update()})
+    await expect(page.locator('.offline-status button').filter({hasText:'更新して再読み込み'})).toBeDisabled()
+    await page.getByRole('dialog',{name:'エリアマップ管理',exact:true}).getByRole('button',{name:'閉じる',exact:true}).click()
+    await context.close();context=await launch(true);page=context.pages()[0]!
+    await page.goto(url)
+    await page.getByRole('button',{name:'エリアマップ管理',exact:true}).click()
+    const manager=page.getByRole('dialog',{name:'エリアマップ管理',exact:true})
+    await manager.getByLabel('施設を検索',{exact:true}).fill('日本イワナ')
+    await manager.getByLabel('釣り場',{exact:true}).selectOption('official:nihon-iwana-center')
+    await manager.getByRole('button',{name:'＋エリアを追加',exact:true}).click()
+    await manager.getByLabel('エリアマップ名（必須）',{exact:true}).fill('圏外事前マップ')
+    await manager.getByLabel('新規エリア名（必須）',{exact:true}).fill('圏外事前マップ')
+    await manager.getByRole('button',{name:'マップを保存',exact:true}).click()
+    await expect(manager.getByRole('button',{name:'編集：圏外事前マップ',exact:true})).toBeVisible()
+    await manager.getByRole('button',{name:'閉じる',exact:true}).click()
+    expect(await database(page)).toEqual(before)
+    await context.close();context=await launch(true);page=context.pages()[0]!
+    await page.goto(url)
+    await page.getByRole('button',{name:'エリアマップ管理',exact:true}).click()
+    const reopened=page.getByRole('dialog',{name:'エリアマップ管理',exact:true})
+    await reopened.getByLabel('釣り場',{exact:true}).selectOption('official:nihon-iwana-center')
+    await reopened.getByRole('button',{name:'編集：圏外事前マップ',exact:true}).click()
+    await reopened.getByRole('button',{name:'左右反転',exact:true}).click()
+    await reopened.getByRole('button',{name:'マップを保存',exact:true}).click()
+    await expect(reopened.getByRole('button',{name:'編集：圏外事前マップ',exact:true})).toBeVisible()
+    await reopened.getByRole('button',{name:'閉じる',exact:true}).click()
+    const [download]=await Promise.all([page.waitForEvent('download'),page.getByRole('button',{name:'📦 データをバックアップ',exact:true}).click()])
+    const path=info.outputPath('rc41-home-offline-v12.json');await download.saveAs(path)
+    const backup=JSON.parse(await readFile(path,'utf8'));expect(backup.version).toBe(12)
+    expect(backup.data.areaMaps).toHaveLength(1);expect(backup.data.areaMaps[0]).toMatchObject({name:'圏外事前マップ',revision:2,facilityId:'official:nihon-iwana-center'})
+    expect(await database(page)).toEqual(before)
+  }finally{await context.close()}
+})
+
 test('RC41 offline cold start creates map, features and position; edits and v12 backup survive restart',async({},info)=>{
   await fetch(`${origin}/__test/version?v=A`,{method:'POST'})
   const profile=await mkdtemp(join(tmpdir(),'fishing-rc41-offline-')),mobile=info.project.name.includes('mobile')
