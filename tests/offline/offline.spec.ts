@@ -8,6 +8,143 @@ import { rc23Fixture } from '../rc23Fixture'
 import { stage6Backup } from '../stage6Fixture'
 import { rc24Fixture } from '../rc24Fixture'
 import { catalogFixture } from '../e2e/fixtures'
+import { rc41Fixture } from '../rc41Fixture'
+import { createRc41Map, recordRc41Position } from '../rc41UiHelpers'
+
+test('RC41 compass persists offline and v12 retains current north separately from historical snapshots',async({},info)=>{
+  await fetch(`${origin}/__test/version?v=A`,{method:'POST'})
+  const profile=await mkdtemp(join(tmpdir(),'fishing-rc41-compass-offline-')),mobile=info.project.name.includes('mobile')
+  const launch=(offline=false)=>chromium.launchPersistentContext(profile,{serviceWorkers:'allow',offline,viewport:mobile?{width:390,height:844}:{width:1280,height:800},isMobile:mobile,hasTouch:mobile,locale:'ja-JP',timezoneId:'Asia/Tokyo'})
+  let context=await launch()
+  try{
+    let page=context.pages()[0]!
+    await page.goto(url);await ready(page);page.on('dialog',d=>d.accept())
+    await page.getByTestId('restore-backup').setInputFiles({name:'rc41-compass-synthetic.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(rc41Fixture()))})
+    await expect.poll(async()=>(await database(page)).trips!.some(r=>r.id===1)).toBe(true)
+    await context.close();context=await launch(true);page=context.pages()[0]!
+    await page.goto(url);await page.locator('.trip-row[data-trip-id="1"]').click()
+    await createRc41Map(page,'方位圏外','P01',false)
+    const setNorth=async(value:string)=>{
+      await page.getByRole('button',{name:'エリアマップ管理',exact:true}).click()
+      const manager=page.getByRole('dialog',{name:'エリアマップ管理',exact:true})
+      await manager.getByRole('button',{name:'編集：方位圏外',exact:true}).click()
+      await manager.getByLabel('北方向を設定する（手動）',{exact:true}).check()
+      await manager.getByLabel('北方向の角度（度）',{exact:true}).fill(value)
+      await manager.getByRole('button',{name:'マップを保存',exact:true}).click()
+      await expect(manager.getByRole('button',{name:'編集：方位圏外',exact:true})).toBeVisible()
+      await manager.getByRole('button',{name:'閉じる',exact:true}).click()
+    }
+    await setNorth('135');await recordRc41Position(page,'方位圏外');await setNorth('315')
+    const saved=await database(page)
+    expect(saved.tripEvents![0]!.fishingPosition.snapshot.northAngle).toBe(135)
+    await page.getByRole('button',{name:'← ホーム',exact:true}).click()
+    const [download]=await Promise.all([page.waitForEvent('download'),page.getByRole('button',{name:'📦 データをバックアップ',exact:true}).click()])
+    const path=info.outputPath('rc41-offline-compass-v12.json');await download.saveAs(path)
+    const backup=JSON.parse(await readFile(path,'utf8'));expect(backup.version).toBe(12)
+    expect(backup.data.areaMaps[0].northAngle).toBe(315);expect(backup.data.tripEvents[0].fishingPosition.snapshot.northAngle).toBe(135)
+    await context.close();context=await launch(true);page=context.pages()[0]!
+    await page.goto(url);expect(await database(page)).toEqual(saved)
+    await page.locator('.trip-row[data-trip-id="1"]').click()
+    await page.getByText('釣り座の詳細',{exact:true}).click()
+    await expect(page.locator('.event-entry').getByTestId('map-compass')).toHaveAttribute('data-north-angle','135')
+    await page.getByRole('button',{name:'エリアマップ管理',exact:true}).click()
+    const manager=page.getByRole('dialog',{name:'エリアマップ管理',exact:true})
+    await manager.getByRole('button',{name:'編集：方位圏外',exact:true}).click()
+    await expect(manager.getByLabel('北方向の角度（度）',{exact:true})).toHaveValue('315')
+    await expect(manager.getByTestId('map-compass')).toHaveAttribute('data-north-angle','315')
+  }finally{await context.close()}
+})
+
+test('RC41 home menu creates and edits a reusable map offline before any trip',async({},info)=>{
+  await fetch(`${origin}/__test/version?v=A`,{method:'POST'})
+  const profile=await mkdtemp(join(tmpdir(),'fishing-rc41-home-offline-')),mobile=info.project.name.includes('mobile')
+  const launch=(offline=false)=>chromium.launchPersistentContext(profile,{serviceWorkers:'allow',offline,viewport:mobile?{width:390,height:844}:{width:1280,height:800},isMobile:mobile,hasTouch:mobile,locale:'ja-JP',timezoneId:'Asia/Tokyo'})
+  let context=await launch()
+  try{
+    let page=context.pages()[0]!
+    await page.goto(url);await ready(page)
+    const before=await database(page);expect(before.trips).toHaveLength(0)
+    // The home modal must veto an update while an editor could contain unsaved work.
+    await page.getByRole('button',{name:'エリアマップ管理',exact:true}).click()
+    await fetch(`${origin}/__test/version?v=B`,{method:'POST'})
+    await page.evaluate(async()=>{await(await navigator.serviceWorker.getRegistration())!.update()})
+    await expect(page.locator('.offline-status button').filter({hasText:'更新して再読み込み'})).toBeDisabled()
+    await page.getByRole('dialog',{name:'エリアマップ管理',exact:true}).getByRole('button',{name:'閉じる',exact:true}).click()
+    await context.close();context=await launch(true);page=context.pages()[0]!
+    await page.goto(url)
+    await page.getByRole('button',{name:'エリアマップ管理',exact:true}).click()
+    const manager=page.getByRole('dialog',{name:'エリアマップ管理',exact:true})
+    await manager.getByLabel('施設を検索',{exact:true}).fill('日本イワナ')
+    await manager.getByLabel('釣り場',{exact:true}).selectOption('official:nihon-iwana-center')
+    await manager.getByRole('button',{name:'＋エリアを追加',exact:true}).click()
+    await manager.getByLabel('エリアマップ名（必須）',{exact:true}).fill('圏外事前マップ')
+    await manager.getByLabel('新規エリア名（必須）',{exact:true}).fill('圏外事前マップ')
+    await manager.getByRole('button',{name:'マップを保存',exact:true}).click()
+    await expect(manager.getByRole('button',{name:'編集：圏外事前マップ',exact:true})).toBeVisible()
+    await manager.getByRole('button',{name:'閉じる',exact:true}).click()
+    expect(await database(page)).toEqual(before)
+    await context.close();context=await launch(true);page=context.pages()[0]!
+    await page.goto(url)
+    await page.getByRole('button',{name:'エリアマップ管理',exact:true}).click()
+    const reopened=page.getByRole('dialog',{name:'エリアマップ管理',exact:true})
+    await reopened.getByLabel('釣り場',{exact:true}).selectOption('official:nihon-iwana-center')
+    await reopened.getByRole('button',{name:'編集：圏外事前マップ',exact:true}).click()
+    await reopened.getByRole('button',{name:'左右反転',exact:true}).click()
+    await reopened.getByRole('button',{name:'マップを保存',exact:true}).click()
+    await expect(reopened.getByRole('button',{name:'編集：圏外事前マップ',exact:true})).toBeVisible()
+    await reopened.getByRole('button',{name:'閉じる',exact:true}).click()
+    const [download]=await Promise.all([page.waitForEvent('download'),page.getByRole('button',{name:'📦 データをバックアップ',exact:true}).click()])
+    const path=info.outputPath('rc41-home-offline-v12.json');await download.saveAs(path)
+    const backup=JSON.parse(await readFile(path,'utf8'));expect(backup.version).toBe(12)
+    expect(backup.data.areaMaps).toHaveLength(1);expect(backup.data.areaMaps[0]).toMatchObject({name:'圏外事前マップ',revision:2,facilityId:'official:nihon-iwana-center'})
+    expect(await database(page)).toEqual(before)
+  }finally{await context.close()}
+})
+
+test('RC41 offline cold start creates map, features and position; edits and v12 backup survive restart',async({},info)=>{
+  await fetch(`${origin}/__test/version?v=A`,{method:'POST'})
+  const profile=await mkdtemp(join(tmpdir(),'fishing-rc41-offline-')),mobile=info.project.name.includes('mobile')
+  const launch=(offline=false)=>chromium.launchPersistentContext(profile,{serviceWorkers:'allow',offline,viewport:mobile?{width:390,height:844}:{width:1280,height:800},isMobile:mobile,hasTouch:mobile,locale:'ja-JP',timezoneId:'Asia/Tokyo'})
+  let context=await launch()
+  const readMaps=(page:Page)=>page.evaluate(async()=>{
+    const db=await new Promise<IDBDatabase>((resolve,reject)=>{const r=indexedDB.open('FishingLogDatabase');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)})
+    try{return await new Promise<any[]>((resolve,reject)=>{const tx=db.transaction('areaMaps','readonly'),r=tx.objectStore('areaMaps').getAll();tx.oncomplete=()=>resolve(r.result);tx.onabort=()=>reject(tx.error)})}finally{db.close()}
+  })
+  try{
+    let page=context.pages()[0]!
+    await page.goto(url);await ready(page);page.on('dialog',d=>d.accept())
+    await page.getByTestId('restore-backup').setInputFiles({name:'rc41-synthetic.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(rc41Fixture()))})
+    await expect.poll(async()=>(await database(page)).trips!.some(r=>r.id===1)).toBe(true)
+    const before=await database(page)
+    await context.close();context=await launch(true);page=context.pages()[0]!
+    await page.goto(url);await page.locator('.trip-row[data-trip-id="1"]').click()
+    await createRc41Map(page,'圏外ポンド')
+    await page.getByRole('button',{name:'エリアマップ管理',exact:true}).click()
+    const manager=page.getByRole('dialog',{name:'エリアマップ管理',exact:true})
+    await manager.getByRole('button',{name:'編集：圏外ポンド',exact:true}).click()
+    await manager.getByRole('button',{name:'左右反転',exact:true}).click()
+    await manager.getByRole('button',{name:'マップを保存',exact:true}).click()
+    await expect(manager.getByRole('button',{name:'編集：圏外ポンド',exact:true})).toBeVisible()
+    await manager.getByRole('button',{name:'閉じる',exact:true}).click()
+    await recordRc41Position(page,'圏外ポンド')
+    await page.locator('.event-entry').getByRole('button',{name:'編集',exact:true}).click()
+    const edit=page.getByRole('dialog',{name:'イベントを編集',exact:true})
+    await edit.getByLabel('メモ',{exact:true}).fill('圏外で編集')
+    await edit.getByRole('button',{name:'保存',exact:true}).click();await expect(edit).not.toBeVisible()
+    const saved=await database(page),maps=await readMaps(page)
+    expect(maps).toHaveLength(1);expect(maps[0].features).toHaveLength(2)
+    expect(saved.catches).toEqual(before.catches);expect(saved.myLures).toEqual(before.myLures)
+    expect(saved.tripEvents![0]).toMatchObject({type:'position',note:'圏外で編集',fishingPosition:{mapId:maps[0].id,castDirection:90}})
+    await page.getByRole('button',{name:'← ホーム',exact:true}).click()
+    const [download]=await Promise.all([page.waitForEvent('download'),page.getByRole('button',{name:'📦 データをバックアップ',exact:true}).click()])
+    const path=info.outputPath('rc41-offline-v12.json');await download.saveAs(path)
+    const backup=JSON.parse(await readFile(path,'utf8'));expect(backup.version).toBe(12);expect(backup.data.areaMaps).toEqual(maps)
+    await context.close();context=await launch(true);page=context.pages()[0]!
+    await page.goto(url);expect(await database(page)).toEqual(saved);expect(await readMaps(page)).toEqual(maps)
+    await page.locator('.trip-row[data-trip-id="1"]').click()
+    await page.getByText('釣り座の詳細',{exact:true}).click();await expect(page.getByTestId('fishing-position-marker')).toBeVisible()
+  }finally{await context.close()}
+})
 
 test('RC40 color change persists correct IDs after offline cold start without changing ownership', async ({}, info) => {
   await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })

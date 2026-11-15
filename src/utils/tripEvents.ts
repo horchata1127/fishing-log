@@ -1,7 +1,7 @@
-import { db, type FishingTrip, type TripEvent, type TripEventType, type WeatherObservation, validateWeatherObservation } from '../db/database'
+import { db, type FishingTrip, type TripEvent, type TripEventType, type WeatherObservation, validateWeatherObservation, validateFishingPosition, type FishingPosition } from '../db/database'
 import { validateCalendarDate } from './calendarDate'
 
-export interface EventInput { type: TripEventType; dateTime: string; note: string; zoneId: string; weatherObservation?: WeatherObservation; initialOccurredAt?: Date }
+export interface EventInput { type: TripEventType; dateTime: string; note: string; zoneId: string; weatherObservation?: WeatherObservation; initialOccurredAt?: Date; fishingPosition?: FishingPosition }
 export function eventDateTime(value: Date): string {
   if (!Number.isFinite(new Date(value).getTime())) return ''
   const parts = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(value).map(p => [p.type, p.value]))
@@ -28,13 +28,23 @@ export function validateEventTime(trip: FishingTrip, occurredAt: Date) {
 function same(a: unknown, b: unknown) { return JSON.stringify(a) === JSON.stringify(b) }
 export async function saveTripEvent(expectedTrip: FishingTrip, input: EventInput, original?: TripEvent) {
   const requestedAt = parseEventDateTime(input.dateTime)
-  if (!['stocking', 'pellet', 'weather'].includes(input.type)) throw new Error('イベント種別を選択してください。')
+  if (!['stocking', 'pellet', 'weather', 'position'].includes(input.type)) throw new Error('イベント種別を選択してください。')
   if (input.type === 'weather') validateWeatherObservation(input.weatherObservation)
-  return db.transaction('rw', [db.trips, db.tripEvents, db.zones], async () => {
+  return db.transaction('rw', [db.trips, db.tripEvents, db.zones, db.areaMaps], async () => {
     const trip = expectedTrip.id === undefined ? undefined : await db.trips.get(expectedTrip.id)
     if (!trip || !same(trip, expectedTrip)) throw new Error('釣行が変更されました。開き直してください。')
     const existing = original?.id === undefined ? undefined : await db.tripEvents.get(original.id)
     if (original && (!existing || existing.tripId !== trip.id || !same(existing, original))) throw new Error('イベントが変更・削除されました。開き直してください。')
+    if (input.type === 'position') {
+      validateFishingPosition(input.fishingPosition)
+      // Existing events may adjust a seat on their original, immutable map revision.
+      const p = input.fishingPosition, retainedSnapshot = existing?.fishingPosition && same(p.snapshot, existing.fishingPosition.snapshot)
+      if (!retainedSnapshot) {
+        const map = await db.areaMaps.get(p.mapId)
+        if (!map || map.deletedAt || map.facilityId !== trip.facilityId || !same(map, p.snapshot)) throw new Error('マップが変更・削除されました。選び直してください。')
+      }
+      if (input.zoneId !== p.snapshot.zoneId) throw new Error('釣り座のエリアが一致しません。')
+    }
     // Memo/area edits must preserve the seconds of an existing timestamp.
     const unchangedTime = existing && eventDateTime(existing.occurredAt) === input.dateTime && existing.timePrecision !== 'unknown'
     const capturedTime = !existing && input.initialOccurredAt instanceof Date && eventDateTime(input.initialOccurredAt) === input.dateTime ? input.initialOccurredAt : requestedAt
@@ -43,7 +53,7 @@ export async function saveTripEvent(expectedTrip: FishingTrip, input: EventInput
     const zone = input.zoneId ? await db.zones.get(input.zoneId) : undefined
     const unchangedZone = existing?.zoneId === input.zoneId
     if (input.zoneId && !unchangedZone && (!zone || zone.facilityId !== trip.facilityId)) throw new Error('対象施設のエリアを選択してください。')
-    const changes = { type: input.type, ...(input.type === 'weather' ? { weatherObservation: structuredClone(input.weatherObservation) } : existing?.weatherObservation ? { weatherObservation: undefined } : {}), occurredAt, ...(existing?.timePrecision ? { timePrecision: unchangedTime ? existing.timePrecision : 'exact' as const } : {}), note: input.note, zoneId: input.zoneId || undefined,
+    const changes = { type: input.type, ...(input.type === 'position' ? { fishingPosition: structuredClone(input.fishingPosition) } : existing?.fishingPosition ? { fishingPosition: undefined } : {}), ...(input.type === 'weather' ? { weatherObservation: structuredClone(input.weatherObservation) } : existing?.weatherObservation ? { weatherObservation: undefined } : {}), occurredAt, ...(existing?.timePrecision ? { timePrecision: unchangedTime ? existing.timePrecision : 'exact' as const } : {}), note: input.note, zoneId: input.zoneId || undefined,
       facilityId: input.zoneId ? (unchangedZone ? existing?.facilityId : trip.facilityId) : undefined,
       zoneName: input.zoneId ? (unchangedZone ? existing?.zoneName : typeof zone?.name === 'string' ? zone.name : undefined) : undefined }
     if (existing) { await db.tripEvents.update(existing.id!, changes); return existing.id! }

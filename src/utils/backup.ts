@@ -2,7 +2,7 @@ import { db, validateTripSummaryMvp, validateWeatherObservation, tackleTableName
   weatherTableNames, weatherFields, validateWeatherLocation, validateWeatherHour, validateWeatherRequest,
   visualTableNames, validateVisualRecord, validateVisualSnapshot, validateVisualReferences,
   mergeLureMasterHistory, lureMasterHistoryHead, nextLureMasterHistorySequence, validateLureMasterHistoryRecord,
-  type LureMasterHistoryRecord, type LureMasterRestoreRecord, type LureVisualProfile, type TemporaryLureColor } from '../db/database'
+  validateAreaMap, validateFishingPosition, type AreaMap, type LureMasterHistoryRecord, type LureMasterRestoreRecord, type LureVisualProfile, type TemporaryLureColor } from '../db/database'
 import { facilityTableNames, validateFacilityStorage, readFacilityStorage, mergeFacilityStorage, validateLocationReferences, type FacilityStorage } from './facilityStorage'
 
 export const backupTableNames = [
@@ -14,12 +14,12 @@ export const allBackupTableNames = [...backupTableNames, ...tackleTableNames] as
 export const fullBackupTableNames = [...allBackupTableNames, 'fishSpecies'] as const
 type TableName = typeof allBackupTableNames[number]
 type Row = Record<string, unknown>
-type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>> & { fishSpecies?: Row[] } & Partial<FacilityStorage> & Partial<Record<typeof weatherTableNames[number], Row[]>> & { lureVisualProfiles?: LureVisualProfile[]; temporaryLureColors?: TemporaryLureColor[]; lureMasterImportHistory?: LureMasterHistoryRecord[] }
-export const completeBackupTableNames = [...fullBackupTableNames, ...facilityTableNames, ...weatherTableNames, ...visualTableNames, 'lureMasterImportHistory'] as const
+type RestoredData = Record<typeof backupTableNames[number], Row[]> & Partial<Record<typeof tackleTableNames[number], Row[]>> & { fishSpecies?: Row[] } & Partial<FacilityStorage> & Partial<Record<typeof weatherTableNames[number], Row[]>> & { lureVisualProfiles?: LureVisualProfile[]; temporaryLureColors?: TemporaryLureColor[]; lureMasterImportHistory?: LureMasterHistoryRecord[]; areaMaps?: AreaMap[] }
+export const completeBackupTableNames = [...fullBackupTableNames, ...facilityTableNames, ...weatherTableNames, ...visualTableNames, 'lureMasterImportHistory', 'areaMaps'] as const
 
 export interface FishingLogBackup {
   format: 'fishing-log-backup'
-  version: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11
+  version: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
   exportedAt: string
   data: {
     trips: unknown[]
@@ -44,6 +44,7 @@ export interface FishingLogBackup {
     lureVisualProfiles?: unknown[]
     temporaryLureColors?: unknown[]
     lureMasterImportHistory?: unknown[]
+    areaMaps?: unknown[]
   }
 }
 
@@ -97,7 +98,7 @@ function dateTime(value: unknown, path: string): Date {
 /** 書き込み前に全テーブルを検証し、入力を変更せずDateを復元する。 */
 export function validateBackup(value: unknown): RestoredData {
   const backup = object(value, 'ルート')
-  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].includes(backup.version as number)) {
+  if (backup.format !== 'fishing-log-backup' || ![1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].includes(backup.version as number)) {
     fail('format/version', '対応するFishing Logバックアップではありません')
   }
   dateTime(backup.exportedAt, 'exportedAt')
@@ -235,9 +236,15 @@ export function validateBackup(value: unknown): RestoredData {
         case 'tripEvents':
           for (const field of ['note', 'facilityId', 'zoneId', 'zoneName']) if (row[field] !== undefined) string(row[field], `${path}.${field}`)
           reference(row, 'tripId', 'trips', path)
-          if (row.type !== 'stocking' && row.type !== 'pellet' && row.type !== 'weather') fail(`${path}.type`, 'イベント種別が不正です')
+          if (row.type !== 'stocking' && row.type !== 'pellet' && row.type !== 'weather' && row.type !== 'position') fail(`${path}.type`, 'イベント種別が不正です')
           if (row.type === 'weather' && (Number(backup.version) < 10 || row.weatherObservation === undefined)) fail(path, '気象イベントにはv10の観測記録が必要です')
           if (row.type !== 'weather' && row.weatherObservation !== undefined) fail(path, '気象記録のイベント種別が不正です')
+          if (row.type === 'position') {
+            if (Number(backup.version) < 12) fail(path, 'マップ・釣り座にはv12形式が必要です')
+            validateFishingPosition(row.fishingPosition)
+            const p = row.fishingPosition
+            if (row.zoneId !== p.snapshot.zoneId || row.facilityId !== p.snapshot.facilityId) fail(path, '釣り座とイベントの所属が一致しません')
+          } else if (row.fishingPosition !== undefined) fail(path, '釣り座イベント以外に位置は保存できません')
           row.occurredAt = dateTime(row.occurredAt, `${path}.occurredAt`)
           break
         case 'lureManufacturers':
@@ -357,6 +364,22 @@ export function validateBackup(value: unknown): RestoredData {
     if (!Array.isArray(source.lureMasterImportHistory)) fail('lureMasterImportHistory', '配列が必要です')
     data.lureMasterImportHistory = mergeLureMasterHistory([], source.lureMasterImportHistory as LureMasterHistoryRecord[])
   } else if (source.lureMasterImportHistory !== undefined) fail('lureMasterImportHistory', '更新履歴にはv9形式が必要です')
+  if (Number(backup.version) >= 12) {
+    if (!Array.isArray(source.areaMaps)) fail('areaMaps', '配列が必要です')
+    const seen = new Set<string>()
+    data.areaMaps = source.areaMaps.map(entry => {
+      validateAreaMap(entry)
+      if (seen.has(entry.id)) fail('areaMaps', 'IDが重複しています')
+      seen.add(entry.id)
+      if (!data.facilities?.some(f => f.id === entry.facilityId) || !data.zones?.some(z => z.id === entry.zoneId && z.facilityId === entry.facilityId)) fail('areaMaps', '施設・エリア参照が不正です')
+      return structuredClone(entry)
+    })
+    for (const event of data.tripEvents) if (event.type === 'position') {
+      const p = event.fishingPosition as import('../db/database').FishingPosition
+      const map = data.areaMaps.find(m => m.id === p.mapId)
+      if (map && (map.facilityId !== p.snapshot.facilityId || map.zoneId !== p.snapshot.zoneId)) fail('tripEvents', '施設・エリア参照が不正です')
+    }
+  } else if (source.areaMaps !== undefined) fail('areaMaps', 'マップ・釣り座にはv12形式が必要です')
   return data
 }
 
@@ -368,6 +391,13 @@ export async function createBackup(): Promise<FishingLogBackup> {
     }))
     return result
   })
+  const hasMaps = data.areaMaps.length > 0 || data.tripEvents.some(row => (row as Row).type === 'position')
+  if (hasMaps) {
+    const backup: FishingLogBackup = { format: 'fishing-log-backup', version: 12, exportedAt: new Date().toISOString(), data }
+    validateBackup(JSON.parse(JSON.stringify(backup)))
+    return backup
+  }
+  delete (data as Partial<typeof data>).areaMaps
   const hasObservations = [...data.catches, ...data.tripEvents].some(row => (row as Row).weatherObservation !== undefined || (row as Row).type === 'weather')
   const hasMvp = data.trips.some(row => (row as Row).summaryMvp !== undefined)
   if (hasMvp || hasObservations || data.lureMasterImportHistory.length > 0) {
@@ -452,6 +482,14 @@ export async function importBackup(file: File): Promise<void> {
       facilities: data.facilities ?? [], zones: data.zones ?? [], appMetadata: data.appMetadata ?? [],
     })
     validateLocationReferences(data, merged)
+    if (data.areaMaps !== undefined) {
+      for (const incoming of data.areaMaps) {
+        const current = await db.areaMaps.get(incoming.id)
+        if (current && (current.facilityId !== incoming.facilityId || current.zoneId !== incoming.zoneId)) fail('areaMaps', '同IDの所属が異なります')
+      }
+      await db.areaMaps.clear()
+      await db.areaMaps.bulkAdd(data.areaMaps)
+    }
     // Legacy backups carry no visual dictionary. Preserve values and identities,
     // but detach every local ID: restored IDs may now identify different lures.
     if (data.lureVisualProfiles === undefined) {

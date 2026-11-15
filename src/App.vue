@@ -3,6 +3,7 @@ import WeatherObservationInput from './components/WeatherObservationInput.vue'
 import type { WeatherObservation } from './db/database'
 import LureMasterScreen from './components/LureMasterScreen.vue'
 import OfflineStatus from './components/OfflineStatus.vue'
+import AreaMapManager from './components/AreaMapManager.vue'
 import FacilityPicker from './components/FacilityPicker.vue'
 import { changeCurrentZone, loadLocationChoices, type CatchLocationSelection } from './utils/tripLocations'
 import { offline } from './pwa'
@@ -42,6 +43,7 @@ import {
 } from './db/database'
 
 type Screen = 'home' | 'new-trip' | 'fishing' | 'my-lures' | 'tackles' | 'fish-species' | 'lure-master'
+const homeMapManagerOpen = ref(false)
 const connectionState = ref(databaseConnection.state)
 const unsubscribeConnection = subscribeDatabaseConnection(state => { connectionState.value = state })
 onUnmounted(unsubscribeConnection)
@@ -715,7 +717,7 @@ async function tripInformationSaved(trip: FishingTrip) {
   <p v-if="facilityReleaseError" role="alert">{{ facilityReleaseError }}</p>
   <p v-if="restoringData" role="status">バックアップを復元しています…</p>
   <main class="app" :inert="initializingFacilityRelease || restoringData || offline.updating" :aria-busy="initializingFacilityRelease || restoringData || offline.updating">
-    <OfflineStatus :safe="!initializingFacilityRelease && (screen === 'home' || screen === 'lure-master') && !dictionaryOpen && !editingTripFacility && !editingTripInformation && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
+    <OfflineStatus :safe="!initializingFacilityRelease && (screen === 'home' || screen === 'lure-master') && !homeMapManagerOpen && !dictionaryOpen && !editingTripFacility && !editingTripInformation && !locationBusy && !savingLocation && !backingUp && !catalogPanel?.busy && !catalogPanel?.preview && !restoringData && !savingTrip && !savingCatch && !preparingTripDeletion && !deletingTrip && !tripDeletionSummary && !showCatchForm && !editingTripTackles" />
     <p v-if="connectionState === 'changed'" role="alert">別の画面でデータベースが更新されたため、この画面からは保存できません。入力中の内容をメモしてから、この画面を手動で再読み込みしてください。</p>
     <p v-else-if="connectionState === 'blocked'" role="alert">別のFishing Log画面がデータベースの更新を待たせています。その画面の入力を保存して閉じてください。自動で再読み込みはしません。</p>
     <!-- ホーム -->
@@ -731,6 +733,8 @@ async function tripInformationSaved(trip: FishingTrip) {
       <button class="primary-button" @click="openNewTrip">＋ 新しい釣行を開始</button>
 
       <button class="secondary-button" @click="openMyLures">🎣 マイルアー</button>
+      <button type="button" class="secondary-button" aria-label="エリアマップ管理" @click="homeMapManagerOpen = true">🗺️ エリアマップ管理</button>
+      <AreaMapManager v-if="homeMapManagerOpen" @close="homeMapManagerOpen = false" />
       <button class="secondary-button" @click="openVisualDictionary()">ビジュアルカラー辞書</button>
       <button class="secondary-button" @click="screen = 'tackles'">タックル管理</button>
       <button class="secondary-button" @click="screen = 'fish-species'">魚種マスター管理</button>
@@ -838,7 +842,7 @@ async function tripInformationSaved(trip: FishingTrip) {
     <!-- 釣行中 -->
 
     <FishingScreen v-else-if="screen === 'fishing' && currentTrip" :trip="currentTrip" :catches="catches" :events="tripEvents" :location-busy="locationBusy || savingLocation || savingCatch || editingTripFacility || editingTripInformation" @summary-saved="currentTrip = $event" @memo-saved="currentTrip = $event" @edit-information="editingTripInformation = true" @edit-facility="editingTripFacility = true" @delete-catch="removeCatch" @home="goHome"
-      @add-catch="addCatch" @edit-catch="editCatch" @link-color="openVisualDictionary" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @events-changed="loadTripEvents" @end-trip="endTrip">
+      @add-catch="addCatch" @edit-catch="editCatch" @link-color="openVisualDictionary" @edit-tackles="editTripTackles" @record-event="recordTripEvent" @events-changed="loadTripEvents" @maps-changed="locationRefresh++" @end-trip="endTrip">
       <template #location><FacilityPicker v-if="currentTrip.facilityId" :key="locationRefresh" fixed :facility-id="currentTrip.facilityId" :trip-id="currentTrip.id"
         :zone-id="currentTrip.currentZoneId" :retained-zone-id="currentTrip.currentZoneId" zone-label="現在のエリア" :disabled="!!currentTrip.endedAt || savingLocation || showCatchForm"
         @update:zone-id="selectCurrentZone" @busy="locationBusy = $event" /></template>

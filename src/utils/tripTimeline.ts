@@ -1,7 +1,7 @@
 import type { CatchRecord, FishingTrip, TripEvent, TripWeatherHour } from '../db/database'
 
 export type TimelineEvent = Omit<TripEvent, 'occurredAt'> & { occurredAt?: Date | string | number; timePrecision?: 'exact' | 'approximate' | 'unknown' }
-export type MarkerKind = 'catch' | 'lost' | 'stocking' | 'pellet' | 'weather'
+export type MarkerKind = 'catch' | 'lost' | 'stocking' | 'pellet' | 'weather' | 'position'
 export interface TimelineMarker {
   key: string
   kind: MarkerKind
@@ -9,8 +9,8 @@ export interface TimelineMarker {
   precision: 'exact' | 'approximate' | 'unknown'
   record: CatchRecord | TimelineEvent
 }
-export const markerLabels: Record<MarkerKind, string> = { catch: '釣果', lost: 'バラシ', stocking: '放流', pellet: 'ペレット散布', weather: '気象・環境' }
-export const markerSymbols: Record<MarkerKind, string> = { catch: '●', lost: '×', stocking: '◆', pellet: '▲', weather: '☁' }
+export const markerLabels: Record<MarkerKind, string> = { catch: '釣果', lost: 'バラシ', stocking: '放流', pellet: 'ペレット散布', weather: '気象・環境', position: '釣り座移動' }
+export const markerSymbols: Record<MarkerKind, string> = { catch: '●', lost: '×', stocking: '◆', pellet: '▲', weather: '☁', position: '⚑' }
 export function timelineTimestamp(value: unknown): number | null {
   // Never interpret missing values as epoch zero or timezone-free text as the device's local time.
   if (!(value instanceof Date) && typeof value !== 'number' && !(typeof value === 'string' && /T.*(?:Z|[+-]\d{2}:\d{2})$/.test(value))) return null
@@ -44,7 +44,7 @@ function orderedMarkers(catches: CatchRecord[], events: TimelineEvent[]) {
     markers.push({ key: `catch-weather:${record.id ?? `index-${index}`}`, kind: 'weather', timestamp: timelineTimestamp(record.caughtAt), precision: 'exact', record })
   }
   for (const [index, record] of events.entries()) {
-    if (record.type !== 'stocking' && record.type !== 'pellet' && record.type !== 'weather') continue
+    if (record.type !== 'stocking' && record.type !== 'pellet' && record.type !== 'weather' && record.type !== 'position') continue
     const timestamp = record.timePrecision === 'unknown' ? null : timelineTimestamp(record.occurredAt)
     markers.push({ key: `event:${record.id ?? `index-${index}`}`, kind: record.type, timestamp, precision: timestamp === null ? 'unknown' : record.timePrecision === 'approximate' ? 'approximate' : 'exact', record })
   }
@@ -96,7 +96,7 @@ export function layoutTimelineMarkers(markers: TimelineMarker[], start: number, 
   const lanes: { kind: MarkerKind; y: number }[] = []
   let top = 190
   for (const kind of Object.keys(markerLabels) as MarkerKind[]) {
-    if (kind === 'weather' && !markers.some(m => m.kind === kind)) continue
+    if ((kind === 'weather' || kind === 'position') && !markers.some(m => m.kind === kind)) continue
     const lastX: number[] = []
     lanes.push({ kind, y: top + 22 })
     for (const marker of markers.filter(m => m.kind === kind)) {
