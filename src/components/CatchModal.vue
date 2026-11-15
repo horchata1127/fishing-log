@@ -16,6 +16,7 @@ const props = defineProps<{
   editing?: boolean;
   memo?: string;
   hasPreviousCatch: boolean;
+  previousModel?: { id: number; name: string };
   myLures: LureOption[];
   catalog: LureOption[];
   recentLures: RecentLure[];
@@ -71,6 +72,29 @@ function localDateTime(date: Date) {
   return `${date.getFullYear()}-${pad(date.getMonth()+1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
 }
 const showLurePicker = ref(false);
+const showColorPicker = ref(false);
+const colorSearch = ref('');
+const colorLimit = ref(50);
+watch(colorSearch, () => { colorLimit.value = 50; });
+const ownedVariantIds = computed(() => new Set(props.myLures.map(lure => lure.variantId)));
+const modelColors = computed(() => props.catalog
+  .filter(lure => lure.modelId === props.previousModel?.id)
+  .sort((a, b) => Number(ownedVariantIds.value.has(b.variantId)) - Number(ownedVariantIds.value.has(a.variantId))));
+const filteredColors = computed(() => modelColors.value.filter(lure =>
+  lure.colorName.toLocaleLowerCase().includes(colorSearch.value.trim().toLocaleLowerCase())));
+
+function openColorPicker() {
+  if (props.editing || !props.previousModel) return;
+  colorSearch.value = '';
+  colorLimit.value = 50;
+  showColorPicker.value = true;
+}
+
+function selectColor(lure: LureOption) {
+  // linked selection keeps ownership unchanged, including unowned colors.
+  selectMyLure(lure, { kind: 'linked', variantId: lure.variantId });
+  showColorPicker.value = false;
+}
 const showDictionary = ref(false);
 const showManualInput = ref(false);
 const lureSearch = ref("");
@@ -124,9 +148,9 @@ function closeLurePicker() {
   showLurePicker.value = false;
 }
 
-function selectMyLure(lure: LureOption) {
-  emit("selectLure", pickerMode.value === 'catalog'
-    ? { kind: 'catalog', variantId: lure.variantId } : { kind: 'owned', myLureId: lure.id });
+function selectMyLure(lure: LureOption, selection?: LureSelection) {
+  emit("selectLure", selection ?? (pickerMode.value === 'catalog'
+    ? { kind: 'catalog', variantId: lure.variantId } : { kind: 'owned', myLureId: lure.id }));
   emit("update:lureName", lure.modelName);
   emit("update:lureColor", lure.colorName);
   emit('update:visualColorSnapshot', lure.visualColorSnapshot ? JSON.parse(JSON.stringify(lure.visualColorSnapshot)) : null);
@@ -195,9 +219,34 @@ function chooseDictionary(lure: LureOption) {
       </label>
       <slot name="location" />
       <slot name="weather" />
-      <button v-if="hasPreviousCatch" class="same-button" :disabled="locationBusy || (resultType === 'lost' && !lostDistance)" @click="emit('sameAsPrevious')">
-        ⚡ 前回と同じ
-      </button>
+      <div v-if="!editing" class="quick-lure-actions">
+        <button v-if="hasPreviousCatch" class="same-button" :disabled="locationBusy || (resultType === 'lost' && !lostDistance)" @click="emit('sameAsPrevious')">
+          ⚡ 前回と同じ
+        </button>
+        <button type="button" class="same-button" :disabled="!previousModel" @click="openColorPicker">🎨 カラーチェンジ</button>
+      </div>
+
+      <div v-if="showColorPicker" class="picker-backdrop" @click.self="showColorPicker = false" @keydown.esc.stop="showColorPicker = false">
+        <section class="lure-picker" role="dialog" aria-label="カラーチェンジ" aria-modal="true">
+          <div class="picker-header">
+            <h3>{{ previousModel?.name }}のカラー</h3>
+            <button type="button" class="close-button" aria-label="カラー選択をキャンセル" @click="showColorPicker = false">✕</button>
+          </div>
+          <input v-model="colorSearch" type="search" class="search-input" aria-label="カラーを検索" placeholder="カラー名で検索" />
+          <div class="lure-picker-list">
+            <button v-for="lure in filteredColors.slice(0, colorLimit)" :key="lure.variantId" type="button" class="picker-lure-button" @click="selectColor(lure)">
+              <strong>{{ lure.colorName }}</strong>
+              <small>{{ ownedVariantIds.has(lure.variantId) ? '所有' : '未所有' }}</small>
+              <VisualColorPreview v-if="lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
+              <small v-if="lure.visualProfile && !lure.visualProfile.confirmed && !lure.visualProfile.userEdited">推定配色・未確認</small>
+            </button>
+          </div>
+          <p v-if="!filteredColors.length" class="no-lures" role="status">{{ modelColors.length ? '該当するカラーがありません。' : 'このモデルのカラーは登録されていません。' }}</p>
+          <button v-if="filteredColors.length > colorLimit" type="button" @click="colorLimit += 50">さらに50件表示（全{{ filteredColors.length }}件）</button>
+          <button type="button" class="picker-manual-button" @click="showColorPicker = false; openLurePicker()">通常のルアー選択へ</button>
+          <button type="button" class="picker-manual-button" @click="showColorPicker = false">キャンセル</button>
+        </section>
+      </div>
 
       <!-- ルアー選択 -->
       <div class="catch-field">
@@ -494,6 +543,23 @@ h2 {
 
 .caught-time span {
   color: var(--text-muted);
+}
+
+.quick-lure-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.quick-lure-actions .same-button {
+  flex: 1 1 140px;
+  min-height: 48px;
+  margin-bottom: 0;
+  padding: 14px 8px;
+  font-size: 15px;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .same-button {

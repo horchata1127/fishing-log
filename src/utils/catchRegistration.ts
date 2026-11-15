@@ -157,7 +157,7 @@ export async function registerSameAsPrevious(tripId: number, caughtAt: Date, loc
 }
 
 /** 全カタログと実所有候補を一括取得。最近使用はコミット済み釣果だけから算出する。 */
-export async function loadLureChoices() {
+export async function loadLureChoices(tripId?: number) {
   return db.transaction('r', [...tables, db.lureVisualProfiles], async () => {
     const [manufacturers, series, models, variants, myLures, catches] = await Promise.all([
       db.lureManufacturers.toArray(), db.lureSeries.toArray(), db.lureModels.toArray(),
@@ -210,7 +210,13 @@ export async function loadLureChoices() {
           : variant ? { kind: 'linked', variantId: variant.variantId }
           : { kind: 'manual', lureName: record.lureName ?? '', lureColor: record.lureColor ?? '' } })
     }
-    return { catalog, owned, recent }
+    // 最新記録だけを対象にする。名前による推測や別釣行へのフォールバックはしない。
+    const previous = tripId === undefined ? undefined : catches.find(row => row.tripId === tripId)
+    const previousVariantId = previous?.lureVariantId ?? myLures.find(row => row.id === previous?.lureId)?.variantId
+    const previousVariant = variants.find(row => row.id === previousVariantId)
+    const previousModel = previousVariant && modelMap.get(previousVariant.modelId)
+    return { catalog, owned, recent,
+      previousModel: previousModel?.id ? { id: previousModel.id, name: previousModel.name } : undefined }
   })
 }
 

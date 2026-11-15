@@ -560,6 +560,62 @@ function setupModal(choices, onEmit) {
   return { props, state, events }
 }
 
+test('RC40 resolves only the latest catch in this trip by relation, including missing color and inactive ownership', async () => {
+  assert.equal((await loadLureChoices(60)).previousModel, undefined)
+  await db.catches.add({ ...input(), lureId: 50 })
+  await db.myLures.update(50, { active: false })
+  assert.deepEqual((await loadLureChoices(60)).previousModel, { id: 30, name: 'Model' })
+  await db.catches.add({ ...input('2026-10-10T03:00:00Z'), tripId: 61, lureName: 'other trip' })
+  assert.equal((await loadLureChoices(60)).previousModel.id, 30)
+  await db.catches.add({ ...input('2026-10-10T02:00:00Z'), lureVariantId: 41 })
+  assert.equal((await loadLureChoices(60)).previousModel.id, 30)
+  await db.catches.add({ ...input('2026-10-10T04:00:00Z'), lureName: 'Model' })
+  assert.equal((await loadLureChoices(60)).previousModel, undefined)
+})
+
+test('RC40 filters by model ID, prioritizes real ownership, searches, and saves an unowned color without ownership writes', async () => {
+  await db.lureModels.add({ id: 31, seriesId: 20, name: 'Model' })
+  await db.lureVariants.add({ id: 42, modelId: 31, colorName: 'Wrong model' })
+  await registerCatch(input(), { kind: 'linked', variantId: 40 })
+  const choices = await loadLureChoices(60)
+  const { props, state, events } = setupModal(choices)
+  props.previousModel = choices.previousModel
+  props.range = 'ボトム'; props.memo = 'keep'; props.fishSize = '25'
+  const before = await snapshot()
+  state.openColorPicker()
+  assert.deepEqual(state.modelColors.value.map(c => c.variantId), [40, 41])
+  state.colorSearch.value = 'other'
+  assert.deepEqual(state.filteredColors.value.map(c => c.variantId), [41])
+  assert.equal(events.length, 0)
+  state.showColorPicker.value = false
+  assert.equal(await snapshot(), before)
+  state.openColorPicker()
+  state.selectColor(choices.catalog.find(c => c.variantId === 41))
+  assert.deepEqual(props.selection, { kind: 'linked', variantId: 41 })
+  assert.equal(props.lureName, 'Model'); assert.equal(props.lureColor, 'Other')
+  assert.equal(props.range, 'ボトム'); assert.equal(props.memo, 'keep'); assert.equal(props.fishSize, '25')
+  assert.equal(events.some(([name]) => name === 'save' || name === 'sameAsPrevious'), false)
+  assert.equal(await snapshot(), before)
+  const owned = await db.myLures.toArray()
+  const id = await registerCatch({ ...input('2026-10-10T02:00:00Z'), memo: props.memo }, props.selection)
+  assert.equal((await db.catches.get(id)).lureVariantId, 41)
+  assert.equal((await db.lureVariants.get(41)).modelId, 30)
+  assert.deepEqual(await db.myLures.toArray(), owned)
+})
+
+test('RC40 empty colors keep a known model and editing cannot open the picker', async () => {
+  const { props, state } = setupModal(await loadLureChoices())
+  state.openColorPicker()
+  assert.equal(state.showColorPicker.value, false)
+  props.previousModel = { id: 999, name: 'Empty' }
+  state.openColorPicker()
+  assert.equal(state.modelColors.value.length, 0)
+  state.showColorPicker.value = false
+  props.editing = true
+  state.openColorPicker()
+  assert.equal(state.showColorPicker.value, false)
+})
+
 // Render inside an actual Vue instance so named slots have their runtime context.
 async function renderModal(props, state) {
   let vnode

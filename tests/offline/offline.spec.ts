@@ -7,6 +7,48 @@ import { rc22Fixture } from '../rc22Fixture'
 import { rc23Fixture } from '../rc23Fixture'
 import { stage6Backup } from '../stage6Fixture'
 import { rc24Fixture } from '../rc24Fixture'
+import { catalogFixture } from '../e2e/fixtures'
+
+test('RC40 color change persists correct IDs after offline cold start without changing ownership', async ({}, info) => {
+  await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
+  const profile = await mkdtemp(join(tmpdir(), 'fishing-rc40-offline-'))
+  const mobile = info.project.name.includes('mobile')
+  const launch = (offline = false) => chromium.launchPersistentContext(profile, { serviceWorkers: 'allow', offline,
+    viewport: mobile ? { width: 390, height: 844 } : { width: 1280, height: 800 }, isMobile: mobile, hasTouch: mobile,
+    locale: 'ja-JP', timezoneId: 'Asia/Tokyo' })
+  let context = await launch()
+  try {
+    let page = context.pages()[0]!
+    await page.goto(url); await ready(page)
+    const fixture = catalogFixture()
+    fixture.data.trips.push({ id: 60, fishingAreaName: 'RC40圏外テスト', fishingDate: '2026-10-10', fishingStyle: 'AREA_TROUT', startedAt: '2026-10-10T00:00:00Z' })
+    fixture.data.catches.push({ id: 70, tripId: 60, caughtAt: '2026-10-10T01:00:00Z', lureVariantId: 40 })
+    page.on('dialog', d => d.accept())
+    await page.getByTestId('restore-backup').setInputFiles({ name: 'rc40-synthetic.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(fixture)) })
+    await expect.poll(async () => (await database(page)).catches!.length).toBe(1)
+    const before = await database(page)
+    await context.close(); context = await launch(true); page = context.pages()[0]!
+    await page.goto(url)
+    await page.locator('.trip-row[data-trip-id="60"]').click()
+    await page.getByRole('button', { name: '🎣 釣れた！', exact: true }).click()
+    const modal = page.getByRole('dialog', { name: '釣果を登録', exact: true })
+    await modal.getByLabel('メモ（任意）').fill('圏外のカラー変更')
+    await modal.getByRole('button', { name: 'カラーチェンジ' }).click()
+    const picker = page.getByRole('dialog', { name: 'カラーチェンジ', exact: true })
+    await picker.getByLabel('カラーを検索').fill('青')
+    await picker.getByRole('button', { name: '青 未所有', exact: true }).click()
+    expect(await database(page)).toEqual(before)
+    await modal.getByRole('button', { name: '保存する', exact: true }).click()
+    await expect(modal).not.toBeVisible()
+    const saved = await database(page)
+    expect(saved.catches!.at(-1)).toMatchObject({ tripId: 60, lureVariantId: 41, lureName: 'E2Eスプーン', lureColor: '青', memo: '圏外のカラー変更' })
+    expect(saved.myLures).toEqual(before.myLures)
+    expect(saved.catches![0]).toEqual(before.catches![0])
+    await context.close(); context = await launch(true); page = context.pages()[0]!
+    await page.goto(url)
+    expect(await database(page)).toEqual(saved)
+  } finally { await context.close() }
+})
 
 const origin = 'http://127.0.0.1:4188'
 const url = `${origin}/fishing-log/`
