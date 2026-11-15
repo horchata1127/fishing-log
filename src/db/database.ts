@@ -64,7 +64,7 @@ export function validateWeatherObservation(value: unknown): asserts value is Wea
 export function observationLabel(value?: WeatherObservation) {
   return value ? [value.sky ? skyLabels[value.sky] : '', value.wind ? `風：${windLabels[value.wind]}` : '', ...value.changes.map(key => weatherChangeLabels[key])].filter(Boolean).join('・') || '気象メモ' : '未入力'
 }
-export type TripEventType = 'stocking' | 'pellet' | 'weather'
+export type TripEventType = 'stocking' | 'pellet' | 'weather' | 'position'
 
 export interface TripEvent {
   id?: number
@@ -77,6 +77,79 @@ export interface TripEvent {
   facilityId?: string
   zoneId?: string
   zoneName?: string
+  fishingPosition?: FishingPosition
+}
+
+export interface MapPoint { x: number; y: number }
+export interface ShoreAnchor { segment: number; t: number }
+export interface WaterFeature { id: string; type: 'inlet' | 'outlet'; anchor: ShoreAnchor; label?: string; memo?: string }
+export interface AreaMap {
+  id: string; facilityId: string; zoneId: string; name: string
+  waterType: 'pond' | 'river'; templateId: string; outline: MapPoint[]; features: WaterFeature[]
+  revision: number; createdAt: string; updatedAt: string; deletedAt?: string
+}
+export interface FishingPosition {
+  mapId: string; snapshot: AreaMap; anchor: ShoreAnchor; position: MapPoint; castDirection?: number
+}
+
+export function shorePoint(outline: MapPoint[], anchor: ShoreAnchor): MapPoint {
+  const a = outline[anchor.segment]!, b = outline[(anchor.segment + 1) % outline.length]!
+  return { x: a.x + (b.x - a.x) * anchor.t, y: a.y + (b.y - a.y) * anchor.t }
+}
+export function nearestShore(outline: MapPoint[], point: MapPoint): ShoreAnchor {
+  let best = { segment: 0, t: 0 }, distance = Infinity
+  outline.forEach((a, segment) => {
+    const b = outline[(segment + 1) % outline.length]!, dx = b.x-a.x, dy = b.y-a.y
+    const t = Math.max(0, Math.min(1, ((point.x-a.x)*dx+(point.y-a.y)*dy)/(dx*dx+dy*dy || 1)))
+    const d = (point.x-a.x-dx*t)**2 + (point.y-a.y-dy*t)**2
+    if (d < distance) { distance = d; best = { segment, t } }
+  })
+  return best
+}
+export function validMapOutline(value: unknown): value is MapPoint[] {
+  if (!Array.isArray(value) || value.length < 3 || value.length > 128 || value.some(p => !p || !Number.isFinite(p.x) || !Number.isFinite(p.y) || p.x < 0.02 || p.x > 0.98 || p.y < 0.02 || p.y > 0.98)) return false
+  const points = value as MapPoint[], cross = (a: MapPoint,b: MapPoint,c: MapPoint) => (b.x-a.x)*(c.y-a.y)-(b.y-a.y)*(c.x-a.x)
+  let area = 0
+  for (let i=0;i<points.length;i++) {
+    const a=points[i]!, b=points[(i+1)%points.length]!
+    if (Math.hypot(a.x-b.x,a.y-b.y)<0.005) return false
+    area += a.x*b.y-b.x*a.y
+    for (let j=i+1;j<points.length;j++) {
+      if (j===i+1 || i===0 && j===points.length-1) continue
+      const c=points[j]!,d=points[(j+1)%points.length]!
+      if (Math.max(a.x,b.x)+1e-9 < Math.min(c.x,d.x) || Math.max(c.x,d.x)+1e-9 < Math.min(a.x,b.x) || Math.max(a.y,b.y)+1e-9 < Math.min(c.y,d.y) || Math.max(c.y,d.y)+1e-9 < Math.min(a.y,b.y)) continue
+      if (cross(a,b,c)*cross(a,b,d)<=1e-12 && cross(c,d,a)*cross(c,d,b)<=1e-12) return false
+    }
+  }
+  return Math.abs(area)/2 >= 0.015
+}
+function validateShoreAnchor(value: unknown, outline: MapPoint[]): asserts value is ShoreAnchor {
+  const a = value as ShoreAnchor | undefined
+  if (!a || !Number.isInteger(a.segment) || a.segment<0 || a.segment>=outline.length || !Number.isFinite(a.t) || a.t<0 || a.t>1) throw new Error('岸の位置が不正です。')
+}
+export function validateAreaMap(value: unknown): asserts value is AreaMap {
+  const m = value as AreaMap | undefined
+  const text = (v: unknown) => typeof v==='string' && !!v.trim() && v.length<=500
+  const date = (v: unknown) => typeof v==='string' && /^\d{4}-\d{2}-\d{2}T.*Z$/.test(v) && Number.isFinite(Date.parse(v))
+  if (!m || !text(m.id) || !text(m.facilityId) || !text(m.zoneId) || !text(m.name) || !['pond','river'].includes(m.waterType) ||
+    !new RegExp(m.waterType==='pond' ? '^P0[1-8]$' : '^R0[1-5]$').test(m.templateId) || !validMapOutline(m.outline) ||
+    !Number.isSafeInteger(m.revision) || m.revision<1 || !date(m.createdAt) || !date(m.updatedAt) || m.updatedAt<m.createdAt ||
+    m.deletedAt!==undefined && !date(m.deletedAt) || !Array.isArray(m.features) || m.features.length>100) throw new Error('マップの形状・名称・版情報が不正です。')
+  const ids = new Set<string>()
+  for (const feature of m.features) {
+    if (!feature || !text(feature.id) || ids.has(feature.id) || !['inlet','outlet'].includes(feature.type) ||
+      feature.label!==undefined && typeof feature.label!=='string' || feature.memo!==undefined && typeof feature.memo!=='string') throw new Error('特徴物の情報が不正です。')
+    ids.add(feature.id); validateShoreAnchor(feature.anchor,m.outline)
+  }
+}
+export function validateFishingPosition(value: unknown): asserts value is FishingPosition {
+  const p = value as FishingPosition | undefined
+  if (!p) throw new Error('釣り座を指定してください。')
+  validateAreaMap(p.snapshot)
+  validateShoreAnchor(p.anchor,p.snapshot.outline)
+  const expected=shorePoint(p.snapshot.outline,p.anchor)
+  if (p.mapId!==p.snapshot.id || !p.position || !Number.isFinite(p.position.x) || !Number.isFinite(p.position.y) || Math.hypot(p.position.x-expected.x,p.position.y-expected.y)>1e-7 ||
+    p.castDirection!==undefined && (!Number.isFinite(p.castDirection) || p.castDirection<0 || p.castDirection>=360)) throw new Error('釣り座の座標・方向が不正です。')
 }
 
 // RC25: UTC milliseconds for joins with catches.caughtAt / tripEvents.occurredAt.
@@ -714,7 +787,7 @@ export function validateLureMasterHistoryRecord(value: unknown): asserts value i
   if (row.kind === 'restore') {
     historyFields(row, [...base, 'sourceBackupVersion', 'sourceExportedAt', 'previousContextId'])
     if (row.status !== 'succeeded' || row.completedAt === undefined || !Number.isInteger(row.sourceBackupVersion) ||
-      (row.sourceBackupVersion as number) < 1 || (row.sourceBackupVersion as number) > 11 ||
+      (row.sourceBackupVersion as number) < 1 || (row.sourceBackupVersion as number) > 12 ||
       row.previousContextId !== undefined && !historyUuid(row.previousContextId)) throw new Error('更新履歴: 復元イベントが不正です')
     historyTime(row.sourceExportedAt)
     return
@@ -802,6 +875,7 @@ export const db = new Dexie('FishingLogDatabase') as Dexie & {
   fishSpecies: EntityTable<FishSpecies, 'fish_id'>
   facilities: Table<FlatOfficialFacility | UserFacility, string>
   zones: Table<FlatOfficialZone | UserZone, string>
+  areaMaps: Table<AreaMap, string>
   appMetadata: EntityTable<AppliedMaster & { key: 'facilityMaster' }, 'key'>
   lureVisualProfiles: Table<LureVisualProfile, string>
   temporaryLureColors: Table<TemporaryLureColor, string>
@@ -867,6 +941,8 @@ db.version(9).stores({
 
 // RC34 Phase 2: only a new empty store. No upgrade callback, seed or writes to the existing 21 stores.
 db.version(10).stores({ lureMasterImportHistory: 'id, contextId, sequence, startedAt, kind, status' })
+// RC41: additive, no migration writes to existing records.
+db.version(11).stores({ areaMaps: 'id, facilityId, zoneId' })
 
 export const databaseConnection = { state: 'ready' as 'ready' | 'changed' | 'blocked' }
 const connectionListeners = new Set<(state: typeof databaseConnection.state) => void>()

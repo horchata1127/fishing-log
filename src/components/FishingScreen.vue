@@ -7,6 +7,8 @@ import TripWeatherPanel from './TripWeatherPanel.vue'
 import TripTimeline from './TripTimeline.vue'
 import TripSummaryPanel from './TripSummaryPanel.vue'
 import TripMemoEditor from './TripMemoEditor.vue'
+import AreaMapManager from './AreaMapManager.vue'
+import AreaMapCanvas from './AreaMapCanvas.vue'
 import TripEventEditor from './TripEventEditor.vue'
 import { deleteTripEvent } from '../utils/tripEvents'
 import { formatTimelineTime, timelineTimestamp } from '../utils/tripTimeline'
@@ -41,19 +43,22 @@ const emit = defineEmits<{
   endTrip: []
   recordEvent: [type: TripEventType]
   eventsChanged: []
+  mapsChanged: []
   editTackles: []
 }>()
 
 const editingEvent = ref<TripEvent>()
 const eventEditorOpen = ref(false)
 const weatherEditor = ref(false)
+const positionEditor = ref(false), mapManagerOpen = ref(false)
+const previousPosition = computed(() => [...props.events].filter(e=>e.type==='position'&&e.fishingPosition&&e.timePrecision!=='unknown').sort((a,b)=>new Date(b.occurredAt).getTime()-new Date(a.occurredAt).getTime()||(b.id??0)-(a.id??0))[0]?.fishingPosition)
 const previousObservation = computed(() => [...props.events.map(e => ({ time: new Date(e.occurredAt).getTime(), value: e.weatherObservation })), ...props.catches.map(c => ({ time: new Date(c.caughtAt).getTime(), value: c.weatherObservation }))].filter(e => e.value).sort((a,b) => b.time-a.time)[0]?.value)
 const eventBusy = ref(false)
 function eventTimeLabel(event: TripEvent) {
   const timestamp = event.timePrecision === 'unknown' ? null : timelineTimestamp(event.occurredAt)
   return timestamp === null ? '時刻不明' : `${event.timePrecision === 'approximate' ? '約 ' : ''}${formatTimelineTime(timestamp)}`
 }
-function openEvent(event?: TripEvent, weather = false) { editingEvent.value = event; weatherEditor.value = weather; eventEditorOpen.value = true }
+function openEvent(event?: TripEvent, weather = false, position = false) { positionEditor.value = position; editingEvent.value = event; weatherEditor.value = weather; eventEditorOpen.value = true }
 function eventSaved() { eventEditorOpen.value = false; emit('eventsChanged') }
 async function removeEvent(event: TripEvent) {
   if (eventBusy.value || !confirm('このイベントを削除しますか？')) return
@@ -63,7 +68,7 @@ async function removeEvent(event: TripEvent) {
   finally { eventBusy.value = false }
 }
 
-const sortedEvents = computed(() => [...props.events].sort((a,b) => new Date(b.occurredAt).getTime()-new Date(a.occurredAt).getTime()))
+const sortedEvents = computed(() => [...props.events].sort((a,b) => new Date(b.occurredAt).getTime()-new Date(a.occurredAt).getTime() || (b.id ?? 0) - (a.id ?? 0)))
 
 const catchCount = computed(() => props.catches.filter(isCatch).length)
 const results = computed(() => countResults(props.catches))
@@ -182,7 +187,7 @@ function fishingStyleName(style: FishingStyle) {
     <p v-if="!sortedEvents.length" class="event-hint">イベントはまだ記録されてへんで。</p>
     <div v-for="event in sortedEvents" :key="event.id" class="event-entry">
       <div class="event-entry-head">
-        <strong>{{ event.type === 'weather' ? observationLabel(event.weatherObservation) : event.type === 'stocking' ? '🐟 放流' : '🟤 ペレット' }}</strong>
+        <strong>{{ event.type === 'position' ? '釣り座移動｜' + (event.fishingPosition?.snapshot.name || event.zoneName || '参照先不明') : event.type === 'weather' ? observationLabel(event.weatherObservation) : event.type === 'stocking' ? '🐟 放流' : '🟤 ペレット' }}</strong>
         <span>{{ eventTimeLabel(event) }}</span>
         <button type="button" class="edit-catch" :disabled="locationBusy || eventBusy" @click="openEvent(event)">編集</button>
         <button type="button" class="edit-catch" :disabled="locationBusy || eventBusy" @click="removeEvent(event)">削除</button>
@@ -190,6 +195,7 @@ function fishingStyleName(style: FishingStyle) {
       <p v-if="event.zoneId">{{ event.zoneName || event.zoneId }}</p>
       <p v-if="event.weatherObservation?.note">{{ event.weatherObservation.note }}</p>
       <p v-if="event.note">{{ event.note }}</p>
+      <details v-if="event.type==='position'"><summary>釣り座の詳細</summary><AreaMapCanvas v-if="event.fishingPosition" :map="event.fishingPosition.snapshot" :anchor="event.fishingPosition.anchor" :cast-direction="event.fishingPosition.castDirection" mode="view" /><p v-else>保存時のマップ情報がありません。イベントを編集して選び直してください。</p></details>
     </div>
   </section>
 
@@ -235,7 +241,10 @@ function fishingStyleName(style: FishingStyle) {
 
   <TripSummaryPanel :key="trip.id" :trip="trip" :catches="catches" :events="events" :disabled="locationBusy" @saved="emit('summarySaved', $event)" />
   <TripMemoEditor :key="trip.id" :trip="trip" @saved="emit('memoSaved', $event)" />
-  <TripEventEditor v-if="eventEditorOpen" :weather="weatherEditor" :previous="previousObservation" :trip="trip" :event="editingEvent" @saved="eventSaved" @cancel="eventEditorOpen = false" />
+  <button type="button" class="back-button" :disabled="locationBusy" @click="mapManagerOpen=true">エリアマップ管理</button>
+  <button type="button" class="back-button" :disabled="locationBusy" @click="openEvent(undefined,false,true)">釣り座を記録</button>
+  <AreaMapManager v-if="mapManagerOpen" :facility-id="trip.facilityId" :trip-id="trip.id" @close="mapManagerOpen=false;emit('mapsChanged')" />
+  <TripEventEditor v-if="eventEditorOpen" :position="positionEditor" :previous-position="previousPosition" :weather="weatherEditor" :previous="previousObservation" :trip="trip" :event="editingEvent" @saved="eventSaved" @cancel="eventEditorOpen = false" />
   <TripTimeline :key="trip.id" :trip="trip" :catches="catches" :events="events" :hours="timelineWeather.hours" :requests="timelineWeather.requests" :location="timelineWeather.location" :weather-error="timelineWeatherError" />
   <TripWeatherPanel :key="trip.id" :trip="trip" @loaded="timelineWeather = $event; timelineWeatherError = ''" @load-error="timelineWeatherError = $event" />
 

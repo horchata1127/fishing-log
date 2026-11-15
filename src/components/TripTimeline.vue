@@ -3,6 +3,7 @@ import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import type { CatchRecord, FishingTrip, TripWeatherHour, TripWeatherLocation, TripWeatherRequest } from '../db/database'
 import { db, lostDistanceLabels, observationLabel } from '../db/database'
 import { catchZoneKey, buildCatchSummary, buildTripTimeline, formatTimelineTime, layoutTimelineMarkers, markerLabels, markerSymbols, type TimelineEvent, type TimelineMarker } from '../utils/tripTimeline'
+import AreaMapCanvas from './AreaMapCanvas.vue'
 import HourlyCatchChart from './HourlyCatchChart.vue'
 import WeatherAttribution from './WeatherAttribution.vue'
 import TimelineImageExport from './TimelineImageExport.vue'
@@ -43,10 +44,10 @@ const usedRequests = computed(() => {
   const ids = new Set(props.hours.filter(h => h.tripId === props.trip.id).map(h => h.requestId))
   return props.requests.filter(r => r.tripId === props.trip.id && ids.has(r.id!))
 })
-const unknownEvents = computed(() => model.value.unknown.filter(m => m.kind === 'stocking' || m.kind === 'pellet' || m.kind === 'weather'))
+const unknownEvents = computed(() => model.value.unknown.filter(m => m.kind === 'stocking' || m.kind === 'pellet' || m.kind === 'weather' || m.kind === 'position'))
 const unknownCatches = computed(() => model.value.unknown.filter(m => m.kind === 'catch' || m.kind === 'lost'))
 const selectedCatch = computed(() => selected.value && ['catch','lost'].includes(selected.value.kind) ? selected.value.record as CatchRecord : null)
-const selectedEvent = computed(() => selected.value && ['stocking','pellet','weather'].includes(selected.value.kind) ? selected.value.record as TimelineEvent : null)
+const selectedEvent = computed(() => selected.value && ['stocking','pellet','weather','position'].includes(selected.value.kind) ? selected.value.record as TimelineEvent : null)
 const markerTitle = (marker: TimelineMarker) => `${markerLabels[marker.kind]}${marker.kind === 'weather' ? ' ' + observationLabel(marker.record.weatherObservation) : ''} ${marker.timestamp === null ? '時刻不明' : `${marker.precision === 'approximate' ? '約 ' : ''}${formatTimelineTime(marker.timestamp)}`}`
 let observer: ResizeObserver | undefined
 onMounted(() => {
@@ -139,6 +140,7 @@ watch(model, value => {
       <p v-if="selectedCatch && catchZoneKey(selectedCatch,trip.facilityId,zoneFacilities).startsWith('previous:')">旧施設・所属未確認のエリアです。新施設のエリアには変換していません。</p>
       <dl v-if="selectedCatch"><dt>ルアー</dt><dd>{{ selectedCatch.lureName || '未記録' }} {{ selectedCatch.lureColor || '' }}</dd><dt>魚種</dt><dd>{{ selectedCatch.fishSpecies || '未記録' }}</dd><dt>エリア</dt><dd>{{ selectedCatch.locationSnapshot?.zoneName || '未設定' }}</dd><dt>施設</dt><dd>{{ selectedCatch.locationSnapshot?.facilityName || '未記録' }}</dd><template v-if="selectedCatch.fishSizeCm !== undefined"><dt>全長</dt><dd>{{ selectedCatch.fishSizeCm }} cm</dd></template><template v-if="selectedCatch.lostDistance"><dt>バラシの距離</dt><dd>{{ lostDistanceLabels[selectedCatch.lostDistance] }}</dd></template><dt>メモ</dt><dd>{{ selectedCatch.memo || 'なし' }}</dd></dl>
       <p v-if="selected.kind === 'weather'">{{ observationLabel(selected.record.weatherObservation) }}<br />{{ selected.record.weatherObservation?.note }}</p>
+      <AreaMapCanvas v-if="selectedEvent?.fishingPosition" :map="selectedEvent.fishingPosition.snapshot" :anchor="selectedEvent.fishingPosition.anchor" :cast-direction="selectedEvent.fishingPosition.castDirection" mode="view" />
       <p v-if="selectedEvent">{{ selectedEvent.note || 'メモなし' }}</p>
       <p v-if="selectedEvent?.zoneId">対象エリア：{{ selectedEvent.zoneName || selectedEvent.zoneId }}</p>
       <button type="button" autofocus @click="close">記録の詳細を閉じる</button>

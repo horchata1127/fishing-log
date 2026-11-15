@@ -6,10 +6,10 @@ import { formatTimelineTime, layoutTimelineMarkers, markerLabels, markerSymbols,
 export type TimelineModel = ReturnType<typeof buildTripTimeline>
 export type TimelineImageOptions = Record<MarkerKind | 'temperature' | 'memo', boolean>
 export const defaultTimelineImageOptions: TimelineImageOptions = {
-  temperature: true, catch: true, lost: true, stocking: true, pellet: true, weather: true, memo: false,
+  temperature: true, catch: true, lost: true, stocking: true, pellet: true, weather: true, position: true, memo: false,
 }
 export const timelineImageColors: Record<MarkerKind | 'temperature', string> = {
-  temperature: '#c56832', catch: '#126652', lost: '#a12d40', stocking: '#2857a0', pellet: '#795012', weather: '#37546b',
+  temperature: '#c56832', catch: '#126652', lost: '#a12d40', stocking: '#2857a0', pellet: '#795012', weather: '#37546b', position: '#9a3155',
 }
 export const timelineTemperatureNote = '線は保存済みの毎正時のモデル推定値を直線で結んでいます。欠損や時間の抜けでは線を切ります。釣果時刻の気温の算出・実測表示は行いません。'
 export const timelineLogicalWidth = 484
@@ -49,7 +49,7 @@ export function buildTimelineImage(trip: FishingTrip, model: TimelineModel, opti
     rangeNote: range?.reason === 'records' ? '開始・終了時刻が揃わないため、保存済みの記録時刻などから表示範囲を決めています。実際の釣行時間ではありません。'
       : range?.reason === 'calendar' ? '開始・終了時刻と記録時刻がないため、保存済み釣行日の1日分を表示しています。' : '',
     low, high, x, y, paths, points, ticks,
-    eventDetails: markers.filter(m => ['stocking', 'pellet', 'weather'].includes(m.kind)).map(m => ({ key: m.key, text: timelineMarkerDescription(m) })),
+    eventDetails: markers.filter(m => ['stocking', 'pellet', 'weather', 'position'].includes(m.kind)).map(m => ({ key: m.key, text: timelineMarkerDescription(m) })),
     unplaced: [...model.outside.filter(m => options[m.kind]).map(m => ({ key: m.key, text: `表示範囲外：${timelineMarkerDescription(m)}` })),
       ...model.unknown.filter(m => options[m.kind]).map(m => ({ key: m.key, text: timelineMarkerDescription(m) }))],
     hasTemperature: temperatures.length > 0,
