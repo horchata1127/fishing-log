@@ -1,0 +1,2709 @@
+{
+  "checkedAt": "2026-11-21",
+  "backupSha256": "0e88566b7ad0359599159c976a9499b80f80f53518f9b40148c5a44eb27c5d16",
+  "models": [
+    {
+      "model": "45F1",
+      "sourceUrl": "https://www.daiwa.com/jp/product/v2p2hkc",
+      "pageSha256": "c26cc48eec0e572da5f7eb135b4dc1304313a061eebbbc51a8a678f3e76ec263",
+      "colors": [
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　トッピングフード",
+          "name": "トッピングフード",
+          "jan": "4960652206914",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_ToppingFood.jpg?rev=93d6c07ef00a431aa879691916027187",
+          "galleryName": "トッピングフード",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフード",
+              "modelId": 297,
+              "id": 1254
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　ＭＳブラウン",
+          "name": "MSブラウン",
+          "jan": "4960652206945",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_MSBrown.jpg?rev=154886d523ac4729be280c63f7496aa9",
+          "galleryName": "MSブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "MSブラウン",
+              "modelId": 297,
+              "id": 1255
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　ホログラムワカサギ５",
+          "name": "ホログラムワカサギ5",
+          "jan": "4960652206952",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_HologramWakasagi5.jpg?rev=7ee0e5455aa142d784736f768aea6955",
+          "galleryName": "ホログラムワカサギ5",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ホログラムワカサギ5",
+              "modelId": 297,
+              "id": 1256
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　ブラウンパールスプラッシュ",
+          "name": "ブラウンパールスプラッシュ",
+          "jan": "4960652206983",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_BrownPearlSplash.jpg?rev=1c69a801903d4e5081d586bfbc154599",
+          "galleryName": "ブラウンパールスプラッシュ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブラウンパールスプラッシュ",
+              "modelId": 297,
+              "id": 1257
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　トッピングフードレッドグロー",
+          "name": "トッピングフードレッドグロー",
+          "jan": "4960652261333",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_ToppingFoodRG.jpg?rev=88b70413bf7241d7a455ebf5786c736d",
+          "galleryName": "トッピングフードRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフードRG",
+              "modelId": 297,
+              "id": 1258
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　ウッチーシークレット",
+          "name": "ウッチーシークレット",
+          "jan": "4960652261340",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_UcchieSecret.jpg?rev=df0c0a64d2c6419d94739be9af2e404b",
+          "galleryName": "ウッチーシークレット",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ウッチーシークレット",
+              "modelId": 297,
+              "id": 1259
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　マットグローサーモン",
+          "name": "マットグローサーモン",
+          "jan": "4960652261357",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_MadGlowSalmon.jpg?rev=7dc9009f696a4fe5861daabb60e27a17",
+          "galleryName": "マットグローサーモン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "マットグローサーモン",
+              "modelId": 297,
+              "id": 1260
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　ミドリムシ",
+          "name": "ミドリムシ",
+          "jan": "4960652261364",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_MidoriMushi.jpg?rev=047e292564954e8cbb66fe4928c4192d",
+          "galleryName": "ミドリムシ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ミドリムシ",
+              "modelId": 297,
+              "id": 1261
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　オニヨメＲＧ",
+          "name": "オニヨメRG",
+          "jan": "4550133044434",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2019/08/09/presso_wc_45s_oniyome.jpg?rev=f60e6cef42174cd28ab201fc351f84bf",
+          "galleryName": "オニヨメRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "オニヨメRG",
+              "modelId": 297,
+              "id": 1262
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　ヤマメ",
+          "name": "ヤマメ",
+          "jan": "4550133402692",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2019/08/09/PRESSO_DOUBLECLUTCH45F1_YAMAME_4550133402692.jpg?rev=8790f6e39e494d4cb7915b2a52344128",
+          "galleryName": "ヤマメ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ヤマメ",
+              "modelId": 297,
+              "id": 1263
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　ピンクヤマメチャートベリー",
+          "name": "ピンクヤマメチャートベリー",
+          "jan": "4550133402708",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2019/08/09/PRESSO_DOUBLECLUTCH45F1_PINK_YAMAME_CHART_BERRY_4550133402708.jpg?rev=82fbd18149ee4e8cad4b1bdf77523eb7",
+          "galleryName": "ピンクヤマメチャートベリー",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ピンクヤマメチャートベリー",
+              "modelId": 297,
+              "id": 1264
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　カゲホウシ",
+          "name": "カゲホウシ",
+          "jan": "4550133402715",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2019/08/09/PRESSO_DOUBLECLUTCH45F1_KAGEHOUSHI_4550133402715.jpg?rev=b0f09b1e45e34027a4f65b899ac265ac",
+          "galleryName": "カゲホウシ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "カゲホウシ",
+              "modelId": 297,
+              "id": 1265
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　ヤドクブラウン",
+          "name": "ヤドクブラウン",
+          "jan": "4550133402722",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2019/08/09/PRESSO_DOUBLECLUTCH45F1_YADOKU_BROUN_4550133402722.jpg?rev=cd3a05486bd34881a7c868f0625f1c95",
+          "galleryName": "ヤドクブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ヤドクブラウン",
+              "modelId": 297,
+              "id": 1266
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　クリアアデル",
+          "name": "クリアアデル",
+          "jan": "4550133543463",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/tuika/PRESSO_DOUBLECLUTCH45F1_CLEAR_ADEL_4550133543463.jpg?rev=eb7c9f18926545409921c4fee083ea7d",
+          "galleryName": "クリアアデル",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "クリアアデル",
+              "modelId": 297,
+              "id": 1267
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　トッピングフードベリー",
+          "name": "トッピングフードベリー",
+          "jan": "4550133543470",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/tuika/PRESSO_DOUBLECLUTCH45F1_TOPPING_FOOD_BERRY_4550133543470.jpg?rev=a1480b60aa624c82ae2543ab41af467c",
+          "galleryName": "トッピングフードベリー",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフードベリー",
+              "modelId": 297,
+              "id": 1268
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　ブルーハイドサクサス",
+          "name": "ブルーハイドサクサス",
+          "jan": "4550133543487",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/tuika/PRESSO_DOUBLECLUTCH45F1_BLUE_HYDE_SAQSAS_4550133543487.jpg?rev=d8cac15b02cf4c16a94b5df1d5e68c05",
+          "galleryName": "ブルーハイドサクサス",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブルーハイドサクサス",
+              "modelId": 297,
+              "id": 1269
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｆ１　ゴールドハイドサクサス",
+          "name": "ゴールドハイドサクサス",
+          "jan": "4550133543494",
+          "spec": [
+            "45",
+            "1.6",
+            "ハイフローティング",
+            "プレッソシングルフックSSショートマルチ#10",
+            "フロント:シングルリング#0_リア:ダブルリング#0",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/tuika/PRESSO_DOUBLECLUTCH45F1_GOLD_HYDE_SAQSAS_4550133543494.jpg?rev=79616ca4155246c8876caead228744a8",
+          "galleryName": "ゴールドハイドサクサス",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ゴールドハイドサクサス",
+              "modelId": 297,
+              "id": 1270
+            }
+          ],
+          "status": "existing"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_ToppingFood.jpg?rev=93d6c07ef00a431aa879691916027187",
+          "name": "トッピングフード"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_BrownPearlSplash.jpg?rev=1c69a801903d4e5081d586bfbc154599",
+          "name": "ブラウンパールスプラッシュ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_MSBrown.jpg?rev=154886d523ac4729be280c63f7496aa9",
+          "name": "MSブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_HologramWakasagi5.jpg?rev=7ee0e5455aa142d784736f768aea6955",
+          "name": "ホログラムワカサギ5"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_ToppingFoodRG.jpg?rev=88b70413bf7241d7a455ebf5786c736d",
+          "name": "トッピングフードRG"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_UcchieSecret.jpg?rev=df0c0a64d2c6419d94739be9af2e404b",
+          "name": "ウッチーシークレット"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_MadGlowSalmon.jpg?rev=7dc9009f696a4fe5861daabb60e27a17",
+          "name": "マットグローサーモン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2018/11/16/DoubleClutch45F1_MidoriMushi.jpg?rev=047e292564954e8cbb66fe4928c4192d",
+          "name": "ミドリムシ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2019/08/09/presso_wc_45s_oniyome.jpg?rev=f60e6cef42174cd28ab201fc351f84bf",
+          "name": "オニヨメRG"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2019/08/09/PRESSO_DOUBLECLUTCH45F1_YAMAME_4550133402692.jpg?rev=8790f6e39e494d4cb7915b2a52344128",
+          "name": "ヤマメ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2019/08/09/PRESSO_DOUBLECLUTCH45F1_PINK_YAMAME_CHART_BERRY_4550133402708.jpg?rev=82fbd18149ee4e8cad4b1bdf77523eb7",
+          "name": "ピンクヤマメチャートベリー"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2019/08/09/PRESSO_DOUBLECLUTCH45F1_KAGEHOUSHI_4550133402715.jpg?rev=b0f09b1e45e34027a4f65b899ac265ac",
+          "name": "カゲホウシ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/__icsFiles/afieldfile/2019/08/09/PRESSO_DOUBLECLUTCH45F1_YADOKU_BROUN_4550133402722.jpg?rev=cd3a05486bd34881a7c868f0625f1c95",
+          "name": "ヤドクブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/tuika/PRESSO_DOUBLECLUTCH45F1_CLEAR_ADEL_4550133543463.jpg?rev=eb7c9f18926545409921c4fee083ea7d",
+          "name": "クリアアデル"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/tuika/PRESSO_DOUBLECLUTCH45F1_TOPPING_FOOD_BERRY_4550133543470.jpg?rev=a1480b60aa624c82ae2543ab41af467c",
+          "name": "トッピングフードベリー"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/tuika/PRESSO_DOUBLECLUTCH45F1_BLUE_HYDE_SAQSAS_4550133543487.jpg?rev=d8cac15b02cf4c16a94b5df1d5e68c05",
+          "name": "ブルーハイドサクサス"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_45F1/tuika/PRESSO_DOUBLECLUTCH45F1_GOLD_HYDE_SAQSAS_4550133543494.jpg?rev=79616ca4155246c8876caead228744a8",
+          "name": "ゴールドハイドサクサス"
+        }
+      ],
+      "existingModel": {
+        "name": "PRESSO DOUBLE CLUTCH 45F1",
+        "seriesId": 24,
+        "category": "ミノー",
+        "lengthMm": 45,
+        "weightG": 1.6,
+        "id": 297
+      },
+      "existingSeries": {
+        "name": "PRESSO DOUBLE CLUTCH F",
+        "manufacturerId": 42,
+        "id": 24
+      },
+      "existingManufacturer": {
+        "name": "ダイワ",
+        "id": 42
+      },
+      "existingCount": 17,
+      "existingOnly": []
+    },
+    {
+      "model": "45S",
+      "sourceUrl": "https://www.daiwa.com/jp/product/2023/05/09/08/50/wp91bik",
+      "pageSha256": "28d065a9f4a69517ab3e5496b991c35a684aac44e8fdb830c58e9601c4d6c667",
+      "colors": [
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｓ　トッピングフード",
+          "name": "トッピングフード",
+          "jan": "4550133044670",
+          "spec": [
+            "45",
+            "2.1",
+            "シンキング（スローシンキング）",
+            "サクサス加工ショートマルチ#10",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/doubleclutch_45s/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch45STunedHMKL_ToppingFood.jpg?rev=df03f470e64a4436add34f3d767baa0e",
+          "galleryName": "トッピングフード",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフード",
+              "modelId": 298,
+              "id": 1271
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｓ　ホログラムワカサギ５",
+          "name": "ホログラムワカサギ5",
+          "jan": "4550133044687",
+          "spec": [
+            "45",
+            "2.1",
+            "シンキング（スローシンキング）",
+            "サクサス加工ショートマルチ#10",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/doubleclutch_45s/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch45STunedHMKL_HologramWakasagi5.jpg?rev=fed13850f319422db6954d1e1deaee1c",
+          "galleryName": "ホログラムワカサギ5",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ホログラムワカサギ5",
+              "modelId": 298,
+              "id": 1272
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｓ　ブラウンパールスプラッシュ",
+          "name": "ブラウンパールスプラッシュ",
+          "jan": "4550133044694",
+          "spec": [
+            "45",
+            "2.1",
+            "シンキング（スローシンキング）",
+            "サクサス加工ショートマルチ#10",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/doubleclutch_45s/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch45STunedHMKL_BrownPearlSplash.jpg?rev=4a08931362fa48eea396076f1b87c4c7",
+          "galleryName": "ブラウンパールスプラッシュ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブラウンパールスプラッシュ",
+              "modelId": 298,
+              "id": 1273
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｓ　トッピングフードレッドグロー",
+          "name": "トッピングフードレッドグロー",
+          "jan": "4550133044700",
+          "spec": [
+            "45",
+            "2.1",
+            "シンキング（スローシンキング）",
+            "サクサス加工ショートマルチ#10",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/doubleclutch_45s/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch45STunedHMKL_ToppingFoodRG.jpg?rev=98043ac168c643a4a06177924ba4b47a",
+          "galleryName": "トッピングフードRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフードレッドグロー",
+              "modelId": 298,
+              "id": 1274
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４５Ｓ　オニヨメレッドグロー",
+          "name": "オニヨメレッドグロー",
+          "jan": "4550133044731",
+          "spec": [
+            "45",
+            "2.1",
+            "シンキング（スローシンキング）",
+            "サクサス加工ショートマルチ#10",
+            "1,450"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/doubleclutch_45s/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch45STunedHMKL_OniyomeRG.jpg?rev=2185a109a41e404da556f9e613291d20",
+          "galleryName": "オニヨメRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "オニヨメレッドグロー",
+              "modelId": 298,
+              "id": 1275
+            }
+          ],
+          "status": "existing"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/doubleclutch_45s/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch45STunedHMKL_ToppingFood.jpg?rev=df03f470e64a4436add34f3d767baa0e",
+          "name": "トッピングフード"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/doubleclutch_45s/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch45STunedHMKL_HologramWakasagi5.jpg?rev=fed13850f319422db6954d1e1deaee1c",
+          "name": "ホログラムワカサギ5"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/doubleclutch_45s/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch45STunedHMKL_BrownPearlSplash.jpg?rev=4a08931362fa48eea396076f1b87c4c7",
+          "name": "ブラウンパールスプラッシュ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/doubleclutch_45s/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch45STunedHMKL_ToppingFoodRG.jpg?rev=98043ac168c643a4a06177924ba4b47a",
+          "name": "トッピングフードRG"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/doubleclutch_45s/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch45STunedHMKL_OniyomeRG.jpg?rev=2185a109a41e404da556f9e613291d20",
+          "name": "オニヨメRG"
+        }
+      ],
+      "existingModel": {
+        "name": "PRESSO DOUBLE CLUTCH 45S",
+        "seriesId": 24,
+        "category": "ミノー",
+        "lengthMm": 45,
+        "weightG": 2.1,
+        "id": 298
+      },
+      "existingSeries": {
+        "name": "PRESSO DOUBLE CLUTCH F",
+        "manufacturerId": 42,
+        "id": 24
+      },
+      "existingManufacturer": {
+        "name": "ダイワ",
+        "id": 42
+      },
+      "existingCount": 5,
+      "existingOnly": []
+    },
+    {
+      "model": "48F",
+      "sourceUrl": "https://www.daiwa.com/jp/product/2a2z2da",
+      "pageSha256": "ce5a9219d612c19b708469a0c13718c7838fc598d5d0a7d69bd05a9eab1c33da",
+      "colors": [
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　トッピングフード",
+          "name": "トッピングフード",
+          "jan": "4550133419829",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_TOPPING_FOOD_4550133419829.jpg?rev=2e125dae0b95463eaf659e425994d593",
+          "galleryName": "トッピングフード",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフード",
+              "modelId": 299,
+              "id": 1276
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　オールブラウン",
+          "name": "オールブラウン",
+          "jan": "4550133419836",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_ALL_BROWN_4550133419836,-d-,psd.jpg?rev=c7ad0f47b88b4de28bba4d409dd9582d",
+          "galleryName": "オールブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "オールブラウン",
+              "modelId": 299,
+              "id": 1277
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　ブラウンパールスプラッシュ",
+          "name": "ブラウンパールスプラッシュ",
+          "jan": "4550133419843",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_BROWN_PEARL_SPLASH_4550133419843.jpg?rev=5f224f487f1d457ea53f1774338ac5f4",
+          "galleryName": "ブラウンパールスプラッシュ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブラウンパールスプラッシュ",
+              "modelId": 299,
+              "id": 1278
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　ウラツブペレット",
+          "name": "ウラツブペレット",
+          "jan": "4550133419850",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_URATSUBU_PELLET_4550133419850.jpg?rev=c2b49e1baaf94040bb4ae6779a641c71",
+          "galleryName": "ウラツブペレット",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ウラツブペレット",
+              "modelId": 299,
+              "id": 1279
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　ＭＳブラウン",
+          "name": "MSブラウン",
+          "jan": "4550133419874",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_MS_BROWN_4550133419874.jpg?rev=4c27405699934077aaa68b91db968aa4",
+          "galleryName": "MSブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "MSブラウン",
+              "modelId": 299,
+              "id": 1280
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　ホログラムワカサギ５",
+          "name": "ホログラムワカサギ5",
+          "jan": "4550133419881",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_HOLOGRAM_WAKASAGI_5_4550133419881.jpg?rev=a892382243254670ac42e0cf925b9848",
+          "galleryName": "ホログラムワカサギ 5",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ホログラムワカサギ5",
+              "modelId": 299,
+              "id": 1281
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　トッピングフードＲＧ",
+          "name": "トッピングフードRG",
+          "jan": "4550133419898",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_TOPPING_FOOD_RED_GLOW_4550133419898.jpg?rev=062c372886674d98a4178d169cccb91a",
+          "galleryName": "トッピングフードRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフードRG",
+              "modelId": 299,
+              "id": 1282
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　ウッチーシークレット",
+          "name": "ウッチーシークレット",
+          "jan": "4550133419904",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_UCCHII_SECRET_4550133419904.jpg?rev=45d3323fa4ee435dad4da84e0a86b102",
+          "galleryName": "ウッチーシークレット",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ウッチーシークレット",
+              "modelId": 299,
+              "id": 1283
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　マットグローサーモン",
+          "name": "マットグローサーモン",
+          "jan": "4550133419911",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_MATTE_GLOW_SALMON_4550133419911.jpg?rev=4f467e25aa564d64816c1593d1d24aff",
+          "galleryName": "マットグローサーモン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "マットグローサーモン",
+              "modelId": 299,
+              "id": 1284
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　ミドリムシ",
+          "name": "ミドリムシ",
+          "jan": "4550133419928",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_MIDORIMUSHI_4550133419928.jpg?rev=c96a2c4e07114a7ba967aa3976edbfc5",
+          "galleryName": "ミドリムシ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ミドリムシ",
+              "modelId": 299,
+              "id": 1285
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　オニヨメＲＧ",
+          "name": "オニヨメRG",
+          "jan": "4550133419959",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_ONIYOME_RG_4550133419959.jpg?rev=b921231228504193a33cfd3c397b5459",
+          "galleryName": "オニヨメRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "オニヨメRG",
+              "modelId": 299,
+              "id": 1286
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　ヤマメ",
+          "name": "ヤマメ",
+          "jan": "4550133419973",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_YAMAME_4550133419973.jpg?rev=c1d852dc53c54ad09dd112b026622195",
+          "galleryName": "ヤマメ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ヤマメ",
+              "modelId": 299,
+              "id": 1287
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　ピンクヤマメチャートベリー",
+          "name": "ピンクヤマメチャートベリー",
+          "jan": "4550133419980",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_PINK_YAMAME_CHART_BERRY_4550133419980.jpg?rev=fac13a162f0244c5b230013f7f60eed4",
+          "galleryName": "ピンクヤマメチャートベリー",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ピンクヤマメチャートベリー",
+              "modelId": 299,
+              "id": 1288
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　カゲホウシ",
+          "name": "カゲホウシ",
+          "jan": "4550133419997",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_KAGEHOUSHI_4550133419997.jpg?rev=b10451e482204f219b85a6605d4532bc",
+          "galleryName": "カゲボウシ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "カゲホウシ",
+              "modelId": 299,
+              "id": 1289
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　ヤドクブラウン",
+          "name": "ヤドクブラウン",
+          "jan": "4550133420009",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_YADOKU_BROUN_4550133420009.jpg?rev=e4f32314ae634c2ca877308331ed0630",
+          "galleryName": "ヤドクブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ヤドクブラウン",
+              "modelId": 299,
+              "id": 1290
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　クリアアデル",
+          "name": "クリアアデル",
+          "jan": "4550133542596",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/tuika/PRESSO_DOUBLECLUTCH_48F_CLEAR_ADEL_4550133542596.jpg?rev=fd6ced50d0364bc4a754efd9cbe276cd",
+          "galleryName": "クリアアデル",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "クリアアデル",
+              "modelId": 299,
+              "id": 1291
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　トッピングフードベリー",
+          "name": "トッピングフードベリー",
+          "jan": "4550133542602",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/tuika/PRESSO_DOUBLECLUTCH_48F_TOPPING_FOOD_BERRY_4550133542602.jpg?rev=a8d7f6bca71046978425db7232d64f24",
+          "galleryName": "トッピングフードベリー",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフードベリー",
+              "modelId": 299,
+              "id": 1292
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　ブルーハイドサクサス",
+          "name": "ブルーハイドサクサス",
+          "jan": "4550133542619",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/tuika/PRESSO_DOUBLECLUTCH_48F_BLUE_HYDE_SAQSAS_4550133542619.jpg?rev=50bead1bc4ad401195dcfeabeef1afc4",
+          "galleryName": "ブルーハイドサクサス",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブルーハイドサクサス",
+              "modelId": 299,
+              "id": 1293
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ４８Ｆ　ゴールドハイドサクサス",
+          "name": "ゴールドハイドサクサス",
+          "jan": "4550133542626",
+          "spec": [
+            "48",
+            "2.5",
+            "フローティング",
+            "プレッソショートマルチSS#8",
+            "フロント:#00×2個_リア:#00×2個",
+            "1,500"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/tuika/PRESSO_DOUBLECLUTCH_48F_GOLD_HYDE_SAQSAS_4550133542626.jpg?rev=08d2cfde3dbf4f6281bbbcba79cbf27f",
+          "galleryName": "ゴールドハイドサクサス",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ゴールドハイドサクサス",
+              "modelId": 299,
+              "id": 1294
+            }
+          ],
+          "status": "existing"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_TOPPING_FOOD_4550133419829.jpg?rev=2e125dae0b95463eaf659e425994d593",
+          "name": "トッピングフード"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_ALL_BROWN_4550133419836,-d-,psd.jpg?rev=c7ad0f47b88b4de28bba4d409dd9582d",
+          "name": "オールブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_BROWN_PEARL_SPLASH_4550133419843.jpg?rev=5f224f487f1d457ea53f1774338ac5f4",
+          "name": "ブラウンパールスプラッシュ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_URATSUBU_PELLET_4550133419850.jpg?rev=c2b49e1baaf94040bb4ae6779a641c71",
+          "name": "ウラツブペレット"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_MS_BROWN_4550133419874.jpg?rev=4c27405699934077aaa68b91db968aa4",
+          "name": "MSブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_HOLOGRAM_WAKASAGI_5_4550133419881.jpg?rev=a892382243254670ac42e0cf925b9848",
+          "name": "ホログラムワカサギ 5"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_TOPPING_FOOD_RED_GLOW_4550133419898.jpg?rev=062c372886674d98a4178d169cccb91a",
+          "name": "トッピングフードRG"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_UCCHII_SECRET_4550133419904.jpg?rev=45d3323fa4ee435dad4da84e0a86b102",
+          "name": "ウッチーシークレット"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_MATTE_GLOW_SALMON_4550133419911.jpg?rev=4f467e25aa564d64816c1593d1d24aff",
+          "name": "マットグローサーモン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_MIDORIMUSHI_4550133419928.jpg?rev=c96a2c4e07114a7ba967aa3976edbfc5",
+          "name": "ミドリムシ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_ONIYOME_RG_4550133419959.jpg?rev=b921231228504193a33cfd3c397b5459",
+          "name": "オニヨメRG"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_YAMAME_4550133419973.jpg?rev=c1d852dc53c54ad09dd112b026622195",
+          "name": "ヤマメ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_PINK_YAMAME_CHART_BERRY_4550133419980.jpg?rev=fac13a162f0244c5b230013f7f60eed4",
+          "name": "ピンクヤマメチャートベリー"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_KAGEHOUSHI_4550133419997.jpg?rev=b10451e482204f219b85a6605d4532bc",
+          "name": "カゲボウシ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/PRESSO_DOUBLECLUTCH_48F_YADOKU_BROUN_4550133420009.jpg?rev=e4f32314ae634c2ca877308331ed0630",
+          "name": "ヤドクブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/tuika/PRESSO_DOUBLECLUTCH_48F_CLEAR_ADEL_4550133542596.jpg?rev=fd6ced50d0364bc4a754efd9cbe276cd",
+          "name": "クリアアデル"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/tuika/PRESSO_DOUBLECLUTCH_48F_TOPPING_FOOD_BERRY_4550133542602.jpg?rev=a8d7f6bca71046978425db7232d64f24",
+          "name": "トッピングフードベリー"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/tuika/PRESSO_DOUBLECLUTCH_48F_BLUE_HYDE_SAQSAS_4550133542619.jpg?rev=50bead1bc4ad401195dcfeabeef1afc4",
+          "name": "ブルーハイドサクサス"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/001_product_photo/lure/001/2a2z2da_PRESSO_DOUBLECLUTCH_48F/tuika/PRESSO_DOUBLECLUTCH_48F_GOLD_HYDE_SAQSAS_4550133542626.jpg?rev=08d2cfde3dbf4f6281bbbcba79cbf27f",
+          "name": "ゴールドハイドサクサス"
+        }
+      ],
+      "existingModel": {
+        "name": "PRESSO DOUBLE CLUTCH 48F",
+        "seriesId": 24,
+        "category": "ミノー",
+        "lengthMm": 48,
+        "weightG": 2.5,
+        "id": 299
+      },
+      "existingSeries": {
+        "name": "PRESSO DOUBLE CLUTCH F",
+        "manufacturerId": 42,
+        "id": 24
+      },
+      "existingManufacturer": {
+        "name": "ダイワ",
+        "id": 42
+      },
+      "existingCount": 19,
+      "existingOnly": []
+    },
+    {
+      "model": "60F1",
+      "sourceUrl": "https://www.daiwa.com/jp/product/tem1r2s",
+      "pageSha256": "e2d736444fd5d9d82eb3f72244cf09257db64a668d9006c2c1e6a63110c0c61d",
+      "colors": [
+        {
+          "itemName": "ＰＲダブルクラッチ６０Ｆ１　トッピングフード",
+          "name": "トッピングフード",
+          "jan": "4960652072892",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント：シングルリング_リア：ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_ToppingFood.jpg?rev=5712a3f18a1444e2bccb5a00a8e767fe",
+          "galleryName": "トッピングフード",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフード",
+              "modelId": 300,
+              "id": 1295
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲダブルクラッチ６０Ｆ１　オールブラウン",
+          "name": "オールブラウン",
+          "jan": "4960652072915",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_AllBrown.jpg?rev=d5632bafbe74470781af7d58031d3eed",
+          "galleryName": "オールブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "オールブラウン",
+              "modelId": 300,
+              "id": 1296
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ブラウンパールスプラッシュ",
+          "name": "ブラウンパールスプラッシュ",
+          "jan": "4960652220590",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_BrownPearlSplash.jpg?rev=52e8e519d98d45c295699a7f7bd50d7c",
+          "galleryName": "ブラウンパールスプラッシュ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブラウンパールスプラッシュ",
+              "modelId": 300,
+              "id": 1297
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ウラツブペレット",
+          "name": "ウラツブペレット",
+          "jan": "4960652220606",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_UratsubuPellet.jpg?rev=7ca9d4056c9a4d798d4d8405acc63607",
+          "galleryName": "ウラツブペレット",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ウラツブペレット",
+              "modelId": 300,
+              "id": 1298
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ＭＳブラウン",
+          "name": "MSブラウン",
+          "jan": "4960652206891",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_MSBrown.jpg?rev=7d13b1e9ddeb4eddaecf2e3465e1ae30",
+          "galleryName": "MSブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "MSブラウン",
+              "modelId": 300,
+              "id": 1299
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ホログラムワカサギ５",
+          "name": "ホログラムワカサギ5",
+          "jan": "4960652206907",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_HologramWakasagi5.jpg?rev=17ae1b416daa4b888cb8ffe745893486",
+          "galleryName": "ホログラムワカサギ5",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ホログラムワカサギ5",
+              "modelId": 300,
+              "id": 1300
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　トッピングフードレッドグロー",
+          "name": "トッピングフードレッドグロー",
+          "jan": "4960652261296",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_ToppingFoodRG.jpg?rev=85abe044af9a4e79be11515abeccd7a3",
+          "galleryName": "トッピングフードRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフードRG",
+              "modelId": 300,
+              "id": 1301
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ウッチーシークレット",
+          "name": "ウッチーシークレット",
+          "jan": "4960652261302",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_UcchiSeclet.jpg?rev=5878c7d1359747b2bddee4037f4d7975",
+          "galleryName": "ウッチーシークレット",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ウッチーシークレット",
+              "modelId": 300,
+              "id": 1302
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　マットグローサーモン",
+          "name": "マットグローサーモン",
+          "jan": "4960652261319",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_MadGlowSamon.jpg?rev=63e70c5eefbb4397bbd75dd0dccb9496",
+          "galleryName": "マットグローサーモン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "マットグローサーモン",
+              "modelId": 300,
+              "id": 1303
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ミドリムシ",
+          "name": "ミドリムシ",
+          "jan": "4960652261326",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_Midorimushi.jpg?rev=9ecbcb3a57064c5d80572b5a54996e48",
+          "galleryName": "ミドリムシ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ミドリムシ",
+              "modelId": 300,
+              "id": 1304
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　オニヨメＲＧ",
+          "name": "オニヨメRG",
+          "jan": "4550133044298",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch60F1TunedbyHMKL_OniyomeRG.jpg?rev=b30955b276b94bf7af9ee68af2bdf0cc",
+          "galleryName": "オニヨメRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "オニヨメRG",
+              "modelId": 300,
+              "id": 1305
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ヤマメ",
+          "name": "ヤマメ",
+          "jan": "4550133402739",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2019/08/03/PR_DOUBLECLUTCH60F1_YAMAME_4550133402739.jpg?rev=fcbc3d9fa26f4f36bbba103a934c6c6f",
+          "galleryName": "ヤマメ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ヤマメ",
+              "modelId": 300,
+              "id": 1306
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ピンクヤマメチャートベリー",
+          "name": "ピンクヤマメチャートベリー",
+          "jan": "4550133402746",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2019/08/03/PR_DOUBLECLUTCH60F1_PINK_YAMAME_CHART_BERRY_4550133402746.jpg?rev=e63f6e0acf9048d299bc66615a23568c",
+          "galleryName": "ピンクヤマメチャートベリー",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ピンクヤマメチャートベリー",
+              "modelId": 300,
+              "id": 1307
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　カゲホウシ",
+          "name": "カゲホウシ",
+          "jan": "4550133402753",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2019/08/03/PR_DOUBLECLUTCH60F1_KAGEHOUSHI_4550133402753.jpg?rev=85f4777c889948b99bf8ec682eb74c46",
+          "galleryName": "カゲホウシ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "カゲホウシ",
+              "modelId": 300,
+              "id": 1308
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ヤドクブラウン",
+          "name": "ヤドクブラウン",
+          "jan": "4550133402760",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2019/08/03/PR_DOUBLECLUTCH60F1_YADOKU_BROUN_4550133402760.jpg?rev=d847f9bcd6084b5687c07842d56f5bd9",
+          "galleryName": "ヤドクブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ヤドクブラウン",
+              "modelId": 300,
+              "id": 1309
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　クリアアデル",
+          "name": "クリアアデル",
+          "jan": "4550133543500",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PR_DOUBLECLUTCH60F1_CLEAR_ADEL_4550133543500.jpg?rev=94f6d1635ac94d2994dbf164d49685ba",
+          "galleryName": "クリアアデル",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "クリアアデル",
+              "modelId": 300,
+              "id": 1310
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　トッピングフードベリー",
+          "name": "トッピングフードベリー",
+          "jan": "4550133543517",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PR_DOUBLECLUTCH60F1_TOPPING_FOOD_BERRY_4550133543517.jpg?rev=493930e9e56c43e1862a1c28d2b3db01",
+          "galleryName": "トッピングフードベリー",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフードベリー",
+              "modelId": 300,
+              "id": 1311
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ブルーハイドサクサス",
+          "name": "ブルーハイドサクサス",
+          "jan": "4550133543524",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PR_DOUBLECLUTCH60F1_BLUE_HYDE_SAQSAS_4550133543524.jpg?rev=a60ab0e94789497c99bfea8fd09d3b06",
+          "galleryName": "ブルーハイドサクサス",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブルーハイドサクサス",
+              "modelId": 300,
+              "id": 1312
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ゴールドハイドサクサス",
+          "name": "ゴールドハイドサクサス",
+          "jan": "4550133543531",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PR_DOUBLECLUTCH60F1_GOLD_HYDE_SAQSAS_4550133543531.jpg?rev=be72a60febe74436afa88fd72dec3e62",
+          "galleryName": "ゴールドハイドサクサス",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ゴールドハイドサクサス",
+              "modelId": 300,
+              "id": 1313
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ブルパＵＶブラウン",
+          "name": "ブルパUVブラウン",
+          "jan": "4550133761652",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PRESSO_DOUBLECLUTCH60F1_BLUEPA_UV_BROWN_4550133761652.jpg?rev=95d8f11a0b9a404286bf0ec7e2ff5e3b",
+          "galleryName": "ブルパUVブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブルパUVブラウン",
+              "modelId": 300,
+              "id": 1314
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　ブルパＵＶオリ茶",
+          "name": "ブルパUVオリ茶",
+          "jan": "4550133761669",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PRESSO_DOUBLECLUTCH60F1_BLUEPA_UV_OLICHA_4550133761669.jpg?rev=e3c1acd135634e41a56a11afc6026156",
+          "galleryName": "ブルパUVオリ茶",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブルパUVオリ茶",
+              "modelId": 300,
+              "id": 1315
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　デリシャスペレット",
+          "name": "デリシャスペレット",
+          "jan": "4550133761676",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PRESSO_DOUBLECLUTCH60F1_DELICIOUS_PELLET_4550133761676.jpg?rev=b64e5832f4e94c92ad90a4c65a660122",
+          "galleryName": "デリシャスペレット",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "デリシャスペレット",
+              "modelId": 300,
+              "id": 1316
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０Ｆ１　オレッドＲＧ",
+          "name": "オレッドRG",
+          "jan": "4550133761683",
+          "spec": [
+            "60",
+            "2.9",
+            "ハイフローティング",
+            "ベリー:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:シングルリング_リア:ダブルリング",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PRESSO_DOUBLECLUTCH60F1_ORED_RG_4550133761683.jpg?rev=3688b66702174c76b0d6afb5b97541db",
+          "galleryName": "オレッドRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "オレッドRG",
+              "modelId": 300,
+              "id": 1317
+            }
+          ],
+          "status": "existing"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_ToppingFood.jpg?rev=5712a3f18a1444e2bccb5a00a8e767fe",
+          "name": "トッピングフード"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_AllBrown.jpg?rev=d5632bafbe74470781af7d58031d3eed",
+          "name": "オールブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_BrownPearlSplash.jpg?rev=52e8e519d98d45c295699a7f7bd50d7c",
+          "name": "ブラウンパールスプラッシュ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_UratsubuPellet.jpg?rev=7ca9d4056c9a4d798d4d8405acc63607",
+          "name": "ウラツブペレット"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_MSBrown.jpg?rev=7d13b1e9ddeb4eddaecf2e3465e1ae30",
+          "name": "MSブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_HologramWakasagi5.jpg?rev=17ae1b416daa4b888cb8ffe745893486",
+          "name": "ホログラムワカサギ5"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_ToppingFoodRG.jpg?rev=85abe044af9a4e79be11515abeccd7a3",
+          "name": "トッピングフードRG"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_UcchiSeclet.jpg?rev=5878c7d1359747b2bddee4037f4d7975",
+          "name": "ウッチーシークレット"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_MadGlowSamon.jpg?rev=63e70c5eefbb4397bbd75dd0dccb9496",
+          "name": "マットグローサーモン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60F1_Midorimushi.jpg?rev=9ecbcb3a57064c5d80572b5a54996e48",
+          "name": "ミドリムシ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2019/08/03/PressoDoubleClutch60F1TunedbyHMKL_OniyomeRG.jpg?rev=b30955b276b94bf7af9ee68af2bdf0cc",
+          "name": "オニヨメRG"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2019/08/03/PR_DOUBLECLUTCH60F1_YAMAME_4550133402739.jpg?rev=fcbc3d9fa26f4f36bbba103a934c6c6f",
+          "name": "ヤマメ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2019/08/03/PR_DOUBLECLUTCH60F1_PINK_YAMAME_CHART_BERRY_4550133402746.jpg?rev=e63f6e0acf9048d299bc66615a23568c",
+          "name": "ピンクヤマメチャートベリー"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2019/08/03/PR_DOUBLECLUTCH60F1_KAGEHOUSHI_4550133402753.jpg?rev=85f4777c889948b99bf8ec682eb74c46",
+          "name": "カゲホウシ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/__icsFiles/afieldfile/2019/08/03/PR_DOUBLECLUTCH60F1_YADOKU_BROUN_4550133402760.jpg?rev=d847f9bcd6084b5687c07842d56f5bd9",
+          "name": "ヤドクブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PR_DOUBLECLUTCH60F1_CLEAR_ADEL_4550133543500.jpg?rev=94f6d1635ac94d2994dbf164d49685ba",
+          "name": "クリアアデル"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PR_DOUBLECLUTCH60F1_TOPPING_FOOD_BERRY_4550133543517.jpg?rev=493930e9e56c43e1862a1c28d2b3db01",
+          "name": "トッピングフードベリー"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PR_DOUBLECLUTCH60F1_BLUE_HYDE_SAQSAS_4550133543524.jpg?rev=a60ab0e94789497c99bfea8fd09d3b06",
+          "name": "ブルーハイドサクサス"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PR_DOUBLECLUTCH60F1_GOLD_HYDE_SAQSAS_4550133543531.jpg?rev=be72a60febe74436afa88fd72dec3e62",
+          "name": "ゴールドハイドサクサス"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PRESSO_DOUBLECLUTCH60F1_BLUEPA_UV_BROWN_4550133761652.jpg?rev=95d8f11a0b9a404286bf0ec7e2ff5e3b",
+          "name": "ブルパUVブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PRESSO_DOUBLECLUTCH60F1_BLUEPA_UV_OLICHA_4550133761669.jpg?rev=e3c1acd135634e41a56a11afc6026156",
+          "name": "ブルパUVオリ茶"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PRESSO_DOUBLECLUTCH60F1_DELICIOUS_PELLET_4550133761676.jpg?rev=b64e5832f4e94c92ad90a4c65a660122",
+          "name": "デリシャスペレット"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_hmkl/tem1r2s_tuika/PRESSO_DOUBLECLUTCH60F1_ORED_RG_4550133761683.jpg?rev=3688b66702174c76b0d6afb5b97541db",
+          "name": "オレッドRG"
+        }
+      ],
+      "existingModel": {
+        "name": "PRESSO DOUBLE CLUTCH 60F1",
+        "seriesId": 24,
+        "category": "ミノー",
+        "lengthMm": 60,
+        "weightG": 2.9,
+        "id": 300
+      },
+      "existingSeries": {
+        "name": "PRESSO DOUBLE CLUTCH F",
+        "manufacturerId": 42,
+        "id": 24
+      },
+      "existingManufacturer": {
+        "name": "ダイワ",
+        "id": 42
+      },
+      "existingCount": 23,
+      "existingOnly": []
+    },
+    {
+      "model": "60SHF",
+      "sourceUrl": "https://www.daiwa.com/jp/product/eqm75ws",
+      "pageSha256": "700739e3ecaf16b563be5ca74a7fe36ec0c500c87f825c6cb02d4d14dbd41cb4",
+      "colors": [
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　トッピングフード",
+          "name": "トッピングフード",
+          "jan": "4550133304545",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント：プレッソマルチプラッギングSS#8_リア：プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_ToppingFood.jpg?rev=a77badf64fac4b7c9189358cc250c2bd",
+          "galleryName": "トッピングフード",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフード",
+              "modelId": 301,
+              "id": 1318
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　オールブラウン",
+          "name": "オールブラウン",
+          "jan": "4550133304552",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント：プレッソマルチプラッギングSS#8_リア：プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_AllBrown.jpg?rev=3d7ba3171ef749fcaabfbabe8eb1828d",
+          "galleryName": "オールブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "オールブラウン",
+              "modelId": 301,
+              "id": 1319
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　ブラウンパールスプラッシュ",
+          "name": "ブラウンパールスプラッシュ",
+          "jan": "4550133304569",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント：プレッソマルチプラッギングSS#8_リア：プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_BrownPearlSplash.jpg?rev=0791c012f42949c9bc4cc4cb01a12875",
+          "galleryName": "ブラウンパールスプラッシュ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブラウンパールスプラッシュ",
+              "modelId": 301,
+              "id": 1320
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　ウラツブペレット",
+          "name": "ウラツブペレット",
+          "jan": "4550133304576",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント：プレッソマルチプラッギングSS#8_リア：プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_UratsubuPellet.jpg?rev=1de4d39e26d64a75a8b4282de954fdd1",
+          "galleryName": "ウラツブペレット",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ウラツブペレット",
+              "modelId": 301,
+              "id": 1321
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　ＭＳブラウン",
+          "name": "MSブラウン",
+          "jan": "4550133304590",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント：プレッソマルチプラッギングSS#8_リア：プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_MSBrown.jpg?rev=ee75b8b7a8d641559aabcbef3ab970ff",
+          "galleryName": "MSブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "MSブラウン",
+              "modelId": 301,
+              "id": 1322
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　ホログラムワカサギ５",
+          "name": "ホログラムワカサギ5",
+          "jan": "4550133304606",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント：プレッソマルチプラッギングSS#8_リア：プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_HologramWakasagi.jpg?rev=9f75024be89c49aba436545284c318d0",
+          "galleryName": "ホログラムワカサギ5",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ホログラムワカサギ5",
+              "modelId": 301,
+              "id": 1323
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　トッピングフードＲＧ",
+          "name": "トッピングフードRG",
+          "jan": "4550133304613",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント：プレッソマルチプラッギングSS#8_リア：プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_ToppingFoodRedGlow.jpg?rev=08135ffa018f44e1a5db290e61fc6477",
+          "galleryName": "トッピングフードRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "トッピングフードRG",
+              "modelId": 301,
+              "id": 1324
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　ウッチーシークレット",
+          "name": "ウッチーシークレット",
+          "jan": "4550133304620",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント：プレッソマルチプラッギングSS#8_リア：プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_UcchiiSecret.jpg?rev=1228aa35a80b4bf283f31092382a7d87",
+          "galleryName": "ウッチーシークレット",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ウッチーシークレット",
+              "modelId": 301,
+              "id": 1325
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　マットグローサーモン",
+          "name": "マットグローサーモン",
+          "jan": "4550133304637",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント：プレッソマルチプラッギングSS#8_リア：プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_MatteGlowSalmon.jpg?rev=81d975fba2ef48bbb826c5809b547738",
+          "galleryName": "マットグローサーモン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "マットグローサーモン",
+              "modelId": 301,
+              "id": 1326
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　ミドリムシ",
+          "name": "ミドリムシ",
+          "jan": "4550133307782",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント：プレッソマルチプラッギングSS#8_リア：プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_Midorimushi.jpg?rev=54627a7393bc47f6b7adb596d3fc33f9",
+          "galleryName": "ミドリムシ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ミドリムシ",
+              "modelId": 301,
+              "id": 1327
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　オニヨメＲＧ",
+          "name": "オニヨメRG",
+          "jan": "4550133307812",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント：プレッソマルチプラッギングSS#8_リア：プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_OniyomeRG.jpg?rev=77458554b1af4211bec6ee3046cac59f",
+          "galleryName": "オニヨメRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "オニヨメRG",
+              "modelId": 301,
+              "id": 1328
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　ヤマメ",
+          "name": "ヤマメ",
+          "jan": "4550133404535",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/PR_DOUBLECLUTCH60F1_YAMAME_4550133402739.jpg?rev=ab745ceb9b5343e6a685ef827dd268d4",
+          "galleryName": "ヤマメ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ヤマメ",
+              "modelId": 301,
+              "id": 1329
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　ピンクヤマメチャートベリー",
+          "name": "ピンクヤマメチャートベリー",
+          "jan": "4550133404542",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/PR_DOUBLECLUTCH60F1_PINK_YAMAME_CHART_BERRY_4550133402746.jpg?rev=568c5b7d0e7244c5b5674e185c9cacdf",
+          "galleryName": "ピンクヤマメチャートベリー",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ピンクヤマメチャートベリー",
+              "modelId": 301,
+              "id": 1330
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　カゲホウシ",
+          "name": "カゲホウシ",
+          "jan": "4550133404559",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/PR_DOUBLECLUTCH60F1_KAGEHOUSHI_4550133402753.jpg?rev=7eaf88390e2c48aa902ad65b2d5190d1",
+          "galleryName": "カゲホウシ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "カゲホウシ",
+              "modelId": 301,
+              "id": 1331
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　ヤドクブラウン",
+          "name": "ヤドクブラウン",
+          "jan": "4550133404566",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/PR_DOUBLECLUTCH60F1_YADOKU_BROUN_4550133402760.jpg?rev=242636cdce7640ed86d51b223c8a5110",
+          "galleryName": "ヤドクブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ヤドクブラウン",
+              "modelId": 301,
+              "id": 1332
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　ブルパＵＶブラウン",
+          "name": "ブルパUVブラウン",
+          "jan": "4550133761690",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/eqm75ws_PRESSO_DOUBLECLUTCH60SHF/PRESSO_DOUBLECLUTCH60SHF_BLUEPA_UV_BROWN_4550133761690.jpg?rev=c51fac05ae2743c6989ad784746eaadc",
+          "galleryName": "ブルパUVブラウン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブルパUVブラウン",
+              "modelId": 301,
+              "id": 1333
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　ブルパＵＶオリ茶",
+          "name": "ブルパUVオリ茶",
+          "jan": "4550133761706",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/eqm75ws_PRESSO_DOUBLECLUTCH60SHF/PRESSO_DOUBLECLUTCH60SHF_BLUEPA_UV_OLICHA_4550133761706.jpg?rev=030090a78fb545ffad5b66e1feca6c2b",
+          "galleryName": "ブルパUVオリ茶",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ブルパUVオリ茶",
+              "modelId": 301,
+              "id": 1334
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　デリシャスペレット",
+          "name": "デリシャスペレット",
+          "jan": "4550133761713",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/eqm75ws_PRESSO_DOUBLECLUTCH60SHF/PRESSO_DOUBLECLUTCH60SHF_DELICIOUS_PELLET_4550133761713.jpg?rev=66ddd9b2613b4753ab08a6542ef9e282",
+          "galleryName": "デリシャスペレット",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "デリシャスペレット",
+              "modelId": 301,
+              "id": 1335
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＨＦ　オレッドＲＧ",
+          "name": "オレッドRG",
+          "jan": "4550133761720",
+          "spec": [
+            "60",
+            "2.8",
+            "スーパーハイフローティング",
+            "フロント:プレッソマルチプラッギングSS#8_リア:プレッソショートマルチSS#8",
+            "フロント:#00×1個_リア:#00×2個",
+            "1,600"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/eqm75ws_PRESSO_DOUBLECLUTCH60SHF/PRESSO_DOUBLECLUTCH60SHF_ORED_RG_4550133761720.jpg?rev=538dadaea0694471a28469d5f9c9ca8b",
+          "galleryName": "オレッドRG",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "オレッドRG",
+              "modelId": 301,
+              "id": 1336
+            }
+          ],
+          "status": "existing"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_ToppingFood.jpg?rev=a77badf64fac4b7c9189358cc250c2bd",
+          "name": "トッピングフード"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_AllBrown.jpg?rev=3d7ba3171ef749fcaabfbabe8eb1828d",
+          "name": "オールブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_BrownPearlSplash.jpg?rev=0791c012f42949c9bc4cc4cb01a12875",
+          "name": "ブラウンパールスプラッシュ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_UratsubuPellet.jpg?rev=1de4d39e26d64a75a8b4282de954fdd1",
+          "name": "ウラツブペレット"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_MSBrown.jpg?rev=ee75b8b7a8d641559aabcbef3ab970ff",
+          "name": "MSブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_HologramWakasagi.jpg?rev=9f75024be89c49aba436545284c318d0",
+          "name": "ホログラムワカサギ5"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_ToppingFoodRedGlow.jpg?rev=08135ffa018f44e1a5db290e61fc6477",
+          "name": "トッピングフードRG"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_UcchiiSecret.jpg?rev=1228aa35a80b4bf283f31092382a7d87",
+          "name": "ウッチーシークレット"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_MatteGlowSalmon.jpg?rev=81d975fba2ef48bbb826c5809b547738",
+          "name": "マットグローサーモン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_Midorimushi.jpg?rev=54627a7393bc47f6b7adb596d3fc33f9",
+          "name": "ミドリムシ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/Presso_DoubleClutch_60SHF_OniyomeRG.jpg?rev=77458554b1af4211bec6ee3046cac59f",
+          "name": "オニヨメRG"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/PR_DOUBLECLUTCH60F1_YAMAME_4550133402739.jpg?rev=ab745ceb9b5343e6a685ef827dd268d4",
+          "name": "ヤマメ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/PR_DOUBLECLUTCH60F1_PINK_YAMAME_CHART_BERRY_4550133402746.jpg?rev=568c5b7d0e7244c5b5674e185c9cacdf",
+          "name": "ピンクヤマメチャートベリー"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/PR_DOUBLECLUTCH60F1_KAGEHOUSHI_4550133402753.jpg?rev=7eaf88390e2c48aa902ad65b2d5190d1",
+          "name": "カゲホウシ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/__icsFiles/afieldfile/2022/07/19/PR_DOUBLECLUTCH60F1_YADOKU_BROUN_4550133402760.jpg?rev=242636cdce7640ed86d51b223c8a5110",
+          "name": "ヤドクブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/eqm75ws_PRESSO_DOUBLECLUTCH60SHF/PRESSO_DOUBLECLUTCH60SHF_BLUEPA_UV_BROWN_4550133761690.jpg?rev=c51fac05ae2743c6989ad784746eaadc",
+          "name": "ブルパUVブラウン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/eqm75ws_PRESSO_DOUBLECLUTCH60SHF/PRESSO_DOUBLECLUTCH60SHF_BLUEPA_UV_OLICHA_4550133761706.jpg?rev=030090a78fb545ffad5b66e1feca6c2b",
+          "name": "ブルパUVオリ茶"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/eqm75ws_PRESSO_DOUBLECLUTCH60SHF/PRESSO_DOUBLECLUTCH60SHF_DELICIOUS_PELLET_4550133761713.jpg?rev=66ddd9b2613b4753ab08a6542ef9e282",
+          "name": "デリシャスペレット"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_dclutch_60shf/eqm75ws_PRESSO_DOUBLECLUTCH60SHF/PRESSO_DOUBLECLUTCH60SHF_ORED_RG_4550133761720.jpg?rev=538dadaea0694471a28469d5f9c9ca8b",
+          "name": "オレッドRG"
+        }
+      ],
+      "existingModel": {
+        "name": "PRESSO DOUBLE CLUTCH 60SHF",
+        "seriesId": 24,
+        "category": "ミノー",
+        "lengthMm": 60,
+        "weightG": 2.8,
+        "id": 301
+      },
+      "existingSeries": {
+        "name": "PRESSO DOUBLE CLUTCH F",
+        "manufacturerId": 42,
+        "id": 24
+      },
+      "existingManufacturer": {
+        "name": "ダイワ",
+        "id": 42
+      },
+      "existingCount": 19,
+      "existingOnly": []
+    },
+    {
+      "model": "60SS",
+      "sourceUrl": "https://www.daiwa.com/jp/product/2023/05/09/08/48/m4bx7oh",
+      "pageSha256": "ce3ae5c7f5c7f9db0dae7fe62b38294e3e5f4d246af02f962a2bdf46b494623f",
+      "colors": [
+        {
+          "itemName": "ＰＲダブルクラッチ６０ＳＳ　ウェーブブルー",
+          "name": "ウェーブブルー",
+          "jan": "4960652072922",
+          "spec": [
+            "60",
+            "3.8",
+            "シンキング",
+            "ヴァンフックPL-51BL#6",
+            "1,650"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60SSTunedByHMKL_WaveBlue.jpg?rev=cdaea4633c27493aabf3782eba4e1188",
+          "galleryName": "ウェーブブルー",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ウェーブブルー",
+              "modelId": 302,
+              "id": 1337
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲダブルクラッチ６０ＳＳ　ウェーブピンク",
+          "name": "ウェーブピンク",
+          "jan": "4960652072939",
+          "spec": [
+            "60",
+            "3.8",
+            "シンキング",
+            "ヴァンフックPL-51BL#6",
+            "1,650"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60SSTunedByHMKL_WavePink.jpg?rev=ef282648993e41fe80d946f31784d5a3",
+          "galleryName": "ウェーブピンク",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ウェーブピンク",
+              "modelId": 302,
+              "id": 1338
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＳ　ウェーブグリーン",
+          "name": "ウェーブグリーン",
+          "jan": "4960652220637",
+          "spec": [
+            "60",
+            "3.8",
+            "シンキング",
+            "ヴァンフックPL-51BL#6",
+            "1,650"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60SSTunedByHMKL_WaveGreen.jpg?rev=6ca20deb862d4479989208655bbffb3c",
+          "galleryName": "ウェーブグリーン",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ウェーブグリーン",
+              "modelId": 302,
+              "id": 1339
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＳ　ウェーブブラック",
+          "name": "ウェーブブラック",
+          "jan": "4960652220644",
+          "spec": [
+            "60",
+            "3.8",
+            "シンキング",
+            "ヴァンフックPL-51BL#6",
+            "1,650"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60SSTunedByHMKL_WaveBlack.jpg?rev=d0fb511d7b874ea383a79f5cf3891f5c",
+          "galleryName": "ウェーブブラック",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "ウェーブブラック",
+              "modelId": 302,
+              "id": 1340
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＳ　グリグロレッド",
+          "name": "グリグロレッド",
+          "jan": "4550133128530",
+          "spec": [
+            "60",
+            "3.8",
+            "シンキング",
+            "ヴァンフックPL-51BL#6",
+            "1,650"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2020/07/31/Red1.jpg?rev=1919a3585651476a9316c78833de268c",
+          "galleryName": "グリグロレッド",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "グリグロレッド",
+              "modelId": 302,
+              "id": 1341
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＳ　グリグロブルー",
+          "name": "グリグロブルー",
+          "jan": "4550133128547",
+          "spec": [
+            "60",
+            "3.8",
+            "シンキング",
+            "ヴァンフックPL-51BL#6",
+            "1,650"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2020/07/31/Blue1.jpg?rev=20708a8635f74fa79ee6b02079819061",
+          "galleryName": "グリグロブルー",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "グリグロブルー",
+              "modelId": 302,
+              "id": 1342
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＳ　グリグロオレンジ",
+          "name": "グリグロオレンジ",
+          "jan": "4550133128554",
+          "spec": [
+            "60",
+            "3.8",
+            "シンキング",
+            "ヴァンフックPL-51BL#6",
+            "1,650"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2020/07/31/Orenge1.jpg?rev=519dbcb3c3014d48aecc294df1eeb333",
+          "galleryName": "グリグロオレンジ",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "グリグロオレンジ",
+              "modelId": 302,
+              "id": 1343
+            }
+          ],
+          "status": "existing"
+        },
+        {
+          "itemName": "ＰＲＥＳＳＯダブルクラッチ６０ＳＳ　グリグロホワイト",
+          "name": "グリグロホワイト",
+          "jan": "4550133128561",
+          "spec": [
+            "60",
+            "3.8",
+            "シンキング",
+            "ヴァンフックPL-51BL#6",
+            "1,650"
+          ],
+          "imageUrl": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2020/07/31/White1.jpg?rev=002eaff163e641c09ff4c0a2a9d77e03",
+          "galleryName": "グリグロホワイト",
+          "productCode": null,
+          "existing": [
+            {
+              "colorName": "グリグロホワイト",
+              "modelId": 302,
+              "id": 1344
+            }
+          ],
+          "status": "existing"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60SSTunedByHMKL_WavePink.jpg?rev=ef282648993e41fe80d946f31784d5a3",
+          "name": "ウェーブピンク"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60SSTunedByHMKL_WaveBlue.jpg?rev=cdaea4633c27493aabf3782eba4e1188",
+          "name": "ウェーブブルー"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60SSTunedByHMKL_WaveGreen.jpg?rev=6ca20deb862d4479989208655bbffb3c",
+          "name": "ウェーブグリーン"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2018/11/16/PressoDoubleClutch60SSTunedByHMKL_WaveBlack.jpg?rev=d0fb511d7b874ea383a79f5cf3891f5c",
+          "name": "ウェーブブラック"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2020/07/31/Red1.jpg?rev=1919a3585651476a9316c78833de268c",
+          "name": "グリグロレッド"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2020/07/31/Blue1.jpg?rev=20708a8635f74fa79ee6b02079819061",
+          "name": "グリグロブルー"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2020/07/31/Orenge1.jpg?rev=519dbcb3c3014d48aecc294df1eeb333",
+          "name": "グリグロオレンジ"
+        },
+        {
+          "url": "https://390386bd-1bf0-4900-aa10-cac1793c9a23-afd-dqdkdpcqgcc6hahm.z01.azurefd.net/-/media/Project/globeride/daiwa_com_jp/resources/fishing/item/lure/trout_le/presso_doubleclutch_60ss/__icsFiles/afieldfile/2020/07/31/White1.jpg?rev=002eaff163e641c09ff4c0a2a9d77e03",
+          "name": "グリグロホワイト"
+        }
+      ],
+      "existingModel": {
+        "name": "PRESSO DOUBLE CLUTCH 60SS",
+        "seriesId": 24,
+        "category": "ミノー",
+        "lengthMm": 60,
+        "weightG": 3.8,
+        "id": 302
+      },
+      "existingSeries": {
+        "name": "PRESSO DOUBLE CLUTCH F",
+        "manufacturerId": 42,
+        "id": 24
+      },
+      "existingManufacturer": {
+        "name": "ダイワ",
+        "id": 42
+      },
+      "existingCount": 8,
+      "existingOnly": []
+    }
+  ]
+}
