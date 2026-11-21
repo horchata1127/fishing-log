@@ -27,7 +27,7 @@ async function startLocated(page: Page) {
 test('with initial official master: free text survives select/clear, canceled additions write nothing, facility-only catch works', async ({ page }) => {
   await page.getByRole('button', { name: '新しい釣行を開始' }).click()
   const group = page.getByRole('group', { name: '管理釣り場・エリア（任意）', exact: true })
-  await expect(group.getByLabel('管理釣り場', { exact: true }).locator('option')).toHaveCount(51)
+  await expect(group.getByLabel('管理釣り場', { exact: true }).locator('option')).toHaveCount(52)
   const initial = await state(page)
   await page.getByLabel('釣り場', { exact: true }).fill('架空の河川')
   await group.getByRole('button', { name: '施設を追加', exact: true }).click()
@@ -117,9 +117,9 @@ test('retired current remains usable, disappears after clear; official labels an
     const facility = { id: 'official:test-f', name: '架空公式施設', prefecture: '長野県', address: null, facilityTypes: ['pond'], lureAllowed: true,
       operationStatus: 'open', officialUrl: null, sourceUrl: null, verifiedAt: null, aliases: [], zones: [{ id: 'official:test-z', name: '旧池', sortOrder: 1, sourceUrl: null }] }
     const master = (releaseOrder: number, facilities: any[]) => ({ schemaVersion: 1, masterVersion: `test-${releaseOrder}`, distributionMode: 'full', releaseOrder, facilities })
-    await applyFacilityMaster(master(2, [facility]))
+    await applyFacilityMaster(master(3, [facility]))
     await db.trips.add({ fishingAreaName: '継続試験', fishingDate: '2026-10-11', startedAt: new Date(), facilityId: facility.id, currentZoneId: 'official:test-z' })
-    await applyFacilityMaster(master(3, [{ ...facility, id: 'official:other', zones: [] }]))
+    await applyFacilityMaster(master(4, [{ ...facility, id: 'official:other', zones: [] }]))
   }, databaseModule)
   await page.reload(); await page.getByRole('button', { name: /継続試験/ }).click()
   const current = page.getByRole('group', { name: '現在のエリア', exact: true })

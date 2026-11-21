@@ -17,6 +17,7 @@ for (const [name, source] of Object.entries(sources)) {
     { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText
   code = code.replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
   code = code.replace("'./facility-master.v1.json'", JSON.stringify(new URL('../src/data/facility-master.v1.json', import.meta.url).href))
+  code = code.replace("'./facility-master.rc44.json'", JSON.stringify(new URL('../src/data/facility-master.rc44.json', import.meta.url).href))
   for (const [dependency, target] of Object.entries(sources)) {
     for (const prefix of ['./', '../db/', '../utils/', '../data/']) code = code.replaceAll(`'${prefix}${target.split('/').at(-1)}'`, JSON.stringify(pathToFileURL(paths[dependency]).href))
   }
@@ -52,13 +53,13 @@ async function seedLegacy() {
 beforeEach(async () => { await db.open(); for (const t of db.tables) await t.clear() })
 after(async () => { db.close(); await rm(directory, { recursive: true }) })
 
-test('activation bundles exactly the approved audited candidate with the initial release identity', async () => {
+test('activation bundles cumulative RC44 while preserving the approved original snapshot', async () => {
   const bytes = await readFile(new URL('../src/data/facility-master.v1.json', import.meta.url))
   assert.equal(createHash('sha256').update(bytes).digest('hex'), audit.candidateSha256)
   assert.equal(stage6FacilityRelease.status, 'approved')
-  assert.deepEqual(stage6FacilityRelease.master, master)
-  assert.equal(stage6FacilityRelease.master.releaseOrder, 1)
-  assert.equal(stage6FacilityRelease.master.masterVersion, '1.0.0-stage6-50f73z')
+  assert.deepEqual(stage6FacilityRelease.master.facilities.slice(0, 50), master.facilities)
+  assert.equal(stage6FacilityRelease.master.releaseOrder, 2)
+  assert.equal(stage6FacilityRelease.master.masterVersion, '1.1.0-rc44-okutama-51f78z')
   assert.equal(validateFacilityMaster(stage6FacilityRelease.master).ok, true)
 })
 

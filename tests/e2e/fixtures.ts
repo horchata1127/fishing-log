@@ -65,7 +65,7 @@ export const test = base.extend<{ isolatedApp: void }>({
     expect(await page.evaluate(async () => {
       const path = '/fishing-log/src/db/database.ts', { db } = await import(path)
       return { facilities: await db.facilities.count(), zones: await db.zones.count(), metadata: await db.appMetadata.get('facilityMaster') }
-    })).toMatchObject({ facilities: 50, zones: 73, metadata: { releaseOrder: 1, masterVersion: '1.0.0-stage6-50f73z' } })
+    })).toMatchObject({ facilities: 51, zones: 78, metadata: { releaseOrder: 2, masterVersion: '1.1.0-rc44-okutama-51f78z' } })
     await expect.poll(async () => Object.values(await readState(page)).every(rows => rows.length === 0)).toBe(true)
     await use()
     expect(errors, '未処理のブラウザ例外').toEqual([])

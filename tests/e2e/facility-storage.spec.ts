@@ -4,8 +4,8 @@ import { test, expect, restoreViaUI } from './fixtures'
 const facility = { id: 'official:e2e-f', name: '架空施設', prefecture: '長野県', address: null,
   facilityTypes: ['pond'], lureAllowed: true, operationStatus: 'open', officialUrl: null, sourceUrl: null,
   verifiedAt: null, aliases: [], zones: [{ id: 'official:e2e-z', name: '架空エリア', sortOrder: 1, sourceUrl: null }] }
-// Synthetic updates start after the real initial release; never weaken same-number conflict checks.
-const master = (releaseOrder = 2) => ({ schemaVersion: 1, masterVersion: `sample-${releaseOrder}`, distributionMode: 'full', releaseOrder, facilities: [facility] })
+// Synthetic updates start after the real cumulative release; never weaken same-number conflict checks.
+const master = (releaseOrder = 3) => ({ schemaVersion: 1, masterVersion: `sample-${releaseOrder}`, distributionMode: 'full', releaseOrder, facilities: [facility] })
 const modules = { database: '/fishing-log/src/db/database.ts', storage: '/fishing-log/src/utils/facilityStorage.ts', backup: '/fishing-log/src/utils/backup.ts' }
 
 test('v6 restore retains current user rows, round trips references and rejects conflicts atomically', async ({ page }) => {
@@ -44,9 +44,9 @@ test('separate tabs serialize official updates and preserve highest release', as
     try { await (await import(modules.storage)).applyFacilityMaster(master); return 'ok' }
     catch (error) { return String(error) }
   }, { modules, master: master(release) })
-  const results = await Promise.all([apply(page, 3), apply(other, 2)])
+  const results = await Promise.all([apply(page, 4), apply(other, 3)])
   expect(results[0]).toBe('ok')
-  expect(await page.evaluate(async modules => (await (await import(modules.database)).db.appMetadata.get('facilityMaster')).releaseOrder, modules)).toBe(3)
+  expect(await page.evaluate(async modules => (await (await import(modules.database)).db.appMetadata.get('facilityMaster')).releaseOrder, modules)).toBe(4)
   await other.close()
 })
 

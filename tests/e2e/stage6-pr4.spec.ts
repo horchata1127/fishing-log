@@ -1,16 +1,16 @@
 import { test, expect, readState, restoreViaUI, saveCatch } from './fixtures'
 import { stage6Candidate, stage6Backup } from '../stage6Fixture'
 
-test('approved startup installs the initial master, repeats without changes, and Iwana catch/lost snapshots persist', async ({ page }) => {
+test('approved startup installs the cumulative master, repeats without changes, and Iwana catch/lost snapshots persist', async ({ page }) => {
   expect(await page.evaluate(async () => {
     const path = '/fishing-log/src/db/database.ts'
     return (await import(path)).db.facilities.count()
-  })).toBe(50)
+  })).toBe(51)
   const beforeRestart = await page.evaluate(async () => {
     const path = '/fishing-log/src/db/database.ts', { db } = await import(path)
     return JSON.parse(JSON.stringify({ facilities: await db.facilities.toArray(), zones: await db.zones.toArray(), appMetadata: await db.appMetadata.toArray() }))
   })
-  expect(beforeRestart.zones).toHaveLength(73)
+  expect(beforeRestart.zones).toHaveLength(78)
   expect(await page.evaluate(async () => {
     const path = '/fishing-log/src/utils/facilityRelease.ts'
     return (await import(path)).initializeFacilityRelease()
