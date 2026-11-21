@@ -24,6 +24,7 @@ import { getTripDeletionSummary, deleteFishingTrip, type TripDeletionSummary } f
 import { loadFishChoices, defaultFishSpeciesId } from './utils/fishSpecies'
 import { availableTackleSets, createTrip, updateTripTackles, suggestTackleSetId } from './utils/tackleManagement'
 import { exportBackup, importBackup } from './utils/backup'
+import { photoTableNames } from './utils/lurePhotos'
 import { loadLureChoices, deleteCatch, updateCatch, registerCatch, registerSameAsPrevious,
   type LureOption, type LureSelection, type RecentLure } from './utils/catchRegistration'
 import {
@@ -653,6 +654,7 @@ async function deleteAllData() {
       db.lines,
       db.tackleSets,
       db.fishSpecies,
+      ...photoTableNames.map(name => db.table(name)),
     ],
     async () => {
       await db.catches.clear()
@@ -671,6 +673,7 @@ async function deleteAllData() {
       await db.lureSeries.clear()
       await db.lureManufacturers.clear()
       await db.trips.clear()
+      for (const name of photoTableNames) await db.table(name).clear()
     }
   )
 
@@ -742,6 +745,7 @@ async function tripInformationSaved(trip: FishingTrip) {
       <button class="backup-button" @click="backupData">
         📦 データをバックアップ
       </button>
+      <small class="photo-backup-note">NOAの写真は、ビジュアルカラー辞書の写真管理から別にバックアップできます。</small>
 
       <label class="restore-button">
         📥 バックアップから復元

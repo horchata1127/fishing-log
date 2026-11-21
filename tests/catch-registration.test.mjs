@@ -11,13 +11,15 @@ import { renderToString } from 'vue/server-renderer'
 import { parse, compileScript, compileTemplate } from '@vue/compiler-sfc'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-catch-test-'))
-const paths = Object.fromEntries(['tripLocations', 'facilityMaster', 'facilityStorage', 'database', 'catchRegistration', 'tackleManagement', 'fishSpecies', 'fishMaster', 'fishPicker', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
+const paths = Object.fromEntries(['noaPhotoCatalog', 'noaSharedColors', 'noaExternalLinks', 'tripLocations', 'facilityMaster', 'facilityStorage', 'database', 'catchRegistration', 'tackleManagement', 'fishSpecies', 'fishMaster', 'fishPicker', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
 const compile = source => ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
 }).outputText
-for (const [name, source] of [['tripLocations', 'utils/tripLocations.ts'], ['facilityMaster', 'utils/facilityMaster.ts'], ['facilityStorage', 'utils/facilityStorage.ts'], ['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
+for (const [name, source] of [['noaPhotoCatalog', 'utils/noaPhotoCatalog.ts'], ['noaSharedColors', 'data/noaSharedColors.ts'], ['noaExternalLinks', 'data/noaExternalLinks.ts'], ['tripLocations', 'utils/tripLocations.ts'], ['facilityMaster', 'utils/facilityMaster.ts'], ['facilityStorage', 'utils/facilityStorage.ts'], ['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
   const code = compile(await readFile(new URL(`../src/${source}`, import.meta.url), 'utf8'))
     .replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
+    .replace("'../data/noaSharedColors'", JSON.stringify(pathToFileURL(paths.noaSharedColors).href))
+    .replace("'../data/noaExternalLinks'", JSON.stringify(pathToFileURL(paths.noaExternalLinks).href))
     .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
     .replace("'./facilityMaster'", JSON.stringify(pathToFileURL(paths.facilityMaster).href))
     .replace("'./tripLocations'", JSON.stringify(pathToFileURL(paths.tripLocations).href))
@@ -37,7 +39,7 @@ await writeFile(paths.fishPicker, compile(compileScript(pickerDescriptor, { id: 
   .replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
   .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href)))
 // Child color widgets are covered by browser tests; this harness tests modal routing.
-await writeFile(paths.modal, compile(script.content).replace(/import VisualDictionaryPanel from ['"]\.\/VisualDictionaryPanel.vue['"];?/, 'const VisualDictionaryPanel = { render: () => null };').replace(/import VisualColorEditor from ['"]\.\/VisualColorEditor.vue['"];?/, 'const VisualColorEditor = { render: () => null };').replace(/import VisualColorPreview from ['"]\.\/VisualColorPreview.vue['"];?/, 'const VisualColorPreview = { render: () => null };').replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
+await writeFile(paths.modal, compile(script.content).replace(/import LurePhotoDisplay from ['\"]\.\/LurePhotoDisplay.vue['\"];?/, 'const LurePhotoDisplay = { render: () => null };').replace("'../utils/noaPhotoCatalog'", JSON.stringify(pathToFileURL(paths.noaPhotoCatalog).href)).replace(/import VisualDictionaryPanel from ['"]\.\/VisualDictionaryPanel.vue['"];?/, 'const VisualDictionaryPanel = { render: () => null };').replace(/import VisualColorEditor from ['"]\.\/VisualColorEditor.vue['"];?/, 'const VisualColorEditor = { render: () => null };').replace(/import VisualColorPreview from ['"]\.\/VisualColorPreview.vue['"];?/, 'const VisualColorPreview = { render: () => null };').replaceAll(/from ['"]vue['"]/g, `from ${JSON.stringify(import.meta.resolve('vue'))}`)
   .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
   .replace("'./FishSpeciesPicker.vue'", JSON.stringify(pathToFileURL(paths.fishPicker).href)))
 const template = compileTemplate({ source: descriptor.template.content, filename: 'CatchModal.vue', id: 'catch-test',
@@ -238,7 +240,7 @@ test('RC24 v6 round trip retains all 16 stores, official/user places, tackle/fis
   await importBackup(new File([JSON.stringify(backup)], 'synthetic-rc24-v6.json'))
   assert.equal(await snapshot(), before)
   assert.equal(Object.hasOwn(await db.catches.get(legacyId), 'actionLength'), false)
-  assert.equal(db.verno, 11)
+  assert.equal(db.verno, 12)
 })
 
 test('RC24 late edit failure rolls back new length and owned lure without modifying legacy action or other tables', async () => {
@@ -266,7 +268,7 @@ test('RC23 legacy records and three lost distances stay separate with reused own
   const before = await snapshot()
   await importBackup(new File([JSON.stringify(await createBackup())], 'rc23.json'))
   assert.equal(await snapshot(), before)
-  assert.equal(db.verno, 11)
+  assert.equal(db.verno, 12)
 })
 
 test('RC23 invalid result/distance and invalid restored record reject without any writes', async () => {

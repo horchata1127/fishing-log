@@ -3,6 +3,7 @@ import { mkdtemp, readFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { rc32ReleaseFixture } from '../rc32ReleaseFixture'
+import { expectedNormalJson } from './normalJsonBackup'
 
 const origin = 'http://127.0.0.1:4188', url = `${origin}/fishing-log/`
 async function state(page: Page) {
@@ -71,8 +72,6 @@ test('RC32辞書編集中はPWA更新を延期し、更新と圏外再起動で�
     const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: '📦 データをバックアップ', exact: true }).click()])
     const path = info.outputPath('synthetic-release-v8.json'); await download.saveAs(path)
     const backup = JSON.parse(await readFile(path, 'utf8'))
-    const { lureMasterImportHistory, ...legacyData } = beforeUpdate
-    expect(lureMasterImportHistory).toEqual([])
-    expect(backup.version).toBe(8); expect(backup.data).toEqual(legacyData)
+    expect(backup.version).toBe(8); expect(backup.data).toEqual(expectedNormalJson(beforeUpdate, backup.version))
   } finally { await context.close() }
 })

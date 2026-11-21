@@ -859,6 +859,10 @@ export function nextLureMasterHistorySequence(rows: readonly LureMasterHistoryRe
 }
 
 export const db = new Dexie('FishingLogDatabase') as Dexie & {
+  sharedLureColors: Table<import('./lurePhotoTypes').SharedLureColor, string>
+  lureColorPhotoLinks: Table<import('./lurePhotoTypes').LureColorPhotoLink, number>
+  lureColorPhotos: Table<import('./lurePhotoTypes').LureColorPhoto, string>
+  lurePhotoBlobs: Table<import('./lurePhotoTypes').LurePhotoBlob, string>
   trips: EntityTable<FishingTrip, 'id'>
   catches: EntityTable<CatchRecord, 'id'>
   tripEvents: EntityTable<TripEvent, 'id'>
@@ -946,6 +950,14 @@ db.version(9).stores({
 db.version(10).stores({ lureMasterImportHistory: 'id, contextId, sequence, startedAt, kind, status' })
 // RC41: additive, no migration writes to existing records.
 db.version(11).stores({ areaMaps: 'id, facilityId, zoneId' })
+
+// RC43: independent photo stores. No catalog/ownership/history migration writes.
+db.version(12).stores({
+  sharedLureColors: 'id, familyKey',
+  lureColorPhotoLinks: 'variantId, sharedColorId',
+  lureColorPhotos: 'id, sharedColorId, variantId, blobId',
+  lurePhotoBlobs: 'id',
+})
 
 export const databaseConnection = { state: 'ready' as 'ready' | 'changed' | 'blocked' }
 const connectionListeners = new Set<(state: typeof databaseConnection.state) => void>()

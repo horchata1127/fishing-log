@@ -2,6 +2,7 @@ import { test, expect, chromium } from '@playwright/test'
 import { mkdtemp, readFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
+import { expectedNormalJson } from './normalJsonBackup'
 import { rc30Fixture } from '../rc30Fixture'
 import { checkMaster, applyMaster, masterHome } from '../masterUiHelpers'
 import { registerOfflineCatalogRegression, offlineState } from './masterCatalogRegression'
@@ -50,7 +51,7 @@ test('RC30 PWA offline restart keeps event edits and additive USSA catalog', asy
     const path = info.outputPath('rc30-offline-v7.json'); await download.saveAs(path)
     const backup = JSON.parse(await readFile(path, 'utf8')); expect(backup.version).toBe(9)
     expect(backup.data.tripEvents).toHaveLength(1)
-    expect(backup.data).toEqual(await offlineState(page))
+    expect(backup.data).toEqual(expectedNormalJson(await offlineState(page), backup.version))
     expect(backup.data.catches).toEqual(JSON.parse(JSON.stringify(rc30Fixture().data.catches)).map((c: Record<string, unknown>) => ({ ...c, caughtAt: new Date(c.caughtAt as string).toISOString() })))
   } finally { await context.close() }
 })

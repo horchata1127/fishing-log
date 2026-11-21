@@ -1,0 +1,5877 @@
+{
+  "checkedAt": "2026-11-21",
+  "backupSha256": "0e88566b7ad0359599159c976a9499b80f80f53518f9b40148c5a44eb27c5d16",
+  "models": [
+    {
+      "name": "NOA 1.5g",
+      "seriesId": 89,
+      "category": "スプーン",
+      "weightG": 1.5,
+      "id": 133,
+      "colorCount": 86
+    },
+    {
+      "name": "NOA 1.8g",
+      "seriesId": 89,
+      "category": "スプーン",
+      "weightG": 1.8,
+      "id": 134,
+      "colorCount": 86
+    },
+    {
+      "name": "NOA 2.1g",
+      "seriesId": 89,
+      "category": "スプーン",
+      "weightG": 2.1,
+      "id": 135,
+      "colorCount": 86
+    },
+    {
+      "name": "NOA Jr. 0.9g",
+      "seriesId": 88,
+      "category": "スプーン",
+      "weightG": 0.9,
+      "id": 136,
+      "colorCount": 86
+    },
+    {
+      "name": "NOA Jr. 1.4g",
+      "seriesId": 88,
+      "category": "スプーン",
+      "weightG": 1.4,
+      "id": 137,
+      "colorCount": 86
+    },
+    {
+      "name": "NOA S 1.0g",
+      "seriesId": 87,
+      "category": "スプーン",
+      "weightG": 1,
+      "id": 138,
+      "colorCount": 86
+    },
+    {
+      "name": "NOA(B/Jr./Boss)",
+      "seriesId": 86,
+      "category": "スプーン",
+      "id": 139,
+      "colorCount": 0
+    },
+    {
+      "name": "NOA Jr. 1.2g",
+      "seriesId": 88,
+      "category": "スプーン",
+      "weightG": 1.2,
+      "id": 303,
+      "colorCount": 86
+    },
+    {
+      "name": "NOA S 1.4g",
+      "seriesId": 87,
+      "category": "スプーン",
+      "weightG": 1.4,
+      "id": 304,
+      "colorCount": 86
+    }
+  ],
+  "sharedColorCount": 94,
+  "variants": 688,
+  "externalColorCount": 33,
+  "unresolvedSpellingCount": 8,
+  "localPhotoCount": 0,
+  "modelSpecificPhotoRequirements": "未確認。画像を取得・比較していないため必要件数を推測しない。",
+  "groups": [
+    {
+      "id": "rodio-craft:noa:%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "ゴールド",
+      "colorCode": "1",
+      "aliases": [
+        "#1 ゴールド"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190933838",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 334,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#1 ゴールド"
+        },
+        {
+          "variantId": 926,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "ゴールド"
+        },
+        {
+          "variantId": 986,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "ゴールド"
+        },
+        {
+          "variantId": 1424,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#1 ゴールド"
+        },
+        {
+          "variantId": 1499,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#1 ゴールド"
+        },
+        {
+          "variantId": 1574,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#1 ゴールド"
+        },
+        {
+          "variantId": 1649,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#1 ゴールド"
+        },
+        {
+          "variantId": 1724,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#1 ゴールド"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%80%E3%82%A4%E3%83%80%E3%82%A4",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "ダイダイ",
+      "colorCode": "10",
+      "aliases": [
+        "#10 ダイダイ"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190933989",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 335,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#10 ダイダイ"
+        },
+        {
+          "variantId": 932,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "ダイダイ"
+        },
+        {
+          "variantId": 994,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "ダイダイ"
+        },
+        {
+          "variantId": 1432,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#10 ダイダイ"
+        },
+        {
+          "variantId": 1507,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#10 ダイダイ"
+        },
+        {
+          "variantId": 1582,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#10 ダイダイ"
+        },
+        {
+          "variantId": 1657,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#10 ダイダイ"
+        },
+        {
+          "variantId": 1732,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#10 ダイダイ"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E5%A1%97%E3%81%A3%E3%81%A1%E3%82%83%E3%81%A3%E3%81%A6",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "塗っちゃって",
+      "colorCode": "11",
+      "aliases": [
+        "#11 塗っちゃって"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934005",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 336,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#11 塗っちゃって"
+        },
+        {
+          "variantId": 933,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "塗っちゃって"
+        },
+        {
+          "variantId": 995,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "塗っちゃって"
+        },
+        {
+          "variantId": 1433,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#11 塗っちゃって"
+        },
+        {
+          "variantId": 1508,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#11 塗っちゃって"
+        },
+        {
+          "variantId": 1583,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#11 塗っちゃって"
+        },
+        {
+          "variantId": 1658,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#11 塗っちゃって"
+        },
+        {
+          "variantId": 1733,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#11 塗っちゃって"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "ブラック",
+      "colorCode": "13",
+      "aliases": [
+        "#13 ブラック"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934076",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 337,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#13 ブラック"
+        },
+        {
+          "variantId": 934,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "ブラック"
+        },
+        {
+          "variantId": 996,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "ブラック"
+        },
+        {
+          "variantId": 1434,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#13 ブラック"
+        },
+        {
+          "variantId": 1509,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#13 ブラック"
+        },
+        {
+          "variantId": 1584,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#13 ブラック"
+        },
+        {
+          "variantId": 1659,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#13 ブラック"
+        },
+        {
+          "variantId": 1734,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#13 ブラック"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E8%9B%8D%E5%85%89%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "蛍光イエロー",
+      "colorCode": "14",
+      "aliases": [
+        "#14 蛍光イエロー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934082",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 338,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#14 蛍光イエロー"
+        },
+        {
+          "variantId": 935,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "蛍光イエロー"
+        },
+        {
+          "variantId": 997,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "蛍光イエロー"
+        },
+        {
+          "variantId": 1435,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#14 蛍光イエロー"
+        },
+        {
+          "variantId": 1510,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#14 蛍光イエロー"
+        },
+        {
+          "variantId": 1585,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#14 蛍光イエロー"
+        },
+        {
+          "variantId": 1660,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#14 蛍光イエロー"
+        },
+        {
+          "variantId": 1735,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#14 蛍光イエロー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:m%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "Mグリーン",
+      "colorCode": "15",
+      "aliases": [
+        "#15 Mグリーン"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934084",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 339,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#15 Mグリーン"
+        },
+        {
+          "variantId": 936,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "Mグリーン"
+        },
+        {
+          "variantId": 998,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "Mグリーン"
+        },
+        {
+          "variantId": 1436,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#15 Mグリーン"
+        },
+        {
+          "variantId": 1511,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#15 Mグリーン"
+        },
+        {
+          "variantId": 1586,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#15 Mグリーン"
+        },
+        {
+          "variantId": 1661,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#15 Mグリーン"
+        },
+        {
+          "variantId": 1736,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#15 Mグリーン"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%81%E3%83%A7%E3%82%B3%E3%83%AC%E3%83%BC%E3%83%88",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "チョコレート",
+      "colorCode": "16",
+      "aliases": [
+        "#16 チョコレート"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934089",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 340,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#16 チョコレート"
+        },
+        {
+          "variantId": 937,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "チョコレート"
+        },
+        {
+          "variantId": 999,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "チョコレート"
+        },
+        {
+          "variantId": 1437,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#16 チョコレート"
+        },
+        {
+          "variantId": 1512,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#16 チョコレート"
+        },
+        {
+          "variantId": 1587,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#16 チョコレート"
+        },
+        {
+          "variantId": 1662,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#16 チョコレート"
+        },
+        {
+          "variantId": 1737,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#16 チョコレート"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%82%B0%E3%83%AD%E3%83%BC(%E5%A4%9C%E5%85%89)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "グロー(夜光)",
+      "colorCode": "17",
+      "aliases": [
+        "#17 グロー（夜光）"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934095",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 341,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#17 グロー（夜光）"
+        },
+        {
+          "variantId": 938,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "グロー（夜光）"
+        },
+        {
+          "variantId": 1000,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "グロー（夜光）"
+        },
+        {
+          "variantId": 1438,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#17 グロー（夜光）"
+        },
+        {
+          "variantId": 1513,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#17 グロー（夜光）"
+        },
+        {
+          "variantId": 1588,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#17 グロー（夜光）"
+        },
+        {
+          "variantId": 1663,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#17 グロー（夜光）"
+        },
+        {
+          "variantId": 1738,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#17 グロー（夜光）"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E9%89%84%E6%9D%BF!!%E5%8C%97%E9%96%A2%E6%9D%B1",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "鉄板!!北関東",
+      "colorCode": "19",
+      "aliases": [
+        "#19 鉄板！！北関東"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934097",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 342,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#19 鉄板！！北関東"
+        },
+        {
+          "variantId": 939,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "鉄板！！北関東"
+        },
+        {
+          "variantId": 1001,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "鉄板!!北関東"
+        },
+        {
+          "variantId": 1439,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#19 鉄板！！北関東"
+        },
+        {
+          "variantId": 1514,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#19 鉄板！！北関東"
+        },
+        {
+          "variantId": 1589,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#19 鉄板！！北関東"
+        },
+        {
+          "variantId": 1664,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#19 鉄板！！北関東"
+        },
+        {
+          "variantId": 1739,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#19 鉄板！！北関東"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "シルバー",
+      "colorCode": "2",
+      "aliases": [
+        "#2 シルバー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190933859",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 343,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#2 シルバー"
+        },
+        {
+          "variantId": 927,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "シルバー"
+        },
+        {
+          "variantId": 987,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "シルバー"
+        },
+        {
+          "variantId": 1425,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#2 シルバー"
+        },
+        {
+          "variantId": 1500,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#2 シルバー"
+        },
+        {
+          "variantId": 1575,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#2 シルバー"
+        },
+        {
+          "variantId": 1650,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#2 シルバー"
+        },
+        {
+          "variantId": 1725,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#2 シルバー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E7%99%BD%E9%BE%8D",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "白龍",
+      "colorCode": "20",
+      "aliases": [
+        "#20 白龍"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934099",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 344,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#20 白龍"
+        },
+        {
+          "variantId": 940,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "白龍"
+        },
+        {
+          "variantId": 1002,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "白龍"
+        },
+        {
+          "variantId": 1440,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#20 白龍"
+        },
+        {
+          "variantId": 1515,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#20 白龍"
+        },
+        {
+          "variantId": 1590,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#20 白龍"
+        },
+        {
+          "variantId": 1665,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#20 白龍"
+        },
+        {
+          "variantId": 1740,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#20 白龍"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E9%89%84%E6%9D%BF!!s.t",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "鉄板!!S.T",
+      "colorCode": "22",
+      "aliases": [
+        "#22 鉄板！！S.T"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934106",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 345,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#22 鉄板！！S.T"
+        },
+        {
+          "variantId": 941,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "鉄板！！S.T"
+        },
+        {
+          "variantId": 1003,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "鉄板!!S.T"
+        },
+        {
+          "variantId": 1441,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#22 鉄板！！S.T"
+        },
+        {
+          "variantId": 1516,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#22 鉄板！！S.T"
+        },
+        {
+          "variantId": 1591,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#22 鉄板！！S.T"
+        },
+        {
+          "variantId": 1666,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#22 鉄板！！S.T"
+        },
+        {
+          "variantId": 1741,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#22 鉄板！！S.T"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%80%E3%83%BC%E3%82%AF%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96(%E3%83%9E%E3%83%83%E3%83%88)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "ダークオリーブ(マット)",
+      "colorCode": "24",
+      "aliases": [
+        "#24 ダークオリーブ（マット）"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934108",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 346,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#24 ダークオリーブ（マット）"
+        },
+        {
+          "variantId": 942,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "ダークオリーブ（マット）"
+        },
+        {
+          "variantId": 1004,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "ダークオリーブ（マット）"
+        },
+        {
+          "variantId": 1442,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#24 ダークオリーブ（マット）"
+        },
+        {
+          "variantId": 1517,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#24 ダークオリーブ（マット）"
+        },
+        {
+          "variantId": 1592,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#24 ダークオリーブ（マット）"
+        },
+        {
+          "variantId": 1667,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#24 ダークオリーブ（マット）"
+        },
+        {
+          "variantId": 1742,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#24 ダークオリーブ（マット）"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%9F%E3%83%AB%E3%82%AF%E3%82%B3%E3%82%B3%E3%82%A2(%E3%83%9E%E3%83%83%E3%83%88)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "ミルクココア(マット)",
+      "colorCode": "25",
+      "aliases": [
+        "#25 ミルクココア（マット）"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934113",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 347,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#25 ミルクココア（マット）"
+        },
+        {
+          "variantId": 943,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "ミルクココア（マット）"
+        },
+        {
+          "variantId": 1005,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "ミルクココア（マット）"
+        },
+        {
+          "variantId": 1443,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#25 ミルクココア（マット）"
+        },
+        {
+          "variantId": 1518,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#25 ミルクココア（マット）"
+        },
+        {
+          "variantId": 1593,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#25 ミルクココア（マット）"
+        },
+        {
+          "variantId": 1668,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#25 ミルクココア（マット）"
+        },
+        {
+          "variantId": 1743,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#25 ミルクココア（マット）"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E8%A1%A8%E8%9B%8Dr%2F%E8%A3%8F%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "表蛍R/裏ゴールド",
+      "colorCode": "27",
+      "aliases": [
+        "#27 表蛍R／裏ゴールド"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934124",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 348,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#27 表蛍R／裏ゴールド"
+        },
+        {
+          "variantId": 944,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "表蛍R／裏ゴールド"
+        },
+        {
+          "variantId": 1444,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#27 表蛍R／裏ゴールド"
+        },
+        {
+          "variantId": 1519,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#27 表蛍R／裏ゴールド"
+        },
+        {
+          "variantId": 1594,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#27 表蛍R／裏ゴールド"
+        },
+        {
+          "variantId": 1669,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#27 表蛍R／裏ゴールド"
+        },
+        {
+          "variantId": 1744,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#27 表蛍R／裏ゴールド"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:any%E3%82%AD%E3%83%A3%E3%83%A1%E3%83%AB",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "Any キャメル",
+      "colorCode": "3",
+      "aliases": [
+        "#3 Any キャメル"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190933889",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 349,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#3 Any キャメル"
+        },
+        {
+          "variantId": 928,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "Any キャメル"
+        },
+        {
+          "variantId": 988,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "Anyキャメル"
+        },
+        {
+          "variantId": 1426,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#3 Any キャメル"
+        },
+        {
+          "variantId": 1501,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#3 Any キャメル"
+        },
+        {
+          "variantId": 1576,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#3 Any キャメル"
+        },
+        {
+          "variantId": 1651,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#3 Any キャメル"
+        },
+        {
+          "variantId": 1726,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#3 Any キャメル"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E5%92%8C%E3%81%8B%E3%82%89%E3%81%97(%E3%83%9E%E3%83%83%E3%83%88)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "和からし(マット)",
+      "colorCode": "30",
+      "aliases": [
+        "#30 和からし（マット）"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934137",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 350,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#30 和からし（マット）"
+        },
+        {
+          "variantId": 945,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "和からし（マット）"
+        },
+        {
+          "variantId": 1007,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "和からし（マット）"
+        },
+        {
+          "variantId": 1445,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#30 和からし（マット）"
+        },
+        {
+          "variantId": 1520,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#30 和からし（マット）"
+        },
+        {
+          "variantId": 1595,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#30 和からし（マット）"
+        },
+        {
+          "variantId": 1670,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#30 和からし（マット）"
+        },
+        {
+          "variantId": 1745,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#30 和からし（マット）"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E9%80%8F%E9%81%8E%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "透過チャート",
+      "colorCode": "38",
+      "aliases": [
+        "#38 透過チャート"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934141",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 351,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#38 透過チャート"
+        },
+        {
+          "variantId": 946,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "透過チャート"
+        },
+        {
+          "variantId": 1010,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "透過チャート"
+        },
+        {
+          "variantId": 1447,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#38 透過チャート"
+        },
+        {
+          "variantId": 1522,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#38 透過チャート"
+        },
+        {
+          "variantId": 1597,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#38 透過チャート"
+        },
+        {
+          "variantId": 1672,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#38 透過チャート"
+        },
+        {
+          "variantId": 1747,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#38 透過チャート"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E6%9C%AC%E6%97%A5%E3%81%AE%E3%83%A9%E3%83%83%E3%82%AD%E3%83%BC%E3%82%AB%E3%83%A9%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "本日のラッキーカラー",
+      "colorCode": "48",
+      "aliases": [
+        "#48 本日のラッキーカラー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934146",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 352,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#48 本日のラッキーカラー"
+        },
+        {
+          "variantId": 947,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "本日のラッキーカラー"
+        },
+        {
+          "variantId": 1011,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "本日のラッキーカラー"
+        },
+        {
+          "variantId": 1448,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#48 本日のラッキーカラー"
+        },
+        {
+          "variantId": 1523,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#48 本日のラッキーカラー"
+        },
+        {
+          "variantId": 1598,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#48 本日のラッキーカラー"
+        },
+        {
+          "variantId": 1673,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#48 本日のラッキーカラー"
+        },
+        {
+          "variantId": 1748,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#48 本日のラッキーカラー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%82%AD%E3%83%A5%E3%82%A6%E3%83%AA%2F%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "キュウリ/ホワイト",
+      "colorCode": "49",
+      "aliases": [
+        "#49 キュウリ／ホワイト"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934148",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 353,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#49 キュウリ／ホワイト"
+        },
+        {
+          "variantId": 948,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "キュウリ／ホワイト"
+        },
+        {
+          "variantId": 1012,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "キュウリ/ホワイト"
+        },
+        {
+          "variantId": 1449,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#49 キュウリ／ホワイト"
+        },
+        {
+          "variantId": 1524,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#49 キュウリ／ホワイト"
+        },
+        {
+          "variantId": 1599,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#49 キュウリ／ホワイト"
+        },
+        {
+          "variantId": 1674,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#49 キュウリ／ホワイト"
+        },
+        {
+          "variantId": 1749,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#49 キュウリ／ホワイト"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E9%89%84%E6%9D%BF!%E5%8D%97%E9%96%A2%E6%9D%B1",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "鉄板!南関東",
+      "colorCode": "5",
+      "aliases": [
+        "#5 鉄板！南関東"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190933902",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 354,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#5 鉄板！南関東"
+        },
+        {
+          "variantId": 929,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "鉄板！南関東"
+        },
+        {
+          "variantId": 1427,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#5 鉄板！南関東"
+        },
+        {
+          "variantId": 1502,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#5 鉄板！南関東"
+        },
+        {
+          "variantId": 1577,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#5 鉄板！南関東"
+        },
+        {
+          "variantId": 1652,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#5 鉄板！南関東"
+        },
+        {
+          "variantId": 1727,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#5 鉄板！南関東"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%9E%E3%83%B3%E3%82%B4%E3%83%BC%2F%E3%83%9E%E3%83%83%E3%83%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "マンゴー/マットブラック",
+      "colorCode": "50",
+      "aliases": [
+        "#50 マンゴー／マットブラック"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934149",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 355,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#50 マンゴー／マットブラック"
+        },
+        {
+          "variantId": 949,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "マンゴー／マットブラック"
+        },
+        {
+          "variantId": 1390,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "#50 マンゴー／マットブラック"
+        },
+        {
+          "variantId": 1450,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#50 マンゴー／マットブラック"
+        },
+        {
+          "variantId": 1525,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#50 マンゴー／マットブラック"
+        },
+        {
+          "variantId": 1600,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#50 マンゴー／マットブラック"
+        },
+        {
+          "variantId": 1675,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#50 マンゴー／マットブラック"
+        },
+        {
+          "variantId": 1750,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#50 マンゴー／マットブラック"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:mmk",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "MMK",
+      "colorCode": "59",
+      "aliases": [
+        "#59 MMK"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934150",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 356,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#59 MMK"
+        },
+        {
+          "variantId": 950,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "MMK"
+        },
+        {
+          "variantId": 1014,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "MMK"
+        },
+        {
+          "variantId": 1451,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#59 MMK"
+        },
+        {
+          "variantId": 1526,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#59 MMK"
+        },
+        {
+          "variantId": 1601,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#59 MMK"
+        },
+        {
+          "variantId": 1676,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#59 MMK"
+        },
+        {
+          "variantId": 1751,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#59 MMK"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E8%9B%8D%E5%85%89%E3%83%94%E3%83%B3%E3%82%AF",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "蛍光ピンク",
+      "colorCode": "6",
+      "aliases": [
+        "#6 蛍光ピンク"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190933920",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 357,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#6 蛍光ピンク"
+        },
+        {
+          "variantId": 930,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "蛍光ピンク"
+        },
+        {
+          "variantId": 990,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "蛍光ピンク"
+        },
+        {
+          "variantId": 1428,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#6 蛍光ピンク"
+        },
+        {
+          "variantId": 1503,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#6 蛍光ピンク"
+        },
+        {
+          "variantId": 1578,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#6 蛍光ピンク"
+        },
+        {
+          "variantId": 1653,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#6 蛍光ピンク"
+        },
+        {
+          "variantId": 1728,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#6 蛍光ピンク"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E5%AE%89%E5%A1%9A%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "安塚リクエスト",
+      "colorCode": "62",
+      "aliases": [
+        "#62 安塚リクエスト"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934155",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 358,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#62 安塚リクエスト"
+        },
+        {
+          "variantId": 951,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "安塚リクエスト"
+        },
+        {
+          "variantId": 1015,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "安塚リクエスト"
+        },
+        {
+          "variantId": 1452,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#62 安塚リクエスト"
+        },
+        {
+          "variantId": 1527,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#62 安塚リクエスト"
+        },
+        {
+          "variantId": 1602,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#62 安塚リクエスト"
+        },
+        {
+          "variantId": 1677,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#62 安塚リクエスト"
+        },
+        {
+          "variantId": 1752,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#62 安塚リクエスト"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E6%A1%83%E8%89%B2ko",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "桃色KO",
+      "colorCode": "7",
+      "aliases": [
+        "#7 桃色KO"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190933973",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 359,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#7 桃色KO"
+        },
+        {
+          "variantId": 931,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "桃色KO"
+        },
+        {
+          "variantId": 991,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "桃色KO"
+        },
+        {
+          "variantId": 1429,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#7 桃色KO"
+        },
+        {
+          "variantId": 1504,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#7 桃色KO"
+        },
+        {
+          "variantId": 1579,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#7 桃色KO"
+        },
+        {
+          "variantId": 1654,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#7 桃色KO"
+        },
+        {
+          "variantId": 1729,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#7 桃色KO"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:k.f.vi",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "K.F.VI",
+      "colorCode": "72",
+      "aliases": [
+        "#72 K.F.VI"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 360,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#72 K.F.VI"
+        },
+        {
+          "variantId": 952,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "K.F.VI"
+        },
+        {
+          "variantId": 1453,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#72 K.F.VI"
+        },
+        {
+          "variantId": 1528,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#72 K.F.VI"
+        },
+        {
+          "variantId": 1603,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#72 K.F.VI"
+        },
+        {
+          "variantId": 1678,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#72 K.F.VI"
+        },
+        {
+          "variantId": 1753,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#72 K.F.VI"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:k.f",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "K.F",
+      "colorCode": "73",
+      "aliases": [
+        "#73 K.F"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934169",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 361,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#73 K.F"
+        },
+        {
+          "variantId": 953,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "K.F"
+        },
+        {
+          "variantId": 1391,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "#73 K.F"
+        },
+        {
+          "variantId": 1454,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#73 K.F"
+        },
+        {
+          "variantId": 1529,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#73 K.F"
+        },
+        {
+          "variantId": 1604,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#73 K.F"
+        },
+        {
+          "variantId": 1679,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#73 K.F"
+        },
+        {
+          "variantId": 1754,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#73 K.F"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:n.02('11%E5%A5%A5%E5%B1%B1%E3%82%AB%E3%83%A9%E3%83%BC)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "N.02('11奥山カラー)",
+      "colorCode": "75",
+      "aliases": [
+        "#75 N.02（'11奥山カラー）"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 362,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#75 N.02（'11奥山カラー）"
+        },
+        {
+          "variantId": 954,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "N.02（'11奥山カラー）"
+        },
+        {
+          "variantId": 1455,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#75 N.02（'11奥山カラー）"
+        },
+        {
+          "variantId": 1530,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#75 N.02（'11奥山カラー）"
+        },
+        {
+          "variantId": 1605,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#75 N.02（'11奥山カラー）"
+        },
+        {
+          "variantId": 1680,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#75 N.02（'11奥山カラー）"
+        },
+        {
+          "variantId": 1755,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#75 N.02（'11奥山カラー）"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:k.fii",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "K.F II",
+      "colorCode": "76",
+      "aliases": [
+        "#76 K.F II"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934178",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 363,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#76 K.F II"
+        },
+        {
+          "variantId": 955,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "K.F II"
+        },
+        {
+          "variantId": 1456,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#76 K.F II"
+        },
+        {
+          "variantId": 1531,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#76 K.F II"
+        },
+        {
+          "variantId": 1606,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#76 K.F II"
+        },
+        {
+          "variantId": 1681,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#76 K.F II"
+        },
+        {
+          "variantId": 1756,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#76 K.F II"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:k.f.iv",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "K.F.IV",
+      "colorCode": "79",
+      "aliases": [
+        "#79 K.F.IV"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 364,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#79 K.F.IV"
+        },
+        {
+          "variantId": 956,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "K.F.IV"
+        },
+        {
+          "variantId": 1457,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#79 K.F.IV"
+        },
+        {
+          "variantId": 1532,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#79 K.F.IV"
+        },
+        {
+          "variantId": 1607,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#79 K.F.IV"
+        },
+        {
+          "variantId": 1682,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#79 K.F.IV"
+        },
+        {
+          "variantId": 1757,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#79 K.F.IV"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:n.03",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "N.03",
+      "colorCode": "80",
+      "aliases": [
+        "#80 N.03"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 365,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#80 N.03"
+        },
+        {
+          "variantId": 957,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "N.03"
+        },
+        {
+          "variantId": 1458,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#80 N.03"
+        },
+        {
+          "variantId": 1533,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#80 N.03"
+        },
+        {
+          "variantId": 1608,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#80 N.03"
+        },
+        {
+          "variantId": 1683,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#80 N.03"
+        },
+        {
+          "variantId": 1758,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#80 N.03"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2014%E3%83%8E%E3%83%96%E3%82%AB%E3%83%A9%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2014ノブカラー",
+      "colorCode": "82",
+      "aliases": [
+        "#82 2014ノブカラー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934185",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 366,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#82 2014ノブカラー"
+        },
+        {
+          "variantId": 958,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2014ノブカラー"
+        },
+        {
+          "variantId": 1021,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2014ノブカラー"
+        },
+        {
+          "variantId": 1459,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#82 2014ノブカラー"
+        },
+        {
+          "variantId": 1534,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#82 2014ノブカラー"
+        },
+        {
+          "variantId": 1609,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#82 2014ノブカラー"
+        },
+        {
+          "variantId": 1684,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#82 2014ノブカラー"
+        },
+        {
+          "variantId": 1759,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#82 2014ノブカラー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2014%E7%A6%8F%E7%94%B0%E3%82%AB%E3%83%A9%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2014福田カラー",
+      "colorCode": "89",
+      "aliases": [
+        "#89 2014福田カラー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934189",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 367,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#89 2014福田カラー"
+        },
+        {
+          "variantId": 959,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2014 福田カラー"
+        },
+        {
+          "variantId": 1022,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2014福田カラー"
+        },
+        {
+          "variantId": 1460,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#89 2014福田カラー"
+        },
+        {
+          "variantId": 1535,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#89 2014福田カラー"
+        },
+        {
+          "variantId": 1610,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#89 2014福田カラー"
+        },
+        {
+          "variantId": 1685,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#89 2014福田カラー"
+        },
+        {
+          "variantId": 1760,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#89 2014福田カラー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2018%E6%9D%BE%E6%9C%AC%E3%82%AB%E3%83%A9%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2018松本カラー",
+      "colorCode": "93",
+      "aliases": [
+        "#93 2018松本カラー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 368,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#93 2018松本カラー"
+        },
+        {
+          "variantId": 960,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2018 松本カラー"
+        },
+        {
+          "variantId": 1023,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2018松本カラー"
+        },
+        {
+          "variantId": 1461,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#93 2018松本カラー"
+        },
+        {
+          "variantId": 1536,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#93 2018松本カラー"
+        },
+        {
+          "variantId": 1611,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#93 2018松本カラー"
+        },
+        {
+          "variantId": 1686,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#93 2018松本カラー"
+        },
+        {
+          "variantId": 1761,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#93 2018松本カラー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2019%E6%97%A9%E4%B9%99%E5%A5%B3%E3%82%AB%E3%83%A9%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2019早乙女カラー",
+      "colorCode": "94",
+      "aliases": [
+        "#94 2019早乙女カラー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934208",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 369,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#94 2019早乙女カラー"
+        },
+        {
+          "variantId": 961,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2019 早乙女カラー"
+        },
+        {
+          "variantId": 1024,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2019早乙女カラー"
+        },
+        {
+          "variantId": 1462,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#94 2019早乙女カラー"
+        },
+        {
+          "variantId": 1537,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#94 2019早乙女カラー"
+        },
+        {
+          "variantId": 1612,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#94 2019早乙女カラー"
+        },
+        {
+          "variantId": 1687,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#94 2019早乙女カラー"
+        },
+        {
+          "variantId": 1762,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#94 2019早乙女カラー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2020%E6%9D%BE%E6%9C%AC%E3%82%AB%E3%83%A9%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2020松本カラー",
+      "colorCode": "95",
+      "aliases": [
+        "#95 2020松本カラー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934234",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 370,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#95 2020松本カラー"
+        },
+        {
+          "variantId": 962,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2020 松本カラー"
+        },
+        {
+          "variantId": 1025,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2020松本カラー"
+        },
+        {
+          "variantId": 1463,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#95 2020松本カラー"
+        },
+        {
+          "variantId": 1538,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#95 2020松本カラー"
+        },
+        {
+          "variantId": 1613,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#95 2020松本カラー"
+        },
+        {
+          "variantId": 1688,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#95 2020松本カラー"
+        },
+        {
+          "variantId": 1763,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#95 2020松本カラー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2020%E4%BA%95%E9%87%8E%E3%82%AB%E3%83%A9%E3%83%BC2",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2020井野カラー2",
+      "colorCode": "96",
+      "aliases": [
+        "#96 2020井野カラー②"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "external",
+      "verificationStatus": "verified",
+      "rightsStatus": "unknown",
+      "sourceName": "城峰釣具店",
+      "lastCheckedAt": "2026-11-21",
+      "externalProductUrl": "https://fishing-shop-jh.com/?pid=190934240",
+      "externalVerified": true,
+      "variants": [
+        {
+          "variantId": 371,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#96 2020井野カラー②"
+        },
+        {
+          "variantId": 963,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2020 井野カラー②"
+        },
+        {
+          "variantId": 1464,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#96 2020井野カラー②"
+        },
+        {
+          "variantId": 1539,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#96 2020井野カラー②"
+        },
+        {
+          "variantId": 1614,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#96 2020井野カラー②"
+        },
+        {
+          "variantId": 1689,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#96 2020井野カラー②"
+        },
+        {
+          "variantId": 1764,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#96 2020井野カラー②"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:liberty",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "Liberty",
+      "colorCode": "",
+      "aliases": [
+        "Liberty"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 372,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "Liberty"
+        },
+        {
+          "variantId": 1350,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "Liberty"
+        },
+        {
+          "variantId": 1398,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "Liberty"
+        },
+        {
+          "variantId": 1471,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "Liberty"
+        },
+        {
+          "variantId": 1546,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "Liberty"
+        },
+        {
+          "variantId": 1621,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "Liberty"
+        },
+        {
+          "variantId": 1696,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "Liberty"
+        },
+        {
+          "variantId": 1771,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "Liberty"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:route21",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "Route21",
+      "colorCode": "",
+      "aliases": [
+        "Route21"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 373,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "Route21"
+        },
+        {
+          "variantId": 1351,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "Route21"
+        },
+        {
+          "variantId": 1399,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "Route21"
+        },
+        {
+          "variantId": 1472,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "Route21"
+        },
+        {
+          "variantId": 1547,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "Route21"
+        },
+        {
+          "variantId": 1622,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "Route21"
+        },
+        {
+          "variantId": 1697,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "Route21"
+        },
+        {
+          "variantId": 1772,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "Route21"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%94%E3%83%B3%E3%83%81%E3%82%AF%E3%82%A4%E3%83%BC%E3%83%B3",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "ピンチクイーン",
+      "colorCode": "",
+      "aliases": [
+        "ピンチクイーン"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 374,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "ピンチクイーン"
+        },
+        {
+          "variantId": 1357,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "ピンチクイーン"
+        },
+        {
+          "variantId": 1411,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "ピンチクイーン"
+        },
+        {
+          "variantId": 1484,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "ピンチクイーン"
+        },
+        {
+          "variantId": 1559,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "ピンチクイーン"
+        },
+        {
+          "variantId": 1634,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "ピンチクイーン"
+        },
+        {
+          "variantId": 1709,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "ピンチクイーン"
+        },
+        {
+          "variantId": 1784,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "ピンチクイーン"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%A2%E3%83%B3%E3%83%96%E3%83%A9%E3%83%B3",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "モンブラン",
+      "colorCode": "",
+      "aliases": [
+        "モンブラン"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 375,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "モンブラン"
+        },
+        {
+          "variantId": 1360,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "モンブラン"
+        },
+        {
+          "variantId": 1413,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "モンブラン"
+        },
+        {
+          "variantId": 1487,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "モンブラン"
+        },
+        {
+          "variantId": 1562,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "モンブラン"
+        },
+        {
+          "variantId": 1637,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "モンブラン"
+        },
+        {
+          "variantId": 1712,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "モンブラン"
+        },
+        {
+          "variantId": 1787,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "モンブラン"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E6%9C%A8%E3%81%AE%E8%91%89",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "木の葉",
+      "colorCode": "",
+      "aliases": [
+        "木の葉"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 376,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "木の葉"
+        },
+        {
+          "variantId": 1365,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "木の葉"
+        },
+        {
+          "variantId": 1417,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "木の葉"
+        },
+        {
+          "variantId": 1492,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "木の葉"
+        },
+        {
+          "variantId": 1567,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "木の葉"
+        },
+        {
+          "variantId": 1642,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "木の葉"
+        },
+        {
+          "variantId": 1717,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "木の葉"
+        },
+        {
+          "variantId": 1792,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "木の葉"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E8%8B%94",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "苔",
+      "colorCode": "",
+      "aliases": [
+        "苔"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 377,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "苔"
+        },
+        {
+          "variantId": 1370,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "苔"
+        },
+        {
+          "variantId": 1422,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "苔"
+        },
+        {
+          "variantId": 1497,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "苔"
+        },
+        {
+          "variantId": 1572,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "苔"
+        },
+        {
+          "variantId": 1647,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "苔"
+        },
+        {
+          "variantId": 1722,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "苔"
+        },
+        {
+          "variantId": 1797,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "苔"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E8%90%BD%E3%81%A1%E8%91%89",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "落ち葉",
+      "colorCode": "",
+      "aliases": [
+        "落ち葉"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 378,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "落ち葉"
+        },
+        {
+          "variantId": 1371,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "落ち葉"
+        },
+        {
+          "variantId": 1423,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "落ち葉"
+        },
+        {
+          "variantId": 1498,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "落ち葉"
+        },
+        {
+          "variantId": 1573,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "落ち葉"
+        },
+        {
+          "variantId": 1648,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "落ち葉"
+        },
+        {
+          "variantId": 1723,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "落ち葉"
+        },
+        {
+          "variantId": 1798,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "落ち葉"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:t.sii",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "T.S II",
+      "colorCode": "",
+      "aliases": [
+        "T.S II"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 964,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "T.S II"
+        },
+        {
+          "variantId": 1352,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "T.S II"
+        },
+        {
+          "variantId": 1400,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "T.S II"
+        },
+        {
+          "variantId": 1473,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "T.S II"
+        },
+        {
+          "variantId": 1548,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "T.S II"
+        },
+        {
+          "variantId": 1623,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "T.S II"
+        },
+        {
+          "variantId": 1698,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "T.S II"
+        },
+        {
+          "variantId": 1773,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "T.S II"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2017%E6%9D%BE%E6%9C%AC%E3%82%AB%E3%83%A9%E3%83%BC(%E3%83%8F%E3%83%B3%E3%83%9E%E3%83%BC%E3%83%89%E3%83%A2%E3%83%87%E3%83%AB)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2017松本カラー(ハンマードモデル)",
+      "colorCode": "",
+      "aliases": [
+        "2017松本カラー（ハンマードモデル）"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 965,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2017松本カラー（ハンマードモデル）"
+        },
+        {
+          "variantId": 1345,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "2017松本カラー（ハンマードモデル）"
+        },
+        {
+          "variantId": 1392,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2017松本カラー（ハンマードモデル）"
+        },
+        {
+          "variantId": 1465,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "2017松本カラー（ハンマードモデル）"
+        },
+        {
+          "variantId": 1540,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "2017松本カラー（ハンマードモデル）"
+        },
+        {
+          "variantId": 1615,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "2017松本カラー（ハンマードモデル）"
+        },
+        {
+          "variantId": 1690,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "2017松本カラー（ハンマードモデル）"
+        },
+        {
+          "variantId": 1765,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "2017松本カラー（ハンマードモデル）"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2021%E4%BA%95%E9%87%8E%E3%82%AB%E3%83%A9%E3%83%BC(2)(%E8%A1%A8%E8%A3%8F%E3%82%B0%E3%83%AD%E3%83%BC)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2021井野カラー(2)(表裏グロー)",
+      "colorCode": "",
+      "aliases": [
+        "2021井野カラー(2)(表裏グロー)"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 966,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2021井野カラー(2)(表裏グロー)"
+        },
+        {
+          "variantId": 1346,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "2021井野カラー(2)(表裏グロー)"
+        },
+        {
+          "variantId": 1393,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2021井野カラー(2)(表裏グロー)"
+        },
+        {
+          "variantId": 1466,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "2021井野カラー(2)(表裏グロー)"
+        },
+        {
+          "variantId": 1541,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "2021井野カラー(2)(表裏グロー)"
+        },
+        {
+          "variantId": 1616,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "2021井野カラー(2)(表裏グロー)"
+        },
+        {
+          "variantId": 1691,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "2021井野カラー(2)(表裏グロー)"
+        },
+        {
+          "variantId": 1766,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "2021井野カラー(2)(表裏グロー)"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2021%E6%97%A9%E4%B9%99%E5%A5%B3%E3%82%AB%E3%83%A9%E3%83%BC(1)(%E8%A1%A8uv%E3%83%BB%E3%82%B0%E3%83%AD%E3%83%BC)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2021早乙女カラー(1)(表UV・グロー)",
+      "colorCode": "",
+      "aliases": [
+        "2021早乙女カラー(1)(表UV・グロー)"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 967,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2021早乙女カラー(1)(表UV・グロー)"
+        },
+        {
+          "variantId": 1347,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "2021早乙女カラー(1)(表UV・グロー)"
+        },
+        {
+          "variantId": 1394,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2021早乙女カラー(1)(表UV・グロー)"
+        },
+        {
+          "variantId": 1467,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "2021早乙女カラー(1)(表UV・グロー)"
+        },
+        {
+          "variantId": 1542,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "2021早乙女カラー(1)(表UV・グロー)"
+        },
+        {
+          "variantId": 1617,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "2021早乙女カラー(1)(表UV・グロー)"
+        },
+        {
+          "variantId": 1692,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "2021早乙女カラー(1)(表UV・グロー)"
+        },
+        {
+          "variantId": 1767,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "2021早乙女カラー(1)(表UV・グロー)"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2022%E6%97%A9%E4%B9%99%E5%A5%B3%E3%82%AB%E3%83%A9%E3%83%BC(%E8%A1%A8uv)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2022早乙女カラー(表UV)",
+      "colorCode": "",
+      "aliases": [
+        "2022早乙女カラー(表UV)"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 968,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2022早乙女カラー(表UV)"
+        },
+        {
+          "variantId": 1348,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "2022早乙女カラー(表UV)"
+        },
+        {
+          "variantId": 1395,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2022早乙女カラー(表UV)"
+        },
+        {
+          "variantId": 1468,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "2022早乙女カラー(表UV)"
+        },
+        {
+          "variantId": 1543,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "2022早乙女カラー(表UV)"
+        },
+        {
+          "variantId": 1618,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "2022早乙女カラー(表UV)"
+        },
+        {
+          "variantId": 1693,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "2022早乙女カラー(表UV)"
+        },
+        {
+          "variantId": 1768,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "2022早乙女カラー(表UV)"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2022%E6%9D%BE%E6%9C%AC%E3%82%AB%E3%83%A9%E3%83%BC(%E8%A1%A8%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%E3%82%B0%E3%83%AD%E3%83%BC)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2022松本カラー(表イエローグロー)",
+      "colorCode": "",
+      "aliases": [
+        "2022松本カラー(表イエローグロー)"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 969,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2022松本カラー(表イエローグロー)"
+        },
+        {
+          "variantId": 1349,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "2022松本カラー(表イエローグロー)"
+        },
+        {
+          "variantId": 1396,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2022松本カラー(表イエローグロー)"
+        },
+        {
+          "variantId": 1469,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "2022松本カラー(表イエローグロー)"
+        },
+        {
+          "variantId": 1544,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "2022松本カラー(表イエローグロー)"
+        },
+        {
+          "variantId": 1619,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "2022松本カラー(表イエローグロー)"
+        },
+        {
+          "variantId": 1694,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "2022松本カラー(表イエローグロー)"
+        },
+        {
+          "variantId": 1769,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "2022松本カラー(表イエローグロー)"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:us-8%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%2F%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%E8%A3%8F%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "US-8 イエロー/オレンジ 裏オレンジ",
+      "colorCode": "US-8",
+      "aliases": [
+        "US-8 イエロー/オレンジ 裏オレンジ"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 970,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "US-8 イエロー/オレンジ 裏オレンジ"
+        },
+        {
+          "variantId": 980,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "US-8 イエロー/オレンジ 裏オレンジ"
+        },
+        {
+          "variantId": 1405,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "US-8 イエロー/オレンジ 裏オレンジ"
+        },
+        {
+          "variantId": 1478,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "US-8 イエロー/オレンジ 裏オレンジ"
+        },
+        {
+          "variantId": 1553,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "US-8 イエロー/オレンジ 裏オレンジ"
+        },
+        {
+          "variantId": 1628,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "US-8 イエロー/オレンジ 裏オレンジ"
+        },
+        {
+          "variantId": 1703,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "US-8 イエロー/オレンジ 裏オレンジ"
+        },
+        {
+          "variantId": 1778,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "US-8 イエロー/オレンジ 裏オレンジ"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:us-9%E3%83%96%E3%83%A9%E3%83%83%E3%82%AFm%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "US-9 ブラックMグリーン",
+      "colorCode": "US-9",
+      "aliases": [
+        "US-9 ブラックMグリーン"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 971,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "US-9 ブラックMグリーン"
+        },
+        {
+          "variantId": 981,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "US-9 ブラックMグリーン"
+        },
+        {
+          "variantId": 1406,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "US-9 ブラックMグリーン"
+        },
+        {
+          "variantId": 1479,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "US-9 ブラックMグリーン"
+        },
+        {
+          "variantId": 1554,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "US-9 ブラックMグリーン"
+        },
+        {
+          "variantId": 1629,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "US-9 ブラックMグリーン"
+        },
+        {
+          "variantId": 1704,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "US-9 ブラックMグリーン"
+        },
+        {
+          "variantId": 1779,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "US-9 ブラックMグリーン"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:us-10%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%2F%E3%83%9F%E3%83%AB%E3%82%AF%E3%82%B3%E3%82%B3%E3%82%A2",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "US-10 イエロー/ミルクココア",
+      "colorCode": "US-10",
+      "aliases": [
+        "US-10 イエロー/ミルクココア"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 972,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "US-10 イエロー/ミルクココア"
+        },
+        {
+          "variantId": 982,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "US-10 イエロー/ミルクココア"
+        },
+        {
+          "variantId": 1401,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "US-10 イエロー/ミルクココア"
+        },
+        {
+          "variantId": 1474,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "US-10 イエロー/ミルクココア"
+        },
+        {
+          "variantId": 1549,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "US-10 イエロー/ミルクココア"
+        },
+        {
+          "variantId": 1624,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "US-10 イエロー/ミルクココア"
+        },
+        {
+          "variantId": 1699,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "US-10 イエロー/ミルクココア"
+        },
+        {
+          "variantId": 1774,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "US-10 イエロー/ミルクココア"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:us-11%E8%A1%A8%E3%82%B0%E3%83%AD%E3%83%BC%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E3%83%96%E3%83%AB%E3%83%BC%E3%83%89%E3%83%83%E3%83%88%E8%A3%8F%E3%83%80%E3%83%BC%E3%82%AF%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ",
+      "colorCode": "US-11",
+      "aliases": [
+        "US-11 表グローオリーブ ブルードット 裏ダークオリーブ"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 973,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ"
+        },
+        {
+          "variantId": 983,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ"
+        },
+        {
+          "variantId": 1402,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ"
+        },
+        {
+          "variantId": 1475,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ"
+        },
+        {
+          "variantId": 1550,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ"
+        },
+        {
+          "variantId": 1625,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ"
+        },
+        {
+          "variantId": 1700,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ"
+        },
+        {
+          "variantId": 1775,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:us-12%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "US-12 ブラックチャート",
+      "colorCode": "US-12",
+      "aliases": [
+        "US-12 ブラックチャート"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 974,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "US-12 ブラックチャート"
+        },
+        {
+          "variantId": 984,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "US-12 ブラックチャート"
+        },
+        {
+          "variantId": 1403,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "US-12 ブラックチャート"
+        },
+        {
+          "variantId": 1476,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "US-12 ブラックチャート"
+        },
+        {
+          "variantId": 1551,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "US-12 ブラックチャート"
+        },
+        {
+          "variantId": 1626,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "US-12 ブラックチャート"
+        },
+        {
+          "variantId": 1701,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "US-12 ブラックチャート"
+        },
+        {
+          "variantId": 1776,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "US-12 ブラックチャート"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:us-13%E3%83%94%E3%83%B3%E3%82%AF%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "US-13 ピンクゴールド",
+      "colorCode": "US-13",
+      "aliases": [
+        "US-13 ピンクゴールド"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 975,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "US-13 ピンクゴールド"
+        },
+        {
+          "variantId": 985,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "US-13 ピンクゴールド"
+        },
+        {
+          "variantId": 1404,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "US-13 ピンクゴールド"
+        },
+        {
+          "variantId": 1477,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "US-13 ピンクゴールド"
+        },
+        {
+          "variantId": 1552,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "US-13 ピンクゴールド"
+        },
+        {
+          "variantId": 1627,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "US-13 ピンクゴールド"
+        },
+        {
+          "variantId": 1702,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "US-13 ピンクゴールド"
+        },
+        {
+          "variantId": 1777,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "US-13 ピンクゴールド"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E9%9D%92%E9%9B%B2",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "青雲",
+      "colorCode": "8",
+      "aliases": [
+        "#8 青雲"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 976,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#8 青雲"
+        },
+        {
+          "variantId": 992,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "青雲"
+        },
+        {
+          "variantId": 1372,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "#8 青雲"
+        },
+        {
+          "variantId": 1430,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#8 青雲"
+        },
+        {
+          "variantId": 1505,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#8 青雲"
+        },
+        {
+          "variantId": 1580,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#8 青雲"
+        },
+        {
+          "variantId": 1655,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#8 青雲"
+        },
+        {
+          "variantId": 1730,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#8 青雲"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "イエロー",
+      "colorCode": "9",
+      "aliases": [
+        "#9 イエロー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 977,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#9 イエロー"
+        },
+        {
+          "variantId": 993,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "イエロー"
+        },
+        {
+          "variantId": 1373,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "#9 イエロー"
+        },
+        {
+          "variantId": 1431,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#9 イエロー"
+        },
+        {
+          "variantId": 1506,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#9 イエロー"
+        },
+        {
+          "variantId": 1581,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#9 イエロー"
+        },
+        {
+          "variantId": 1656,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#9 イエロー"
+        },
+        {
+          "variantId": 1731,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#9 イエロー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E8%A1%A8sp%E3%83%80%E3%83%BC%E3%82%AFol%E8%A3%8Fm%E3%83%81%E3%83%A7%E3%82%B3",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "表SPダークOL裏Mチョコ",
+      "colorCode": "37",
+      "aliases": [
+        "#37 表SPダークOL裏Mチョコ"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 978,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "#37 表SPダークOL裏Mチョコ"
+        },
+        {
+          "variantId": 1009,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "表SPダークOL裏Mチョコ"
+        },
+        {
+          "variantId": 1374,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "#37 表SPダークOL裏Mチョコ"
+        },
+        {
+          "variantId": 1446,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "#37 表SPダークOL裏Mチョコ"
+        },
+        {
+          "variantId": 1521,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "#37 表SPダークOL裏Mチョコ"
+        },
+        {
+          "variantId": 1596,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "#37 表SPダークOL裏Mチョコ"
+        },
+        {
+          "variantId": 1671,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "#37 表SPダークOL裏Mチョコ"
+        },
+        {
+          "variantId": 1746,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "#37 表SPダークOL裏Mチョコ"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2024%E4%BA%95%E9%87%8E%E3%82%AB%E3%83%A9%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2024井野カラー",
+      "colorCode": "",
+      "aliases": [
+        "2024井野カラー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 979,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "2024井野カラー"
+        },
+        {
+          "variantId": 1375,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2024井野カラー"
+        },
+        {
+          "variantId": 1397,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2024井野カラー"
+        },
+        {
+          "variantId": 1470,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "2024井野カラー"
+        },
+        {
+          "variantId": 1545,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "2024井野カラー"
+        },
+        {
+          "variantId": 1620,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "2024井野カラー"
+        },
+        {
+          "variantId": 1695,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "2024井野カラー"
+        },
+        {
+          "variantId": 1770,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "2024井野カラー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E9%89%84%E6%9D%BF!!%E5%8D%97%E9%96%A2%E6%9D%B1",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "鉄板!!南関東",
+      "colorCode": "",
+      "aliases": [
+        "鉄板!!南関東"
+      ],
+      "colorVerificationStatus": "review-needed",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 989,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "鉄板!!南関東"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E8%A1%A8%E8%9B%8D%E5%85%89r%2F%E8%A3%8F%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "表蛍光R/裏ゴールド",
+      "colorCode": "",
+      "aliases": [
+        "表蛍光R/裏ゴールド"
+      ],
+      "colorVerificationStatus": "review-needed",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1006,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "表蛍光R/裏ゴールド"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E5%A4%95%E7%AB%8B%E3%81%AE%E7%A9%BA",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "夕立の空",
+      "colorCode": "",
+      "aliases": [
+        "夕立の空"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1008,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "夕立の空"
+        },
+        {
+          "variantId": 1363,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "夕立の空"
+        },
+        {
+          "variantId": 1384,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "夕立の空"
+        },
+        {
+          "variantId": 1490,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "夕立の空"
+        },
+        {
+          "variantId": 1565,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "夕立の空"
+        },
+        {
+          "variantId": 1640,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "夕立の空"
+        },
+        {
+          "variantId": 1715,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "夕立の空"
+        },
+        {
+          "variantId": 1790,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "夕立の空"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%9E%E3%83%B3%E3%82%B4%E3%83%BC%2F%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "マンゴー/ブラック",
+      "colorCode": "",
+      "aliases": [
+        "マンゴー/ブラック"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1013,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "マンゴー/ブラック"
+        },
+        {
+          "variantId": 1359,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "マンゴー/ブラック"
+        },
+        {
+          "variantId": 1381,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "マンゴー/ブラック"
+        },
+        {
+          "variantId": 1486,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "マンゴー/ブラック"
+        },
+        {
+          "variantId": 1561,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "マンゴー/ブラック"
+        },
+        {
+          "variantId": 1636,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "マンゴー/ブラック"
+        },
+        {
+          "variantId": 1711,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "マンゴー/ブラック"
+        },
+        {
+          "variantId": 1786,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "マンゴー/ブラック"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:k.f6",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "K.F6",
+      "colorCode": "",
+      "aliases": [
+        "K.F6"
+      ],
+      "colorVerificationStatus": "review-needed",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1016,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "K.F6"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:n.o2(2011%E5%A5%A5%E5%B1%B1%E3%82%AB%E3%83%A9%E3%83%BC)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "N.O2(2011奥山カラー)",
+      "colorCode": "",
+      "aliases": [
+        "N.O2（2011奥山カラー）"
+      ],
+      "colorVerificationStatus": "review-needed",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1017,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "N.O2（2011奥山カラー）"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:k.f2",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "K.F2",
+      "colorCode": "",
+      "aliases": [
+        "K.F2"
+      ],
+      "colorVerificationStatus": "review-needed",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1018,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "K.F2"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:k.f4",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "K.F4",
+      "colorCode": "",
+      "aliases": [
+        "K.F4"
+      ],
+      "colorVerificationStatus": "review-needed",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1019,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "K.F4"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:n.o3",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "N.O3",
+      "colorCode": "",
+      "aliases": [
+        "N.O3"
+      ],
+      "colorVerificationStatus": "review-needed",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1020,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "N.O3"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2020%E4%BA%95%E9%87%8E%E3%82%AB%E3%83%A9%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2020井野カラー",
+      "colorCode": "",
+      "aliases": [
+        "2020井野カラー"
+      ],
+      "colorVerificationStatus": "review-needed",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1026,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2020井野カラー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%82%AB%E3%82%B9%E3%83%86%E3%83%A9",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "カステラ",
+      "colorCode": "",
+      "aliases": [
+        "カステラ"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1353,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "カステラ"
+        },
+        {
+          "variantId": 1376,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "カステラ"
+        },
+        {
+          "variantId": 1407,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "カステラ"
+        },
+        {
+          "variantId": 1480,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "カステラ"
+        },
+        {
+          "variantId": 1555,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "カステラ"
+        },
+        {
+          "variantId": 1630,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "カステラ"
+        },
+        {
+          "variantId": 1705,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "カステラ"
+        },
+        {
+          "variantId": 1780,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "カステラ"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%82%B4%E3%83%BC%E3%82%B8%E3%83%A3%E3%82%B9%E3%83%9A%E3%83%AC%E3%83%83%E3%83%88",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "ゴージャスペレット",
+      "colorCode": "",
+      "aliases": [
+        "ゴージャスペレット"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1354,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "ゴージャスペレット"
+        },
+        {
+          "variantId": 1377,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "ゴージャスペレット"
+        },
+        {
+          "variantId": 1408,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "ゴージャスペレット"
+        },
+        {
+          "variantId": 1481,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "ゴージャスペレット"
+        },
+        {
+          "variantId": 1556,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "ゴージャスペレット"
+        },
+        {
+          "variantId": 1631,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "ゴージャスペレット"
+        },
+        {
+          "variantId": 1706,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "ゴージャスペレット"
+        },
+        {
+          "variantId": 1781,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "ゴージャスペレット"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89%E3%82%A8%E3%83%B3%E3%83%89",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "ゴールドエンド",
+      "colorCode": "",
+      "aliases": [
+        "ゴールドエンド"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1355,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "ゴールドエンド"
+        },
+        {
+          "variantId": 1378,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "ゴールドエンド"
+        },
+        {
+          "variantId": 1409,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "ゴールドエンド"
+        },
+        {
+          "variantId": 1482,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "ゴールドエンド"
+        },
+        {
+          "variantId": 1557,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "ゴールドエンド"
+        },
+        {
+          "variantId": 1632,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "ゴールドエンド"
+        },
+        {
+          "variantId": 1707,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "ゴールドエンド"
+        },
+        {
+          "variantId": 1782,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "ゴールドエンド"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%8F%E3%83%8B%E3%83%BC%E3%83%88%E3%83%A9%E3%83%83%E3%83%97",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "ハニートラップ",
+      "colorCode": "",
+      "aliases": [
+        "ハニートラップ"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1356,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "ハニートラップ"
+        },
+        {
+          "variantId": 1379,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "ハニートラップ"
+        },
+        {
+          "variantId": 1410,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "ハニートラップ"
+        },
+        {
+          "variantId": 1483,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "ハニートラップ"
+        },
+        {
+          "variantId": 1558,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "ハニートラップ"
+        },
+        {
+          "variantId": 1633,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "ハニートラップ"
+        },
+        {
+          "variantId": 1708,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "ハニートラップ"
+        },
+        {
+          "variantId": 1783,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "ハニートラップ"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%9E%E3%83%80%E3%83%A0%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "マダムオリーブ",
+      "colorCode": "",
+      "aliases": [
+        "マダムオリーブ"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1358,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "マダムオリーブ"
+        },
+        {
+          "variantId": 1380,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "マダムオリーブ"
+        },
+        {
+          "variantId": 1412,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "マダムオリーブ"
+        },
+        {
+          "variantId": 1485,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "マダムオリーブ"
+        },
+        {
+          "variantId": 1560,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "マダムオリーブ"
+        },
+        {
+          "variantId": 1635,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "マダムオリーブ"
+        },
+        {
+          "variantId": 1710,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "マダムオリーブ"
+        },
+        {
+          "variantId": 1785,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "マダムオリーブ"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%A4%E3%83%89%E3%82%AF",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "ヤドク",
+      "colorCode": "",
+      "aliases": [
+        "ヤドク"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1361,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "ヤドク"
+        },
+        {
+          "variantId": 1382,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "ヤドク"
+        },
+        {
+          "variantId": 1414,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "ヤドク"
+        },
+        {
+          "variantId": 1488,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "ヤドク"
+        },
+        {
+          "variantId": 1563,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "ヤドク"
+        },
+        {
+          "variantId": 1638,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "ヤドク"
+        },
+        {
+          "variantId": 1713,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "ヤドク"
+        },
+        {
+          "variantId": 1788,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "ヤドク"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%AC%E3%83%A2%E3%83%B3%E7%89%9B%E4%B9%B3",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "レモン牛乳",
+      "colorCode": "",
+      "aliases": [
+        "レモン牛乳"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1362,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "レモン牛乳"
+        },
+        {
+          "variantId": 1383,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "レモン牛乳"
+        },
+        {
+          "variantId": 1415,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "レモン牛乳"
+        },
+        {
+          "variantId": 1489,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "レモン牛乳"
+        },
+        {
+          "variantId": 1564,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "レモン牛乳"
+        },
+        {
+          "variantId": 1639,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "レモン牛乳"
+        },
+        {
+          "variantId": 1714,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "レモン牛乳"
+        },
+        {
+          "variantId": 1789,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "レモン牛乳"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E6%94%BE%E6%B5%81%E6%9E%9D%E8%B1%86",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "放流枝豆",
+      "colorCode": "",
+      "aliases": [
+        "放流枝豆"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1364,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "放流枝豆"
+        },
+        {
+          "variantId": 1385,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "放流枝豆"
+        },
+        {
+          "variantId": 1416,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "放流枝豆"
+        },
+        {
+          "variantId": 1491,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "放流枝豆"
+        },
+        {
+          "variantId": 1566,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "放流枝豆"
+        },
+        {
+          "variantId": 1641,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "放流枝豆"
+        },
+        {
+          "variantId": 1716,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "放流枝豆"
+        },
+        {
+          "variantId": 1791,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "放流枝豆"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E6%A0%83%E3%81%8A%E3%81%A8%E3%82%81",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "栃おとめ",
+      "colorCode": "",
+      "aliases": [
+        "栃おとめ"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1366,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "栃おとめ"
+        },
+        {
+          "variantId": 1386,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "栃おとめ"
+        },
+        {
+          "variantId": 1418,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "栃おとめ"
+        },
+        {
+          "variantId": 1493,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "栃おとめ"
+        },
+        {
+          "variantId": 1568,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "栃おとめ"
+        },
+        {
+          "variantId": 1643,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "栃おとめ"
+        },
+        {
+          "variantId": 1718,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "栃おとめ"
+        },
+        {
+          "variantId": 1793,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "栃おとめ"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E8%83%8C%E9%9D%A2%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B0%E3%83%AD%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "背面グリーングロー",
+      "colorCode": "",
+      "aliases": [
+        "背面グリーングロー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1367,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "背面グリーングロー"
+        },
+        {
+          "variantId": 1387,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "背面グリーングロー"
+        },
+        {
+          "variantId": 1419,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "背面グリーングロー"
+        },
+        {
+          "variantId": 1494,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "背面グリーングロー"
+        },
+        {
+          "variantId": 1569,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "背面グリーングロー"
+        },
+        {
+          "variantId": 1644,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "背面グリーングロー"
+        },
+        {
+          "variantId": 1719,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "背面グリーングロー"
+        },
+        {
+          "variantId": 1794,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "背面グリーングロー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E8%85%B9%E9%BB%92",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "腹黒",
+      "colorCode": "",
+      "aliases": [
+        "腹黒"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1368,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "腹黒"
+        },
+        {
+          "variantId": 1388,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "腹黒"
+        },
+        {
+          "variantId": 1420,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "腹黒"
+        },
+        {
+          "variantId": 1495,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "腹黒"
+        },
+        {
+          "variantId": 1570,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "腹黒"
+        },
+        {
+          "variantId": 1645,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "腹黒"
+        },
+        {
+          "variantId": 1720,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "腹黒"
+        },
+        {
+          "variantId": 1795,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "腹黒"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E8%85%B9%E9%BB%92ii",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "腹黒II",
+      "colorCode": "",
+      "aliases": [
+        "腹黒Ⅱ"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1369,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "腹黒Ⅱ"
+        },
+        {
+          "variantId": 1389,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "腹黒Ⅱ"
+        },
+        {
+          "variantId": 1421,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "腹黒Ⅱ"
+        },
+        {
+          "variantId": 1496,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "腹黒Ⅱ"
+        },
+        {
+          "variantId": 1571,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "腹黒Ⅱ"
+        },
+        {
+          "variantId": 1646,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "腹黒Ⅱ"
+        },
+        {
+          "variantId": 1721,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "腹黒Ⅱ"
+        },
+        {
+          "variantId": 1796,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "腹黒Ⅱ"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E6%94%BE%E6%B5%81%E3%82%AA%E3%83%AC%E3%83%94%E3%83%B3",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "放流オレピン",
+      "colorCode": "",
+      "aliases": [
+        "放流オレピン"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1799,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "放流オレピン"
+        },
+        {
+          "variantId": 1810,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "放流オレピン"
+        },
+        {
+          "variantId": 1821,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "放流オレピン"
+        },
+        {
+          "variantId": 1832,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "放流オレピン"
+        },
+        {
+          "variantId": 1843,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "放流オレピン"
+        },
+        {
+          "variantId": 1854,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "放流オレピン"
+        },
+        {
+          "variantId": 1865,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "放流オレピン"
+        },
+        {
+          "variantId": 1876,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "放流オレピン"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E5%BE%A9%E5%88%BBt.siv",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "復刻 T.SIV",
+      "colorCode": "",
+      "aliases": [
+        "復刻 T.SIV"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1800,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "復刻 T.SIV"
+        },
+        {
+          "variantId": 1811,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "復刻 T.SIV"
+        },
+        {
+          "variantId": 1822,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "復刻 T.SIV"
+        },
+        {
+          "variantId": 1833,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "復刻 T.SIV"
+        },
+        {
+          "variantId": 1844,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "復刻 T.SIV"
+        },
+        {
+          "variantId": 1855,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "復刻 T.SIV"
+        },
+        {
+          "variantId": 1866,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "復刻 T.SIV"
+        },
+        {
+          "variantId": 1877,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "復刻 T.SIV"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "グリーンチャート",
+      "colorCode": "",
+      "aliases": [
+        "グリーンチャート"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1801,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "グリーンチャート"
+        },
+        {
+          "variantId": 1812,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "グリーンチャート"
+        },
+        {
+          "variantId": 1823,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "グリーンチャート"
+        },
+        {
+          "variantId": 1834,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "グリーンチャート"
+        },
+        {
+          "variantId": 1845,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "グリーンチャート"
+        },
+        {
+          "variantId": 1856,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "グリーンチャート"
+        },
+        {
+          "variantId": 1867,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "グリーンチャート"
+        },
+        {
+          "variantId": 1878,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "グリーンチャート"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2024%E7%A6%8F%E7%94%B0%E3%82%AB%E3%83%A9%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2024福田カラー",
+      "colorCode": "",
+      "aliases": [
+        "2024福田カラー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1802,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "2024福田カラー"
+        },
+        {
+          "variantId": 1813,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2024福田カラー"
+        },
+        {
+          "variantId": 1824,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2024福田カラー"
+        },
+        {
+          "variantId": 1835,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "2024福田カラー"
+        },
+        {
+          "variantId": 1846,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "2024福田カラー"
+        },
+        {
+          "variantId": 1857,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "2024福田カラー"
+        },
+        {
+          "variantId": 1868,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "2024福田カラー"
+        },
+        {
+          "variantId": 1879,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "2024福田カラー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E4%BF%BA%E9%87%91",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "俺金",
+      "colorCode": "",
+      "aliases": [
+        "俺金"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1803,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "俺金"
+        },
+        {
+          "variantId": 1814,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "俺金"
+        },
+        {
+          "variantId": 1825,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "俺金"
+        },
+        {
+          "variantId": 1836,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "俺金"
+        },
+        {
+          "variantId": 1847,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "俺金"
+        },
+        {
+          "variantId": 1858,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "俺金"
+        },
+        {
+          "variantId": 1869,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "俺金"
+        },
+        {
+          "variantId": 1880,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "俺金"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%83%90%E3%82%B9%E3%83%86%E3%83%88",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "バステト",
+      "colorCode": "",
+      "aliases": [
+        "バステト"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1804,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "バステト"
+        },
+        {
+          "variantId": 1815,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "バステト"
+        },
+        {
+          "variantId": 1826,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "バステト"
+        },
+        {
+          "variantId": 1837,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "バステト"
+        },
+        {
+          "variantId": 1848,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "バステト"
+        },
+        {
+          "variantId": 1859,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "バステト"
+        },
+        {
+          "variantId": 1870,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "バステト"
+        },
+        {
+          "variantId": 1881,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "バステト"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%82%AA%E3%82%AA%E3%83%84%E3%82%AB%E3%82%AA%E3%83%AA%E3%82%AB%E3%83%A9f.s05(uv)",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "オオツカオリカラ F.S05(UV)",
+      "colorCode": "",
+      "aliases": [
+        "オオツカオリカラ F.S05(UV)"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1805,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "オオツカオリカラ F.S05(UV)"
+        },
+        {
+          "variantId": 1816,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "オオツカオリカラ F.S05(UV)"
+        },
+        {
+          "variantId": 1827,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "オオツカオリカラ F.S05(UV)"
+        },
+        {
+          "variantId": 1838,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "オオツカオリカラ F.S05(UV)"
+        },
+        {
+          "variantId": 1849,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "オオツカオリカラ F.S05(UV)"
+        },
+        {
+          "variantId": 1860,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "オオツカオリカラ F.S05(UV)"
+        },
+        {
+          "variantId": 1871,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "オオツカオリカラ F.S05(UV)"
+        },
+        {
+          "variantId": 1882,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "オオツカオリカラ F.S05(UV)"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%82%AA%E3%82%AA%E3%83%84%E3%82%AB%E3%82%AA%E3%83%AA%E3%82%AB%E3%83%A9t.h01",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "オオツカオリカラ T.H01",
+      "colorCode": "",
+      "aliases": [
+        "オオツカオリカラ T.H01"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1806,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "オオツカオリカラ T.H01"
+        },
+        {
+          "variantId": 1817,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "オオツカオリカラ T.H01"
+        },
+        {
+          "variantId": 1828,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "オオツカオリカラ T.H01"
+        },
+        {
+          "variantId": 1839,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "オオツカオリカラ T.H01"
+        },
+        {
+          "variantId": 1850,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "オオツカオリカラ T.H01"
+        },
+        {
+          "variantId": 1861,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "オオツカオリカラ T.H01"
+        },
+        {
+          "variantId": 1872,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "オオツカオリカラ T.H01"
+        },
+        {
+          "variantId": 1883,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "オオツカオリカラ T.H01"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:2014%E7%8B%A9%E9%87%8E%E3%82%B7%E3%82%B0%E3%83%8D%E3%82%A4%E3%83%81%E3%83%A3%E3%83%BC",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "2014狩野シグネイチャー",
+      "colorCode": "",
+      "aliases": [
+        "2014狩野シグネイチャー"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1807,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "2014狩野シグネイチャー"
+        },
+        {
+          "variantId": 1818,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "2014狩野シグネイチャー"
+        },
+        {
+          "variantId": 1829,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "2014狩野シグネイチャー"
+        },
+        {
+          "variantId": 1840,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "2014狩野シグネイチャー"
+        },
+        {
+          "variantId": 1851,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "2014狩野シグネイチャー"
+        },
+        {
+          "variantId": 1862,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "2014狩野シグネイチャー"
+        },
+        {
+          "variantId": 1873,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "2014狩野シグネイチャー"
+        },
+        {
+          "variantId": 1884,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "2014狩野シグネイチャー"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC%E3%82%A8%E3%83%B3%E3%83%89",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "シルバーエンド",
+      "colorCode": "",
+      "aliases": [
+        "シルバーエンド"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1808,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "シルバーエンド"
+        },
+        {
+          "variantId": 1819,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "シルバーエンド"
+        },
+        {
+          "variantId": 1830,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "シルバーエンド"
+        },
+        {
+          "variantId": 1841,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "シルバーエンド"
+        },
+        {
+          "variantId": 1852,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "シルバーエンド"
+        },
+        {
+          "variantId": 1863,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "シルバーエンド"
+        },
+        {
+          "variantId": 1874,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "シルバーエンド"
+        },
+        {
+          "variantId": 1885,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "シルバーエンド"
+        }
+      ]
+    },
+    {
+      "id": "rodio-craft:noa:mr.%E5%BE%A1%E6%AE%BF%E5%A0%B4",
+      "familyKey": "rodio-craft:noa",
+      "colorName": "Mr.御殿場",
+      "colorCode": "",
+      "aliases": [
+        "Mr.御殿場"
+      ],
+      "colorVerificationStatus": "catalog-match",
+      "imageAvailability": "none",
+      "verificationStatus": "unverified",
+      "rightsStatus": "unknown",
+      "sourceName": "",
+      "lastCheckedAt": "",
+      "variants": [
+        {
+          "variantId": 1809,
+          "modelId": 133,
+          "modelName": "NOA 1.5g",
+          "originalName": "Mr.御殿場"
+        },
+        {
+          "variantId": 1820,
+          "modelId": 134,
+          "modelName": "NOA 1.8g",
+          "originalName": "Mr.御殿場"
+        },
+        {
+          "variantId": 1831,
+          "modelId": 135,
+          "modelName": "NOA 2.1g",
+          "originalName": "Mr.御殿場"
+        },
+        {
+          "variantId": 1842,
+          "modelId": 136,
+          "modelName": "NOA Jr. 0.9g",
+          "originalName": "Mr.御殿場"
+        },
+        {
+          "variantId": 1853,
+          "modelId": 137,
+          "modelName": "NOA Jr. 1.4g",
+          "originalName": "Mr.御殿場"
+        },
+        {
+          "variantId": 1864,
+          "modelId": 138,
+          "modelName": "NOA S 1.0g",
+          "originalName": "Mr.御殿場"
+        },
+        {
+          "variantId": 1875,
+          "modelId": 303,
+          "modelName": "NOA Jr. 1.2g",
+          "originalName": "Mr.御殿場"
+        },
+        {
+          "variantId": 1886,
+          "modelId": 304,
+          "modelName": "NOA S 1.4g",
+          "originalName": "Mr.御殿場"
+        }
+      ]
+    }
+  ]
+}

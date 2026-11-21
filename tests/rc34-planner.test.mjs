@@ -249,7 +249,7 @@ test('preview uses a read-only IndexedDB transaction and leaves every store unch
     const p = await previewLureMaster({ includePurchases: true })
     assert.equal(p.addedColors, 1288); assert.equal(p.addedOwned, 11)
     assert.deepEqual(await state(), before)
-    assert.equal(db.verno, 11); assert.equal(db.tables.length, 23)
+    assert.equal(db.verno, 12); assert.equal(db.tables.length, 27)
   } finally {
     for (const t of db.tables) for (const event of ['creating', 'updating', 'deleting']) t.hook(event).unsubscribe(write)
   }
