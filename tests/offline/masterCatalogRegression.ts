@@ -4,6 +4,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { checkMaster, applyMaster, masterHome, openMaster } from '../masterUiHelpers'
 import { assertPack } from '../e2e/masterCatalogRegression'
+import { expectedNormalJson } from './normalJsonBackup'
 
 export const origin = 'http://127.0.0.1:4188', url = `${origin}/fishing-log/`
 export async function offlineState(page: Page) {
@@ -61,7 +62,7 @@ export function registerOfflineCatalogRegression(rc: number, fixture: () => { da
       await masterHome(page)
       const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: '📦 データをバックアップ', exact: true }).click()])
       const path = info.outputPath(`rc${rc}-unified-offline-v9.json`); await download.saveAs(path)
-      const exported = JSON.parse(await readFile(path, 'utf8')); expect(exported.version).toBe(9); expect(exported.data).toEqual(repeated)
+      const exported = JSON.parse(await readFile(path, 'utf8')); expect(exported.version).toBe(9); expect(exported.data).toEqual(expectedNormalJson(repeated, exported.version))
     } finally { await context.close() }
   })
 }

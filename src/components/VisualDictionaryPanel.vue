@@ -6,6 +6,9 @@ import { saveRepresentative, linkCatchAppearance, linkTemporaryAppearance } from
 import VisualColorEditor from './VisualColorEditor.vue'
 import VisualColorPreview from './VisualColorPreview.vue'
 import AutoColorImportPanel from './AutoColorImportPanel.vue'
+import LurePhotoDisplay from './LurePhotoDisplay.vue'
+import LurePhotoManager from './LurePhotoManager.vue'
+import { isNoaOption, matchesPhotoColorSearch, sharedColorForOption } from '../utils/noaPhotoCatalog'
 
 const props = defineProps<{ catalog: LureOption[]; owned: LureOption[]; sourceCatch?: CatchRecord; selectEnabled?: boolean }>()
 const emit = defineEmits<{ close: []; updated: []; select: [option: LureOption] }>()
@@ -13,6 +16,7 @@ const manufacturer = ref(''), model = ref(''), keyword = ref(''), onlyOwned = re
 const colors = ref<VisualColorId[]>([]), limit = ref(50)
 const editing = ref<LureOption>(), draft = ref<VisualColorSnapshot | null>(null), busy = ref(false), message = ref('')
 const temporary = ref<TemporaryLureColor[]>([]), sourceTemporary = ref<TemporaryLureColor>()
+const photoEditing = ref<LureOption>(), photoView = ref(true)
 onMounted(async () => {
   try { temporary.value = (await db.temporaryLureColors.toArray()).filter(t => t.linkedVariantId === undefined) }
   catch (error) { message.value = error instanceof Error ? error.message : String(error) }
@@ -23,7 +27,7 @@ const candidates = computed(() => {
   const owned = new Set(props.owned.map(c => c.variantId))
   const search = keyword.value.normalize('NFKC').trim().toLowerCase()
   return props.catalog.filter(c => (!manufacturer.value || c.manufacturerName === manufacturer.value) && (!model.value || c.modelId === Number(model.value)) &&
-    (!onlyOwned.value || owned.has(c.variantId)) && (!search || [c.manufacturerName, c.modelName, c.colorName].join(' ').normalize('NFKC').toLowerCase().includes(search)) &&
+    (!onlyOwned.value || owned.has(c.variantId)) && (!search || matchesPhotoColorSearch(c, search)) &&
     colors.value.every(id => c.visualColorSnapshot && Object.values(c.visualColorSnapshot.appearance.regions).some(r => r?.colors.includes(id))))
 })
 function toggle(id: VisualColorId) { colors.value = colors.value.includes(id) ? colors.value.filter(c => c !== id) : [...colors.value, id]; limit.value = 50 }
@@ -63,7 +67,8 @@ async function link(row: LureOption) {
       <template v-if="sourceTemporary"><strong>{{ sourceTemporary.name || '保存済み仮カラー' }}</strong><VisualColorPreview :appearance="sourceTemporary.appearance" /><button type="button" :disabled="busy" @click="sourceTemporary = undefined">仮カラーの選択を解除</button></template>
       <p role="status">{{ message }}</p>
       <fieldset :disabled="busy">
-        <template v-if="editing">
+        <LurePhotoManager v-if="photoEditing" :option="photoEditing" :catalog="catalog" @close="photoEditing = undefined" @updated="emit('updated')" @busy="busy = $event" />
+        <template v-else-if="editing">
           <h3>{{ editing.modelName }} / {{ editing.colorName }}</h3>
           <p>代表配色は1件です。保存するとこの代表を更新します。釣果別の配色は残ります。</p>
           <VisualColorEditor :model-value="draft ?? undefined" :category="editing.category" @update:model-value="draft = $event" />
@@ -83,15 +88,19 @@ async function link(row: LureOption) {
           <label>モデル<select v-model="model" aria-label="辞書モデル" @change="limit = 50"><option value="">すべて</option><option v-for="row in models" :key="row.modelId" :value="String(row.modelId)">{{ row.modelName }}</option></select></label>
           <label class="owned"><input v-model="onlyOwned" type="checkbox" />所有ルアーのみ</label>
           <label>名前で絞り込む<input v-model="keyword" type="search" aria-label="辞書検索" @input="limit = 50" /></label>
+          <div v-if="candidates.some(isNoaOption)" role="group" aria-label="NOAの表示切り替え"><button type="button" :aria-pressed="photoView" @click="photoView = true">写真</button><button type="button" :aria-pressed="!photoView" @click="photoView = false">SVG配色</button></div>
           <p>{{ candidates.length }}件の候補</p>
           <article v-for="row in candidates.slice(0, limit)" :key="row.variantId" :data-variant-id="row.variantId">
             <strong>{{ row.modelName }} / {{ row.colorName }}</strong><small>{{ row.manufacturerName }}</small>
-            <VisualColorPreview v-if="row.visualColorSnapshot" :appearance="row.visualColorSnapshot.appearance" :color-values="row.visualColorSnapshot.colorValues" /><small v-else>代表配色は未登録</small>
+            <small v-if="isNoaOption(row) && sharedColorForOption(row)?.colorCode">カラー番号：{{ sharedColorForOption(row)?.colorCode }}</small>
+            <LurePhotoDisplay v-if="isNoaOption(row)" :option="row" :prefer-svg="!photoView" />
+            <VisualColorPreview v-else-if="row.visualColorSnapshot" :appearance="row.visualColorSnapshot.appearance" :color-values="row.visualColorSnapshot.colorValues" /><small v-else>代表配色は未登録</small>
             <small v-if="row.visualProfile">{{ row.visualProfile.userEdited || row.visualProfile.origin === 'user' ? '手動編集・確認済み' : row.visualProfile.confirmed ? (row.visualProfile.origin === 'photo' ? '公式画像・確認済み' : '確認済み') : row.visualProfile.origin === 'photo' ? '写真推定・未確認' : '名称推定・未確認' }}</small>
             <details v-if="row.visualProfile?.evidence?.basis"><summary>推定根拠</summary>{{ row.visualProfile.evidence.inputName }}：{{ row.visualProfile.evidence.basis.join('、') }}<span v-if="row.visualProfile.evidence.confidence !== undefined">（確信度目安 {{ Math.round(row.visualProfile.evidence.confidence * 100) }}%）</span>
               <a v-if="row.visualProfile.evidence.sourceUrl" :href="row.visualProfile.evidence.sourceUrl" target="_blank" rel="noopener noreferrer">配色の出典</a>
             </details>
             <button type="button" @click="edit(row)">代表配色を編集</button>
+            <button v-if="isNoaOption(row)" type="button" @click="photoEditing = row">カラー写真を管理</button>
             <button v-if="sourceCatch || sourceTemporary" type="button" @click="link(row)">この仮配色を紐付け</button>
             <button v-else-if="selectEnabled" type="button" @click="emit('select', row)">この公式カラーを選ぶ</button>
           </article>

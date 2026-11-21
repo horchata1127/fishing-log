@@ -7,6 +7,8 @@ import FishSpeciesPicker from './FishSpeciesPicker.vue';
 import VisualColorEditor from './VisualColorEditor.vue';
 import VisualColorPreview from './VisualColorPreview.vue';
 import VisualDictionaryPanel from './VisualDictionaryPanel.vue';
+import LurePhotoDisplay from './LurePhotoDisplay.vue';
+import { isNoaOption, matchesPhotoColorSearch, sharedColorForOption } from '../utils/noaPhotoCatalog';
 import type { VisualColorSnapshot } from '../db/database';
 
 const props = defineProps<{
@@ -75,13 +77,14 @@ const showLurePicker = ref(false);
 const showColorPicker = ref(false);
 const colorSearch = ref('');
 const colorLimit = ref(50);
+const photoView = ref(true), onlyOwnedPhotos = ref(false);
 watch(colorSearch, () => { colorLimit.value = 50; });
 const ownedVariantIds = computed(() => new Set(props.myLures.map(lure => lure.variantId)));
 const modelColors = computed(() => props.catalog
   .filter(lure => lure.modelId === props.previousModel?.id)
   .sort((a, b) => Number(ownedVariantIds.value.has(b.variantId)) - Number(ownedVariantIds.value.has(a.variantId))));
 const filteredColors = computed(() => modelColors.value.filter(lure =>
-  lure.colorName.toLocaleLowerCase().includes(colorSearch.value.trim().toLocaleLowerCase())));
+  (!onlyOwnedPhotos.value || ownedVariantIds.value.has(lure.variantId)) && matchesPhotoColorSearch(lure, colorSearch.value)));
 
 function openColorPicker() {
   if (props.editing || !props.previousModel) return;
@@ -122,17 +125,15 @@ const filteredMyLures = computed(() => {
   return pickerOptions.value.filter((lure) => {
     if (lureManufacturer.value && lure.manufacturerName !== lureManufacturer.value) return false;
     if (lureCategory.value && lure.category !== lureCategory.value) return false;
-    const text = [lure.manufacturerName, lure.seriesName, lure.modelName, lure.colorName]
-      .join(" ")
-      .toLowerCase();
-
-    return text.includes(keyword);
+    return matchesPhotoColorSearch(lure, keyword);
   });
 });
 
 const catalogModels = computed(() => [...new Map(filteredMyLures.value.map(lure => [lure.modelId, lure])).values()]);
-const visibleLures = computed(() => pickerMode.value === 'catalog'
-  ? filteredMyLures.value.filter(lure => lure.modelId === catalogModel.value) : filteredMyLures.value);
+const visibleLures = computed(() => (pickerMode.value === 'catalog'
+  ? filteredMyLures.value.filter(lure => lure.modelId === catalogModel.value) : filteredMyLures.value)
+  .filter(lure => !onlyOwnedPhotos.value || !isNoaOption(lure) || ownedVariantIds.value.has(lure.variantId)));
+const hasNoaPicker = computed(() => (pickerMode.value === 'catalog' ? props.catalog.filter(c => c.modelId === catalogModel.value) : props.myLures).some(isNoaOption));
 
 function switchPicker(mode: 'owned' | 'catalog') {
   pickerMode.value = mode;
@@ -233,13 +234,21 @@ function chooseDictionary(lure: LureOption) {
             <button type="button" class="close-button" aria-label="カラー選択をキャンセル" @click="showColorPicker = false">✕</button>
           </div>
           <input v-model="colorSearch" type="search" class="search-input" aria-label="カラーを検索" placeholder="カラー名で検索" />
+          <div v-if="modelColors.some(isNoaOption)" class="noa-photo-controls" role="group" aria-label="NOAカラー写真の表示">
+            <button type="button" :aria-pressed="photoView" @click="photoView = true">写真</button><button type="button" :aria-pressed="!photoView" @click="photoView = false">SVG配色</button>
+            <label><input v-model="onlyOwnedPhotos" type="checkbox" />所有カラーのみ</label>
+          </div>
           <div class="lure-picker-list">
-            <button v-for="lure in filteredColors.slice(0, colorLimit)" :key="lure.variantId" type="button" class="picker-lure-button" @click="selectColor(lure)">
+            <div v-for="lure in filteredColors.slice(0, colorLimit)" :key="lure.variantId" :class="isNoaOption(lure) ? 'noa-photo-card' : 'plain-photo-card'" :data-variant-id="lure.variantId">
+            <button type="button" class="picker-lure-button" @click="selectColor(lure)">
               <strong>{{ lure.colorName }}</strong>
+              <small v-if="isNoaOption(lure) && sharedColorForOption(lure)?.colorCode">カラー番号：{{ sharedColorForOption(lure)?.colorCode }}</small>
               <small>{{ ownedVariantIds.has(lure.variantId) ? '所有' : '未所有' }}</small>
-              <VisualColorPreview v-if="lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
+              <VisualColorPreview v-if="!isNoaOption(lure) && lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
               <small v-if="lure.visualProfile && !lure.visualProfile.confirmed && !lure.visualProfile.userEdited">推定配色・未確認</small>
             </button>
+            <LurePhotoDisplay v-if="isNoaOption(lure)" :option="lure" :prefer-svg="!photoView" />
+            </div>
           </div>
           <p v-if="!filteredColors.length" class="no-lures" role="status">{{ modelColors.length ? '該当するカラーがありません。' : 'このモデルのカラーは登録されていません。' }}</p>
           <button v-if="filteredColors.length > colorLimit" type="button" @click="colorLimit += 50">さらに50件表示（全{{ filteredColors.length }}件）</button>
@@ -373,10 +382,13 @@ function chooseDictionary(lure: LureOption) {
             </select>
           </label>
           <p v-if="pickerMode === 'catalog'" class="no-lures">未登録のルアーは、釣果の保存時にマイルアーへ1個登録します。</p>
+          <div v-if="hasNoaPicker" class="noa-photo-controls" role="group" aria-label="NOAカラー写真の表示">
+            <button type="button" :aria-pressed="photoView" @click="photoView = true">写真</button><button type="button" :aria-pressed="!photoView" @click="photoView = false">SVG配色</button>
+            <label><input v-model="onlyOwnedPhotos" type="checkbox" />所有カラーのみ</label>
+          </div>
           <div v-if="visibleLures.length > 0" class="lure-picker-list">
+            <div v-for="lure in visibleLures.slice(0, lureLimit)" :key="lure.id" :class="isNoaOption(lure) ? 'noa-photo-card' : 'plain-photo-card'" :data-variant-id="lure.variantId">
             <button
-              v-for="lure in visibleLures.slice(0, lureLimit)"
-              :key="lure.id"
               type="button"
               class="picker-lure-button"
               @click="selectMyLure(lure)"
@@ -396,9 +408,12 @@ function chooseDictionary(lure: LureOption) {
                 ・
                 {{ lure.seriesName }}
               </small>
-              <VisualColorPreview v-if="lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
+              <small v-if="isNoaOption(lure) && sharedColorForOption(lure)?.colorCode">カラー番号：{{ sharedColorForOption(lure)?.colorCode }}</small>
+              <VisualColorPreview v-if="!isNoaOption(lure) && lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
               <small v-if="lure.visualProfile && !lure.visualProfile.confirmed && !lure.visualProfile.userEdited">推定配色・未確認</small>
             </button>
+            <LurePhotoDisplay v-if="isNoaOption(lure)" :option="lure" :prefer-svg="!photoView" />
+            </div>
           </div>
 
           <p v-else class="no-lures">{{ pickerMode === 'catalog' && !catalogModel ? 'モデルを選択してください。' : '該当するルアーがありません。' }}</p>
@@ -789,6 +804,15 @@ select {
   text-align: left;
   cursor: pointer;
 }
+.plain-photo-card { display:contents; }
+.noa-photo-card { display:grid; grid-template-columns:minmax(0,1fr) 132px; border:1px solid #d9dee3; border-radius:12px; background:white; align-items:stretch; }
+.noa-photo-card .picker-lure-button { border:0; min-height:100px; min-width:0; }
+.noa-photo-card .picker-lure-main { flex-direction:column; align-items:flex-start; gap:6px; }
+.noa-photo-controls { display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin:8px 0; }
+.noa-photo-controls button { min-height:44px; padding:8px 12px; border:1px solid #aebbb4; border-radius:8px; background:white; color:#17212b; font:inherit; }
+.noa-photo-controls button[aria-pressed="true"] { background:#e3f3eb; border-color:#1b7959; }
+.noa-photo-controls label { display:flex; align-items:center; gap:6px; min-height:44px; }
+.noa-photo-controls input { width:22px; height:22px; }
 
 .picker-lure-main {
   display: flex;

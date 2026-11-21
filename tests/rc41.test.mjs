@@ -32,7 +32,8 @@ after(async()=>{db.close();for(const path of Object.values(paths))await unlink(p
 
 test('RC41 v10 to v11 upgrade preserves all 22 existing stores and sparse IDs, adds only an empty map store',async()=>{
  const Dexie=(await import('dexie')).default,legacyName='FishingLogRC41MigrationIsolated',legacy=new Dexie(legacyName)
- const schema=Object.fromEntries(db.tables.filter(t=>t.name!=='areaMaps').map(t=>[t.name,[t.schema.primKey.src,...t.schema.indexes.map(i=>i.src)].join(',')]))
+ const newStores=['areaMaps','sharedLureColors','lureColorPhotoLinks','lureColorPhotos','lurePhotoBlobs']
+ const schema=Object.fromEntries(db.tables.filter(t=>!newStores.includes(t.name)).map(t=>[t.name,[t.schema.primKey.src,...t.schema.indexes.map(i=>i.src)].join(',')]))
  legacy.version(10).stores(schema)
  await legacy.open()
  for(const t of legacy.tables){const keys=Array.isArray(t.schema.primKey.keyPath)?t.schema.primKey.keyPath:[t.schema.primKey.keyPath];await t.add(Object.fromEntries(keys.map(k=>[k,k==='key'?'fixture':k==='fish_id'?'F-test':k==='tripId'||k==='timestamp'||t.schema.primKey.auto?900:'fixture-id'])))}
@@ -42,7 +43,8 @@ test('RC41 v10 to v11 upgrade preserves all 22 existing stores and sparse IDs, a
  const source=(await readFile(paths.database,'utf8')).replace('FishingLogRC41Isolated',legacyName)
  await writeFile(migrationPath,source)
  const {db:upgraded}=await import(pathToFileURL(migrationPath).href)
- try{await upgraded.open();assert.equal(upgraded.verno,11);assert.equal(upgraded.tables.length,23);assert.equal(await upgraded.areaMaps.count(),0)
+ try{await upgraded.open();assert.equal(upgraded.verno, 12);assert.equal(upgraded.tables.length, 27);assert.equal(await upgraded.areaMaps.count(),0)
+  for(const name of newStores)assert.equal(await upgraded.table(name).count(),0)
   for(const [name,rows] of Object.entries(before)){assert.deepEqual(await upgraded.table(name).toArray(),rows);assert.equal([upgraded.table(name).schema.primKey.src,...upgraded.table(name).schema.indexes.map(i=>i.src)].join(','),schema[name])}
   assert.ok(await upgraded.catches.add({tripId:900,caughtAt:new Date(now)})>900)
  }finally{upgraded.close();await upgraded.delete()}
@@ -134,7 +136,7 @@ test('RC41 north is optional, explicit zero differs from legacy absence, and old
  const saved=await db.tripEvents.get(id)
  assert.equal(Object.hasOwn(saved.fishingPosition.snapshot,'northAngle'),false)
  assert.equal((await db.tripEvents.get(newId)).fishingPosition.snapshot.northAngle,359)
- const backup=json(await createBackup());assert.equal(backup.version,12);assert.equal(db.verno,11)
+ const backup=json(await createBackup());assert.equal(backup.version,12);assert.equal(db.verno, 12)
  await importBackup({text:async()=>JSON.stringify(backup)})
  assert.equal((await db.areaMaps.get(current.id)).northAngle,359)
  assert.deepEqual((await db.tripEvents.get(id)).fishingPosition,saved.fishingPosition)
