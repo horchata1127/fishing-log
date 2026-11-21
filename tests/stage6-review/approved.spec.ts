@@ -2,7 +2,7 @@ import { test, expect, chromium, type Page } from '@playwright/test'
 import { mkdtemp } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { stage6Backup, stage6Candidate } from '../stage6Fixture'
+import { stage6Backup } from '../stage6Fixture'
 
 const origin = 'http://127.0.0.1:4188', url = `${origin}/fishing-log/`
 const names = ['trips', 'catches', 'tripEvents', 'lureManufacturers', 'lureSeries', 'lureModels', 'lureVariants', 'myLures', 'rods', 'reels', 'lines', 'tackleSets', 'fishSpecies', 'facilities', 'zones', 'appMetadata']
@@ -24,7 +24,7 @@ async function state(page: Page) {
   }, names)
 }
 
-test('approved compiled startup installs 50/73, survives offline profile restart, and preserves all existing rows', async ({}, info) => {
+test('approved compiled startup installs cumulative 51/78, survives offline profile restart, and preserves all existing rows', async ({}, info) => {
   await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
   const profile = await mkdtemp(join(tmpdir(), 'fishing-stage6-approved-profile-'))
   const mobile = info.project.name.includes('mobile')
@@ -34,11 +34,11 @@ test('approved compiled startup installs 50/73, survives offline profile restart
   try {
     let page = context.pages()[0]!
     await page.goto(url)
-    await expect.poll(async () => (await state(page)).facilities!.length).toBe(50)
+    await expect.poll(async () => (await state(page)).facilities!.length).toBe(51)
     const first = await state(page)
-    expect(first.zones).toHaveLength(73)
-    expect(first.appMetadata![0].releaseOrder).toBe(1)
-    expect(first.appMetadata![0].masterVersion).toBe(stage6Candidate.masterVersion)
+    expect(first.zones).toHaveLength(78)
+    expect(first.appMetadata![0].releaseOrder).toBe(2)
+    expect(first.appMetadata![0].masterVersion).toBe('1.1.0-rc44-okutama-51f78z')
     expect(first.facilities!.every(r => r.origin === 'official')).toBe(true)
     expect(first.trips).toEqual([]); expect(first.catches).toEqual([])
     await expect(page.getByText('準備を完了するにはホームで再読み込みしてください。', { exact: true })).toBeVisible()
@@ -47,7 +47,7 @@ test('approved compiled startup installs 50/73, survives offline profile restart
     expect(await state(page)).toEqual(first)
     page.on('dialog', d => d.accept())
     await page.getByTestId('restore-backup').setInputFiles({ name: 'isolated-history.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(stage6Backup())) })
-    await expect.poll(async () => (await state(page)).facilities!.length).toBe(51)
+    await expect.poll(async () => (await state(page)).facilities!.length).toBe(52)
     const before = await state(page)
     await context.close(); context = await launch(true); page = context.pages()[0]!
     await page.goto(url)

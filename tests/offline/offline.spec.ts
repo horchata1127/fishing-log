@@ -264,7 +264,7 @@ test('RC24 editing vetoes SW update and action lengths, legacy absence, Iwana sn
   } finally { await context.close() }
 })
 
-test('PR4 50/73 candidate remains selectable and records catch/lost after complete offline cold start', async ({}, info) => {
+test('Cumulative facility release remains selectable and records catch/lost after complete offline cold start', async ({}, info) => {
   await fetch(`${origin}/__test/version?v=A`, { method: 'POST' })
   const profile = await mkdtemp(join(tmpdir(), 'fishing-stage6-pr4-offline-'))
   const launch = (offline = false) => chromium.launchPersistentContext(profile, { serviceWorkers: 'allow', offline,
@@ -276,10 +276,10 @@ test('PR4 50/73 candidate remains selectable and records catch/lost after comple
     page.on('dialog', dialog => dialog.accept())
     // First boot applies the real bundled release, before any history fixture is restored.
     const initial = await database(page, false, true)
-    expect(initial.facilities).toHaveLength(50); expect(initial.zones).toHaveLength(73)
-    expect(initial.appMetadata![0]).toMatchObject({ releaseOrder: 1, masterVersion: '1.0.0-stage6-50f73z' })
+    expect(initial.facilities).toHaveLength(51); expect(initial.zones).toHaveLength(78)
+    expect(initial.appMetadata![0]).toMatchObject({ releaseOrder: 2, masterVersion: '1.1.0-rc44-okutama-51f78z' })
     await page.getByTestId('restore-backup').setInputFiles({ name: 'isolated-stage6-v6.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(stage6Backup())) })
-    await expect.poll(async () => (await database(page, false, true)).facilities!.length).toBe(51)
+    await expect.poll(async () => (await database(page, false, true)).facilities!.length).toBe(52)
     const before = await database(page, false, true)
     await context.close(); context = await launch(true); page = context.pages()[0]!
     await page.goto(url)
@@ -450,7 +450,7 @@ test('offline user facility/zone additions, catch snapshots and v6 backup surviv
     await expect(editor).not.toBeVisible()
     const saved = await database(page, false, true)
     expect(saved.catches![0].memo).toBe('圏外で訂正')
-    expect(saved.facilities).toHaveLength(51); expect(saved.zones).toHaveLength(74)
+    expect(saved.facilities).toHaveLength(52); expect(saved.zones).toHaveLength(79)
     expect(saved.facilities!.filter(f => f.origin === 'user')).toHaveLength(1)
     expect(saved.zones!.filter(z => z.origin === 'user')).toHaveLength(1)
     expect(saved.trips).toHaveLength(2); expect(saved.catches).toHaveLength(1)
