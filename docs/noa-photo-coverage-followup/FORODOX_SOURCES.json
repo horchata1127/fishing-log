@@ -1,0 +1,98 @@
+[
+  {
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-15-forodox.html",
+    "modelName": "NOA 1.5g",
+    "collaboration": "2026 FORODOX: RODIO CRAFT / FOCUS / Deep Paradox",
+    "rightsStatus": "unknown",
+    "embedded": false,
+    "checkedAt": "2026-11-23",
+    "httpStatus": 200,
+    "resolvedUrl": "https://store.shopping.yahoo.co.jp/openwater/noa-15-forodox.html",
+    "pageSha256": "b5978e434698f3f299b85052114da27d25e2f0a0532eda11704a4d08ea5b537e",
+    "title": "",
+    "images": [
+      {
+        "url": "https://item-shopping.c.yimg.jp/i/n/openwater_noa-15-forodox",
+        "sha256": "586b375758c84970c4fd6ce2b9acebae45ac268bf0c9bcb6b2a2f7eb54b6dbee",
+        "inspectionFile": "noa-15-0.jpg"
+      },
+      {
+        "url": "https://item-shopping.c.yimg.jp/i/n/openwater_noa-15-forodox_1_d_20260929230316",
+        "sha256": "cd75c52508dae7f23769020ad60c721a0047d2ab92d1e003492b8e3f83f8e836",
+        "inspectionFile": "noa-15-1.jpg"
+      }
+    ]
+  },
+  {
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-18-forodox.html",
+    "modelName": "NOA 1.8g",
+    "collaboration": "2026 FORODOX: RODIO CRAFT / FOCUS / Deep Paradox",
+    "rightsStatus": "unknown",
+    "embedded": false,
+    "checkedAt": "2026-11-23",
+    "httpStatus": 200,
+    "resolvedUrl": "https://store.shopping.yahoo.co.jp/openwater/noa-18-forodox.html",
+    "pageSha256": "98581fecdaf77fb214e75c55f93333d2cc7ddc5e50547f4616cb54f733e98461",
+    "title": "",
+    "images": [
+      {
+        "url": "https://item-shopping.c.yimg.jp/i/n/openwater_noa-18-forodox",
+        "sha256": "682d35b54a662fdac3d707bd0952fd47786182890115c03eff62c811efeab22d",
+        "inspectionFile": "noa-18-0.jpg"
+      },
+      {
+        "url": "https://item-shopping.c.yimg.jp/i/n/openwater_noa-18-forodox_1_d_20260929230322",
+        "sha256": "cd75c52508dae7f23769020ad60c721a0047d2ab92d1e003492b8e3f83f8e836",
+        "inspectionFile": "noa-18-1.jpg"
+      }
+    ]
+  },
+  {
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s10-forodox.html",
+    "modelName": "NOA S 1.0g",
+    "collaboration": "2026 FORODOX: RODIO CRAFT / FOCUS / Deep Paradox",
+    "rightsStatus": "unknown",
+    "embedded": false,
+    "checkedAt": "2026-11-23",
+    "httpStatus": 200,
+    "resolvedUrl": "https://store.shopping.yahoo.co.jp/openwater/noa-s10-forodox.html",
+    "pageSha256": "fdecac6fb49c3ec737d7765a7f485336cc8487573d2d4b99fc3a1e1c3766bf11",
+    "title": "",
+    "images": [
+      {
+        "url": "https://item-shopping.c.yimg.jp/i/n/openwater_noa-s10-forodox",
+        "sha256": "3a27b9c381f832665ed0a7d9cc51c6beda62e6cb7eb17c77ddd5f6256d1c7877",
+        "inspectionFile": "noa-s10-0.jpg"
+      },
+      {
+        "url": "https://item-shopping.c.yimg.jp/i/n/openwater_noa-s10-forodox_1_d_20260929230111",
+        "sha256": "abd5594e7ca6e17d696a13334ff6818daa82231b934136a4dbdb52934aaa8e6e",
+        "inspectionFile": "noa-s10-1.jpg"
+      }
+    ]
+  },
+  {
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s14-forodox.html",
+    "modelName": "NOA S 1.4g",
+    "collaboration": "2026 FORODOX: RODIO CRAFT / FOCUS / Deep Paradox",
+    "rightsStatus": "unknown",
+    "embedded": false,
+    "checkedAt": "2026-11-23",
+    "httpStatus": 200,
+    "resolvedUrl": "https://store.shopping.yahoo.co.jp/openwater/noa-s14-forodox.html",
+    "pageSha256": "d16169c1fec048e601e9bd41ff5cddf7bd1001e12b1e3d2bce3cc626b96b4fc5",
+    "title": "",
+    "images": [
+      {
+        "url": "https://item-shopping.c.yimg.jp/i/n/openwater_noa-s14-forodox",
+        "sha256": "f67f704eea6e4f2681ccd2fb2c22b02e1b15c6dc10274d91684b5a04577e1a94",
+        "inspectionFile": "noa-s14-0.jpg"
+      },
+      {
+        "url": "https://item-shopping.c.yimg.jp/i/n/openwater_noa-s14-forodox_1_d_20260929230316",
+        "sha256": "cd75c52508dae7f23769020ad60c721a0047d2ab92d1e003492b8e3f83f8e836",
+        "inspectionFile": "noa-s14-1.jpg"
+      }
+    ]
+  }
+]

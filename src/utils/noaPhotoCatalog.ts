@@ -1,5 +1,7 @@
 import { noaColorDefinitions } from '../data/noaSharedColors'
 import { noaExternalLinks } from '../data/noaExternalLinks'
+import { noaModelExternalLinks } from '../data/noaModelExternalLinks'
+import { noaAdditionalExternalLinks, noaImageReferences } from '../data/noaExternalReferences'
 import type { SharedLureColor } from '../db/lurePhotoTypes'
 import type { LureOption } from './catchRegistration'
 
@@ -13,6 +15,18 @@ export function isNoaOption(option: PhotoOption): boolean {
 }
 export function photoOptionIdentity(option: PhotoOption): string {
   return JSON.stringify([option.manufacturerName, option.seriesName, option.modelName, option.colorName].map(fold))
+}
+/** Product pages match the selected model; common sample images are classified separately. */
+export function modelProductLinkForOption(option: PhotoOption) {
+  if (!isNoaOption(option)) return
+  return [...noaModelExternalLinks, ...noaAdditionalExternalLinks].find(link => fold(link.modelName) === fold(option.modelName) &&
+    link.colorNames.some(name => fold(name) === fold(option.colorName)))
+}
+/** Only a reviewed source for this exact model/color may provide an image link. */
+export function imageReferenceForOption(option: PhotoOption) {
+  if (!isNoaOption(option)) return
+  return noaImageReferences.find(link => fold(link.modelName) === fold(option.modelName) &&
+    link.colorNames.some(name => fold(name) === fold(option.colorName)))
 }
 /** Only exact catalog names plus explicit numeric prefixes are merged. Similar labels stay separate. */
 export function sharedColorForOption(option: PhotoOption): SharedLureColor | undefined {
