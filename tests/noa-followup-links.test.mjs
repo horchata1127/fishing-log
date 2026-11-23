@@ -8,10 +8,12 @@ const { db } = await loader.load('src/db/database.ts')
 const { importBackup } = await loader.load('src/utils/backup.ts')
 const { rc43Fixture } = await loader.load('tests/rc43Fixture.ts')
 const { currentPhotoCatalog, resolveColorPhoto, saveExternalPhotoLink, photoTableNames } = await loader.load('src/utils/lurePhotos.ts')
-const { modelProductLinkForOption, imageReferenceForOption, validateProductUrl } = await loader.load('src/utils/noaPhotoCatalog.ts')
-const { noaAdditionalExternalLinks, noaImageReferences } = await loader.load('src/data/noaExternalReferences.ts')
+const { retailerProductLinkForOption, validateProductUrl } = await loader.load('src/utils/noaPhotoCatalog.ts')
+const { noaAdditionalExternalLinks } = await loader.load('src/data/noaExternalReferences.ts')
+const { noaRetailerProductLinks } = await loader.load('src/data/noaRetailerProductLinks.ts')
+const { noaUnavailableProductLinks } = await loader.load('src/data/noaUnavailableProductLinks.ts')
 const latest = JSON.parse(readFileSync('docs/noa-photo-coverage-followup/CATALOG.json', 'utf8'))
-const baseline = JSON.parse(readFileSync('docs/noa-color-photos/AUDIT.json', 'utf8'))
+const baseline = JSON.parse(readFileSync('docs/noa-photo-coverage-followup/AUDIT.json', 'utf8'))
 const snapshot = async () => Object.fromEntries(await Promise.all(db.tables.map(async t => [t.name, await t.toArray()])))
 beforeEach(async () => {
   await db.delete(); await db.open()
@@ -21,66 +23,64 @@ beforeEach(async () => {
 })
 after(async () => { db.close(); await db.delete(); await loader.close() })
 
-test('all 333 original link rows including the prior 73 remain byte-for-byte equal; all additions are read-only', async () => {
+test('all valid PR45 links remain reachable alongside better model references; retired defaults are replaced without writes', async () => {
   const catalog = await currentPhotoCatalog(), before = await snapshot()
-  assert.equal(catalog.length, 713)
-  let kept = 0, added = 0, images = 0
+  let kept = 0, added = 0, replaced = 0, supplements = 0
   const originalFetch = globalThis.fetch
-  globalThis.fetch = () => { throw new Error('Links must not fetch images or product HTML') }
+  globalThis.fetch = () => { throw new Error('Browsing catalog must not fetch external content') }
   try {
     for (const option of catalog) {
       const old = baseline.rows.find(r => r.variantId === option.variantId)
       const result = await resolveColorPhoto(option)
-      if (old.externalProductUrl) { assert.equal(result.externalProductUrl, old.externalProductUrl, option.modelName + '/' + option.colorName); kept++ }
-      else if (result.externalProductUrl) added++
-      if (result.imageReference) images++
+      const urls = [result.externalProductUrl, ...result.additionalProductLinks.map(p=>p.url)]
+      assert.ok(!('imageReference' in result))
+      const unavailable = noaUnavailableProductLinks.includes(old.productUrl)
+      if (old.productUrl && !unavailable) { assert.ok(urls.includes(old.productUrl), option.modelName+'/'+option.colorName); kept++ }
+      if (!old.productUrl && result.externalProductUrl) added++
+      if (unavailable && result.externalProductUrl !== old.productUrl) replaced++
+      if (old.productUrl && !unavailable && old.productUrl !== result.externalProductUrl) supplements++
     }
   } finally { globalThis.fetch = originalFetch }
-  assert.equal(kept, 333); assert.equal(added, 45); assert.equal(images, 118)
-  assert.deepEqual(await snapshot(), before)
-  for (const name of photoTableNames) assert.equal(await db.table(name).count(), 0)
+  assert.equal(catalog.length,713); assert.equal(kept,361); assert.equal(added,10); assert.equal(replaced,17); assert.equal(supplements,124)
+  assert.deepEqual(await snapshot(),before)
+  for (const name of photoTableNames) assert.equal(await db.table(name).count(),0)
 })
 
-test('FORODOX retains 2026 collaboration, exact weight URL and common sample; no regular color number substitution', async () => {
+test('product-only sources match model, weight, manufacturer and full color name; no image URL can be saved', async () => {
+  assert.equal(noaAdditionalExternalLinks.length,45); assert.equal(noaRetailerProductLinks.length,151)
   const catalog = await currentPhotoCatalog()
-  const family = noaAdditionalExternalLinks.filter(l => l.sourceName === 'オープンウォーター')
-  assert.equal(family.length, 24)
-  const expected = new Map([['NOA 1.5g', 'noa-15'], ['NOA 1.8g', 'noa-18'], ['NOA S 1.0g', 'noa-s10'], ['NOA S 1.4g', 'noa-s14']])
-  for (const source of family) {
-    assert.match(source.externalProductUrl, new RegExp('/'+expected.get(source.modelName)+'-forodox.html$'))
-    const option = catalog.find(o => o.modelName === source.modelName && o.colorName === source.colorNames[0])
-    assert.ok(option)
-    const result = await resolveColorPhoto(option)
-    assert.equal(result.imageReference.imageKind, 'weight-common-color-sample')
-    assert.equal(modelProductLinkForOption({ ...option, colorName: '#1 ' + option.colorName }), undefined)
-    assert.equal(imageReferenceForOption({ ...option, modelName: 'NOA 2.1g' }), undefined)
-    assert.equal(imageReferenceForOption({ ...option, manufacturerName: '別メーカー' }), undefined)
-  }
-})
-
-test('JOINTER front/back samples keep black variants separate and do not classify glow descriptions as a color', async () => {
-  const catalog = await currentPhotoCatalog()
-  for (const modelName of ['NOA Jr. 0.9g', 'NOA Jr. 1.2g', 'NOA Jr. 1.4g']) {
-    const black = catalog.find(o => o.modelName === modelName && o.colorName === '腹黒')
-    const second = catalog.find(o => o.modelName === modelName && o.colorName.normalize('NFKC') === '腹黒II')
-    assert.notEqual(imageReferenceForOption(black).imageUrl, imageReferenceForOption(second).imageUrl)
-    assert.equal(imageReferenceForOption({ ...black, colorName: '背面グリーングロー' }), undefined)
-    assert.equal(imageReferenceForOption({ ...black, modelName: 'NOA 1.8g' }), undefined)
-  }
-})
-
-test('user links and explicit deletion win over supplied image references; no remote URLs are treated as local photos', async () => {
-  const option = (await currentPhotoCatalog()).find(o => o.modelName === 'NOA 1.8g' && o.colorName === 'エルドラド')
-  assert.ok((await resolveColorPhoto(option)).imageReference)
-  await saveExternalPhotoLink(option, 'https://example.com/products/my-eldorado', '自分の出典', true)
-  assert.equal((await resolveColorPhoto(option)).imageReference, undefined)
-  await saveExternalPhotoLink(option, '', '', false)
-  assert.equal((await resolveColorPhoto(option)).externalProductUrl, undefined)
-  assert.equal((await resolveColorPhoto(option)).imageReference, undefined)
-  for (const source of noaImageReferences) {
+  const option = catalog.find(o=>o.modelName==='NOA 1.8g'&&o.colorName==='N.03')
+  assert.equal(retailerProductLinkForOption(option).externalProductUrl,'https://store.castingnet.jp/shop/g/g4573151242095/')
+  assert.equal(retailerProductLinkForOption({...option,manufacturerName:'別メーカー'}),undefined)
+  assert.equal(retailerProductLinkForOption({...option,modelName:'NOA 99g'}),undefined)
+  assert.equal(retailerProductLinkForOption({...option,colorName:'#1 N.03'}),undefined)
+  for (const source of [...noaAdditionalExternalLinks,...noaRetailerProductLinks]) {
     validateProductUrl(source.externalProductUrl)
-    const url = new URL(source.imageUrl)
-    assert.equal(url.protocol, 'https:'); assert.equal(url.username, ''); assert.equal(url.password, '')
+    assert.deepEqual(Object.keys(source).sort(),['modelName','colorNames','externalProductUrl','sourceName','lastCheckedAt'].sort())
   }
-  assert.equal(await db.lurePhotoBlobs.count(), 0)
+  for (const url of ['https://store.castingnet.jp/img/goods/L/4573151242095.jpg','https://evil.example/shop/g/g4573151242095/','https://store.castingnet.jp/shop/goods/search.aspx?keyword=NOA']) assert.throws(()=>validateProductUrl(url))
+})
+
+test('JOINTER and FORODOX pages remain, while all former direct-image application data and navigation are removed', async () => {
+  const sources = readFileSync('src/data/noaExternalReferences.ts','utf8')+readFileSync('src/data/noaRetailerProductLinks.ts','utf8')
+  assert.doesNotMatch(sources,/imageUrl|noaImageReferences|\.jpg|\.png|yimg\.jp/)
+  const component = readFileSync('src/components/LurePhotoDisplay.vue','utf8')
+  assert.doesNotMatch(component,/imageReference|商品写真を開く|重量共通の色見本を開く/)
+  const catalog = await currentPhotoCatalog()
+  const black = catalog.find(o=>o.modelName==='NOA Jr. 0.9g'&&o.colorName==='腹黒')
+  assert.equal((await resolveColorPhoto(black)).externalProductUrl,'https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/')
+  const show = catalog.find(o=>o.modelName==='NOA 1.8g'&&o.colorName==='SHOW')
+  assert.equal((await resolveColorPhoto(show)).externalProductUrl,'https://store.shopping.yahoo.co.jp/openwater/noa-18-forodox.html')
+})
+
+test('user URLs and explicit deletion outrank improved bundled defaults, preserving all user records', async () => {
+  const option = (await currentPhotoCatalog()).find(o=>o.modelName==='NOA 1.8g'&&o.colorName==='蛍光ピンク')
+  await saveExternalPhotoLink(option,'https://example.com/products/my-pink','自分の出典',true)
+  let result = await resolveColorPhoto(option)
+  assert.equal(result.externalProductUrl,'https://example.com/products/my-pink')
+  assert.ok(result.additionalProductLinks.some(r=>r.url==='https://store.castingnet.jp/shop/g/g4571169082726/'))
+  await saveExternalPhotoLink(option,'','',false)
+  result=await resolveColorPhoto(option)
+  assert.equal(result.externalProductUrl,undefined); assert.deepEqual(result.additionalProductLinks,[])
+  assert.equal(await db.lurePhotoBlobs.count(),0)
 })

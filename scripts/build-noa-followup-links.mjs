@@ -3,7 +3,6 @@ import { localTypeScript } from './load-local-typescript.mjs'
 const loader = await localTypeScript()
 try {
   const { noaModelExternalLinks } = await loader.load('src/data/noaModelExternalLinks.ts')
-  const previous = JSON.parse(await readFile('docs/noa-color-photos/REVIEWED_LINKS.json', 'utf8'))
   const forodox = JSON.parse(await readFile('docs/noa-photo-coverage-followup/FORODOX_SOURCES.json', 'utf8'))
   const colors = ['ゲンちゃんブラウニー', 'キャンタの飛沫', 'ソルティマジョーラ改', '茶ッキン', 'SHOW', 'クズブルー']
   const additional = []
@@ -31,13 +30,9 @@ try {
     imageUrl: 'https://item-shopping.c.yimg.jp/i/n/windsweb2_rodeo-noa18-1091_1_d_20251206182001', imageKind: 'product-photo',
     sourceName: 'ウインズ', lastCheckedAt: '2026-11-23', collaboration: '1091 復刻',
     verificationBasis: 'NOA1.8g/1091販売ページ、画像内の「復刻T.SIV」ラベル・1.8g台紙・実物写真を照合。通常T.SIIや旧版T.SIVとは統合しない。' })
-  const references = noaModelExternalLinks.map(link => {
-    const source = previous.find(r => r.url === link.externalProductUrl)
-    if (!source) throw new Error('Prior review missing')
-    return { ...link, imageUrl: source.imageUrl, imageKind: 'product-photo' }
-  }).concat(additional.map(({ collaboration, verificationBasis, ...source }) => source))
   await writeFile('docs/noa-photo-coverage-followup/ADDED_LINKS.json', JSON.stringify(additional, null, 2)+'\n')
-  const header = `/** Reviewed external links. Images open at their source in another tab.\n * No image is fetched, embedded, cached or imported by the application.\n */\nimport type { NoaModelExternalLink } from './noaModelExternalLinks'\nexport interface NoaExternalReference extends NoaModelExternalLink {\n  imageUrl: string\n  imageKind: 'product-photo' | 'weight-common-color-sample'\n}\n\n`
-  await writeFile('src/data/noaExternalReferences.ts', header + 'export const noaImageReferences: readonly NoaExternalReference[] = '+JSON.stringify(references, null, 2)+'\n\nexport const noaAdditionalExternalLinks: readonly NoaExternalReference[] = noaImageReferences.slice('+noaModelExternalLinks.length+')\n')
-  console.log({ retainedModelLinks: noaModelExternalLinks.length, additionalLinks: additional.length, directImageReferences: references.length })
+  const products = additional.map(({ modelName, colorNames, externalProductUrl, sourceName, lastCheckedAt }) => ({ modelName, colorNames, externalProductUrl, sourceName, lastCheckedAt }))
+  const header = `/** PR45 product pages retained. Retailer image URLs are deliberately excluded. */\nimport type { NoaModelExternalLink } from './noaModelExternalLinks'\n\n`
+  await writeFile('src/data/noaExternalReferences.ts', header + 'export const noaAdditionalExternalLinks: readonly NoaModelExternalLink[] = '+JSON.stringify(products, null, 2)+'\n')
+  console.log({ retainedModelLinks: noaModelExternalLinks.length, retainedProductPages: products.length, directImageReferences: 0 })
 } finally { await loader.close() }

@@ -46,7 +46,7 @@ onBeforeUnmount(() => { sequence++; unsubscribe?.(); window.removeEventListener(
       <svg v-else class="generic-spoon" role="img" aria-label="汎用ルアーアイコン" viewBox="0 0 90 48"><path d="M19 31C6 13 31 3 57 8S78 32 59 39 27 42 19 31Z" fill="#d9e1df" stroke="#667b73" stroke-width="2"/><circle cx="19" cy="23" r="3" fill="white"/><path d="M76 26q17 21-1 16" fill="none" stroke="#667b73" stroke-width="2"/></svg>
       <template v-if="!preferSvg && resolved?.externalProductUrl">
         <a :href="resolved.externalProductUrl" target="_blank" rel="noopener noreferrer" @click.stop>写真を見る</a>
-        <a v-if="resolved.imageReference" :href="resolved.imageReference.imageUrl" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" @click.stop>{{ resolved.imageReference.imageKind === 'weight-common-color-sample' ? '重量共通の色見本を開く' : '商品写真を開く' }}</a>
+        <a v-for="link in resolved.additionalProductLinks" :key="link.url" :href="link.url" target="_blank" rel="noopener noreferrer" @click.stop>その他の商品ページ（{{ link.sourceName }}）</a>
         <small>{{ resolved.sourceName }}・{{ online ? '通信が必要です' : 'オフライン：接続後に開けます' }}</small>
       </template>
       <small v-else-if="!preferSvg">{{ face === 'back' ? '裏面写真なし' : '写真未登録' }}</small>

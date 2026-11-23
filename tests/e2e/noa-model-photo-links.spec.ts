@@ -26,7 +26,7 @@ test('new model photo link appears in dictionary and catch registration without 
   expect(await readAllState(page)).toEqual(before)
 })
 
-test('latest 713-color catalog keeps Eldorado source and opens verified FORODOX common samples at their source', async ({ page }) => {
+test('latest 713-color catalog keeps Eldorado and FORODOX product pages without direct image navigation', async ({ page }) => {
   const latest = JSON.parse(readFileSync('docs/noa-color-photos/CATALOG.json', 'utf8'))
   const fixture = rc43Fixture()
   Object.assign(fixture.data, { lureManufacturers: latest.manufacturers, lureSeries: latest.series,
@@ -45,7 +45,7 @@ test('latest 713-color catalog keeps Eldorado source and opens verified FORODOX 
     const row = dictionary.locator(`article[data-variant-id="${variant.id}"]`)
     await expect(row).toBeVisible()
     await expect(row.getByRole('link', { name: '写真を見る' })).toHaveAttribute('href', 'https://store.shopping.yahoo.co.jp/openwater/noa-18-forodox.html')
-    await expect(row.getByRole('link', { name: '重量共通の色見本を開く' })).toHaveAttribute('target', '_blank')
+    await expect(row.getByRole('link', { name: '重量共通の色見本を開く' })).toHaveCount(0)
     await expect(row.getByRole('img', { name: '汎用ルアーアイコン', exact: true })).toBeVisible()
   }
   expect(await readAllState(page)).toEqual(before)

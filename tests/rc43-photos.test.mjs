@@ -69,7 +69,11 @@ test('selected links are 33 unique common colors, one shop and one individual pa
   assert.equal(source.candidates.filter(c => c.selected).length, 33)
   assert.ok(source.candidates.every(c => c.localDownload === false && c.rightsStatus === 'unknown'))
   const urls = new Set()
-  for (const option of (await currentPhotoCatalog()).filter(c => sharedColorForOption(c).colorCode === '1')) urls.add((await resolveColorPhoto(option)).externalProductUrl)
+  for (const option of (await currentPhotoCatalog()).filter(c => sharedColorForOption(c).colorCode === '1')) {
+    const resolved = await resolveColorPhoto(option)
+    assert.ok([resolved.externalProductUrl, ...resolved.additionalProductLinks.map(p=>p.url)].includes('https://fishing-shop-jh.com/?pid=190933838'))
+    urls.add('https://fishing-shop-jh.com/?pid=190933838')
+  }
   assert.deepEqual([...urls], ['https://fishing-shop-jh.com/?pid=190933838'])
   assert.notEqual((await resolveColorPhoto(await color(134, 'ブラック'))).externalProductUrl, [...urls][0])
   for (const url of ['javascript:alert(1)', 'https://example.com/', 'https://example.com/search?q=gold', 'https://fishing-shop-jh.com/?mode=grp&gid=1']) assert.throws(() => validateProductUrl(url))
