@@ -160,7 +160,7 @@ test('photo archive preserves one blob, provenance and scopes; repeated import a
   await assert.rejects(restorePhoto(conflict), /競合/); assert.deepEqual(await all(), before)
 })
 
-const deviceBackup = 'docs/rc42/fishing-log-backup-2026-11-21.json'
+const deviceBackup = process.env.NOA_DEVICE_BACKUP ?? 'docs/rc42/fishing-log-backup-2026-11-21.json'
 test('provided device backup stays byte-identical and photo registration preserves every original table/ID/value', { skip: !existsSync(deviceBackup) }, async () => {
   const raw = readFileSync(deviceBackup), hash = b => createHash('sha256').update(b).digest('hex')
   await importBackup({ text: async () => raw.toString('utf8') })

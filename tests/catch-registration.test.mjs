@@ -11,16 +11,17 @@ import { renderToString } from 'vue/server-renderer'
 import { parse, compileScript, compileTemplate } from '@vue/compiler-sfc'
 
 const directory = await mkdtemp(join(tmpdir(), 'fishing-log-catch-test-'))
-const paths = Object.fromEntries(['noaPhotoCatalog', 'noaSharedColors', 'noaExternalLinks', 'noaModelExternalLinks', 'tripLocations', 'facilityMaster', 'facilityStorage', 'database', 'catchRegistration', 'tackleManagement', 'fishSpecies', 'fishMaster', 'fishPicker', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
+const paths = Object.fromEntries(['noaPhotoCatalog', 'noaSharedColors', 'noaExternalLinks', 'noaModelExternalLinks', 'noaExternalReferences', 'tripLocations', 'facilityMaster', 'facilityStorage', 'database', 'catchRegistration', 'tackleManagement', 'fishSpecies', 'fishMaster', 'fishPicker', 'backup', 'modal', 'render', 'myLures'].map(name => [name, join(directory, `${name}.mjs`)]))
 const compile = source => ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
 }).outputText
-for (const [name, source] of [['noaPhotoCatalog', 'utils/noaPhotoCatalog.ts'], ['noaSharedColors', 'data/noaSharedColors.ts'], ['noaExternalLinks', 'data/noaExternalLinks.ts'], ['noaModelExternalLinks', 'data/noaModelExternalLinks.ts'], ['tripLocations', 'utils/tripLocations.ts'], ['facilityMaster', 'utils/facilityMaster.ts'], ['facilityStorage', 'utils/facilityStorage.ts'], ['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
+for (const [name, source] of [['noaPhotoCatalog', 'utils/noaPhotoCatalog.ts'], ['noaSharedColors', 'data/noaSharedColors.ts'], ['noaExternalLinks', 'data/noaExternalLinks.ts'], ['noaModelExternalLinks', 'data/noaModelExternalLinks.ts'], ['noaExternalReferences', 'data/noaExternalReferences.ts'], ['tripLocations', 'utils/tripLocations.ts'], ['facilityMaster', 'utils/facilityMaster.ts'], ['facilityStorage', 'utils/facilityStorage.ts'], ['database', 'db/database.ts'], ['fishSpecies', 'utils/fishSpecies.ts'], ['fishMaster', 'data/fishMaster.ts'], ['catchRegistration', 'utils/catchRegistration.ts'], ['tackleManagement', 'utils/tackleManagement.ts'], ['backup', 'utils/backup.ts']]) {
   const code = compile(await readFile(new URL(`../src/${source}`, import.meta.url), 'utf8'))
     .replace("'dexie'", JSON.stringify(import.meta.resolve('dexie')))
     .replace("'../data/noaSharedColors'", JSON.stringify(pathToFileURL(paths.noaSharedColors).href))
     .replace("'../data/noaExternalLinks'", JSON.stringify(pathToFileURL(paths.noaExternalLinks).href))
     .replace("'../data/noaModelExternalLinks'", JSON.stringify(pathToFileURL(paths.noaModelExternalLinks).href))
+    .replace("'../data/noaExternalReferences'", JSON.stringify(pathToFileURL(paths.noaExternalReferences).href))
     .replace("'../db/database'", JSON.stringify(pathToFileURL(paths.database).href))
     .replace("'./facilityMaster'", JSON.stringify(pathToFileURL(paths.facilityMaster).href))
     .replace("'./tripLocations'", JSON.stringify(pathToFileURL(paths.tripLocations).href))

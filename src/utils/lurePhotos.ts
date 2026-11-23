@@ -1,6 +1,6 @@
 import { db } from '../db/database'
 import type { SharedLureColor, LureColorPhoto, LurePhotoBlob, PhotoFace } from '../db/lurePhotoTypes'
-import { photoOptionIdentity, sharedColorForOption, modelProductLinkForOption, validateProductUrl, noaFamilyKey, type PhotoOption } from './noaPhotoCatalog'
+import { photoOptionIdentity, sharedColorForOption, modelProductLinkForOption, imageReferenceForOption, validateProductUrl, noaFamilyKey, type PhotoOption } from './noaPhotoCatalog'
 
 export const photoTableNames = ['sharedLureColors', 'lureColorPhotoLinks', 'lureColorPhotos', 'lurePhotoBlobs'] as const
 export const photoLimits = { inputBytes: 15 * 1024 * 1024, storedBytes: 2 * 1024 * 1024, edge: 1280, pixels: 40_000_000, archiveBytes: 150 * 1024 * 1024 }
@@ -32,7 +32,9 @@ export async function resolveColorPhoto(option: PhotoOption, face: PhotoFace = '
   const override = eligible.find(p => p.imageAvailability === 'external' && p.variantIdentity && p.externalProductUrl)
   const supplied = detail.shared.externalVerified === undefined ? modelProductLinkForOption(option) : undefined
   const externalProductUrl = override?.externalProductUrl ?? (detail.shared.externalVerified === true ? detail.shared.externalProductUrl : supplied?.externalProductUrl)
-  return { shared: detail.shared, local, faces: [...new Set(eligible.filter(p => p.imageAvailability === 'local').map(p => p.imageType))], externalProductUrl, sourceName: override?.sourceName ?? supplied?.sourceName ?? detail.shared.sourceName }
+  const reference = imageReferenceForOption(option)
+  const imageReference = reference?.externalProductUrl === externalProductUrl ? reference : undefined
+  return { shared: detail.shared, local, faces: [...new Set(eligible.filter(p => p.imageAvailability === 'local').map(p => p.imageType))], externalProductUrl, imageReference, sourceName: override?.sourceName ?? supplied?.sourceName ?? detail.shared.sourceName }
 }
 
 export async function hashPhoto(blob: Blob): Promise<string> {
