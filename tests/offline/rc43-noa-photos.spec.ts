@@ -27,7 +27,7 @@ test('RC43 shared local photos survive offline cold restart; missing photos keep
     const image = card.getByRole('img', { name: /表面写真/ })
     await expect(image).toBeVisible()
     await expect.poll(() => image.evaluate(img => (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0)
-    await expect(card.getByRole('link', { name: '写真を見る' })).toHaveCount(0)
+    await expect(card.getByRole('link', { name: '写真を見る' })).toBeVisible()
     await card.getByRole('button', { name: /表面写真を拡大/ }).click()
     await expect(page.getByRole('dialog', { name: 'カラー写真の拡大' }).getByRole('img')).toBeVisible()
     await page.getByRole('button', { name: '写真を閉じる', exact: true }).click()

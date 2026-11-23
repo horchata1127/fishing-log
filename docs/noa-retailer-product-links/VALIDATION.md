@@ -1,5 +1,7 @@
 # 検証結果
 
+> 画像表示を復元した追加コミットの検証・出典別保留は [IMAGE_RESTORATION.md](IMAGE_RESTORATION.md)。以下は17ee267時点の履歴。「src/distに画像URLなし」等は現在の仕様を表さない。
+
 2026-11-23、Windows、`feat/noa-retailer-product-links`。実ブラウザープロフィール・本番DBを使わず、fake-indexeddbとPlaywright専用origin/一時プロフィールで確認した。
 
 | 実行 | 最終結果 |

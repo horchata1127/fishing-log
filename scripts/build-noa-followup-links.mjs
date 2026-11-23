@@ -3,6 +3,7 @@ import { localTypeScript } from './load-local-typescript.mjs'
 const loader = await localTypeScript()
 try {
   const { noaModelExternalLinks } = await loader.load('src/data/noaModelExternalLinks.ts')
+  const reviews = JSON.parse(await readFile('docs/noa-color-photos/REVIEWED_LINKS.json', 'utf8'))
   const forodox = JSON.parse(await readFile('docs/noa-photo-coverage-followup/FORODOX_SOURCES.json', 'utf8'))
   const colors = ['ゲンちゃんブラウニー', 'キャンタの飛沫', 'ソルティマジョーラ改', '茶ッキン', 'SHOW', 'クズブルー']
   const additional = []
@@ -34,5 +35,9 @@ try {
   const products = additional.map(({ modelName, colorNames, externalProductUrl, sourceName, lastCheckedAt }) => ({ modelName, colorNames, externalProductUrl, sourceName, lastCheckedAt }))
   const header = `/** PR45 product pages retained. Retailer image URLs are deliberately excluded. */\nimport type { NoaModelExternalLink } from './noaModelExternalLinks'\n\n`
   await writeFile('src/data/noaExternalReferences.ts', header + 'export const noaAdditionalExternalLinks: readonly NoaModelExternalLink[] = '+JSON.stringify(products, null, 2)+'\n')
-  console.log({ retainedModelLinks: noaModelExternalLinks.length, retainedProductPages: products.length, directImageReferences: 0 })
+  const images = noaModelExternalLinks.map(link => ({ ...link, imageUrl: reviews.find(r => r.url === link.externalProductUrl).imageUrl, imageKind: 'product-photo' }))
+    .concat(additional.map(({ collaboration, verificationBasis, ...source }) => source))
+  const imageHeader = `/** PR45 image references restored verbatim. Display eligibility is reviewed separately. */\nimport type { NoaModelExternalLink } from './noaModelExternalLinks'\nexport interface NoaExternalReference extends NoaModelExternalLink {\n  imageUrl: string\n  imageKind: 'product-photo' | 'weight-common-color-sample'\n}\n\n`
+  await writeFile('src/data/noaExternalImages.ts', imageHeader+'export const noaImageReferences: readonly NoaExternalReference[] = '+JSON.stringify(images,null,2)+'\n')
+  console.log({ retainedModelLinks: noaModelExternalLinks.length, retainedProductPages: products.length, directImageReferences: images.length })
 } finally { await loader.close() }

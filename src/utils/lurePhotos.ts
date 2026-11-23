@@ -1,6 +1,6 @@
 import { db } from '../db/database'
 import type { SharedLureColor, LureColorPhoto, LurePhotoBlob, PhotoFace } from '../db/lurePhotoTypes'
-import { photoOptionIdentity, sharedColorForOption, modelProductLinkForOption, retailerProductLinkForOption, validateProductUrl, noaFamilyKey, type PhotoOption } from './noaPhotoCatalog'
+import { photoOptionIdentity, sharedColorForOption, modelProductLinkForOption, retailerProductLinkForOption, externalImageForOption, validateProductUrl, noaFamilyKey, type PhotoOption } from './noaPhotoCatalog'
 import { noaUnavailableProductLinks } from '../data/noaUnavailableProductLinks'
 
 export const photoTableNames = ['sharedLureColors', 'lureColorPhotoLinks', 'lureColorPhotos', 'lurePhotoBlobs'] as const
@@ -44,7 +44,9 @@ export async function resolveColorPhoto(option: PhotoOption, face: PhotoFace = '
     if (retailer && retailer.externalProductUrl !== externalProductUrl) additionalProductLinks.push({ url: retailer.externalProductUrl, sourceName: retailer.sourceName })
     if (!userChoice && previousUrl && previousUrl !== externalProductUrl && !noaUnavailableProductLinks.includes(previousUrl)) additionalProductLinks.push({ url: previousUrl, sourceName: previousSource })
   }
-  return { shared: detail.shared, local, faces: [...new Set(eligible.filter(p => p.imageAvailability === 'local').map(p => p.imageType))], externalProductUrl, additionalProductLinks, sourceName }
+  const imageReference = externalImageForOption(option)
+  return { shared: detail.shared, local, faces: [...new Set(eligible.filter(p => p.imageAvailability === 'local').map(p => p.imageType))], externalProductUrl, additionalProductLinks, sourceName,
+    imageReference: face === 'front' || imageReference?.imageKind === 'weight-common-color-sample' ? imageReference : undefined }
 }
 
 export async function hashPhoto(blob: Blob): Promise<string> {

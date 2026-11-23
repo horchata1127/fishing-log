@@ -33,7 +33,6 @@ test('all valid PR45 links remain reachable alongside better model references; r
       const old = baseline.rows.find(r => r.variantId === option.variantId)
       const result = await resolveColorPhoto(option)
       const urls = [result.externalProductUrl, ...result.additionalProductLinks.map(p=>p.url)]
-      assert.ok(!('imageReference' in result))
       const unavailable = noaUnavailableProductLinks.includes(old.productUrl)
       if (old.productUrl && !unavailable) { assert.ok(urls.includes(old.productUrl), option.modelName+'/'+option.colorName); kept++ }
       if (!old.productUrl && result.externalProductUrl) added++
@@ -61,11 +60,12 @@ test('product-only sources match model, weight, manufacturer and full color name
   for (const url of ['https://store.castingnet.jp/img/goods/L/4573151242095.jpg','https://evil.example/shop/g/g4573151242095/','https://store.castingnet.jp/shop/goods/search.aspx?keyword=NOA']) assert.throws(()=>validateProductUrl(url))
 })
 
-test('JOINTER and FORODOX pages remain, while all former direct-image application data and navigation are removed', async () => {
+test('product-page data stays independent of restored image display and retains JOINTER/FORODOX pages', async () => {
   const sources = readFileSync('src/data/noaExternalReferences.ts','utf8')+readFileSync('src/data/noaRetailerProductLinks.ts','utf8')
   assert.doesNotMatch(sources,/imageUrl|noaImageReferences|\.jpg|\.png|yimg\.jp/)
   const component = readFileSync('src/components/LurePhotoDisplay.vue','utf8')
-  assert.doesNotMatch(component,/imageReference|商品写真を開く|重量共通の色見本を開く/)
+  assert.match(component,/ExternalColorPhoto/)
+  assert.doesNotMatch(component,/商品写真を開く|重量共通の色見本を開く/)
   const catalog = await currentPhotoCatalog()
   const black = catalog.find(o=>o.modelName==='NOA Jr. 0.9g'&&o.colorName==='腹黒')
   assert.equal((await resolveColorPhoto(black)).externalProductUrl,'https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/')

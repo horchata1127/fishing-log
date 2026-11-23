@@ -26,6 +26,9 @@ try{
   await db.lureManufacturers.bulkAdd(catalog.manufacturers);await db.lureSeries.bulkAdd(catalog.series)
   await db.lureModels.bulkAdd(catalog.models);await db.lureVariants.bulkAdd(catalog.variants)
   const {currentPhotoCatalog,resolveColorPhoto}=await loader.load('src/utils/lurePhotos.ts')
+  const {imageReferenceForOption,externalImageForOption}=await loader.load('src/utils/noaPhotoCatalog.ts')
+  const {noaImageReferences}=await loader.load('src/data/noaExternalImages.ts')
+  const options=await currentPhotoCatalog()
   const rows=[]
   for(const option of await currentPhotoCatalog()){
     const before=prior.rows.find(r=>r.variantId===option.variantId)
@@ -63,13 +66,16 @@ try{
   const summary={checkedAt:'2026-11-23',startCommit:'5b55924',backupSha256:catalog.backupSha256,rows:rows.length,
     added:count('追加'),newlyLinked:rows.filter(r=>r.additionType==='未登録から追加').length,supplemented:rows.filter(r=>r.additionType==='既存有効URLを残して個別写真を補完').length,
     replaced:count('代替'),kept:count('維持'),held:count('保留'),newUrls:new Set(verified.map(r=>r.externalProductUrl)).size,
-    uniqueValidProductUrls:new Set(rows.map(r=>r.productUrl).filter(Boolean)).size,directImageLinks:0,families}
+    uniqueValidProductUrls:new Set(rows.map(r=>r.productUrl).filter(Boolean)).size,directImageLinks:0,
+    restoredImageDefinitions:noaImageReferences.length,matchedImageRows:options.filter(imageReferenceForOption).length,
+    eligibleInlineImageRows:options.filter(externalImageForOption).length,
+    heldImageRows:options.filter(o=>imageReferenceForOption(o)&&!externalImageForOption(o)).length,families}
   const columns=Object.keys(rows[0]),csv=vs=>vs.map(v=>'"'+String(v??'').replaceAll('"','""')+'"').join(',')
   for(const [name,list]of[['ALL_COLORS',rows],['ADDED',rows.filter(r=>r.action==='追加')],['REPLACEMENTS',rows.filter(r=>r.action==='代替')],['HELD',rows.filter(r=>r.action==='保留')],['PHOTO_UNCONFIRMED',rows.filter(r=>r.coverage!=='個別写真確認済み')]])
     await writeFile(folder+name+'.csv','\ufeff'+[csv(columns),...list.map(r=>csv(columns.map(c=>r[c])))].join('\r\n')+'\r\n')
   await writeFile(folder+'AUDIT.json',JSON.stringify({summary,rows},null,2)+'\n')
   const md=['# NOA系販売店商品ページリンク棚卸し','','確認日2026-11-23。実モデル8件、713色行。カウント単位はモデル・重量・カラー。','',
-    `追加${summary.added}行（未登録から${summary.newlyLinked}、既存URLを残す補完${summary.supplemented}）、404代替${summary.replaced}行、維持${summary.kept}行、保留${summary.held}行。新規URL${summary.newUrls}件、有効URL総数${summary.uniqueValidProductUrls}件。画像ファイル直リンクは0。`,
+    `追加${summary.added}行（未登録から${summary.newlyLinked}、既存URLを残す補完${summary.supplemented}）、404代替${summary.replaced}行、維持${summary.kept}行、保留${summary.held}行。新規URL${summary.newUrls}件、有効URL総数${summary.uniqueValidProductUrls}件。画像ファイルを直接開く導線は0。復元画像${summary.restoredImageDefinitions}定義・適用${summary.matchedImageRows}行（インライン表示対象${summary.eligibleInlineImageRows}行・利用条件による保留${summary.heldImageRows}行）。[画像表示の最新報告](IMAGE_RESTORATION.md)。`,
     '','| 系列 | 分母 | 個別写真確認済み行 | 同URL数 | その他有効ページ行 | 同URL数 | 未確認行 | 系列内有効URL数 |','| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |']
   for(const f of families)md.push(`| ${f.family} | ${f.rows} | ${f.individualRows} | ${f.individualUrls} | ${f.otherValidRows} | ${f.otherValidUrls} | ${f.unconfirmedRows} | ${f.allValidUrls} |`)
   md.push('','個別写真は写真そのもののアプリ追加を意味しない。共通ポスター・他重量参照は「その他有効」に分離。系列間・区分間で同じURLが重なるためURL数は加算しない。',

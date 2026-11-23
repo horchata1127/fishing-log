@@ -3,6 +3,8 @@ import { noaExternalLinks } from '../data/noaExternalLinks'
 import { noaModelExternalLinks } from '../data/noaModelExternalLinks'
 import { noaAdditionalExternalLinks } from '../data/noaExternalReferences'
 import { noaRetailerProductLinks } from '../data/noaRetailerProductLinks'
+import { noaImageReferences } from '../data/noaExternalImages'
+import { externalImageHoldReason } from '../data/noaExternalImagePolicy'
 import type { SharedLureColor } from '../db/lurePhotoTypes'
 import type { LureOption } from './catchRegistration'
 
@@ -28,6 +30,16 @@ export function retailerProductLinkForOption(option: PhotoOption) {
   if (!isNoaOption(option)) return
   return noaRetailerProductLinks.find(link => fold(link.modelName) === fold(option.modelName) &&
     link.colorNames.some(name => fold(name) === fold(option.colorName)))
+}
+/** Exact source-photo identity is independent of the chosen product-page URL. */
+export function imageReferenceForOption(option: PhotoOption) {
+  if (!isNoaOption(option)) return
+  return noaImageReferences.find(link => fold(link.modelName) === fold(option.modelName) &&
+    link.colorNames.some(name => fold(name) === fold(option.colorName)))
+}
+export function externalImageForOption(option: PhotoOption) {
+  const reference = imageReferenceForOption(option)
+  return reference && !externalImageHoldReason(reference.sourceName) ? reference : undefined
 }
 /** Only exact catalog names plus explicit numeric prefixes are merged. Similar labels stay separate. */
 export function sharedColorForOption(option: PhotoOption): SharedLureColor | undefined {

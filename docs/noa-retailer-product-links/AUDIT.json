@@ -13,6 +13,10 @@
     "newUrls": 151,
     "uniqueValidProductUrls": 262,
     "directImageLinks": 0,
+    "restoredImageDefinitions": 120,
+    "matchedImageRows": 118,
+    "eligibleInlineImageRows": 91,
+    "heldImageRows": 27,
     "families": [
       {
         "family": "NOA",
