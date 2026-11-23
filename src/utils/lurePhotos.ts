@@ -1,6 +1,7 @@
 import { db } from '../db/database'
 import type { SharedLureColor, LureColorPhoto, LurePhotoBlob, PhotoFace } from '../db/lurePhotoTypes'
-import { photoOptionIdentity, sharedColorForOption, modelProductLinkForOption, imageReferenceForOption, validateProductUrl, noaFamilyKey, type PhotoOption } from './noaPhotoCatalog'
+import { photoOptionIdentity, sharedColorForOption, modelProductLinkForOption, retailerProductLinkForOption, externalImageForOption, validateProductUrl, noaFamilyKey, type PhotoOption } from './noaPhotoCatalog'
+import { noaUnavailableProductLinks } from '../data/noaUnavailableProductLinks'
 
 export const photoTableNames = ['sharedLureColors', 'lureColorPhotoLinks', 'lureColorPhotos', 'lurePhotoBlobs'] as const
 export const photoLimits = { inputBytes: 15 * 1024 * 1024, storedBytes: 2 * 1024 * 1024, edge: 1280, pixels: 40_000_000, archiveBytes: 150 * 1024 * 1024 }
@@ -21,7 +22,7 @@ export async function photoDetails(option: PhotoOption) {
   const derived = sharedColorForOption(option)
   if (!derived) return undefined
   const [stored, rows] = await Promise.all([db.sharedLureColors.get(derived.id), db.lureColorPhotos.where('sharedColorId').equals(derived.id).toArray()])
-  return { shared: stored ?? derived, photos: rows.filter(p => !p.variantIdentity || p.variantIdentity === photoOptionIdentity(option)) }
+  return { shared: stored ?? derived, hasStoredShared: !!stored, photos: rows.filter(p => !p.variantIdentity || p.variantIdentity === photoOptionIdentity(option)) }
 }
 export async function resolveColorPhoto(option: PhotoOption, face: PhotoFace = 'front') {
   const detail = await photoDetails(option)
@@ -31,10 +32,21 @@ export async function resolveColorPhoto(option: PhotoOption, face: PhotoFace = '
     .sort((a, b) => Number(!!b.variantIdentity) - Number(!!a.variantIdentity) || b.updatedAt.localeCompare(a.updatedAt) || b.id.localeCompare(a.id))
   const override = eligible.find(p => p.imageAvailability === 'external' && p.variantIdentity && p.externalProductUrl)
   const supplied = detail.shared.externalVerified === undefined ? modelProductLinkForOption(option) : undefined
-  const externalProductUrl = override?.externalProductUrl ?? (detail.shared.externalVerified === true ? detail.shared.externalProductUrl : supplied?.externalProductUrl)
-  const reference = imageReferenceForOption(option)
-  const imageReference = reference?.externalProductUrl === externalProductUrl ? reference : undefined
-  return { shared: detail.shared, local, faces: [...new Set(eligible.filter(p => p.imageAvailability === 'local').map(p => p.imageType))], externalProductUrl, imageReference, sourceName: override?.sourceName ?? supplied?.sourceName ?? detail.shared.sourceName }
+  const previousUrl = override?.externalProductUrl ?? (detail.shared.externalVerified === true ? detail.shared.externalProductUrl : supplied?.externalProductUrl)
+  const previousSource = override?.sourceName ?? supplied?.sourceName ?? detail.shared.sourceName
+  const retailer = retailerProductLinkForOption(option)
+  const userChoice = !!override || detail.hasStoredShared && detail.shared.externalVerified !== undefined
+  const suppressed = !override && detail.shared.externalVerified === false
+  const externalProductUrl = userChoice ? previousUrl : retailer?.externalProductUrl ?? previousUrl
+  const sourceName = externalProductUrl && externalProductUrl === retailer?.externalProductUrl ? retailer.sourceName : previousSource
+  const additionalProductLinks: { url: string; sourceName: string }[] = []
+  if (!suppressed) {
+    if (retailer && retailer.externalProductUrl !== externalProductUrl) additionalProductLinks.push({ url: retailer.externalProductUrl, sourceName: retailer.sourceName })
+    if (!userChoice && previousUrl && previousUrl !== externalProductUrl && !noaUnavailableProductLinks.includes(previousUrl)) additionalProductLinks.push({ url: previousUrl, sourceName: previousSource })
+  }
+  const imageReference = externalImageForOption(option)
+  return { shared: detail.shared, local, faces: [...new Set(eligible.filter(p => p.imageAvailability === 'local').map(p => p.imageType))], externalProductUrl, additionalProductLinks, sourceName,
+    imageReference: face === 'front' || imageReference?.imageKind === 'weight-common-color-sample' ? imageReference : undefined }
 }
 
 export async function hashPhoto(blob: Blob): Promise<string> {

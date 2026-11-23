@@ -1,7 +1,10 @@
 import { noaColorDefinitions } from '../data/noaSharedColors'
 import { noaExternalLinks } from '../data/noaExternalLinks'
 import { noaModelExternalLinks } from '../data/noaModelExternalLinks'
-import { noaAdditionalExternalLinks, noaImageReferences } from '../data/noaExternalReferences'
+import { noaAdditionalExternalLinks } from '../data/noaExternalReferences'
+import { noaRetailerProductLinks } from '../data/noaRetailerProductLinks'
+import { noaImageReferences } from '../data/noaExternalImages'
+import { externalImageHoldReason } from '../data/noaExternalImagePolicy'
 import type { SharedLureColor } from '../db/lurePhotoTypes'
 import type { LureOption } from './catchRegistration'
 
@@ -16,17 +19,27 @@ export function isNoaOption(option: PhotoOption): boolean {
 export function photoOptionIdentity(option: PhotoOption): string {
   return JSON.stringify([option.manufacturerName, option.seriesName, option.modelName, option.colorName].map(fold))
 }
-/** Product pages match the selected model; common sample images are classified separately. */
+/** Existing product pages match the selected model and full color name. */
 export function modelProductLinkForOption(option: PhotoOption) {
   if (!isNoaOption(option)) return
   return [...noaModelExternalLinks, ...noaAdditionalExternalLinks].find(link => fold(link.modelName) === fold(option.modelName) &&
     link.colorNames.some(name => fold(name) === fold(option.colorName)))
 }
-/** Only a reviewed source for this exact model/color may provide an image link. */
+/** Pages with reviewed individual photos stay scoped to the original model/color name. */
+export function retailerProductLinkForOption(option: PhotoOption) {
+  if (!isNoaOption(option)) return
+  return noaRetailerProductLinks.find(link => fold(link.modelName) === fold(option.modelName) &&
+    link.colorNames.some(name => fold(name) === fold(option.colorName)))
+}
+/** Exact source-photo identity is independent of the chosen product-page URL. */
 export function imageReferenceForOption(option: PhotoOption) {
   if (!isNoaOption(option)) return
   return noaImageReferences.find(link => fold(link.modelName) === fold(option.modelName) &&
     link.colorNames.some(name => fold(name) === fold(option.colorName)))
+}
+export function externalImageForOption(option: PhotoOption) {
+  const reference = imageReferenceForOption(option)
+  return reference && !externalImageHoldReason(reference.sourceName) ? reference : undefined
 }
 /** Only exact catalog names plus explicit numeric prefixes are merged. Similar labels stay separate. */
 export function sharedColorForOption(option: PhotoOption): SharedLureColor | undefined {
@@ -48,7 +61,8 @@ export function validateProductUrl(value: string): string {
   const url = new URL(value)
   if (url.protocol !== 'https:' || url.username || url.password ||
     /(?:^|\/)search(?:\/|$)|mode=srh|[?&]q=/i.test(url.href) ||
-    !(url.searchParams.get('pid')?.match(/^\d+$/) || /\/(?:products?|items?)\/[^/]+/.test(url.pathname) || /\/.+\.html?$/.test(url.pathname))) {
+    !(url.searchParams.get('pid')?.match(/^\d+$/) || /\/(?:products?|items?)\/[^/]+/.test(url.pathname) || /\/.+\.html?$/.test(url.pathname) ||
+      url.hostname === 'store.castingnet.jp' && /^\/shop\/g\/g\d{8,14}\/$/.test(url.pathname))) {
     throw new Error('写真を確認できる個別商品ページのHTTPS URLを入力してください。')
   }
   return url.href

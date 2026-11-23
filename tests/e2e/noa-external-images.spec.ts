@@ -1,0 +1,88 @@
+import { readFileSync } from 'node:fs'
+import { test, expect, restoreViaUI, readAllState } from './fixtures'
+import { rc43Fixture } from '../rc43Fixture'
+import { uploadRc43Photo, openRc43CatchPicker } from '../rc43UiHelpers'
+const catalog = JSON.parse(readFileSync('docs/noa-photo-coverage-followup/CATALOG.json','utf8'))
+const fixture = () => {
+  const f=rc43Fixture()
+  Object.assign(f.data,{lureManufacturers:catalog.manufacturers,lureSeries:catalog.series,lureModels:catalog.models,lureVariants:catalog.variants})
+  return f
+}
+// Synthetic PNG is a test response, never a collected retailer asset.
+const png=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/lN8AAAAASUVORK5CYII=','base64')
+const imagePattern='https://img07.shop-pro.jp/**'
+
+test('verified external photograph displays and zooms inline with independent product links; local photo wins',async({page})=>{
+  await page.route(imagePattern,route=>route.fulfill({contentType:'image/png',body:png}))
+  await restoreViaUI(page,fixture())
+  const before=await readAllState(page)
+  await page.getByRole('button',{name:'ビジュアルカラー辞書',exact:true}).click()
+  const dictionary=page.getByRole('dialog',{name:'ビジュアルカラー辞書',exact:true})
+  await dictionary.getByLabel('辞書検索').fill('エルドラド')
+  const row=dictionary.locator('article[data-variant-id="9987"]')
+  await row.scrollIntoViewIfNeeded()
+  const image=row.getByRole('img',{name:'NOA 1.8g エルドラド 外部商品写真',exact:true})
+  await expect.poll(()=>image.evaluate(i=>(i as HTMLImageElement).naturalWidth)).toBeGreaterThan(0)
+  await expect(row.getByRole('img',{name:'汎用ルアーアイコン'})).toHaveCount(0)
+  await expect(row.getByRole('link',{name:'写真を見る',exact:true})).toHaveAttribute('href','https://fishing-shop-jh.com/?pid=176993639')
+  await row.getByRole('button',{name:/外部商品写真を拡大/}).click()
+  await expect(page.getByRole('dialog',{name:'外部カラー写真の拡大'})).toBeVisible()
+  await page.keyboard.press('Escape')
+  await expect(page.getByRole('dialog',{name:'外部カラー写真の拡大'})).toHaveCount(0)
+  await dictionary.getByRole('button',{name:'辞書を閉じる'}).click()
+  const {modal,picker}=await openRc43CatchPicker(page)
+  await picker.getByPlaceholder('ルアー名・カラー・メーカーで検索').fill('エルドラド')
+  await expect(picker.getByRole('img',{name:'NOA 1.8g エルドラド 外部商品写真',exact:true})).toBeVisible()
+  await picker.getByRole('button',{name:'SVG配色',exact:true}).click()
+  await expect(picker.locator('img[src^="https:"]')).toHaveCount(0)
+  await picker.getByRole('button',{name:'写真',exact:true}).click()
+  await expect.poll(()=>picker.getByRole('img',{name:'NOA 1.8g エルドラド 外部商品写真',exact:true}).evaluate(i=>(i as HTMLImageElement).naturalWidth)).toBeGreaterThan(0)
+  await expect(modal.getByLabel('メモ（任意）')).toHaveValue('入力中のメモを保持')
+  expect(await readAllState(page)).toEqual(before)
+  await picker.locator('[data-variant-id="9987"] .picker-lure-button').click()
+  await modal.getByRole('button',{name:'キャンセル',exact:true}).click()
+  await page.getByRole('button',{name:'← ホーム',exact:true}).click()
+  await page.getByRole('button',{name:'ビジュアルカラー辞書',exact:true}).click()
+  await dictionary.getByLabel('辞書検索').fill('エルドラド')
+  await row.getByRole('button',{name:'カラー写真を管理',exact:true}).click()
+  const manager=page.getByRole('region',{name:'カラー写真の管理',exact:true})
+  await uploadRc43Photo(page,{modelOnly:true})
+  await manager.getByRole('button',{name:'写真管理を閉じる'}).click()
+  await page.getByRole('dialog',{name:'ビジュアルカラー辞書',exact:true}).getByRole('button',{name:'辞書を閉じる'}).click()
+  const selected=await openRc43CatchPicker(page)
+  await selected.picker.getByPlaceholder('ルアー名・カラー・メーカーで検索').fill('エルドラド')
+  const localCard=selected.picker.locator('[data-variant-id="9987"]')
+  await localCard.scrollIntoViewIfNeeded()
+  await expect(localCard.getByRole('img',{name:/表面写真/})).toBeVisible()
+  await expect(localCard.locator('img[src^="https:"]')).toHaveCount(0)
+  await expect(localCard.getByRole('link',{name:'写真を見る',exact:true})).toBeVisible()
+})
+
+test('a product page without a matched direct image retains its icon',async({page})=>{
+  await restoreViaUI(page,fixture())
+  const {picker}=await openRc43CatchPicker(page)
+  await picker.getByPlaceholder('ルアー名・カラー・メーカーで検索').fill('N.03')
+  const variant=catalog.variants.find((v:any)=>v.modelId===134&&v.colorName==='N.03')
+  const card=picker.locator(`[data-variant-id="${variant.id}"]`)
+  await expect(card.getByRole('img',{name:'汎用ルアーアイコン'})).toBeVisible()
+  await expect(card.locator('img[src^="https:"]')).toHaveCount(0)
+  await expect(card.getByRole('link',{name:'写真を見る',exact:true})).toHaveAttribute('href','https://store.castingnet.jp/shop/g/g4573151242095/')
+})
+
+for(const mode of ['404','denied','invalid','offline'] as const) test(`external ${mode} falls back and catch selection preserves records`,async({page,context})=>{
+  await page.route(imagePattern,route=>mode==='invalid'?route.fulfill({contentType:'image/jpeg',body:'broken image'}):mode==='denied'?route.abort('accessdenied'):route.fulfill({status:404,body:'not found'}))
+  await restoreViaUI(page,fixture())
+  const before=await readAllState(page)
+  if(mode==='offline'){await context.setOffline(true);await page.evaluate(()=>window.dispatchEvent(new Event('offline')))}
+  const {modal,picker}=await openRc43CatchPicker(page)
+  await picker.getByPlaceholder('ルアー名・カラー・メーカーで検索').fill('エルドラド')
+  const card=picker.locator('[data-variant-id="9987"]')
+  await card.scrollIntoViewIfNeeded()
+  await expect(card.getByRole('img',{name:'汎用ルアーアイコン'})).toBeVisible()
+  await expect(card.locator('img[src^="https:"]')).toHaveCount(0)
+  await expect(card.getByRole('link',{name:'写真を見る',exact:true})).toBeVisible()
+  await card.getByRole('button',{name:/NOA 1\.8g/}).click()
+  await expect(picker).not.toBeVisible()
+  await expect(modal.getByLabel('メモ（任意）')).toHaveValue('入力中のメモを保持')
+  expect(await readAllState(page)).toEqual(before)
+})

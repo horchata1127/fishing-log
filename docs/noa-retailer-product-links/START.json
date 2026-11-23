@@ -1,0 +1,48 @@
+{
+  "startCommit": "5b55924",
+  "checkedAt": "2026-11-23",
+  "source": "PR45 local code and full audit; remote PR branch has no later revisions",
+  "counts": {
+    "realModels": 8,
+    "rows": 713,
+    "groups": 101,
+    "productLinkRows": 378,
+    "missingProductLinkRows": 335,
+    "uniqueProductUrls": 114,
+    "initialIndividualPhotoPageRows": 106,
+    "initialOtherValidPageRows": 255,
+    "initialUnconfirmedRows": 352,
+    "priorLinksKept": 333,
+    "prior73Kept": 73,
+    "newProductLinks": 45,
+    "remaining": 335,
+    "imageDirectLinks": 118,
+    "weightSpecificPhotoReferences": 76,
+    "commonSampleReferences": 42,
+    "existing404Rows": 17,
+    "existing404Urls": 3,
+    "liveRecheckNote": "PR45では16行・2URL。今回の全114既存URL再確認でNOA S 1.0g 2024福田カラーの404が1行・1URL増えた。",
+    "localPhotoFilesAdded": 0,
+    "appImagePreviewsAdded": 0
+  },
+  "families": {
+    "NOA": {
+      "rows": 271,
+      "individual": 63,
+      "other_valid": 70,
+      "unknown": 138
+    },
+    "NOA Jr.": {
+      "rows": 258,
+      "individual": 24,
+      "other_valid": 111,
+      "unknown": 123
+    },
+    "NOA S": {
+      "rows": 184,
+      "individual": 19,
+      "other_valid": 74,
+      "unknown": 91
+    }
+  }
+}

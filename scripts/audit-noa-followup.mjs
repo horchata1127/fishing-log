@@ -6,7 +6,13 @@ try {
   const catalog = JSON.parse(await readFile(folder+'CATALOG.json', 'utf8'))
   const baseline = JSON.parse(await readFile('docs/noa-color-photos/AUDIT.json', 'utf8'))
   const checks = JSON.parse(await readFile(folder+'EXISTING_LINK_RECHECK.json', 'utf8'))
-  const { sharedColorForOption, modelProductLinkForOption, imageReferenceForOption } = await loader.load('src/utils/noaPhotoCatalog.ts')
+  const { sharedColorForOption, modelProductLinkForOption } = await loader.load('src/utils/noaPhotoCatalog.ts')
+  // PR45's historical inspection metadata is not application image-link data.
+  const { noaModelExternalLinks } = await loader.load('src/data/noaModelExternalLinks.ts')
+  const reviews = JSON.parse(await readFile('docs/noa-color-photos/REVIEWED_LINKS.json', 'utf8'))
+  const inspected = noaModelExternalLinks.map(link => ({ ...link, imageUrl: reviews.find(r => r.url === link.externalProductUrl)?.imageUrl, imageKind: 'product-photo' }))
+    .concat(JSON.parse(await readFile(folder+'ADDED_LINKS.json', 'utf8')))
+  const fold = s => s.normalize('NFKC').replace(/\s/g, '').toLowerCase()
   const rows = [], groups = new Map()
   for (const variant of catalog.variants) {
     const model = catalog.models.find(m => m.id === variant.modelId), series = catalog.series.find(s => s.id === model.seriesId)
@@ -16,7 +22,7 @@ try {
     const supplied = modelProductLinkForOption(option)
     const url = shared.externalProductUrl || supplied?.externalProductUrl || ''
     if (old?.externalProductUrl && old.externalProductUrl !== url) throw new Error('Existing URL changed')
-    const image = imageReferenceForOption(option)
+    const image = inspected.find(r => fold(r.modelName) === fold(option.modelName) && r.colorNames.some(name => fold(name) === fold(option.colorName)))
     const exactImage = image?.externalProductUrl === url ? image : undefined
     const action = old?.externalProductUrl ? '既存リンク維持' : url ? 'リンク追加' : '保留'
     const note = url ? exactImage?.imageKind === 'weight-common-color-sample' ? '色名と対象モデル/重量を確認。画像は重量共通見本。別タブの出典参照のみ。'

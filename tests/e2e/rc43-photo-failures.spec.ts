@@ -40,5 +40,5 @@ test('RC43 a back-only shared photo is displayed first across NOA models instead
   const { card } = await openRc43CatchPicker(page, 136)
   await card.scrollIntoViewIfNeeded()
   await expect(card.getByRole('img', { name: /裏面写真/ })).toBeVisible()
-  await expect(card.getByRole('link', { name: '写真を見る' })).toHaveCount(0)
+  await expect(card.getByRole('link', { name: '写真を見る' })).toBeVisible()
 })
