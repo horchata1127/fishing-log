@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { hasLurePhotoDisplay } from '../utils/lureExternalCatalog'
 import { computed, ref, watch } from "vue";
 import type { LureOption, LureSelection, RecentLure } from '../utils/catchRegistration';
 import { catchActions, actionLengthLabels, type ActionLength, type LostDistance, type TackleSet } from '../db/database';
@@ -132,8 +133,8 @@ const filteredMyLures = computed(() => {
 const catalogModels = computed(() => [...new Map(filteredMyLures.value.map(lure => [lure.modelId, lure])).values()]);
 const visibleLures = computed(() => (pickerMode.value === 'catalog'
   ? filteredMyLures.value.filter(lure => lure.modelId === catalogModel.value) : filteredMyLures.value)
-  .filter(lure => !onlyOwnedPhotos.value || !isNoaOption(lure) || ownedVariantIds.value.has(lure.variantId)));
-const hasNoaPicker = computed(() => (pickerMode.value === 'catalog' ? props.catalog.filter(c => c.modelId === catalogModel.value) : props.myLures).some(isNoaOption));
+  .filter(lure => !onlyOwnedPhotos.value || !hasLurePhotoDisplay(lure) || ownedVariantIds.value.has(lure.variantId)));
+const hasPhotoPicker = computed(() => (pickerMode.value === 'catalog' ? props.catalog.filter(c => c.modelId === catalogModel.value) : props.myLures).some(hasLurePhotoDisplay));
 
 function switchPicker(mode: 'owned' | 'catalog') {
   pickerMode.value = mode;
@@ -234,20 +235,20 @@ function chooseDictionary(lure: LureOption) {
             <button type="button" class="close-button" aria-label="カラー選択をキャンセル" @click="showColorPicker = false">✕</button>
           </div>
           <input v-model="colorSearch" type="search" class="search-input" aria-label="カラーを検索" placeholder="カラー名で検索" />
-          <div v-if="modelColors.some(isNoaOption)" class="noa-photo-controls" role="group" aria-label="NOAカラー写真の表示">
+          <div v-if="modelColors.some(hasLurePhotoDisplay)" class="noa-photo-controls" role="group" aria-label="カラー写真の表示">
             <button type="button" :aria-pressed="photoView" @click="photoView = true">写真</button><button type="button" :aria-pressed="!photoView" @click="photoView = false">SVG配色</button>
             <label><input v-model="onlyOwnedPhotos" type="checkbox" />所有カラーのみ</label>
           </div>
           <div class="lure-picker-list">
-            <div v-for="lure in filteredColors.slice(0, colorLimit)" :key="lure.variantId" :class="isNoaOption(lure) ? 'noa-photo-card' : 'plain-photo-card'" :data-variant-id="lure.variantId">
+            <div v-for="lure in filteredColors.slice(0, colorLimit)" :key="lure.variantId" :class="hasLurePhotoDisplay(lure) ? 'noa-photo-card' : 'plain-photo-card'" :data-variant-id="lure.variantId">
             <button type="button" class="picker-lure-button" @click="selectColor(lure)">
               <strong>{{ lure.colorName }}</strong>
               <small v-if="isNoaOption(lure) && sharedColorForOption(lure)?.colorCode">カラー番号：{{ sharedColorForOption(lure)?.colorCode }}</small>
               <small>{{ ownedVariantIds.has(lure.variantId) ? '所有' : '未所有' }}</small>
-              <VisualColorPreview v-if="!isNoaOption(lure) && lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
+              <VisualColorPreview v-if="!hasLurePhotoDisplay(lure) && lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
               <small v-if="lure.visualProfile && !lure.visualProfile.confirmed && !lure.visualProfile.userEdited">推定配色・未確認</small>
             </button>
-            <LurePhotoDisplay v-if="isNoaOption(lure)" :option="lure" :prefer-svg="!photoView" />
+            <LurePhotoDisplay v-if="hasLurePhotoDisplay(lure)" :option="lure" :prefer-svg="!photoView" />
             </div>
           </div>
           <p v-if="!filteredColors.length" class="no-lures" role="status">{{ modelColors.length ? '該当するカラーがありません。' : 'このモデルのカラーは登録されていません。' }}</p>
@@ -382,12 +383,12 @@ function chooseDictionary(lure: LureOption) {
             </select>
           </label>
           <p v-if="pickerMode === 'catalog'" class="no-lures">未登録のルアーは、釣果の保存時にマイルアーへ1個登録します。</p>
-          <div v-if="hasNoaPicker" class="noa-photo-controls" role="group" aria-label="NOAカラー写真の表示">
+          <div v-if="hasPhotoPicker" class="noa-photo-controls" role="group" aria-label="カラー写真の表示">
             <button type="button" :aria-pressed="photoView" @click="photoView = true">写真</button><button type="button" :aria-pressed="!photoView" @click="photoView = false">SVG配色</button>
             <label><input v-model="onlyOwnedPhotos" type="checkbox" />所有カラーのみ</label>
           </div>
           <div v-if="visibleLures.length > 0" class="lure-picker-list">
-            <div v-for="lure in visibleLures.slice(0, lureLimit)" :key="lure.id" :class="isNoaOption(lure) ? 'noa-photo-card' : 'plain-photo-card'" :data-variant-id="lure.variantId">
+            <div v-for="lure in visibleLures.slice(0, lureLimit)" :key="lure.id" :class="hasLurePhotoDisplay(lure) ? 'noa-photo-card' : 'plain-photo-card'" :data-variant-id="lure.variantId">
             <button
               type="button"
               class="picker-lure-button"
@@ -409,10 +410,10 @@ function chooseDictionary(lure: LureOption) {
                 {{ lure.seriesName }}
               </small>
               <small v-if="isNoaOption(lure) && sharedColorForOption(lure)?.colorCode">カラー番号：{{ sharedColorForOption(lure)?.colorCode }}</small>
-              <VisualColorPreview v-if="!isNoaOption(lure) && lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
+              <VisualColorPreview v-if="!hasLurePhotoDisplay(lure) && lure.visualColorSnapshot" :appearance="lure.visualColorSnapshot.appearance" :color-values="lure.visualColorSnapshot.colorValues" />
               <small v-if="lure.visualProfile && !lure.visualProfile.confirmed && !lure.visualProfile.userEdited">推定配色・未確認</small>
             </button>
-            <LurePhotoDisplay v-if="isNoaOption(lure)" :option="lure" :prefer-svg="!photoView" />
+            <LurePhotoDisplay v-if="hasLurePhotoDisplay(lure)" :option="lure" :prefer-svg="!photoView" />
             </div>
           </div>
 

@@ -1,0 +1,4518 @@
+[
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 334,
+    "color": "#1 ゴールド",
+    "url": "https://store.castingnet.jp/shop/g/g4573151214993/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933838"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 335,
+    "color": "#10 ダイダイ",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215075/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933989"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 336,
+    "color": "#11 塗っちゃって",
+    "url": "https://fishing-shop-jh.com/?pid=190934005",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 337,
+    "color": "#13 ブラック",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215099/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934076"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 338,
+    "color": "#14 蛍光イエロー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215105/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934082"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 339,
+    "color": "#15 Mグリーン",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215112/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934084"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 340,
+    "color": "#16 チョコレート",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215129/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934089"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 341,
+    "color": "#17 グロー（夜光）",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215136/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 342,
+    "color": "#19 鉄板！！北関東",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215143/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934097"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 343,
+    "color": "#2 シルバー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215006/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933859"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 344,
+    "color": "#20 白龍",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215150/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934099"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 345,
+    "color": "#22 鉄板！！S.T",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215167/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934106"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 346,
+    "color": "#24 ダークオリーブ（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215174/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934108"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 347,
+    "color": "#25 ミルクココア（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215181/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934113"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 348,
+    "color": "#27 表蛍R／裏ゴールド",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215198/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934124"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 349,
+    "color": "#3 Any キャメル",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215013/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933889"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 350,
+    "color": "#30 和からし（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215204/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934137"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 351,
+    "color": "#38 透過チャート",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215228/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934141"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 352,
+    "color": "#48 本日のラッキーカラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934146",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 353,
+    "color": "#49 キュウリ／ホワイト",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215242/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934148"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 354,
+    "color": "#5 鉄板！南関東",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215020/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933902"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 355,
+    "color": "#50 マンゴー／マットブラック",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215259/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934149"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 356,
+    "color": "#59 MMK",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215266/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934150"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 357,
+    "color": "#6 蛍光ピンク",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215037/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 358,
+    "color": "#62 安塚リクエスト",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241999/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934155"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 359,
+    "color": "#7 桃色KO",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215044/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933973"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 360,
+    "color": "#72 K.F.VI",
+    "url": "https://fishing-shop-jh.com/?pid=108305675",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 361,
+    "color": "#73 K.F",
+    "url": "https://store.castingnet.jp/shop/g/g4573151242002/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934169"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 362,
+    "color": "#75 N.02（'11奥山カラー）",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215280/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 363,
+    "color": "#76 K.F II",
+    "url": "https://store.castingnet.jp/shop/g/g4573151242019/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934178"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 364,
+    "color": "#79 K.F.IV",
+    "url": "https://fishing-shop-jh.com/?pid=154657213",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 365,
+    "color": "#80 N.03",
+    "url": "https://store.castingnet.jp/shop/g/g4573151242033/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 366,
+    "color": "#82 2014ノブカラー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151242040/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934185"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 367,
+    "color": "#89 2014福田カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934189",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 368,
+    "color": "#93 2018松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=175617317",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 369,
+    "color": "#94 2019早乙女カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934208",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 370,
+    "color": "#95 2020松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934234",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 371,
+    "color": "#96 2020井野カラー②",
+    "url": "https://fishing-shop-jh.com/?pid=190934240",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 372,
+    "color": "Liberty",
+    "url": "https://t-route.net/products/rodio-craft-spoon-t-route-original-color-%E3%83%AD%E3%83%87%E3%82%AA%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88%E3%82%B9%E3%83%97%E3%83%BC%E3%83%B3t-route%E3%82%AA%E3%83%AA%E3%82%AB%E3%83%A9?variant=44183026630870",
+    "additionalUrls": [],
+    "sourceName": "t-Route",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 373,
+    "color": "Route21",
+    "url": "https://t-route.net/products/rodio-craft-spoon-t-route-original-color-%E3%83%AD%E3%83%87%E3%82%AA%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88%E3%82%B9%E3%83%97%E3%83%BC%E3%83%B3t-route%E3%82%AA%E3%83%AA%E3%82%AB%E3%83%A9?variant=44183026598102",
+    "additionalUrls": [],
+    "sourceName": "t-Route",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 926,
+    "color": "ゴールド",
+    "url": "https://fishing-shop-jh.com/?pid=190933838",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 927,
+    "color": "シルバー",
+    "url": "https://fishing-shop-jh.com/?pid=190933859",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 928,
+    "color": "Any キャメル",
+    "url": "https://fishing-shop-jh.com/?pid=190933889",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 929,
+    "color": "鉄板！南関東",
+    "url": "https://fishing-shop-jh.com/?pid=190933902",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 930,
+    "color": "蛍光ピンク",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082726/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 931,
+    "color": "桃色KO",
+    "url": "https://fishing-shop-jh.com/?pid=190933973",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 932,
+    "color": "ダイダイ",
+    "url": "https://fishing-shop-jh.com/?pid=190933989",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 933,
+    "color": "塗っちゃって",
+    "url": "https://fishing-shop-jh.com/?pid=190934005",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 934,
+    "color": "ブラック",
+    "url": "https://fishing-shop-jh.com/?pid=190934076",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 935,
+    "color": "蛍光イエロー",
+    "url": "https://fishing-shop-jh.com/?pid=190934082",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 936,
+    "color": "Mグリーン",
+    "url": "https://fishing-shop-jh.com/?pid=190934084",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 937,
+    "color": "チョコレート",
+    "url": "https://fishing-shop-jh.com/?pid=190934089",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 938,
+    "color": "グロー（夜光）",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082832/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 939,
+    "color": "鉄板！！北関東",
+    "url": "https://fishing-shop-jh.com/?pid=190934097",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 940,
+    "color": "白龍",
+    "url": "https://fishing-shop-jh.com/?pid=190934099",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 941,
+    "color": "鉄板！！S.T",
+    "url": "https://fishing-shop-jh.com/?pid=190934106",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 942,
+    "color": "ダークオリーブ（マット）",
+    "url": "https://fishing-shop-jh.com/?pid=190934108",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 943,
+    "color": "ミルクココア（マット）",
+    "url": "https://fishing-shop-jh.com/?pid=190934113",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 944,
+    "color": "表蛍R／裏ゴールド",
+    "url": "https://fishing-shop-jh.com/?pid=190934124",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 945,
+    "color": "和からし（マット）",
+    "url": "https://fishing-shop-jh.com/?pid=190934137",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 946,
+    "color": "透過チャート",
+    "url": "https://fishing-shop-jh.com/?pid=190934141",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 947,
+    "color": "本日のラッキーカラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934146",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 948,
+    "color": "キュウリ／ホワイト",
+    "url": "https://fishing-shop-jh.com/?pid=190934148",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 949,
+    "color": "マンゴー／マットブラック",
+    "url": "https://fishing-shop-jh.com/?pid=190934149",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 950,
+    "color": "MMK",
+    "url": "https://fishing-shop-jh.com/?pid=190934150",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 951,
+    "color": "安塚リクエスト",
+    "url": "https://fishing-shop-jh.com/?pid=190934155",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 952,
+    "color": "K.F.VI",
+    "url": "https://fishing-shop-jh.com/?pid=190934165",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 953,
+    "color": "K.F",
+    "url": "https://fishing-shop-jh.com/?pid=190934169",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 954,
+    "color": "N.02（'11奥山カラー）",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215525/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 955,
+    "color": "K.F II",
+    "url": "https://fishing-shop-jh.com/?pid=190934178",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 956,
+    "color": "K.F.IV",
+    "url": "https://fishing-shop-jh.com/?pid=190934183",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 957,
+    "color": "N.03",
+    "url": "https://store.castingnet.jp/shop/g/g4573151242095/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 958,
+    "color": "2014ノブカラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934185",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 959,
+    "color": "2014 福田カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934189",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 961,
+    "color": "2019 早乙女カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934208",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 962,
+    "color": "2020 松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934234",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 963,
+    "color": "2020 井野カラー②",
+    "url": "https://fishing-shop-jh.com/?pid=190934240",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 970,
+    "color": "US-8 イエロー/オレンジ 裏オレンジ",
+    "url": "https://fishing-shop-jh.com/?pid=100207179",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 971,
+    "color": "US-9 ブラックMグリーン",
+    "url": "https://fishing-shop-jh.com/?pid=100207209",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 972,
+    "color": "US-10 イエロー/ミルクココア",
+    "url": "https://fishing-shop-jh.com/?pid=100207212",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 973,
+    "color": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ",
+    "url": "https://fishing-shop-jh.com/?pid=113407930",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 974,
+    "color": "US-12 ブラックチャート",
+    "url": "https://fishing-shop-jh.com/?pid=113407941",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 975,
+    "color": "US-13 ピンクゴールド",
+    "url": "https://fishing-shop-jh.com/?pid=113407961",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 980,
+    "color": "US-8 イエロー/オレンジ 裏オレンジ",
+    "url": "https://fishing-shop-jh.com/?pid=126506491",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 981,
+    "color": "US-9 ブラックMグリーン",
+    "url": "https://fishing-shop-jh.com/?pid=126506528",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 982,
+    "color": "US-10 イエロー/ミルクココア",
+    "url": "https://fishing-shop-jh.com/?pid=126506565",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 983,
+    "color": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ",
+    "url": "https://fishing-shop-jh.com/?pid=126506671",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 984,
+    "color": "US-12 ブラックチャート",
+    "url": "https://fishing-shop-jh.com/?pid=126506704",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 985,
+    "color": "US-13 ピンクゴールド",
+    "url": "https://fishing-shop-jh.com/?pid=126506738",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 986,
+    "color": "ゴールド",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594324/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933838"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 987,
+    "color": "シルバー",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594331/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933859"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 988,
+    "color": "Anyキャメル",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594348/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933889"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 989,
+    "color": "鉄板!!南関東",
+    "url": "https://fishing-shop-jh.com/?pid=148341193",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 990,
+    "color": "蛍光ピンク",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594379/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 991,
+    "color": "桃色KO",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594386/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933973"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 994,
+    "color": "ダイダイ",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594416/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933989"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 995,
+    "color": "塗っちゃって",
+    "url": "https://fishing-shop-jh.com/?pid=190934005",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 996,
+    "color": "ブラック",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594447/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934076"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 997,
+    "color": "蛍光イエロー",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594454/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934082"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 998,
+    "color": "Mグリーン",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594461/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934084"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 999,
+    "color": "チョコレート",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594478/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934089"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1000,
+    "color": "グロー（夜光）",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594485/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1001,
+    "color": "鉄板!!北関東",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594508/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934097"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1002,
+    "color": "白龍",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594515/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934099"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1003,
+    "color": "鉄板!!S.T",
+    "url": "https://fishing-shop-jh.com/?pid=190934106",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1004,
+    "color": "ダークオリーブ（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594522/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934108"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1005,
+    "color": "ミルクココア（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594539/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934113"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1007,
+    "color": "和からし（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594560/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934137"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1008,
+    "color": "夕立の空",
+    "url": "https://fishing-shop-jh.com/?pid=164474790",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1010,
+    "color": "透過チャート",
+    "url": "https://store.castingnet.jp/shop/g/g4571385594607/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934141"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1011,
+    "color": "本日のラッキーカラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934146",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1012,
+    "color": "キュウリ/ホワイト",
+    "url": "https://fishing-shop-jh.com/?pid=190934148",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1014,
+    "color": "MMK",
+    "url": "https://fishing-shop-jh.com/?pid=190934150",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1015,
+    "color": "安塚リクエスト",
+    "url": "https://store.castingnet.jp/shop/g/g4573151242118/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934155"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1020,
+    "color": "N.O3",
+    "url": "https://fishing-shop-jh.com/?pid=154655230",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1021,
+    "color": "2014ノブカラー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151242156/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934185"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1022,
+    "color": "2014福田カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934189",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1023,
+    "color": "2018松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=175618274",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1024,
+    "color": "2019早乙女カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934208",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1025,
+    "color": "2020松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934234",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 1356,
+    "color": "ハニートラップ",
+    "url": "https://fishing-shop-jh.com/?pid=180546010",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 1378,
+    "color": "ゴールドエンド",
+    "url": "https://store.castingnet.jp/shop/g/g4573151231068/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1390,
+    "color": "#50 マンゴー／マットブラック",
+    "url": "https://fishing-shop-jh.com/?pid=190934149",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1391,
+    "color": "#73 K.F",
+    "url": "https://fishing-shop-jh.com/?pid=190934169",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1409,
+    "color": "ゴールドエンド",
+    "url": "https://fishing-shop-jh.com/?pid=180546427",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1410,
+    "color": "ハニートラップ",
+    "url": "https://fishing-shop-jh.com/?pid=180546432",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1424,
+    "color": "#1 ゴールド",
+    "url": "https://store.castingnet.jp/shop/g/g4571169081873/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933838"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1425,
+    "color": "#2 シルバー",
+    "url": "https://store.castingnet.jp/shop/g/g4571169081880/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933859"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1426,
+    "color": "#3 Any キャメル",
+    "url": "https://store.castingnet.jp/shop/g/g4571169088742/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933889"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1427,
+    "color": "#5 鉄板！南関東",
+    "url": "https://store.castingnet.jp/shop/g/g4571169088759/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933902"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1428,
+    "color": "#6 蛍光ピンク",
+    "url": "https://store.castingnet.jp/shop/g/g4571169081927/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1429,
+    "color": "#7 桃色KO",
+    "url": "https://store.castingnet.jp/shop/g/g4571169088766/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933973"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1432,
+    "color": "#10 ダイダイ",
+    "url": "https://fishing-shop-jh.com/?pid=190933989",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1433,
+    "color": "#11 塗っちゃって",
+    "url": "https://fishing-shop-jh.com/?pid=190934005",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1434,
+    "color": "#13 ブラック",
+    "url": "https://store.castingnet.jp/shop/g/g4571169081996/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934076"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1435,
+    "color": "#14 蛍光イエロー",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082009/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934082"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1436,
+    "color": "#15 Mグリーン",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082016/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934084"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1437,
+    "color": "#16 チョコレート",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082023/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934089"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1438,
+    "color": "#17 グロー（夜光）",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082030/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1439,
+    "color": "#19 鉄板！！北関東",
+    "url": "https://fishing-shop-jh.com/?pid=190934097",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1440,
+    "color": "#20 白龍",
+    "url": "https://store.castingnet.jp/shop/g/g4571169088810/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934099"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1441,
+    "color": "#22 鉄板！！S.T",
+    "url": "https://fishing-shop-jh.com/?pid=190934106",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1442,
+    "color": "#24 ダークオリーブ（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082078/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934108"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1443,
+    "color": "#25 ミルクココア（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082085/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934113"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1444,
+    "color": "#27 表蛍R／裏ゴールド",
+    "url": "https://fishing-shop-jh.com/?pid=190934124",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1445,
+    "color": "#30 和からし（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082115/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934137"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1447,
+    "color": "#38 透過チャート",
+    "url": "https://store.castingnet.jp/shop/g/g4571169088834/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934141"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1448,
+    "color": "#48 本日のラッキーカラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934146",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1449,
+    "color": "#49 キュウリ／ホワイト",
+    "url": "https://fishing-shop-jh.com/?pid=190934148",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1450,
+    "color": "#50 マンゴー／マットブラック",
+    "url": "https://fishing-shop-jh.com/?pid=190934149",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1451,
+    "color": "#59 MMK",
+    "url": "https://fishing-shop-jh.com/?pid=190934150",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1452,
+    "color": "#62 安塚リクエスト",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241722/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934155"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1453,
+    "color": "#72 K.F.VI",
+    "url": "https://fishing-shop-jh.com/?pid=190913103",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1454,
+    "color": "#73 K.F",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241739/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934169"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1455,
+    "color": "#75 N.02（'11奥山カラー）",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215341/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1456,
+    "color": "#76 K.F II",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241746/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934178"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1457,
+    "color": "#79 K.F.IV",
+    "url": "https://fishing-shop-jh.com/?pid=190913133",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1459,
+    "color": "#82 2014ノブカラー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241760/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934185"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1460,
+    "color": "#89 2014福田カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934189",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1461,
+    "color": "#93 2018松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190913343",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1462,
+    "color": "#94 2019早乙女カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934208",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1463,
+    "color": "#95 2020松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934234",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1464,
+    "color": "#96 2020井野カラー②",
+    "url": "https://fishing-shop-jh.com/?pid=190934240",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1480,
+    "color": "カステラ",
+    "url": "https://fishing-shop-jh.com/?pid=167608634",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1481,
+    "color": "ゴージャスペレット",
+    "url": "https://fishing-shop-jh.com/?pid=180545938",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1485,
+    "color": "マダムオリーブ",
+    "url": "https://fishing-shop-jh.com/?pid=172647997",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1488,
+    "color": "ヤドク",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1489,
+    "color": "レモン牛乳",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1491,
+    "color": "放流枝豆",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1493,
+    "color": "栃おとめ",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1495,
+    "color": "腹黒",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1496,
+    "color": "腹黒Ⅱ",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1499,
+    "color": "#1 ゴールド",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082177/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933838"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1500,
+    "color": "#2 シルバー",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082184/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933859"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1501,
+    "color": "#3 Any キャメル",
+    "url": "https://store.castingnet.jp/shop/g/g4571169088841/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933889"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1502,
+    "color": "#5 鉄板！南関東",
+    "url": "https://store.castingnet.jp/shop/g/g4571169088858/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933902"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1503,
+    "color": "#6 蛍光ピンク",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082221/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1504,
+    "color": "#7 桃色KO",
+    "url": "https://store.castingnet.jp/shop/g/g4571169088865/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933973"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1505,
+    "color": "#8 青雲",
+    "url": "https://fishing-shop-jh.com/?pid=148327444",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1507,
+    "color": "#10 ダイダイ",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082269/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933989"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1508,
+    "color": "#11 塗っちゃって",
+    "url": "https://fishing-shop-jh.com/?pid=190934005",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1509,
+    "color": "#13 ブラック",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082290/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934076"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1510,
+    "color": "#14 蛍光イエロー",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082306/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934082"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1511,
+    "color": "#15 Mグリーン",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082313/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934084"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1512,
+    "color": "#16 チョコレート",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082320/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934089"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1513,
+    "color": "#17 グロー（夜光）",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082337/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1514,
+    "color": "#19 鉄板！！北関東",
+    "url": "https://store.castingnet.jp/shop/g/g4571169088902/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934097"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1515,
+    "color": "#20 白龍",
+    "url": "https://store.castingnet.jp/shop/g/g4571169088919/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934099"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1516,
+    "color": "#22 鉄板！！S.T",
+    "url": "https://fishing-shop-jh.com/?pid=190934106",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1517,
+    "color": "#24 ダークオリーブ（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082375/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934108"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1518,
+    "color": "#25 ミルクココア（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082382/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934113"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1519,
+    "color": "#27 表蛍R／裏ゴールド",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082405/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934124"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1520,
+    "color": "#30 和からし（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571169082412/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934137"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1522,
+    "color": "#38 透過チャート",
+    "url": "https://store.castingnet.jp/shop/g/g4571169088933/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934141"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1523,
+    "color": "#48 本日のラッキーカラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934146",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1524,
+    "color": "#49 キュウリ／ホワイト",
+    "url": "https://fishing-shop-jh.com/?pid=190934148",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1525,
+    "color": "#50 マンゴー／マットブラック",
+    "url": "https://fishing-shop-jh.com/?pid=190934149",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1526,
+    "color": "#59 MMK",
+    "url": "https://fishing-shop-jh.com/?pid=190934150",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1527,
+    "color": "#62 安塚リクエスト",
+    "url": "https://fishing-shop-jh.com/?pid=190934155",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1528,
+    "color": "#72 K.F.VI",
+    "url": "https://fishing-shop-jh.com/?pid=111535873",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1529,
+    "color": "#73 K.F",
+    "url": "https://fishing-shop-jh.com/?pid=190934169",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1530,
+    "color": "#75 N.02（'11奥山カラー）",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215464/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1531,
+    "color": "#76 K.F II",
+    "url": "https://fishing-shop-jh.com/?pid=190934178",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1532,
+    "color": "#79 K.F.IV",
+    "url": "https://fishing-shop-jh.com/?pid=154669449",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1534,
+    "color": "#82 2014ノブカラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934185",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1535,
+    "color": "#89 2014福田カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934189",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1536,
+    "color": "#93 2018松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=175616277",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1537,
+    "color": "#94 2019早乙女カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934208",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1538,
+    "color": "#95 2020松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934234",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1539,
+    "color": "#96 2020井野カラー②",
+    "url": "https://fishing-shop-jh.com/?pid=190934240",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1563,
+    "color": "ヤドク",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1564,
+    "color": "レモン牛乳",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1566,
+    "color": "放流枝豆",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1568,
+    "color": "栃おとめ",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1570,
+    "color": "腹黒",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.4g",
+    "variantId": 1571,
+    "color": "腹黒Ⅱ",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1574,
+    "color": "#1 ゴールド",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237107/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933838"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1575,
+    "color": "#2 シルバー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237114/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933859"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1576,
+    "color": "#3 Any キャメル",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237121/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933889"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1577,
+    "color": "#5 鉄板！南関東",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237138/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933902"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1578,
+    "color": "#6 蛍光ピンク",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237145/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1579,
+    "color": "#7 桃色KO",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237152/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933973"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1582,
+    "color": "#10 ダイダイ",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237183/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933989"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1583,
+    "color": "#11 塗っちゃって",
+    "url": "https://fishing-shop-jh.com/?pid=190934005",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1584,
+    "color": "#13 ブラック",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237206/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934076"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1585,
+    "color": "#14 蛍光イエロー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237213/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934082"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1586,
+    "color": "#15 Mグリーン",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237220/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934084"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1587,
+    "color": "#16 チョコレート",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237237/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934089"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1588,
+    "color": "#17 グロー（夜光）",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237244/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1589,
+    "color": "#19 鉄板！！北関東",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237251/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934097"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1590,
+    "color": "#20 白龍",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237268/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934099"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1591,
+    "color": "#22 鉄板！！S.T",
+    "url": "https://store.castingnet.jp/shop/g/g4573151237275/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934106"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1592,
+    "color": "#24 ダークオリーブ（マット）",
+    "url": "https://fishing-shop-jh.com/?pid=190934108",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1593,
+    "color": "#25 ミルクココア（マット）",
+    "url": "https://fishing-shop-jh.com/?pid=190934113",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1594,
+    "color": "#27 表蛍R／裏ゴールド",
+    "url": "https://fishing-shop-jh.com/?pid=190934124",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1595,
+    "color": "#30 和からし（マット）",
+    "url": "https://fishing-shop-jh.com/?pid=190934137",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1597,
+    "color": "#38 透過チャート",
+    "url": "https://fishing-shop-jh.com/?pid=190934141",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1598,
+    "color": "#48 本日のラッキーカラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934146",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1599,
+    "color": "#49 キュウリ／ホワイト",
+    "url": "https://fishing-shop-jh.com/?pid=190934148",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1600,
+    "color": "#50 マンゴー／マットブラック",
+    "url": "https://fishing-shop-jh.com/?pid=190934149",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1601,
+    "color": "#59 MMK",
+    "url": "https://fishing-shop-jh.com/?pid=190934150",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1602,
+    "color": "#62 安塚リクエスト",
+    "url": "https://fishing-shop-jh.com/?pid=190934155",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1603,
+    "color": "#72 K.F.VI",
+    "url": "https://fishing-shop-jh.com/?pid=145668461",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1604,
+    "color": "#73 K.F",
+    "url": "https://fishing-shop-jh.com/?pid=190934169",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1606,
+    "color": "#76 K.F II",
+    "url": "https://fishing-shop-jh.com/?pid=190934178",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1607,
+    "color": "#79 K.F.IV",
+    "url": "https://fishing-shop-jh.com/?pid=154667795",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1609,
+    "color": "#82 2014ノブカラー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241920/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934185"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1610,
+    "color": "#89 2014福田カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934189",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1611,
+    "color": "#93 2018松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=175616658",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1612,
+    "color": "#94 2019早乙女カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934208",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1613,
+    "color": "#95 2020松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934234",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1614,
+    "color": "#96 2020井野カラー②",
+    "url": "https://fishing-shop-jh.com/?pid=190934240",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1624,
+    "color": "US-10 イエロー/ミルクココア",
+    "url": "https://fishing-shop-jh.com/?pid=191995617",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1626,
+    "color": "US-12 ブラックチャート",
+    "url": "https://fishing-shop-jh.com/?pid=191995626",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1627,
+    "color": "US-13 ピンクゴールド",
+    "url": "https://fishing-shop-jh.com/?pid=191995631",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1635,
+    "color": "マダムオリーブ",
+    "url": "https://fishing-shop-jh.com/?pid=187095197",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1649,
+    "color": "#1 ゴールド",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599282/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933838"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1650,
+    "color": "#2 シルバー",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599299/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933859"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1651,
+    "color": "#3 Any キャメル",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599305/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933889"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1652,
+    "color": "#5 鉄板！南関東",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599329/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933902"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1653,
+    "color": "#6 蛍光ピンク",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599336/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1654,
+    "color": "#7 桃色KO",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599343/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933973"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1657,
+    "color": "#10 ダイダイ",
+    "url": "https://fishing-shop-jh.com/?pid=190933989",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1658,
+    "color": "#11 塗っちゃって",
+    "url": "https://fishing-shop-jh.com/?pid=190934005",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1659,
+    "color": "#13 ブラック",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599404/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934076"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1660,
+    "color": "#14 蛍光イエロー",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599411/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934082"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1661,
+    "color": "#15 Mグリーン",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599428/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934084"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1662,
+    "color": "#16 チョコレート",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599435/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934089"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1663,
+    "color": "#17 グロー（夜光）",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599442/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1664,
+    "color": "#19 鉄板！！北関東",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599466/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934097"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1665,
+    "color": "#20 白龍",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599473/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934099"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1666,
+    "color": "#22 鉄板！！S.T",
+    "url": "https://fishing-shop-jh.com/?pid=190934106",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1667,
+    "color": "#24 ダークオリーブ（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599480/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934108"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1668,
+    "color": "#25 ミルクココア（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599497/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934113"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1669,
+    "color": "#27 表蛍R／裏ゴールド",
+    "url": "https://fishing-shop-jh.com/?pid=190934124",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1670,
+    "color": "#30 和からし（マット）",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599527/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934137"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1672,
+    "color": "#38 透過チャート",
+    "url": "https://store.castingnet.jp/shop/g/g4571385599565/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934141"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1673,
+    "color": "#48 本日のラッキーカラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934146",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1674,
+    "color": "#49 キュウリ／ホワイト",
+    "url": "https://fishing-shop-jh.com/?pid=190934148",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1675,
+    "color": "#50 マンゴー／マットブラック",
+    "url": "https://fishing-shop-jh.com/?pid=190934149",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1676,
+    "color": "#59 MMK",
+    "url": "https://fishing-shop-jh.com/?pid=190934150",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1677,
+    "color": "#62 安塚リクエスト",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241777/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934155"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1678,
+    "color": "#72 K.F.VI",
+    "url": "https://fishing-shop-jh.com/?pid=190951687",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1679,
+    "color": "#73 K.F",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241784/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934169"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1680,
+    "color": "#75 N.02（'11奥山カラー）",
+    "url": "https://store.castingnet.jp/shop/g/g4573151215402/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1681,
+    "color": "#76 K.F II",
+    "url": "https://fishing-shop-jh.com/?pid=190934178",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1682,
+    "color": "#79 K.F.IV",
+    "url": "https://fishing-shop-jh.com/?pid=190951713",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1684,
+    "color": "#82 2014ノブカラー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241814/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934185"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1685,
+    "color": "#89 2014福田カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934189",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1686,
+    "color": "#93 2018松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190951743",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1687,
+    "color": "#94 2019早乙女カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934208",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1688,
+    "color": "#95 2020松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934234",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1689,
+    "color": "#96 2020井野カラー②",
+    "url": "https://fishing-shop-jh.com/?pid=190934240",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1695,
+    "color": "2024井野カラー",
+    "url": "https://fishing-shop-jh.com/?pid=183533481",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1699,
+    "color": "US-10 イエロー/ミルクココア",
+    "url": "https://fishing-shop-jh.com/?pid=99940848",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1700,
+    "color": "US-11 表グローオリーブ ブルードット 裏ダークオリーブ",
+    "url": "https://fishing-shop-jh.com/?pid=113407845",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1701,
+    "color": "US-12 ブラックチャート",
+    "url": "https://fishing-shop-jh.com/?pid=113407891",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1702,
+    "color": "US-13 ピンクゴールド",
+    "url": "https://fishing-shop-jh.com/?pid=113407905",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1703,
+    "color": "US-8 イエロー/オレンジ 裏オレンジ",
+    "url": "https://fishing-shop-jh.com/?pid=99940716",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1704,
+    "color": "US-9 ブラックMグリーン",
+    "url": "https://fishing-shop-jh.com/?pid=99940773",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1713,
+    "color": "ヤドク",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1714,
+    "color": "レモン牛乳",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1716,
+    "color": "放流枝豆",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1718,
+    "color": "栃おとめ",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1720,
+    "color": "腹黒",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1721,
+    "color": "腹黒Ⅱ",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_noa_noa_jr/",
+    "additionalUrls": [],
+    "sourceName": "JOINTER / WILD-1",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1724,
+    "color": "#1 ゴールド",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232096/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933838"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1725,
+    "color": "#2 シルバー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232102/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933859"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1726,
+    "color": "#3 Any キャメル",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232119/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933889"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1727,
+    "color": "#5 鉄板！南関東",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232126/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933902"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1728,
+    "color": "#6 蛍光ピンク",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232133/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1729,
+    "color": "#7 桃色KO",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232140/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933973"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1730,
+    "color": "#8 青雲",
+    "url": "https://fishing-shop-jh.com/?pid=137515218",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1731,
+    "color": "#9 イエロー",
+    "url": "https://fishing-shop-jh.com/?pid=137515236",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1732,
+    "color": "#10 ダイダイ",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232171/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190933989"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1733,
+    "color": "#11 塗っちゃって",
+    "url": "https://fishing-shop-jh.com/?pid=190934005",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1734,
+    "color": "#13 ブラック",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232195/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934076"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1735,
+    "color": "#14 蛍光イエロー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232201/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934082"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1736,
+    "color": "#15 Mグリーン",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232218/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934084"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1737,
+    "color": "#16 チョコレート",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232225/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934089"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1738,
+    "color": "#17 グロー（夜光）",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232232/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1739,
+    "color": "#19 鉄板！！北関東",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232249/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934097"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1740,
+    "color": "#20 白龍",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232256/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934099"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1741,
+    "color": "#22 鉄板！！S.T",
+    "url": "https://store.castingnet.jp/shop/g/g4573151232263/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934106"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1742,
+    "color": "#24 ダークオリーブ（マット）",
+    "url": "https://fishing-shop-jh.com/?pid=190934108",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1743,
+    "color": "#25 ミルクココア（マット）",
+    "url": "https://fishing-shop-jh.com/?pid=190934113",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1744,
+    "color": "#27 表蛍R／裏ゴールド",
+    "url": "https://fishing-shop-jh.com/?pid=190934124",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1745,
+    "color": "#30 和からし（マット）",
+    "url": "https://fishing-shop-jh.com/?pid=190934137",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1747,
+    "color": "#38 透過チャート",
+    "url": "https://fishing-shop-jh.com/?pid=190934141",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1748,
+    "color": "#48 本日のラッキーカラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934146",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1749,
+    "color": "#49 キュウリ／ホワイト",
+    "url": "https://fishing-shop-jh.com/?pid=190934148",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1750,
+    "color": "#50 マンゴー／マットブラック",
+    "url": "https://fishing-shop-jh.com/?pid=190934149",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1751,
+    "color": "#59 MMK",
+    "url": "https://fishing-shop-jh.com/?pid=190934150",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1752,
+    "color": "#62 安塚リクエスト",
+    "url": "https://fishing-shop-jh.com/?pid=190934155",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1753,
+    "color": "#72 K.F.VI",
+    "url": "https://fishing-shop-jh.com/?pid=137516205",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1754,
+    "color": "#73 K.F",
+    "url": "https://fishing-shop-jh.com/?pid=190934169",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1756,
+    "color": "#76 K.F II",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241951/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934178"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1757,
+    "color": "#79 K.F.IV",
+    "url": "https://fishing-shop-jh.com/?pid=154666898",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1758,
+    "color": "#80 N.03",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241975/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1759,
+    "color": "#82 2014ノブカラー",
+    "url": "https://store.castingnet.jp/shop/g/g4573151241982/",
+    "additionalUrls": [
+      "https://fishing-shop-jh.com/?pid=190934185"
+    ],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1760,
+    "color": "#89 2014福田カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934189",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1761,
+    "color": "#93 2018松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=175617005",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1762,
+    "color": "#94 2019早乙女カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934208",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1763,
+    "color": "#95 2020松本カラー",
+    "url": "https://fishing-shop-jh.com/?pid=190934234",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1764,
+    "color": "#96 2020井野カラー②",
+    "url": "https://fishing-shop-jh.com/?pid=190934240",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1774,
+    "color": "US-10 イエロー/ミルクココア",
+    "url": "https://fishing-shop-jh.com/?pid=191995656",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1777,
+    "color": "US-13 ピンクゴールド",
+    "url": "https://fishing-shop-jh.com/?pid=191995665",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1779,
+    "color": "US-9 ブラックMグリーン",
+    "url": "https://fishing-shop-jh.com/?pid=191995650",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1783,
+    "color": "ハニートラップ",
+    "url": "https://fishing-shop-jh.com/?pid=180545997",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 1799,
+    "color": "放流オレピン",
+    "url": "https://fishing-shop-jh.com/?pid=172648049",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 1801,
+    "color": "グリーンチャート",
+    "url": "https://fishing-shop-jh.com/?pid=166352554",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 1811,
+    "color": "復刻 T.SIV",
+    "url": "https://store.shopping.yahoo.co.jp/windsweb2/rodeo-noa18-1091.html",
+    "additionalUrls": [],
+    "sourceName": "ウインズ",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 1812,
+    "color": "グリーンチャート",
+    "url": "https://fishing-shop-jh.com/?pid=166352563",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 1820,
+    "color": "Mr.御殿場",
+    "url": "https://store.castingnet.jp/shop/g/g4571385596854/",
+    "additionalUrls": [],
+    "sourceName": "キャスティング",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 2.1g",
+    "variantId": 1823,
+    "color": "グリーンチャート",
+    "url": "https://fishing-shop-jh.com/?pid=172357163",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 0.9g",
+    "variantId": 1834,
+    "color": "グリーンチャート",
+    "url": "https://fishing-shop-jh.com/?pid=166352342",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1854,
+    "color": "放流オレピン",
+    "url": "https://fishing-shop-jh.com/?pid=189679913",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1856,
+    "color": "グリーンチャート",
+    "url": "https://fishing-shop-jh.com/?pid=184568655",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 1857,
+    "color": "2024福田カラー",
+    "url": "https://store.shopping.yahoo.co.jp/fishing-natsume/4573151270579.html",
+    "additionalUrls": [],
+    "sourceName": "なつめ釣具",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1865,
+    "color": "放流オレピン",
+    "url": "https://fishing-shop-jh.com/?pid=172648015",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1867,
+    "color": "グリーンチャート",
+    "url": "https://fishing-shop-jh.com/?pid=166352468",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA Jr.",
+    "model": "NOA Jr. 1.2g",
+    "variantId": 1868,
+    "color": "2024福田カラー",
+    "url": "https://fishing-shop-jh.com/?pid=183533459",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 1876,
+    "color": "放流オレピン",
+    "url": "https://fishing-shop-jh.com/?pid=183651050",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 9963,
+    "color": "ゲンちゃんブラウニー",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-15-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 9964,
+    "color": "キャンタの飛沫",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-15-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 9965,
+    "color": "ソルティマジョーラ改",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-15-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 9966,
+    "color": "茶ッキン",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-15-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 9967,
+    "color": "SHOW",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-15-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.5g",
+    "variantId": 9968,
+    "color": "クズブルー",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-15-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 9969,
+    "color": "ゲンちゃんブラウニー",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-18-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 9970,
+    "color": "キャンタの飛沫",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-18-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 9971,
+    "color": "ソルティマジョーラ改",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-18-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 9972,
+    "color": "茶ッキン",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-18-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 9973,
+    "color": "SHOW",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-18-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 9974,
+    "color": "クズブルー",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-18-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 9975,
+    "color": "ゲンちゃんブラウニー",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s10-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 9976,
+    "color": "キャンタの飛沫",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s10-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 9977,
+    "color": "ソルティマジョーラ改",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s10-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 9978,
+    "color": "茶ッキン",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s10-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 9979,
+    "color": "SHOW",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s10-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.0g",
+    "variantId": 9980,
+    "color": "クズブルー",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s10-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 9981,
+    "color": "ゲンちゃんブラウニー",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s14-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 9982,
+    "color": "キャンタの飛沫",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s14-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 9983,
+    "color": "ソルティマジョーラ改",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s14-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 9984,
+    "color": "茶ッキン",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s14-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 9985,
+    "color": "SHOW",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s14-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA S",
+    "model": "NOA S 1.4g",
+    "variantId": 9986,
+    "color": "クズブルー",
+    "url": "https://store.shopping.yahoo.co.jp/openwater/noa-s14-forodox.html",
+    "additionalUrls": [],
+    "sourceName": "オープンウォーター",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "NOA",
+    "model": "NOA 1.8g",
+    "variantId": 9987,
+    "color": "エルドラド",
+    "url": "https://fishing-shop-jh.com/?pid=176993639",
+    "additionalUrls": [],
+    "sourceName": "城峰釣具店",
+    "checkedAt": "2026-11-23"
+  }
+]

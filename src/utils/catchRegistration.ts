@@ -3,6 +3,7 @@ import { db, validateWeatherObservation, isUsableOwnedLure, validateFishCatch, v
 import { snapshotTackle, tackleTables } from './tackleManagement'
 import { fishSnapshot } from './fishSpecies'
 import { resolveCatchLocation, type CatchLocationSelection } from './tripLocations'
+import type { ExternalModelDetails } from '../data/lureExternalReferences'
 
 export type LureSelection =
   | { kind: 'owned'; myLureId: number }
@@ -11,6 +12,8 @@ export type LureSelection =
   | { kind: 'manual'; lureName: string; lureColor: string }
 
 export interface LureOption {
+  modelDetails?: ExternalModelDetails
+  externalColorCode?: string
   identity?: VisualIdentity
   visualColorSnapshot?: VisualColorSnapshot
   visualProfile?: LureVisualProfile
@@ -182,6 +185,14 @@ export async function loadLureChoices(tripId?: number) {
       const colors = profile ? new Set(Object.values(profile.appearance.regions).flatMap(r => r!.colors)) : new Set<string>()
       catalog.push({ id: variant.id, variantId: variant.id, modelId: model.id,
         identity: visualIdentityForVariant(variant, model, parent, manufacturer),
+        modelDetails: {
+          weightG: model.weightG,
+          lengthMm: model.lengthMm,
+          actionType: model.actionType,
+          buoyancy: variant.catalogEvidence?.buoyancy,
+          rattle: variant.catalogEvidence?.rattle,
+        },
+        externalColorCode: variant.catalogEvidence?.colorCode,
         ...(profile ? { visualProfile: profile, visualColorSnapshot: { version: 1 as const, appearance: structuredClone(profile.appearance), colorValues: Object.fromEntries(visualPalette.filter(c => colors.has(c[0])).map(c => [c[0], c[2]])), origin: profile.origin, confirmed: profile.confirmed } } : {}),
         manufacturerName: manufacturer.name, seriesName: parent.name, modelName: model.name,
         colorName: variant.colorName, category: model.category ?? 'その他' })

@@ -2,6 +2,7 @@ import { db } from '../db/database'
 import type { SharedLureColor, LureColorPhoto, LurePhotoBlob, PhotoFace } from '../db/lurePhotoTypes'
 import { photoOptionIdentity, sharedColorForOption, modelProductLinkForOption, retailerProductLinkForOption, externalImageForOption, validateProductUrl, noaFamilyKey, type PhotoOption } from './noaPhotoCatalog'
 import { noaUnavailableProductLinks } from '../data/noaUnavailableProductLinks'
+import { resolveLureExternalReference, type ExternalPhotoOption } from './lureExternalCatalog'
 
 export const photoTableNames = ['sharedLureColors', 'lureColorPhotoLinks', 'lureColorPhotos', 'lurePhotoBlobs'] as const
 export const photoLimits = { inputBytes: 15 * 1024 * 1024, storedBytes: 2 * 1024 * 1024, edge: 1280, pixels: 40_000_000, archiveBytes: 150 * 1024 * 1024 }
@@ -24,9 +25,14 @@ export async function photoDetails(option: PhotoOption) {
   const [stored, rows] = await Promise.all([db.sharedLureColors.get(derived.id), db.lureColorPhotos.where('sharedColorId').equals(derived.id).toArray()])
   return { shared: stored ?? derived, hasStoredShared: !!stored, photos: rows.filter(p => !p.variantIdentity || p.variantIdentity === photoOptionIdentity(option)) }
 }
-export async function resolveColorPhoto(option: PhotoOption, face: PhotoFace = 'front') {
+export async function resolveColorPhoto(option: ExternalPhotoOption, face: PhotoFace = 'front') {
   const detail = await photoDetails(option)
-  if (!detail) return undefined
+  if (!detail) {
+    const reference = resolveLureExternalReference(option)
+    if (!reference) return undefined
+    return { ...reference, local: [], faces: [] as PhotoFace[], additionalProductLinks: [],
+      imageReference: face === 'front' ? reference.imageReference : undefined }
+  }
   const eligible = detail.photos.filter(p => p.verificationStatus === 'verified')
   const local = eligible.filter(p => p.imageAvailability === 'local' && p.imageType === face && p.blobId && ['user-owned', 'permitted'].includes(p.rightsStatus))
     .sort((a, b) => Number(!!b.variantIdentity) - Number(!!a.variantIdentity) || b.updatedAt.localeCompare(a.updatedAt) || b.id.localeCompare(a.id))

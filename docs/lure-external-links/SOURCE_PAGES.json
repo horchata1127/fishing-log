@@ -1,0 +1,2586 @@
+[
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+    "origins": [
+      "backup-manufacturer",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+    "origins": [
+      "backup-manufacturer",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0025",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+    "origins": [
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096",
+    "origins": [
+      "backup-retailer",
+      "manifest-retailer",
+      "manifest-source"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0096",
+    "origins": [
+      "backup-retailer",
+      "manifest-retailer",
+      "manifest-source"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+    "origins": [
+      "backup-manufacturer",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+    "origins": [
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049",
+    "origins": [
+      "backup-retailer",
+      "manifest-retailer",
+      "manifest-source"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&p=2&type=0049",
+    "origins": [
+      "backup-retailer",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+    "origins": [
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050",
+    "origins": [
+      "backup-retailer",
+      "manifest-retailer",
+      "manifest-source"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール F",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/tearo/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.6g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/tearo/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/tearo/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 0.8g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/chibitearo/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/chibitearo/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1.2g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/chibitearo/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Apeed!",
+    "model": "Apeed! 2.3g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/apeed/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Apeed!",
+    "model": "Apeed! 2.7g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/apeed/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Apeed!",
+    "model": "Apeed! 3.3g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/apeed/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "REKUZE",
+    "model": "REKUZE 0.6g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rekuze/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "REKUZE",
+    "model": "REKUZE 1g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rekuze/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "REKUZE",
+    "model": "REKUZE 1.7g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rekuze/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602267",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602257",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602258",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602260",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602263",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602264",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602265",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602266",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4301063",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4301065",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4E02733",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4E02738",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4301064",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602271",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602272",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602273",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602274",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602276",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602277",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4301077",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4301078",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4301073",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4301076",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4E02735",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4E02737",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602270",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Rhomy",
+    "model": "Rhomy 2.1g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rhomy/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Rhomy",
+    "model": "Rhomy 2.4g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rhomy/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Rhomy",
+    "model": "Rhomy 3.1g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rhomy/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Rhomy",
+    "model": "Rhomy 3.9g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rhomy/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.8g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.8g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602296",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.8g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602297",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.8g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4301071",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.8g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602289",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.8g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4301069",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.8g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4E02677",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.8g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G4301070",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.8g",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602292",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA S",
+    "kind": "product",
+    "url": "https://t-route.net/products/ussa-rodiocraft",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA S",
+    "kind": "product",
+    "url": "https://island.shop-pro.jp/?pid=182831994",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA S",
+    "kind": "product",
+    "url": "https://riverroad1091.shop/?pid=193297586",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA S",
+    "kind": "product",
+    "url": "https://andfield365.jp/products/ロデオクラフト-ウッサ-2026-シグネイチャーカラー",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA S",
+    "kind": "product",
+    "url": "https://riverroad1091.shop/?pid=145456100",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA S",
+    "kind": "product",
+    "url": "https://any-netshop.shop-pro.jp/?pid=182928376",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA S",
+    "kind": "product",
+    "url": "https://store.shopping.yahoo.co.jp/backlash/y-4573151227955.html",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA S",
+    "kind": "product",
+    "url": "https://www.jointer.jp/product/detail/rodio_craft_ussa/",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA XS",
+    "kind": "product",
+    "url": "https://t-route.net/products/ussa-rodiocraft",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA XS",
+    "kind": "product",
+    "url": "https://island.shop-pro.jp/?pid=182831994",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA XS",
+    "kind": "product",
+    "url": "https://riverroad1091.shop/?pid=193297586",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA XS",
+    "kind": "product",
+    "url": "https://andfield365.jp/products/ロデオクラフト-ウッサ-2026-シグネイチャーカラー",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA XS",
+    "kind": "product",
+    "url": "https://riverroad1091.shop/?pid=145456100",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA XS",
+    "kind": "product",
+    "url": "https://any-netshop.shop-pro.jp/?pid=182928518",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA XS",
+    "kind": "product",
+    "url": "https://store.shopping.yahoo.co.jp/backlash/y-4573151249339.html",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "USSA XS Non Rattle",
+    "kind": "product",
+    "url": "https://t-route.net/products/ussa-rodiocraft",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "Fat USSA Jr. XS",
+    "kind": "product",
+    "url": "https://riverroad1091.shop/?pid=193025491",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "USSA",
+    "model": "Fat USSA Jr. XS",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=192717778",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "Powale",
+    "model": "PO-32F",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-powale",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "Powale",
+    "model": "PO-22F",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-snackpowale",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "Powale",
+    "model": "PO-32FR",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-powale-sinrattle",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "GANOFF",
+    "model": "GA-24S",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-ganoff",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "GANOFF",
+    "model": "GA-24HS",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-ganoff",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "GANOFF",
+    "model": "GA-31S",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-grande-ganoff",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "Galette",
+    "model": "GL-31F",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-galette",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/kurun/kurun.html",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "ルラン",
+    "model": "ルラン 0.8g",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=193968893",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/pepino/",
+    "origins": [
+      "backup-product",
+      "backup-manufacturer",
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA SR-HF 2HOOK",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4571385603859/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA SR-FⅡ 2HOOK",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151265520/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA SR-SS",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151265568/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA SR-SS Rattle",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151272429/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F 2HOOK",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=83772673",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F 2HOOK",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151265643/",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-SS 2HOOK",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151265728/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-SS 2HOOK",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=83772805",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "Fat MOCA Jr.",
+    "model": "Fat MOCA Jr. SR-F",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151272375/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "Fat MOCA Jr.",
+    "model": "Fat MOCA Jr. SR-SS",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151272122/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "Fat MOCA Jr.",
+    "model": "Fat MOCA Jr. DR-F",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151272221/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "Fat MOCA Jr.",
+    "model": "Fat MOCA Jr. DR-SS",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151270371/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "Fat MOCA Jr.",
+    "model": "Fat MOCA Jr. SR-HF Rattle",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151269818/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "Petit MOCA",
+    "model": "Petit MOCA SR-F",
+    "kind": "product",
+    "url": "https://www.proshoptomo.com/?pid=95981385",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "Petit MOCA",
+    "model": "Petit MOCA SR-FⅡ",
+    "kind": "product",
+    "url": "https://www.proshoptomo.com/?pid=95981679",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "Petit MOCA",
+    "model": "Petit MOCA SR-SS",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151265384/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151272276/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=184665235",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=184665281",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=184665342",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=184665432",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=179903731",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=179903727",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=171853453",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=156192039",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=146121715",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=139676373",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=139676366",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=139676354",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=139676333",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=139676319",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=139676302",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-F Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=139676267",
+    "origins": [
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "RODIO CRAFT",
+    "series": "MOCA",
+    "model": "MOCA DR-SS Rattle 2HOOK",
+    "kind": "product",
+    "url": "https://www.backlash.co.jp/item/4573151272320/",
+    "origins": [
+      "backup-product",
+      "backup-retailer",
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/s-plug/",
+    "origins": [
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/s-plug/",
+    "origins": [
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー SS",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+    "origins": [
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー F",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+    "origins": [
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+    "origins": [
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+    "origins": [
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "もぐたそ",
+    "model": "もぐたそ",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+    "origins": [
+      "manifest-source",
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SSS",
+    "kind": "product",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0037",
+    "origins": [
+      "manifest-source",
+      "manifest-retailer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SSS",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+    "origins": [
+      "manifest-manufacturer"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2023/11/01.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2023/11/02.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2023/11/03.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2023/11/04.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2023/11/05.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2023/11/06.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2023/11/07.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2023/11/08-.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2023/11/09.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2023/11/010.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f01-ミルキー.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f02-クリクリ.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f03-メタグリ夫.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f04-はいからさん.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f05-スネーキーグロー.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f06-オリーブチャート.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f07-FM2.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f08-ブルーバックチャート.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f09-とんこつ.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f10-坦々麺.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f11-フェアリーオレンジ.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f12-カニミソグロー.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss01-イチゴパフェ.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss02-ももいろメタリック.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss03-グローセサミン.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss04-マッティブルーバック.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss05-月城.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss06-オリーブチャート.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss07-FM2.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss08-おしるこ.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss09-とんこつ.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss10-坦々麺.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss11-フェアリーオレンジ.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss12-ブルーデリック.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss13-みるき～.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "GANOFF",
+    "model": "GA-24S",
+    "kind": "image",
+    "url": "https://www.palmsjapan.com/lures/product/little-diner-ganoff/color/mt-933.jpg",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_01.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_02.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_03.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_04.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_05.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_06.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_07.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_08.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_09.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_10.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_11.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_12.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "くるん",
+    "model": "くるん タイプ1",
+    "kind": "image",
+    "url": "https://www.smith.jp/product/trout/kurun/c_13.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_1.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_5.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_7.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_9.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_8.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_4.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_2.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_10.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_6.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_3.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Pepino_2021NEW_01_re.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/23bdeae454f977229ecba4a4f06aee69.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/11/6c278c5791f0c13067b6daa69cee3c69.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fdbe1597a1408b598f4420d2f04c6f75.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "image",
+    "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3026b3d834ed59752c6eb43d15ea51c0.png",
+    "origins": [
+      "manifest-appearance-evidence"
+    ],
+    "status": "unreviewed"
+  }
+]

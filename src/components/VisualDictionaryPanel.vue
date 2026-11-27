@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { hasLurePhotoDisplay } from '../utils/lureExternalCatalog'
 import { computed, onMounted, ref } from 'vue'
 import { db, visualPalette, type CatchRecord, type TemporaryLureColor, type VisualColorId, type VisualColorSnapshot } from '../db/database'
 import type { LureOption } from '../utils/catchRegistration'
@@ -88,12 +89,12 @@ async function link(row: LureOption) {
           <label>モデル<select v-model="model" aria-label="辞書モデル" @change="limit = 50"><option value="">すべて</option><option v-for="row in models" :key="row.modelId" :value="String(row.modelId)">{{ row.modelName }}</option></select></label>
           <label class="owned"><input v-model="onlyOwned" type="checkbox" />所有ルアーのみ</label>
           <label>名前で絞り込む<input v-model="keyword" type="search" aria-label="辞書検索" @input="limit = 50" /></label>
-          <div v-if="candidates.some(isNoaOption)" role="group" aria-label="NOAの表示切り替え"><button type="button" :aria-pressed="photoView" @click="photoView = true">写真</button><button type="button" :aria-pressed="!photoView" @click="photoView = false">SVG配色</button></div>
+          <div v-if="candidates.some(hasLurePhotoDisplay)" role="group" aria-label="写真の表示切り替え"><button type="button" :aria-pressed="photoView" @click="photoView = true">写真</button><button type="button" :aria-pressed="!photoView" @click="photoView = false">SVG配色</button></div>
           <p>{{ candidates.length }}件の候補</p>
           <article v-for="row in candidates.slice(0, limit)" :key="row.variantId" :data-variant-id="row.variantId">
             <strong>{{ row.modelName }} / {{ row.colorName }}</strong><small>{{ row.manufacturerName }}</small>
             <small v-if="isNoaOption(row) && sharedColorForOption(row)?.colorCode">カラー番号：{{ sharedColorForOption(row)?.colorCode }}</small>
-            <LurePhotoDisplay v-if="isNoaOption(row)" :option="row" :prefer-svg="!photoView" />
+            <LurePhotoDisplay v-if="hasLurePhotoDisplay(row)" :option="row" :prefer-svg="!photoView" />
             <VisualColorPreview v-else-if="row.visualColorSnapshot" :appearance="row.visualColorSnapshot.appearance" :color-values="row.visualColorSnapshot.colorValues" /><small v-else>代表配色は未登録</small>
             <small v-if="row.visualProfile">{{ row.visualProfile.userEdited || row.visualProfile.origin === 'user' ? '手動編集・確認済み' : row.visualProfile.confirmed ? (row.visualProfile.origin === 'photo' ? '公式画像・確認済み' : '確認済み') : row.visualProfile.origin === 'photo' ? '写真推定・未確認' : '名称推定・未確認' }}</small>
             <details v-if="row.visualProfile?.evidence?.basis"><summary>推定根拠</summary>{{ row.visualProfile.evidence.inputName }}：{{ row.visualProfile.evidence.basis.join('、') }}<span v-if="row.visualProfile.evidence.confidence !== undefined">（確信度目安 {{ Math.round(row.visualProfile.evidence.confidence * 100) }}%）</span>
