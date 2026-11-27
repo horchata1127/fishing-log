@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.any-netshop.net/?pid=192968808",
+    "title": "ロデオクラフト BF | ブラインドフランカー 0.5g FORODOXコラボ - 釣具アニー",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-23",
+    "pageSha256": "690b195d011d597bd092f0204036fa27db3512a522349cd77214bbf64523cab2",
+    "series": "BF",
+    "weight": 0.5,
+    "colorClass": "FORODOX(2026)",
+    "colors": [
+      "ゲンちゃんブラウニー",
+      "キャンタの飛沫",
+      "ソルティマジョーラ改",
+      "茶ッキン",
+      "SHOW",
+      "クズブルー"
+    ],
+    "releaseDate": "2026-08-07",
+    "sourceName": "釣具アニー",
+    "imagePermission": "unconfirmed",
+    "images": [
+      {
+        "url": "https://img06.shop-pro.jp/PA01309/617/product/192968808.jpg?cmsp_timestamp=20260807171024",
+        "alt": ""
+      }
+    ],
+    "verificationBasis": "BF0.5g・FORODOXコラボ・当該6色の実在選択肢・2026年8月7日入荷を照合。画像の色別対応と利用許可は未確認。"
+  }
+]

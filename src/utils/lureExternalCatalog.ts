@@ -42,9 +42,10 @@ function matchesColor(ref: LureExternalReference, option: ExternalPhotoOption) {
 export function resolveLureExternalReference(
   option: ExternalPhotoOption,
   references: readonly LureExternalReference[] = lureExternalReferences,
+  noaProductFallback = false,
 ) {
   const maker = externalManufacturer(option.manufacturerName)
-  if (isNoaOption(option) || !maker || !option.modelDetails) return
+  if (isNoaOption(option) !== noaProductFallback || !maker || !option.modelDetails) return
   const matched = references.filter(ref => externalManufacturer(ref.manufacturerName) === maker &&
     (ref.sourceType === 'manufacturer' || ref.sourceType === 'retailer' && maker === 'RODIO CRAFT') &&
     sameName(ref.seriesName, option.seriesName) && sameName(ref.modelName, option.modelName) &&
@@ -55,7 +56,7 @@ export function resolveLureExternalReference(
   const ref = matched[0]!
   const productUrl = ref.product?.verified ? reviewedUrl(ref.product.url)?.href : undefined
   const imageUrl = ref.image ? reviewedUrl(ref.image.url) : undefined
-  const image = ref.image?.conditions === 'permitted' && ref.image.conditionsEvidence?.trim() && ref.image.decoded &&
+  const image = !noaProductFallback && ref.image?.conditions === 'permitted' && ref.image.conditionsEvidence?.trim() && ref.image.decoded &&
     imageUrl?.hostname === ref.image.verifiedHost
     ? { imageUrl: imageUrl.href, imageKind: ref.image.kind, externalProductUrl: ref.evidenceUrl, sourceName: ref.sourceName }
     : undefined

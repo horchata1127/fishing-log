@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/103597465.jpg?cmsp_timestamp=20260619111423",
+    "sourceProductUrl": "https://fishing-shop-jh.com/?pid=103597465",
+    "checkedAt": "2026-11-28",
+    "engine": "Chromium img.decode no-referrer",
+    "httpStatus": 200,
+    "status": "decoded",
+    "width": 540,
+    "height": 360,
+    "conditions": "unconfirmed",
+    "decision": "held"
+  },
+  {
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/103757624.jpg?cmsp_timestamp=20260324151229",
+    "sourceProductUrl": "https://fishing-shop-jh.com/?pid=103757624",
+    "checkedAt": "2026-11-28",
+    "engine": "Chromium img.decode no-referrer",
+    "httpStatus": 200,
+    "status": "decoded",
+    "width": 540,
+    "height": 360,
+    "conditions": "unconfirmed",
+    "decision": "held"
+  },
+  {
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/184666420.jpg?cmsp_timestamp=20260619172752",
+    "sourceProductUrl": "https://fishing-shop-jh.com/?pid=184666420",
+    "checkedAt": "2026-11-28",
+    "engine": "Chromium img.decode no-referrer",
+    "httpStatus": 200,
+    "status": "decoded",
+    "width": 540,
+    "height": 360,
+    "conditions": "unconfirmed",
+    "decision": "held"
+  },
+  {
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/125258595.jpg?cmsp_timestamp=20171116170027",
+    "sourceProductUrl": "https://fishing-shop-jh.com/?pid=125258595",
+    "checkedAt": "2026-11-28",
+    "engine": "Chromium img.decode no-referrer",
+    "httpStatus": 200,
+    "status": "decoded",
+    "width": 540,
+    "height": 360,
+    "conditions": "unconfirmed",
+    "decision": "held"
+  }
+]

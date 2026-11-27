@@ -28,6 +28,8 @@ async function compile(file) {
 const planner = await import(await compile('src/utils/lureMasterPlanner.ts'))
 const { previewLureMaster } = await import(await compile('src/utils/lureMasterPreview.ts'))
 const { lureMasterManifest: manifest, validateLureMasterManifest } = await import(await compile('src/data/lureMasterManifest.ts'))
+const rodioTargets = manifest.targets.filter(t => t.revisions.includes('RC45'))
+const rodioColors = rodioTargets.reduce((n,t)=>n+t.colors.length,0)
 const schema = await import(await compile('src/db/database.ts'))
 const { db } = schema
 const copy = v => structuredClone(v)
@@ -84,8 +86,8 @@ after(async () => {
 })
 
 test('cumulative manifest explicitly merges RC19/20, RC20/21 and RC31/33; all source colors survive', () => {
-  assert.equal(manifest.targets.length, 83)
-  assert.equal(manifest.targets.reduce((n, t) => n + t.colors.length, 0), 1299)
+  assert.equal(manifest.targets.length, 83 + rodioTargets.length)
+  assert.equal(manifest.targets.reduce((n, t) => n + t.colors.length, 0), 1299 + rodioColors)
   assert.equal(manifest.pending.length, 31)
   const sources = manifest.targets.flatMap(t => t.colors.flatMap(c => c.sources))
   for (const [rc, count] of Object.entries({ RC19: 2, RC20: 332, RC21: 282, RC22: 100, RC28: 369, RC30: 140, RC31: 83, RC33: 61, RC37: 203, RC38: 26 })) {
@@ -102,7 +104,7 @@ test('pure planning is deterministic, does not mutate inputs and retains officia
   const p = planner.planLureMaster(s)
   assert.deepEqual(s, before); assert.deepEqual(manifest, original)
   assert.deepEqual(planner.planLureMaster(s), p)
-  assert.equal(p.addedColors, 1288); assert.equal(p.heldColors, 11)
+  assert.equal(p.addedColors, 1288 + rodioColors); assert.equal(p.heldColors, 11)
   assert.equal(p.photoColors, 29); assert.equal(p.provisionalColors, 12); assert.equal(p.unknownColors, 20)
   assert.ok(p.rows.filter(r => r.visual === 'photo').every(r => r.visualEvidence.sourceUrl && r.visualEvidence.basis.length))
   assert.ok(p.rows.filter(r => r.visual === 'name').every(r => r.visualEvidence.estimatorVersion && r.visualEvidence.basis.length))
@@ -247,7 +249,7 @@ test('preview uses a read-only IndexedDB transaction and leaves every store unch
   for (const t of db.tables) for (const event of ['creating', 'updating', 'deleting']) t.hook(event, write)
   try {
     const p = await previewLureMaster({ includePurchases: true })
-    assert.equal(p.addedColors, 1288); assert.equal(p.addedOwned, 11)
+    assert.equal(p.addedColors, 1288 + rodioColors); assert.equal(p.addedOwned, 11)
     assert.deepEqual(await state(), before)
     assert.equal(db.verno, 12); assert.equal(db.tables.length, 27)
   } finally {
@@ -264,7 +266,7 @@ test('the unified planner preserves actual legacy RC33 import results in an isol
   await legacy.applyRc33Catalog(checked.comparisonToken)
   const before = await Promise.all(db.tables.map(async t => [t.name, await t.toArray()]))
   const unified = await previewLureMaster({ includePurchases: true })
-  assert.equal(unified.retainedColors, 61); assert.equal(unified.addedColors, 1227)
+  assert.equal(unified.retainedColors, 61); assert.equal(unified.addedColors, 1227 + rodioColors)
   assert.equal(unified.addedOwned, 0); assert.equal(unified.retainedOwned, 11)
   assert.equal(unified.photoColors + unified.provisionalColors, 0)
   assert.deepEqual(await Promise.all(db.tables.map(async t => [t.name, await t.toArray()])), before)

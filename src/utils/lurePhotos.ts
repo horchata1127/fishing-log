@@ -12,11 +12,11 @@ function changed() { for (const listener of listeners) listener() }
 const photoTables = () => photoTableNames.map(n => db.table(n))
 const catalogTables = () => [db.lureVariants, db.lureModels, db.lureSeries, db.lureManufacturers]
 
-export async function currentPhotoCatalog(): Promise<PhotoOption[]> {
+export async function currentPhotoCatalog(): Promise<ExternalPhotoOption[]> {
   const [variants, models, series, makers] = await Promise.all([db.lureVariants.toArray(), db.lureModels.toArray(), db.lureSeries.toArray(), db.lureManufacturers.toArray()])
   return variants.flatMap(v => {
     const model = models.find(m => m.id === v.modelId), parent = series.find(s => s.id === model?.seriesId), maker = makers.find(m => m.id === parent?.manufacturerId)
-    return model && parent && maker && v.id ? [{ variantId: v.id, modelId: model.id!, manufacturerName: maker.name, seriesName: parent.name, modelName: model.name, colorName: v.colorName }] : []
+    return model && parent && maker && v.id ? [{ variantId: v.id, modelId: model.id!, manufacturerName: maker.name, seriesName: parent.name, modelName: model.name, colorName: v.colorName, externalColorCode: v.catalogEvidence?.colorCode, modelDetails: { weightG: model.weightG, lengthMm: model.lengthMm, actionType: model.actionType, buoyancy: v.catalogEvidence?.buoyancy, rattle: v.catalogEvidence?.rattle } }] : []
   })
 }
 export async function photoDetails(option: PhotoOption) {
@@ -43,8 +43,9 @@ export async function resolveColorPhoto(option: ExternalPhotoOption, face: Photo
   const retailer = retailerProductLinkForOption(option)
   const userChoice = !!override || detail.hasStoredShared && detail.shared.externalVerified !== undefined
   const suppressed = !override && detail.shared.externalVerified === false
-  const externalProductUrl = userChoice ? previousUrl : retailer?.externalProductUrl ?? previousUrl
-  const sourceName = externalProductUrl && externalProductUrl === retailer?.externalProductUrl ? retailer.sourceName : previousSource
+  const supplement = !userChoice && !retailer && !previousUrl ? resolveLureExternalReference(option, undefined, true) : undefined
+  const externalProductUrl = userChoice ? previousUrl : retailer?.externalProductUrl ?? previousUrl ?? supplement?.externalProductUrl
+  const sourceName = externalProductUrl && externalProductUrl === retailer?.externalProductUrl ? retailer.sourceName : supplement?.sourceName ?? previousSource
   const additionalProductLinks: { url: string; sourceName: string }[] = []
   if (!suppressed) {
     if (retailer && retailer.externalProductUrl !== externalProductUrl) additionalProductLinks.push({ url: retailer.externalProductUrl, sourceName: retailer.sourceName })

@@ -1,22 +1,40 @@
 {
-  "stage": "RC47-A",
-  "startCommit": "5b5b6b2",
+  "stage": "RC47-B",
+  "startCommit": "0a33c87",
   "branch": "feature/rc45",
-  "productionReferenceAdditions": 0,
+  "rodio": {
+    "modelsBefore": 48,
+    "modelsAfter": 57,
+    "zeroColorModels": 12,
+    "colorRowsBefore": 1115,
+    "colorRowsAfter": 1543,
+    "additionalProductRows": 644,
+    "additionalProductUrls": 607,
+    "existingProductRows": 388,
+    "heldProductRows": 511,
+    "newDisplayableExternalImages": 0,
+    "heldImageRows": 588
+  },
+  "sourcePolicy": {
+    "rodio": "manufacturer or retailer; preserve existing links",
+    "otherFour": "manufacturer or verified official CDN"
+  },
   "inventory": "INVENTORY.json",
+  "verification": "VALIDATION.md",
   "candidateQueue": "SOURCE_PAGES.json",
-  "next": "RC47-B",
+  "reviewedRetailerPages": "RODIO_REVIEW.json",
+  "next": "RC48",
   "nextStatus": "not-started",
+  "rodioRemaining": [
+    "HELD.json",
+    "IMAGE_CHECKS.json"
+  ],
   "rodioPriorWork": {
     "branch": "feat/rodio-driftspin-bf-catalog",
     "worktree": "../fishing-log-rodio-drift-bf",
-    "status": "uncommitted; review and reconcile before reuse",
-    "evidence": "docs/rodio-driftspin-bf/"
-  },
-  "sourcePolicy": {
-    "rodio": "retailer or manufacturer, preserve existing links",
-    "otherFour": "manufacturer or verified official CDN"
+    "status": "original worktree preserved; RC45 master and evidence incorporated",
+    "evidence": "../rodio-driftspin-bf/"
   },
   "originalBackup": "docs/latest/fishing-log-backup-2026-11-23 (2).json",
-  "originalBackupSha256": "a6ed379dd9d985c735d825dd232868ce79b051b4bd5535e24294b5058e9b1532"
+  "originalBackupSha256": "a6ed379dd9d985c735d825dd232868ce79b051b4bd5535e24294b5058e9b1511"
 }

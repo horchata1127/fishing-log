@@ -20,7 +20,7 @@ test('new model photo link appears in dictionary and catch registration without 
   await picker.getByPlaceholder('ルアー名・カラー・メーカーで検索').fill('カステラ')
   const card = picker.locator(`[data-variant-id="${variant.id}"]`)
   await expect(card.getByRole('link', { name: '写真を見る' })).toHaveAttribute('href', 'https://fishing-shop-jh.com/?pid=167608634')
-  await card.getByRole('button', { name: /NOA Jr\. 0\.9g/ }).click()
+  await card.locator('button.picker-lure-button').click()
   await expect(picker).not.toBeVisible()
   await expect(modal.getByLabel('メモ（任意）')).toHaveValue('入力中のメモを保持')
   expect(await readAllState(page)).toEqual(before)

@@ -1,3 +1,5 @@
+import { rodioExternalReferences } from './rodioExternalReferences'
+
 export interface ExternalModelDetails {
   weightG?: number
   lengthMm?: number
@@ -14,7 +16,7 @@ export interface LureExternalReference {
   colorName: string
   colorCode?: string
   colorAliases?: readonly string[]
-  product?: { url: string; verified: boolean }
+  product?: { url: string; verified: boolean; kind?: 'individual-color' | 'model-color-list' }
   image?: {
     url: string
     kind: 'product-photo' | 'official-color-sample' | 'weight-common-color-sample'
@@ -24,6 +26,7 @@ export interface LureExternalReference {
     verifiedHost: string
     holdReason?: string
   }
+  propertyEvidence?: string
   sourceName: string
   sourceType: 'manufacturer' | 'retailer'
   checkedAt: string
@@ -31,5 +34,4 @@ export interface LureExternalReference {
   verificationBasis: string
 }
 
-// RC47-A introduces the contract. Reviewed references are added in later releases.
-export const lureExternalReferences: readonly LureExternalReference[] = []
+export const lureExternalReferences: readonly LureExternalReference[] = rodioExternalReferences

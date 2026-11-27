@@ -52,7 +52,7 @@ test('unified preview, backup confirmation and active apply defer a waiting SW; 
     await screen.getByRole('button', { name: '取り込み履歴', exact: true }).click()
     await expect(screen.locator('[data-history-id]')).toHaveCount(1); await expect(screen).toContainText('保留あり成功')
     await openMaster(page); await screen.getByRole('button', { name: '開発履歴', exact: true }).click()
-    await expect(screen.locator('[data-rc]')).toHaveCount(15)
+    await expect(screen.locator('[data-rc]')).toHaveCount(16)
     await screen.locator('[data-rc="19"] summary').click(); await expect(screen.locator('[data-rc="19"]')).toContainText('HUNT GRANDE')
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
   } finally { await context.close() }
