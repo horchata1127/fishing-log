@@ -1,6 +1,6 @@
 {
-  "stage": "RC47-B",
-  "startCommit": "0a33c87",
+  "stage": "RC48",
+  "startCommit": "8ad5aa7",
   "branch": "feature/rc45",
   "rodio": {
     "modelsBefore": 48,
@@ -23,7 +23,7 @@
   "verification": "VALIDATION.md",
   "candidateQueue": "SOURCE_PAGES.json",
   "reviewedRetailerPages": "RODIO_REVIEW.json",
-  "next": "RC48",
+  "next": "RC49",
   "nextStatus": "not-started",
   "rodioRemaining": [
     "HELD.json",
@@ -36,5 +36,24 @@
     "evidence": "../rodio-driftspin-bf/"
   },
   "originalBackup": "docs/latest/fishing-log-backup-2026-11-23 (2).json",
-  "originalBackupSha256": "a6ed379dd9d985c735d825dd232868ce79b051b4bd5535e24294b5058e9b1511"
+  "originalBackupSha256": "a6ed379dd9d985c735d825dd232868ce79b051b4bd5535e24294b5058e9b1532",
+  "timon": {
+    "status": "research-complete-activation-held",
+    "officialPageCheckpoints": "timon-pages/",
+    "review": "TIMON_REVIEW.json",
+    "imageSpotChecks": "TIMON_IMAGE_SPOT_CHECKS.json",
+    "termsUrl": "https://www.jackall.co.jp/terms-of-service/",
+    "linkPermission": "not-obtained",
+    "imagePermission": "not-obtained",
+    "models": 73,
+    "colorRows": 786,
+    "modelRowsWithoutColors": 22,
+    "checkedPages": 54,
+    "matchedProductRows": 687,
+    "matchedProductUrls": 23,
+    "unmatchedProductRows": 99,
+    "displayedProductRows": 0,
+    "displayedImageRows": 0,
+    "activationResume": "Review scope of product-page linking and image permissions separately before using matched candidates"
+  }
 }

@@ -1,0 +1,458 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
+  "checkedAt": "2026-11-28",
+  "originType": "official-category",
+  "httpStatus": 200,
+  "sha256": "de5b18659dd34fd3a03dbd1ace7998fe151fb8fa60f03153b7aae7bffa33c1d1",
+  "title": "SPOON - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
+  "heading": [
+    {
+      "text": "SPOONスプーン",
+      "name": "page-main__title"
+    },
+    {
+      "text": "ティーグラベル",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "リクーゼ",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "ロミー",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "ティアロ",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "ちびティアロ",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "Apeed！/アピード！",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "ちびクワトロスプーン",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "デカブング",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "BUNG / ブング",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "チャーム",
+      "name": "product-list__title--main font-jp"
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/11/f332022594640b590d77822e5d9895a4.jpg",
+      "alt": "T-GROVEL / Tグラベル",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c5cda61e5d4e6bb8feb0add770572953.jpg",
+      "alt": "Rekuze/リクーゼ",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/d0fc0647f7c6ddba5bde52cda6f330ae.jpg",
+      "alt": "Rhomy/ロミー",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c9f6914f2f5d4d805d58052548aa6b18.jpg",
+      "alt": "Tearo / ティアロ",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/50e5ecea12656de1025ca36de02b2ddc.jpg",
+      "alt": "Chibi Tearo/ちびティアロ",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/07e5f7dae8065f3e95bc29dfba4ed68e.jpg",
+      "alt": "Apeed！/アピード！",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/11/chibiquatro_top.jpg",
+      "alt": "Chibi Quattro Spoon / ちびクワトロスプーン",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/07/top.jpg",
+      "alt": "DEKA BUNG / デカブング",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/02/2020_bung_top_2-800x533.jpg",
+      "alt": "BUNG / ブング",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/11/1-1-800x533.jpg",
+      "alt": "Charm/チャーム",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    }
+  ],
+  "specifications": [],
+  "links": [
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/spoon/#",
+      "label": "TROUT"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/",
+      "label": "NEW PRODUCTS"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
+      "label": "LURE"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
+      "label": "CRANK"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
+      "label": "SPOON"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
+      "label": "MINNOW"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
+      "label": "VIBRATION"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
+      "label": "STREAM"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
+      "label": "C&R"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
+      "label": "AYU"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/set/",
+      "label": "SET"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
+      "label": "ROD"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
+      "label": "T-CONNECTION"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
+      "label": "T-CONNECTION Comfy"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
+      "label": "T-CONNECTION STREAM"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
+      "label": "ACCESSORY"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
+      "label": "JACKALL WORKS"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
+      "label": "TIMON APPAREL"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
+      "label": "CASE / BAG"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
+      "label": "TOOL"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
+      "label": "HOOK"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/other/",
+      "label": "OTHER"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/t-gravel/",
+      "label": "ティーグラベル SIZE 4COLOR 30 ボトム攻略専用スプーン T-GROVEL / Tグラベル"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rekuze/",
+      "label": "リクーゼ SIZE 3COLOR 28 Bite again!! Rekuze/リクーゼ"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rhomy/",
+      "label": "ロミー SIZE 4COLOR 12 魅惑のスライドアクション Rhomy/ロミー"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/tearo/",
+      "label": "ティアロ SIZE 3COLOR 36 変わらないスタンダード。 Tearo / ティアロ"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/chibitearo/",
+      "label": "ちびティアロ SIZE 3COLOR 19 定番ティアロのシルエットをコンパクトにダウンサイジング！！ Chibi Tearo/ちびティアロ"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/apeed/",
+      "label": "Apeed！/アピード！ SIZE 3COLOR 14 放流直後の高活性な魚に効く、ハイアピール＆高速リトリーブ対応モデル Apeed！/アピード！"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+      "label": "ちびクワトロスプーン SIZE 5COLOR 28 超ハイプレッシャー対応！ロールアクション系マイクロスプーン。 Chibi Quattro Spoon / ちびクワトロスプーン"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/deka-bung/",
+      "label": "デカブング SIZE 2COLOR 13 DEKA BUNG / デカブング"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/bung/",
+      "label": "BUNG / ブング SIZE 1COLOR 13 革新の縦釣りフォールベイト BUNG / ブング"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/charm/",
+      "label": "チャーム SIZE 1COLOR 15 スローでも強いアクションで誘う、ひと口サイズの表層攻略モデル Charm/チャーム"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/category/other/",
+  "checkedAt": "2026-11-28",
+  "originType": "official-category",
+  "httpStatus": 200,
+  "sha256": "a555b5c978fbfd34980f312b86fd8461bb7f7d358230c278a8a96156e1fe6b24",
+  "title": "OTHER - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
+  "heading": [
+    {
+      "text": "OTHERその他",
+      "name": "page-main__title"
+    },
+    {
+      "text": "イースナップ2",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "ティモンカッティングステッカーM",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "イースナップ",
+      "name": "product-list__title--main font-jp"
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fc6927a4cd7fc6f068de9eb5d3ae4aff-11.jpg",
+      "alt": "e-snapⅡ/イースナップⅡ",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items   section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/08/663d8851e919043359f486d193a2572a-800x533.jpg",
+      "alt": "TIMON CUTTING STICKER M / TIMONカッティングステッカーM",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items   section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2013/01/e-snap.jpg",
+      "alt": "e-snap",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items   section__items--left--sp"
+        ]
+      ]
+    }
+  ],
+  "specifications": [],
+  "links": [
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/other/#",
+      "label": "TROUT"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/",
+      "label": "NEW PRODUCTS"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
+      "label": "LURE"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
+      "label": "CRANK"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
+      "label": "SPOON"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
+      "label": "MINNOW"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
+      "label": "VIBRATION"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
+      "label": "STREAM"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
+      "label": "C&R"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
+      "label": "AYU"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/set/",
+      "label": "SET"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
+      "label": "ROD"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
+      "label": "T-CONNECTION"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
+      "label": "T-CONNECTION Comfy"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
+      "label": "T-CONNECTION STREAM"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
+      "label": "ACCESSORY"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
+      "label": "JACKALL WORKS"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
+      "label": "TIMON APPAREL"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
+      "label": "CASE / BAG"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
+      "label": "TOOL"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
+      "label": "HOOK"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/other/",
+      "label": "OTHER"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/accessory/other/esnap2/",
+      "label": "イースナップ2 SIZE 4COLOR 1 さらに強く、さらに快適に。 トラウトゲーム専用設計 e-snapⅡ/イースナップⅡ"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/accessory/other/timon-cutting-decal-m/",
+      "label": "ティモンカッティングステッカーM SIZE 1COLOR 2 TIMON CUTTING STICKER M / TIMONカッティングステッカーM"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/accessory/other/e-snap/",
+      "label": "イースナップ SIZE 2 パニクラもらくらく装着！！ティアドロップ型エリア専用スナップ e-snap"
+    }
+  ]
+}

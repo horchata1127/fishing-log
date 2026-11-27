@@ -1,0 +1,283 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
+  "checkedAt": "2026-11-28",
+  "originType": "official-category",
+  "httpStatus": 200,
+  "sha256": "110a1177f37a43f0db9c29de267200943c879768b766b7542d317e3475e3f539",
+  "title": "VIBRATION - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
+  "heading": [
+    {
+      "text": "VIBRATIONバイブレーション",
+      "name": "page-main__title"
+    },
+    {
+      "text": "クロボールγ",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "クロボールβ",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "タップダンサー",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "クロボール",
+      "name": "product-list__title--main font-jp"
+    },
+    {
+      "text": "メタルクロボール",
+      "name": "product-list__title--main font-jp"
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/fc6927a4cd7fc6f068de9eb5d3ae4aff-1.jpg",
+      "alt": "KUROBALL γ/クロボールγ",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/product_icon_kuroballbeta.jpg",
+      "alt": "KUROBALL β/クロボールβ",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/12/085310bf2502cac3b221bee2fbba8ce8.jpg",
+      "alt": "TAPDANCER / タップダンサー",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/11/0d406d2ea6cd9b9b32b713bf0ac6cd76.jpg",
+      "alt": "KUROBALL / クロボール",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/IMG_5041.jpg",
+      "alt": "METAL KUROBALL/メタルクロボール",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-list__photo "
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ]
+      ]
+    }
+  ],
+  "specifications": [],
+  "links": [
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/vibration/#",
+      "label": "TROUT"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/",
+      "label": "NEW PRODUCTS"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
+      "label": "LURE"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
+      "label": "CRANK"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
+      "label": "SPOON"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
+      "label": "MINNOW"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
+      "label": "VIBRATION"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
+      "label": "STREAM"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
+      "label": "C&R"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
+      "label": "AYU"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/set/",
+      "label": "SET"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
+      "label": "ROD"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
+      "label": "T-CONNECTION"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
+      "label": "T-CONNECTION Comfy"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
+      "label": "T-CONNECTION STREAM"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
+      "label": "ACCESSORY"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
+      "label": "JACKALL WORKS"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
+      "label": "TIMON APPAREL"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
+      "label": "CASE / BAG"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
+      "label": "TOOL"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
+      "label": "HOOK"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/other/",
+      "label": "OTHER"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball-gannma/",
+      "label": "クロボールγ SIZE 2COLOR 10 立ち上がり重視。メタルバイブのど真ん中。 KUROBALL γ/クロボールγNEW"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball_beta/",
+      "label": "クロボールβ COLOR 10 不思議なボールの引力。 KUROBALL β/クロボールβ"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/vibration/tapdancer/",
+      "label": "タップダンサー SIZE 2COLOR 43 ボトム攻略を変えた、専用バイブレーション TAPDANCER / タップダンサー"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball/",
+      "label": "クロボール SIZE 2COLOR 20 メタルバイブの先を行く KUROBALL / クロボール"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/vibration/metal-kuroball/",
+      "label": "メタルクロボール SIZE 2COLOR 12 彼方のボトムを攻略するブラスプレートボディ METAL KUROBALL/メタルクロボール"
+    }
+  ]
+}

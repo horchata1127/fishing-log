@@ -239,9 +239,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 32,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -253,9 +257,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 34,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -267,9 +275,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 26,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -281,9 +293,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 17,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -295,9 +311,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 19,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -309,9 +329,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 17,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -323,9 +347,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -337,9 +365,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -351,9 +383,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -365,9 +401,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 15,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -379,9 +419,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 15,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -393,9 +437,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 15,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -407,9 +455,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 17,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -422,7 +474,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -435,7 +487,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -448,7 +500,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -461,7 +513,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -474,7 +526,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -487,7 +539,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -500,7 +552,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -513,7 +565,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -526,7 +578,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -539,7 +591,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -552,7 +604,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -565,7 +617,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -578,7 +630,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -590,9 +642,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 17,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -605,7 +661,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -618,7 +674,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -631,7 +687,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -644,7 +700,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -657,7 +713,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -670,7 +726,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -683,7 +739,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -696,7 +752,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -709,7 +765,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -722,7 +778,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -735,7 +791,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -748,7 +804,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -761,7 +817,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -773,9 +829,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -787,9 +847,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -801,9 +865,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -815,9 +883,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -828,9 +900,13 @@
     "origins": [
       "backup-product",
       "backup-manufacturer",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 8,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "TIMON",
@@ -843,7 +919,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -856,7 +932,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -869,7 +945,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -882,7 +958,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -895,7 +971,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -908,7 +984,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -921,7 +997,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "TIMON",
@@ -934,7 +1010,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "unreviewed"
+    "status": "excluded-nonofficial-source"
   },
   {
     "manufacturer": "RODIO CRAFT",
@@ -1542,9 +1618,13 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc48-official-model"
     ],
-    "status": "unreviewed"
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 15,
+    "activation": "held-link-permission"
   },
   {
     "manufacturer": "RODIO CRAFT",
@@ -26654,5 +26734,1435 @@
       "status": "held",
       "reason": "公開variantデータの取得制限。再試行せず別出典へ。"
     }
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "terms",
+    "url": "https://www.jackall.co.jp/terms-of-service/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/category/crank/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/category/lure/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/category/other/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/2026-02-26-8768/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi-pepino/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi_panicra/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/deka-mitts-dry-rattle/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/deka-mitts-dry/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/flapani/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/kibipani/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/micro-panicra/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/mitts-dray2hook/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/mitts-sr/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/panicra-dr-rattle/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/panicra/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/pepino/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/prikkey/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/2026-08-28-11927/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/buriburi-minnow-hf-rattle/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/chibi-futten/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/chibi_buriburi_monnow_1/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/dartrun/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/futten/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/slidon/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/tc-reigen/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/apeed/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/bung/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/charm/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/chibitearo/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/cibi-quattro-spoon/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/deka-bung/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rekuze/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rhomy/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/t-gravel/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/tearo/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/stream/2026-10-08-12046/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/stream/thin-tricoroll/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-gt/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-mai/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-ryusinn/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-ryuusinn-knocker/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-spoon-stem/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricorollhw/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricorollvib/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball-gannma/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball_beta/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/metal-kuroball/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/tapdancer/",
+    "origins": [
+      "rc48-official-page"
+    ],
+    "status": "official-page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "BURIBURI MINNOW",
+    "model": "BURIBURI MINNOW (F)",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/2026-08-28-11927/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "BURIBURI MINNOW",
+    "model": "BURIBURI MINNOW (F) / DR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/2026-08-28-11927/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "catalog-model-weight-unspecified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "BURIBURI MINNOW",
+    "model": "BURIBURI MINNOW DR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/2026-08-28-11927/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "BURIBURI MINNOW",
+    "model": "BURIBURI MINNOW HF Rattle",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/buriburi-minnow-hf-rattle/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "catalog-model-weight-unspecified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "BURIBURI MINNOW",
+    "model": "CHIBI BURIBURI MINNOW",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/chibi_buriburi_monnow_1/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-spec-not-exact",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi_panicra/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "catalog-model-weight-unspecified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi_panicra/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 30,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi_panicra/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 30,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi_panicra/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 30,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi_panicra/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 17,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi-pepino/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DARTRUN",
+    "model": "Chibi DARTRUN",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/dartrun/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DARTRUN",
+    "model": "DARTRUN",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/dartrun/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DARTRUN",
+    "model": "DARTRUN HW",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/dartrun/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/deka-mitts-dry/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 18,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY Rattle",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/deka-mitts-dry-rattle/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 8,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "FlaPani",
+    "model": "FlaPani",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/flapani/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Futten",
+    "model": "CHIBI FUTTEN FS",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/chibi-futten/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Futten",
+    "model": "Futten FS",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/futten/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 8,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/kibipani/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 15,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/kibipani/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 20,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 20,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL β",
+    "model": "KUROBALL β 2.5g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball_beta/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL β",
+    "model": "KUROBALL β 3.8g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball_beta/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.0g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball-gannma/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.5g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball-gannma/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "METAL KUROBALL",
+    "model": "METAL KUROBALL 2.3g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/metal-kuroball/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "METAL KUROBALL",
+    "model": "METAL KUROBALL 3.5g",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/metal-kuroball/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/micro-panicra/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-SS",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/micro-panicra/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Mitts",
+    "model": "DEKA MITTS",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/mitts-sr/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "catalog-model-weight-unspecified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Mitts",
+    "model": "MITTS DRY",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/mitts-sr/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "catalog-model-weight-unspecified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Mitts",
+    "model": "Mitts SR-DRY",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/mitts-sr/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "catalog-model-weight-unspecified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MITTS DRY 2Hook",
+    "model": "MITTS DRY 2Hook",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/mitts-dray2hook/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 8,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MITTS DRY 2Hook",
+    "model": "MITTS DRY RATTLE 2Hook",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/mitts-dray2hook/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 8,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "PaniCra",
+    "model": "PaniCra DR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/2026-02-26-8768/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 27,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "PaniCra",
+    "model": "PaniCra DR-HF",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/2026-02-26-8768/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "PaniCra",
+    "model": "PaniCra MR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/2026-02-26-8768/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 27,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "PaniCra",
+    "model": "PaniCra SR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/2026-02-26-8768/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "PaniCra DR Rattle",
+    "model": "PaniCra DR Rattle",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/panicra-dr-rattle/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/pepino/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino MR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/pepino/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino MR-SS",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/pepino/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino SR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/pepino/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Prikkey",
+    "model": "Prikkey",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/crank/prikkey/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "REKUZE",
+    "model": "REKUZE",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rekuze/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "catalog-model-weight-unspecified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 1,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "SLIDON",
+    "model": "SLIDON60F",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/slidon/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "TAPDANCER",
+    "model": "CHIBI TAPDANCER",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/tapdancer/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "TAPDANCER",
+    "model": "TAPDANCER",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/vibration/tapdancer/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "TC Reigen",
+    "model": "TCレイゲンDR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/tc-reigen/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 15,
+    "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "TC Reigen",
+    "model": "TCレイゲンMR",
+    "kind": "product",
+    "url": "https://www.jackall.co.jp/timon/products/lure/minnow/tc-reigen/",
+    "origins": [
+      "rc48-official-model"
+    ],
+    "status": "official-model-verified",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 15,
+    "activation": "held-link-permission"
   }
 ]

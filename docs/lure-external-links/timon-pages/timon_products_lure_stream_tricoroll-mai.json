@@ -1,0 +1,1159 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-mai/",
+  "checkedAt": "2026-11-28",
+  "originType": "official-index-link",
+  "httpStatus": 200,
+  "sha256": "af3f21e8638a391ca2d76e44e529b27bb5f3c9568e2883e989d2c3f357af9bba",
+  "title": "Tricoroll 舞 / トリコロール舞 - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
+  "heading": [
+    {
+      "text": "Tricoroll 舞 / トリコロール舞 トリコロールマイ",
+      "name": "page-main__title font-jp"
+    },
+    {
+      "text": "渓魚を虜にする魅惑の舞。",
+      "name": "title-main  black"
+    },
+    {
+      "text": "攻略の幅を広げるフラットサイドモデル",
+      "name": "title"
+    },
+    {
+      "text": "ハイアピール・ハイレスポンス",
+      "name": "title"
+    },
+    {
+      "text": "魅惑のフォールアクション",
+      "name": "title"
+    },
+    {
+      "text": "FEATURE",
+      "name": "title-secondary"
+    },
+    {
+      "text": "フラットサイドボディ",
+      "name": "desc-content__title"
+    },
+    {
+      "text": "スクエアリップ",
+      "name": "desc-content__title"
+    },
+    {
+      "text": "ローリングスイベルアイ",
+      "name": "desc-content__title"
+    },
+    {
+      "text": "サイズラインナップ",
+      "name": "desc-content__title"
+    },
+    {
+      "text": "SPEC",
+      "name": "title-secondary"
+    },
+    {
+      "text": "COLOR CHART",
+      "name": "title-secondary"
+    },
+    {
+      "text": "MOVIE",
+      "name": "title-secondary"
+    }
+  ],
+  "tables": [
+    {
+      "name": "",
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Type",
+          "Length",
+          "Hook Size",
+          "Ring Size",
+          "Price"
+        ],
+        [
+          "トリコロール舞45",
+          "3.7g",
+          "SINKING",
+          "45mm",
+          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL #12",
+          "＃1",
+          "¥1,518"
+        ],
+        [
+          "トリコロール舞55",
+          "5.3g",
+          "SINKING",
+          "55mm",
+          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL #12",
+          "＃1",
+          "¥1,518"
+        ]
+      ]
+    },
+    {
+      "name": "",
+      "rows": [
+        [
+          "Name",
+          "トリコロール舞45"
+        ],
+        [
+          "Weight",
+          "3.7g"
+        ],
+        [
+          "Type",
+          "SINKING"
+        ],
+        [
+          "Length",
+          "45mm"
+        ],
+        [
+          "Hook Size",
+          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL #12"
+        ],
+        [
+          "Ring Size",
+          "＃1"
+        ],
+        [
+          "Price",
+          "¥1,518"
+        ]
+      ]
+    },
+    {
+      "name": "",
+      "rows": [
+        [
+          "Name",
+          "トリコロール舞55"
+        ],
+        [
+          "Weight",
+          "5.3g"
+        ],
+        [
+          "Type",
+          "SINKING"
+        ],
+        [
+          "Length",
+          "55mm"
+        ],
+        [
+          "Hook Size",
+          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL #12"
+        ],
+        [
+          "Ring Size",
+          "＃1"
+        ],
+        [
+          "Price",
+          "¥1,518"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/01/fe4ef3f06248747366bf552057e17259.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo sp_none"
+        ],
+        [
+          "DIV",
+          "photo-main"
+        ],
+        [
+          "DIV",
+          "product-main-image"
+        ],
+        [
+          "SECTION",
+          "page-contents-main"
+        ],
+        [
+          "DIV",
+          "page-contents page-contents--products layout-product-v2 "
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/01/mai.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo none sp_block"
+        ],
+        [
+          "DIV",
+          "photo-main"
+        ],
+        [
+          "DIV",
+          "product-main-image"
+        ],
+        [
+          "SECTION",
+          "page-contents-main"
+        ],
+        [
+          "DIV",
+          "page-contents page-contents--products layout-product-v2 "
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/01/6090cd1dc6f799e9d7cc1254b4184eec.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo sp_none"
+        ],
+        [
+          "DIV",
+          "images"
+        ],
+        [
+          "DIV",
+          "section product-concept__item "
+        ],
+        [
+          "DIV",
+          "product-concept__items"
+        ],
+        [
+          "DIV",
+          "product-concept products-section"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/01/NewWebPage_mobilepage_tricoroll02.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo none sp_block"
+        ],
+        [
+          "DIV",
+          "images"
+        ],
+        [
+          "DIV",
+          "section product-concept__item "
+        ],
+        [
+          "DIV",
+          "product-concept__items"
+        ],
+        [
+          "DIV",
+          "product-concept products-section"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/01/a6bf27ee5d465b4a52a1bbe4bb9c4ca4.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo sp_none"
+        ],
+        [
+          "DIV",
+          "images"
+        ],
+        [
+          "DIV",
+          "section product-concept__item "
+        ],
+        [
+          "DIV",
+          "product-concept__items"
+        ],
+        [
+          "DIV",
+          "product-concept products-section"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/01/NewWebPage_mobilepage_tricoroll03.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo none sp_block"
+        ],
+        [
+          "DIV",
+          "images"
+        ],
+        [
+          "DIV",
+          "section product-concept__item "
+        ],
+        [
+          "DIV",
+          "product-concept__items"
+        ],
+        [
+          "DIV",
+          "product-concept products-section"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/01/986535c95f48f9e08d645d31e5d59831.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo sp_none"
+        ],
+        [
+          "DIV",
+          "images"
+        ],
+        [
+          "DIV",
+          "section product-concept__item "
+        ],
+        [
+          "DIV",
+          "product-concept__items"
+        ],
+        [
+          "DIV",
+          "product-concept products-section"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/01/NewWebPage_mobilepage_tricoroll04.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "",
+      "groupChain": [
+        [
+          "DIV",
+          "photo none sp_block"
+        ],
+        [
+          "DIV",
+          "images"
+        ],
+        [
+          "DIV",
+          "section product-concept__item "
+        ],
+        [
+          "DIV",
+          "product-concept__items"
+        ],
+        [
+          "DIV",
+          "product-concept products-section"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/mai_top.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "フラットサイドボディ 扁平で体高のあるボディからの明滅効果を活かしたアピール力で魚を虜にします。",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-photos__item"
+        ],
+        [
+          "DIV",
+          "product-photos"
+        ],
+        [
+          "DIV",
+          "product-feature products-section content-common-products "
+        ],
+        [
+          "SECTION",
+          "page-contents-main"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/mai_lip.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "スクエアリップ しっかりと水を掴んでルアーアクションに変換するスクエア形状リップを採用。アクションを破綻させることなく泳ぎます。",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-photos__item"
+        ],
+        [
+          "DIV",
+          "product-photos"
+        ],
+        [
+          "DIV",
+          "product-feature products-section content-common-products "
+        ],
+        [
+          "SECTION",
+          "page-contents-main"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/01/MG_0516.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "ローリングスイベルアイ フロントフックハンガーはローリングスイベル仕様。暴れる魚の動きにフックが追従しバラシを軽減します。",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-photos__item"
+        ],
+        [
+          "DIV",
+          "product-photos"
+        ],
+        [
+          "DIV",
+          "product-feature products-section content-common-products "
+        ],
+        [
+          "SECTION",
+          "page-contents-main"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/mai_size.jpg",
+      "alt": "トリコロールマイ Tricoroll 舞 / トリコロール舞",
+      "label": "サイズラインナップ 45mmと55mmの2サイズをラインナップ。フィールドや対象魚のサイズに合わせて使い分けてください。",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "DIV",
+          "product-photos__item"
+        ],
+        [
+          "DIV",
+          "product-photos"
+        ],
+        [
+          "DIV",
+          "product-feature products-section content-common-products "
+        ],
+        [
+          "SECTION",
+          "page-contents-main"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/59b9fbefd1213997ceda58f76b1d2b59.png",
+      "alt": "ｶｷﾞﾛｲｱﾕ",
+      "label": "",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/59b9fbefd1213997ceda58f76b1d2b59.png",
+      "alt": "ｶｷﾞﾛｲｱﾕ",
+      "label": "ｶｷﾞﾛｲｱﾕﾄﾘｺﾛｰﾙ舞45S JAN: 4525807302417 ﾄﾘｺﾛｰﾙ舞55S JAN: 4525807302431",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "lightbox-target-contents"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4d2bbbe76806bd5c5249968bec1114f4.png",
+      "alt": "米代ﾏﾙﾁﾌﾞﾗｯｸ",
+      "label": "",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4d2bbbe76806bd5c5249968bec1114f4.png",
+      "alt": "米代ﾏﾙﾁﾌﾞﾗｯｸ",
+      "label": "米代ﾏﾙﾁﾌﾞﾗｯｸﾄﾘｺﾛｰﾙ舞45S JAN: 4525807302417 ﾄﾘｺﾛｰﾙ舞55S JAN: 4525807302424",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "lightbox-target-contents"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8b1fc5a81ef39d96dd6ab86915d02858-1.png",
+      "alt": "赤金ﾔﾏﾒ",
+      "label": "",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8b1fc5a81ef39d96dd6ab86915d02858-1.png",
+      "alt": "赤金ﾔﾏﾒ",
+      "label": "赤金ﾔﾏﾒﾄﾘｺﾛｰﾙ舞45S JAN: 4525807207910 ﾄﾘｺﾛｰﾙ舞55S JAN: 4525807207835",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "lightbox-target-contents"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7abcbb9daafd084e69862f9edbd0c0f5.png",
+      "alt": "ﾈｲﾃｨﾌﾞﾔﾏﾒ",
+      "label": "",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7abcbb9daafd084e69862f9edbd0c0f5.png",
+      "alt": "ﾈｲﾃｨﾌﾞﾔﾏﾒ",
+      "label": "ﾈｲﾃｨﾌﾞﾔﾏﾒﾄﾘｺﾛｰﾙ舞45S JAN: 4525807207927 ﾄﾘｺﾛｰﾙ舞55S JAN: 4525807207842",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "lightbox-target-contents"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fe4ef3f06248747366bf552057e17259.png",
+      "alt": "ﾈｲﾃｨﾌﾞｱﾕ",
+      "label": "",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fe4ef3f06248747366bf552057e17259.png",
+      "alt": "ﾈｲﾃｨﾌﾞｱﾕ",
+      "label": "ﾈｲﾃｨﾌﾞｱﾕﾄﾘｺﾛｰﾙ舞45S JAN: 4525807207934 ﾄﾘｺﾛｰﾙ舞55S JAN: 4525807207859",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "lightbox-target-contents"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/TENNESSEE-BH.pn-1.png",
+      "alt": "ﾃﾈｼｰBH",
+      "label": "",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/TENNESSEE-BH.pn-1.png",
+      "alt": "ﾃﾈｼｰBH",
+      "label": "ﾃﾈｼｰBHﾄﾘｺﾛｰﾙ舞45S JAN: 4525807207941 ﾄﾘｺﾛｰﾙ舞55S JAN: 4525807207866",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "lightbox-target-contents"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/SILVER-PINK-YAMAME.png",
+      "alt": "ｼﾙﾊﾞｰﾋﾟﾝｸﾔﾏﾒ",
+      "label": "",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/SILVER-PINK-YAMAME.png",
+      "alt": "ｼﾙﾊﾞｰﾋﾟﾝｸﾔﾏﾒ",
+      "label": "ｼﾙﾊﾞｰﾋﾟﾝｸﾔﾏﾒﾄﾘｺﾛｰﾙ舞45S JAN: 4525807207958 ﾄﾘｺﾛｰﾙ舞55S JAN: 4525807207873",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "lightbox-target-contents"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/66c5eb3836d1828375f20279ed74ec24.png",
+      "alt": "ﾌﾗｯｼｭﾁｬｰﾄﾔﾏﾒ",
+      "label": "",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/66c5eb3836d1828375f20279ed74ec24.png",
+      "alt": "ﾌﾗｯｼｭﾁｬｰﾄﾔﾏﾒ",
+      "label": "ﾌﾗｯｼｭﾁｬｰﾄﾔﾏﾒﾄﾘｺﾛｰﾙ舞45S JAN: 4525807207965 ﾄﾘｺﾛｰﾙ舞55S JAN: 4525807207880",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "lightbox-target-contents"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/17694a0b0130d902740ea0e0f2bbaf6f.png",
+      "alt": "婚姻ﾔﾏﾒ",
+      "label": "",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/17694a0b0130d902740ea0e0f2bbaf6f.png",
+      "alt": "婚姻ﾔﾏﾒ",
+      "label": "婚姻ﾔﾏﾒﾄﾘｺﾛｰﾙ舞45S JAN: 4525807207972 ﾄﾘｺﾛｰﾙ舞55S JAN: 4525807207897",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "lightbox-target-contents"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/53e11e0c2ddfe74fc76365fffc6172fe.png",
+      "alt": "ﾅﾜﾊﾞﾘﾊﾟｰﾙｱﾕ",
+      "label": "",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "photo-ratio"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/53e11e0c2ddfe74fc76365fffc6172fe.png",
+      "alt": "ﾅﾜﾊﾞﾘﾊﾟｰﾙｱﾕ",
+      "label": "ﾅﾜﾊﾞﾘﾊﾟｰﾙｱﾕﾄﾘｺﾛｰﾙ舞45S JAN: 4525807207989 ﾄﾘｺﾛｰﾙ舞55S JAN: 4525807207903",
+      "group": "product-color-list__item",
+      "groupChain": [
+        [
+          "DIV",
+          "lightbox-target-contents"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-color-list__item"
+        ],
+        [
+          "DIV",
+          "product-color-list product-color-list--left lighbox-fancy"
+        ],
+        [
+          "DIV",
+          "product-colors products-section content-common-products"
+        ]
+      ]
+    }
+  ],
+  "specifications": [],
+  "links": [
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-mai/#",
+      "label": "TROUT"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/",
+      "label": "NEW PRODUCTS"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
+      "label": "LURE"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
+      "label": "CRANK"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
+      "label": "SPOON"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
+      "label": "MINNOW"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
+      "label": "VIBRATION"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
+      "label": "LIST"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
+      "label": "C&R"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
+      "label": "AYU"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/set/",
+      "label": "SET"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
+      "label": "ROD"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
+      "label": "T-CONNECTION"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
+      "label": "T-CONNECTION Comfy"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
+      "label": "T-CONNECTION STREAM"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
+      "label": "ACCESSORY"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
+      "label": "JACKALL WORKS"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
+      "label": "TIMON APPAREL"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
+      "label": "CASE / BAG"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
+      "label": "TOOL"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
+      "label": "HOOK"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/other/",
+      "label": "OTHER"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-mai/#link-feature",
+      "label": "FEATURE"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-mai/#link-spec",
+      "label": "SPEC"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-mai/#link-color",
+      "label": "COLOR"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-mai/#link-movie",
+      "label": "MOVIE"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricorollvib/",
+      "label": "PREV"
+    }
+  ]
+}

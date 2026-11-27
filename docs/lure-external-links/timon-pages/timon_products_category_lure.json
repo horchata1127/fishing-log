@@ -1,0 +1,380 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/category/lure/",
+  "checkedAt": "2026-11-28",
+  "originType": "official-category",
+  "httpStatus": 200,
+  "sha256": "c58a8129d53ef478985ba4e366893eaf999e6567819b67d1a387b13b8ea6b1b9",
+  "title": "LURE - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
+  "heading": [
+    {
+      "text": "LUREルアー",
+      "name": "page-main__title"
+    },
+    {
+      "text": "CRANK",
+      "name": "product-list__title--main"
+    },
+    {
+      "text": "クランク",
+      "name": "product-list__title--jp"
+    },
+    {
+      "text": "SPOON",
+      "name": "product-list__title--main"
+    },
+    {
+      "text": "スプーン",
+      "name": "product-list__title--jp"
+    },
+    {
+      "text": "MINNOW",
+      "name": "product-list__title--main"
+    },
+    {
+      "text": "ミノー",
+      "name": "product-list__title--jp"
+    },
+    {
+      "text": "VIBRATION",
+      "name": "product-list__title--main"
+    },
+    {
+      "text": "バイブレーション",
+      "name": "product-list__title--jp"
+    },
+    {
+      "text": "STREAM",
+      "name": "product-list__title--main"
+    },
+    {
+      "text": "ネイティブトラウト",
+      "name": "product-list__title--jp"
+    },
+    {
+      "text": "C&R",
+      "name": "product-list__title--main"
+    },
+    {
+      "text": "AYU",
+      "name": "product-list__title--main"
+    },
+    {
+      "text": "SET",
+      "name": "product-list__title--main"
+    },
+    {
+      "text": "セット",
+      "name": "product-list__title--jp"
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/01/crank-800x533.jpg",
+      "alt": "CRANK クランク",
+      "label": "CRANK クランク",
+      "groupChain": [
+        [
+          "DIV",
+          "product-list__photo"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ],
+        [
+          "DIV",
+          "product-list product-list--all product-list--cat"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/01/spoon-800x533.jpg",
+      "alt": "SPOON スプーン",
+      "label": "SPOON スプーン",
+      "groupChain": [
+        [
+          "DIV",
+          "product-list__photo"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ],
+        [
+          "DIV",
+          "product-list product-list--all product-list--cat"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2018/04/MG_9378-11.jpg",
+      "alt": "MINNOW ミノー",
+      "label": "MINNOW ミノー",
+      "groupChain": [
+        [
+          "DIV",
+          "product-list__photo"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ],
+        [
+          "DIV",
+          "product-list product-list--all product-list--cat"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/01/vibration-800x533.jpg",
+      "alt": "VIBRATION バイブレーション",
+      "label": "VIBRATION バイブレーション",
+      "groupChain": [
+        [
+          "DIV",
+          "product-list__photo"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ],
+        [
+          "DIV",
+          "product-list product-list--all product-list--cat"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2018/10/IMG_43001.jpg",
+      "alt": "STREAM ネイティブトラウト",
+      "label": "STREAM ネイティブトラウト ネイティブトラウト",
+      "groupChain": [
+        [
+          "DIV",
+          "product-list__photo"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ],
+        [
+          "DIV",
+          "product-list product-list--all product-list--cat"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/11c0133b13e6165db915d02638edb11a.jpg",
+      "alt": "C&R",
+      "label": "C&R",
+      "groupChain": [
+        [
+          "DIV",
+          "product-list__photo"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ],
+        [
+          "DIV",
+          "product-list product-list--all product-list--cat"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2023/02/be591cc301258875a95bd753f2cb8807.jpg",
+      "alt": "AYU",
+      "label": "AYU",
+      "groupChain": [
+        [
+          "DIV",
+          "product-list__photo"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ],
+        [
+          "DIV",
+          "product-list product-list--all product-list--cat"
+        ]
+      ]
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/11/set_sam.jpg",
+      "alt": "SET セット",
+      "label": "SET セット",
+      "groupChain": [
+        [
+          "DIV",
+          "product-list__photo"
+        ],
+        [
+          "A",
+          ""
+        ],
+        [
+          "DIV",
+          "product-list__item"
+        ],
+        [
+          "DIV",
+          "product-list__items section__items  section__items--left section__items--left--sp"
+        ],
+        [
+          "DIV",
+          "product-list product-list--all product-list--cat"
+        ]
+      ]
+    }
+  ],
+  "specifications": [],
+  "links": [
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/lure/#",
+      "label": "TROUT"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/",
+      "label": "NEW PRODUCTS"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
+      "label": "LURE"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
+      "label": "CRANK クランク"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
+      "label": "SPOON スプーン"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
+      "label": "MINNOW ミノー"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
+      "label": "VIBRATION バイブレーション"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
+      "label": "STREAM ネイティブトラウト ネイティブトラウト"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
+      "label": "C&R"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
+      "label": "AYU"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/set/",
+      "label": "SET セット"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
+      "label": "ROD"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
+      "label": "T-CONNECTION"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
+      "label": "T-CONNECTION Comfy"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
+      "label": "T-CONNECTION STREAM"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
+      "label": "ACCESSORY"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
+      "label": "JACKALL WORKS"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
+      "label": "TIMON APPAREL"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
+      "label": "CASE / BAG"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
+      "label": "TOOL"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
+      "label": "HOOK"
+    },
+    {
+      "url": "https://www.jackall.co.jp/timon/products/category/other/",
+      "label": "OTHER"
+    }
+  ]
+}
