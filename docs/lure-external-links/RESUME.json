@@ -1,6 +1,6 @@
 {
-  "stage": "RC52-B",
-  "startCommit": "eed3897",
+  "stage": "RC52-C",
+  "startCommit": "bf1d812",
   "branch": "feature/rc45",
   "rodio": {
     "modelsBefore": 48,
@@ -26,9 +26,40 @@
   "verification": "VALIDATION.md",
   "candidateQueue": "SOURCE_PAGES.json",
   "reviewedRetailerPages": "RODIO_REVIEW.json",
-  "next": "Confirm legacy image permissions, publication scope and the iPhone release checks",
-  "nextStatus": "rc52b-validated-release-blocked",
+  "next": "Complete physical iPhone release checks on the isolated HTTPS preview",
+  "nextStatus": "rc52c-validated-release-candidate-pending-iphone",
+  "rc52c": {
+    "implementationCheckpoint": "cd7ef17",
+    "completed": [
+      "Held 73 JH and 18 JOINTER legacy image rows without removing references, checks, or product links",
+      "Minimized published TIMON evidence and retained raw research in an ignored local directory",
+      "Verified unchanged IDs, 2,863 catalog rows, 2,041 product link rows and 428 RC45 BF/DRIFT SPIN rows",
+      "Verified deterministic TIMON evidence generation and audit output across 68 files",
+      "Measured capacity and tested the RC52-B to RC52-C service worker upgrade and offline cold start",
+      "Completed clean Node 22 unit, E2E and offline suites, build, typecheck and diff checks"
+    ],
+    "images": { "activeRows": 0, "heldRowsAcrossFiveMakers": 1854, "newlyHeldRows": 91, "applicableHeldNoaRows": 118, "preservedNoaDefinitions": 120 },
+    "validation": {
+      "node": "22.23.5",
+      "unitPassed": 727,
+      "unitSkipped": 6,
+      "readOnlyBackupTestsPassed": 2,
+      "e2ePassed": 244,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed",
+      "diffCheck": "passed",
+      "serviceWorkerUpgradeAndOfflineColdStart": "passed",
+      "physicalIphone": "pending"
+    },
+    "pending": [
+      "Complete the physical iPhone checks in Safari and the installed web app",
+      "Review the published history finding at merge review and coordinate owner-approved remediation if required"
+    ],
+    "resume": "Use RC52_IPHONE_TEST_GUIDE.md for the isolated preview and device checks, and RC52_RELEASE_CHECKLIST.md for merge review. RC52_FINAL_AUDIT.md identifies pushed history and describes regeneration from the tracked matching inputs. Original TIMON research files are preserved under the ignored .rc52c-timon.local directory."
+  },
   "rc52b": {
+    "startCommit": "eed3897",
     "completed": [
       "Backups ignored and tracked materials reviewed",
       "Synthetic default fixture and reproducible catalog generation instructions",
