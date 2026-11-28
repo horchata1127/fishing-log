@@ -1,15 +1,16 @@
 import 'fake-indexeddb/auto'
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises'
-import { createHash } from 'node:crypto'
+import { assertReviewedCatalog, catalogFingerprint, sha256 as digest } from './catalog-audit-fingerprint.mjs'
 import { localTypeScript } from './load-local-typescript.mjs'
 
 const backupPath = process.argv[2]
 if (!backupPath) throw new Error('Pass the path to the device backup')
 const output = 'docs/lure-external-links/'
 const json = async path => JSON.parse(await readFile(path, 'utf8'))
-const digest = bytes => createHash('sha256').update(bytes).digest('hex')
 const raw = await readFile(backupPath)
 const { data } = JSON.parse(raw.toString('utf8').replace(/^\uFEFF/, ''))
+const rawHash = digest(raw)
+const catalogHash = catalogFingerprint(data)
 const historical = await json('docs/noa-retailer-product-links/IMAGE_RESTORATION_CHECKS.json')
 const health = await json('docs/noa-retailer-product-links/AUDIT.json')
 const review = await json(output+'RODIO_REVIEW.json')
@@ -20,9 +21,7 @@ const timon = await json(output+'TIMON_REVIEW.json').catch(error=>{
   if (error.code === 'ENOENT') return undefined
   throw error
 })
-if (timon && timon.stats.backupSha256 !== digest(raw)) {
-  throw new Error('Run match-timon-rc48.mjs with the same backup before generating the shared audit')
-}
+if (timon) assertReviewedCatalog(timon.stats, rawHash, catalogHash, 'TIMON')
 const timonRetailer = await json(output+'TIMON_RETAILER_REVIEW.json').catch(error=>{
   if(error.code==='ENOENT')return undefined
   throw error
@@ -45,7 +44,7 @@ const optionalJson = (name,fallback) => json(output+name).catch(error=>{
 const manufacturerReviews = await Promise.all(['SMITH','PALMS','ROB LURE'].map(async maker=>{
   const name = maker.replaceAll(' ','_')
   const report = await optionalJson(name+'_REVIEW.json')
-  if (report && report.stats.backupSha256 !== digest(raw)) throw new Error(maker+' review backup mismatch')
+  if (report) assertReviewedCatalog(report.stats, rawHash, catalogHash, maker)
   const checks = report ? await optionalJson(name+'_IMAGE_SPOT_CHECKS.json',[]) : []
   return { maker, report, rows: new Map(report?.rows.map(row=>[row.variantId,row])), checks }
 }))
@@ -333,7 +332,7 @@ try {
   if(rows.length!==variants.length || digest(await readFile(backupPath))!==digest(raw))throw new Error('Inventory or backup integrity check failed')
   await mkdir(output,{recursive:true})
   const write=(name,value)=>writeFile(output+name,JSON.stringify(value,null,2)+'\n')
-  await write('INVENTORY.json',{backupSha256:digest(raw),imageEvidenceDate:historical.checkedAt,total:grouped('all',rows,models),manufacturers:inventory})
+  await write('INVENTORY.json',{backupSha256:rawHash,catalogSha256:catalogHash,imageEvidenceDate:historical.checkedAt,total:grouped('all',rows,models),manufacturers:inventory})
   await writeFile(output+'ALL_COLORS.csv',csv(rows))
   await write('SOURCE_PAGES.json',[...pages.values()])
   const identity=({manufacturer,series,model,weightG,lengthMm,variantId,color,colorCode})=>({manufacturer,series,model,weightG,lengthMm,variantId,color,colorCode})

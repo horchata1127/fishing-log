@@ -1,4 +1,4 @@
-import { createHash } from 'node:crypto'
+import { catalogFingerprint, sha256 } from './catalog-audit-fingerprint.mjs'
 import { readFile, readdir, writeFile } from 'node:fs/promises'
 
 const [backupPath] = process.argv.slice(2)
@@ -127,7 +127,7 @@ for (const model of data.lureModels.filter(row => series.has(row.seriesId))) {
   }
 }
 
-const stats = { backupSha256: createHash('sha256').update(raw).digest('hex'), series: series.size,
+const stats = { backupSha256: sha256(raw), catalogSha256: catalogFingerprint(data), series: series.size,
   models: models.length, colorRows: rows.length, zeroColorModels: models.filter(model => !model.colorRows).length,
   productPagesReviewed: pages.filter(page => new URL(page.url).pathname.startsWith('/product/')).length + 2,
   matchedProductRows: rows.filter(row => row.status === 'matched').length,

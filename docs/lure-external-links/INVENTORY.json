@@ -1,5 +1,6 @@
 {
-  "backupSha256": "a6ed379dd9d985c735d825dd232868ce79b051b4bd5535e24294b5058e9b1532",
+  "backupSha256": "6447e0f9f26e4666c15b8508bb5ab18b3b23d10b9a9775fdf50fffd1c4b3aa8a",
+  "catalogSha256": "d33283f0f9018c1eaf2d9176dfdbcd336450a8ddac0d1c5f71af0731e05fc8d8",
   "imageEvidenceDate": "2026-11-23T08:29:29.530Z",
   "total": {
     "label": "all",

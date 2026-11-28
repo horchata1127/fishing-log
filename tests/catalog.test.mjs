@@ -235,8 +235,18 @@ for (const [name, change] of invalid) {
   })
 }
 
-test('latest reference JSON is previewed only: 304 models, 1886 separate colors and a collision warning', async () => {
-  const reference = JSON.parse(await readFile(new URL('../docs/catalog-handoff/fishing_log_catalog_1886_only.json', import.meta.url), 'utf8'))
+test('a synthetic catalog at reference scale previews 304 models, 1886 colors and a collision without writing', async () => {
+  const modelCount = 304
+  const reference = { ...seed(), data: {
+    lureManufacturers: [{ id: 1, name: 'Ｓynthetic maker' }],
+    lureSeries: [{ id: 2, manufacturerId: 1, name: 'Fixture series' }],
+    lureModels: Array.from({ length: modelCount }, (_, index) => ({
+      id: index + 3, seriesId: 2, name: 'Fixture model ' + index, category: 'スプーン',
+    })),
+    lureVariants: Array.from({ length: 1886 }, (_, index) => ({
+      id: modelCount + 3 + index, modelId: index % modelCount + 3, colorName: 'Fixture color ' + index,
+    })),
+  } }
   const before = await snapshot()
   const checked = await previewLureCatalog(reference)
   assert.deepEqual(checked.errors, [])

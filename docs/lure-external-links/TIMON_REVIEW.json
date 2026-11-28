@@ -3,6 +3,7 @@
   "termsUrl": "https://www.jackall.co.jp/terms-of-service/",
   "stats": {
     "backupSha256": "a6ed379dd9d985c735d825dd232868ce79b051b4bd5535e24294b5058e9b1532",
+    "catalogSha256": "d33283f0f9018c1eaf2d9176dfdbcd336450a8ddac0d1c5f71af0731e05fc8d8",
     "models": 73,
     "modelsWithoutColors": 22,
     "rows": 786,

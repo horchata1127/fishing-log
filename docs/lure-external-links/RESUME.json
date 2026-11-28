@@ -1,6 +1,6 @@
 {
-  "stage": "RC52-A",
-  "startCommit": "532de49",
+  "stage": "RC52-B",
+  "startCommit": "eed3897",
   "branch": "feature/rc45",
   "rodio": {
     "modelsBefore": 48,
@@ -26,8 +26,12 @@
   "verification": "VALIDATION.md",
   "candidateQueue": "SOURCE_PAGES.json",
   "reviewedRetailerPages": "RODIO_REVIEW.json",
-  "next": "RC52-B findings remediation and verification",
-  "nextStatus": "rc52a-audit-complete",
+  "next": "RC52-B clean Node 22 validation",
+  "nextStatus": "rc52b-implementation-ready-for-validation",
+  "rc52b": {
+    "completed": ["nested backups ignored", "synthetic catalog fixture", "separate original and catalog hashes", "PWA chunk groups", "source permissions reviewed"],
+    "pending": ["clean Node 22 suite and capacity measurement", "release reports and device guide", "legacy NOA image display permission decision"]
+  },
   "rc52a": {
     "report": "RC52_AUDIT.md",
     "completed": [

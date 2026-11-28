@@ -1,4 +1,4 @@
-import { createHash } from 'node:crypto'
+import { catalogFingerprint, sha256 } from './catalog-audit-fingerprint.mjs'
 import { readFile, readdir, writeFile } from 'node:fs/promises'
 
 const [backupPath] = process.argv.slice(2)
@@ -80,7 +80,7 @@ for (const model of data.lureModels.filter(row => series.has(row.seriesId))) {
   }
 }
 
-const stats = { backupSha256: createHash('sha256').update(raw).digest('hex'), series: series.size, models: models.length,
+const stats = { backupSha256: sha256(raw), catalogSha256: catalogFingerprint(data), series: series.size, models: models.length,
   colorRows: rows.length, productPagesReviewed: pages.length, matchedProductRows: rows.filter(row => row.productUrl).length,
   heldProductRows: rows.filter(row => !row.productUrl).length }
 await writeFile(output + 'PALMS_REVIEW.json', JSON.stringify({ checkedAt: policy.checkedAt,

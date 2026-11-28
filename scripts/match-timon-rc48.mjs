@@ -1,11 +1,10 @@
 import { readFile, readdir, writeFile } from 'node:fs/promises'
-import { createHash } from 'node:crypto'
+import { catalogFingerprint, sha256 as sha } from './catalog-audit-fingerprint.mjs'
 
 const directory = 'docs/lure-external-links/'
 const backup = process.argv[2]
 if (!backup) throw new Error('Pass the path to the local backup')
 const raw = await readFile(backup)
-const sha = bytes => createHash('sha256').update(bytes).digest('hex')
 const { data } = JSON.parse(raw.toString('utf8').replace(/^\uFEFF/, ''))
 const maker = data.lureManufacturers.find(row => row.name.normalize('NFKC').toUpperCase() === 'TIMON')
 if (!maker) throw new Error('TIMON is missing from the catalog')
@@ -164,7 +163,7 @@ for (const model of models) {
 }
 if (reviewedRows.length!==variants.length || sha(await readFile(backup))!==sha(raw)) throw new Error('Backup or row coverage changed')
 const matched = reviewedRows.filter(row=>row.productStatus==='verified-activation-held')
-const stats = {backupSha256:sha(raw),models:models.length,modelsWithoutColors:reviewedModels.filter(m=>!m.rows).length,rows:variants.length,
+const stats = {backupSha256:sha(raw),catalogSha256:catalogFingerprint(data),models:models.length,modelsWithoutColors:reviewedModels.filter(m=>!m.rows).length,rows:variants.length,
   pages:cachedPages.length,matchedProductRows:matched.length,matchedProductPages:new Set(matched.map(row=>row.officialUrl)).size,
   productActivated:0,imageActivated:0,rawImageCandidates:matched.filter(r=>r.image?.candidateUrl).length,
   heldByReason:Object.fromEntries([...Map.groupBy(reviewedRows,row=>row.reason)].map(([reason,rows])=>[reason,rows.length]))}
