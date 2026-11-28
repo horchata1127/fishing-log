@@ -2,6 +2,27 @@ import { test, expect, restoreViaUI, catalogFixture, readAllState } from './fixt
 import { rc43Fixture, rc43TestPng } from '../rc43Fixture'
 import type { LureExternalReference } from '../../src/data/lureExternalReferences'
 
+test('ROB LURE reviewed retailer link is limited to the exact catalog color', async ({ page, context }) => {
+  const fixture = rc43Fixture()
+  fixture.data.lureManufacturers.push({ ...catalogFixture().data.lureManufacturers[0], name: 'ROB LURE' })
+  fixture.data.lureSeries.push({ id: 20, manufacturerId: 10, name: 'ルラン' })
+  fixture.data.lureModels.push({ id: 30, seriesId: 20, name: 'ルラン 0.8g', weightG: 0.8, lengthMm: 20.5, category: 'スプーン' })
+  fixture.data.lureVariants.push({ id: 40, modelId: 30, colorName: 'R1 枝豆グロー', catalogEvidence: { colorCode: 'R1' } },
+    { id: 41, modelId: 30, colorName: 'R1 枝豆グロー', catalogEvidence: { colorCode: 'R2' } })
+  await restoreViaUI(page, fixture)
+  const before = await readAllState(page)
+  await page.getByRole('button', { name: 'ビジュアルカラー辞書', exact: true }).click()
+  const dictionary = page.getByRole('dialog', { name: 'ビジュアルカラー辞書' })
+  await dictionary.getByLabel('辞書検索').fill('枝豆グロー')
+  const row = dictionary.locator('[data-variant-id="40"]')
+  await expect(row.getByRole('link')).toHaveAttribute('href', 'https://www.kitiya.jp/?pid=193968893')
+  await expect(row.getByRole('link')).toHaveAttribute('target', '_blank')
+  await expect(dictionary.locator('[data-variant-id="41"]').getByRole('link')).toHaveCount(0)
+  await context.setOffline(true)
+  await expect(row.getByRole('img', { name: '汎用ルアーアイコン' })).toBeVisible()
+  expect(await readAllState(page)).toEqual(before)
+})
+
 test('PALMS color links distinguish the two Powale sizes while keeping the offline icon', async ({ page, context }) => {
   const fixture = rc43Fixture()
   fixture.data.lureManufacturers.push({ ...catalogFixture().data.lureManufacturers[0], name: 'PALMS' })

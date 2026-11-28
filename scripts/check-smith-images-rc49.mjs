@@ -3,11 +3,14 @@ import { chromium } from 'playwright'
 
 const directory = 'docs/lure-external-links/'
 const [manufacturer = 'SMITH', checkedAt = '2026-11-28'] = process.argv.slice(2)
-if (!['SMITH', 'PALMS'].includes(manufacturer)) throw new Error('Unknown image review manufacturer')
+if (!['SMITH', 'PALMS', 'ROB_LURE'].includes(manufacturer)) throw new Error('Unknown image review manufacturer')
 const checkpoint = directory + manufacturer + '_IMAGE_SPOT_CHECKS.json'
 const { rows } = JSON.parse(await readFile(directory + manufacturer + '_REVIEW.json', 'utf8'))
-const groups = Map.groupBy(rows.filter(row => row.image), row => row.candidateUrl)
-const samples = [...groups.values()].flatMap(group => group[0].kind === 'individual-color' ? group : group.slice(0, 1))
+const groups = Map.groupBy(rows.filter(row => row.image), row => row.candidateUrl ?? row.productUrl)
+const samples = manufacturer === 'ROB_LURE'
+  ? [...Map.groupBy(rows.filter(row => row.image), row => row.kind === 'individual-color'
+    ? row.sourceName + ':' + row.model : row.candidateUrl + ':' + row.model).values()].map(group => group[0])
+  : [...groups.values()].flatMap(group => group[0].kind === 'individual-color' ? group : group.slice(0, 1))
 const checks = new Map((await readFile(checkpoint, 'utf8').then(JSON.parse).catch(error => {
   if (error.code === 'ENOENT') return []
   throw error

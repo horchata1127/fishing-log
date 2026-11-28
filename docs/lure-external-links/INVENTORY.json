@@ -8,13 +8,13 @@
     "zeroColorModels": 51,
     "rows": 2863,
     "existingProductRows": 388,
-    "newProductRows": 1486,
-    "productOnlyRows": 1783,
-    "uniqueProductUrls": 1199,
-    "repeatedProductUrlOccurrences": 799,
-    "imageReferenceRows": 1729,
-    "uniqueImageUrls": 1220,
-    "repeatedImageUrlOccurrences": 509,
+    "newProductRows": 1653,
+    "productOnlyRows": 1950,
+    "uniqueProductUrls": 1239,
+    "repeatedProductUrlOccurrences": 926,
+    "imageReferenceRows": 1852,
+    "uniqueImageUrls": 1331,
+    "repeatedImageUrlOccurrences": 521,
     "officialReview": {
       "rows": 786,
       "matchedProductRows": 687,
@@ -72,6 +72,21 @@
         "image-display-permission-unconfirmed": 83
       }
     },
+    "robLureReview": {
+      "matchedProductRows": 167,
+      "individualColorProductRows": 24,
+      "modelColorListRows": 143,
+      "candidatePhotos": 19,
+      "candidateModelColorSamples": 80,
+      "candidateSharedColorSamples": 24,
+      "productHoldsByReason": {
+        "exact-jan-retailer-http-202-without-product-content": 1,
+        "heroes-ss-jan-unconfirmed-on-accessible-product-page": 1
+      },
+      "imageHoldsByReason": {
+        "image-display-permission-unconfirmed": 123
+      }
+    },
     "before": {
       "colorRows": 2435,
       "productRows": 388,
@@ -85,14 +100,14 @@
     },
     "after": {
       "colorRows": 2863,
-      "productRows": 1874,
-      "productCoveragePercent": 65.46,
+      "productRows": 2041,
+      "productCoveragePercent": 71.29,
       "individualPhotoRows": 73,
       "individualPhotoPercent": 2.55,
       "commonColorSampleRows": 18,
       "commonColorSamplePercent": 0.63,
-      "heldProductRows": 989,
-      "heldImageRows": 1640
+      "heldProductRows": 822,
+      "heldImageRows": 1763
     }
   },
   "manufacturers": [
@@ -12097,13 +12112,28 @@
       "zeroColorModels": 0,
       "rows": 169,
       "existingProductRows": 0,
-      "newProductRows": 0,
-      "productOnlyRows": 0,
-      "uniqueProductUrls": 0,
-      "repeatedProductUrlOccurrences": 0,
-      "imageReferenceRows": 0,
-      "uniqueImageUrls": 0,
-      "repeatedImageUrlOccurrences": 0,
+      "newProductRows": 167,
+      "productOnlyRows": 167,
+      "uniqueProductUrls": 40,
+      "repeatedProductUrlOccurrences": 127,
+      "imageReferenceRows": 123,
+      "uniqueImageUrls": 111,
+      "repeatedImageUrlOccurrences": 12,
+      "robLureReview": {
+        "matchedProductRows": 167,
+        "individualColorProductRows": 24,
+        "modelColorListRows": 143,
+        "candidatePhotos": 19,
+        "candidateModelColorSamples": 80,
+        "candidateSharedColorSamples": 24,
+        "productHoldsByReason": {
+          "exact-jan-retailer-http-202-without-product-content": 1,
+          "heroes-ss-jan-unconfirmed-on-accessible-product-page": 1
+        },
+        "imageHoldsByReason": {
+          "image-display-permission-unconfirmed": 123
+        }
+      },
       "before": {
         "colorRows": 169,
         "productRows": 0,
@@ -12117,14 +12147,14 @@
       },
       "after": {
         "colorRows": 169,
-        "productRows": 0,
-        "productCoveragePercent": 0,
+        "productRows": 167,
+        "productCoveragePercent": 98.82,
         "individualPhotoRows": 0,
         "individualPhotoPercent": 0,
         "commonColorSampleRows": 0,
         "commonColorSamplePercent": 0,
-        "heldProductRows": 169,
-        "heldImageRows": 0
+        "heldProductRows": 2,
+        "heldImageRows": 123
       },
       "series": [
         {
@@ -12134,13 +12164,25 @@
           "zeroColorModels": 0,
           "rows": 24,
           "existingProductRows": 0,
-          "newProductRows": 0,
-          "productOnlyRows": 0,
-          "uniqueProductUrls": 0,
-          "repeatedProductUrlOccurrences": 0,
-          "imageReferenceRows": 0,
-          "uniqueImageUrls": 0,
-          "repeatedImageUrlOccurrences": 0,
+          "newProductRows": 24,
+          "productOnlyRows": 24,
+          "uniqueProductUrls": 1,
+          "repeatedProductUrlOccurrences": 23,
+          "imageReferenceRows": 24,
+          "uniqueImageUrls": 12,
+          "repeatedImageUrlOccurrences": 12,
+          "robLureReview": {
+            "matchedProductRows": 24,
+            "individualColorProductRows": 0,
+            "modelColorListRows": 24,
+            "candidatePhotos": 0,
+            "candidateModelColorSamples": 0,
+            "candidateSharedColorSamples": 24,
+            "productHoldsByReason": {},
+            "imageHoldsByReason": {
+              "image-display-permission-unconfirmed": 24
+            }
+          },
           "before": {
             "colorRows": 24,
             "productRows": 0,
@@ -12154,14 +12196,14 @@
           },
           "after": {
             "colorRows": 24,
-            "productRows": 0,
-            "productCoveragePercent": 0,
+            "productRows": 24,
+            "productCoveragePercent": 100,
             "individualPhotoRows": 0,
             "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
-            "heldProductRows": 24,
-            "heldImageRows": 0
+            "heldProductRows": 0,
+            "heldImageRows": 24
           },
           "modelDetails": [
             {
@@ -12174,13 +12216,25 @@
               "zeroColorModels": 0,
               "rows": 12,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 12,
+              "productOnlyRows": 12,
+              "uniqueProductUrls": 1,
+              "repeatedProductUrlOccurrences": 11,
+              "imageReferenceRows": 12,
+              "uniqueImageUrls": 12,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 12,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 12,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 0,
+                "candidateSharedColorSamples": 12,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 12
+                }
+              },
               "before": {
                 "colorRows": 12,
                 "productRows": 0,
@@ -12194,14 +12248,14 @@
               },
               "after": {
                 "colorRows": 12,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 12,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 12,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 12
               }
             },
             {
@@ -12214,13 +12268,25 @@
               "zeroColorModels": 0,
               "rows": 12,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 12,
+              "productOnlyRows": 12,
+              "uniqueProductUrls": 1,
+              "repeatedProductUrlOccurrences": 11,
+              "imageReferenceRows": 12,
+              "uniqueImageUrls": 12,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 12,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 12,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 0,
+                "candidateSharedColorSamples": 12,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 12
+                }
+              },
               "before": {
                 "colorRows": 12,
                 "productRows": 0,
@@ -12234,14 +12300,14 @@
               },
               "after": {
                 "colorRows": 12,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 12,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 12,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 12
               }
             }
           ]
@@ -12253,13 +12319,25 @@
           "zeroColorModels": 0,
           "rows": 17,
           "existingProductRows": 0,
-          "newProductRows": 0,
-          "productOnlyRows": 0,
-          "uniqueProductUrls": 0,
-          "repeatedProductUrlOccurrences": 0,
-          "imageReferenceRows": 0,
-          "uniqueImageUrls": 0,
+          "newProductRows": 17,
+          "productOnlyRows": 17,
+          "uniqueProductUrls": 1,
+          "repeatedProductUrlOccurrences": 16,
+          "imageReferenceRows": 17,
+          "uniqueImageUrls": 17,
           "repeatedImageUrlOccurrences": 0,
+          "robLureReview": {
+            "matchedProductRows": 17,
+            "individualColorProductRows": 0,
+            "modelColorListRows": 17,
+            "candidatePhotos": 0,
+            "candidateModelColorSamples": 17,
+            "candidateSharedColorSamples": 0,
+            "productHoldsByReason": {},
+            "imageHoldsByReason": {
+              "image-display-permission-unconfirmed": 17
+            }
+          },
           "before": {
             "colorRows": 17,
             "productRows": 0,
@@ -12273,14 +12351,14 @@
           },
           "after": {
             "colorRows": 17,
-            "productRows": 0,
-            "productCoveragePercent": 0,
+            "productRows": 17,
+            "productCoveragePercent": 100,
             "individualPhotoRows": 0,
             "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
-            "heldProductRows": 17,
-            "heldImageRows": 0
+            "heldProductRows": 0,
+            "heldImageRows": 17
           },
           "modelDetails": [
             {
@@ -12293,13 +12371,25 @@
               "zeroColorModels": 0,
               "rows": 9,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 9,
+              "productOnlyRows": 9,
+              "uniqueProductUrls": 1,
+              "repeatedProductUrlOccurrences": 8,
+              "imageReferenceRows": 9,
+              "uniqueImageUrls": 9,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 9,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 9,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 9,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 9
+                }
+              },
               "before": {
                 "colorRows": 9,
                 "productRows": 0,
@@ -12313,14 +12403,14 @@
               },
               "after": {
                 "colorRows": 9,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 9,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 9,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 9
               }
             },
             {
@@ -12333,13 +12423,25 @@
               "zeroColorModels": 0,
               "rows": 8,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 8,
+              "productOnlyRows": 8,
+              "uniqueProductUrls": 1,
+              "repeatedProductUrlOccurrences": 7,
+              "imageReferenceRows": 8,
+              "uniqueImageUrls": 8,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 8,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 8,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 8,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 8
+                }
+              },
               "before": {
                 "colorRows": 8,
                 "productRows": 0,
@@ -12353,14 +12455,14 @@
               },
               "after": {
                 "colorRows": 8,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 8,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 8,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 8
               }
             }
           ]
@@ -12372,13 +12474,25 @@
           "zeroColorModels": 0,
           "rows": 10,
           "existingProductRows": 0,
-          "newProductRows": 0,
-          "productOnlyRows": 0,
-          "uniqueProductUrls": 0,
-          "repeatedProductUrlOccurrences": 0,
-          "imageReferenceRows": 0,
-          "uniqueImageUrls": 0,
+          "newProductRows": 10,
+          "productOnlyRows": 10,
+          "uniqueProductUrls": 1,
+          "repeatedProductUrlOccurrences": 9,
+          "imageReferenceRows": 10,
+          "uniqueImageUrls": 10,
           "repeatedImageUrlOccurrences": 0,
+          "robLureReview": {
+            "matchedProductRows": 10,
+            "individualColorProductRows": 0,
+            "modelColorListRows": 10,
+            "candidatePhotos": 0,
+            "candidateModelColorSamples": 10,
+            "candidateSharedColorSamples": 0,
+            "productHoldsByReason": {},
+            "imageHoldsByReason": {
+              "image-display-permission-unconfirmed": 10
+            }
+          },
           "before": {
             "colorRows": 10,
             "productRows": 0,
@@ -12392,14 +12506,14 @@
           },
           "after": {
             "colorRows": 10,
-            "productRows": 0,
-            "productCoveragePercent": 0,
+            "productRows": 10,
+            "productCoveragePercent": 100,
             "individualPhotoRows": 0,
             "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
-            "heldProductRows": 10,
-            "heldImageRows": 0
+            "heldProductRows": 0,
+            "heldImageRows": 10
           },
           "modelDetails": [
             {
@@ -12412,13 +12526,25 @@
               "zeroColorModels": 0,
               "rows": 10,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 10,
+              "productOnlyRows": 10,
+              "uniqueProductUrls": 1,
+              "repeatedProductUrlOccurrences": 9,
+              "imageReferenceRows": 10,
+              "uniqueImageUrls": 10,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 10,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 10,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 10,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 10
+                }
+              },
               "before": {
                 "colorRows": 10,
                 "productRows": 0,
@@ -12432,14 +12558,14 @@
               },
               "after": {
                 "colorRows": 10,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 10,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 10,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 10
               }
             }
           ]
@@ -12451,13 +12577,25 @@
           "zeroColorModels": 0,
           "rows": 10,
           "existingProductRows": 0,
-          "newProductRows": 0,
-          "productOnlyRows": 0,
-          "uniqueProductUrls": 0,
-          "repeatedProductUrlOccurrences": 0,
-          "imageReferenceRows": 0,
-          "uniqueImageUrls": 0,
+          "newProductRows": 10,
+          "productOnlyRows": 10,
+          "uniqueProductUrls": 1,
+          "repeatedProductUrlOccurrences": 9,
+          "imageReferenceRows": 10,
+          "uniqueImageUrls": 10,
           "repeatedImageUrlOccurrences": 0,
+          "robLureReview": {
+            "matchedProductRows": 10,
+            "individualColorProductRows": 0,
+            "modelColorListRows": 10,
+            "candidatePhotos": 0,
+            "candidateModelColorSamples": 10,
+            "candidateSharedColorSamples": 0,
+            "productHoldsByReason": {},
+            "imageHoldsByReason": {
+              "image-display-permission-unconfirmed": 10
+            }
+          },
           "before": {
             "colorRows": 10,
             "productRows": 0,
@@ -12471,14 +12609,14 @@
           },
           "after": {
             "colorRows": 10,
-            "productRows": 0,
-            "productCoveragePercent": 0,
+            "productRows": 10,
+            "productCoveragePercent": 100,
             "individualPhotoRows": 0,
             "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
-            "heldProductRows": 10,
-            "heldImageRows": 0
+            "heldProductRows": 0,
+            "heldImageRows": 10
           },
           "modelDetails": [
             {
@@ -12491,13 +12629,25 @@
               "zeroColorModels": 0,
               "rows": 10,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 10,
+              "productOnlyRows": 10,
+              "uniqueProductUrls": 1,
+              "repeatedProductUrlOccurrences": 9,
+              "imageReferenceRows": 10,
+              "uniqueImageUrls": 10,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 10,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 10,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 10,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 10
+                }
+              },
               "before": {
                 "colorRows": 10,
                 "productRows": 0,
@@ -12511,14 +12661,14 @@
               },
               "after": {
                 "colorRows": 10,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 10,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 10,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 10
               }
             }
           ]
@@ -12530,13 +12680,25 @@
           "zeroColorModels": 0,
           "rows": 8,
           "existingProductRows": 0,
-          "newProductRows": 0,
-          "productOnlyRows": 0,
-          "uniqueProductUrls": 0,
-          "repeatedProductUrlOccurrences": 0,
-          "imageReferenceRows": 0,
-          "uniqueImageUrls": 0,
+          "newProductRows": 8,
+          "productOnlyRows": 8,
+          "uniqueProductUrls": 1,
+          "repeatedProductUrlOccurrences": 7,
+          "imageReferenceRows": 8,
+          "uniqueImageUrls": 8,
           "repeatedImageUrlOccurrences": 0,
+          "robLureReview": {
+            "matchedProductRows": 8,
+            "individualColorProductRows": 0,
+            "modelColorListRows": 8,
+            "candidatePhotos": 0,
+            "candidateModelColorSamples": 8,
+            "candidateSharedColorSamples": 0,
+            "productHoldsByReason": {},
+            "imageHoldsByReason": {
+              "image-display-permission-unconfirmed": 8
+            }
+          },
           "before": {
             "colorRows": 8,
             "productRows": 0,
@@ -12550,14 +12712,14 @@
           },
           "after": {
             "colorRows": 8,
-            "productRows": 0,
-            "productCoveragePercent": 0,
+            "productRows": 8,
+            "productCoveragePercent": 100,
             "individualPhotoRows": 0,
             "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
-            "heldProductRows": 8,
-            "heldImageRows": 0
+            "heldProductRows": 0,
+            "heldImageRows": 8
           },
           "modelDetails": [
             {
@@ -12570,13 +12732,25 @@
               "zeroColorModels": 0,
               "rows": 8,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 8,
+              "productOnlyRows": 8,
+              "uniqueProductUrls": 1,
+              "repeatedProductUrlOccurrences": 7,
+              "imageReferenceRows": 8,
+              "uniqueImageUrls": 8,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 8,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 8,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 8,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 8
+                }
+              },
               "before": {
                 "colorRows": 8,
                 "productRows": 0,
@@ -12590,14 +12764,14 @@
               },
               "after": {
                 "colorRows": 8,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 8,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 8,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 8
               }
             }
           ]
@@ -12609,13 +12783,28 @@
           "zeroColorModels": 0,
           "rows": 26,
           "existingProductRows": 0,
-          "newProductRows": 0,
-          "productOnlyRows": 0,
-          "uniqueProductUrls": 0,
-          "repeatedProductUrlOccurrences": 0,
-          "imageReferenceRows": 0,
-          "uniqueImageUrls": 0,
+          "newProductRows": 24,
+          "productOnlyRows": 24,
+          "uniqueProductUrls": 14,
+          "repeatedProductUrlOccurrences": 10,
+          "imageReferenceRows": 7,
+          "uniqueImageUrls": 7,
           "repeatedImageUrlOccurrences": 0,
+          "robLureReview": {
+            "matchedProductRows": 24,
+            "individualColorProductRows": 12,
+            "modelColorListRows": 12,
+            "candidatePhotos": 7,
+            "candidateModelColorSamples": 0,
+            "candidateSharedColorSamples": 0,
+            "productHoldsByReason": {
+              "exact-jan-retailer-http-202-without-product-content": 1,
+              "heroes-ss-jan-unconfirmed-on-accessible-product-page": 1
+            },
+            "imageHoldsByReason": {
+              "image-display-permission-unconfirmed": 7
+            }
+          },
           "before": {
             "colorRows": 26,
             "productRows": 0,
@@ -12629,14 +12818,14 @@
           },
           "after": {
             "colorRows": 26,
-            "productRows": 0,
-            "productCoveragePercent": 0,
+            "productRows": 24,
+            "productCoveragePercent": 92.31,
             "individualPhotoRows": 0,
             "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
-            "heldProductRows": 26,
-            "heldImageRows": 0
+            "heldProductRows": 2,
+            "heldImageRows": 7
           },
           "modelDetails": [
             {
@@ -12649,13 +12838,27 @@
               "zeroColorModels": 0,
               "rows": 14,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 13,
+              "productOnlyRows": 13,
+              "uniqueProductUrls": 8,
+              "repeatedProductUrlOccurrences": 5,
+              "imageReferenceRows": 4,
+              "uniqueImageUrls": 4,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 13,
+                "individualColorProductRows": 7,
+                "modelColorListRows": 6,
+                "candidatePhotos": 4,
+                "candidateModelColorSamples": 0,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {
+                  "exact-jan-retailer-http-202-without-product-content": 1
+                },
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 4
+                }
+              },
               "before": {
                 "colorRows": 14,
                 "productRows": 0,
@@ -12669,14 +12872,14 @@
               },
               "after": {
                 "colorRows": 14,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 13,
+                "productCoveragePercent": 92.86,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 14,
-                "heldImageRows": 0
+                "heldProductRows": 1,
+                "heldImageRows": 4
               }
             },
             {
@@ -12689,13 +12892,27 @@
               "zeroColorModels": 0,
               "rows": 12,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 11,
+              "productOnlyRows": 11,
+              "uniqueProductUrls": 6,
+              "repeatedProductUrlOccurrences": 5,
+              "imageReferenceRows": 3,
+              "uniqueImageUrls": 3,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 11,
+                "individualColorProductRows": 5,
+                "modelColorListRows": 6,
+                "candidatePhotos": 3,
+                "candidateModelColorSamples": 0,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {
+                  "heroes-ss-jan-unconfirmed-on-accessible-product-page": 1
+                },
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 3
+                }
+              },
               "before": {
                 "colorRows": 12,
                 "productRows": 0,
@@ -12709,14 +12926,14 @@
               },
               "after": {
                 "colorRows": 12,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 11,
+                "productCoveragePercent": 91.67,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 12,
-                "heldImageRows": 0
+                "heldProductRows": 1,
+                "heldImageRows": 3
               }
             }
           ]
@@ -12728,13 +12945,25 @@
           "zeroColorModels": 0,
           "rows": 21,
           "existingProductRows": 0,
-          "newProductRows": 0,
-          "productOnlyRows": 0,
-          "uniqueProductUrls": 0,
-          "repeatedProductUrlOccurrences": 0,
-          "imageReferenceRows": 0,
-          "uniqueImageUrls": 0,
+          "newProductRows": 21,
+          "productOnlyRows": 21,
+          "uniqueProductUrls": 8,
+          "repeatedProductUrlOccurrences": 13,
+          "imageReferenceRows": 15,
+          "uniqueImageUrls": 15,
           "repeatedImageUrlOccurrences": 0,
+          "robLureReview": {
+            "matchedProductRows": 21,
+            "individualColorProductRows": 5,
+            "modelColorListRows": 16,
+            "candidatePhotos": 5,
+            "candidateModelColorSamples": 10,
+            "candidateSharedColorSamples": 0,
+            "productHoldsByReason": {},
+            "imageHoldsByReason": {
+              "image-display-permission-unconfirmed": 15
+            }
+          },
           "before": {
             "colorRows": 21,
             "productRows": 0,
@@ -12748,14 +12977,14 @@
           },
           "after": {
             "colorRows": 21,
-            "productRows": 0,
-            "productCoveragePercent": 0,
+            "productRows": 21,
+            "productCoveragePercent": 100,
             "individualPhotoRows": 0,
             "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
-            "heldProductRows": 21,
-            "heldImageRows": 0
+            "heldProductRows": 0,
+            "heldImageRows": 15
           },
           "modelDetails": [
             {
@@ -12768,13 +12997,25 @@
               "zeroColorModels": 0,
               "rows": 13,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 13,
+              "productOnlyRows": 13,
+              "uniqueProductUrls": 2,
+              "repeatedProductUrlOccurrences": 11,
+              "imageReferenceRows": 10,
+              "uniqueImageUrls": 10,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 13,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 13,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 10,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 10
+                }
+              },
               "before": {
                 "colorRows": 13,
                 "productRows": 0,
@@ -12788,14 +13029,14 @@
               },
               "after": {
                 "colorRows": 13,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 13,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 13,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 10
               }
             },
             {
@@ -12808,13 +13049,25 @@
               "zeroColorModels": 0,
               "rows": 8,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 8,
+              "productOnlyRows": 8,
+              "uniqueProductUrls": 6,
+              "repeatedProductUrlOccurrences": 2,
+              "imageReferenceRows": 5,
+              "uniqueImageUrls": 5,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 8,
+                "individualColorProductRows": 5,
+                "modelColorListRows": 3,
+                "candidatePhotos": 5,
+                "candidateModelColorSamples": 0,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 5
+                }
+              },
               "before": {
                 "colorRows": 8,
                 "productRows": 0,
@@ -12828,14 +13081,14 @@
               },
               "after": {
                 "colorRows": 8,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 8,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 8,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 5
               }
             }
           ]
@@ -12847,13 +13100,25 @@
           "zeroColorModels": 0,
           "rows": 27,
           "existingProductRows": 0,
-          "newProductRows": 0,
-          "productOnlyRows": 0,
-          "uniqueProductUrls": 0,
-          "repeatedProductUrlOccurrences": 0,
-          "imageReferenceRows": 0,
-          "uniqueImageUrls": 0,
+          "newProductRows": 27,
+          "productOnlyRows": 27,
+          "uniqueProductUrls": 2,
+          "repeatedProductUrlOccurrences": 25,
+          "imageReferenceRows": 25,
+          "uniqueImageUrls": 25,
           "repeatedImageUrlOccurrences": 0,
+          "robLureReview": {
+            "matchedProductRows": 27,
+            "individualColorProductRows": 0,
+            "modelColorListRows": 27,
+            "candidatePhotos": 0,
+            "candidateModelColorSamples": 25,
+            "candidateSharedColorSamples": 0,
+            "productHoldsByReason": {},
+            "imageHoldsByReason": {
+              "image-display-permission-unconfirmed": 25
+            }
+          },
           "before": {
             "colorRows": 27,
             "productRows": 0,
@@ -12867,14 +13132,14 @@
           },
           "after": {
             "colorRows": 27,
-            "productRows": 0,
-            "productCoveragePercent": 0,
+            "productRows": 27,
+            "productCoveragePercent": 100,
             "individualPhotoRows": 0,
             "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
-            "heldProductRows": 27,
-            "heldImageRows": 0
+            "heldProductRows": 0,
+            "heldImageRows": 25
           },
           "modelDetails": [
             {
@@ -12887,13 +13152,25 @@
               "zeroColorModels": 0,
               "rows": 14,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 14,
+              "productOnlyRows": 14,
+              "uniqueProductUrls": 2,
+              "repeatedProductUrlOccurrences": 12,
+              "imageReferenceRows": 12,
+              "uniqueImageUrls": 12,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 14,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 14,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 12,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 12
+                }
+              },
               "before": {
                 "colorRows": 14,
                 "productRows": 0,
@@ -12907,14 +13184,14 @@
               },
               "after": {
                 "colorRows": 14,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 14,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 14,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 12
               }
             },
             {
@@ -12927,13 +13204,25 @@
               "zeroColorModels": 0,
               "rows": 13,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 13,
+              "productOnlyRows": 13,
+              "uniqueProductUrls": 1,
+              "repeatedProductUrlOccurrences": 12,
+              "imageReferenceRows": 13,
+              "uniqueImageUrls": 13,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 13,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 13,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 13,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 13
+                }
+              },
               "before": {
                 "colorRows": 13,
                 "productRows": 0,
@@ -12947,14 +13236,14 @@
               },
               "after": {
                 "colorRows": 13,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 13,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 13,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 13
               }
             }
           ]
@@ -12966,13 +13255,25 @@
           "zeroColorModels": 0,
           "rows": 15,
           "existingProductRows": 0,
-          "newProductRows": 0,
-          "productOnlyRows": 0,
-          "uniqueProductUrls": 0,
-          "repeatedProductUrlOccurrences": 0,
-          "imageReferenceRows": 0,
-          "uniqueImageUrls": 0,
+          "newProductRows": 15,
+          "productOnlyRows": 15,
+          "uniqueProductUrls": 9,
+          "repeatedProductUrlOccurrences": 6,
+          "imageReferenceRows": 7,
+          "uniqueImageUrls": 7,
           "repeatedImageUrlOccurrences": 0,
+          "robLureReview": {
+            "matchedProductRows": 15,
+            "individualColorProductRows": 7,
+            "modelColorListRows": 8,
+            "candidatePhotos": 7,
+            "candidateModelColorSamples": 0,
+            "candidateSharedColorSamples": 0,
+            "productHoldsByReason": {},
+            "imageHoldsByReason": {
+              "image-display-permission-unconfirmed": 7
+            }
+          },
           "before": {
             "colorRows": 15,
             "productRows": 0,
@@ -12986,14 +13287,14 @@
           },
           "after": {
             "colorRows": 15,
-            "productRows": 0,
-            "productCoveragePercent": 0,
+            "productRows": 15,
+            "productCoveragePercent": 100,
             "individualPhotoRows": 0,
             "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
-            "heldProductRows": 15,
-            "heldImageRows": 0
+            "heldProductRows": 0,
+            "heldImageRows": 7
           },
           "modelDetails": [
             {
@@ -13006,13 +13307,23 @@
               "zeroColorModels": 0,
               "rows": 6,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
+              "newProductRows": 6,
+              "productOnlyRows": 6,
+              "uniqueProductUrls": 1,
+              "repeatedProductUrlOccurrences": 5,
               "imageReferenceRows": 0,
               "uniqueImageUrls": 0,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 6,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 6,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 0,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {}
+              },
               "before": {
                 "colorRows": 6,
                 "productRows": 0,
@@ -13026,13 +13337,13 @@
               },
               "after": {
                 "colorRows": 6,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 6,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 6,
+                "heldProductRows": 0,
                 "heldImageRows": 0
               }
             },
@@ -13046,13 +13357,25 @@
               "zeroColorModels": 0,
               "rows": 9,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
-              "imageReferenceRows": 0,
-              "uniqueImageUrls": 0,
+              "newProductRows": 9,
+              "productOnlyRows": 9,
+              "uniqueProductUrls": 8,
+              "repeatedProductUrlOccurrences": 1,
+              "imageReferenceRows": 7,
+              "uniqueImageUrls": 7,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 9,
+                "individualColorProductRows": 7,
+                "modelColorListRows": 2,
+                "candidatePhotos": 7,
+                "candidateModelColorSamples": 0,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {
+                  "image-display-permission-unconfirmed": 7
+                }
+              },
               "before": {
                 "colorRows": 9,
                 "productRows": 0,
@@ -13066,14 +13389,14 @@
               },
               "after": {
                 "colorRows": 9,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 9,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 9,
-                "heldImageRows": 0
+                "heldProductRows": 0,
+                "heldImageRows": 7
               }
             }
           ]
@@ -13085,13 +13408,23 @@
           "zeroColorModels": 0,
           "rows": 11,
           "existingProductRows": 0,
-          "newProductRows": 0,
-          "productOnlyRows": 0,
-          "uniqueProductUrls": 0,
-          "repeatedProductUrlOccurrences": 0,
+          "newProductRows": 11,
+          "productOnlyRows": 11,
+          "uniqueProductUrls": 2,
+          "repeatedProductUrlOccurrences": 9,
           "imageReferenceRows": 0,
           "uniqueImageUrls": 0,
           "repeatedImageUrlOccurrences": 0,
+          "robLureReview": {
+            "matchedProductRows": 11,
+            "individualColorProductRows": 0,
+            "modelColorListRows": 11,
+            "candidatePhotos": 0,
+            "candidateModelColorSamples": 0,
+            "candidateSharedColorSamples": 0,
+            "productHoldsByReason": {},
+            "imageHoldsByReason": {}
+          },
           "before": {
             "colorRows": 11,
             "productRows": 0,
@@ -13105,13 +13438,13 @@
           },
           "after": {
             "colorRows": 11,
-            "productRows": 0,
-            "productCoveragePercent": 0,
+            "productRows": 11,
+            "productCoveragePercent": 100,
             "individualPhotoRows": 0,
             "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
-            "heldProductRows": 11,
+            "heldProductRows": 0,
             "heldImageRows": 0
           },
           "modelDetails": [
@@ -13125,13 +13458,23 @@
               "zeroColorModels": 0,
               "rows": 11,
               "existingProductRows": 0,
-              "newProductRows": 0,
-              "productOnlyRows": 0,
-              "uniqueProductUrls": 0,
-              "repeatedProductUrlOccurrences": 0,
+              "newProductRows": 11,
+              "productOnlyRows": 11,
+              "uniqueProductUrls": 2,
+              "repeatedProductUrlOccurrences": 9,
               "imageReferenceRows": 0,
               "uniqueImageUrls": 0,
               "repeatedImageUrlOccurrences": 0,
+              "robLureReview": {
+                "matchedProductRows": 11,
+                "individualColorProductRows": 0,
+                "modelColorListRows": 11,
+                "candidatePhotos": 0,
+                "candidateModelColorSamples": 0,
+                "candidateSharedColorSamples": 0,
+                "productHoldsByReason": {},
+                "imageHoldsByReason": {}
+              },
               "before": {
                 "colorRows": 11,
                 "productRows": 0,
@@ -13145,13 +13488,13 @@
               },
               "after": {
                 "colorRows": 11,
-                "productRows": 0,
-                "productCoveragePercent": 0,
+                "productRows": 11,
+                "productCoveragePercent": 100,
                 "individualPhotoRows": 0,
                 "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
-                "heldProductRows": 11,
+                "heldProductRows": 0,
                 "heldImageRows": 0
               }
             }

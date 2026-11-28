@@ -7,7 +7,7 @@ import { rc22Fixture } from '../rc22Fixture'
 import { rc23Fixture } from '../rc23Fixture'
 import { stage6Backup } from '../stage6Fixture'
 import { rc24Fixture } from '../rc24Fixture'
-import { catalogFixture } from '../e2e/fixtures'
+import { catalogFixture, restoreViaUI } from '../e2e/fixtures'
 import { rc41Fixture } from '../rc41Fixture'
 import { createRc41Map, recordRc41Position } from '../rc41UiHelpers'
 
@@ -18,8 +18,8 @@ test('RC41 compass persists offline and v12 retains current north separately fro
   let context=await launch()
   try{
     let page=context.pages()[0]!
-    await page.goto(url);await ready(page);page.on('dialog',d=>d.accept())
-    await page.getByTestId('restore-backup').setInputFiles({name:'rc41-compass-synthetic.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(rc41Fixture()))})
+    await page.goto(url);await ready(page)
+    await restoreViaUI(page,rc41Fixture())
     await expect.poll(async()=>(await database(page)).trips!.some(r=>r.id===1)).toBe(true)
     await context.close();context=await launch(true);page=context.pages()[0]!
     await page.goto(url);await page.locator('.trip-row[data-trip-id="1"]').click()

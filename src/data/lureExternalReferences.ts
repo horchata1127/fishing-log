@@ -2,6 +2,7 @@ import { rodioExternalReferences } from './rodioExternalReferences'
 import { timonRetailerExternalReferences } from './timonRetailerExternalReferences'
 import { smithExternalReferences } from './smithExternalReferences'
 import { palmsExternalReferences } from './palmsExternalReferences'
+import { robLureExternalReferences } from './robLureExternalReferences'
 
 export interface ExternalModelDetails {
   weightG?: number
@@ -39,5 +40,5 @@ export interface LureExternalReference {
 
 export const lureExternalReferences: readonly LureExternalReference[] = [
   ...rodioExternalReferences, ...timonRetailerExternalReferences, ...smithExternalReferences,
-  ...palmsExternalReferences,
+  ...palmsExternalReferences, ...robLureExternalReferences,
 ]

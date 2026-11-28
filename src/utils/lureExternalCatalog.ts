@@ -47,14 +47,15 @@ export function resolveLureExternalReference(
   const maker = externalManufacturer(option.manufacturerName)
   if (isNoaOption(option) !== noaProductFallback || !maker || !option.modelDetails) return
   const matched = references.filter(ref => externalManufacturer(ref.manufacturerName) === maker &&
-    (ref.sourceType === 'manufacturer' || ref.sourceType === 'retailer' && (maker === 'RODIO CRAFT' || maker === 'TIMON')) &&
+    (ref.sourceType === 'manufacturer' || ref.sourceType === 'retailer' &&
+      (maker === 'RODIO CRAFT' || maker === 'TIMON' || maker === 'ROB LURE')) &&
     sameName(ref.seriesName, option.seriesName) && sameName(ref.modelName, option.modelName) &&
     matchesModel(ref.modelDetails, option.modelDetails!) &&
     matchesColor(ref, option) &&
     ref.sourceName.trim() && ref.verificationBasis.trim() && reviewedUrl(ref.evidenceUrl))
   if (matched.length !== 1) return
   const ref = matched[0]!
-  const linksRequireConditions = maker === 'TIMON' && ref.sourceType === 'retailer'
+  const linksRequireConditions = (maker === 'TIMON' || maker === 'ROB LURE') && ref.sourceType === 'retailer'
   const productUrl = ref.product?.verified && (!linksRequireConditions || reviewedUrl(ref.product.conditionsEvidence ?? ''))
     ? reviewedUrl(ref.product.url)?.href
     : undefined

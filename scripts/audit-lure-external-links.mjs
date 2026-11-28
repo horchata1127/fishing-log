@@ -42,13 +42,14 @@ const optionalJson = (name,fallback) => json(output+name).catch(error=>{
   if (error.code === 'ENOENT') return fallback
   throw error
 })
-const manufacturerReviews = await Promise.all(['SMITH','PALMS'].map(async maker=>{
-  const report = await optionalJson(maker+'_REVIEW.json')
+const manufacturerReviews = await Promise.all(['SMITH','PALMS','ROB LURE'].map(async maker=>{
+  const name = maker.replaceAll(' ','_')
+  const report = await optionalJson(name+'_REVIEW.json')
   if (report && report.stats.backupSha256 !== digest(raw)) throw new Error(maker+' review backup mismatch')
-  const checks = report ? await optionalJson(maker+'_IMAGE_SPOT_CHECKS.json',[]) : []
+  const checks = report ? await optionalJson(name+'_IMAGE_SPOT_CHECKS.json',[]) : []
   return { maker, report, rows: new Map(report?.rows.map(row=>[row.variantId,row])), checks }
 }))
-const [smith,palms] = manufacturerReviews.map(review=>review.report)
+const [smith,palms,robLure] = manufacturerReviews.map(review=>review.report)
 const byMaker = new Map(manufacturerReviews.map(review=>[review.maker,review]))
 const manufacturerChecks = new Map(manufacturerReviews.flatMap(review=>review.checks.map(check=>[check.url,check])))
 const knownProducts = new Set(health.rows.flatMap(row => [row.productUrl, ...row.retainedOtherUrls.split(' | ')]).filter(Boolean))
@@ -136,8 +137,10 @@ try {
       officialProductCandidate: official?.officialUrl ?? makerRow?.candidateUrl ?? '', officialProductClass: official?.productCandidateKind ?? makerRow?.kind ?? '',
       officialEvidenceDate: official?.checkedAt ?? makerRow?.checkedAt ?? '', officialJan: official?.officialJan ?? '',
       officialProductStatus: official?.productStatus ?? makerRow?.status ?? '',
-      retailerProductCandidate: retailer?.url ?? '', retailerImageCandidate: retailImage?.url ?? '',
-      retailerProductStatus: official ? timonRetailerStatuses.get(option.variantId)?.status ?? '' : '',
+      retailerProductCandidate: retailer?.url ?? (makerRow?.sourceType==='retailer' ? makerRow.productUrl : ''),
+      retailerImageCandidate: retailImage?.url ?? (makerRow?.sourceType==='retailer' ? makerRow.image?.url ?? '' : ''),
+      retailerProductStatus: official ? timonRetailerStatuses.get(option.variantId)?.status ?? '' :
+        makerRow?.sourceType==='retailer' ? makerRow.status : '',
       imageDecodeStatus: checkedImage?.status==='success' || imageSpotChecks.get(candidate)?.status==='decoded' || timonChecks.get(candidate)?.decoded
         ? 'decoded' : manufacturerChecks.get(candidate)?.status ?? checkedImage?.status ?? 'not-tested',
       officialImageAlternatives: official?.image?.candidateUrls?.join(' | ') ?? '',
@@ -174,7 +177,7 @@ try {
     const makerSummaries = manufacturerReviews.flatMap(review=>{
       const matches = list.filter(row=>row.manufacturer===review.maker && review.rows.has(row.variantId))
       if (!matches.length) return []
-      return [[review.maker.toLowerCase()+'Review', {
+      return [[review.maker==='ROB LURE' ? 'robLureReview' : review.maker.toLowerCase()+'Review', {
         matchedProductRows: matches.filter(row=>row.productUrl).length,
         individualColorProductRows: matches.filter(row=>row.productKind==='individual-color').length,
         modelColorListRows: matches.filter(row=>row.productKind==='model-color-list').length,
@@ -244,7 +247,7 @@ try {
     if(!pages.has(key))pages.set(key,{manufacturer,series,model,kind,url,origins:[],status:evidence?.status??(checked?checked.status:'unreviewed'),
       checkedAt:evidence?.checkedAt??(checked?checked.checkedAt:undefined), ...(evidence ?? {}), ...(checked ? {review:checked}: {})})
     const entry=pages.get(key)
-    const reviewPrefix = {TIMON:'rc48',SMITH:'rc49',PALMS:'rc50'}[manufacturer]
+    const reviewPrefix = {TIMON:'rc48',SMITH:'rc49',PALMS:'rc50','ROB LURE':'rc51'}[manufacturer]
     if (reviewPrefix && origin.startsWith(reviewPrefix) && evidence) Object.assign(entry,evidence)
     if(!entry.origins.includes(origin))entry.origins.push(origin)
   }
@@ -308,6 +311,20 @@ try {
     if (row) candidate('PALMS',entry.series,entry.model,'image',entry.url,'rc50-image',
       {status:'held',checkedAt:row.checkedAt,reason:row.image.reason})
   }
+  for (const page of robLure?.pages ?? []) candidate('ROB LURE','','',
+    page.url.endsWith('/work/') || new URL(page.url).searchParams.has('gid') ? 'index' : 'product',
+    page.url,'rc51-page',{status:page.httpStatus===200?'page-reviewed':'page-held',
+      checkedAt:page.checkedAt,httpStatus:page.httpStatus,reason:page.reason})
+  for (const model of robLure?.models ?? []) candidate('ROB LURE',model.series,model.model,'product',model.candidateUrl,'rc51-model',
+    {status:model.modelStatus,checkedAt:robLure.checkedAt,modelColorRows:model.colorRows})
+  for (const url of robLure?.policyReviewUrls ?? []) candidate('ROB LURE','','','policy-review',url,'rc51-policy',
+    {status:'reviewed',checkedAt:robLure.checkedAt})
+  for (const row of robLure?.rows ?? []) {
+    if (row.sourceType==='retailer') candidate('ROB LURE',row.series,row.model,'product',row.productUrl,'rc51-retailer',
+      {status:'matched',checkedAt:row.checkedAt})
+    if (row.image) candidate('ROB LURE',row.series,row.model,'image',row.image.url,'rc51-image',
+      {status:'held',checkedAt:row.checkedAt,reason:row.image.reason})
+  }
   const csv = list => {
     const keys=Object.keys(list[0])
     return '\uFEFF'+[keys,...list.map(row=>keys.map(k=>row[k]))].map(line=>
@@ -331,6 +348,11 @@ try {
       specEvidenceUrl:byMaker.get('SMITH').rows.get(row.variantId)?.specEvidenceUrl,
     } : {}),
     ...(row.manufacturer==='PALMS' ? {policyReviewUrls:palms?.policyReviewUrls} : {}),
+    ...(row.manufacturer==='ROB LURE' ? {
+      sourceType:byMaker.get('ROB LURE').rows.get(row.variantId)?.sourceType,
+      conditionsEvidence:byMaker.get('ROB LURE').rows.get(row.variantId)?.conditionsEvidence,
+      policyReviewUrls:robLure?.policyReviewUrls,
+    } : {}),
   }):null,row.officialProductStatus==='verified-activation-held'?{
     ...identity(row),url:row.officialProductCandidate,additionalUrls:[],sourceName:'JACKALL / TIMON',
     checkedAt:row.officialEvidenceDate,basis:'公式商品仕様表とカラー欄の重量別または型別掲載を照合。',
@@ -339,12 +361,15 @@ try {
   }:null].filter(Boolean)))
   const imageRows=rows.filter(row=>row.imageUrl || row.officialImageAlternatives).map(row=>({...identity(row),url:row.imageUrl,
     status:row.imageStatus,kind:row.imageKind,sourceName:row.imageSourceName,checkedAt:row.imageEvidenceDate,
-        sourceProductUrl:row.officialProductCandidate || row.productUrl,holdReason:row.imageHoldReason,
+        sourceProductUrl:row.manufacturer==='ROB LURE' ? row.productUrl : row.officialProductCandidate || row.productUrl,
+    holdReason:row.imageHoldReason,
     browserCheck:imageSpotChecks.get(row.imageUrl) ?? timonChecks.get(row.imageUrl) ?? manufacturerChecks.get(row.imageUrl),
     technicalDecodeStatus:row.imageDecodeStatus,
     ...(row.manufacturer==='SMITH' ? {conditionsEvidence:byMaker.get('SMITH').rows.get(row.variantId)?.conditionsEvidence,
       permissionStatus:'held'} : {}),
     ...(row.manufacturer==='PALMS' ? {policyReviewUrls:palms?.policyReviewUrls,permissionStatus:'held'} : {}),
+    ...(row.manufacturer==='ROB LURE' ? {policyReviewUrls:robLure?.policyReviewUrls,
+      conditionsEvidence:byMaker.get('ROB LURE').rows.get(row.variantId)?.conditionsEvidence,permissionStatus:'held'} : {}),
     ...(row.manufacturer==='TIMON' ? {conditionsEvidence:timon.termsUrl,
       candidateUrls:row.officialImageAlternatives.split(' | ').filter(Boolean)} : {}),
   }))
@@ -359,7 +384,9 @@ try {
     ...rows.filter(r=>!r.productUrl&&r.manufacturer==='RODIO CRAFT').map(r=>({...identity(r),kind:'product',holdReason:r.holdReason,
       candidateUrls:[r.evidenceProductCandidate,r.evidenceRetailerCandidate,r.evidenceManufacturerCandidate].filter(Boolean)})),
     ...rows.filter(row=>byMaker.get(row.manufacturer)?.rows.has(row.variantId)&&!row.productUrl).map(row=>({...identity(row),kind:'product',scope:'official',
-      holdReason:byMaker.get(row.manufacturer).rows.get(row.variantId).reason,candidateUrls:[row.officialProductCandidate].filter(Boolean),checkedAt:row.officialEvidenceDate})),
+      holdReason:byMaker.get(row.manufacturer).rows.get(row.variantId).reason,
+      candidateUrls:byMaker.get(row.manufacturer).rows.get(row.variantId).candidateUrls ?? [row.officialProductCandidate].filter(Boolean),
+      checkedAt:row.officialEvidenceDate})),
     ...rows.filter(row=>timonRows.has(row.variantId)).map(row=>({...identity(row),kind:'product',scope:'official',
       holdReason:timonRows.get(row.variantId).reason,candidateUrls:[row.officialProductCandidate].filter(Boolean),
       checkedAt:row.officialEvidenceDate || timon.checkedAt})),

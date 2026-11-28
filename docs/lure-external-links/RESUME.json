@@ -1,6 +1,6 @@
 {
-  "stage": "RC50",
-  "startCommit": "a689a71",
+  "stage": "RC51",
+  "startCommit": "cde6e43",
   "branch": "feature/rc45",
   "rodio": {
     "modelsBefore": 48,
@@ -20,14 +20,14 @@
     "timon": "reviewed retailer links; official links and images held pending permission",
     "smith": "manufacturer and reviewed collaboration manufacturer; plain links only; images held pending permission",
     "palms": "plain links to reviewed official product pages; images held pending permission",
-    "robLure": "manufacturer or verified official CDN"
+    "robLure": "reviewed official and retailer product links; images held pending permission; prior Otsuka access hold retained"
   },
   "inventory": "INVENTORY.json",
   "verification": "VALIDATION.md",
   "candidateQueue": "SOURCE_PAGES.json",
   "reviewedRetailerPages": "RODIO_REVIEW.json",
-  "next": "RC50 image permission follow-up",
-  "nextStatus": "product-links-complete-image-activation-held",
+  "next": "RC51 held product and image follow-up",
+  "nextStatus": "reviewed-product-links-implemented-image-activation-held",
   "rodioRemaining": [
     "HELD.json",
     "IMAGE_CHECKS.json"
@@ -58,6 +58,36 @@
     "displayedProductRows": 0,
     "displayedImageRows": 0,
     "activationResume": "Review scope of product-page linking and image permissions separately before using matched candidates"
+  },
+  "robLure": {
+    "checkedAt": "2026-11-28",
+    "review": "ROB_LURE_REVIEW.json",
+    "imageSpotChecks": "ROB_LURE_IMAGE_SPOT_CHECKS.json",
+    "sourcePolicies": "SOURCE_POLICIES.json",
+    "localPageCheckpoints": ".rc51-rob.local/",
+    "models": 16,
+    "colorRows": 169,
+    "registeredProductRows": 167,
+    "registeredProductUrls": 40,
+    "unmatchedProductRows": 2,
+    "unalignedImageRows": 46,
+    "heldImageRows": 123,
+    "heldUniqueImageUrls": 111,
+    "browserCheckedImageUrls": 13,
+    "browserDecodedImageUrls": 12,
+    "displayedImageRows": 0,
+    "remainingVariantIds": [8934, 8947],
+    "activationResume": "Reuse the recorded exact models, URLs, JAN, and image checks. Resolve the two product holds and obtain image display permission before finishing technical checks on eligible images.",
+    "regenerationOrder": ["scripts/research-rob-rc51.mjs", "scripts/match-rob-rc51.mjs", "scripts/audit-lure-external-links.mjs"],
+    "validation": {
+      "unitPassed": 724,
+      "unitSkipped": 5,
+      "e2ePassed": 242,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed",
+      "diffCheck": "passed"
+    }
   },
   "palms": {
     "checkedAt": "2026-11-28",

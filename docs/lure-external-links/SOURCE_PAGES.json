@@ -7,9 +7,12 @@
     "url": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
     "origins": [
       "backup-manufacturer",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "official-color-names-unconfirmed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14
   },
   {
     "manufacturer": "ROB LURE",
@@ -45,9 +48,12 @@
     "url": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
     "origins": [
       "backup-manufacturer",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "official-color-names-unconfirmed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12
   },
   {
     "manufacturer": "ROB LURE",
@@ -84,9 +90,12 @@
     "origins": [
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "color-gallery-reviewed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 13
   },
   {
     "manufacturer": "ROB LURE",
@@ -148,9 +157,12 @@
     "origins": [
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "color-gallery-reviewed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14
   },
   {
     "manufacturer": "ROB LURE",
@@ -186,9 +198,12 @@
     "origins": [
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "color-gallery-reviewed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 13
   },
   {
     "manufacturer": "ROB LURE",
@@ -1628,9 +1643,11 @@
       "backup-product",
       "backup-retailer",
       "manifest-source",
-      "manifest-retailer"
+      "manifest-retailer",
+      "rc51-retailer"
     ],
-    "status": "unreviewed"
+    "status": "matched",
+    "checkedAt": "2026-11-28"
   },
   {
     "manufacturer": "TIMON",
@@ -9487,9 +9504,12 @@
     "url": "https://rob-lure.com/work/s-plug/",
     "origins": [
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "color-gallery-reviewed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12
   },
   {
     "manufacturer": "ROB LURE",
@@ -9499,9 +9519,12 @@
     "url": "https://rob-lure.com/work/s-plug/",
     "origins": [
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "color-gallery-reviewed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12
   },
   {
     "manufacturer": "ROB LURE",
@@ -9511,9 +9534,12 @@
     "url": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
     "origins": [
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "color-gallery-reviewed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 9
   },
   {
     "manufacturer": "ROB LURE",
@@ -9523,9 +9549,12 @@
     "url": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
     "origins": [
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "color-gallery-reviewed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 8
   },
   {
     "manufacturer": "ROB LURE",
@@ -9535,9 +9564,12 @@
     "url": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
     "origins": [
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "color-gallery-reviewed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10
   },
   {
     "manufacturer": "ROB LURE",
@@ -9547,9 +9579,12 @@
     "url": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
     "origins": [
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "color-gallery-reviewed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10
   },
   {
     "manufacturer": "ROB LURE",
@@ -9559,9 +9594,12 @@
     "url": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
     "origins": [
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc51-model"
     ],
-    "status": "unreviewed"
+    "status": "color-gallery-reviewed",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 8
   },
   {
     "manufacturer": "ROB LURE",
@@ -9593,9 +9631,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2023/11/01.png",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -9604,9 +9645,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2023/11/02.png",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -9615,9 +9659,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2023/11/03.png",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -9626,9 +9673,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2023/11/04.png",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -9637,9 +9687,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2023/11/05.png",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -9648,9 +9701,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2023/11/06.png",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -9659,9 +9715,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2023/11/07.png",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -9670,9 +9729,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2023/11/08-.png",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -9681,9 +9743,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2023/11/09.png",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -9692,9 +9757,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2023/11/010.png",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -9769,9 +9837,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f07-FM2.jpg",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -9901,9 +9972,12 @@
     "kind": "image",
     "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss07-FM2.jpg",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc51-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "ROB LURE",
@@ -33745,6 +33819,2651 @@
       "rc50-policy"
     ],
     "status": "reviewed",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792400",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792387",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186122908",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "index",
+    "url": "https://rob-lure.com/work/",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189194140",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=172811747",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/s-plug/",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=172811763",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "index",
+    "url": "https://fishing-shop-jh.com/?gid=3163242&mode=grp&sort=n",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792393",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=193679105",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "index",
+    "url": "https://fishing-shop-jh.com/?gid=2826266&mode=grp&sort=n",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=189195750",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=172811796",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "index",
+    "url": "https://fishing-shop-jh.com/?gid=3162787&mode=grp&sort=n",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=193968893",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=191810992",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792412",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=172811720",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=172811560",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178149824",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189194177",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911178",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911571",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=172811689",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "index",
+    "url": "https://fishing-shop-jh.com/?gid=3163242&mode=grp&page=2&sort=n",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://wonder-field.shop-pro.jp/?pid=189784116",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792392",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://wonder-field.shop-pro.jp/?pid=178211311",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186122918",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792397",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911382",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186122932",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "index",
+    "url": "https://fishing-shop-jh.com/?gid=1310974&mode=grp&sort=n",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911182",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/babel/",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189194173",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189194176",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=81489465",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=172811552",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911140",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911135",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792389",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=37596448",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189194166",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186122900",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=172375874",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=172811778",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186122925",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911568",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911197",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=172811816",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911278",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4580374761616/",
+    "origins": [
+      "rc51-page"
+    ],
+    "status": "page-held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 202,
+    "reason": "exact-jan-retailer-http-202-without-product-content"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "policy-review",
+    "url": "https://rob-lure.com/",
+    "origins": [
+      "rc51-policy"
+    ],
+    "status": "reviewed",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "",
+    "model": "",
+    "kind": "policy-review",
+    "url": "https://rob-lure.com/work/",
+    "origins": [
+      "rc51-policy"
+    ],
+    "status": "reviewed",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/001.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/002.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/003.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/004.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/005.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/006.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/007.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/008.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/009.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/010.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/011.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 1.8g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/012.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/001.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/002.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/003.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/004.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/005.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/006.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/007.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/008.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/009.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/010.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/011.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "S-Plug",
+    "model": "S-Plug 2.2g",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2024/11/012.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/01.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/02.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/03.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/04.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/05.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/06.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/07.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/08.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/010.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/01-1.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/02-1.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/03-1.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/04-1.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/05-1.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/06-1.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/07-1.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "チェルシー",
+    "model": "チェルシー F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2021/03/08-1.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2020/04/01.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2020/04/02.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2020/04/03.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2020/04/04.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2020/04/05.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2020/04/06.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2020/04/07.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2020/04/08.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2020/04/09.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "パパバービー",
+    "model": "パパバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2020/04/10.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie01.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie02.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie03.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie04.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie05.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie06.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie07.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie08.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie09.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "モーストバービー",
+    "model": "モーストバービー",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie10.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "もぐたそ",
+    "model": "もぐたそ",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu1.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "もぐたそ",
+    "model": "もぐたそ",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu8.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "もぐたそ",
+    "model": "もぐたそ",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu3.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "もぐたそ",
+    "model": "もぐたそ",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu4.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "もぐたそ",
+    "model": "もぐたそ",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu5.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "もぐたそ",
+    "model": "もぐたそ",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu6.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "もぐたそ",
+    "model": "もぐたそ",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu7.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "もぐたそ",
+    "model": "もぐたそ",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu2.png",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "product",
+    "url": "https://wonder-field.shop-pro.jp/?pid=178211311",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911178",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186122918",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/186122918.jpg?cmsp_timestamp=20250416110636",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186122900",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/186122900.jpg?cmsp_timestamp=20250416110543",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186122908",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/186122908.jpg?cmsp_timestamp=20250416110606",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911182",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/166911182.jpg?cmsp_timestamp=20220226121144",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911135",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー F",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911197",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=37596448",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186122932",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/186122932.jpg?cmsp_timestamp=20250416110810",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186122925",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/186122925.jpg?cmsp_timestamp=20250416110659",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911278",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=166911568",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178149824",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー",
+    "model": "バービー SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/178149824.jpg?cmsp_timestamp=20231115143725",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング F",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=172375874",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=189195750",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189194176",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189194176.jpg?cmsp_timestamp=20251101142648",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189194177",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189194177.jpg?cmsp_timestamp=20251101142702",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189194166",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189194166.jpg?cmsp_timestamp=20251101142607",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189194140",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189194140.jpg?cmsp_timestamp=20251101142552",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189194173",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ロング",
+    "model": "バービー・ロング SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189194173.jpg?cmsp_timestamp=20251101142634",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f01-%E3%83%9F%E3%83%AB%E3%82%AD%E3%83%BC.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f02-%E3%82%AF%E3%83%AA%E3%82%AF%E3%83%AA.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f03-%E3%83%A1%E3%82%BF%E3%82%B0%E3%83%AA%E5%A4%AB.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f04-%E3%81%AF%E3%81%84%E3%81%8B%E3%82%89%E3%81%95%E3%82%93.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f05-%E3%82%B9%E3%83%8D%E3%83%BC%E3%82%AD%E3%83%BC%E3%82%B0%E3%83%AD%E3%83%BC.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f06-%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f08-%E3%83%96%E3%83%AB%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f09-%E3%81%A8%E3%82%93%E3%81%93%E3%81%A4.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f10-%E5%9D%A6%E3%80%85%E9%BA%BA.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f11-%E3%83%95%E3%82%A7%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f12-%E3%82%AB%E3%83%8B%E3%83%9F%E3%82%BD%E3%82%B0%E3%83%AD%E3%83%BC.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ F",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=81489465",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss01-%E3%82%A4%E3%83%81%E3%82%B4%E3%83%91%E3%83%95%E3%82%A7.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss02-%E3%82%82%E3%82%82%E3%81%84%E3%82%8D%E3%83%A1%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss03-%E3%82%B0%E3%83%AD%E3%83%BC%E3%82%BB%E3%82%B5%E3%83%9F%E3%83%B3.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss04-%E3%83%9E%E3%83%83%E3%83%86%E3%82%A3%E3%83%96%E3%83%AB%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss05-%E6%9C%88%E5%9F%8E.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss06-%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss08-%E3%81%8A%E3%81%97%E3%82%8B%E3%81%93.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss09-%E3%81%A8%E3%82%93%E3%81%93%E3%81%A4.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss10-%E5%9D%A6%E3%80%85%E9%BA%BA.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss11-%E3%83%95%E3%82%A7%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss12-%E3%83%96%E3%83%AB%E3%83%BC%E3%83%87%E3%83%AA%E3%83%83%E3%82%AF.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ママ",
+    "model": "バービー・ママ SS",
+    "kind": "image",
+    "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss13-%E3%81%BF%E3%82%8B%E3%81%8D%EF%BD%9E.jpg",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール F",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=191810992",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "product",
+    "url": "https://wonder-field.shop-pro.jp/?pid=189784116",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792387",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189792387.jpg?cmsp_timestamp=20251213110950",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792393",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189792393.jpg?cmsp_timestamp=20251213111020",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792397",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189792397.jpg?cmsp_timestamp=20251213111040",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792400",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189792400.jpg?cmsp_timestamp=20251213111057",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792412",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189792412.jpg?cmsp_timestamp=20251213111118",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792389",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189792389.jpg?cmsp_timestamp=20251213111000",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189792392",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "バービー・ガール",
+    "model": "バービー・ガール SS",
+    "kind": "image",
+    "url": "https://img07.shop-pro.jp/PA01332/799/product/189792392.jpg?cmsp_timestamp=20251213111011",
+    "origins": [
+      "rc51-image"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
+  },
+  {
+    "manufacturer": "ROB LURE",
+    "series": "ルラン",
+    "model": "ルラン 0.8g",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=193679105",
+    "origins": [
+      "rc51-retailer"
+    ],
+    "status": "matched",
     "checkedAt": "2026-11-28"
   }
 ]

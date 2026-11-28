@@ -92,6 +92,25 @@
       "privateVsPublic": "私的使用の例外と公開アプリ・リポジトリでの利用を分離。画像・説明文・HTMLの公開は採用しない",
       "basis": "原則事前連絡不要のページリンク。フレーム・画像リンクや提携誤認を避け、別タブで公式商品ページを開く。画像掲載の許諾は確認できていない。"
     },
+    "wonder-field": {
+      "name": "ワンダーフィールド",
+      "checkedAt": "2026-11-28",
+      "termsUrls": ["https://wonder-field.shop-pro.jp/?mode=sk"],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開店舗表記に通常の商品ページリンクを制限する記載は見つからなかった。画像表示の許諾は未確認。"
+    },
+    "rob-lure": {
+      "name": "ROB LURE",
+      "checkedAt": "2026-11-28",
+      "policyReviewUrls": ["https://rob-lure.com/", "https://rob-lure.com/work/"],
+      "robotsCheck": {"url": "https://rob-lure.com/robots.txt", "httpStatus": 200, "scope": "公開製品ページは許可範囲。管理画面は対象外。"},
+      "product": "plain-link",
+      "image": "held",
+      "collection": "対象製品ページを低頻度で確認し、照合原本はローカルのみ。アクセス制限時は停止する。",
+      "publication": "モデル仕様、色コード・名称、URLおよび独自の照合結果のみ。",
+      "basis": "公式ホーム・製品案内のメニューとフッター及び公開サイト内検索を確認した範囲で、通常の商品ページリンクの制限や画像掲載を許可する条件は見つからなかった。"
+    },
     "palms": {
       "name": "PALMS",
       "checkedAt": "2026-11-28",
