@@ -32223,5 +32223,374 @@
     "checkedAt": "2026-11-28",
     "httpStatus": 200,
     "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://t-route.net/products/%E3%81%A1%E3%81%B3%E3%83%91%E3%83%8B%E3%82%AF%E3%83%A9dr-ss",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://t-route.net/products/%E3%81%A1%E3%81%B3%E3%83%91%E3%83%8B%E3%82%AF%E3%83%A9sr",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "no eligible uncovered model-color combination verified"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=179966940",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=179971524",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=186467650",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "no eligible uncovered model-color combination verified"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=186468024",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=183128179",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "no eligible uncovered model-color combination verified"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=190232183",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=190232635",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=190232688",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=171992699",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=189668742",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=173961534",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=183577932",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=185126466",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=165044001",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=93707773",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "no eligible uncovered model-color combination verified"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=182978155",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?cbid=382616&csid=0&mode=cate&page=2",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "listing-inspected",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=190489106",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=190508313",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=82811491",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=160046041",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?cbid=382616&csid=10&mode=cate&sort=n",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "listing-inspected",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=160046044",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.kitiya.jp/?pid=160046043",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.area-island.com/?pid=170903425",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://troutisland.shop-pro.jp/?pid=86566861",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "no eligible uncovered model-color combination verified"
   }
 ]

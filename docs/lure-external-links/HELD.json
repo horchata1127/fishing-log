@@ -49963,6 +49963,51 @@
     "checkedAt": "2026-11-28"
   },
   {
+    "manufacturer": "TIMON",
+    "kind": "source-page",
+    "scope": "retailer",
+    "url": "https://t-route.net/products/%E3%81%A1%E3%81%B3%E3%83%91%E3%83%8B%E3%82%AF%E3%83%A9sr",
+    "httpStatus": 200,
+    "holdReason": "no eligible uncovered model-color combination verified",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "TIMON",
+    "kind": "source-page",
+    "scope": "retailer",
+    "url": "https://www.kitiya.jp/?pid=186467650",
+    "httpStatus": 200,
+    "holdReason": "no eligible uncovered model-color combination verified",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "TIMON",
+    "kind": "source-page",
+    "scope": "retailer",
+    "url": "https://www.kitiya.jp/?pid=183128179",
+    "httpStatus": 200,
+    "holdReason": "no eligible uncovered model-color combination verified",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "TIMON",
+    "kind": "source-page",
+    "scope": "retailer",
+    "url": "https://www.kitiya.jp/?pid=93707773",
+    "httpStatus": 200,
+    "holdReason": "no eligible uncovered model-color combination verified",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "TIMON",
+    "kind": "source-page",
+    "scope": "retailer",
+    "url": "https://troutisland.shop-pro.jp/?pid=86566861",
+    "httpStatus": 200,
+    "holdReason": "no eligible uncovered model-color combination verified",
+    "checkedAt": "2026-11-28"
+  },
+  {
     "manufacturer": "RODIO CRAFT",
     "models": [
       "NOA 2.1g"

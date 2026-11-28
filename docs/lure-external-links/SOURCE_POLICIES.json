@@ -35,18 +35,18 @@
       "termsUrls": [
         "https://t-route.net/policies/terms-of-service"
       ],
-      "product": "pending",
+      "product": "plain-link",
       "image": "held",
-      "basis": "規約を確認。今回の個別商品・variant照合と採用判断は次回。"
+      "basis": "公開利用規約に通常の商品ページリンクを制限する記載は見つからなかった。商品と色のvariant URLを原ページとして別タブで開く。コンテンツと画像の利用許可は確認できていない。"
     },
     "kitiya": {
       "name": "吉や",
       "termsUrls": [
         "https://www.kitiya.jp/?mode=sk"
       ],
-      "product": "pending",
+      "product": "plain-link",
       "image": "held",
-      "basis": "店舗表記を確認。今回の個別商品選択肢照合と採用判断は次回。"
+      "basis": "公開店舗表記に通常の商品ページリンクを制限する記載は見つからなかった。原ページを別タブで開く。画像の利用許可は確認できていない。"
     },
     "official": {
       "name": "JACKALL / TIMON",
@@ -56,6 +56,24 @@
       "product": "held",
       "image": "held",
       "basis": "公式商品ページへのリンクおよび外部画像掲載の許諾未取得。RC48記録を再利用。"
+    },
+    "area-island": {
+      "name": "越谷タックルアイランド",
+      "termsUrls": [
+        "https://www.area-island.com/?mode=privacy"
+      ],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開店舗情報に通常のテキストリンクを制限する記載は見つからなかった。画像掲載許可は未確認。"
+    },
+    "troutisland": {
+      "name": "トラウトアイランド",
+      "termsUrls": [
+        "https://troutisland.shop-pro.jp/?mode=sk"
+      ],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開店舗情報に通常のテキストリンクを制限する記載は見つからなかった。画像掲載許可は未確認。"
     }
   }
 }

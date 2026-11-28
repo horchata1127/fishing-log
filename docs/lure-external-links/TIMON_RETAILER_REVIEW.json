@@ -4798,6 +4798,3375 @@
       "basis": "キャスティングの個別商品名・見出し・商品コードと既存公式照合JANを照合。",
       "kind": "individual-color",
       "status": "app-eligible"
+    },
+    {
+      "variantId": 1135,
+      "manufacturer": "TIMON",
+      "series": "Chibi PaniCra",
+      "model": "Chibi PaniCra DR-SS",
+      "weightG": 1.6,
+      "lengthMm": 25,
+      "color": "ゴンティーラッシュグローⅡ",
+      "officialJan": "4582418098979",
+      "url": "https://t-route.net/products/%E3%81%A1%E3%81%B3%E3%83%91%E3%83%8B%E3%82%AF%E3%83%A9dr-ss?variant=43839366168790",
+      "checkedAt": "2026-11-28",
+      "sourceName": "t-Route",
+      "store": "troute",
+      "kind": "individual-color",
+      "status": "app-eligible",
+      "basis": "t-Routeの同一製品ページのティモン表記・型と、販売色データのvariant IDを照合。"
+    },
+    {
+      "variantId": 848,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンDR",
+      "weightG": 1.8,
+      "lengthMm": 52,
+      "color": "B.N.S",
+      "officialJan": "4525807277173",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 851,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンDR",
+      "weightG": 1.8,
+      "lengthMm": 52,
+      "color": "NO.6",
+      "officialJan": "4525807277159",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 852,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンDR",
+      "weightG": 1.8,
+      "lengthMm": 52,
+      "color": "キャワサギ",
+      "officialJan": "4525807277142",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 854,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンDR",
+      "weightG": 1.8,
+      "lengthMm": 52,
+      "color": "クリアー",
+      "officialJan": "4525807277265",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 857,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンDR",
+      "weightG": 1.8,
+      "lengthMm": 52,
+      "color": "スモークカドチップ",
+      "officialJan": "4525807277258",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 858,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンDR",
+      "weightG": 1.8,
+      "lengthMm": 52,
+      "color": "ヤジカビ",
+      "officialJan": "4525807277227",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 859,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンDR",
+      "weightG": 1.8,
+      "lengthMm": 52,
+      "color": "ヤジーアーマー",
+      "officialJan": "4525807277180",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 860,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンDR",
+      "weightG": 1.8,
+      "lengthMm": 52,
+      "color": "ヤジーインパクトオレンジ2号",
+      "officialJan": "4525807277210",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 861,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンDR",
+      "weightG": 1.8,
+      "lengthMm": 52,
+      "color": "ヤジーゾーン",
+      "officialJan": "4525807277197",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 862,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンDR",
+      "weightG": 1.8,
+      "lengthMm": 52,
+      "color": "ヤジーフラッシュ",
+      "officialJan": "4525807277203",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 863,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "B.N.S",
+      "officialJan": "4525807277029",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 865,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "CTペレット2号",
+      "officialJan": "4525807276985",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 866,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "NO.6",
+      "officialJan": "4525807277005",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 867,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "キャワサギ",
+      "officialJan": "4525807276992",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 868,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "キャン花水月",
+      "officialJan": "4525807277012",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 869,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "クリアー",
+      "officialJan": "4525807277111",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 870,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "ゴールドカドチップ",
+      "officialJan": "4525807277081",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 872,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "スモークカドチップ",
+      "officialJan": "4525807277104",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 873,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "ヤジカビ",
+      "officialJan": "4525807277074",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 874,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "ヤジーアーマー",
+      "officialJan": "4525807277036",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 875,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "ヤジーインパクトオレンジ2号",
+      "officialJan": "4525807277067",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 876,
+      "manufacturer": "TIMON",
+      "series": "TC Reigen",
+      "model": "TCレイゲンMR",
+      "weightG": 1.7,
+      "lengthMm": 52,
+      "color": "ヤジーゾーン",
+      "officialJan": "4525807277043",
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9331,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.1g",
+      "weightG": 2.1,
+      "lengthMm": 31,
+      "color": "ヨネスティーグリキン",
+      "officialJan": "4525807266047",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9332,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.1g",
+      "weightG": 2.1,
+      "lengthMm": 31,
+      "color": "チャートグリーンヤマメ",
+      "officialJan": "4525807266016",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9333,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.1g",
+      "weightG": 2.1,
+      "lengthMm": 31,
+      "color": "オリーブヤマメUV",
+      "officialJan": "4525807266030",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9335,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.1g",
+      "weightG": 2.1,
+      "lengthMm": 31,
+      "color": "メイメツオリーブ",
+      "officialJan": "4525807266054",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9336,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.1g",
+      "weightG": 2.1,
+      "lengthMm": 31,
+      "color": "メイメツカラシ",
+      "officialJan": "4525807266061",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9337,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.1g",
+      "weightG": 2.1,
+      "lengthMm": 31,
+      "color": "ダイゴマシマシウズラ",
+      "officialJan": "4525807266023",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9338,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.1g",
+      "weightG": 2.1,
+      "lengthMm": 31,
+      "color": "ダイゴミクス",
+      "officialJan": "4525807265965",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9340,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.1g",
+      "weightG": 2.1,
+      "lengthMm": 31,
+      "color": "ダイゴマイトⅡ",
+      "officialJan": "4525807265958",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9342,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.1g",
+      "weightG": 2.1,
+      "lengthMm": 31,
+      "color": "サンセット",
+      "officialJan": "4525807266009",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9343,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.4g",
+      "weightG": 2.4,
+      "lengthMm": 31,
+      "color": "ヨネスティーグリキン",
+      "officialJan": "4525807266160",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9344,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.4g",
+      "weightG": 2.4,
+      "lengthMm": 31,
+      "color": "チャートグリーンヤマメ",
+      "officialJan": "4525807266139",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9345,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.4g",
+      "weightG": 2.4,
+      "lengthMm": 31,
+      "color": "オリーブヤマメUV",
+      "officialJan": "4525807266153",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9346,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.4g",
+      "weightG": 2.4,
+      "lengthMm": 31,
+      "color": "放流オレキン",
+      "officialJan": "4525807266115",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9347,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.4g",
+      "weightG": 2.4,
+      "lengthMm": 31,
+      "color": "メイメツオリーブ",
+      "officialJan": "4525807266177",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9348,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.4g",
+      "weightG": 2.4,
+      "lengthMm": 31,
+      "color": "メイメツカラシ",
+      "officialJan": "4525807266184",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9349,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.4g",
+      "weightG": 2.4,
+      "lengthMm": 31,
+      "color": "ダイゴマシマシウズラ",
+      "officialJan": "4525807266146",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9350,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.4g",
+      "weightG": 2.4,
+      "lengthMm": 31,
+      "color": "ダイゴミクス",
+      "officialJan": "4525807266085",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9352,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.4g",
+      "weightG": 2.4,
+      "lengthMm": 31,
+      "color": "ダイゴマイトⅡ",
+      "officialJan": "4525807266078",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9354,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 2.4g",
+      "weightG": 2.4,
+      "lengthMm": 31,
+      "color": "サンセット",
+      "officialJan": "4525807266122",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9356,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.1g",
+      "weightG": 3.1,
+      "lengthMm": 37,
+      "color": "チャートグリーンヤマメ",
+      "officialJan": "4525807266252",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9357,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.1g",
+      "weightG": 3.1,
+      "lengthMm": 37,
+      "color": "オリーブヤマメUV",
+      "officialJan": "4525807266276",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9359,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.1g",
+      "weightG": 3.1,
+      "lengthMm": 37,
+      "color": "メイメツオリーブ",
+      "officialJan": "4525807266290",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9360,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.1g",
+      "weightG": 3.1,
+      "lengthMm": 37,
+      "color": "メイメツカラシ",
+      "officialJan": "4525807266306",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9361,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.1g",
+      "weightG": 3.1,
+      "lengthMm": 37,
+      "color": "ダイゴマシマシウズラ",
+      "officialJan": "4525807266269",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9362,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.1g",
+      "weightG": 3.1,
+      "lengthMm": 37,
+      "color": "ダイゴミクス",
+      "officialJan": "4525807266207",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9364,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.1g",
+      "weightG": 3.1,
+      "lengthMm": 37,
+      "color": "ダイゴマイトⅡ",
+      "officialJan": "4525807266191",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9366,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.1g",
+      "weightG": 3.1,
+      "lengthMm": 37,
+      "color": "サンセット",
+      "officialJan": "4525807266245",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9367,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.9g",
+      "weightG": 3.9,
+      "lengthMm": 37,
+      "color": "ヨネスティーグリキン",
+      "officialJan": "4525807266405",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9368,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.9g",
+      "weightG": 3.9,
+      "lengthMm": 37,
+      "color": "チャートグリーンヤマメ",
+      "officialJan": "4525807266375",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9369,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.9g",
+      "weightG": 3.9,
+      "lengthMm": 37,
+      "color": "オリーブヤマメUV",
+      "officialJan": "4525807266399",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9370,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.9g",
+      "weightG": 3.9,
+      "lengthMm": 37,
+      "color": "放流オレキン",
+      "officialJan": "4525807266351",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9371,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.9g",
+      "weightG": 3.9,
+      "lengthMm": 37,
+      "color": "メイメツオリーブ",
+      "officialJan": "4525807266412",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9372,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.9g",
+      "weightG": 3.9,
+      "lengthMm": 37,
+      "color": "メイメツカラシ",
+      "officialJan": "4525807266429",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9373,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.9g",
+      "weightG": 3.9,
+      "lengthMm": 37,
+      "color": "ダイゴマシマシウズラ",
+      "officialJan": "4525807266382",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9374,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.9g",
+      "weightG": 3.9,
+      "lengthMm": 37,
+      "color": "ダイゴミクス",
+      "officialJan": "4525807266320",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9376,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.9g",
+      "weightG": 3.9,
+      "lengthMm": 37,
+      "color": "ダイゴマイトⅡ",
+      "officialJan": "4525807266313",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 9378,
+      "manufacturer": "TIMON",
+      "series": "Rhomy",
+      "model": "Rhomy 3.9g",
+      "weightG": 3.9,
+      "lengthMm": 37,
+      "color": "サンセット",
+      "officialJan": "4525807266368",
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの商品表で対象の型・重量と色が交差する明示セルを照合。"
+    },
+    {
+      "variantId": 809,
+      "manufacturer": "TIMON",
+      "series": "MITTS DRY 2Hook",
+      "model": "MITTS DRY RATTLE 2Hook",
+      "weightG": 1.4,
+      "lengthMm": 28,
+      "color": "エンドヌケオレ",
+      "officialJan": "4525807306521",
+      "url": "https://www.kitiya.jp/?pid=186468024",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 810,
+      "manufacturer": "TIMON",
+      "series": "MITTS DRY 2Hook",
+      "model": "MITTS DRY RATTLE 2Hook",
+      "weightG": 1.4,
+      "lengthMm": 28,
+      "color": "クリアー",
+      "officialJan": "4525807299137",
+      "url": "https://www.kitiya.jp/?pid=186468024",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 811,
+      "manufacturer": "TIMON",
+      "series": "MITTS DRY 2Hook",
+      "model": "MITTS DRY RATTLE 2Hook",
+      "weightG": 1.4,
+      "lengthMm": 28,
+      "color": "ケイムラクリアー",
+      "officialJan": "4525807306507",
+      "url": "https://www.kitiya.jp/?pid=186468024",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 812,
+      "manufacturer": "TIMON",
+      "series": "MITTS DRY 2Hook",
+      "model": "MITTS DRY RATTLE 2Hook",
+      "weightG": 1.4,
+      "lengthMm": 28,
+      "color": "タッキーネオン",
+      "officialJan": "4525807306538",
+      "url": "https://www.kitiya.jp/?pid=186468024",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 813,
+      "manufacturer": "TIMON",
+      "series": "MITTS DRY 2Hook",
+      "model": "MITTS DRY RATTLE 2Hook",
+      "weightG": 1.4,
+      "lengthMm": 28,
+      "color": "ダイゴスケピン",
+      "officialJan": "4525807306514",
+      "url": "https://www.kitiya.jp/?pid=186468024",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 814,
+      "manufacturer": "TIMON",
+      "series": "MITTS DRY 2Hook",
+      "model": "MITTS DRY RATTLE 2Hook",
+      "weightG": 1.4,
+      "lengthMm": 28,
+      "color": "ヤスノクリブラ",
+      "officialJan": "4525807306545",
+      "url": "https://www.kitiya.jp/?pid=186468024",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 815,
+      "manufacturer": "TIMON",
+      "series": "MITTS DRY 2Hook",
+      "model": "MITTS DRY RATTLE 2Hook",
+      "weightG": 1.4,
+      "lengthMm": 28,
+      "color": "幻影ライン",
+      "officialJan": "4525807306552",
+      "url": "https://www.kitiya.jp/?pid=186468024",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 816,
+      "manufacturer": "TIMON",
+      "series": "MITTS DRY 2Hook",
+      "model": "MITTS DRY RATTLE 2Hook",
+      "weightG": 1.4,
+      "lengthMm": 28,
+      "color": "誘惑ライン",
+      "officialJan": "4525807306569",
+      "url": "https://www.kitiya.jp/?pid=186468024",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 839,
+      "manufacturer": "TIMON",
+      "series": "SLIDON",
+      "model": "SLIDON60F",
+      "weightG": 3.1,
+      "lengthMm": 60,
+      "color": "クリアーホロクラウン",
+      "officialJan": "4525807327564",
+      "url": "https://www.kitiya.jp/?pid=190232183",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 840,
+      "manufacturer": "TIMON",
+      "series": "SLIDON",
+      "model": "SLIDON60F",
+      "weightG": 3.1,
+      "lengthMm": 60,
+      "color": "ショボクレシルバー",
+      "officialJan": "4525807327502",
+      "url": "https://www.kitiya.jp/?pid=190232183",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 841,
+      "manufacturer": "TIMON",
+      "series": "SLIDON",
+      "model": "SLIDON60F",
+      "weightG": 3.1,
+      "lengthMm": 60,
+      "color": "タッキーアンバー",
+      "officialJan": "4525807327519",
+      "url": "https://www.kitiya.jp/?pid=190232183",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 842,
+      "manufacturer": "TIMON",
+      "series": "SLIDON",
+      "model": "SLIDON60F",
+      "weightG": 3.1,
+      "lengthMm": 60,
+      "color": "テネシー",
+      "officialJan": "4525807327489",
+      "url": "https://www.kitiya.jp/?pid=190232183",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 843,
+      "manufacturer": "TIMON",
+      "series": "SLIDON",
+      "model": "SLIDON60F",
+      "weightG": 3.1,
+      "lengthMm": 60,
+      "color": "パラレルチャート",
+      "officialJan": "4525807327540",
+      "url": "https://www.kitiya.jp/?pid=190232183",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 844,
+      "manufacturer": "TIMON",
+      "series": "SLIDON",
+      "model": "SLIDON60F",
+      "weightG": 3.1,
+      "lengthMm": 60,
+      "color": "パープルシャッド",
+      "officialJan": "4525807327557",
+      "url": "https://www.kitiya.jp/?pid=190232183",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 845,
+      "manufacturer": "TIMON",
+      "series": "SLIDON",
+      "model": "SLIDON60F",
+      "weightG": 3.1,
+      "lengthMm": 60,
+      "color": "ヤジーボンズ",
+      "officialJan": "4525807327526",
+      "url": "https://www.kitiya.jp/?pid=190232183",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 847,
+      "manufacturer": "TIMON",
+      "series": "SLIDON",
+      "model": "SLIDON60F",
+      "weightG": 3.1,
+      "lengthMm": 60,
+      "color": "闇金",
+      "officialJan": "4525807327496",
+      "url": "https://www.kitiya.jp/?pid=190232183",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 736,
+      "manufacturer": "TIMON",
+      "series": "KUROBALL γ",
+      "model": "KUROBALL γ 2.0g",
+      "weightG": 2,
+      "lengthMm": 26,
+      "color": "カドメタル",
+      "officialJan": "4525807318036",
+      "url": "https://www.kitiya.jp/?pid=190232635",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 741,
+      "manufacturer": "TIMON",
+      "series": "KUROBALL γ",
+      "model": "KUROBALL γ 2.0g",
+      "weightG": 2,
+      "lengthMm": 26,
+      "color": "タッキーブラウン",
+      "officialJan": "4525807317992",
+      "url": "https://www.kitiya.jp/?pid=190232635",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 743,
+      "manufacturer": "TIMON",
+      "series": "KUROBALL γ",
+      "model": "KUROBALL γ 2.5g",
+      "weightG": 2.5,
+      "lengthMm": 28,
+      "color": "KYアタッキングブラウン",
+      "officialJan": "4525807323252",
+      "url": "https://www.kitiya.jp/?pid=190232688",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 744,
+      "manufacturer": "TIMON",
+      "series": "KUROBALL γ",
+      "model": "KUROBALL γ 2.5g",
+      "weightG": 2.5,
+      "lengthMm": 28,
+      "color": "Ueインパクトペレット",
+      "officialJan": "4525807323207",
+      "url": "https://www.kitiya.jp/?pid=190232688",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 746,
+      "manufacturer": "TIMON",
+      "series": "KUROBALL γ",
+      "model": "KUROBALL γ 2.5g",
+      "weightG": 2.5,
+      "lengthMm": 28,
+      "color": "カドメタル",
+      "officialJan": "4525807323221",
+      "url": "https://www.kitiya.jp/?pid=190232688",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 748,
+      "manufacturer": "TIMON",
+      "series": "KUROBALL γ",
+      "model": "KUROBALL γ 2.5g",
+      "weightG": 2.5,
+      "lengthMm": 28,
+      "color": "シャインチャオリ",
+      "officialJan": "4525807323238",
+      "url": "https://www.kitiya.jp/?pid=190232688",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 749,
+      "manufacturer": "TIMON",
+      "series": "KUROBALL γ",
+      "model": "KUROBALL γ 2.5g",
+      "weightG": 2.5,
+      "lengthMm": 28,
+      "color": "ショボクレレッドグロー",
+      "officialJan": "4525807323184",
+      "url": "https://www.kitiya.jp/?pid=190232688",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 750,
+      "manufacturer": "TIMON",
+      "series": "KUROBALL γ",
+      "model": "KUROBALL γ 2.5g",
+      "weightG": 2.5,
+      "lengthMm": 28,
+      "color": "タッキーゴーストペレット",
+      "officialJan": "4525807323191",
+      "url": "https://www.kitiya.jp/?pid=190232688",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 752,
+      "manufacturer": "TIMON",
+      "series": "KUROBALL γ",
+      "model": "KUROBALL γ 2.5g",
+      "weightG": 2.5,
+      "lengthMm": 28,
+      "color": "バイタルオリーブ",
+      "officialJan": "4525807323245",
+      "url": "https://www.kitiya.jp/?pid=190232688",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 1070,
+      "manufacturer": "TIMON",
+      "series": "KIBIpani",
+      "model": "KIBIpani MR",
+      "weightG": 2.1,
+      "lengthMm": 28,
+      "color": "クリアー",
+      "officialJan": "4525807243888",
+      "url": "https://www.kitiya.jp/?pid=171992699",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 1071,
+      "manufacturer": "TIMON",
+      "series": "KIBIpani",
+      "model": "KIBIpani MR",
+      "weightG": 2.1,
+      "lengthMm": 28,
+      "color": "タッキーブラウン",
+      "officialJan": "4525807243888",
+      "url": "https://www.kitiya.jp/?pid=171992699",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 1075,
+      "manufacturer": "TIMON",
+      "series": "KIBIpani",
+      "model": "KIBIpani MR",
+      "weightG": 2.1,
+      "lengthMm": 28,
+      "color": "エンドグローペレブラウン",
+      "officialJan": "4525807243932",
+      "url": "https://www.kitiya.jp/?pid=171992699",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 1092,
+      "manufacturer": "TIMON",
+      "series": "KIBIpani",
+      "model": "KIBIpani MR-SS",
+      "weightG": 2.3,
+      "lengthMm": 28,
+      "color": "マサのドクリンゴ",
+      "officialJan": "4525807315875",
+      "url": "https://www.kitiya.jp/?pid=189668742",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9267,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "37 からし",
+      "colorCode": "37",
+      "officialJan": "4525807246049",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9269,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "119 ﾀｯｷｰGﾍﾟﾚｯﾄ",
+      "colorCode": "119",
+      "officialJan": "4525807246056",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9270,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "128 山葵",
+      "colorCode": "128",
+      "officialJan": "4525807246063",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9271,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "160 ﾀﾞｲｺﾞｼｰｸﾚｯﾄｸﾞﾘｰﾝ",
+      "colorCode": "160",
+      "officialJan": "4525807246070",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9272,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "162 ﾀﾞｲｺﾞｼｰｸﾚｯﾄｸﾞﾛｰ",
+      "colorCode": "162",
+      "officialJan": "4525807246087",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9273,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "176 ﾔｼﾞｰｾｶﾝﾄﾞｺﾞｰﾙﾄﾞ",
+      "colorCode": "176",
+      "officialJan": "4525807246094",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9274,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "180 ﾔｼﾞｰｼﾙﾎﾜUV",
+      "colorCode": "180",
+      "officialJan": "4525807246100",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9275,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "206 ﾀﾞｲｺﾞﾀﾞｰｸｵﾘｰﾌﾞ",
+      "colorCode": "206",
+      "officialJan": "4525807246131",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9276,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "207 枯れ金",
+      "colorCode": "207",
+      "officialJan": "4525807246148",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9277,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "208 元気ﾊﾂﾗﾂ",
+      "colorCode": "208",
+      "officialJan": "4525807246155",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9278,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "209 ｻﾝｾｯﾄ",
+      "colorCode": "209",
+      "officialJan": "4525807246162",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9279,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "210 ﾌﾞﾙｰﾊﾜｲ",
+      "colorCode": "210",
+      "officialJan": "4525807246179",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9280,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "211 ｷﾗｵﾘｰﾌﾞ",
+      "colorCode": "211",
+      "officialJan": "4525807246186",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9281,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1g",
+      "weightG": 1,
+      "lengthMm": 22.3,
+      "color": "ﾀﾞｲｺﾞﾐｸｽ",
+      "officialJan": "4525807246124",
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9252,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "37 からし",
+      "colorCode": "37",
+      "officialJan": "4525807286533",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9254,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "119 ﾀｯｷｰGﾍﾟﾚｯﾄ",
+      "colorCode": "119",
+      "officialJan": "4525807286557",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9255,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "128 山葵",
+      "colorCode": "128",
+      "officialJan": "4525807286564",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9256,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "180 ﾔｼﾞｰｼﾙﾎﾜUV",
+      "colorCode": "180",
+      "officialJan": "4525807286571",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9257,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "208 元気ﾊﾂﾗﾂ",
+      "colorCode": "208",
+      "officialJan": "4525807293630",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9258,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "209 ｻﾝｾｯﾄ",
+      "colorCode": "209",
+      "officialJan": "4525807286588",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9259,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "4 蛍光ﾋﾟﾝｸ",
+      "colorCode": "4",
+      "officialJan": "4525807286595",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9260,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "219 ｹﾞﾝｺﾂﾔｼﾞｰﾏｲﾄ",
+      "colorCode": "219",
+      "officialJan": "4525807286601",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9261,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "222 DBRG",
+      "colorCode": "222",
+      "officialJan": "4525807286618",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9262,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "223 ｶﾄﾞﾓﾓ",
+      "colorCode": "223",
+      "officialJan": "4525807286625",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9263,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "224 ｶﾄﾞｵﾘﾌﾞﾙ",
+      "colorCode": "224",
+      "officialJan": "4525807286632",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9264,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "225 ﾔｼﾞｰｵﾘﾊﾞ",
+      "colorCode": "225",
+      "officialJan": "4525807293623",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9265,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "226 ﾗﾌﾗﾝｽ",
+      "colorCode": "226",
+      "officialJan": "4525807293647",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9266,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 0.6g",
+      "weightG": 0.6,
+      "lengthMm": 19.5,
+      "color": "227 ﾔｼﾞｰｼﾞｪﾗｸﾞﾛｰ",
+      "colorCode": "227",
+      "officialJan": "4525807293654",
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9282,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1.7g",
+      "weightG": 1.7,
+      "lengthMm": 26,
+      "color": "37 からし",
+      "colorCode": "37",
+      "officialJan": "4525807294804",
+      "url": "https://www.kitiya.jp/?pid=185126466",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9284,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1.7g",
+      "weightG": 1.7,
+      "lengthMm": 26,
+      "color": "176 ﾔｼﾞｰｾｶﾝﾄﾞｺﾞｰﾙﾄﾞ",
+      "colorCode": "176",
+      "officialJan": "4525807294859",
+      "url": "https://www.kitiya.jp/?pid=185126466",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9285,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1.7g",
+      "weightG": 1.7,
+      "lengthMm": 26,
+      "color": "180 ﾔｼﾞｰｼﾙﾎﾜUV",
+      "colorCode": "180",
+      "officialJan": "4525807294866",
+      "url": "https://www.kitiya.jp/?pid=185126466",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9287,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1.7g",
+      "weightG": 1.7,
+      "lengthMm": 26,
+      "color": "ﾀﾞｲｺﾞﾐｸｽ",
+      "officialJan": "4525807294835",
+      "url": "https://www.kitiya.jp/?pid=185126466",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9288,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1.7g",
+      "weightG": 1.7,
+      "lengthMm": 26,
+      "color": "4 蛍光ﾋﾟﾝｸ",
+      "colorCode": "4",
+      "officialJan": "4525807294798",
+      "url": "https://www.kitiya.jp/?pid=185126466",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9289,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1.7g",
+      "weightG": 1.7,
+      "lengthMm": 26,
+      "color": "76 ｸﾞﾘｰﾝﾎﾞｰ",
+      "colorCode": "76",
+      "officialJan": "4525807294811",
+      "url": "https://www.kitiya.jp/?pid=185126466",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9290,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1.7g",
+      "weightG": 1.7,
+      "lengthMm": 26,
+      "color": "141 ｵﾚﾁｬｰﾄｷﾝ",
+      "colorCode": "141",
+      "officialJan": "4525807294842",
+      "url": "https://www.kitiya.jp/?pid=185126466",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9291,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1.7g",
+      "weightG": 1.7,
+      "lengthMm": 26,
+      "color": "199 放流ｵﾚｷﾝ",
+      "colorCode": "199",
+      "officialJan": "4525807294873",
+      "url": "https://www.kitiya.jp/?pid=185126466",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9293,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1.7g",
+      "weightG": 1.7,
+      "lengthMm": 26,
+      "color": "219 ｹﾞﾝｺﾂﾔｼﾞｰﾏｲﾄ",
+      "colorCode": "219",
+      "officialJan": "4525807294903",
+      "url": "https://www.kitiya.jp/?pid=185126466",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9294,
+      "manufacturer": "TIMON",
+      "series": "REKUZE",
+      "model": "REKUZE 1.7g",
+      "weightG": 1.7,
+      "lengthMm": 26,
+      "color": "224 ｶﾄﾞｵﾘﾌﾞﾙ",
+      "colorCode": "224",
+      "officialJan": "4525807294910",
+      "url": "https://www.kitiya.jp/?pid=185126466",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 827,
+      "manufacturer": "TIMON",
+      "series": "Prikkey",
+      "model": "Prikkey",
+      "weightG": 1.6,
+      "lengthMm": 30,
+      "color": "エンドパンプキン",
+      "officialJan": "4525807225846",
+      "url": "https://www.kitiya.jp/?pid=165044001",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 829,
+      "manufacturer": "TIMON",
+      "series": "Prikkey",
+      "model": "Prikkey",
+      "weightG": 1.6,
+      "lengthMm": 30,
+      "color": "タッキーゴーストペレット",
+      "officialJan": "4525807225891",
+      "url": "https://www.kitiya.jp/?pid=165044001",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 830,
+      "manufacturer": "TIMON",
+      "series": "Prikkey",
+      "model": "Prikkey",
+      "weightG": 1.6,
+      "lengthMm": 30,
+      "color": "タッキーシャーベット",
+      "officialJan": "4525807225907",
+      "url": "https://www.kitiya.jp/?pid=165044001",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 832,
+      "manufacturer": "TIMON",
+      "series": "Prikkey",
+      "model": "Prikkey",
+      "weightG": 1.6,
+      "lengthMm": 30,
+      "color": "タッキーブラウン",
+      "officialJan": "4525807225822",
+      "url": "https://www.kitiya.jp/?pid=165044001",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 834,
+      "manufacturer": "TIMON",
+      "series": "Prikkey",
+      "model": "Prikkey",
+      "weightG": 1.6,
+      "lengthMm": 30,
+      "color": "ヤジーボンズ",
+      "officialJan": "4525807225860",
+      "url": "https://www.kitiya.jp/?pid=165044001",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 835,
+      "manufacturer": "TIMON",
+      "series": "Prikkey",
+      "model": "Prikkey",
+      "weightG": 1.6,
+      "lengthMm": 30,
+      "color": "ラムレーズン",
+      "officialJan": "4525807225877",
+      "url": "https://www.kitiya.jp/?pid=165044001",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9953,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-F Rodio Ver.",
+      "weightG": 3,
+      "lengthMm": 32,
+      "color": "クリアー",
+      "url": "https://www.kitiya.jp/?pid=182978155",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やのロデオクラフト版 DR(F) の3.0g・浮力と発売色の表を照合。別モデルMR列を除外。"
+    },
+    {
+      "variantId": 9954,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-F Rodio Ver.",
+      "weightG": 3,
+      "lengthMm": 32,
+      "color": "S.M VI",
+      "url": "https://www.kitiya.jp/?pid=182978155",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やのロデオクラフト版 DR(F) の3.0g・浮力と発売色の表を照合。別モデルMR列を除外。"
+    },
+    {
+      "variantId": 9955,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-F Rodio Ver.",
+      "weightG": 3,
+      "lengthMm": 32,
+      "color": "キラキラ",
+      "url": "https://www.kitiya.jp/?pid=182978155",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やのロデオクラフト版 DR(F) の3.0g・浮力と発売色の表を照合。別モデルMR列を除外。"
+    },
+    {
+      "variantId": 9956,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-F Rodio Ver.",
+      "weightG": 3,
+      "lengthMm": 32,
+      "color": "2014ノブカラー",
+      "url": "https://www.kitiya.jp/?pid=182978155",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やのロデオクラフト版 DR(F) の3.0g・浮力と発売色の表を照合。別モデルMR列を除外。"
+    },
+    {
+      "variantId": 9957,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-F Rodio Ver.",
+      "weightG": 3,
+      "lengthMm": 32,
+      "color": "2015ノブカラー",
+      "url": "https://www.kitiya.jp/?pid=182978155",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やのロデオクラフト版 DR(F) の3.0g・浮力と発売色の表を照合。別モデルMR列を除外。"
+    },
+    {
+      "variantId": 9958,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-F Rodio Ver.",
+      "weightG": 3,
+      "lengthMm": 32,
+      "color": "黒まんじゅう",
+      "url": "https://www.kitiya.jp/?pid=182978155",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やのロデオクラフト版 DR(F) の3.0g・浮力と発売色の表を照合。別モデルMR列を除外。"
+    },
+    {
+      "variantId": 9959,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-F Rodio Ver.",
+      "weightG": 3,
+      "lengthMm": 32,
+      "color": "16ノブ",
+      "url": "https://www.kitiya.jp/?pid=182978155",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やのロデオクラフト版 DR(F) の3.0g・浮力と発売色の表を照合。別モデルMR列を除外。"
+    },
+    {
+      "variantId": 9960,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-F Rodio Ver.",
+      "weightG": 3,
+      "lengthMm": 32,
+      "color": "20安塚",
+      "url": "https://www.kitiya.jp/?pid=182978155",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やのロデオクラフト版 DR(F) の3.0g・浮力と発売色の表を照合。別モデルMR列を除外。"
+    },
+    {
+      "variantId": 9961,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-F Rodio Ver.",
+      "weightG": 3,
+      "lengthMm": 32,
+      "color": "RCポテトヘッド",
+      "url": "https://www.kitiya.jp/?pid=182978155",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やのロデオクラフト版 DR(F) の3.0g・浮力と発売色の表を照合。別モデルMR列を除外。"
+    },
+    {
+      "variantId": 9962,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-F Rodio Ver.",
+      "weightG": 3,
+      "lengthMm": 32,
+      "color": "20井野",
+      "url": "https://www.kitiya.jp/?pid=182978155",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やのロデオクラフト版 DR(F) の3.0g・浮力と発売色の表を照合。別モデルMR列を除外。"
+    },
+    {
+      "variantId": 658,
+      "manufacturer": "TIMON",
+      "series": "Chibi Pepino",
+      "model": "Chibi Pepino MR",
+      "weightG": 1.8,
+      "lengthMm": 40,
+      "color": "エンドパンプキン",
+      "officialJan": "4525807327267",
+      "url": "https://www.kitiya.jp/?pid=190489106",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 659,
+      "manufacturer": "TIMON",
+      "series": "Chibi Pepino",
+      "model": "Chibi Pepino MR",
+      "weightG": 1.8,
+      "lengthMm": 40,
+      "color": "カドニキハーフグロー",
+      "officialJan": "4525807327359",
+      "url": "https://www.kitiya.jp/?pid=190489106",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 660,
+      "manufacturer": "TIMON",
+      "series": "Chibi Pepino",
+      "model": "Chibi Pepino MR",
+      "weightG": 1.8,
+      "lengthMm": 40,
+      "color": "シャインインパクトOKTWO",
+      "officialJan": "4525807327366",
+      "url": "https://www.kitiya.jp/?pid=190489106",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 663,
+      "manufacturer": "TIMON",
+      "series": "Chibi Pepino",
+      "model": "Chibi Pepino MR",
+      "weightG": 1.8,
+      "lengthMm": 40,
+      "color": "ヤジーフロートメロン",
+      "officialJan": "4525807327342",
+      "url": "https://www.kitiya.jp/?pid=190489106",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 664,
+      "manufacturer": "TIMON",
+      "series": "Chibi Pepino",
+      "model": "Chibi Pepino MR",
+      "weightG": 1.8,
+      "lengthMm": 40,
+      "color": "ラムレーズン",
+      "officialJan": "4525807327281",
+      "url": "https://www.kitiya.jp/?pid=190489106",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 665,
+      "manufacturer": "TIMON",
+      "series": "Chibi Pepino",
+      "model": "Chibi Pepino MR",
+      "weightG": 1.8,
+      "lengthMm": 40,
+      "color": "蛍光グリーン",
+      "officialJan": "4525807327298",
+      "url": "https://www.kitiya.jp/?pid=190489106",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 666,
+      "manufacturer": "TIMON",
+      "series": "Chibi Pepino",
+      "model": "Chibi Pepino MR",
+      "weightG": 1.8,
+      "lengthMm": 40,
+      "color": "蛍光ピンク",
+      "officialJan": "4525807327250",
+      "url": "https://www.kitiya.jp/?pid=190489106",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 783,
+      "manufacturer": "TIMON",
+      "series": "MICRO PANICRA",
+      "model": "MICRO PANICRA MR-F Rattle",
+      "weightG": 0.95,
+      "lengthMm": 20.2,
+      "color": "タッキーBPゴーストブラウン",
+      "officialJan": "4525807327670",
+      "url": "https://www.kitiya.jp/?pid=190508313",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 784,
+      "manufacturer": "TIMON",
+      "series": "MICRO PANICRA",
+      "model": "MICRO PANICRA MR-F Rattle",
+      "weightG": 0.95,
+      "lengthMm": 20.2,
+      "color": "タッキーブラウン",
+      "officialJan": "4525807327588",
+      "url": "https://www.kitiya.jp/?pid=190508313",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 785,
+      "manufacturer": "TIMON",
+      "series": "MICRO PANICRA",
+      "model": "MICRO PANICRA MR-F Rattle",
+      "weightG": 0.95,
+      "lengthMm": 20.2,
+      "color": "ダイゴビーン",
+      "officialJan": "4525807327687",
+      "url": "https://www.kitiya.jp/?pid=190508313",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 786,
+      "manufacturer": "TIMON",
+      "series": "MICRO PANICRA",
+      "model": "MICRO PANICRA MR-F Rattle",
+      "weightG": 0.95,
+      "lengthMm": 20.2,
+      "color": "ヤジーペレットサン",
+      "officialJan": "4525807327649",
+      "url": "https://www.kitiya.jp/?pid=190508313",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 787,
+      "manufacturer": "TIMON",
+      "series": "MICRO PANICRA",
+      "model": "MICRO PANICRA MR-F Rattle",
+      "weightG": 0.95,
+      "lengthMm": 20.2,
+      "color": "ヤジーボンズ",
+      "officialJan": "4525807327625",
+      "url": "https://www.kitiya.jp/?pid=190508313",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 788,
+      "manufacturer": "TIMON",
+      "series": "MICRO PANICRA",
+      "model": "MICRO PANICRA MR-F Rattle",
+      "weightG": 0.95,
+      "lengthMm": 20.2,
+      "color": "ラムレーズン",
+      "officialJan": "4525807327632",
+      "url": "https://www.kitiya.jp/?pid=190508313",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 676,
+      "manufacturer": "TIMON",
+      "series": "DEKA Mitts DRY",
+      "model": "DEKA Mitts DRY",
+      "weightG": 2.1,
+      "lengthMm": 33,
+      "color": "マサの黒ケイムラ",
+      "url": "https://www.kitiya.jp/?pid=82811491",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 678,
+      "manufacturer": "TIMON",
+      "series": "DEKA Mitts DRY",
+      "model": "DEKA Mitts DRY",
+      "weightG": 2.1,
+      "lengthMm": 33,
+      "color": "ミエピン",
+      "url": "https://www.kitiya.jp/?pid=82811491",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 679,
+      "manufacturer": "TIMON",
+      "series": "DEKA Mitts DRY",
+      "model": "DEKA Mitts DRY",
+      "weightG": 2.1,
+      "lengthMm": 33,
+      "color": "ヤスノクリブラ",
+      "url": "https://www.kitiya.jp/?pid=82811491",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 682,
+      "manufacturer": "TIMON",
+      "series": "DEKA Mitts DRY",
+      "model": "DEKA Mitts DRY",
+      "weightG": 2.1,
+      "lengthMm": 33,
+      "color": "神ゴマピンク",
+      "url": "https://www.kitiya.jp/?pid=82811491",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 684,
+      "manufacturer": "TIMON",
+      "series": "DEKA Mitts DRY",
+      "model": "DEKA Mitts DRY",
+      "weightG": 2.1,
+      "lengthMm": 33,
+      "color": "衝撃グロー",
+      "url": "https://www.kitiya.jp/?pid=82811491",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9162,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "ゲンコツヤジーマイト",
+      "officialJan": "4525807264340",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9164,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "銀狼",
+      "officialJan": "4582418091932",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9165,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "クレイジーパープル",
+      "officialJan": "4582418091949",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9167,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "氷河",
+      "officialJan": "4582418087003",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9168,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "山葵",
+      "officialJan": "4582418086983",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9170,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "エンドチャッピー",
+      "officialJan": "4582418086990",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9172,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "かれは",
+      "officialJan": "4582418082855",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9173,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "エンドブラスター",
+      "officialJan": "4582418082879",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9174,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "グリーンヤマメ",
+      "officialJan": "4582418080110",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9175,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "ブルーヤマメ",
+      "officialJan": "4582418080127",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9176,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "オレインボー",
+      "officialJan": "4582418080134",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9177,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 0.8g",
+      "weightG": 0.8,
+      "lengthMm": 19.4,
+      "color": "グリーンボー",
+      "officialJan": "4582418080158",
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9198,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1.2g",
+      "weightG": 1.2,
+      "lengthMm": 19.4,
+      "color": "ゲンコツヤジーマイト",
+      "officialJan": "4525807264388",
+      "url": "https://www.kitiya.jp/?pid=160046044",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9199,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1.2g",
+      "weightG": 1.2,
+      "lengthMm": 19.4,
+      "color": "ヤジーセカンドゴールド",
+      "officialJan": "4525807190328",
+      "url": "https://www.kitiya.jp/?pid=160046044",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9203,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1.2g",
+      "weightG": 1.2,
+      "lengthMm": 19.4,
+      "color": "クレイジーパープル",
+      "officialJan": "4582418092069",
+      "url": "https://www.kitiya.jp/?pid=160046044",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9206,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1.2g",
+      "weightG": 1.2,
+      "lengthMm": 19.4,
+      "color": "山葵",
+      "officialJan": "4582418087102",
+      "url": "https://www.kitiya.jp/?pid=160046044",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9209,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1.2g",
+      "weightG": 1.2,
+      "lengthMm": 19.4,
+      "color": "エンドブラスター",
+      "officialJan": "4582418082992",
+      "url": "https://www.kitiya.jp/?pid=160046044",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9212,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1.2g",
+      "weightG": 1.2,
+      "lengthMm": 19.4,
+      "color": "オレインボー",
+      "officialJan": "4582418080370",
+      "url": "https://www.kitiya.jp/?pid=160046044",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9179,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "ゲンコツヤジーマイト",
+      "officialJan": "4525807264364",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9180,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "ヤジーセカンドゴールド",
+      "officialJan": "4525807190304",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9183,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "銀狼",
+      "officialJan": "4582418091994",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9184,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "クレイジーパープル",
+      "officialJan": "4582418092007",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9186,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "氷河",
+      "officialJan": "4582418087065",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9187,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "山葵",
+      "officialJan": "4582418087041",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9189,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "エンドチャッピー",
+      "officialJan": "4582418087058",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9191,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "かれは",
+      "officialJan": "4582418082916",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9192,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "エンドブラスター",
+      "officialJan": "4582418082930",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9193,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "グリーンヤマメ",
+      "officialJan": "4582418080233",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9194,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "ブルーヤマメ",
+      "officialJan": "4582418080240",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9196,
+      "manufacturer": "TIMON",
+      "series": "Chibi Tearo",
+      "model": "Chibi Tearo 1g",
+      "weightG": 1,
+      "lengthMm": 19.4,
+      "color": "グリーンボー",
+      "officialJan": "4582418080271",
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "checkedAt": "2026-11-28",
+      "sourceName": "吉や",
+      "store": "kitiya",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "吉やの個別モデル名・見出しと販売色選択欄を照合。"
+    },
+    {
+      "variantId": 9877,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-HF",
+      "weightG": 2.8,
+      "lengthMm": 32,
+      "color": "ヤジーパーフェクトブラウン",
+      "officialJan": "4525807239515",
+      "url": "https://www.area-island.com/?pid=170903425",
+      "checkedAt": "2026-11-28",
+      "sourceName": "越谷タックルアイランド",
+      "store": "area-island",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "旧パニクラの個別商品名、型の選択肢、カラー選択肢と、既存の公式仕様表を照合。"
+    },
+    {
+      "variantId": 9883,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-HF",
+      "weightG": 2.8,
+      "lengthMm": 32,
+      "color": "ショボクレほうじ茶ラテ",
+      "officialJan": "4525807239492",
+      "url": "https://www.area-island.com/?pid=170903425",
+      "checkedAt": "2026-11-28",
+      "sourceName": "越谷タックルアイランド",
+      "store": "area-island",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "旧パニクラの個別商品名、型の選択肢、カラー選択肢と、既存の公式仕様表を照合。"
+    },
+    {
+      "variantId": 9886,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-HF",
+      "weightG": 2.8,
+      "lengthMm": 32,
+      "color": "TKグロー",
+      "officialJan": "4525807239508",
+      "url": "https://www.area-island.com/?pid=170903425",
+      "checkedAt": "2026-11-28",
+      "sourceName": "越谷タックルアイランド",
+      "store": "area-island",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "旧パニクラの個別商品名、型の選択肢、カラー選択肢と、既存の公式仕様表を照合。"
+    },
+    {
+      "variantId": 9889,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-HF",
+      "weightG": 2.8,
+      "lengthMm": 32,
+      "color": "ダイゴマッスルレッドグロー",
+      "officialJan": "4525807239539",
+      "url": "https://www.area-island.com/?pid=170903425",
+      "checkedAt": "2026-11-28",
+      "sourceName": "越谷タックルアイランド",
+      "store": "area-island",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "旧パニクラの個別商品名、型の選択肢、カラー選択肢と、既存の公式仕様表を照合。"
+    },
+    {
+      "variantId": 9900,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-HF",
+      "weightG": 2.8,
+      "lengthMm": 32,
+      "color": "エンドヌケオレ",
+      "officialJan": "4582418084002",
+      "url": "https://www.area-island.com/?pid=170903425",
+      "checkedAt": "2026-11-28",
+      "sourceName": "越谷タックルアイランド",
+      "store": "area-island",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "旧パニクラの個別商品名、型の選択肢、カラー選択肢と、既存の公式仕様表を照合。"
+    },
+    {
+      "variantId": 9952,
+      "manufacturer": "TIMON",
+      "series": "PaniCra",
+      "model": "PaniCra DR-HF",
+      "weightG": 2.8,
+      "lengthMm": 32,
+      "color": "ヤジーパーフェクトオリーブ",
+      "url": "https://www.area-island.com/?pid=170903425",
+      "checkedAt": "2026-11-28",
+      "sourceName": "越谷タックルアイランド",
+      "store": "area-island",
+      "kind": "model-color-list",
+      "status": "app-eligible",
+      "basis": "旧パニクラの個別商品名、型の選択肢、カラー選択肢と、既存の公式仕様表を照合。"
     }
   ],
   "pages": [
@@ -7929,6 +11298,481 @@
       "httpStatus": 200,
       "status": "held",
       "reason": "retailer-jan-missing-or-conflicting"
+    },
+    {
+      "url": "https://t-route.net/products/%E3%81%A1%E3%81%B3%E3%83%91%E3%83%8B%E3%82%AF%E3%83%A9dr-ss",
+      "store": "troute",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        1135
+      ]
+    },
+    {
+      "url": "https://t-route.net/products/%E3%81%A1%E3%81%B3%E3%83%91%E3%83%8B%E3%82%AF%E3%83%A9sr",
+      "store": "troute",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "held",
+      "matchedVariantIds": [],
+      "reason": "no eligible uncovered model-color combination verified"
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=179966940",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        848,
+        851,
+        852,
+        854,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        865,
+        866,
+        867,
+        868,
+        869,
+        870,
+        872,
+        873,
+        874,
+        875,
+        876
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=179971524",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        9331,
+        9332,
+        9333,
+        9335,
+        9336,
+        9337,
+        9338,
+        9340,
+        9342,
+        9343,
+        9344,
+        9345,
+        9346,
+        9347,
+        9348,
+        9349,
+        9350,
+        9352,
+        9354,
+        9356,
+        9357,
+        9359,
+        9360,
+        9361,
+        9362,
+        9364,
+        9366,
+        9367,
+        9368,
+        9369,
+        9370,
+        9371,
+        9372,
+        9373,
+        9374,
+        9376,
+        9378
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=186467650",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "held",
+      "matchedVariantIds": [],
+      "reason": "no eligible uncovered model-color combination verified"
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=186468024",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        809,
+        810,
+        811,
+        812,
+        813,
+        814,
+        815,
+        816
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=183128179",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "held",
+      "matchedVariantIds": [],
+      "reason": "no eligible uncovered model-color combination verified"
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=190232183",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        839,
+        840,
+        841,
+        842,
+        843,
+        844,
+        845,
+        847
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=190232635",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        736,
+        741
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=190232688",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        743,
+        744,
+        746,
+        748,
+        749,
+        750,
+        752
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=171992699",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        1070,
+        1071,
+        1075
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=189668742",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        1092
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=173961534",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        9267,
+        9269,
+        9270,
+        9271,
+        9272,
+        9273,
+        9274,
+        9275,
+        9276,
+        9277,
+        9278,
+        9279,
+        9280,
+        9281
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=183577932",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        9252,
+        9254,
+        9255,
+        9256,
+        9257,
+        9258,
+        9259,
+        9260,
+        9261,
+        9262,
+        9263,
+        9264,
+        9265,
+        9266
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=185126466",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        9282,
+        9284,
+        9285,
+        9287,
+        9288,
+        9289,
+        9290,
+        9291,
+        9293,
+        9294
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=165044001",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        827,
+        829,
+        830,
+        832,
+        834,
+        835
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=93707773",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "held",
+      "matchedVariantIds": [],
+      "reason": "no eligible uncovered model-color combination verified"
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=182978155",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        9953,
+        9954,
+        9955,
+        9956,
+        9957,
+        9958,
+        9959,
+        9960,
+        9961,
+        9962
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?cbid=382616&csid=0&mode=cate&page=2",
+      "store": "kitiya-index",
+      "kind": "listing",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "listing-inspected",
+      "matchedVariantIds": []
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=190489106",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        658,
+        659,
+        660,
+        663,
+        664,
+        665,
+        666
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=190508313",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        783,
+        784,
+        785,
+        786,
+        787,
+        788
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=82811491",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        676,
+        678,
+        679,
+        682,
+        684
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=160046041",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        9162,
+        9164,
+        9165,
+        9167,
+        9168,
+        9170,
+        9172,
+        9173,
+        9174,
+        9175,
+        9176,
+        9177
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?cbid=382616&csid=10&mode=cate&sort=n",
+      "store": "kitiya-index",
+      "kind": "listing",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "listing-inspected",
+      "matchedVariantIds": []
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=160046044",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        9198,
+        9199,
+        9203,
+        9206,
+        9209,
+        9212
+      ]
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=160046043",
+      "store": "kitiya",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        9179,
+        9180,
+        9183,
+        9184,
+        9186,
+        9187,
+        9189,
+        9191,
+        9192,
+        9193,
+        9194,
+        9196
+      ]
+    },
+    {
+      "url": "https://www.area-island.com/?pid=170903425",
+      "store": "area-island",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "matched",
+      "matchedVariantIds": [
+        9877,
+        9883,
+        9886,
+        9889,
+        9900,
+        9952
+      ]
+    },
+    {
+      "url": "https://troutisland.shop-pro.jp/?pid=86566861",
+      "store": "troutisland",
+      "kind": "product",
+      "checkedAt": "2026-11-28",
+      "httpStatus": 200,
+      "status": "held",
+      "matchedVariantIds": [],
+      "reason": "no eligible uncovered model-color combination verified"
     }
   ],
   "imageCandidates": [
@@ -12286,8 +16130,11 @@
       "weightG": 1.6,
       "lengthMm": 25,
       "color": "S.M VI",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=93707773"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1056,
@@ -12296,8 +16143,11 @@
       "weightG": 1.6,
       "lengthMm": 25,
       "color": "キラキラ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=93707773"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1057,
@@ -12306,8 +16156,11 @@
       "weightG": 1.6,
       "lengthMm": 25,
       "color": "2014ノブカラー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=93707773"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1058,
@@ -12316,8 +16169,11 @@
       "weightG": 1.6,
       "lengthMm": 25,
       "color": "さちおの茶",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=93707773"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1059,
@@ -12326,8 +16182,11 @@
       "weightG": 1.6,
       "lengthMm": 25,
       "color": "2015ノブカラー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=93707773"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1060,
@@ -12336,8 +16195,11 @@
       "weightG": 1.6,
       "lengthMm": 25,
       "color": "黒まんじゅう",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=93707773"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1061,
@@ -12346,8 +16208,11 @@
       "weightG": 1.6,
       "lengthMm": 25,
       "color": "19ノブ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=93707773"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1062,
@@ -12356,8 +16221,11 @@
       "weightG": 1.6,
       "lengthMm": 25,
       "color": "20安塚",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=93707773"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1063,
@@ -12366,8 +16234,11 @@
       "weightG": 1.6,
       "lengthMm": 25,
       "color": "21ノブ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=93707773"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1064,
@@ -12376,8 +16247,11 @@
       "weightG": 1.6,
       "lengthMm": 25,
       "color": "RCポテトヘッド",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=93707773"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1124,
@@ -12529,9 +16403,10 @@
       "weightG": 1.6,
       "lengthMm": 25,
       "color": "ゴンティーラッシュグローⅡ",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4582418098979/"
+        "https://store.castingnet.jp/shop/g/g4582418098979/",
+        "https://t-route.net/products/%E3%81%A1%E3%81%B3%E3%83%91%E3%83%8B%E3%82%AF%E3%83%A9dr-ss"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -13201,9 +17076,10 @@
       "weightG": 1.8,
       "lengthMm": 40,
       "color": "エンドパンプキン",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327267/"
+        "https://store.castingnet.jp/shop/g/g4525807327267/",
+        "https://www.kitiya.jp/?pid=190489106"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -13214,9 +17090,10 @@
       "weightG": 1.8,
       "lengthMm": 40,
       "color": "カドニキハーフグロー",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327359/"
+        "https://store.castingnet.jp/shop/g/g4525807327359/",
+        "https://www.kitiya.jp/?pid=190489106"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -13227,9 +17104,10 @@
       "weightG": 1.8,
       "lengthMm": 40,
       "color": "シャインインパクトOKTWO",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327366/"
+        "https://store.castingnet.jp/shop/g/g4525807327366/",
+        "https://www.kitiya.jp/?pid=190489106"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -13266,9 +17144,10 @@
       "weightG": 1.8,
       "lengthMm": 40,
       "color": "ヤジーフロートメロン",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327342/"
+        "https://store.castingnet.jp/shop/g/g4525807327342/",
+        "https://www.kitiya.jp/?pid=190489106"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -13279,9 +17158,10 @@
       "weightG": 1.8,
       "lengthMm": 40,
       "color": "ラムレーズン",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327281/"
+        "https://store.castingnet.jp/shop/g/g4525807327281/",
+        "https://www.kitiya.jp/?pid=190489106"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -13292,9 +17172,10 @@
       "weightG": 1.8,
       "lengthMm": 40,
       "color": "蛍光グリーン",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327298/"
+        "https://store.castingnet.jp/shop/g/g4525807327298/",
+        "https://www.kitiya.jp/?pid=190489106"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -13305,9 +17186,10 @@
       "weightG": 1.8,
       "lengthMm": 40,
       "color": "蛍光ピンク",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327250/"
+        "https://store.castingnet.jp/shop/g/g4525807327250/",
+        "https://www.kitiya.jp/?pid=190489106"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -13370,8 +17252,11 @@
       "weightG": 2.1,
       "lengthMm": 33,
       "color": "ゴンティーパープル",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=82811491"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 672,
@@ -13432,8 +17317,11 @@
       "weightG": 2.1,
       "lengthMm": 33,
       "color": "マサの黒ケイムラ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=82811491"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 677,
@@ -13455,8 +17343,11 @@
       "weightG": 2.1,
       "lengthMm": 33,
       "color": "ミエピン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=82811491"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 679,
@@ -13465,8 +17356,11 @@
       "weightG": 2.1,
       "lengthMm": 33,
       "color": "ヤスノクリブラ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=82811491"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 680,
@@ -13475,8 +17369,11 @@
       "weightG": 2.1,
       "lengthMm": 33,
       "color": "ヨネスティスノー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=82811491"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 681,
@@ -13485,8 +17382,11 @@
       "weightG": 2.1,
       "lengthMm": 33,
       "color": "宇治金時",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=82811491"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 682,
@@ -13495,8 +17395,11 @@
       "weightG": 2.1,
       "lengthMm": 33,
       "color": "神ゴマピンク",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=82811491"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 683,
@@ -13518,8 +17421,11 @@
       "weightG": 2.1,
       "lengthMm": 33,
       "color": "衝撃グロー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=82811491"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 685,
@@ -13712,8 +17618,11 @@
       "weightG": 2.1,
       "lengthMm": 28,
       "color": "シャインキャラメルグロー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=171992699"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1066,
@@ -13774,8 +17683,11 @@
       "weightG": 2.1,
       "lengthMm": 28,
       "color": "クリアー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=171992699"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 1071,
@@ -13784,9 +17696,10 @@
       "weightG": 2.1,
       "lengthMm": 28,
       "color": "タッキーブラウン",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807243888/"
+        "https://store.castingnet.jp/shop/g/g4525807243888/",
+        "https://www.kitiya.jp/?pid=171992699"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -13836,9 +17749,10 @@
       "weightG": 2.1,
       "lengthMm": 28,
       "color": "エンドグローペレブラウン",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807243932/"
+        "https://store.castingnet.jp/shop/g/g4525807243932/",
+        "https://www.kitiya.jp/?pid=171992699"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -13903,7 +17817,8 @@
       "color": "ダイゴリミテッドブラウン",
       "status": "held",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807342178/"
+        "https://store.castingnet.jp/shop/g/g4525807342178/",
+        "https://www.kitiya.jp/?pid=189668742"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -14057,9 +17972,10 @@
       "weightG": 2.3,
       "lengthMm": 28,
       "color": "マサのドクリンゴ",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807315875/"
+        "https://store.castingnet.jp/shop/g/g4525807315875/",
+        "https://www.kitiya.jp/?pid=189668742"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -14588,8 +18504,11 @@
       "weightG": 2,
       "lengthMm": 26,
       "color": "カドメタル",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232635"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 737,
@@ -14650,8 +18569,11 @@
       "weightG": 2,
       "lengthMm": 26,
       "color": "タッキーブラウン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232635"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 742,
@@ -14673,8 +18595,11 @@
       "weightG": 2.5,
       "lengthMm": 28,
       "color": "KYアタッキングブラウン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232688"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 744,
@@ -14683,8 +18608,11 @@
       "weightG": 2.5,
       "lengthMm": 28,
       "color": "Ueインパクトペレット",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232688"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 745,
@@ -14706,8 +18634,11 @@
       "weightG": 2.5,
       "lengthMm": 28,
       "color": "カドメタル",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232688"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 747,
@@ -14729,8 +18660,11 @@
       "weightG": 2.5,
       "lengthMm": 28,
       "color": "シャインチャオリ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232688"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 749,
@@ -14739,8 +18673,11 @@
       "weightG": 2.5,
       "lengthMm": 28,
       "color": "ショボクレレッドグロー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232688"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 750,
@@ -14749,8 +18686,11 @@
       "weightG": 2.5,
       "lengthMm": 28,
       "color": "タッキーゴーストペレット",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232688"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 751,
@@ -14772,8 +18712,11 @@
       "weightG": 2.5,
       "lengthMm": 28,
       "color": "バイタルオリーブ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232688"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 753,
@@ -15121,9 +19064,10 @@
       "weightG": 0.95,
       "lengthMm": 20.2,
       "color": "タッキーBPゴーストブラウン",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327670/"
+        "https://store.castingnet.jp/shop/g/g4525807327670/",
+        "https://www.kitiya.jp/?pid=190508313"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -15134,9 +19078,10 @@
       "weightG": 0.95,
       "lengthMm": 20.2,
       "color": "タッキーブラウン",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327588/"
+        "https://store.castingnet.jp/shop/g/g4525807327588/",
+        "https://www.kitiya.jp/?pid=190508313"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -15147,9 +19092,10 @@
       "weightG": 0.95,
       "lengthMm": 20.2,
       "color": "ダイゴビーン",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327687/"
+        "https://store.castingnet.jp/shop/g/g4525807327687/",
+        "https://www.kitiya.jp/?pid=190508313"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -15160,9 +19106,10 @@
       "weightG": 0.95,
       "lengthMm": 20.2,
       "color": "ヤジーペレットサン",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327649/"
+        "https://store.castingnet.jp/shop/g/g4525807327649/",
+        "https://www.kitiya.jp/?pid=190508313"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -15173,9 +19120,10 @@
       "weightG": 0.95,
       "lengthMm": 20.2,
       "color": "ヤジーボンズ",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327625/"
+        "https://store.castingnet.jp/shop/g/g4525807327625/",
+        "https://www.kitiya.jp/?pid=190508313"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -15186,9 +19134,10 @@
       "weightG": 0.95,
       "lengthMm": 20.2,
       "color": "ラムレーズン",
-      "status": "held",
+      "status": "registered",
       "inspectedUrls": [
-        "https://store.castingnet.jp/shop/g/g4525807327632/"
+        "https://store.castingnet.jp/shop/g/g4525807327632/",
+        "https://www.kitiya.jp/?pid=190508313"
       ],
       "checkedAt": "2026-11-28"
     },
@@ -15441,8 +19390,11 @@
       "weightG": 1.4,
       "lengthMm": 28,
       "color": "エンドヌケオレ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=186468024"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 810,
@@ -15451,8 +19403,11 @@
       "weightG": 1.4,
       "lengthMm": 28,
       "color": "クリアー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=186468024"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 811,
@@ -15461,8 +19416,11 @@
       "weightG": 1.4,
       "lengthMm": 28,
       "color": "ケイムラクリアー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=186468024"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 812,
@@ -15471,8 +19429,11 @@
       "weightG": 1.4,
       "lengthMm": 28,
       "color": "タッキーネオン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=186468024"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 813,
@@ -15481,8 +19442,11 @@
       "weightG": 1.4,
       "lengthMm": 28,
       "color": "ダイゴスケピン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=186468024"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 814,
@@ -15491,8 +19455,11 @@
       "weightG": 1.4,
       "lengthMm": 28,
       "color": "ヤスノクリブラ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=186468024"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 815,
@@ -15501,8 +19468,11 @@
       "weightG": 1.4,
       "lengthMm": 28,
       "color": "幻影ライン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=186468024"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 816,
@@ -15511,8 +19481,11 @@
       "weightG": 1.4,
       "lengthMm": 28,
       "color": "誘惑ライン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=186468024"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9879,
@@ -15791,8 +19764,11 @@
       "weightG": 2.8,
       "lengthMm": 32,
       "color": "ヤジーパーフェクトブラウン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.area-island.com/?pid=170903425"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9880,
@@ -15801,8 +19777,11 @@
       "weightG": 2.8,
       "lengthMm": 32,
       "color": "エンドパンプキン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.area-island.com/?pid=170903425"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9883,
@@ -15811,8 +19790,11 @@
       "weightG": 2.8,
       "lengthMm": 32,
       "color": "ショボクレほうじ茶ラテ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.area-island.com/?pid=170903425"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9886,
@@ -15821,8 +19803,11 @@
       "weightG": 2.8,
       "lengthMm": 32,
       "color": "TKグロー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.area-island.com/?pid=170903425"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9889,
@@ -15831,8 +19816,11 @@
       "weightG": 2.8,
       "lengthMm": 32,
       "color": "ダイゴマッスルレッドグロー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.area-island.com/?pid=170903425"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9893,
@@ -15841,8 +19829,11 @@
       "weightG": 2.8,
       "lengthMm": 32,
       "color": "クリアー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.area-island.com/?pid=170903425"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9897,
@@ -15851,8 +19842,11 @@
       "weightG": 2.8,
       "lengthMm": 32,
       "color": "タッキーブラウン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.area-island.com/?pid=170903425"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9899,
@@ -15861,8 +19855,11 @@
       "weightG": 2.8,
       "lengthMm": 32,
       "color": "ショボクレワカクサ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.area-island.com/?pid=170903425"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9900,
@@ -15871,8 +19868,11 @@
       "weightG": 2.8,
       "lengthMm": 32,
       "color": "エンドヌケオレ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.area-island.com/?pid=170903425"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9952,
@@ -15881,8 +19881,11 @@
       "weightG": 2.8,
       "lengthMm": 32,
       "color": "ヤジーパーフェクトオリーブ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.area-island.com/?pid=170903425"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9878,
@@ -16576,8 +20579,11 @@
       "weightG": 1.6,
       "lengthMm": 30,
       "color": "エンドパンプキン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=165044001"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 828,
@@ -16586,8 +20592,11 @@
       "weightG": 1.6,
       "lengthMm": 30,
       "color": "ショボクレグロー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=165044001"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 829,
@@ -16596,8 +20605,11 @@
       "weightG": 1.6,
       "lengthMm": 30,
       "color": "タッキーゴーストペレット",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=165044001"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 830,
@@ -16606,8 +20618,11 @@
       "weightG": 1.6,
       "lengthMm": 30,
       "color": "タッキーシャーベット",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=165044001"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 831,
@@ -16616,8 +20631,11 @@
       "weightG": 1.6,
       "lengthMm": 30,
       "color": "タッキートロピカルグロー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=165044001"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 832,
@@ -16626,8 +20644,11 @@
       "weightG": 1.6,
       "lengthMm": 30,
       "color": "タッキーブラウン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=165044001"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 833,
@@ -16636,8 +20657,11 @@
       "weightG": 1.6,
       "lengthMm": 30,
       "color": "ダイゴゴーストレッドグロー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=165044001"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 834,
@@ -16646,8 +20670,11 @@
       "weightG": 1.6,
       "lengthMm": 30,
       "color": "ヤジーボンズ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=165044001"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 835,
@@ -16656,8 +20683,11 @@
       "weightG": 1.6,
       "lengthMm": 30,
       "color": "ラムレーズン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=165044001"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 836,
@@ -16666,8 +20696,11 @@
       "weightG": 1.6,
       "lengthMm": 30,
       "color": "ＴＫグロー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=165044001"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 837,
@@ -16697,8 +20730,11 @@
       "weightG": 3.1,
       "lengthMm": 60,
       "color": "クリアーホロクラウン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232183"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 840,
@@ -16707,8 +20743,11 @@
       "weightG": 3.1,
       "lengthMm": 60,
       "color": "ショボクレシルバー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232183"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 841,
@@ -16717,8 +20756,11 @@
       "weightG": 3.1,
       "lengthMm": 60,
       "color": "タッキーアンバー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232183"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 842,
@@ -16727,8 +20769,11 @@
       "weightG": 3.1,
       "lengthMm": 60,
       "color": "テネシー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232183"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 843,
@@ -16737,8 +20782,11 @@
       "weightG": 3.1,
       "lengthMm": 60,
       "color": "パラレルチャート",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232183"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 844,
@@ -16747,8 +20795,11 @@
       "weightG": 3.1,
       "lengthMm": 60,
       "color": "パープルシャッド",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232183"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 845,
@@ -16757,8 +20808,11 @@
       "weightG": 3.1,
       "lengthMm": 60,
       "color": "ヤジーボンズ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232183"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 846,
@@ -16780,8 +20834,11 @@
       "weightG": 3.1,
       "lengthMm": 60,
       "color": "闇金",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=190232183"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 848,
@@ -16790,8 +20847,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "B.N.S",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 849,
@@ -16800,8 +20860,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "CTペレット1号",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 850,
@@ -16810,8 +20873,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "CTペレット2号",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 851,
@@ -16820,8 +20886,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "NO.6",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 852,
@@ -16830,8 +20899,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "キャワサギ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 853,
@@ -16840,8 +20912,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "キャン花水月",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 854,
@@ -16850,8 +20925,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "クリアー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 855,
@@ -16860,8 +20938,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "ゴールドカドチップ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 856,
@@ -16870,8 +20951,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "シルバーカドチップ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 857,
@@ -16880,8 +20964,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "スモークカドチップ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 858,
@@ -16890,8 +20977,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "ヤジカビ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 859,
@@ -16900,8 +20990,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "ヤジーアーマー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 860,
@@ -16910,8 +21003,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "ヤジーインパクトオレンジ2号",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 861,
@@ -16920,8 +21016,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "ヤジーゾーン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 862,
@@ -16930,8 +21029,11 @@
       "weightG": 1.8,
       "lengthMm": 52,
       "color": "ヤジーフラッシュ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 863,
@@ -16940,8 +21042,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "B.N.S",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 864,
@@ -16950,8 +21055,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "CTペレット1号",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 865,
@@ -16960,8 +21068,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "CTペレット2号",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 866,
@@ -16970,8 +21081,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "NO.6",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 867,
@@ -16980,8 +21094,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "キャワサギ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 868,
@@ -16990,8 +21107,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "キャン花水月",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 869,
@@ -17000,8 +21120,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "クリアー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 870,
@@ -17010,8 +21133,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "ゴールドカドチップ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 871,
@@ -17020,8 +21146,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "シルバーカドチップ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 872,
@@ -17030,8 +21159,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "スモークカドチップ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 873,
@@ -17040,8 +21172,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "ヤジカビ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 874,
@@ -17050,8 +21185,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "ヤジーアーマー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 875,
@@ -17060,8 +21198,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "ヤジーインパクトオレンジ2号",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 876,
@@ -17070,8 +21211,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "ヤジーゾーン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 877,
@@ -17080,8 +21224,11 @@
       "weightG": 1.7,
       "lengthMm": 52,
       "color": "ヤジーフラッシュ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179966940"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9069,
@@ -18158,8 +22305,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "ゲンコツヤジーマイト",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9163,
@@ -18168,8 +22318,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "ダイゴマイトⅡ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9164,
@@ -18178,8 +22331,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "銀狼",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9165,
@@ -18188,8 +22344,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "クレイジーパープル",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9166,
@@ -18198,8 +22357,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "ダイゴミクス(グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9167,
@@ -18208,8 +22370,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "氷河",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9168,
@@ -18218,8 +22383,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "山葵",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9169,
@@ -18228,8 +22396,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "ダイゴマイトマッディー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9170,
@@ -18238,8 +22409,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "エンドチャッピー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9171,
@@ -18248,8 +22422,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "クログロー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9172,
@@ -18258,8 +22435,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "かれは",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9173,
@@ -18268,8 +22448,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "エンドブラスター",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9174,
@@ -18278,8 +22461,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "グリーンヤマメ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9175,
@@ -18288,8 +22474,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "ブルーヤマメ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9176,
@@ -18298,8 +22487,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "オレインボー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9177,
@@ -18308,8 +22500,11 @@
       "weightG": 0.8,
       "lengthMm": 19.4,
       "color": "グリーンボー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046041"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9178,
@@ -18331,8 +22526,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "ゲンコツヤジーマイト",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9180,
@@ -18341,8 +22539,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "ヤジーセカンドゴールド",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9181,
@@ -18351,8 +22552,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "ダイゴグリーンボー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9182,
@@ -18361,8 +22565,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "ダイゴマイトⅡ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9183,
@@ -18371,8 +22578,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "銀狼",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9184,
@@ -18381,8 +22591,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "クレイジーパープル",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9185,
@@ -18391,8 +22604,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "ダイゴミクス(グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9186,
@@ -18401,8 +22617,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "氷河",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9187,
@@ -18411,8 +22630,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "山葵",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9188,
@@ -18421,8 +22643,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "ダイゴマイトマッディー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9189,
@@ -18431,8 +22656,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "エンドチャッピー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9190,
@@ -18441,8 +22669,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "クログロー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9191,
@@ -18451,8 +22682,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "かれは",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9192,
@@ -18461,8 +22695,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "エンドブラスター",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9193,
@@ -18471,8 +22708,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "グリーンヤマメ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9194,
@@ -18481,8 +22721,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "ブルーヤマメ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9195,
@@ -18504,8 +22747,11 @@
       "weightG": 1,
       "lengthMm": 19.4,
       "color": "グリーンボー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046043"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9197,
@@ -18527,8 +22773,11 @@
       "weightG": 1.2,
       "lengthMm": 19.4,
       "color": "ゲンコツヤジーマイト",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046044"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9199,
@@ -18537,8 +22786,11 @@
       "weightG": 1.2,
       "lengthMm": 19.4,
       "color": "ヤジーセカンドゴールド",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046044"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9200,
@@ -18547,8 +22799,11 @@
       "weightG": 1.2,
       "lengthMm": 19.4,
       "color": "ダイゴグリーンボー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046044"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9201,
@@ -18583,8 +22838,11 @@
       "weightG": 1.2,
       "lengthMm": 19.4,
       "color": "クレイジーパープル",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046044"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9204,
@@ -18593,8 +22851,11 @@
       "weightG": 1.2,
       "lengthMm": 19.4,
       "color": "ダイゴミクス(グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046044"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9205,
@@ -18616,8 +22877,11 @@
       "weightG": 1.2,
       "lengthMm": 19.4,
       "color": "山葵",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046044"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9207,
@@ -18626,8 +22890,11 @@
       "weightG": 1.2,
       "lengthMm": 19.4,
       "color": "ダイゴマイトマッディー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046044"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9208,
@@ -18649,8 +22916,11 @@
       "weightG": 1.2,
       "lengthMm": 19.4,
       "color": "エンドブラスター",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046044"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9210,
@@ -18685,8 +22955,11 @@
       "weightG": 1.2,
       "lengthMm": 19.4,
       "color": "オレインボー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=160046044"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9213,
@@ -19106,8 +23379,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "37 からし",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9253,
@@ -19116,8 +23392,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "ﾀﾞｲｺﾞﾏｲﾄⅡ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9254,
@@ -19126,8 +23405,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "119 ﾀｯｷｰGﾍﾟﾚｯﾄ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9255,
@@ -19136,8 +23418,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "128 山葵",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9256,
@@ -19146,8 +23431,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "180 ﾔｼﾞｰｼﾙﾎﾜUV",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9257,
@@ -19156,8 +23444,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "208 元気ﾊﾂﾗﾂ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9258,
@@ -19166,8 +23457,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "209 ｻﾝｾｯﾄ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9259,
@@ -19176,8 +23470,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "4 蛍光ﾋﾟﾝｸ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9260,
@@ -19186,8 +23483,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "219 ｹﾞﾝｺﾂﾔｼﾞｰﾏｲﾄ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9261,
@@ -19196,8 +23496,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "222 DBRG",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9262,
@@ -19206,8 +23509,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "223 ｶﾄﾞﾓﾓ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9263,
@@ -19216,8 +23522,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "224 ｶﾄﾞｵﾘﾌﾞﾙ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9264,
@@ -19226,8 +23535,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "225 ﾔｼﾞｰｵﾘﾊﾞ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9265,
@@ -19236,8 +23548,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "226 ﾗﾌﾗﾝｽ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9266,
@@ -19246,8 +23561,11 @@
       "weightG": 0.6,
       "lengthMm": 19.5,
       "color": "227 ﾔｼﾞｰｼﾞｪﾗｸﾞﾛｰ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=183577932"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9267,
@@ -19256,8 +23574,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "37 からし",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9268,
@@ -19266,8 +23587,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "ﾀﾞｲｺﾞﾏｲﾄⅡ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9269,
@@ -19276,8 +23600,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "119 ﾀｯｷｰGﾍﾟﾚｯﾄ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9270,
@@ -19286,8 +23613,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "128 山葵",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9271,
@@ -19296,8 +23626,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "160 ﾀﾞｲｺﾞｼｰｸﾚｯﾄｸﾞﾘｰﾝ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9272,
@@ -19306,8 +23639,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "162 ﾀﾞｲｺﾞｼｰｸﾚｯﾄｸﾞﾛｰ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9273,
@@ -19316,8 +23652,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "176 ﾔｼﾞｰｾｶﾝﾄﾞｺﾞｰﾙﾄﾞ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9274,
@@ -19326,8 +23665,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "180 ﾔｼﾞｰｼﾙﾎﾜUV",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9275,
@@ -19336,8 +23678,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "206 ﾀﾞｲｺﾞﾀﾞｰｸｵﾘｰﾌﾞ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9276,
@@ -19346,8 +23691,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "207 枯れ金",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9277,
@@ -19356,8 +23704,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "208 元気ﾊﾂﾗﾂ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9278,
@@ -19366,8 +23717,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "209 ｻﾝｾｯﾄ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9279,
@@ -19376,8 +23730,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "210 ﾌﾞﾙｰﾊﾜｲ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9280,
@@ -19386,8 +23743,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "211 ｷﾗｵﾘｰﾌﾞ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9281,
@@ -19396,8 +23756,11 @@
       "weightG": 1,
       "lengthMm": 22.3,
       "color": "ﾀﾞｲｺﾞﾐｸｽ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=173961534"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9282,
@@ -19406,8 +23769,11 @@
       "weightG": 1.7,
       "lengthMm": 26,
       "color": "37 からし",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=185126466"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9283,
@@ -19429,8 +23795,11 @@
       "weightG": 1.7,
       "lengthMm": 26,
       "color": "176 ﾔｼﾞｰｾｶﾝﾄﾞｺﾞｰﾙﾄﾞ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=185126466"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9285,
@@ -19439,8 +23808,11 @@
       "weightG": 1.7,
       "lengthMm": 26,
       "color": "180 ﾔｼﾞｰｼﾙﾎﾜUV",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=185126466"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9286,
@@ -19462,8 +23834,11 @@
       "weightG": 1.7,
       "lengthMm": 26,
       "color": "ﾀﾞｲｺﾞﾐｸｽ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=185126466"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9288,
@@ -19472,8 +23847,11 @@
       "weightG": 1.7,
       "lengthMm": 26,
       "color": "4 蛍光ﾋﾟﾝｸ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=185126466"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9289,
@@ -19482,8 +23860,11 @@
       "weightG": 1.7,
       "lengthMm": 26,
       "color": "76 ｸﾞﾘｰﾝﾎﾞｰ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=185126466"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9290,
@@ -19492,8 +23873,11 @@
       "weightG": 1.7,
       "lengthMm": 26,
       "color": "141 ｵﾚﾁｬｰﾄｷﾝ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=185126466"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9291,
@@ -19502,8 +23886,11 @@
       "weightG": 1.7,
       "lengthMm": 26,
       "color": "199 放流ｵﾚｷﾝ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=185126466"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9292,
@@ -19525,8 +23912,11 @@
       "weightG": 1.7,
       "lengthMm": 26,
       "color": "219 ｹﾞﾝｺﾂﾔｼﾞｰﾏｲﾄ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=185126466"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9294,
@@ -19535,8 +23925,11 @@
       "weightG": 1.7,
       "lengthMm": 26,
       "color": "224 ｶﾄﾞｵﾘﾌﾞﾙ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=185126466"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9295,
@@ -19989,8 +24382,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "ヨネスティーグリキン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9332,
@@ -19999,8 +24395,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "チャートグリーンヤマメ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9333,
@@ -20009,8 +24408,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "オリーブヤマメUV",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9334,
@@ -20019,8 +24421,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "放流オレキン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9335,
@@ -20029,8 +24434,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "メイメツオリーブ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9336,
@@ -20039,8 +24447,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "メイメツカラシ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9337,
@@ -20049,8 +24460,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "ダイゴマシマシウズラ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9338,
@@ -20059,8 +24473,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "ダイゴミクス",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9339,
@@ -20069,8 +24486,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "ダイゴグリーンボー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9340,
@@ -20079,8 +24499,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "ダイゴマイトⅡ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9341,
@@ -20089,8 +24512,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "ヤジーシルホワUV（UV）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9342,
@@ -20099,8 +24525,11 @@
       "weightG": 2.1,
       "lengthMm": 31,
       "color": "サンセット",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9343,
@@ -20109,8 +24538,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "ヨネスティーグリキン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9344,
@@ -20119,8 +24551,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "チャートグリーンヤマメ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9345,
@@ -20129,8 +24564,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "オリーブヤマメUV",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9346,
@@ -20139,8 +24577,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "放流オレキン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9347,
@@ -20149,8 +24590,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "メイメツオリーブ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9348,
@@ -20159,8 +24603,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "メイメツカラシ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9349,
@@ -20169,8 +24616,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "ダイゴマシマシウズラ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9350,
@@ -20179,8 +24629,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "ダイゴミクス",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9351,
@@ -20189,8 +24642,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "ダイゴグリーンボー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9352,
@@ -20199,8 +24655,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "ダイゴマイトⅡ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9353,
@@ -20209,8 +24668,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "ヤジーシルホワUV（UV）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9354,
@@ -20219,8 +24681,11 @@
       "weightG": 2.4,
       "lengthMm": 31,
       "color": "サンセット",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9355,
@@ -20229,8 +24694,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "ヨネスティーグリキン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9356,
@@ -20239,8 +24707,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "チャートグリーンヤマメ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9357,
@@ -20249,8 +24720,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "オリーブヤマメUV",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9358,
@@ -20259,8 +24733,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "放流オレキン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9359,
@@ -20269,8 +24746,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "メイメツオリーブ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9360,
@@ -20279,8 +24759,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "メイメツカラシ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9361,
@@ -20289,8 +24772,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "ダイゴマシマシウズラ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9362,
@@ -20299,8 +24785,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "ダイゴミクス",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9363,
@@ -20309,8 +24798,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "ダイゴグリーンボー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9364,
@@ -20319,8 +24811,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "ダイゴマイトⅡ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9365,
@@ -20329,8 +24824,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "ヤジーシルホワUV（UV）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9366,
@@ -20339,8 +24837,11 @@
       "weightG": 3.1,
       "lengthMm": 37,
       "color": "サンセット",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9367,
@@ -20349,8 +24850,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "ヨネスティーグリキン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9368,
@@ -20359,8 +24863,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "チャートグリーンヤマメ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9369,
@@ -20369,8 +24876,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "オリーブヤマメUV",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9370,
@@ -20379,8 +24889,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "放流オレキン",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9371,
@@ -20389,8 +24902,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "メイメツオリーブ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9372,
@@ -20399,8 +24915,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "メイメツカラシ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9373,
@@ -20409,8 +24928,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "ダイゴマシマシウズラ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9374,
@@ -20419,8 +24941,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "ダイゴミクス",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9375,
@@ -20429,8 +24954,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "ダイゴグリーンボー（グロー）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9376,
@@ -20439,8 +24967,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "ダイゴマイトⅡ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9377,
@@ -20449,8 +24980,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "ヤジーシルホワUV（UV）",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "held",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9378,
@@ -20459,8 +24993,11 @@
       "weightG": 3.9,
       "lengthMm": 37,
       "color": "サンセット",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=179971524"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9379,
@@ -20549,8 +25086,11 @@
       "weightG": 3,
       "lengthMm": 32,
       "color": "クリアー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=182978155"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9954,
@@ -20559,8 +25099,11 @@
       "weightG": 3,
       "lengthMm": 32,
       "color": "S.M VI",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=182978155"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9955,
@@ -20569,8 +25112,11 @@
       "weightG": 3,
       "lengthMm": 32,
       "color": "キラキラ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=182978155"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9956,
@@ -20579,8 +25125,11 @@
       "weightG": 3,
       "lengthMm": 32,
       "color": "2014ノブカラー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=182978155"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9957,
@@ -20589,8 +25138,11 @@
       "weightG": 3,
       "lengthMm": 32,
       "color": "2015ノブカラー",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=182978155"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9958,
@@ -20599,8 +25151,11 @@
       "weightG": 3,
       "lengthMm": 32,
       "color": "黒まんじゅう",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=182978155"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9959,
@@ -20609,8 +25164,11 @@
       "weightG": 3,
       "lengthMm": 32,
       "color": "16ノブ",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=182978155"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9960,
@@ -20619,8 +25177,11 @@
       "weightG": 3,
       "lengthMm": 32,
       "color": "20安塚",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=182978155"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9961,
@@ -20629,8 +25190,11 @@
       "weightG": 3,
       "lengthMm": 32,
       "color": "RCポテトヘッド",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=182978155"
+      ],
+      "checkedAt": "2026-11-28"
     },
     {
       "variantId": 9962,
@@ -20639,8 +25203,11 @@
       "weightG": 3,
       "lengthMm": 32,
       "color": "20井野",
-      "status": "unreviewed",
-      "inspectedUrls": []
+      "status": "registered",
+      "inspectedUrls": [
+        "https://www.kitiya.jp/?pid=182978155"
+      ],
+      "checkedAt": "2026-11-28"
     }
   ],
   "queue": {

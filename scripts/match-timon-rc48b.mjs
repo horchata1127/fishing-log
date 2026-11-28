@@ -29,7 +29,7 @@ function labels(row){
  return labels.filter(Boolean).map(slug)
 }
 function color(value, code){
- const n=value.normalize('NFKC').trim(), m=n.match(/^#?(\d+)\s+(.+)$/)
+ const n=value.normalize('NFKC').trim().replace(/^#\s*/,''), m=n.match(/^#?(\d+)\s+(.+)$/)
  return {name:slug(m?.[2]??n),code:code||m?.[1]}
 }
 function title(value){
@@ -124,6 +124,103 @@ for(const page of inspected){
      type:'individual-product-image-candidate',presentation:'held',permission:'not-confirmed',decodeStatus:'not-tested'})
  }
 }
+const variantPages = await read('TIMON_RETAILER_VARIANT_PAGES.json').catch(error=>{
+ if(error.code==='ENOENT')return []; throw error
+})
+const linkedRows=new Set(products.map(row=>row.variantId))
+const variantInspections=new Map()
+const oldPaniCraPages=new Map([
+ ['https://www.area-island.com/?pid=170903425',{model:'PaniCra DR-HF',title:'ティモン パニクラPaniCra DR-HF',option:'DR 【HF】',weightG:2.8}],
+ ['https://troutisland.shop-pro.jp/?pid=86566861',{model:'PaniCra SR',title:'ティモン パニクラ【SR】 - トラウトアイランド',option:'パニクラＳＲ',weightG:3}],
+])
+const multiProduct = new Map([
+ ['179966940',{label:'TCレイゲン',models:new Map([['TCレイゲンMR','MR'],['TCレイゲンDR','DR']])}],
+ ['179971524',{label:'ロミー',series:'Rhomy'}],
+])
+const collabModel = 'PaniCra DR-F Rodio Ver.'
+const extraLabels = new Map([
+ ['REKUZE 0.6g','リクーゼ(Rekuze)0.6g'], ['REKUZE 1g','リクーゼ(Rekuze)1.0g'],
+ ['REKUZE 1.7g','リクーゼ(Rekuze)1.7g'], ['Chibi PaniCra DR-SS','Chibi PaniCra DR-SS(ちびパニクラ)'],
+])
+function retailerLabels(row){
+ return [...labels(row),extraLabels.has(row.model)?slug(extraLabels.get(row.model)):''].filter(Boolean)
+}
+const kitiyaTitle = value => slug(value.replace(/^(?:新色入荷|新入荷|再入荷)?(?:ティモン|TIMON)\s*/i,''))
+for(const page of variantPages){
+ const store=page.store, retailer=policy.sources[store]
+ const pid=new URL(page.url).searchParams.get('pid')
+ const proof=page.verifiedSpecifications
+ const collab=pid==='182978155'&&slug(page.title)===slug('ロデオクラフト×ティモン パニクラ【ロデオクラフトVer.】')&&
+   proof?.model==='DR(F)'&&proof.weightG===3&&proof.buoyancy==='フローティング'
+ const multi=collab?{label:page.title,models:new Map([[collabModel,'パニクラDR(F)']])}:multiProduct.get(pid)
+ const acceptedPage=page.httpStatus===200&&page.finalUrl===page.url&&retailer?.product==='plain-link'
+ const examined=new Set(), linked=new Set()
+ if(acceptedPage&&store==='kitiya'&&(collab||/^ティモン\s+/.test(page.title))&&
+    page.headings?.some(h=>kitiyaTitle(h)===kitiyaTitle(page.title))){
+   const name=kitiyaTitle(page.title)
+   const candidateRows=collab?rc48.rows.filter(row=>row.model===collabModel&&row.weightG===3&&row.lengthMm===32):eligible
+   for(const row of candidateRows){
+     let combinations
+     if(multi&&name===slug(multi.label)){
+       const subtype=multi.models?.get(row.model) ?? (multi.series===row.series?row.weightG+'g':undefined)
+       if(!subtype)continue
+       combinations=page.tables.flatMap(table=>{
+         const [header,...cells]=table
+         if(!header[0].includes('カラー'))return []
+         const c=header.findIndex((name,i)=>i>0&&slug(name)===slug(subtype))
+         return c<1?[]:cells.filter(line=>/円|売り切れ|完売/.test(line[c]??'')).map(line=>line[0])
+       })
+     }else{
+       if(!retailerLabels(row).includes(name))continue
+       combinations=page.options.map(option=>option.replace(/\s[×〇○]$/,''))
+     }
+     if(linkedRows.has(row.variantId))continue
+     examined.add(row.variantId)
+     // For this specific DR(F) page the retailer's stock table also lists three variants as sold out.
+     if(collab)combinations.push(...(page.reviewedSoldOutDRFColors??[]))
+     if(!combinations.some(name=>exactColor(row,name)))continue
+     products.push({variantId:row.variantId,manufacturer:'TIMON',series:row.series,model:row.model,weightG:row.weightG,lengthMm:row.lengthMm,
+       color:row.color,colorCode:row.colorCode,officialJan:row.officialJan||row.catalogJan,url:page.url,checkedAt:page.checkedAt,
+       sourceName:retailer.name,store,kind:'model-color-list',status:'app-eligible',
+       basis:collab?'吉やのロデオクラフト版 DR(F) の3.0g・浮力と発売色の表を照合。別モデルMR列を除外。':multi?'吉やの商品表で対象の型・重量と色が交差する明示セルを照合。':'吉やの個別モデル名・見出しと販売色選択欄を照合。'})
+     linkedRows.add(row.variantId)
+     linked.add(row.variantId)
+   }
+ }
+ if(acceptedPage&&store==='troute'&&page.vendor==='TIMON'&&page.variants?.length){
+   const headingNames=(page.headings??[]).slice(0,2).map(slug)
+   for(const row of eligible.filter(row=>!linkedRows.has(row.variantId)&&retailerLabels(row).some(name=>headingNames.includes(name)))){
+     examined.add(row.variantId)
+     const variants=page.variants.filter(variant=>exactColor(row,variant.title)&&
+       (!variant.sku||!(row.officialJan||row.catalogJan)||variant.sku===(row.officialJan||row.catalogJan)))
+     if(variants.length!==1)continue
+     const variant=variants[0]
+     products.push({variantId:row.variantId,manufacturer:'TIMON',series:row.series,model:row.model,weightG:row.weightG,lengthMm:row.lengthMm,
+       color:row.color,colorCode:row.colorCode,officialJan:row.officialJan||row.catalogJan,retailerJan:variant.sku,
+       url:page.url+'?variant='+variant.id,checkedAt:page.checkedAt,sourceName:retailer.name,store,kind:'individual-color',status:'app-eligible',
+       basis:'t-Routeの同一製品ページのティモン表記・型と、販売色データのvariant IDを照合。'})
+     linkedRows.add(row.variantId)
+     linked.add(row.variantId)
+   }
+ }
+ const oldModel=oldPaniCraPages.get(page.url)
+ if(acceptedPage&&oldModel&&slug(page.title)===slug(oldModel.title)&&page.shopOptions?.some(option=>slug(option)===slug(oldModel.option))){
+   for(const row of eligible.filter(row=>row.model===oldModel.model&&row.weightG===oldModel.weightG&&row.lengthMm===32&&!linkedRows.has(row.variantId))){
+     examined.add(row.variantId)
+     if(!page.shopOptions.some(option=>exactColor(row,option)))continue
+     products.push({variantId:row.variantId,manufacturer:'TIMON',series:row.series,model:row.model,weightG:row.weightG,lengthMm:row.lengthMm,
+       color:row.color,colorCode:row.colorCode,officialJan:row.officialJan||row.catalogJan,url:page.url,checkedAt:page.checkedAt,
+       sourceName:retailer.name,store,kind:'model-color-list',status:'app-eligible',
+       basis:'旧パニクラの個別商品名、型の選択肢、カラー選択肢と、既存の公式仕様表を照合。'})
+     linkedRows.add(row.variantId)
+     linked.add(row.variantId)
+   }
+ }
+ for(const id of examined)variantInspections.set(id,{url:page.url,checkedAt:page.checkedAt})
+ pages.push({url:page.url,store,kind:store==='kitiya-index'?'listing':'product',checkedAt:page.checkedAt,httpStatus:page.httpStatus,
+   status:store==='kitiya-index'?'listing-inspected':linked.size?'matched':'held',matchedVariantIds:[...linked],
+   reason:linked.size||store==='kitiya-index'?undefined:page.error??'no eligible uncovered model-color combination verified'})
+}
 const adopted = [...new Map(products.map(row=>[row.variantId,row])).values()]
 const covered = new Set(adopted.map(row=>row.variantId))
 if(process.argv[2]==='propose'){
@@ -139,7 +236,7 @@ if(process.argv[2]==='propose'){
 }else{
  const attemptedByVariant=Map.groupBy(pages.filter(page=>!!page.variantId),page=>page.variantId)
  const rows=rc48.rows.map(row=>{
-   const sources=attemptedByVariant.get(row.variantId)??[]
+   const sources=[...(attemptedByVariant.get(row.variantId)??[]), ...variantInspections.has(row.variantId)?[variantInspections.get(row.variantId)]:[]]
    return {variantId:row.variantId,series:row.series,model:row.model,weightG:row.weightG,lengthMm:row.lengthMm,color:row.color,
      status:covered.has(row.variantId)?'registered':sources.length?'held':'unreviewed',
      inspectedUrls:sources.map(source=>source.url),
