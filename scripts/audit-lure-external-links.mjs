@@ -38,16 +38,19 @@ const timonChecks = new Map(timon ? (await json(output+'TIMON_IMAGE_SPOT_CHECKS.
   throw error
 })).map(check=>[check.url,check]) : [])
 const priorAudit = await json('docs/rodio-driftspin-bf/AUDIT.json')
-const smith = await json(output+'SMITH_REVIEW.json').catch(error=>{
-  if (error.code === 'ENOENT') return undefined
+const optionalJson = (name,fallback) => json(output+name).catch(error=>{
+  if (error.code === 'ENOENT') return fallback
   throw error
 })
-if (smith && smith.stats.backupSha256 !== digest(raw)) throw new Error('SMITH review backup mismatch')
-const smithRows = new Map(smith?.rows.map(row=>[row.variantId,row]))
-const smithChecks = new Map(smith ? (await json(output+'SMITH_IMAGE_SPOT_CHECKS.json').catch(error=>{
-  if (error.code === 'ENOENT') return []
-  throw error
-})).map(check=>[check.url,check]) : [])
+const manufacturerReviews = await Promise.all(['SMITH','PALMS'].map(async maker=>{
+  const report = await optionalJson(maker+'_REVIEW.json')
+  if (report && report.stats.backupSha256 !== digest(raw)) throw new Error(maker+' review backup mismatch')
+  const checks = report ? await optionalJson(maker+'_IMAGE_SPOT_CHECKS.json',[]) : []
+  return { maker, report, rows: new Map(report?.rows.map(row=>[row.variantId,row])), checks }
+}))
+const [smith,palms] = manufacturerReviews.map(review=>review.report)
+const byMaker = new Map(manufacturerReviews.map(review=>[review.maker,review]))
+const manufacturerChecks = new Map(manufacturerReviews.flatMap(review=>review.checks.map(check=>[check.url,check])))
 const knownProducts = new Set(health.rows.flatMap(row => [row.productUrl, ...row.retainedOtherUrls.split(' | ')]).filter(Boolean))
 const historicalChecks = new Map(historical.definitions.map(ref => [ref.imageUrl, ref]))
 const loader = await localTypeScript()
@@ -104,8 +107,9 @@ try {
     const precedent = evidence && prior.find(r=>r.model===canonicalModel && r.label===evidence.colorName && r.sourceUrl===evidence.evidenceUrl)
     const page = evidence && review.pages.find(r=>r.url===evidence.evidenceUrl)
     const official = externalManufacturer(option.manufacturerName) === 'TIMON' ? timonRows.get(option.variantId) : undefined
-    const smithRow = externalManufacturer(option.manufacturerName) === 'SMITH' ? smithRows.get(option.variantId) : undefined
-    const candidate = precedent?.imageCandidateUrl || page?.images?.[0]?.url || official?.image?.candidateUrl || smithRow?.image?.url
+    const makerReview = byMaker.get(externalManufacturer(option.manufacturerName))
+    const makerRow = makerReview?.rows.get(option.variantId)
+    const candidate = precedent?.imageCandidateUrl || page?.images?.[0]?.url || official?.image?.candidateUrl || makerRow?.image?.url
     const image = historicalImage || resolved?.imageReference
     const imageStatus = image ? !resolved?.imageReference ? 'held' :
       historicalImage ? checkedImage?.status === 'success' ? 'historically-decoded' : 'decode-unverified' : 'decoded' :
@@ -113,38 +117,40 @@ try {
     const urls = [resolved?.externalProductUrl, ...resolved?.additionalProductLinks.map(link => link.url) ?? []].filter(Boolean)
     const existing = initial.get(option.variantId)
     const newProduct = !!urls.length && !existing?.hasProduct
-    if (smithRow && smithRow.productUrl !== urls[0]) throw new Error('SMITH resolution does not match the reviewed row: '+option.variantId)
+    if (makerReview?.report && (!makerRow || makerRow.productUrl !== urls[0])) {
+      throw new Error(makerReview.maker+' resolution does not match the reviewed row: '+option.variantId)
+    }
     rows.push({ manufacturer: externalManufacturer(option.manufacturerName), series: option.seriesName, model: option.modelName,
       weightG: model.weightG ?? '', lengthMm: model.lengthMm ?? '', actionType: model.actionType ?? '',
       buoyancy: variant.catalogEvidence?.buoyancy ?? '', rattle: variant.catalogEvidence?.rattle ?? '',
       variantId: option.variantId, modelId: option.modelId, color: option.colorName,
-      colorCode: variant.catalogEvidence?.colorCode || resolved?.shared?.colorCode || smithRow?.colorCode || '',
+      colorCode: variant.catalogEvidence?.colorCode || resolved?.shared?.colorCode || makerRow?.colorCode || '',
       catalogStatus: originalVariants.some(v=>v.id===option.variantId) ? 'existing' : 'added-by-rc45-import',
       productUrl: urls[0] ?? '', additionalProductUrls: urls.slice(1).join(' | '),
-      productKind: newProduct ? smithRow?.kind ?? retailer?.kind ?? evidence?.product?.kind ?? '' : '',
+      productKind: newProduct ? makerRow?.kind ?? retailer?.kind ?? evidence?.product?.kind ?? '' : '',
       productStatus: !urls.length ? (official?.productStatus ?? 'held-unmatched') : newProduct ? 'new-reviewed' :
         urls.every(url => knownProducts.has(url)) ? 'existing-reviewed' : 'existing-health-unverified',
-      productEvidenceDate: newProduct ? smithRow?.checkedAt ?? retailer?.checkedAt ?? evidence?.checkedAt ?? '' : urls.length && urls.every(url => knownProducts.has(url)) ? health.summary.checkedAt : '',
-      productBasis: newProduct ? smithRow?.basis ?? retailer?.basis ?? evidence?.verificationBasis ?? '' : '',
-      imageUrl: image?.imageUrl ?? candidate ?? '', imageStatus, imageKind: image?.imageKind ?? official?.image?.kind ?? smithRow?.image?.kind ?? '',
-      officialProductCandidate: official?.officialUrl ?? smithRow?.candidateUrl ?? '', officialProductClass: official?.productCandidateKind ?? smithRow?.kind ?? '',
-      officialEvidenceDate: official?.checkedAt ?? smithRow?.checkedAt ?? '', officialJan: official?.officialJan ?? '',
-      officialProductStatus: official?.productStatus ?? smithRow?.status ?? '',
+      productEvidenceDate: newProduct ? makerRow?.checkedAt ?? retailer?.checkedAt ?? evidence?.checkedAt ?? '' : urls.length && urls.every(url => knownProducts.has(url)) ? health.summary.checkedAt : '',
+      productBasis: newProduct ? makerRow?.basis ?? retailer?.basis ?? evidence?.verificationBasis ?? '' : '',
+      imageUrl: image?.imageUrl ?? candidate ?? '', imageStatus, imageKind: image?.imageKind ?? official?.image?.kind ?? makerRow?.image?.kind ?? '',
+      officialProductCandidate: official?.officialUrl ?? makerRow?.candidateUrl ?? '', officialProductClass: official?.productCandidateKind ?? makerRow?.kind ?? '',
+      officialEvidenceDate: official?.checkedAt ?? makerRow?.checkedAt ?? '', officialJan: official?.officialJan ?? '',
+      officialProductStatus: official?.productStatus ?? makerRow?.status ?? '',
       retailerProductCandidate: retailer?.url ?? '', retailerImageCandidate: retailImage?.url ?? '',
       retailerProductStatus: official ? timonRetailerStatuses.get(option.variantId)?.status ?? '' : '',
       imageDecodeStatus: checkedImage?.status==='success' || imageSpotChecks.get(candidate)?.status==='decoded' || timonChecks.get(candidate)?.decoded
-        ? 'decoded' : smithChecks.get(candidate)?.status ?? checkedImage?.status ?? 'not-tested',
+        ? 'decoded' : manufacturerChecks.get(candidate)?.status ?? checkedImage?.status ?? 'not-tested',
       officialImageAlternatives: official?.image?.candidateUrls?.join(' | ') ?? '',
       imageEvidenceDate: checkedImage?.checkedAt ?? evidence?.checkedAt ?? official?.checkedAt ?? '', imageSourceName: image?.sourceName ?? (official?.image ? 'JACKALL / TIMON' : candidate ? evidence?.sourceName : '') ?? '',
       imageHoldReason: imageStatus === 'held' ? official?.image?.status || checkedImage?.reason || (candidate ? 'アプリ内表示の許諾と画像の個別対応が未確認。' : '既存NOAポリシーによる保留') : '',
-      ...(smithRow ? { imageSourceName: smithRow.sourceName ?? '', imageEvidenceDate: smithRow.checkedAt,
-        imageHoldReason: smithRow.image?.reason ?? '' } : {}),
+      ...(makerRow ? { imageSourceName: makerRow.sourceName ?? '', imageEvidenceDate: makerRow.checkedAt,
+        imageHoldReason: makerRow.image?.reason ?? '' } : {}),
       sourceName: resolved?.sourceName ?? '',
       evidenceProductCandidate: variant.catalogEvidence?.productUrl ?? '',
       evidenceManufacturerCandidate: variant.catalogEvidence?.manufacturerUrl ?? '',
       evidenceRetailerCandidate: variant.catalogEvidence?.retailerUrl ?? '',
       beforeProduct: !!existing?.hasProduct, beforeImageKind: existing?.image && historicalChecks.get(existing.image.imageUrl)?.status==='success' ? existing.image.imageKind : '',
-      holdReason: urls.length ? '' : official?.reason ?? (option.manufacturerName==='RODIO CRAFT' ? '調査済みの公開資料でモデル仕様と色が一意に一致する個別商品ページを確定できず' : 'RC48以降の対象') })
+      holdReason: urls.length ? '' : makerRow?.reason ?? official?.reason ?? (option.manufacturerName==='RODIO CRAFT' ? '調査済みの公開資料でモデル仕様と色が一意に一致する個別商品ページを確定できず' : 'RC48以降の対象') })
   }
   if (rows.some(row=>row.productStatus==='new-reviewed' && (!row.productBasis||!row.productEvidenceDate))) throw new Error('New product has no evidence')
   if (rows.filter(r=>r.series==='BF'||r.series==='DRIFT SPIN').filter(r=>r.productUrl).length!==priorAudit.summary.totalColorRows) {
@@ -165,7 +171,20 @@ try {
     }
     const beforeProducts = before.filter(r=>r.beforeProduct).length
     const officialRows = list.filter(row=>timonRows.has(row.variantId))
-    const smithReviewRows = list.filter(row=>smithRows.has(row.variantId))
+    const makerSummaries = manufacturerReviews.flatMap(review=>{
+      const matches = list.filter(row=>row.manufacturer===review.maker && review.rows.has(row.variantId))
+      if (!matches.length) return []
+      return [[review.maker.toLowerCase()+'Review', {
+        matchedProductRows: matches.filter(row=>row.productUrl).length,
+        individualColorProductRows: matches.filter(row=>row.productKind==='individual-color').length,
+        modelColorListRows: matches.filter(row=>row.productKind==='model-color-list').length,
+        candidatePhotos: matches.filter(row=>row.imageKind==='product-photo').length,
+        candidateModelColorSamples: matches.filter(row=>row.imageKind==='official-color-sample').length,
+        candidateSharedColorSamples: matches.filter(row=>row.imageKind==='weight-common-color-sample').length,
+        productHoldsByReason: Object.fromEntries([...Map.groupBy(matches.filter(row=>!row.productUrl),row=>review.rows.get(row.variantId).reason)].map(([reason,items])=>[reason,items.length])),
+        imageHoldsByReason: Object.fromEntries([...Map.groupBy(matches.filter(row=>row.imageHoldReason),row=>row.imageHoldReason)].map(([reason,items])=>[reason,items.length])),
+      }]]
+    })
     const matchedOfficial = officialRows.filter(row=>row.officialProductStatus==='verified-activation-held')
     const candidateRate = count => officialRows.length ? Number((100*count/officialRows.length).toFixed(2)) : null
     const retailerRows = officialRows.filter(row=>row.retailerProductCandidate)
@@ -193,16 +212,7 @@ try {
         heldImageRows:retailerRows.filter(r=>r.retailerImageCandidate).length,
         productStatuses:Object.fromEntries([...Map.groupBy(officialRows,r=>r.retailerProductStatus)].map(([status,items])=>[status,items.length])),
       }} : {}),
-      ...(smithReviewRows.length ? { smithReview: {
-        matchedProductRows: smithReviewRows.filter(row=>row.productUrl).length,
-        individualColorProductRows: smithReviewRows.filter(row=>row.productKind==='individual-color').length,
-        modelColorListRows: smithReviewRows.filter(row=>row.productKind==='model-color-list').length,
-        candidatePhotos: smithReviewRows.filter(row=>row.imageKind==='product-photo').length,
-        candidateModelColorSamples: smithReviewRows.filter(row=>row.imageKind==='official-color-sample').length,
-        candidateSharedColorSamples: smithReviewRows.filter(row=>row.imageKind==='weight-common-color-sample').length,
-        productHoldsByReason: Object.fromEntries([...Map.groupBy(smithReviewRows.filter(row=>!row.productUrl),row=>smithRows.get(row.variantId).reason)].map(([reason,items])=>[reason,items.length])),
-        imageHoldsByReason: Object.fromEntries([...Map.groupBy(smithReviewRows.filter(row=>row.imageHoldReason),row=>row.imageHoldReason)].map(([reason,items])=>[reason,items.length])),
-      }} : {}),
+      ...Object.fromEntries(makerSummaries),
       before: coverage(before,beforeProducts,before.filter(r=>r.beforeImageKind==='product-photo').length,
         before.filter(r=>r.beforeImageKind&&r.beforeImageKind!=='product-photo').length,before.length-beforeProducts,
         before.filter(r=>r.imageStatus==='held'&&historicalChecks.has(r.imageUrl)).length),
@@ -234,7 +244,8 @@ try {
     if(!pages.has(key))pages.set(key,{manufacturer,series,model,kind,url,origins:[],status:evidence?.status??(checked?checked.status:'unreviewed'),
       checkedAt:evidence?.checkedAt??(checked?checked.checkedAt:undefined), ...(evidence ?? {}), ...(checked ? {review:checked}: {})})
     const entry=pages.get(key)
-    if ((manufacturer==='TIMON' && /^rc48/.test(origin) || manufacturer==='SMITH' && /^rc49/.test(origin)) && evidence) Object.assign(entry,evidence)
+    const reviewPrefix = {TIMON:'rc48',SMITH:'rc49',PALMS:'rc50'}[manufacturer]
+    if (reviewPrefix && origin.startsWith(reviewPrefix) && evidence) Object.assign(entry,evidence)
     if(!entry.origins.includes(origin))entry.origins.push(origin)
   }
   for(const row of rows){
@@ -284,6 +295,19 @@ try {
     if (row.kind==='individual-color') candidate('SMITH',row.series,row.model,'product',row.productUrl,'rc49-color',
       {status:'matched',checkedAt:row.checkedAt,basis:row.basis})
   }
+  for (const page of palms?.pages ?? []) candidate('PALMS','','','product',page.url,'rc50-page',
+    {status:page.httpStatus===200?'page-reviewed':'page-held',checkedAt:page.checkedAt,httpStatus:page.httpStatus})
+  for (const model of palms?.models ?? []) candidate('PALMS',model.series,model.model,'product',model.candidateUrl,'rc50-model',
+    {status:model.modelStatus,checkedAt:palms.checkedAt,modelColorRows:model.colorRows})
+  for (const url of palms?.policyReviewUrls ?? []) candidate('PALMS','','','policy-review',url,'rc50-policy',
+    {status:'reviewed',checkedAt:palms.checkedAt})
+  const palmsImages = new Map(palms?.rows.filter(row=>row.image).map(row=>[JSON.stringify([row.series,row.model,row.image.url]),row]))
+  for (const entry of pages.values()) {
+    if (entry.manufacturer!=='PALMS' || entry.kind!=='image') continue
+    const row = palmsImages.get(JSON.stringify([entry.series,entry.model,entry.url]))
+    if (row) candidate('PALMS',entry.series,entry.model,'image',entry.url,'rc50-image',
+      {status:'held',checkedAt:row.checkedAt,reason:row.image.reason})
+  }
   const csv = list => {
     const keys=Object.keys(list[0])
     return '\uFEFF'+[keys,...list.map(row=>keys.map(k=>row[k]))].map(line=>
@@ -302,10 +326,11 @@ try {
     basis:row.productBasis || (row.officialProductCandidate?'公式商品仕様表とカラー欄の重量別または型別掲載を照合。':''),
     kind:row.productKind || row.officialProductClass,status:row.productStatus,
     ...(row.officialJan ? {officialJan:row.officialJan} : {}),
-    ...(smithRows.has(row.variantId) ? {
-      conditionsEvidence:smithRows.get(row.variantId).conditionsEvidence,
-      specEvidenceUrl:smithRows.get(row.variantId).specEvidenceUrl,
+    ...(row.manufacturer==='SMITH' ? {
+      conditionsEvidence:byMaker.get('SMITH').rows.get(row.variantId)?.conditionsEvidence,
+      specEvidenceUrl:byMaker.get('SMITH').rows.get(row.variantId)?.specEvidenceUrl,
     } : {}),
+    ...(row.manufacturer==='PALMS' ? {policyReviewUrls:palms?.policyReviewUrls} : {}),
   }):null,row.officialProductStatus==='verified-activation-held'?{
     ...identity(row),url:row.officialProductCandidate,additionalUrls:[],sourceName:'JACKALL / TIMON',
     checkedAt:row.officialEvidenceDate,basis:'公式商品仕様表とカラー欄の重量別または型別掲載を照合。',
@@ -315,10 +340,11 @@ try {
   const imageRows=rows.filter(row=>row.imageUrl || row.officialImageAlternatives).map(row=>({...identity(row),url:row.imageUrl,
     status:row.imageStatus,kind:row.imageKind,sourceName:row.imageSourceName,checkedAt:row.imageEvidenceDate,
         sourceProductUrl:row.officialProductCandidate || row.productUrl,holdReason:row.imageHoldReason,
-    browserCheck:imageSpotChecks.get(row.imageUrl) ?? timonChecks.get(row.imageUrl) ?? smithChecks.get(row.imageUrl),
+    browserCheck:imageSpotChecks.get(row.imageUrl) ?? timonChecks.get(row.imageUrl) ?? manufacturerChecks.get(row.imageUrl),
     technicalDecodeStatus:row.imageDecodeStatus,
-    ...(row.manufacturer==='SMITH' ? {conditionsEvidence:smithRows.get(row.variantId)?.conditionsEvidence,
+    ...(row.manufacturer==='SMITH' ? {conditionsEvidence:byMaker.get('SMITH').rows.get(row.variantId)?.conditionsEvidence,
       permissionStatus:'held'} : {}),
+    ...(row.manufacturer==='PALMS' ? {policyReviewUrls:palms?.policyReviewUrls,permissionStatus:'held'} : {}),
     ...(row.manufacturer==='TIMON' ? {conditionsEvidence:timon.termsUrl,
       candidateUrls:row.officialImageAlternatives.split(' | ').filter(Boolean)} : {}),
   }))
@@ -332,8 +358,8 @@ try {
     ...[...imageRows,...retailerImageRows].filter(row=>row.status==='held').map(row=>({...row,kind:'image'})),
     ...rows.filter(r=>!r.productUrl&&r.manufacturer==='RODIO CRAFT').map(r=>({...identity(r),kind:'product',holdReason:r.holdReason,
       candidateUrls:[r.evidenceProductCandidate,r.evidenceRetailerCandidate,r.evidenceManufacturerCandidate].filter(Boolean)})),
-    ...rows.filter(row=>smithRows.has(row.variantId)&&!row.productUrl).map(row=>({...identity(row),kind:'product',scope:'official',
-      holdReason:smithRows.get(row.variantId).reason,candidateUrls:[row.officialProductCandidate].filter(Boolean),checkedAt:row.officialEvidenceDate})),
+    ...rows.filter(row=>byMaker.get(row.manufacturer)?.rows.has(row.variantId)&&!row.productUrl).map(row=>({...identity(row),kind:'product',scope:'official',
+      holdReason:byMaker.get(row.manufacturer).rows.get(row.variantId).reason,candidateUrls:[row.officialProductCandidate].filter(Boolean),checkedAt:row.officialEvidenceDate})),
     ...rows.filter(row=>timonRows.has(row.variantId)).map(row=>({...identity(row),kind:'product',scope:'official',
       holdReason:timonRows.get(row.variantId).reason,candidateUrls:[row.officialProductCandidate].filter(Boolean),
       checkedAt:row.officialEvidenceDate || timon.checkedAt})),

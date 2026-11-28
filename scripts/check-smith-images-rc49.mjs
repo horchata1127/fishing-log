@@ -2,8 +2,10 @@ import { readFile, writeFile } from 'node:fs/promises'
 import { chromium } from 'playwright'
 
 const directory = 'docs/lure-external-links/'
-const checkpoint = directory + 'SMITH_IMAGE_SPOT_CHECKS.json'
-const { rows } = JSON.parse(await readFile(directory + 'SMITH_REVIEW.json', 'utf8'))
+const [manufacturer = 'SMITH', checkedAt = '2026-11-28'] = process.argv.slice(2)
+if (!['SMITH', 'PALMS'].includes(manufacturer)) throw new Error('Unknown image review manufacturer')
+const checkpoint = directory + manufacturer + '_IMAGE_SPOT_CHECKS.json'
+const { rows } = JSON.parse(await readFile(directory + manufacturer + '_REVIEW.json', 'utf8'))
 const groups = Map.groupBy(rows.filter(row => row.image), row => row.candidateUrl)
 const samples = [...groups.values()].flatMap(group => group[0].kind === 'individual-color' ? group : group.slice(0, 1))
 const checks = new Map((await readFile(checkpoint, 'utf8').then(JSON.parse).catch(error => {
@@ -36,7 +38,7 @@ try {
     }, url)
     const httpStatus = (await response)?.status()
     await page.unroute('**/*')
-    checks.set(url, { url, productUrl, checkedAt: '2026-11-28', httpStatus, ...dimensions,
+    checks.set(url, { url, productUrl, checkedAt, httpStatus, ...dimensions,
       status: dimensions.width && dimensions.height ? 'decoded' : 'failed', displayPermission: 'unconfirmed' })
     if ([403, 429, 503].includes(httpStatus)) restrictedHosts.add(host)
     await writeFile(checkpoint, JSON.stringify([...checks.values()], null, 2) + '\n')
@@ -44,4 +46,4 @@ try {
 } finally {
   await browser.close()
 }
-console.log('SMITH image probes:', checks.size, 'decoded:', [...checks.values()].filter(check => check.status === 'decoded').length)
+console.log(manufacturer, 'image probes:', checks.size, 'decoded:', [...checks.values()].filter(check => check.status === 'decoded').length)

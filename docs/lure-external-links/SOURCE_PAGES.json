@@ -1492,9 +1492,12 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc50-model"
     ],
-    "status": "unreviewed"
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12
   },
   {
     "manufacturer": "PALMS",
@@ -1506,9 +1509,12 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc50-model"
     ],
-    "status": "unreviewed"
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12
   },
   {
     "manufacturer": "PALMS",
@@ -1520,9 +1526,12 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc50-model"
     ],
-    "status": "unreviewed"
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 7
   },
   {
     "manufacturer": "PALMS",
@@ -1534,9 +1543,12 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc50-model"
     ],
-    "status": "unreviewed"
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 16
   },
   {
     "manufacturer": "PALMS",
@@ -1548,9 +1560,12 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc50-model"
     ],
-    "status": "unreviewed"
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 16
   },
   {
     "manufacturer": "PALMS",
@@ -1562,9 +1577,12 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc50-model"
     ],
-    "status": "unreviewed"
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10
   },
   {
     "manufacturer": "PALMS",
@@ -1576,9 +1594,12 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc50-model"
     ],
-    "status": "unreviewed"
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10
   },
   {
     "manufacturer": "SMITH",
@@ -9957,9 +9978,12 @@
     "kind": "image",
     "url": "https://www.palmsjapan.com/lures/product/little-diner-ganoff/color/mt-933.jpg",
     "origins": [
-      "manifest-appearance-evidence"
+      "manifest-appearance-evidence",
+      "rc50-image"
     ],
-    "status": "unreviewed"
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "image-display-permission-unconfirmed"
   },
   {
     "manufacturer": "SMITH",
@@ -33596,5 +33620,131 @@
     "status": "matched",
     "checkedAt": "2026-11-28",
     "basis": "VA PUPPET SURFACE / 1.4g / 31mm / 表層用／ラトルあり / 50 ハラオリブラウン"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-galette",
+    "origins": [
+      "rc50-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-ganoff",
+    "origins": [
+      "rc50-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-grande-ganoff",
+    "origins": [
+      "rc50-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-powale-sinrattle",
+    "origins": [
+      "rc50-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-powale",
+    "origins": [
+      "rc50-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.palmsjapan.com/lures/product/?name=little-diner-snackpowale",
+    "origins": [
+      "rc50-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "",
+    "model": "",
+    "kind": "policy-review",
+    "url": "https://www.palmsjapan.com/",
+    "origins": [
+      "rc50-policy"
+    ],
+    "status": "reviewed",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "",
+    "model": "",
+    "kind": "policy-review",
+    "url": "https://www.palmsjapan.com/sitemap/",
+    "origins": [
+      "rc50-policy"
+    ],
+    "status": "reviewed",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "",
+    "model": "",
+    "kind": "policy-review",
+    "url": "https://www.palmsjapan.com/privacy/",
+    "origins": [
+      "rc50-policy"
+    ],
+    "status": "reviewed",
+    "checkedAt": "2026-11-28"
+  },
+  {
+    "manufacturer": "PALMS",
+    "series": "",
+    "model": "",
+    "kind": "policy-review",
+    "url": "https://www.palmsjapan.com/safety/",
+    "origins": [
+      "rc50-policy"
+    ],
+    "status": "reviewed",
+    "checkedAt": "2026-11-28"
   }
 ]

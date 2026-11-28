@@ -1,6 +1,6 @@
 {
-  "stage": "RC49",
-  "startCommit": "990b66b",
+  "stage": "RC50",
+  "startCommit": "a689a71",
   "branch": "feature/rc45",
   "rodio": {
     "modelsBefore": 48,
@@ -19,13 +19,14 @@
     "rodio": "manufacturer or retailer; preserve existing links",
     "timon": "reviewed retailer links; official links and images held pending permission",
     "smith": "manufacturer and reviewed collaboration manufacturer; plain links only; images held pending permission",
-    "palmsAndRobLure": "manufacturer or verified official CDN"
+    "palms": "plain links to reviewed official product pages; images held pending permission",
+    "robLure": "manufacturer or verified official CDN"
   },
   "inventory": "INVENTORY.json",
   "verification": "VALIDATION.md",
   "candidateQueue": "SOURCE_PAGES.json",
   "reviewedRetailerPages": "RODIO_REVIEW.json",
-  "next": "RC49 image permission follow-up",
+  "next": "RC50 image permission follow-up",
   "nextStatus": "product-links-complete-image-activation-held",
   "rodioRemaining": [
     "HELD.json",
@@ -57,6 +58,32 @@
     "displayedProductRows": 0,
     "displayedImageRows": 0,
     "activationResume": "Review scope of product-page linking and image permissions separately before using matched candidates"
+  },
+  "palms": {
+    "checkedAt": "2026-11-28",
+    "review": "PALMS_REVIEW.json",
+    "imageSpotChecks": "PALMS_IMAGE_SPOT_CHECKS.json",
+    "sourcePolicies": "SOURCE_POLICIES.json",
+    "localPageCheckpoints": ".rc50-palms.local/",
+    "productPagesReviewed": 6,
+    "models": 7,
+    "registeredProductRows": 83,
+    "registeredProductUrls": 6,
+    "unmatchedProductRows": 0,
+    "heldImageRows": 83,
+    "heldUniqueImageUrls": 67,
+    "browserDecodedImageUrls": 6,
+    "displayedImageRows": 0,
+    "activationResume": "Review permission before activating images. Reuse the recorded page and image URL matches, then complete browser checks for eligible URLs.",
+    "validation": {
+      "unitPassed": 724,
+      "unitSkipped": 5,
+      "e2ePassed": 240,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed",
+      "diffCheck": "passed"
+    }
   },
   "smith": {
     "checkedAt": "2026-11-28",

@@ -2,6 +2,35 @@ import { test, expect, restoreViaUI, catalogFixture, readAllState } from './fixt
 import { rc43Fixture, rc43TestPng } from '../rc43Fixture'
 import type { LureExternalReference } from '../../src/data/lureExternalReferences'
 
+test('PALMS color links distinguish the two Powale sizes while keeping the offline icon', async ({ page, context }) => {
+  const fixture = rc43Fixture()
+  fixture.data.lureManufacturers.push({ ...catalogFixture().data.lureManufacturers[0], name: 'PALMS' })
+  fixture.data.lureSeries.push({ id: 20, manufacturerId: 10, name: 'Powale' })
+  fixture.data.lureModels.push(
+    { id: 30, seriesId: 20, name: 'PO-32F', weightG: 1.3, lengthMm: 32, actionType: 'F', category: 'ミノー' },
+    { id: 31, seriesId: 20, name: 'PO-22F', weightG: 1, lengthMm: 22, actionType: 'F', category: 'ミノー' },
+  )
+  const catalogEvidence = { colorCode: 'MT915', buoyancy: 'Floating' }
+  fixture.data.lureVariants.push(
+    { id: 40, modelId: 30, colorName: 'MT915 マットクリア', catalogEvidence },
+    { id: 41, modelId: 31, colorName: 'MT915 マットクリア', catalogEvidence },
+  )
+  await restoreViaUI(page, fixture)
+  const before = await readAllState(page)
+  await page.getByRole('button', { name: 'ビジュアルカラー辞書', exact: true }).click()
+  const dictionary = page.getByRole('dialog', { name: 'ビジュアルカラー辞書' })
+  await dictionary.getByLabel('辞書検索').fill('MT915 マットクリア')
+  const larger = dictionary.locator('[data-variant-id="40"]')
+  const smaller = dictionary.locator('[data-variant-id="41"]')
+  await expect(larger.getByRole('link')).toHaveAttribute('href', 'https://www.palmsjapan.com/lures/product/?name=little-diner-powale#color')
+  await expect(smaller.getByRole('link')).toHaveAttribute('href', 'https://www.palmsjapan.com/lures/product/?name=little-diner-snackpowale#color')
+  await expect(larger.getByRole('link')).toHaveAttribute('target', '_blank')
+  await context.setOffline(true)
+  await expect(larger.getByRole('img', { name: '汎用ルアーアイコン' })).toBeVisible()
+  await expect(larger.locator('img')).toHaveCount(0)
+  expect(await readAllState(page)).toEqual(before)
+})
+
 test('SMITH official product link uses the reviewed variant and keeps its icon', async ({ page, context }) => {
   const fixture = rc43Fixture()
   fixture.data.lureManufacturers.push({ ...catalogFixture().data.lureManufacturers[0], name: 'SMITH' })
