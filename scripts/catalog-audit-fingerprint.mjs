@@ -4,7 +4,7 @@ export const sha256 = input => createHash('sha256').update(input).digest('hex')
 
 const catalogTables = ['lureManufacturers', 'lureSeries', 'lureModels', 'lureVariants']
 
-// Keep every field and array position. Only object key order and the export envelope are irrelevant.
+// Keep every field and array position. Object key order carries no data.
 function canonicalJson(value) {
   if (Array.isArray(value)) return '[' + value.map(canonicalJson).join(',') + ']'
   if (value !== null && typeof value === 'object') {
@@ -22,7 +22,23 @@ export function catalogFingerprint(data) {
   return sha256(canonicalJson(payload))
 }
 
-export function assertReviewedCatalog(stats, rawHash, catalogHash, label) {
-  const matches = stats.catalogSha256 ? stats.catalogSha256 === catalogHash : stats.backupSha256 === rawHash
-  if (!matches) throw new Error(label + ' review catalog fingerprint mismatch')
+export function backupFingerprints(raw, backup) {
+  const { exportedAt, ...content } = backup
+  return {
+    backupSha256: sha256(raw),
+    catalogSha256: catalogFingerprint(backup.data),
+    backupContentSha256: sha256(canonicalJson(content)),
+  }
+}
+
+export function assertReviewedCatalog(stats, fingerprints, label) {
+  if (stats.catalogSha256 && stats.catalogSha256 !== fingerprints.catalogSha256) {
+    throw new Error(label + ' review catalog fingerprint mismatch')
+  }
+  if (stats.backupContentSha256 && stats.backupContentSha256 !== fingerprints.backupContentSha256) {
+    throw new Error(label + ' review backup content fingerprint mismatch')
+  }
+  if ((!stats.catalogSha256 || !stats.backupContentSha256) && stats.backupSha256 !== fingerprints.backupSha256) {
+    throw new Error(label + ' review original file fingerprint mismatch')
+  }
 }

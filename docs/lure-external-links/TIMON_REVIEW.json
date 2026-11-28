@@ -4,6 +4,7 @@
   "stats": {
     "backupSha256": "a6ed379dd9d985c735d825dd232868ce79b051b4bd5535e24294b5058e9b1532",
     "catalogSha256": "d33283f0f9018c1eaf2d9176dfdbcd336450a8ddac0d1c5f71af0731e05fc8d8",
+    "backupContentSha256": "624ebdf03d0fa0d47635fba7bc91dc0a0fceff50070cc98b2151fad4d8150e6b",
     "models": 73,
     "modelsWithoutColors": 22,
     "rows": 786,

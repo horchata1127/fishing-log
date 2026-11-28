@@ -1,6 +1,7 @@
 {
   "backupSha256": "6447e0f9f26e4666c15b8508bb5ab18b3b23d10b9a9775fdf50fffd1c4b3aa8a",
   "catalogSha256": "d33283f0f9018c1eaf2d9176dfdbcd336450a8ddac0d1c5f71af0731e05fc8d8",
+  "backupContentSha256": "624ebdf03d0fa0d47635fba7bc91dc0a0fceff50070cc98b2151fad4d8150e6b",
   "imageEvidenceDate": "2026-11-23T08:29:29.530Z",
   "total": {
     "label": "all",

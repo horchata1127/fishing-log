@@ -1,4 +1,4 @@
-import { catalogFingerprint, sha256 } from './catalog-audit-fingerprint.mjs'
+import { backupFingerprints } from './catalog-audit-fingerprint.mjs'
 import { readFile, readdir, writeFile } from 'node:fs/promises'
 
 const [backupPath] = process.argv.slice(2)
@@ -7,7 +7,8 @@ const audit = 'docs/lure-external-links/'
 const cache = '.rc49-smith.local/'
 const readJson = async path => JSON.parse((await readFile(path, 'utf8')).replace(/^\uFEFF/, ''))
 const raw = await readFile(backupPath)
-const { data } = JSON.parse(raw.toString('utf8').replace(/^\uFEFF/, ''))
+const backup = JSON.parse(raw.toString('utf8').replace(/^\uFEFF/, ''))
+const { data } = backup
 const pages = await Promise.all((await readdir(cache)).filter(name => name.endsWith('.html.json'))
   .sort().map(name => readJson(cache + name)))
 const bySlug = new Map(pages.map(page => [new URL(page.url).pathname.split('/').at(-1).replace(/\.html$/, ''), page]))
@@ -127,7 +128,7 @@ for (const model of data.lureModels.filter(row => series.has(row.seriesId))) {
   }
 }
 
-const stats = { backupSha256: sha256(raw), catalogSha256: catalogFingerprint(data), series: series.size,
+const stats = { ...backupFingerprints(raw, backup), series: series.size,
   models: models.length, colorRows: rows.length, zeroColorModels: models.filter(model => !model.colorRows).length,
   productPagesReviewed: pages.filter(page => new URL(page.url).pathname.startsWith('/product/')).length + 2,
   matchedProductRows: rows.filter(row => row.status === 'matched').length,

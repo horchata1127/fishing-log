@@ -9,6 +9,27 @@ import { createHash } from 'node:crypto'
 import Dexie from 'dexie'
 import ts from 'typescript'
 
+// Node 22 has no navigator.locks. Exercise the two exclusive request forms
+// used by the app; Chromium E2E continues to cover the browser implementation.
+if (!navigator.locks) {
+  const pending = new Map()
+  Object.defineProperty(navigator, 'locks', { configurable: true, value: {
+    async request(name, options, callback = options) {
+      const previous = pending.get(name)
+      if (previous && options.ifAvailable) return callback(null)
+      const current = Promise.withResolvers()
+      pending.set(name, current.promise)
+      await previous
+      try {
+        return await callback({ name, mode: 'exclusive' })
+      } finally {
+        if (pending.get(name) === current.promise) pending.delete(name)
+        current.resolve()
+      }
+    },
+  } })
+}
+
 const directory = await mkdtemp(join(tmpdir(), 'fishing-rc34-apply-')), modules = new Map()
 async function compile(file) {
   file = resolve(file)
