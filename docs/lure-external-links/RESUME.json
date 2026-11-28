@@ -1,6 +1,6 @@
 {
-  "stage": "RC51",
-  "startCommit": "cde6e43",
+  "stage": "RC52-A",
+  "startCommit": "532de49",
   "branch": "feature/rc45",
   "rodio": {
     "modelsBefore": 48,
@@ -26,8 +26,25 @@
   "verification": "VALIDATION.md",
   "candidateQueue": "SOURCE_PAGES.json",
   "reviewedRetailerPages": "RODIO_REVIEW.json",
-  "next": "RC51 held product and image follow-up",
-  "nextStatus": "reviewed-product-links-implemented-image-activation-held",
+  "next": "RC52-B findings remediation and verification",
+  "nextStatus": "rc52a-audit-complete",
+  "rc52a": {
+    "report": "RC52_AUDIT.md",
+    "completed": [
+      "5-maker catalog and report regeneration",
+      "clean production build and precache measurement",
+      "tracked-data and source-terms review",
+      "clean checkout reproducibility findings"
+    ],
+    "pending": [
+      "Confirm permissions for the 91 legacy NOA image rows and review TIMON tracked excerpts.",
+      "Prevent accidental staging of nested private backups and review derived backup metadata.",
+      "Provide reproducible catalog-only fixtures and generation inputs, and add a catalog fingerprint independent of export time.",
+      "Budget the main JS and review the duplicated precache entry.",
+      "Re-run full unit, E2E and offline tests, verify Node 22, and prepare the physical-device verification procedure."
+    ],
+    "resume": "Read RC52_AUDIT.md first. Use the committed RC51 baseline and existing review records. In a detached clean checkout, install from the lockfile, verify the catalog-only test input, and run the offline audit before requesting any new external data. Keep user backups outside tracked changes."
+  },
   "rodioRemaining": [
     "HELD.json",
     "IMAGE_CHECKS.json"
