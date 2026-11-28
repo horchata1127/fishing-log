@@ -1,6 +1,6 @@
 {
-  "stage": "RC48",
-  "startCommit": "8ad5aa7",
+  "stage": "RC48-B",
+  "startCommit": "daa7134",
   "branch": "feature/rc45",
   "rodio": {
     "modelsBefore": 48,
@@ -17,14 +17,15 @@
   },
   "sourcePolicy": {
     "rodio": "manufacturer or retailer; preserve existing links",
-    "otherFour": "manufacturer or verified official CDN"
+    "timon": "reviewed retailer links; official links and images held pending permission",
+    "otherThree": "manufacturer or verified official CDN"
   },
   "inventory": "INVENTORY.json",
   "verification": "VALIDATION.md",
   "candidateQueue": "SOURCE_PAGES.json",
   "reviewedRetailerPages": "RODIO_REVIEW.json",
-  "next": "RC49",
-  "nextStatus": "not-started",
+  "next": "RC48-B",
+  "nextStatus": "verified-checkpoint",
   "rodioRemaining": [
     "HELD.json",
     "IMAGE_CHECKS.json"
@@ -55,5 +56,25 @@
     "displayedProductRows": 0,
     "displayedImageRows": 0,
     "activationResume": "Review scope of product-page linking and image permissions separately before using matched candidates"
+  },
+  "timonRetailer": {
+    "listings": "TIMON_RETAILER_LISTINGS.json",
+    "products": "TIMON_RETAILER_PRODUCTS.json",
+    "review": "TIMON_RETAILER_REVIEW.json",
+    "policies": "SOURCE_POLICIES.json",
+    "validation": {
+      "unitPassed": 724,
+      "unitSkipped": 5,
+      "e2ePassed": 236,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed"
+    },
+    "productPagesInspected": 310,
+    "registeredColorRows": 280,
+    "remainingColorRows": 506,
+    "castingProducts": "TIMON_CASTING_PRODUCTS.json",
+    "otsuka": "403; hold without retry",
+    "missingUninspectedJhCandidates": 59
   }
 }

@@ -27,7 +27,16 @@ test('matching uses normalized names, explicit color aliases and exact known mod
     assert.equal(resolve({ ...option, ...change }, [reference]), undefined)
   }
   assert.equal(resolve(option, [reference, reference]), undefined)
-  assert.equal(resolve(option, [{ ...reference, sourceType: 'retailer' }]), undefined)
+})
+
+test('TIMON retailer product conditions are required independently of image conditions', () => {
+  const retailer = { ...reference, sourceType: 'retailer', image: undefined }
+  assert.equal(resolve(option, [retailer]), undefined)
+  const reviewed = { ...retailer, product: { ...reference.product, conditionsEvidence: 'https://example.test/terms' } }
+  assert.equal(resolve(option, [reviewed]).externalProductUrl, reference.product.url)
+  assert.equal(resolve({ ...option, manufacturerName: 'SMITH' }, [{ ...reviewed, manufacturerName: 'SMITH' }]), undefined)
+  assert.equal(resolve(option, [{ ...reviewed, image: { ...reference.image, conditions: 'held' } }]).imageReference, undefined)
+  assert.equal(resolve(option, [{ ...retailer, image: reference.image }]).imageReference.imageUrl, reference.image.url)
 })
 test('product and image eligibility are independent and fail closed', () => {
   for (const change of [{ conditions: 'unknown' }, { conditions: 'held' }, { conditionsEvidence: '' },

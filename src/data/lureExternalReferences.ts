@@ -1,4 +1,5 @@
 import { rodioExternalReferences } from './rodioExternalReferences'
+import { timonRetailerExternalReferences } from './timonRetailerExternalReferences'
 
 export interface ExternalModelDetails {
   weightG?: number
@@ -16,7 +17,7 @@ export interface LureExternalReference {
   colorName: string
   colorCode?: string
   colorAliases?: readonly string[]
-  product?: { url: string; verified: boolean; kind?: 'individual-color' | 'model-color-list' }
+  product?: { url: string; verified: boolean; conditionsEvidence?: string; kind?: 'individual-color' | 'model-color-list' }
   image?: {
     url: string
     kind: 'product-photo' | 'official-color-sample' | 'weight-common-color-sample'
@@ -34,4 +35,4 @@ export interface LureExternalReference {
   verificationBasis: string
 }
 
-export const lureExternalReferences: readonly LureExternalReference[] = rodioExternalReferences
+export const lureExternalReferences: readonly LureExternalReference[] = [...rodioExternalReferences, ...timonRetailerExternalReferences]

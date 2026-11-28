@@ -29,6 +29,7 @@ async function visit(page,url){
      links:[...document.querySelectorAll('a[href]')].map(a=>[a.href,a.textContent.trim()||a.querySelector('img')?.alt||'']).filter(([u,t])=>t&&(/(?:gid=|pid=|\/shop\/g\/g|\/shop\/goods\/search\.aspx)/.test(u)))
    })) }
  }catch(e){data={url,checkedAt,error:String(e).split('\n')[0]}}
+ if (process.argv[3]==='products') delete data.links
  entries.set(url,data)
  await writeFile(output,JSON.stringify([...entries.values()]))
  return data
@@ -82,7 +83,8 @@ try {
      if(saved?.status==='matched' && saved.headings?.length && saved.finalUrl){
        entries.set(url,{...saved,status:saved.httpStatus})
      } else if (!saved || process.env.RODIO_RECHECK_HELD==='1'){
-       await visit(page,url)
+       const result=await visit(page,url)
+       if(process.argv[5]==='stop-on-access-limit' && [403,429,503].includes(result.status))break
      } else {
        entries.set(url,{...saved,status:saved.httpStatus})
      }

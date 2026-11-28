@@ -47,14 +47,17 @@ export function resolveLureExternalReference(
   const maker = externalManufacturer(option.manufacturerName)
   if (isNoaOption(option) !== noaProductFallback || !maker || !option.modelDetails) return
   const matched = references.filter(ref => externalManufacturer(ref.manufacturerName) === maker &&
-    (ref.sourceType === 'manufacturer' || ref.sourceType === 'retailer' && maker === 'RODIO CRAFT') &&
+    (ref.sourceType === 'manufacturer' || ref.sourceType === 'retailer' && (maker === 'RODIO CRAFT' || maker === 'TIMON')) &&
     sameName(ref.seriesName, option.seriesName) && sameName(ref.modelName, option.modelName) &&
     matchesModel(ref.modelDetails, option.modelDetails!) &&
     matchesColor(ref, option) &&
     ref.sourceName.trim() && ref.verificationBasis.trim() && reviewedUrl(ref.evidenceUrl))
   if (matched.length !== 1) return
   const ref = matched[0]!
-  const productUrl = ref.product?.verified ? reviewedUrl(ref.product.url)?.href : undefined
+  const linksRequireConditions = maker === 'TIMON' && ref.sourceType === 'retailer'
+  const productUrl = ref.product?.verified && (!linksRequireConditions || reviewedUrl(ref.product.conditionsEvidence ?? ''))
+    ? reviewedUrl(ref.product.url)?.href
+    : undefined
   const imageUrl = ref.image ? reviewedUrl(ref.image.url) : undefined
   const image = !noaProductFallback && ref.image?.conditions === 'permitted' && ref.image.conditionsEvidence?.trim() && ref.image.decoded &&
     imageUrl?.hostname === ref.image.verifiedHost

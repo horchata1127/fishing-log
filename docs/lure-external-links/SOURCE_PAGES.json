@@ -474,7 +474,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -487,7 +487,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -500,7 +500,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -513,7 +513,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -526,7 +526,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -539,7 +539,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -552,7 +552,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -565,7 +565,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -578,7 +578,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -591,7 +591,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -604,7 +604,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -617,7 +617,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -630,7 +630,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -661,7 +661,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -674,7 +674,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -687,7 +687,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -700,7 +700,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -713,7 +713,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -726,7 +726,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -739,7 +739,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -752,7 +752,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -765,7 +765,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -778,7 +778,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -791,7 +791,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -804,7 +804,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -817,7 +817,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -919,7 +919,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -932,7 +932,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -945,7 +945,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -958,7 +958,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -971,7 +971,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -984,7 +984,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -997,7 +997,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "TIMON",
@@ -1010,7 +1010,7 @@
       "manifest-source",
       "manifest-retailer"
     ],
-    "status": "excluded-nonofficial-source"
+    "status": "queued-access-limited"
   },
   {
     "manufacturer": "RODIO CRAFT",
@@ -28164,5 +28164,4064 @@
     "checkedAt": "2026-11-28",
     "modelColorRows": 15,
     "activation": "held-link-permission"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "SLIDON",
+    "model": "SLIDON60F",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190210862",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "SLIDON",
+    "model": "SLIDON60F",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190210418",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050705",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050699",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050692",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050683",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050678",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050674",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050670",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050669",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050667",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050664",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050658",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050644",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050636",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050618",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Pepino",
+    "model": "Pepino DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190050609",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189796261",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189796256",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189796251",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189796239",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189796225",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Futten",
+    "model": "Futten FS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=185284953",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Futten",
+    "model": "Futten FS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=185284962",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Futten",
+    "model": "Futten FS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=185284955",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120149",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120147",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120145",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120140",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120138",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120136",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120131",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120128",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120123",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120121",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120113",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183120112",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=158811290",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=158811266",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=157297104",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=157083832",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=157083817",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=157083805",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=157083798",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=153533977",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149316165",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149316158",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149316119",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149316114",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149316100",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149316096",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149316088",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149316077",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149316070",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149316053",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=147937585",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=144469071",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=134192331",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=134192309",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126808171",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126808155",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126808099",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126808082",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126808041",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126522771",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126522742",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122827470",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122827443",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122827420",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122827393",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122827372",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122826144",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122826120",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122824363",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122824306",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122824101",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=96302081",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=95803786",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=95803723",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=95803680",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=95803668",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=95803659",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=110497300",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=107410484",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=107410405",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=101385426",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=101385400",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=101385396",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=101385388",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=101385383",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=101385350",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "DEKA Mitts DRY",
+    "model": "DEKA Mitts DRY",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=101385338",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189661768",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189661766",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189661763",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189661749",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189661746",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189661744",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189661736",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189661734",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189661729",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189661714",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189442973",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=189442951",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=171981282",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=171981227",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=171981189",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=171981186",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=171981153",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=171981140",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Futten",
+    "model": "Futten FS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=185284988",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Futten",
+    "model": "Futten FS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=185284983",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Futten",
+    "model": "Futten FS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=185284975",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Futten",
+    "model": "Futten FS",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=185284908",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MITTS DRY 2Hook",
+    "model": "MITTS DRY 2Hook",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186458601",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MITTS DRY 2Hook",
+    "model": "MITTS DRY 2Hook",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186458533",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MITTS DRY 2Hook",
+    "model": "MITTS DRY 2Hook",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186458294",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MITTS DRY 2Hook",
+    "model": "MITTS DRY 2Hook",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186458166",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MITTS DRY 2Hook",
+    "model": "MITTS DRY 2Hook",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186458096",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MITTS DRY 2Hook",
+    "model": "MITTS DRY 2Hook",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186458032",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MITTS DRY 2Hook",
+    "model": "MITTS DRY 2Hook",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186457820",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MITTS DRY 2Hook",
+    "model": "MITTS DRY 2Hook",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=186457798",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.5g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190211542",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.5g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190211475",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.5g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190211459",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190211105",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190211097",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190211091",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190211074",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190211068",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190211064",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190211056",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL γ",
+    "model": "KUROBALL γ 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=190211041",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499169",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499164",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499160",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499158",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499148",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499144",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499137",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499133",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499117",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499106",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499100",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499083",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=177115064",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=165512169",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=165512146",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=165511991",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=165511960",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=165511751",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=165511631",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=163303541",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=163303525",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=163303465",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=163303404",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=163303401",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=154170647",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=154170594",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=154170481",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=154170405",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=153106714",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148450727",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148450714",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148450699",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148450689",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148450676",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148326928",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148326915",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148326897",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148326896",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148326892",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148326889",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.9g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148326887",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=138409599",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=138409539",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=137513240",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Tearo",
+    "model": "Tearo 1.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=137513126",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1.2g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178590844",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178590832",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 0.8g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178590819",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=163303947",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1.2g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=123640747",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1.2g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=123640735",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1.2g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=123640720",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1.2g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122828079",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1.2g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122828039",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1.2g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122827886",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Tearo",
+    "model": "Chibi Tearo 1.2g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=122827857",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Apeed!",
+    "model": "Apeed! 2.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=183016139",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Apeed!",
+    "model": "Apeed! 2.7g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=182201251",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Apeed!",
+    "model": "Apeed! 2.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=182201229",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Apeed!",
+    "model": "Apeed! 2.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=182201188",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Apeed!",
+    "model": "Apeed! 2.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499209",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Apeed!",
+    "model": "Apeed! 2.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=178499196",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=165513956",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=165513502",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148735390",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148735380",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148735372",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148735357",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126807648",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126807606",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126807588",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126807573",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126807541",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126807510",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=126807493",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=111608404",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=111608394",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=111608369",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 3.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=111608355",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=111503369",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=111503276",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=111503265",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=111503255",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KUROBALL",
+    "model": "KUROBALL 2.0g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=111503245",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "METAL KUROBALL",
+    "model": "METAL KUROBALL 3.5g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148735525",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "METAL KUROBALL",
+    "model": "METAL KUROBALL 3.5g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148735499",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "METAL KUROBALL",
+    "model": "METAL KUROBALL 3.5g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=125966393",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "METAL KUROBALL",
+    "model": "METAL KUROBALL 3.5g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=125966378",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "METAL KUROBALL",
+    "model": "METAL KUROBALL 3.5g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=125966350",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "METAL KUROBALL",
+    "model": "METAL KUROBALL 2.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=125966195",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "METAL KUROBALL",
+    "model": "METAL KUROBALL 2.3g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=125965779",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=154636763",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=154158357",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=153104629",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149681717",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149003138",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149003129",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149003078",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149003060",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149003039",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149003026",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149002944",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149002935",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149002920",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=149002909",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148295034",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148294987",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148294935",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148294844",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148294790",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=148294782",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.6g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=147913710",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=147913689",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=147246835",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=147246830",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=147246817",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Quattro Spoon",
+    "model": "Chibi Quattro Spoon 0.4g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=147246606",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "REKUZE",
+    "model": "REKUZE 1.7g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=184754347",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "REKUZE",
+    "model": "REKUZE 1.7g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=184754309",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "REKUZE",
+    "model": "REKUZE 1.7g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=184754258",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "REKUZE",
+    "model": "REKUZE 1.7g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=184754115",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "REKUZE",
+    "model": "REKUZE 1.7g",
+    "kind": "product",
+    "url": "https://fishing-shop-jh.com/?pid=184753768",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4582418085832/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 202,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807340280/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "reason": "Error: page.goto: Navigation to \"https://store.castingnet.jp/shop/g/g4525807340280/\" is interrupted by another navigation to \"https://store.castingnet.jp/shop/g/g4582418085832/\""
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807340297/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4582418091192/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807340303/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807340310/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807191387/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra DR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4582418098979/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4582418085719/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807340242/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807340259/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4582418085788/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4582418091420/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807191301/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4582418098924/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807285789/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807340266/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807340273/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807285840/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi PaniCra",
+    "model": "Chibi PaniCra SR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807285833/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327267/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327359/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327366/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327342/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327281/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327298/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Chibi Pepino",
+    "model": "Chibi Pepino MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327250/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "Futten",
+    "model": "Futten FS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807299083/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807342161/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807315936/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807243888/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807243918/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807243932/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807342178/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807315837/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807315875/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "page unavailable or exact title and specification not corroborated"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "KIBIpani",
+    "model": "KIBIpani MR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807315882/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327663/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327618/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327601/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327595/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327656/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327571/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327670/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327588/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327687/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327649/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327625/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-F Rattle",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327632/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327786/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327731/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327724/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327717/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327779/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
+  },
+  {
+    "manufacturer": "TIMON",
+    "series": "MICRO PANICRA",
+    "model": "MICRO PANICRA MR-SS",
+    "kind": "product",
+    "url": "https://store.castingnet.jp/shop/g/g4525807327694/",
+    "origins": [
+      "rc48b-retailer"
+    ],
+    "status": "held",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "reason": "retailer-jan-missing-or-conflicting"
   }
 ]

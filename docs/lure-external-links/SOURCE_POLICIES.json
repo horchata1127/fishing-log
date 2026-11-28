@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-11-28",
+  "sources": {
+    "otsuka": {
+      "name": "プロショップオオツカ",
+      "termsUrls": [
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602267"
+      ],
+      "product": "held",
+      "image": "held",
+      "basis": "既存候補の本実行環境で403のアクセス確認画面。検索結果での商品確認とアクセス制限を区別し、残る候補を取得しない。ページには掲載写真が別サイズの場合がある旨の説明。"
+    },
+    "jh": {
+      "name": "城峰釣具店",
+      "termsUrls": [
+        "https://www.fishing-shop-jh.shop-pro.jp/?mode=sk",
+        "https://fishing-shop-jh.com/?mode=privacy"
+      ],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開の店舗表記・プライバシーポリシーに通常のページリンクを制限する記載は見つからなかった。原ページを別タブで開くテキストリンクに限定。画像の転載・アプリ内表示の許諾は未確認。"
+    },
+    "casting": {
+      "name": "キャスティング",
+      "termsUrls": [
+        "https://store.castingnet.jp/shop/customer/agree.aspx",
+        "https://store.castingnet.jp/shop/pages/guide_other.aspx"
+      ],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開利用規約・利用案内に通常のページリンクを制限する記載は見つからなかった。画像の権利帰属の記載があり、アプリ内表示の許諾は未確認。"
+    },
+    "troute": {
+      "name": "t-Route",
+      "termsUrls": [
+        "https://t-route.net/policies/terms-of-service"
+      ],
+      "product": "pending",
+      "image": "held",
+      "basis": "規約を確認。今回の個別商品・variant照合と採用判断は次回。"
+    },
+    "kitiya": {
+      "name": "吉や",
+      "termsUrls": [
+        "https://www.kitiya.jp/?mode=sk"
+      ],
+      "product": "pending",
+      "image": "held",
+      "basis": "店舗表記を確認。今回の個別商品選択肢照合と採用判断は次回。"
+    },
+    "official": {
+      "name": "JACKALL / TIMON",
+      "termsUrls": [
+        "https://www.jackall.co.jp/terms-of-service/"
+      ],
+      "product": "held",
+      "image": "held",
+      "basis": "公式商品ページへのリンクおよび外部画像掲載の許諾未取得。RC48記録を再利用。"
+    }
+  }
+}
