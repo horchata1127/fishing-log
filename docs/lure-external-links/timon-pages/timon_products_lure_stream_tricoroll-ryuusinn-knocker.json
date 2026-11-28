@@ -1,1528 +1,276 @@
 {
   "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-ryuusinn-knocker/",
-  "checkedAt": "2026-11-28",
   "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
   "httpStatus": 200,
   "sha256": "cd7e6beb7c2894d2f9a8dbf80893928982a9e55e42f6be304005e9e745533a17",
-  "title": "Tricoroll流芯Knocker/トリコロール流芯ノッカー - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
-  "heading": [
-    {
-      "text": "Tricoroll流芯Knocker/トリコロール流芯ノッカー Tricoroll流芯Knocker/トリコロール流芯ノッカーNEW",
-      "name": "page-main__title "
-    },
-    {
-      "text": "激流に轟くハイサウンド",
-      "name": "title-main  black"
-    },
-    {
-      "text": "存在感抜群のタングステンラトルサウンド",
-      "name": "title"
-    },
-    {
-      "text": "平均約６％重量アップに成功",
-      "name": "title"
-    },
-    {
-      "text": "拘り抜いた固定重心とボディーシェイプ",
-      "name": "title"
-    },
-    {
-      "text": "FEATURE",
-      "name": "title-secondary"
-    },
-    {
-      "text": "ローリングスイベル搭載",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "源流から本流まで狙える4サイズ展開",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "SPEC",
-      "name": "title-secondary"
-    },
-    {
-      "text": "COLOR CHART",
-      "name": "title-secondary"
-    },
-    {
-      "text": "RELATED CONTENTS",
-      "name": "title-primary"
-    },
-    {
-      "text": "JACKALL STATION",
-      "name": "title-secondary"
-    },
-    {
-      "text": "【TIMON 渓流】ヤマトイワナの棲む谷 / 下広太一、藤松弘一",
-      "name": ""
-    }
-  ],
   "tables": [
     {
-      "name": "",
       "rows": [
         [
           "Name",
           "Length",
           "Weight",
-          "Type",
-          "Hook",
-          "Quantity",
-          "Price"
+          "Type"
         ],
         [
           "トリコロール流芯ノッカー",
           "43㎜",
           "3.3ｇ",
-          "SINKING",
-          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL#14",
-          "１",
-          "¥1,705"
+          "SINKING"
         ],
         [
           "トリコロール流芯ノッカー",
           "53㎜",
           "5.3g",
-          "SINKING",
-          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL#12",
-          "１",
-          "¥1,705"
+          "SINKING"
         ],
         [
           "トリコロール流芯ノッカー",
           "63㎜",
           "7.6g",
-          "SINKING",
-          "ジャッカルトレブル タイプR#10",
-          "１",
-          "¥1,859"
+          "SINKING"
         ],
         [
           "トリコロール流芯ノッカー",
           "70㎜",
           "10.1g",
-          "SINKING",
-          "ジャッカルトレブル タイプR#10",
-          "１",
-          "¥1,859"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "トリコロール流芯ノッカー"
-        ],
-        [
-          "Length",
-          "43㎜"
-        ],
-        [
-          "Weight",
-          "3.3ｇ"
-        ],
-        [
-          "Type",
           "SINKING"
-        ],
-        [
-          "Hook",
-          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL#14"
-        ],
-        [
-          "Quantity",
-          "１"
-        ],
-        [
-          "Price",
-          "¥1,705"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "トリコロール流芯ノッカー"
-        ],
-        [
-          "Length",
-          "53㎜"
-        ],
-        [
-          "Weight",
-          "5.3g"
-        ],
-        [
-          "Type",
-          "SINKING"
-        ],
-        [
-          "Hook",
-          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL#12"
-        ],
-        [
-          "Quantity",
-          "１"
-        ],
-        [
-          "Price",
-          "¥1,705"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "トリコロール流芯ノッカー"
-        ],
-        [
-          "Length",
-          "63㎜"
-        ],
-        [
-          "Weight",
-          "7.6g"
-        ],
-        [
-          "Type",
-          "SINKING"
-        ],
-        [
-          "Hook",
-          "ジャッカルトレブル タイプR#10"
-        ],
-        [
-          "Quantity",
-          "１"
-        ],
-        [
-          "Price",
-          "¥1,859"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "トリコロール流芯ノッカー"
-        ],
-        [
-          "Length",
-          "70㎜"
-        ],
-        [
-          "Weight",
-          "10.1g"
-        ],
-        [
-          "Type",
-          "SINKING"
-        ],
-        [
-          "Hook",
-          "ジャッカルトレブル タイプR#10"
-        ],
-        [
-          "Quantity",
-          "１"
-        ],
-        [
-          "Price",
-          "¥1,859"
         ]
       ]
     }
   ],
   "images": [
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/093d18402fd254e82b3623d2fe8c8799-2000x1125.jpg",
-      "alt": "Tricoroll流芯Knocker/トリコロール流芯ノッカー Tricoroll流芯Knocker/トリコロール流芯ノッカー",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/398a3beabcbe0fba0f96f3a82d485ed8-1200x1478.jpg",
-      "alt": "Tricoroll流芯Knocker/トリコロール流芯ノッカー Tricoroll流芯Knocker/トリコロール流芯ノッカー",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2a68b0adfbbffaa5343ba52d0522f4df-scaled.jpg",
-      "alt": "Tricoroll流芯Knocker/トリコロール流芯ノッカー Tricoroll流芯Knocker/トリコロール流芯ノッカー",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1db44089247d0aa0a055549fb15e02ca-scaled.jpg",
-      "alt": "Tricoroll流芯Knocker/トリコロール流芯ノッカー Tricoroll流芯Knocker/トリコロール流芯ノッカー",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f9393fa3ad34e7112f9bc7db7af9dc29-scaled.jpg",
-      "alt": "Tricoroll流芯Knocker/トリコロール流芯ノッカー Tricoroll流芯Knocker/トリコロール流芯ノッカー",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f2393cbabefdd745ddbaa220168d90be-scaled.jpg",
-      "alt": "Tricoroll流芯Knocker/トリコロール流芯ノッカー Tricoroll流芯Knocker/トリコロール流芯ノッカー",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/30649d67c59a02da1e364aa422c18fad-scaled.jpg",
-      "alt": "Tricoroll流芯Knocker/トリコロール流芯ノッカー Tricoroll流芯Knocker/トリコロール流芯ノッカー",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0c52308e0fca41302d543e4707c0cc1b-scaled.jpg",
-      "alt": "Tricoroll流芯Knocker/トリコロール流芯ノッカー Tricoroll流芯Knocker/トリコロール流芯ノッカー",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/eaa7a6aca7ecc3a9758a3b7e17d7d1a3.jpg",
-      "alt": "Tricoroll流芯Knocker/トリコロール流芯ノッカー Tricoroll流芯Knocker/トリコロール流芯ノッカー",
-      "label": "ローリングスイベル搭載 フロントフックハンガーはローリングスイベルを採用。暴れる魚の動きにフックが追従しバラシを軽減します。",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/8ac9f0b40668431587df6f6170cc260b.jpg",
-      "alt": "Tricoroll流芯Knocker/トリコロール流芯ノッカー Tricoroll流芯Knocker/トリコロール流芯ノッカー",
-      "label": "源流から本流まで狙える4サイズ展開 43㎜、53㎜、63㎜、70㎜の4サイズ展開。源流域のイワナから本流域のサツキマスまで幅広いシチュエーションでターゲットにより使い分けが可能なラインナップとなってお",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5fa259b0066eb0010056178b039adc7d.png",
       "alt": "天竜ずくアマゴ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5fa259b0066eb0010056178b039adc7d.png",
-      "alt": "天竜ずくアマゴ",
-      "label": "天竜ずくアマゴ43HW JAN: 4525807348767 53HW JAN: 4525807348774 63HW JAN: 4525807348781 70HW JAN: 45258073487",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807348767",
+          "4525807348774",
+          "4525807348781"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f7e13ac293225a6b8e17bfaeb1fedd3a.png",
       "alt": "神鳴大蛇",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f7e13ac293225a6b8e17bfaeb1fedd3a.png",
-      "alt": "神鳴大蛇",
-      "label": "神鳴大蛇43HW JAN: 4525807348804 53HW JAN: 4525807348811 63HW JAN: 4525807348828 70HW JAN: 4525807348835",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807348804",
+          "4525807348811",
+          "4525807348828",
+          "4525807348835"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8232feed51d2d1c2d4f95426f5b7a206-2.png",
       "alt": "芸北神楽",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8232feed51d2d1c2d4f95426f5b7a206-2.png",
-      "alt": "芸北神楽",
-      "label": "芸北神楽43HW JAN: 4525807299267 53HW JAN: 4525807299274 63HW JAN: 4525807299281 70HW JAN: 4525807299298",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807299267",
+          "4525807299274",
+          "4525807299281",
+          "4525807299298"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/553ed793e7d15e62d02e62cdbf5b55dc-1.png",
       "alt": "長良鮎遡り",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/553ed793e7d15e62d02e62cdbf5b55dc-1.png",
-      "alt": "長良鮎遡り",
-      "label": "長良鮎遡り43HW JAN: 4525807297966 53HW JAN: 4525807297973 63HW JAN: 4525807297980 70HW JAN: 4525807297997",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807297966",
+          "4525807297973",
+          "4525807297980",
+          "4525807297997"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/58fe9e6874691d8132e5cbc430ee6767.png",
       "alt": "陽炎鮎/ｶｷﾞﾛｲｱﾕ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/58fe9e6874691d8132e5cbc430ee6767.png",
-      "alt": "陽炎鮎/ｶｷﾞﾛｲｱﾕ",
-      "label": "陽炎鮎/ｶｷﾞﾛｲｱﾕ43HW JAN: 4525807270525 53HW JAN: 4525807270648 63HW JAN: 4525807270761 70HW JAN: 4525807",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270525",
+          "4525807270648",
+          "4525807270761"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5a5af93f315604d8e6c05a878d8c68a3.png",
       "alt": "米代ﾏﾙﾁﾌﾞﾗｯｸ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5a5af93f315604d8e6c05a878d8c68a3.png",
-      "alt": "米代ﾏﾙﾁﾌﾞﾗｯｸ",
-      "label": "米代ﾏﾙﾁﾌﾞﾗｯｸ43HW JAN: 4525807270488 53HW JAN: 4525807270600 63HW JAN: 4525807270723 70HW JAN: 45258072",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270488",
+          "4525807270600",
+          "4525807270723"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/d6fe3cd04cc4c4385d2c7dee6799160a.png",
       "alt": "金ｱﾕ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/d6fe3cd04cc4c4385d2c7dee6799160a.png",
-      "alt": "金ｱﾕ",
-      "label": "金ｱﾕ43HW JAN: 4525807270419 53HW JAN: 4525807270532 63HW JAN: 4525807270655 70HW JAN: 4525807270778",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270419",
+          "4525807270532",
+          "4525807270655",
+          "4525807270778"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5b9670855ae7e66ea80e9aa35fe02bdb.png",
       "alt": "銀ﾔﾏﾒ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5b9670855ae7e66ea80e9aa35fe02bdb.png",
-      "alt": "銀ﾔﾏﾒ",
-      "label": "銀ﾔﾏﾒ43HW JAN: 4525807270426 53HW JAN: 4525807270549 63HW JAN: 4525807270662 70HW JAN: 4525807270785",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270426",
+          "4525807270549",
+          "4525807270662",
+          "4525807270785"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/890ecdaca225a6097e3133742e7b14ec.png",
       "alt": "ﾊﾟｰﾙｱﾕ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/890ecdaca225a6097e3133742e7b14ec.png",
-      "alt": "ﾊﾟｰﾙｱﾕ",
-      "label": "ﾊﾟｰﾙｱﾕ43HW JAN: 4525807270433 53HW JAN: 4525807270556 63HW JAN: 4525807270679 70HW JAN: 452580727079",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270433",
+          "4525807270556",
+          "4525807270679"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/TR70HW_nishikiayu-800x533-1.png",
       "alt": "錦鮎",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/TR70HW_nishikiayu-800x533-1.png",
-      "alt": "錦鮎",
-      "label": "錦鮎43HW JAN: 4525807270495 53HW JAN: 4525807270617 63HW JAN: 4525807270730 70HW JAN: 4525807270853",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270495",
+          "4525807270617",
+          "4525807270730",
+          "4525807270853"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/822b02a2eac666ced4e42d1de751382f.png",
       "alt": "HLﾌﾗｯｼｭｱﾕ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/822b02a2eac666ced4e42d1de751382f.png",
-      "alt": "HLﾌﾗｯｼｭｱﾕ",
-      "label": "HLﾌﾗｯｼｭｱﾕ43HW JAN: 4525807270457 53HW JAN: 4525807270570 63HW JAN: 4525807270693 70HW JAN: 452580727",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270457",
+          "4525807270570",
+          "4525807270693"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8dcac2b48615e86a17de513a3841bf64.png",
       "alt": "HLｺｯﾊﾟｰﾔﾏﾒ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8dcac2b48615e86a17de513a3841bf64.png",
-      "alt": "HLｺｯﾊﾟｰﾔﾏﾒ",
-      "label": "HLｺｯﾊﾟｰﾔﾏﾒ43HW JAN: 4525807270440 53HW JAN: 4525807270563 63HW JAN: 4525807270686 70HW JAN: 45258072",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270440",
+          "4525807270563",
+          "4525807270686"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ae6106fd854e729f618d976f96bdceca.png",
       "alt": "ﾗｲﾑﾔﾏﾒ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ae6106fd854e729f618d976f96bdceca.png",
-      "alt": "ﾗｲﾑﾔﾏﾒ",
-      "label": "ﾗｲﾑﾔﾏﾒ43HW JAN: 4525807270501 53HW JAN: 4525807270624 63HW JAN: 4525807270747 70HW JAN: 452580727086",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270501",
+          "4525807270624",
+          "4525807270747"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/bbde7e62380f5a5d37e4f3e57027afd8.png",
       "alt": "ﾃﾈｼｰ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/bbde7e62380f5a5d37e4f3e57027afd8.png",
-      "alt": "ﾃﾈｼｰ",
-      "label": "ﾃﾈｼｰ43HW JAN: 4525807270518 53HW JAN: 4525807270631 63HW JAN: 4525807270754 70HW JAN: 4525807270877",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270518",
+          "4525807270631",
+          "4525807270754",
+          "4525807270877"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/04eeb43ecc4cf1e9212ab7544a590a48.png",
       "alt": "ﾊﾟﾗﾚﾙﾁｬｰﾄ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/04eeb43ecc4cf1e9212ab7544a590a48.png",
-      "alt": "ﾊﾟﾗﾚﾙﾁｬｰﾄ",
-      "label": "ﾊﾟﾗﾚﾙﾁｬｰﾄ43HW JAN: 4525807270464 53HW JAN: 4525807270587 63HW JAN: 4525807270709 70HW JAN: 452580727",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270464",
+          "4525807270587",
+          "4525807270709"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c7c93e53eb3a3908e6d078cd0b217ea1.png",
       "alt": "越中雪代ﾌﾞﾙｰﾊﾞｯｸ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c7c93e53eb3a3908e6d078cd0b217ea1.png",
-      "alt": "越中雪代ﾌﾞﾙｰﾊﾞｯｸ",
-      "label": "越中雪代ﾌﾞﾙｰﾊﾞｯｸ43HW JAN: 4525807270471 53HW JAN: 4525807270594 63HW JAN: 4525807270716 70HW JAN: 452580",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807270471",
+          "4525807270594",
+          "4525807270716"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    }
-  ],
-  "specifications": [
-    "様々なラトルを使用し繰り返しテストを行い辿り着いた答えが、タングステン球を使用したワンノッカーサウンド。それぞれにベストな玉のサイズを使用することにより独自のサウンドを奏で広範囲から魚を引き寄せます。",
-    "タングステンラトルを採用することでウエイトが約６％（全機種平均）アップ。ウエイトアップしたことにより、抜群の飛距離を活かしたアプローチと、より深いレンジへの対応も可能になります。深場や流れの強い場所では流芯ノッカー、浅場や流れの緩い場所ではオリジナル流芯と使い分けられます。"
-  ],
-  "links": [
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-ryuusinn-knocker/#",
-      "label": "TROUT"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/",
-      "label": "NEW PRODUCTS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
-      "label": "LURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
-      "label": "CRANK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
-      "label": "SPOON"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
-      "label": "MINNOW"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
-      "label": "VIBRATION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
-      "label": "LIST"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
-      "label": "C&R"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
-      "label": "AYU"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/set/",
-      "label": "SET"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
-      "label": "ROD"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
-      "label": "T-CONNECTION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
-      "label": "T-CONNECTION Comfy"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
-      "label": "T-CONNECTION STREAM"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
-      "label": "ACCESSORY"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
-      "label": "JACKALL WORKS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
-      "label": "TIMON APPAREL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
-      "label": "CASE / BAG"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
-      "label": "TOOL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
-      "label": "HOOK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/other/",
-      "label": "OTHER"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-ryuusinn-knocker/#link-feature",
-      "label": "FEATURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-ryuusinn-knocker/#link-spec",
-      "label": "SPEC"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-ryuusinn-knocker/#link-color",
-      "label": "COLOR"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-spoon-stem/",
-      "label": "PREV"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/thin-tricoroll/",
-      "label": "NEXT"
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     }
   ]
 }

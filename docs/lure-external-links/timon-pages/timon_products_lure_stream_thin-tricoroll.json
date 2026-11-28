@@ -1,1417 +1,235 @@
 {
   "url": "https://www.jackall.co.jp/timon/products/lure/stream/thin-tricoroll/",
-  "checkedAt": "2026-11-28",
   "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
   "httpStatus": 200,
   "sha256": "9f8a740fae56617d9ba9bb74fafb0cbb87539da11aa6335bf2da96cf8d2a0e42",
-  "title": "THIN TRICOROLL/スィン トリコロール - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
-  "heading": [
-    {
-      "text": "THIN TRICOROLL/スィン トリコロール スィン トリコロールNEW",
-      "name": "page-main__title "
-    },
-    {
-      "text": "最薄ボディーが切り開くトリコロールシリーズの「シン」境地",
-      "name": "title-main  black"
-    },
-    {
-      "text": "強烈なフラッシングを生む圧倒的薄さ",
-      "name": "title"
-    },
-    {
-      "text": "早く沈み過ぎないウェイト設定",
-      "name": "title"
-    },
-    {
-      "text": "アップストリームにも対応",
-      "name": "title"
-    },
-    {
-      "text": "源流から里川まで",
-      "name": "title"
-    },
-    {
-      "text": "FEATURE",
-      "name": "title-secondary"
-    },
-    {
-      "text": "安定をもたらす低重心専用ウエイト",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "トラウティントレブル標準装備",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "SPEC",
-      "name": "title-secondary"
-    },
-    {
-      "text": "COLOR CHART",
-      "name": "title-secondary"
-    }
-  ],
   "tables": [
     {
-      "name": "",
       "rows": [
         [
           "Name",
           "Length",
           "Weight",
-          "Type",
-          "Ring",
-          "hook",
-          "Price"
+          "Type"
         ],
         [
           "スィン トリコロール 44S",
           "44mm",
           "2.3g",
-          "Sinking",
-          "#1",
-          "トラウティントレブル＃14",
-          "¥1,705"
+          "Sinking"
         ],
         [
           "スィン トリコロール 52S",
           "52mm",
           "3.2g",
-          "Sinking",
-          "#1",
-          "トラウティントレブル＃12",
-          "¥1,815"
+          "Sinking"
         ],
         [
           "スィン トリコロール 61S",
           "61mm",
           "4.3g",
-          "Sinking",
-          "#2",
-          "トラウティントレブル＃12",
-          "¥1,925"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "スィン トリコロール 44S"
-        ],
-        [
-          "Length",
-          "44mm"
-        ],
-        [
-          "Weight",
-          "2.3g"
-        ],
-        [
-          "Type",
           "Sinking"
-        ],
-        [
-          "Ring",
-          "#1"
-        ],
-        [
-          "hook",
-          "トラウティントレブル＃14"
-        ],
-        [
-          "Price",
-          "¥1,705"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "スィン トリコロール 52S"
-        ],
-        [
-          "Length",
-          "52mm"
-        ],
-        [
-          "Weight",
-          "3.2g"
-        ],
-        [
-          "Type",
-          "Sinking"
-        ],
-        [
-          "Ring",
-          "#1"
-        ],
-        [
-          "hook",
-          "トラウティントレブル＃12"
-        ],
-        [
-          "Price",
-          "¥1,815"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "スィン トリコロール 61S"
-        ],
-        [
-          "Length",
-          "61mm"
-        ],
-        [
-          "Weight",
-          "4.3g"
-        ],
-        [
-          "Type",
-          "Sinking"
-        ],
-        [
-          "Ring",
-          "#2"
-        ],
-        [
-          "hook",
-          "トラウティントレブル＃12"
-        ],
-        [
-          "Price",
-          "¥1,925"
         ]
       ]
     }
   ],
   "images": [
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_PC_TOP-6.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_SP_TOP-7.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_PC_1-4.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_SP_1-5.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_PC_2-5.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_SP_2-6.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_PC_3-4.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_SP_3-5.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_PC-4.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item  white"
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_SP_4-2.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item  white"
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6ec4014242470a81909fba3473ec75a3.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "安定をもたらす低重心専用ウエイト 低重心特注ウエイトにより飛行姿勢やアクションの安定性を確保。",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2a91a8ef1ab2c24641b2f0970b3e7441.jpg",
-      "alt": "スィン トリコロール THIN TRICOROLL/スィン トリコロール",
-      "label": "トラウティントレブル標準装備 ショートシャンク＋渓魚の浅いバイトを高確率に拾う緩やかなカーブドポイントを採用したトラウティントレブルを標準で採用致しました。",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7110589f9bf2789ebf07a72a42abffcd.png",
       "alt": "天竜ずくアマゴ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7110589f9bf2789ebf07a72a42abffcd.png",
-      "alt": "天竜ずくアマゴ",
-      "label": "天竜ずくアマゴ44S JAN: 4525807348934 52S JAN: 4525807348941 61S JAN: 4525807348958",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807348934",
+          "4525807348941",
+          "4525807348958"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/862c346867e4aafe278f2e98cc45af5b.png",
       "alt": "神鳴大蛇",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/862c346867e4aafe278f2e98cc45af5b.png",
-      "alt": "神鳴大蛇",
-      "label": "神鳴大蛇44S JAN: 4525807348965 52S JAN: 4525807348972 61S JAN: 4525807348989",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807348965",
+          "4525807348972",
+          "4525807348989"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c6afd11d2d5b98254a59ec952bccf99e.png",
       "alt": "銀ヤマメ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c6afd11d2d5b98254a59ec952bccf99e.png",
-      "alt": "銀ヤマメ",
-      "label": "銀ヤマメ44S JAN: 4525807328141 52S JAN: 4525807328264 61S JAN: 4525807328387",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328141",
+          "4525807328264",
+          "4525807328387"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ef0d73a39fd2cc36c7d3675417b492b6.png",
       "alt": "金アユ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ef0d73a39fd2cc36c7d3675417b492b6.png",
-      "alt": "金アユ",
-      "label": "金アユ44S JAN: 4525807328110 52S JAN: 4525807328233 61S JAN: 4525807328356",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328110",
+          "4525807328233",
+          "4525807328356"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5d4a37d37560fbafc3791d9ad09ff6b4.png",
       "alt": "パールアユ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5d4a37d37560fbafc3791d9ad09ff6b4.png",
-      "alt": "パールアユ",
-      "label": "パールアユ44S JAN: 4525807328127 52S JAN: 4525807328240 61S JAN: 4525807328363",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328127",
+          "4525807328240",
+          "4525807328363"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/90f5a8afe44be3b160e414c2e52890c6.png",
       "alt": "テネシー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/90f5a8afe44be3b160e414c2e52890c6.png",
-      "alt": "テネシー",
-      "label": "テネシー44S JAN: 4525807328134 52S JAN: 4525807328257 61S JAN: 4525807328370",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328134",
+          "4525807328257",
+          "4525807328370"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0de660867e957d2746bd48a6f2466c74.png",
       "alt": "パラレルチャート",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0de660867e957d2746bd48a6f2466c74.png",
-      "alt": "パラレルチャート",
-      "label": "パラレルチャート44S JAN: 4525807328158 52S JAN: 4525807328271 61S JAN: 4525807328394",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328158",
+          "4525807328271",
+          "4525807328394"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a67b981892b5367e386d9c4f1e5829bf.png",
       "alt": "米代マルチブラック",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a67b981892b5367e386d9c4f1e5829bf.png",
-      "alt": "米代マルチブラック",
-      "label": "米代マルチブラック44S JAN: 4525807328165 52S JAN: 4525807328288 61S JAN: 4525807328400",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328165",
+          "4525807328288",
+          "4525807328400"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0d51bd240ceca1d2500a4e1b62b48ba7.png",
       "alt": "カギロイアユ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0d51bd240ceca1d2500a4e1b62b48ba7.png",
-      "alt": "カギロイアユ",
-      "label": "カギロイアユ44S JAN: 4525807328172 52S JAN: 4525807328295 61S JAN: 4525807328417",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328172",
+          "4525807328295",
+          "4525807328417"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fc318329883f3141d94d45ac1c79948e.png",
       "alt": "長良鮎遡り",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fc318329883f3141d94d45ac1c79948e.png",
-      "alt": "長良鮎遡り",
-      "label": "長良鮎遡り44S JAN: 4525807328189 52S JAN: 4525807328301 61S JAN: 4525807328424",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328189",
+          "4525807328301",
+          "4525807328424"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/74d3b02fa58bff26fc1c458a9eae6796.png",
       "alt": "芸北神楽",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/74d3b02fa58bff26fc1c458a9eae6796.png",
-      "alt": "芸北神楽",
-      "label": "芸北神楽44S JAN: 4525807328196 52S JAN: 4525807328318 61S JAN: 4525807328431",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328196",
+          "4525807328318",
+          "4525807328431"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/befdce86961512925c40a4caf9d9e07a.png",
       "alt": "富士川クリスタル",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/befdce86961512925c40a4caf9d9e07a.png",
-      "alt": "富士川クリスタル",
-      "label": "富士川クリスタル44S JAN: 4525807328202 52S JAN: 4525807328325 61S JAN: 4525807328448",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328202",
+          "4525807328325",
+          "4525807328448"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8742565d5dd6cb3579b48dcdde29b526.png",
       "alt": "タマチャ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8742565d5dd6cb3579b48dcdde29b526.png",
-      "alt": "タマチャ",
-      "label": "タマチャ44S JAN: 4525807328219 52S JAN: 4525807328332 61S JAN: 4525807328455",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328219",
+          "4525807328332",
+          "4525807328455"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/cfce5e447a7e678f109b6c7818629307.png",
       "alt": "HLコッパーヤマメ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/cfce5e447a7e678f109b6c7818629307.png",
-      "alt": "HLコッパーヤマメ",
-      "label": "HLコッパーヤマメ44S JAN: 4525807328226 52S JAN: 4525807328349 61S JAN: 4525807328462",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807328226",
+          "4525807328349",
+          "4525807328462"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    }
-  ],
-  "specifications": [],
-  "links": [
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/thin-tricoroll/#",
-      "label": "TROUT"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/",
-      "label": "NEW PRODUCTS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
-      "label": "LURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
-      "label": "CRANK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
-      "label": "SPOON"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
-      "label": "MINNOW"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
-      "label": "VIBRATION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
-      "label": "LIST"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
-      "label": "C&R"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
-      "label": "AYU"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/set/",
-      "label": "SET"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
-      "label": "ROD"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
-      "label": "T-CONNECTION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
-      "label": "T-CONNECTION Comfy"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
-      "label": "T-CONNECTION STREAM"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
-      "label": "ACCESSORY"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
-      "label": "JACKALL WORKS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
-      "label": "TIMON APPAREL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
-      "label": "CASE / BAG"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
-      "label": "TOOL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
-      "label": "HOOK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/other/",
-      "label": "OTHER"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/thin-tricoroll/#link-feature",
-      "label": "FEATURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/thin-tricoroll/#link-spec",
-      "label": "SPEC"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/thin-tricoroll/#link-color",
-      "label": "COLOR"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-ryuusinn-knocker/",
-      "label": "PREV"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-ryusinn/",
-      "label": "NEXT"
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     }
   ]
 }

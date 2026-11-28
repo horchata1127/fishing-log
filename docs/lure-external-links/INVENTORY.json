@@ -11,7 +11,7 @@
     "rows": 2863,
     "existingProductRows": 388,
     "newProductRows": 1653,
-    "productOnlyRows": 1950,
+    "productOnlyRows": 2041,
     "uniqueProductUrls": 1239,
     "repeatedProductUrlOccurrences": 926,
     "imageReferenceRows": 1852,
@@ -93,23 +93,23 @@
       "colorRows": 2435,
       "productRows": 388,
       "productCoveragePercent": 15.93,
-      "individualPhotoRows": 73,
-      "individualPhotoPercent": 3,
-      "commonColorSampleRows": 18,
-      "commonColorSamplePercent": 0.74,
+      "individualPhotoRows": 0,
+      "individualPhotoPercent": 0,
+      "commonColorSampleRows": 0,
+      "commonColorSamplePercent": 0,
       "heldProductRows": 2047,
-      "heldImageRows": 27
+      "heldImageRows": 118
     },
     "after": {
       "colorRows": 2863,
       "productRows": 2041,
       "productCoveragePercent": 71.29,
-      "individualPhotoRows": 73,
-      "individualPhotoPercent": 2.55,
-      "commonColorSampleRows": 18,
-      "commonColorSamplePercent": 0.63,
+      "individualPhotoRows": 0,
+      "individualPhotoPercent": 0,
+      "commonColorSampleRows": 0,
+      "commonColorSamplePercent": 0,
       "heldProductRows": 822,
-      "heldImageRows": 1763
+      "heldImageRows": 1854
     }
   },
   "manufacturers": [
@@ -121,7 +121,7 @@
       "rows": 1543,
       "existingProductRows": 388,
       "newProductRows": 644,
-      "productOnlyRows": 941,
+      "productOnlyRows": 1032,
       "uniqueProductUrls": 869,
       "repeatedProductUrlOccurrences": 287,
       "imageReferenceRows": 679,
@@ -131,23 +131,23 @@
         "colorRows": 1115,
         "productRows": 388,
         "productCoveragePercent": 34.8,
-        "individualPhotoRows": 73,
-        "individualPhotoPercent": 6.55,
-        "commonColorSampleRows": 18,
-        "commonColorSamplePercent": 1.61,
+        "individualPhotoRows": 0,
+        "individualPhotoPercent": 0,
+        "commonColorSampleRows": 0,
+        "commonColorSamplePercent": 0,
         "heldProductRows": 727,
-        "heldImageRows": 27
+        "heldImageRows": 118
       },
       "after": {
         "colorRows": 1543,
         "productRows": 1032,
         "productCoveragePercent": 66.88,
-        "individualPhotoRows": 73,
-        "individualPhotoPercent": 4.73,
-        "commonColorSampleRows": 18,
-        "commonColorSamplePercent": 1.17,
+        "individualPhotoRows": 0,
+        "individualPhotoPercent": 0,
+        "commonColorSampleRows": 0,
+        "commonColorSamplePercent": 0,
         "heldProductRows": 511,
-        "heldImageRows": 588
+        "heldImageRows": 679
       },
       "series": [
         {
@@ -753,7 +753,7 @@
           "rows": 184,
           "existingProductRows": 99,
           "newProductRows": 2,
-          "productOnlyRows": 81,
+          "productOnlyRows": 101,
           "uniqueProductUrls": 88,
           "repeatedProductUrlOccurrences": 42,
           "imageReferenceRows": 32,
@@ -763,23 +763,23 @@
             "colorRows": 184,
             "productRows": 99,
             "productCoveragePercent": 53.8,
-            "individualPhotoRows": 20,
-            "individualPhotoPercent": 10.87,
+            "individualPhotoRows": 0,
+            "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
             "heldProductRows": 85,
-            "heldImageRows": 12
+            "heldImageRows": 32
           },
           "after": {
             "colorRows": 184,
             "productRows": 101,
             "productCoveragePercent": 54.89,
-            "individualPhotoRows": 20,
-            "individualPhotoPercent": 10.87,
+            "individualPhotoRows": 0,
+            "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
             "heldProductRows": 83,
-            "heldImageRows": 12
+            "heldImageRows": 32
           },
           "modelDetails": [
             {
@@ -793,7 +793,7 @@
               "rows": 92,
               "existingProductRows": 49,
               "newProductRows": 2,
-              "productOnlyRows": 41,
+              "productOnlyRows": 51,
               "uniqueProductUrls": 59,
               "repeatedProductUrlOccurrences": 6,
               "imageReferenceRows": 16,
@@ -803,23 +803,23 @@
                 "colorRows": 92,
                 "productRows": 49,
                 "productCoveragePercent": 53.26,
-                "individualPhotoRows": 10,
-                "individualPhotoPercent": 10.87,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
                 "heldProductRows": 43,
-                "heldImageRows": 6
+                "heldImageRows": 16
               },
               "after": {
                 "colorRows": 92,
                 "productRows": 51,
                 "productCoveragePercent": 55.43,
-                "individualPhotoRows": 10,
-                "individualPhotoPercent": 10.87,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
                 "heldProductRows": 41,
-                "heldImageRows": 6
+                "heldImageRows": 16
               }
             },
             {
@@ -833,7 +833,7 @@
               "rows": 92,
               "existingProductRows": 50,
               "newProductRows": 0,
-              "productOnlyRows": 40,
+              "productOnlyRows": 50,
               "uniqueProductUrls": 60,
               "repeatedProductUrlOccurrences": 5,
               "imageReferenceRows": 16,
@@ -843,23 +843,23 @@
                 "colorRows": 92,
                 "productRows": 50,
                 "productCoveragePercent": 54.35,
-                "individualPhotoRows": 10,
-                "individualPhotoPercent": 10.87,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
                 "heldProductRows": 42,
-                "heldImageRows": 6
+                "heldImageRows": 16
               },
               "after": {
                 "colorRows": 92,
                 "productRows": 50,
                 "productCoveragePercent": 54.35,
-                "individualPhotoRows": 10,
-                "individualPhotoPercent": 10.87,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
                 "heldProductRows": 42,
-                "heldImageRows": 6
+                "heldImageRows": 16
               }
             }
           ]
@@ -872,7 +872,7 @@
           "rows": 258,
           "existingProductRows": 144,
           "newProductRows": 1,
-          "productOnlyRows": 103,
+          "productOnlyRows": 145,
           "uniqueProductUrls": 119,
           "repeatedProductUrlOccurrences": 79,
           "imageReferenceRows": 42,
@@ -882,23 +882,23 @@
             "colorRows": 258,
             "productRows": 144,
             "productCoveragePercent": 55.81,
-            "individualPhotoRows": 24,
-            "individualPhotoPercent": 9.3,
-            "commonColorSampleRows": 18,
-            "commonColorSamplePercent": 6.98,
+            "individualPhotoRows": 0,
+            "individualPhotoPercent": 0,
+            "commonColorSampleRows": 0,
+            "commonColorSamplePercent": 0,
             "heldProductRows": 114,
-            "heldImageRows": 0
+            "heldImageRows": 42
           },
           "after": {
             "colorRows": 258,
             "productRows": 145,
             "productCoveragePercent": 56.2,
-            "individualPhotoRows": 24,
-            "individualPhotoPercent": 9.3,
-            "commonColorSampleRows": 18,
-            "commonColorSamplePercent": 6.98,
+            "individualPhotoRows": 0,
+            "individualPhotoPercent": 0,
+            "commonColorSampleRows": 0,
+            "commonColorSamplePercent": 0,
             "heldProductRows": 113,
-            "heldImageRows": 0
+            "heldImageRows": 42
           },
           "modelDetails": [
             {
@@ -912,7 +912,7 @@
               "rows": 86,
               "existingProductRows": 47,
               "newProductRows": 0,
-              "productOnlyRows": 34,
+              "productOnlyRows": 47,
               "uniqueProductUrls": 60,
               "repeatedProductUrlOccurrences": 5,
               "imageReferenceRows": 13,
@@ -922,23 +922,23 @@
                 "colorRows": 86,
                 "productRows": 47,
                 "productCoveragePercent": 54.65,
-                "individualPhotoRows": 7,
-                "individualPhotoPercent": 8.14,
-                "commonColorSampleRows": 6,
-                "commonColorSamplePercent": 6.98,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
+                "commonColorSampleRows": 0,
+                "commonColorSamplePercent": 0,
                 "heldProductRows": 39,
-                "heldImageRows": 0
+                "heldImageRows": 13
               },
               "after": {
                 "colorRows": 86,
                 "productRows": 47,
                 "productCoveragePercent": 54.65,
-                "individualPhotoRows": 7,
-                "individualPhotoPercent": 8.14,
-                "commonColorSampleRows": 6,
-                "commonColorSamplePercent": 6.98,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
+                "commonColorSampleRows": 0,
+                "commonColorSamplePercent": 0,
                 "heldProductRows": 39,
-                "heldImageRows": 0
+                "heldImageRows": 13
               }
             },
             {
@@ -952,7 +952,7 @@
               "rows": 86,
               "existingProductRows": 44,
               "newProductRows": 1,
-              "productOnlyRows": 35,
+              "productOnlyRows": 45,
               "uniqueProductUrls": 57,
               "repeatedProductUrlOccurrences": 5,
               "imageReferenceRows": 10,
@@ -962,23 +962,23 @@
                 "colorRows": 86,
                 "productRows": 44,
                 "productCoveragePercent": 51.16,
-                "individualPhotoRows": 4,
-                "individualPhotoPercent": 4.65,
-                "commonColorSampleRows": 6,
-                "commonColorSamplePercent": 6.98,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
+                "commonColorSampleRows": 0,
+                "commonColorSamplePercent": 0,
                 "heldProductRows": 42,
-                "heldImageRows": 0
+                "heldImageRows": 10
               },
               "after": {
                 "colorRows": 86,
                 "productRows": 45,
                 "productCoveragePercent": 52.33,
-                "individualPhotoRows": 4,
-                "individualPhotoPercent": 4.65,
-                "commonColorSampleRows": 6,
-                "commonColorSamplePercent": 6.98,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
+                "commonColorSampleRows": 0,
+                "commonColorSamplePercent": 0,
                 "heldProductRows": 41,
-                "heldImageRows": 0
+                "heldImageRows": 10
               }
             },
             {
@@ -992,7 +992,7 @@
               "rows": 86,
               "existingProductRows": 53,
               "newProductRows": 0,
-              "productOnlyRows": 34,
+              "productOnlyRows": 53,
               "uniqueProductUrls": 66,
               "repeatedProductUrlOccurrences": 5,
               "imageReferenceRows": 19,
@@ -1002,23 +1002,23 @@
                 "colorRows": 86,
                 "productRows": 53,
                 "productCoveragePercent": 61.63,
-                "individualPhotoRows": 13,
-                "individualPhotoPercent": 15.12,
-                "commonColorSampleRows": 6,
-                "commonColorSamplePercent": 6.98,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
+                "commonColorSampleRows": 0,
+                "commonColorSamplePercent": 0,
                 "heldProductRows": 33,
-                "heldImageRows": 0
+                "heldImageRows": 19
               },
               "after": {
                 "colorRows": 86,
                 "productRows": 53,
                 "productCoveragePercent": 61.63,
-                "individualPhotoRows": 13,
-                "individualPhotoPercent": 15.12,
-                "commonColorSampleRows": 6,
-                "commonColorSamplePercent": 6.98,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
+                "commonColorSampleRows": 0,
+                "commonColorSamplePercent": 0,
                 "heldProductRows": 33,
-                "heldImageRows": 0
+                "heldImageRows": 19
               }
             }
           ]
@@ -1031,7 +1031,7 @@
           "rows": 271,
           "existingProductRows": 145,
           "newProductRows": 6,
-          "productOnlyRows": 122,
+          "productOnlyRows": 151,
           "uniqueProductUrls": 122,
           "repeatedProductUrlOccurrences": 71,
           "imageReferenceRows": 44,
@@ -1041,23 +1041,23 @@
             "colorRows": 271,
             "productRows": 145,
             "productCoveragePercent": 53.51,
-            "individualPhotoRows": 29,
-            "individualPhotoPercent": 10.7,
+            "individualPhotoRows": 0,
+            "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
             "heldProductRows": 126,
-            "heldImageRows": 15
+            "heldImageRows": 44
           },
           "after": {
             "colorRows": 271,
             "productRows": 151,
             "productCoveragePercent": 55.72,
-            "individualPhotoRows": 29,
-            "individualPhotoPercent": 10.7,
+            "individualPhotoRows": 0,
+            "individualPhotoPercent": 0,
             "commonColorSampleRows": 0,
             "commonColorSamplePercent": 0,
             "heldProductRows": 120,
-            "heldImageRows": 15
+            "heldImageRows": 44
           },
           "modelDetails": [
             {
@@ -1071,7 +1071,7 @@
               "rows": 92,
               "existingProductRows": 53,
               "newProductRows": 2,
-              "productOnlyRows": 43,
+              "productOnlyRows": 55,
               "uniqueProductUrls": 74,
               "repeatedProductUrlOccurrences": 6,
               "imageReferenceRows": 18,
@@ -1081,23 +1081,23 @@
                 "colorRows": 92,
                 "productRows": 53,
                 "productCoveragePercent": 57.61,
-                "individualPhotoRows": 12,
-                "individualPhotoPercent": 13.04,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
                 "heldProductRows": 39,
-                "heldImageRows": 6
+                "heldImageRows": 18
               },
               "after": {
                 "colorRows": 92,
                 "productRows": 55,
                 "productCoveragePercent": 59.78,
-                "individualPhotoRows": 12,
-                "individualPhotoPercent": 13.04,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
                 "heldProductRows": 37,
-                "heldImageRows": 6
+                "heldImageRows": 18
               }
             },
             {
@@ -1111,7 +1111,7 @@
               "rows": 93,
               "existingProductRows": 56,
               "newProductRows": 2,
-              "productOnlyRows": 48,
+              "productOnlyRows": 58,
               "uniqueProductUrls": 52,
               "repeatedProductUrlOccurrences": 6,
               "imageReferenceRows": 19,
@@ -1121,23 +1121,23 @@
                 "colorRows": 93,
                 "productRows": 56,
                 "productCoveragePercent": 60.22,
-                "individualPhotoRows": 10,
-                "individualPhotoPercent": 10.75,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
                 "heldProductRows": 37,
-                "heldImageRows": 9
+                "heldImageRows": 19
               },
               "after": {
                 "colorRows": 93,
                 "productRows": 58,
                 "productCoveragePercent": 62.37,
-                "individualPhotoRows": 10,
-                "individualPhotoPercent": 10.75,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
                 "heldProductRows": 35,
-                "heldImageRows": 9
+                "heldImageRows": 19
               }
             },
             {
@@ -1151,7 +1151,7 @@
               "rows": 86,
               "existingProductRows": 36,
               "newProductRows": 2,
-              "productOnlyRows": 31,
+              "productOnlyRows": 38,
               "uniqueProductUrls": 54,
               "repeatedProductUrlOccurrences": 1,
               "imageReferenceRows": 7,
@@ -1161,23 +1161,23 @@
                 "colorRows": 86,
                 "productRows": 36,
                 "productCoveragePercent": 41.86,
-                "individualPhotoRows": 7,
-                "individualPhotoPercent": 8.14,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
                 "heldProductRows": 50,
-                "heldImageRows": 0
+                "heldImageRows": 7
               },
               "after": {
                 "colorRows": 86,
                 "productRows": 38,
                 "productCoveragePercent": 44.19,
-                "individualPhotoRows": 7,
-                "individualPhotoPercent": 8.14,
+                "individualPhotoRows": 0,
+                "individualPhotoPercent": 0,
                 "commonColorSampleRows": 0,
                 "commonColorSamplePercent": 0,
                 "heldProductRows": 48,
-                "heldImageRows": 0
+                "heldImageRows": 7
               }
             }
           ]

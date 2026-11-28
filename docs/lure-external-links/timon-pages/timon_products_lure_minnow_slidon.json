@@ -1,1125 +1,147 @@
 {
   "url": "https://www.jackall.co.jp/timon/products/lure/minnow/slidon/",
-  "checkedAt": "2026-11-28",
   "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
   "httpStatus": 200,
   "sha256": "367db20a51e1ed4c31350976f2f8f0226b3dadbd44c01f1497d38bfec5702b75",
-  "title": "SLIDON60F / スライドン60F - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
-  "heading": [
-    {
-      "text": "SLIDON60F / スライドン60F スライドン",
-      "name": "page-main__title "
-    },
-    {
-      "text": "横へのスライドで誘い出しドンっと喰わせる",
-      "name": "title-main  black"
-    },
-    {
-      "text": "フィッシュイーター（色物）がメインターゲット",
-      "name": "title"
-    },
-    {
-      "text": "キレの良いダート",
-      "name": "title"
-    },
-    {
-      "text": "重心移動採用",
-      "name": "title"
-    },
-    {
-      "text": "FEATURE",
-      "name": "title-secondary"
-    },
-    {
-      "text": "フック背負いを制御",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "場面に応じたカラーラインナップ",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "大物対応の太軸フック搭載",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "SPEC",
-      "name": "title-secondary"
-    },
-    {
-      "text": "COLOR CHART",
-      "name": "title-secondary"
-    },
-    {
-      "text": "RELATED CONTENTS",
-      "name": "title-primary"
-    },
-    {
-      "text": "PRODUCTS",
-      "name": "title-secondary"
-    },
-    {
-      "text": "イーフック、イーフックフトジク",
-      "name": "product-list__title--main font-jp"
-    }
-  ],
   "tables": [
     {
-      "name": "",
       "rows": [
         [
           "Name",
           "Length",
           "Weight",
-          "Type",
-          "Hook Size",
-          "Ring Size",
-          "Price"
+          "Type"
         ],
         [
           "SLIDON60F",
           "60mm",
           "3.1g",
-          "Floating",
-          "e-hook太軸 #8/#6",
-          "フロント#0/リア#0(後部2連)",
-          "¥1,595"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "SLIDON60F"
-        ],
-        [
-          "Length",
-          "60mm"
-        ],
-        [
-          "Weight",
-          "3.1g"
-        ],
-        [
-          "Type",
           "Floating"
-        ],
-        [
-          "Hook Size",
-          "e-hook太軸 #8/#6"
-        ],
-        [
-          "Ring Size",
-          "フロント#0/リア#0(後部2連)"
-        ],
-        [
-          "Price",
-          "¥1,595"
         ]
       ]
     }
   ],
   "images": [
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/WEB_PC_TOP.jpg",
-      "alt": "スライドン SLIDON60F / スライドン60F",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/WEB_SP_TOP.jpg",
-      "alt": "スライドン SLIDON60F / スライドン60F",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/WEB_PC_1.jpg",
-      "alt": "スライドン SLIDON60F / スライドン60F",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/WEB_SP_1.jpg",
-      "alt": "スライドン SLIDON60F / スライドン60F",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/WEB_PC_2.jpg",
-      "alt": "スライドン SLIDON60F / スライドン60F",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/WEB_SP_2.jpg",
-      "alt": "スライドン SLIDON60F / スライドン60F",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/WEB_PC_3.jpg",
-      "alt": "スライドン SLIDON60F / スライドン60F",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/WEB_SP_3.jpg",
-      "alt": "スライドン SLIDON60F / スライドン60F",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/bd8068e83f19dffab9c138cb927fb493.jpg",
-      "alt": "スライドン SLIDON60F / スライドン60F",
-      "label": "フック背負いを制御 フックの可動域を制御するディンプル付きフックハンガーを採用。ラインがフックを拾うトラブルを軽減しました。",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/164f97015e8971c1e93a9866b9523c66.jpg",
-      "alt": "スライドン SLIDON60F / スライドン60F",
-      "label": "場面に応じたカラーラインナップ 放流したてに有効なゴールド系、万能なシルバー系・パール系、食い渋ったタイミングで使用する喰わせ系､威嚇バイトを誘発するｸﾘｱﾚｯﾄﾞ系と様々な場面に対応可能なラインナッ",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2025/10/552a23c5307f1efc3c31dd0190872132-1.jpg",
-      "alt": "スライドン SLIDON60F / スライドン60F",
-      "label": "大物対応の太軸フック搭載 フロントにはエビやフック背負いを抑えるようにＥ-ＨＯＯＫ＃8を、リアには更に強度の高いＥ-ＨＯＯＫ＃6を採用しております。",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2b2b7d6299400969cc27ecb57726e5d3-6.png",
       "alt": "クリアー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2b2b7d6299400969cc27ecb57726e5d3-6.png",
-      "alt": "クリアー",
-      "label": "クリアーJAN: 4525807327472",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807327472"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ca63259b3d56ff9388c03cee6667cfc5.png",
       "alt": "テネシー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ca63259b3d56ff9388c03cee6667cfc5.png",
-      "alt": "テネシー",
-      "label": "テネシーJAN: 4525807327489",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807327489"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/47a6945ed3bf51e303c8d2a13d05b3f4-1.png",
       "alt": "闇金",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/47a6945ed3bf51e303c8d2a13d05b3f4-1.png",
-      "alt": "闇金",
-      "label": "闇金JAN: 4525807327496",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807327496"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/250f065332d8583131145c10fea50031.png",
       "alt": "ショボクレシルバー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/250f065332d8583131145c10fea50031.png",
-      "alt": "ショボクレシルバー",
-      "label": "ショボクレシルバーJAN: 4525807327502",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807327502"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/9f08d7abd02c50d9b1997acdcc423e38-1.png",
       "alt": "タッキーアンバー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/9f08d7abd02c50d9b1997acdcc423e38-1.png",
-      "alt": "タッキーアンバー",
-      "label": "タッキーアンバーJAN: 4525807327519",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807327519"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/30252b1c6dcec25408bddfb6116673d3-4.png",
       "alt": "ヤジーボンズ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/30252b1c6dcec25408bddfb6116673d3-4.png",
-      "alt": "ヤジーボンズ",
-      "label": "ヤジーボンズJAN: 4525807327526",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807327526"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c31a0bb582b64ecc728e4f2bbf5c66dd-4.png",
       "alt": "ラムレーズン",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c31a0bb582b64ecc728e4f2bbf5c66dd-4.png",
-      "alt": "ラムレーズン",
-      "label": "ラムレーズンJAN: 4525807327533",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807327533"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5f082f7ecc4d7d3aa189fe8f27f96208-1.png",
       "alt": "パラレルチャート",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5f082f7ecc4d7d3aa189fe8f27f96208-1.png",
-      "alt": "パラレルチャート",
-      "label": "パラレルチャートJAN: 4525807327540",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807327540"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7cdcede8aca372839c706dca8a025bca.png",
       "alt": "パープルシャッド",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7cdcede8aca372839c706dca8a025bca.png",
-      "alt": "パープルシャッド",
-      "label": "パープルシャッドJAN: 4525807327557",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807327557"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/931ea8219c30cfe1db565cab0e0ac936.png",
       "alt": "クリアーホロクラウン",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/931ea8219c30cfe1db565cab0e0ac936.png",
-      "alt": "クリアーホロクラウン",
-      "label": "クリアーホロクラウンJAN: 4525807327564",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807327564"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/e-hook_main.jpg",
-      "alt": "e-hook、e-hook太軸",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-list__photo "
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-list__item"
-        ],
-        [
-          "DIV",
-          "list-layout__item"
-        ]
-      ]
-    }
-  ],
-  "specifications": [],
-  "links": [
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/minnow/slidon/#",
-      "label": "TROUT"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/",
-      "label": "NEW PRODUCTS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
-      "label": "LURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
-      "label": "CRANK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
-      "label": "SPOON"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
-      "label": "LIST"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
-      "label": "VIBRATION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
-      "label": "STREAM"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
-      "label": "C&R"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
-      "label": "AYU"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/set/",
-      "label": "SET"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
-      "label": "ROD"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
-      "label": "T-CONNECTION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
-      "label": "T-CONNECTION Comfy"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
-      "label": "T-CONNECTION STREAM"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
-      "label": "ACCESSORY"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
-      "label": "JACKALL WORKS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
-      "label": "TIMON APPAREL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
-      "label": "CASE / BAG"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
-      "label": "TOOL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
-      "label": "HOOK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/other/",
-      "label": "OTHER"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/minnow/slidon/#link-feature",
-      "label": "FEATURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/minnow/slidon/#link-spec",
-      "label": "SPEC"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/minnow/slidon/#link-color",
-      "label": "COLOR"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/minnow/chibi-futten/",
-      "label": "PREV"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/minnow/futten/",
-      "label": "NEXT"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/accessory/hook/e-hook/",
-      "label": "イーフック、イーフックフトジク SIZE 14 確実なフッキングと高いホールド力を両立！ティモンオリジナルフック e-hook、e-hook太軸"
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     }
   ]
 }

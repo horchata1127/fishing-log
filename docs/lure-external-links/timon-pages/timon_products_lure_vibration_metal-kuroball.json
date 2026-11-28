@@ -1,830 +1,174 @@
 {
   "url": "https://www.jackall.co.jp/timon/products/lure/vibration/metal-kuroball/",
-  "checkedAt": "2026-11-28",
   "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
   "httpStatus": 200,
   "sha256": "7cb1b8acb8917867095d2739ba28d6d00d2abad97c86b48fa7310e27ddd3a1f1",
-  "title": "METAL KUROBALL/メタルクロボール - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
-  "heading": [
-    {
-      "text": "METAL KUROBALL/メタルクロボール メタルクロボール",
-      "name": "page-main__title "
-    },
-    {
-      "text": "極薄0.4mmのブラスプレート",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "フラッシングによるアピール",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "２サイズ展開",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "彼方のボトムを攻略するブラスプレートボディ",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "COLOR CHART",
-      "name": "title-secondary"
-    }
-  ],
   "tables": [
     {
-      "name": "",
       "rows": [
         [
           "Name",
           "Weight",
-          "Length",
-          "Hook Size",
-          "Ring Size",
-          "Price"
+          "Length"
         ],
         [
           "メタルクロボール",
           "2.3g",
-          "26mm",
-          "QR-hook #10",
-          "ﾎﾞﾃﾞｨｰ側#0・ﾌｯｸ側#00",
-          "¥726"
+          "26mm"
         ],
         [
           "メタルクロボール",
           "3.5g",
-          "31mm",
-          "16CP#8",
-          "#0(2連)",
-          "¥726"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "メタルクロボール"
-        ],
-        [
-          "Weight",
-          "2.3g"
-        ],
-        [
-          "Length",
-          "26mm"
-        ],
-        [
-          "Hook Size",
-          "QR-hook #10"
-        ],
-        [
-          "Ring Size",
-          "ﾎﾞﾃﾞｨｰ側#0・ﾌｯｸ側#00"
-        ],
-        [
-          "Price",
-          "¥726"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "メタルクロボール"
-        ],
-        [
-          "Weight",
-          "3.5g"
-        ],
-        [
-          "Length",
           "31mm"
-        ],
-        [
-          "Hook Size",
-          "16CP#8"
-        ],
-        [
-          "Ring Size",
-          "#0(2連)"
-        ],
-        [
-          "Price",
-          "¥726"
         ]
       ]
     }
   ],
   "images": [
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/top3.jpg",
-      "alt": "METAL KUROBALL/メタルクロボール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          ""
-        ],
-        [
-          "DIV",
-          "photo-common-slick nav-target"
-        ],
-        [
-          "DIV",
-          "product-photos__photo"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/IMG_5020.jpg",
-      "alt": "極薄0.4mmのブラスプレート",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          ""
-        ],
-        [
-          "DIV",
-          "photo-common-slick nav-target"
-        ],
-        [
-          "DIV",
-          "product-photos__photo"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/IMG_5024.jpg",
-      "alt": "フラッシングによるアピール",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          ""
-        ],
-        [
-          "DIV",
-          "photo-common-slick nav-target"
-        ],
-        [
-          "DIV",
-          "product-photos__photo"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/IMG_5030.jpg",
-      "alt": "２サイズ展開",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          ""
-        ],
-        [
-          "DIV",
-          "photo-common-slick nav-target"
-        ],
-        [
-          "DIV",
-          "product-photos__photo"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/top3.jpg",
-      "alt": "METAL KUROBALL/メタルクロボール",
-      "label": "",
-      "group": "nav-thumbnail brand-color-current-after-bg",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "item current"
-        ],
-        [
-          "DIV",
-          "nav-thumbnail brand-color-current-after-bg"
-        ],
-        [
-          "DIV",
-          "product-photos__thumbnail"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/IMG_5020.jpg",
-      "alt": "極薄0.4mmのブラスプレート",
-      "label": "",
-      "group": "nav-thumbnail brand-color-current-after-bg",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "item "
-        ],
-        [
-          "DIV",
-          "nav-thumbnail brand-color-current-after-bg"
-        ],
-        [
-          "DIV",
-          "product-photos__thumbnail"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/IMG_5024.jpg",
-      "alt": "フラッシングによるアピール",
-      "label": "",
-      "group": "nav-thumbnail brand-color-current-after-bg",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "item "
-        ],
-        [
-          "DIV",
-          "nav-thumbnail brand-color-current-after-bg"
-        ],
-        [
-          "DIV",
-          "product-photos__thumbnail"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/IMG_5030.jpg",
-      "alt": "２サイズ展開",
-      "label": "",
-      "group": "nav-thumbnail brand-color-current-after-bg",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "item "
-        ],
-        [
-          "DIV",
-          "nav-thumbnail brand-color-current-after-bg"
-        ],
-        [
-          "DIV",
-          "product-photos__thumbnail"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/11/2019119_KRB_2-1.png",
-      "alt": "",
-      "label": "ショボクレ缶コーヒー by 黒野浩二",
-      "groupChain": [
-        [
-          "P",
-          ""
-        ],
-        [
-          "DIV",
-          "post-content"
-        ],
-        [
-          "DIV",
-          "desc-content__text"
-        ],
-        [
-          "DIV",
-          "product-desc__content"
-        ],
-        [
-          "DIV",
-          "product-desc right"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/11/2019119_KRB_1_-1.png",
-      "alt": "",
-      "label": "タッキーハーフオリーブ by 瀧澤真一",
-      "groupChain": [
-        [
-          "P",
-          ""
-        ],
-        [
-          "DIV",
-          "post-content"
-        ],
-        [
-          "DIV",
-          "desc-content__text"
-        ],
-        [
-          "DIV",
-          "product-desc__content"
-        ],
-        [
-          "DIV",
-          "product-desc right"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/11/2019119_KRB_2-1-800x533.png",
       "alt": "ショボクレ缶コーヒー",
-      "label": "ショボクレ缶コーヒー2.3g JAN:4525807191820 / 3.5g JAN:4525807191844",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/11/2019119_KRB_2-1-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807191820",
+          "4525807191844"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            2.3,
+            "4525807191820"
+          ],
+          [
+            3.5,
+            "4525807191844"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/11/2019119_KRB_1_-1-800x533.png",
       "alt": "タッキーハーフオリーブ",
-      "label": "タッキーハーフオリーブ2.3g JAN:4525807191837、3.5g JAN:4525807191851",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/11/2019119_KRB_1_-1-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807191837",
+          "4525807191851"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            2.3,
+            "4525807191837"
+          ],
+          [
+            3.5,
+            "4525807191851"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/01GREENGOLD.jpg",
       "alt": "グリーンゴールド",
-      "label": "グリーンゴールド",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/01GREENGOLD.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/08BLOWN.jpg",
       "alt": "ブラウン",
-      "label": "ブラウン",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/08BLOWN.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/03KEIMURA-DAIGO-BROWN.jpg",
       "alt": "ケイムラダイゴブラウン",
-      "label": "ケイムラダイゴブラウン",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/03KEIMURA-DAIGO-BROWN.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/04KEIMURA-DAIGO-LIGHT-BROWN.jpg",
       "alt": "ケイムラダイゴライトブラウン",
-      "label": "ケイムラダイゴライトブラウン",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/04KEIMURA-DAIGO-LIGHT-BROWN.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/05SHOBOKURE-OKOSHI.jpg",
       "alt": "ショボクレおこし",
-      "label": "ショボクレおこし",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/05SHOBOKURE-OKOSHI.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/06SILVER.jpg",
       "alt": "シルバー",
-      "label": "シルバー",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/06SILVER.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/07DAIGO-TUBUCHA.jpg",
       "alt": "ダイゴつぶ茶",
-      "label": "ダイゴつぶ茶",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/07DAIGO-TUBUCHA.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/08SYOBOKURE-MAZIOCHA.jpg",
       "alt": "ショボクレマジョチャー",
-      "label": "ショボクレマジョチャー",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/08SYOBOKURE-MAZIOCHA.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/09KIBAMICHA.jpg",
       "alt": "黄ばみ茶",
-      "label": "黄ばみ茶",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/09KIBAMICHA.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/10KIBAMIOLIVE.jpg",
       "alt": "黄ばみオリーブ",
-      "label": "黄ばみオリーブ",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    }
-  ],
-  "specifications": [],
-  "links": [
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/vibration/metal-kuroball/#",
-      "label": "TROUT"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/",
-      "label": "NEW PRODUCTS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
-      "label": "LURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
-      "label": "CRANK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
-      "label": "SPOON"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
-      "label": "MINNOW"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
-      "label": "LIST"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
-      "label": "STREAM"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
-      "label": "C&R"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
-      "label": "AYU"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/set/",
-      "label": "SET"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
-      "label": "ROD"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
-      "label": "T-CONNECTION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
-      "label": "T-CONNECTION Comfy"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
-      "label": "T-CONNECTION STREAM"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
-      "label": "ACCESSORY"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
-      "label": "JACKALL WORKS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
-      "label": "TIMON APPAREL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
-      "label": "CASE / BAG"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
-      "label": "TOOL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
-      "label": "HOOK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/other/",
-      "label": "OTHER"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball/",
-      "label": "PREV"
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/10KIBAMIOLIVE.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     }
   ]
 }

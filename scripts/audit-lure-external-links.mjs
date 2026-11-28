@@ -58,6 +58,7 @@ const { db } = await loader.load('src/db/database.ts')
 try {
   const { externalManufacturer } = await loader.load('src/utils/lureExternalCatalog.ts')
   const { imageReferenceForOption, isNoaOption } = await loader.load('src/utils/noaPhotoCatalog.ts')
+  const { externalImageHoldReason } = await loader.load('src/data/noaExternalImagePolicy.ts')
   const { resolveColorPhoto, currentPhotoCatalog } = await loader.load('src/utils/lurePhotos.ts')
   const { lureMasterManifest } = await loader.load('src/data/lureMasterManifest.ts')
   const { createLureMasterUpdater } = await loader.load('src/utils/lureMasterApply.ts')
@@ -144,7 +145,8 @@ try {
         ? 'decoded' : manufacturerChecks.get(candidate)?.status ?? checkedImage?.status ?? 'not-tested',
       officialImageAlternatives: official?.image?.candidateUrls?.join(' | ') ?? '',
       imageEvidenceDate: checkedImage?.checkedAt ?? evidence?.checkedAt ?? official?.checkedAt ?? '', imageSourceName: image?.sourceName ?? (official?.image ? 'JACKALL / TIMON' : candidate ? evidence?.sourceName : '') ?? '',
-      imageHoldReason: imageStatus === 'held' ? official?.image?.status || checkedImage?.reason || (candidate ? 'アプリ内表示の許諾と画像の個別対応が未確認。' : '既存NOAポリシーによる保留') : '',
+      imageHoldReason: imageStatus === 'held' ? (historicalImage && externalImageHoldReason(historicalImage.sourceName)) ||
+        official?.image?.status || checkedImage?.reason || (candidate ? 'アプリ内表示の許諾と画像の個別対応が未確認。' : '既存NOAポリシーによる保留') : '',
       ...(makerRow ? { imageSourceName: makerRow.sourceName ?? '', imageEvidenceDate: makerRow.checkedAt,
         imageHoldReason: makerRow.image?.reason ?? '' } : {}),
       sourceName: resolved?.sourceName ?? '',

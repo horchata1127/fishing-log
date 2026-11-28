@@ -1,2376 +1,797 @@
 {
   "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi_panicra/",
-  "checkedAt": "2026-11-28",
   "originType": "official-index-link",
-  "fullColorCaptions": true,
+  "checkedAt": "2026-11-28",
   "httpStatus": 200,
   "sha256": "64a262b011485d68bea8ae6bf930c6abf8bc0698dfc1d19bd5de3ef3ca5a38be",
-  "title": "Chibi PaniCra/ちびパニクラ - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
-  "heading": [
-    {
-      "text": "Chibi PaniCra/ちびパニクラ ちびパニクラNEW",
-      "name": "page-main__title "
-    },
-    {
-      "text": "食わせ特化の小さな巨人",
-      "name": "title-main  black"
-    },
-    {
-      "text": "食わせに特化したシチュエーションで大活躍",
-      "name": "title"
-    },
-    {
-      "text": "安定した飛距離",
-      "name": "title"
-    },
-    {
-      "text": "25mmの小粒ボディー",
-      "name": "title"
-    },
-    {
-      "text": "FEATURE",
-      "name": "title-secondary"
-    },
-    {
-      "text": "先行深度",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "3サイズ展開",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "SPEC",
-      "name": "title-secondary"
-    },
-    {
-      "text": "COLOR CHART",
-      "name": "title-secondary"
-    },
-    {
-      "text": "RELATED CONTENTS",
-      "name": "title-primary"
-    },
-    {
-      "text": "PRODUCTS",
-      "name": "title-secondary"
-    },
-    {
-      "text": "パニクラ",
-      "name": "product-list__title--main font-jp"
-    }
-  ],
   "tables": [
     {
-      "name": "",
       "rows": [
         [
           "Name",
           "Weight",
-          "Length",
-          "Hook Size",
-          "Ring Size",
-          "Price"
+          "Length"
         ],
         [
           "Chibi PaniCra SR",
           "1.4g",
-          "25mm",
-          "22CP #9",
-          "#0",
-          "¥1,573"
+          "25mm"
         ],
         [
           "Chibi PaniCra SR‐SS",
           "1.5g",
-          "25mm",
-          "16CP＃8",
-          "#0",
-          "¥1,573"
+          "25mm"
         ],
         [
           "Chibi PaniCra DR",
           "1.4g",
-          "25mm",
-          "22CP#9",
-          "#0",
-          "¥1,573"
+          "25mm"
         ],
         [
           "Chibi PaniCra DR-SS",
           "1.6g",
-          "25mm",
-          "22CP#9",
-          "#0",
-          "¥1,573"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "Chibi PaniCra SR"
-        ],
-        [
-          "Weight",
-          "1.4g"
-        ],
-        [
-          "Length",
           "25mm"
-        ],
-        [
-          "Hook Size",
-          "22CP #9"
-        ],
-        [
-          "Ring Size",
-          "#0"
-        ],
-        [
-          "Price",
-          "¥1,573"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "Chibi PaniCra SR‐SS"
-        ],
-        [
-          "Weight",
-          "1.5g"
-        ],
-        [
-          "Length",
-          "25mm"
-        ],
-        [
-          "Hook Size",
-          "16CP＃8"
-        ],
-        [
-          "Ring Size",
-          "#0"
-        ],
-        [
-          "Price",
-          "¥1,573"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "Chibi PaniCra DR"
-        ],
-        [
-          "Weight",
-          "1.4g"
-        ],
-        [
-          "Length",
-          "25mm"
-        ],
-        [
-          "Hook Size",
-          "22CP#9"
-        ],
-        [
-          "Ring Size",
-          "#0"
-        ],
-        [
-          "Price",
-          "¥1,573"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "Chibi PaniCra DR-SS"
-        ],
-        [
-          "Weight",
-          "1.6g"
-        ],
-        [
-          "Length",
-          "25mm"
-        ],
-        [
-          "Hook Size",
-          "22CP#9"
-        ],
-        [
-          "Ring Size",
-          "#0"
-        ],
-        [
-          "Price",
-          "¥1,573"
         ]
       ]
     }
   ],
   "images": [
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_PC_chibipanikura_TOP.jpg",
-      "alt": "ちびパニクラ Chibi PaniCra/ちびパニクラ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_SP_chibipanicra_TOP.jpg",
-      "alt": "ちびパニクラ Chibi PaniCra/ちびパニクラ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_PC_PaniCra03re.jpg",
-      "alt": "ちびパニクラ Chibi PaniCra/ちびパニクラ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_SP_PaniCra03re.jpg",
-      "alt": "ちびパニクラ Chibi PaniCra/ちびパニクラ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_PC_chibipanicra_02.jpg",
-      "alt": "ちびパニクラ Chibi PaniCra/ちびパニクラ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item  white"
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_SP_chibipanicra_02.jpg",
-      "alt": "ちびパニクラ Chibi PaniCra/ちびパニクラ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item  white"
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_PC_chibipanicra_03.jpg",
-      "alt": "ちびパニクラ Chibi PaniCra/ちびパニクラ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/WEB_SP_chibipanicra_03.jpg",
-      "alt": "ちびパニクラ Chibi PaniCra/ちびパニクラ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/PaniCra_Future02.png",
-      "alt": "ちびパニクラ Chibi PaniCra/ちびパニクラ",
-      "label": "先行深度 ちびパニクラ：SR（40cm前後）/SR-SS(40cm前後）/DR（50cm前後）/DR-SS（50cm前後） ※SR・DR、SR-SS・DR-SSともに同じ潜行深度となっておりますが、両者を比べるとSR・DRの方がキビキビとしたアクション、SR-SS・DR-SSの方が控えめなアクションとなっております。また、SR-SS・DR-SSはよりスローな引きに対応し、一定のレンジをトレースしやすくしています。",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2dd5f49522a6a23d7af02b42227966bb.jpg",
-      "alt": "ちびパニクラ Chibi PaniCra/ちびパニクラ",
-      "label": "3サイズ展開 アピール力の強いパニクラ、フィールドを問わないキビパニ、プレッシャーの掛かった時に強い､ちびパニクラこの3種類を、釣り場の状況やトラウトの活性に合わせて、最適なものを選ぶことができます。",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1964f5b6a9e1d593b5de276257ffc0dc-4.png",
       "alt": "VIBESオリーブ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1964f5b6a9e1d593b5de276257ffc0dc-4.png",
-      "alt": "VIBESオリーブ",
-      "label": "VIBESオリーブSR-SS・DR-SS目玉レッドSR JAN: 4525807340242 SR-SS JAN: 4525807340266 DR JAN: 4525807340280 DR-SS JAN: 4525807340303",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807340242",
+          "4525807340266",
+          "4525807340280",
+          "4525807340303"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807340266"
+          ],
+          [
+            "dr-ss",
+            "4525807340303"
+          ],
+          [
+            "sr",
+            "4525807340242"
+          ],
+          [
+            "dr",
+            "4525807340280"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4ec72b69c8773380044221f1e379eb2d.png",
       "alt": "霞オリーブ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4ec72b69c8773380044221f1e379eb2d.png",
-      "alt": "霞オリーブ",
-      "label": "霞オリーブSR-SS・DR-SS目玉レッドSR JAN: 4525807340259 SR-SS JAN: 4525807340273 DR JAN: 4525807340297 DR-SS JAN: 4525807340310",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807340259",
+          "4525807340273",
+          "4525807340297",
+          "4525807340310"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807340273"
+          ],
+          [
+            "dr-ss",
+            "4525807340310"
+          ],
+          [
+            "sr",
+            "4525807340259"
+          ],
+          [
+            "dr",
+            "4525807340297"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1c750d38da1359eb8bda7522c1471431.png",
       "alt": "クリアー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1c750d38da1359eb8bda7522c1471431.png",
-      "alt": "クリアー",
-      "label": "クリアーSR-SS・DR-SS目玉レッドSR JAN: 4582418085719 SR-SS JAN: 4525807285765 DR JAN: 4582418085832 DR-SS JAN: 4582418091192",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418085719",
+          "4525807285765",
+          "4582418085832",
+          "4582418091192"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285765"
+          ],
+          [
+            "dr-ss",
+            "4582418091192"
+          ],
+          [
+            "sr",
+            "4582418085719"
+          ],
+          [
+            "dr",
+            "4582418085832"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4a98dc53ba26dd8ec7761462814dd9ec.png",
       "alt": "タッキーグロー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4a98dc53ba26dd8ec7761462814dd9ec.png",
-      "alt": "タッキーグロー",
-      "label": "タッキーグローDR-SS目玉レッド グリーングローSR JAN: 4582418085726 DR JAN: 4582418085849 DR-SS JAN: 4582418091208",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418085726",
+          "4582418085849",
+          "4582418091208"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4582418091208"
+          ],
+          [
+            "sr",
+            "4582418085726"
+          ],
+          [
+            "dr",
+            "4582418085849"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/e23d9c4611d42b78cec8f6045f7ebdc2.png",
       "alt": "ショボクレグロー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/e23d9c4611d42b78cec8f6045f7ebdc2.png",
-      "alt": "ショボクレグロー",
-      "label": "ショボクレグローSR-SS・DR-SS目玉レッド グリーングローSR JAN: 4582418085733 SR-SS JAN: 4525807285796 DR JAN: 4582418085856 DR-SS JAN: 4582418091215",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418085733",
+          "4525807285796",
+          "4582418085856",
+          "4582418091215"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285796"
+          ],
+          [
+            "dr-ss",
+            "4582418091215"
+          ],
+          [
+            "sr",
+            "4582418085733"
+          ],
+          [
+            "dr",
+            "4582418085856"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/96dbdb0a0d80bc9ad055c39313e4740e.png",
       "alt": "タッキーブラウン",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/96dbdb0a0d80bc9ad055c39313e4740e.png",
-      "alt": "タッキーブラウン",
-      "label": "タッキーブラウンSR-SS・DR-SS目玉レッドSR JAN: 4582418085757 SR-SS JAN: 4525807285789 DR JAN: 4582418085870 DR-SS JAN: 4582418091222",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418085757",
+          "4525807285789",
+          "4582418085870",
+          "4582418091222"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285789"
+          ],
+          [
+            "dr-ss",
+            "4582418091222"
+          ],
+          [
+            "sr",
+            "4582418085757"
+          ],
+          [
+            "dr",
+            "4582418085870"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5ee71e52ad4a836fb3ceb993fd43a6ee.png",
       "alt": "ショボクレレッドグロー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5ee71e52ad4a836fb3ceb993fd43a6ee.png",
-      "alt": "ショボクレレッドグロー",
-      "label": "ショボクレレッドグローSR-SS・DR-SS目玉レッド レッドグローSR JAN: 4582418085771 SR-SS JAN: 4525807285802 DR JAN: 4582418085894 DR-SS JAN: 4582418091239",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418085771",
+          "4525807285802",
+          "4582418085894",
+          "4582418091239"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285802"
+          ],
+          [
+            "dr-ss",
+            "4582418091239"
+          ],
+          [
+            "sr",
+            "4582418085771"
+          ],
+          [
+            "dr",
+            "4582418085894"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8500b7de967830bdb45ab512644a8978.png",
       "alt": "エンドパンプキン",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8500b7de967830bdb45ab512644a8978.png",
-      "alt": "エンドパンプキン",
-      "label": "エンドパンプキンSR-SS・DR-SS目玉レッドSR JAN: 4582418085788 SR-SS JAN: 4525807285772 DR JAN: 4582418085900 DR-SS JAN: 4582418091246",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418085788",
+          "4525807285772",
+          "4582418085900",
+          "4582418091246"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285772"
+          ],
+          [
+            "dr-ss",
+            "4582418091246"
+          ],
+          [
+            "sr",
+            "4582418085788"
+          ],
+          [
+            "dr",
+            "4582418085900"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/34610d630a1f8e0aba03e0affd4711d3.png",
       "alt": "ダイゴマジョグロー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/34610d630a1f8e0aba03e0affd4711d3.png",
-      "alt": "ダイゴマジョグロー",
-      "label": "ダイゴマジョグローレッドグローSR JAN: 4582418091420 DR JAN: 4582418091475",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418091420",
+          "4582418091475"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4582418091420"
+          ],
+          [
+            "dr",
+            "4582418091475"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3740298ca84a4d7feee0636cf9bedf6e.png",
       "alt": "神レッドグロー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3740298ca84a4d7feee0636cf9bedf6e.png",
-      "alt": "神レッドグロー",
-      "label": "神レッドグローDR-SS目玉レッド レッドグローSR JAN: 4582418095695 DR JAN: 4582418095749 DR-SS JAN: 4582418095794",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418095695",
+          "4582418095749",
+          "4582418095794"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4582418095794"
+          ],
+          [
+            "sr",
+            "4582418095695"
+          ],
+          [
+            "dr",
+            "4582418095749"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b86e51915f7e23a439ba70ce65aa1a6a.png",
       "alt": "神グリーングロー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b86e51915f7e23a439ba70ce65aa1a6a.png",
-      "alt": "神グリーングロー",
-      "label": "神グリーングローDR-SS目玉レッド グリーングローSR JAN: 4582418095701 DR JAN: 4582418095756 DR-SS JAN: 4582418095800",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418095701",
+          "4582418095756",
+          "4582418095800"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4582418095800"
+          ],
+          [
+            "sr",
+            "4582418095701"
+          ],
+          [
+            "dr",
+            "4582418095756"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/86e58155384de5c1dc828a763ccbeb57.png",
       "alt": "ショボクレおこし",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/86e58155384de5c1dc828a763ccbeb57.png",
-      "alt": "ショボクレおこし",
-      "label": "ショボクレおこしDR-SS目玉レッド グリーングローSR JAN: 4582418095718 DR JAN: 4582418095763 DR-SS JAN: 4582418095817",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418095718",
+          "4582418095763",
+          "4582418095817"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4582418095817"
+          ],
+          [
+            "sr",
+            "4582418095718"
+          ],
+          [
+            "dr",
+            "4582418095763"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8459adbe9777c1c78a55058236d6ec66.png",
       "alt": "こぶ茶",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8459adbe9777c1c78a55058236d6ec66.png",
-      "alt": "こぶ茶",
-      "label": "こぶ茶DR-SS目玉レッド レッドグローSR JAN: 4582418095732 DR JAN: 4582418095787 DR-SS JAN: 4582418095831",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418095732",
+          "4582418095787",
+          "4582418095831"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4582418095831"
+          ],
+          [
+            "sr",
+            "4582418095732"
+          ],
+          [
+            "dr",
+            "4582418095787"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/962847ba967f2459ca70154334362204.png",
       "alt": "エンドグローペレブラウン",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/962847ba967f2459ca70154334362204.png",
-      "alt": "エンドグローペレブラウン",
-      "label": "エンドグローペレブラウンDR-SS目玉レッド グリーングローSR JAN: 4525807191295 DR JAN: 4525807191332 DR-SS JAN: 4525807191370",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807191295",
+          "4525807191332",
+          "4525807191370"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4525807191370"
+          ],
+          [
+            "sr",
+            "4525807191295"
+          ],
+          [
+            "dr",
+            "4525807191332"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/96f4f325cf800866a265e41d5ea4b861.png",
       "alt": "エンドグローペレオリーブ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/96f4f325cf800866a265e41d5ea4b861.png",
-      "alt": "エンドグローペレオリーブ",
-      "label": "エンドグローペレオリーブDR-SS目玉レッド グリーングローSR JAN: 4525807191301 DR JAN: 4525807191349 DR-SS JAN: 4525807191387",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807191301",
+          "4525807191349",
+          "4525807191387"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4525807191387"
+          ],
+          [
+            "sr",
+            "4525807191301"
+          ],
+          [
+            "dr",
+            "4525807191349"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/653fd113920aa5017099304f161c535d.png",
       "alt": "静岡美人",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/653fd113920aa5017099304f161c535d.png",
-      "alt": "静岡美人",
-      "label": "静岡美人DR-SS目玉レッドSR JAN: 4525807191318 DR JAN: 4525807191356 DR-SS JAN: 4525807191394",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807191318",
+          "4525807191356",
+          "4525807191394"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4525807191394"
+          ],
+          [
+            "sr",
+            "4525807191318"
+          ],
+          [
+            "dr",
+            "4525807191356"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7837e7fea179e9e26a87be649f7ea00f.png",
       "alt": "TKグロー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7837e7fea179e9e26a87be649f7ea00f.png",
-      "alt": "TKグロー",
-      "label": "TKグローDR-SS目玉レッド グリーングローSR JAN: 4525807191325 DR JAN: 4525807191363 DR-SS JAN: 4525807191400",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807191325",
+          "4525807191363",
+          "4525807191400"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4525807191400"
+          ],
+          [
+            "sr",
+            "4525807191325"
+          ],
+          [
+            "dr",
+            "4525807191363"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c3d0eae09117b6a2773183421e072272.png",
       "alt": "ゴンティーラッシュグローⅡ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c3d0eae09117b6a2773183421e072272.png",
-      "alt": "ゴンティーラッシュグローⅡ",
-      "label": "ゴンティーラッシュグローⅡDR-SS目玉レッド グリーングローSR JAN: 4582418098917 DR JAN: 4582418098948 DR-SS JAN: 4582418098979",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418098917",
+          "4582418098948",
+          "4582418098979"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4582418098979"
+          ],
+          [
+            "sr",
+            "4582418098917"
+          ],
+          [
+            "dr",
+            "4582418098948"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8f1b5329a105c8f0285f9531968719b2.png",
       "alt": "タッキーグローヤマメ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8f1b5329a105c8f0285f9531968719b2.png",
-      "alt": "タッキーグローヤマメ",
-      "label": "タッキーグローヤマメDR-SS目玉レッド グリーングローSR JAN: 4582418098924 DR JAN: 4582418098955 DR-SS JAN: 4582418098986",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418098924",
+          "4582418098955",
+          "4582418098986"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4582418098986"
+          ],
+          [
+            "sr",
+            "4582418098924"
+          ],
+          [
+            "dr",
+            "4582418098955"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/087f0d80bc4c4517042ec4eddaf77c25.png",
       "alt": "神ダークアース",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/087f0d80bc4c4517042ec4eddaf77c25.png",
-      "alt": "神ダークアース",
-      "label": "神ダークアースDR-SS目玉レッドSR JAN: 4582418098931 DR JAN: 4582418098962 DR-SS JAN: 4582418098993",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418098931",
+          "4582418098962",
+          "4582418098993"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4582418098993"
+          ],
+          [
+            "sr",
+            "4582418098931"
+          ],
+          [
+            "dr",
+            "4582418098962"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3c40e3a9b70acd544a13e1bad221eb1b.png",
       "alt": "ミックスオーレ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3c40e3a9b70acd544a13e1bad221eb1b.png",
-      "alt": "ミックスオーレ",
-      "label": "ミックスオーレDR-SS JAN: 4582418095824",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418095824"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-ss",
+            "4582418095824"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8e858a3e516751e2306efc72060fbf1d-2.png",
       "alt": "蛍光ピンク",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8e858a3e516751e2306efc72060fbf1d-2.png",
-      "alt": "蛍光ピンク",
-      "label": "蛍光ピンクSR-SS JAN: 4525807285840",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807285840"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285840"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2c929840a307ae23a9797ee1e41c39af-4.png",
       "alt": "タッキーゴーストペレット",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2c929840a307ae23a9797ee1e41c39af-4.png",
-      "alt": "タッキーゴーストペレット",
-      "label": "タッキーゴーストペレットSR-SS JAN: 4525807285857",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807285857"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285857"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/30252b1c6dcec25408bddfb6116673d3-7.png",
       "alt": "ヤジーボンズ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/30252b1c6dcec25408bddfb6116673d3-7.png",
-      "alt": "ヤジーボンズ",
-      "label": "ヤジーボンズSR-SS JAN: 4525807285864",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807285864"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285864"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c31a0bb582b64ecc728e4f2bbf5c66dd-8.png",
       "alt": "ラムレーズン",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c31a0bb582b64ecc728e4f2bbf5c66dd-8.png",
-      "alt": "ラムレーズン",
-      "label": "ラムレーズンSR-SS JAN: 4525807285833",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807285833"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285833"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/e6dde63ca742f7a19340beceb3c71354.png",
       "alt": "ヤジーパーフェクトブラウン",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/e6dde63ca742f7a19340beceb3c71354.png",
-      "alt": "ヤジーパーフェクトブラウン",
-      "label": "ヤジーパーフェクトブラウンSR-SS JAN: 4525807285826",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807285826"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285826"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6006c010c72cd52dffae4015d2a26311-2.png",
       "alt": "ヤジーパーフェクトオリーブ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6006c010c72cd52dffae4015d2a26311-2.png",
-      "alt": "ヤジーパーフェクトオリーブ",
-      "label": "ヤジーパーフェクトオリーブSR-SS JAN: 4525807285819",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807285819"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285819"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ff4cdac7cb9d3218ce6680c62e15c646.png",
       "alt": "シャインBOR",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ff4cdac7cb9d3218ce6680c62e15c646.png",
-      "alt": "シャインBOR",
-      "label": "シャインBORレッドグローSR-SS JAN: 4525807285871",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807285871"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285871"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/581236e14b11d5ebb9da4be1e5165d4b-2.png",
       "alt": "ヤジーペレットサン",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/581236e14b11d5ebb9da4be1e5165d4b-2.png",
-      "alt": "ヤジーペレットサン",
-      "label": "ヤジーペレットサンSR-SS JAN: 4525807285888",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807285888"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285888"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/bf8a201e2b70ba6b62205e2f0f072245-2.png",
       "alt": "カドピングロー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/bf8a201e2b70ba6b62205e2f0f072245-2.png",
-      "alt": "カドピングロー",
-      "label": "カドピングローSR-SS JAN: 4525807285895",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807285895"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285895"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3c37ea34d3f64e3d787cfc2ba14a8102-1.png",
       "alt": "エンドグローペレパン",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3c37ea34d3f64e3d787cfc2ba14a8102-1.png",
-      "alt": "エンドグローペレパン",
-      "label": "エンドグローペレパングローSR-SS JAN: 4525807285901",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807285901"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr-ss",
+            "4525807285901"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/35c117ef814a4255495aa8ccad932b44.jpg",
-      "alt": "PaniCra / パニクラ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-list__photo "
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-list__item"
-        ],
-        [
-          "DIV",
-          "list-layout__item"
-        ]
-      ]
-    }
-  ],
-  "specifications": [],
-  "links": [
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi_panicra/#",
-      "label": "TROUT"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/",
-      "label": "NEW PRODUCTS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
-      "label": "LURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
-      "label": "LIST"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
-      "label": "SPOON"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
-      "label": "MINNOW"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
-      "label": "VIBRATION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
-      "label": "STREAM"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
-      "label": "C&R"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
-      "label": "AYU"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/set/",
-      "label": "SET"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
-      "label": "ROD"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
-      "label": "T-CONNECTION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
-      "label": "T-CONNECTION Comfy"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
-      "label": "T-CONNECTION STREAM"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
-      "label": "ACCESSORY"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
-      "label": "JACKALL WORKS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
-      "label": "TIMON APPAREL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
-      "label": "CASE / BAG"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
-      "label": "TOOL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
-      "label": "HOOK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/other/",
-      "label": "OTHER"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi_panicra/#link-feature",
-      "label": "FEATURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi_panicra/#link-spec",
-      "label": "SPEC"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/crank/chibi_panicra/#link-color",
-      "label": "COLOR"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/crank/kibipani/",
-      "label": "PREV"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/crank/micro-panicra/",
-      "label": "NEXT"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/crank/2026-02-26-8768/",
-      "label": "パニクラ SIZE 6COLOR 52 抜群の飛距離と、圧倒的な使いやすさ PaniCra / パニクラ"
+        "sharedEyeEvidence": false
+      }
     }
   ]
 }

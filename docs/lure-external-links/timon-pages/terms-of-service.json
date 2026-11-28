@@ -1,78 +1,9 @@
 {
   "url": "https://www.jackall.co.jp/terms-of-service/",
-  "checkedAt": "2026-11-28",
   "originType": "terms",
+  "checkedAt": "2026-11-28",
   "httpStatus": 200,
   "sha256": "7113e9f46b2414d4bb67d44ff5b46f7c82edddac197fafa642e55e562a2ba796",
-  "title": "サイトのご利用にあたって | JACKALL｜ジャッカル｜ルアー",
-  "heading": [
-    {
-      "text": "TERMS OF SERVICEサイトのご利用にあたって",
-      "name": "page-main__title"
-    },
-    {
-      "text": "個人情報の取扱いについて",
-      "name": "section-common__title"
-    },
-    {
-      "text": "著作権について",
-      "name": "section-common__title"
-    },
-    {
-      "text": "商標について",
-      "name": "section-common__title"
-    },
-    {
-      "text": "当サイトへのリンクについて",
-      "name": "section-common__title"
-    },
-    {
-      "text": "免責について",
-      "name": "section-common__title"
-    },
-    {
-      "text": "禁止行為について",
-      "name": "section-common__title"
-    },
-    {
-      "text": "セキュリティについて",
-      "name": "section-common__title"
-    },
-    {
-      "text": "当ウェブサイトの改善について",
-      "name": "section-common__title"
-    },
-    {
-      "text": "アクセスログ",
-      "name": "section-common__title"
-    },
-    {
-      "text": "Cookie（クッキー）",
-      "name": "section-common__title"
-    },
-    {
-      "text": "推奨環境について",
-      "name": "section-common__title"
-    },
-    {
-      "text": "Windows（7/8/10）をお使いの場合",
-      "name": "section-common__title"
-    },
-    {
-      "text": "Macintosh（Mac OS X 10.9以降）をお使いの場合",
-      "name": "section-common__title"
-    },
-    {
-      "text": "JavaScriptについて",
-      "name": "section-common__title"
-    },
-    {
-      "text": "準拠法、管轄裁判所について",
-      "name": "section-common__title"
-    }
-  ],
   "tables": [],
-  "images": [],
-  "specifications": [],
-  "links": []
+  "images": []
 }

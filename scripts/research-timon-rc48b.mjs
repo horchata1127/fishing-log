@@ -1,7 +1,9 @@
-import {readFile,writeFile} from 'node:fs/promises'
+import {mkdir,readFile,writeFile} from 'node:fs/promises'
 import {chromium} from 'playwright'
 const docs='docs/lure-external-links/'
-const file=docs+'TIMON_RETAILER_LISTINGS.json'
+const cache='.rc52c-timon.local/'
+await mkdir(cache,{recursive:true})
+const file=cache+'TIMON_RETAILER_LISTINGS.json'
 const saved=new Map(await readFile(file).then(JSON.parse).then(rows=>rows.map(r=>[r.url,r]),e=>{if(e.code==='ENOENT')return [];throw e}))
 const sources=JSON.parse(await readFile(docs+'SOURCE_PAGES.json'))
 const otsuka=[...new Set(sources.filter(r=>r.manufacturer==='TIMON'&&r.url.includes('fishing-otsuka.co.jp')).map(r=>r.url))]

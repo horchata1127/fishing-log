@@ -87,31 +87,16 @@ function matchingColor(row, photo, page) {
   return fold(official.name) === fold(catalog.name) &&
     !(official.code && catalog.code && Number(official.code) !== Number(catalog.code))
 }
-function cards(page) {
-  const photos = new Map()
-  for (const image of page.images ?? []) {
-    if (image.group !== 'product-color-list__item' || !image.alt.trim()) continue
-    const key = JSON.stringify([image.alt,image.url])
-    if (!photos.has(key) || photos.get(key).label.length < image.label.length) photos.set(key,image)
-  }
-  return [...photos.values()]
-}
-const cardSets = new Map(cachedPages.map(page=>[page.url,cards(page)]))
 function getSku(card, model, context) {
-  const suffix = card.label.startsWith(card.alt) ? card.label.slice(card.alt.length).normalize('NFKC') : ''
-  const all = [...suffix.matchAll(/JAN\s*:\s*(\d{13})(?!\d)/gi)].map(match=>match[1])
-  if (!context.sharedPage) return { identified: true, jan: all.length===1 ? all[0] : undefined, sharedImage:false }
+  const { jans, weightJans, modelJans, sharedEyeEvidence } = card.sku
+  if (!context.sharedPage) return { identified:true, jan:jans.length===1 ? jans[0] : undefined, sharedImage:false }
   if (context.weightBased) {
-    const weights = [...suffix.matchAll(/(\d+(?:\.\d+)?)\s*g\s*JAN\s*:\s*(\d{13})(?!\d)/gi)]
-    const exact = weights.filter(match=>Number(match[1])===model.weightG)
-    return { identified: exact.length===1, jan:exact[0]?.[2], sharedImage:all.length>1 || weights.length>1 }
+    const exact = weightJans.filter(([weight])=>weight===model.weightG)
+    return { identified:exact.length===1, jan:exact[0]?.[1], sharedImage:jans.length>1 || weightJans.length>1 }
   }
   if (!context.marker) return { identified:false }
-  const marker = fold(context.marker).replace(/[.*+?^$\{\}()|[\]\\]/g,'\\$&')
-  const caption = suffix.toLowerCase().replace(/[‐‑–—−ｰ]/g, '-')
-  const pattern = '(?<![a-z0-9-])'+marker+/\s*jan\s*:\s*(\d{13})(?!\d)/.source
-  const variants = [...caption.matchAll(new RegExp(pattern,'g'))]
-  return { identified:variants.length===1,jan:variants[0]?.[1],sharedImage:all.length>1 || /(?:SR|MR|DR).{0,5}JAN/i.test(suffix.replace(/JAN\s*:\s*\d{13}.*$/i,'')) && /目玉/.test(suffix) }
+  const variants = modelJans.filter(([marker])=>marker===fold(context.marker))
+  return { identified:variants.length===1, jan:variants[0]?.[1], sharedImage:jans.length>1 || sharedEyeEvidence }
 }
 function imageEvidence(card, sku, context) {
   const image = new URL(card.url)
@@ -143,20 +128,20 @@ for (const model of models) {
       reviewedRows.push({...base,productStatus:'held',reason:context.reason})
       continue
     }
-    const matching = cardSets.get(page.url).filter(card=>matchingColor(variant, card, page))
+    const matching = (page.images ?? []).filter(card=>matchingColor(variant, card, page))
     const skuMatches = matching.map(card=>({card,sku:getSku(card,model,context)})).filter(x=>x.sku.identified)
     const filtered = skuMatches.filter(({sku})=>!base.catalogJan || sku.jan===base.catalogJan)
     const sameJan = filtered.length > 1 && !!filtered[0].sku.jan && filtered.every(({sku})=>sku.jan===filtered[0].sku.jan)
     if (filtered.length!==1 && !sameJan) {
       reviewedRows.push({...base,productStatus:'held',reason:!matching.length?'official-color-name-or-code-not-exact':
         !skuMatches.length?'official-color-variant-not-explicit':!filtered.length?'official-jan-missing-or-conflicting':'ambiguous-official-gallery-entry',
-        colorCandidates:matching.map(({alt,label})=>({alt,label})), productCandidateKind:context.sharedPage?'shared-model-color-list':'model-color-list'})
+        colorCandidates:matching.map(({alt,sku})=>({alt,sku})), productCandidateKind:context.sharedPage?'shared-model-color-list':'model-color-list'})
       continue
     }
     const {card,sku}=filtered[0]
     reviewedRows.push({...base,officialSpecs,productStatus:'verified-activation-held',reason:'product-page-link-permission-not-obtained',
       productCandidateKind:context.sharedPage?'shared-model-color-list':'model-color-list',
-      officialColor:card.alt,officialJan:sku.jan,colorVariantEvidence:card.label,
+      officialColor:card.alt,officialJan:sku.jan,colorVariantEvidence:card.sku,
       image:sameJan ? { status:'held-ambiguous-gallery-image',
         candidateUrls:[...new Set(filtered.map(({card})=>card.url))],
         conditionsEvidence:termsUrl } : imageEvidence(card,sku,context)})

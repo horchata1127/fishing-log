@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto'
 import { chromium } from 'playwright'
 
 const docs = 'docs/lure-external-links/'
-const cache = docs + 'timon-pages/'
+const cache = '.rc52c-timon.local/timon-pages/'
 const origin = 'https://www.jackall.co.jp'
 const checkedAt = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Tokyo' }).format(new Date())
 const officialProduct = url => url.origin === origin && /^\/timon\/products\/lure\/[^/]+\/[^/]+\/$/.test(url.pathname)

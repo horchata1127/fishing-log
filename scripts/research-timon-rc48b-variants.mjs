@@ -1,6 +1,8 @@
 import {chromium} from 'playwright'
-import {readFile,writeFile} from 'node:fs/promises'
-const file='docs/lure-external-links/TIMON_RETAILER_VARIANT_PAGES.json'
+import {mkdir,readFile,writeFile} from 'node:fs/promises'
+const cache='.rc52c-timon.local/'
+await mkdir(cache,{recursive:true})
+const file=cache+'TIMON_RETAILER_VARIANT_PAGES.json'
 const checkedAt=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Tokyo'}).format(new Date())
 const rows=await readFile(file).then(JSON.parse,e=>{if(e.code==='ENOENT')return [];throw e})
 const saved=new Map(rows.map(r=>[r.url,r]))

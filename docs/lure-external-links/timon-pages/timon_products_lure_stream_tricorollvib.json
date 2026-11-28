@@ -1,1163 +1,163 @@
 {
   "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricorollvib/",
-  "checkedAt": "2026-11-28",
   "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
   "httpStatus": 200,
   "sha256": "634d3d3746fc9a25115b9c828c6d880819713e2b0fd36659d0f896ecbe225dfa",
-  "title": "Tricoroll VIB / トリコロールバイブ - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
-  "heading": [
-    {
-      "text": "Tricoroll VIB / トリコロールバイブ トリコロールバイブ",
-      "name": "page-main__title font-jp"
-    },
-    {
-      "text": "深淵を跳ねる。",
-      "name": "title-main  black"
-    },
-    {
-      "text": "ボトムのリフト&フォール",
-      "name": "title"
-    },
-    {
-      "text": "ビスマス製O.M.S.",
-      "name": "title"
-    },
-    {
-      "text": "ミノーで攻めきれない領域へのアプローチ",
-      "name": "title"
-    },
-    {
-      "text": "2サイズラインナップ",
-      "name": "title"
-    },
-    {
-      "text": "FEATURE",
-      "name": "title-secondary"
-    },
-    {
-      "text": "破損防止バンパーと８カン",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "視認性の高いカラーラインナップ",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "SPEC",
-      "name": "title-secondary"
-    },
-    {
-      "text": "COLOR CHART",
-      "name": "title-secondary"
-    },
-    {
-      "text": "RELATED CONTENTS",
-      "name": "title-primary"
-    },
-    {
-      "text": "JACKALL STATION",
-      "name": "title-secondary"
-    },
-    {
-      "text": "【TIMON 渓流】深淵を、跳ねる。“トリコロールバイブ″ PV / 中村行雄",
-      "name": ""
-    }
-  ],
   "tables": [
     {
-      "name": "",
       "rows": [
         [
           "Name",
           "Weight",
           "Type",
-          "Length",
-          "Hook Size",
-          "Ring Size",
-          "Price"
+          "Length"
         ],
         [
           "Tricoroll VIB 50",
           "6.2g",
           "Sinking",
-          "50mm",
-          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL#14",
-          "#1",
-          "¥1,518"
+          "50mm"
         ],
         [
           "Tricoroll VIB 60",
           "8.2g",
           "Sinking",
-          "60mm",
-          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL#12",
-          "#2",
-          "¥1,518"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "Tricoroll VIB 50"
-        ],
-        [
-          "Weight",
-          "6.2g"
-        ],
-        [
-          "Type",
-          "Sinking"
-        ],
-        [
-          "Length",
-          "50mm"
-        ],
-        [
-          "Hook Size",
-          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL#14"
-        ],
-        [
-          "Ring Size",
-          "#1"
-        ],
-        [
-          "Price",
-          "¥1,518"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "Tricoroll VIB 60"
-        ],
-        [
-          "Weight",
-          "8.2g"
-        ],
-        [
-          "Type",
-          "Sinking"
-        ],
-        [
-          "Length",
           "60mm"
-        ],
-        [
-          "Hook Size",
-          "ﾄﾗｳﾃｨﾝﾄﾚﾌﾞﾙBL#12"
-        ],
-        [
-          "Ring Size",
-          "#2"
-        ],
-        [
-          "Price",
-          "¥1,518"
         ]
       ]
     }
   ],
   "images": [
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_PC_TricorollVIB_TOP.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_SP_TricorollVIB_TOP.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_PC_TricorollVIB_01.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_SP_TricorollVIB_01.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_PC_TricorollVIB_02.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_SP_TricorollVIB_02.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_PC_TricorollVIB03_02.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_SP_TricorollVIB03_02.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_PC_TricorollVIB04.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/WEB_SP_TricorollVIB_03re.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/VIB_future01.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "破損防止バンパーと８カン ボトム攻略によりABSボディー保護のための損傷を抑える破損防止用バンパーと８カン。",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/01/VIB_future02.jpg",
-      "alt": "トリコロールバイブ Tricoroll VIB / トリコロールバイブ",
-      "label": "視認性の高いカラーラインナップ ボトムを攻略することを前提に設計されたため、視認性に優れたカラーを多くラインナップ。 数多くのテストから導き出されたカラーを厳選いたしました。",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5b64c698ee1565a57c8e8b2ed57af77e.png",
       "alt": "ｶｷﾞﾛｲｱﾕ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5b64c698ee1565a57c8e8b2ed57af77e.png",
-      "alt": "ｶｷﾞﾛｲｱﾕ",
-      "label": "ｶｷﾞﾛｲｱﾕﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ50 JAN: 4525807302455 ﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ60 JAN: 4525807302479",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807302455",
+          "4525807302479"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2a96487762d2e7bcd930b44aa0d9a596.png",
       "alt": "米代ﾏﾙﾁﾌﾞﾗｯｸ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2a96487762d2e7bcd930b44aa0d9a596.png",
-      "alt": "米代ﾏﾙﾁﾌﾞﾗｯｸ",
-      "label": "米代ﾏﾙﾁﾌﾞﾗｯｸﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ50 JAN: 4525807302448 ﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ60 JAN: 4525807302462",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807302448",
+          "4525807302462"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1b145546e9c3b0dc014f5895d67cb0e9.png",
       "alt": "金ｱﾕ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1b145546e9c3b0dc014f5895d67cb0e9.png",
-      "alt": "金ｱﾕ",
-      "label": "金ｱﾕﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ50 JAN: 4525807224283 ﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ60 JAN: 4525807224368",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807224283",
+          "4525807224368"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/99868f74e73f09af5f0550f4426f2b85.png",
       "alt": "ﾗｲﾑﾔﾏﾒ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/99868f74e73f09af5f0550f4426f2b85.png",
-      "alt": "ﾗｲﾑﾔﾏﾒ",
-      "label": "ﾗｲﾑﾔﾏﾒﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ50 JAN: 4525807224290 ﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ60 JAN: 4525807224375",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807224290",
+          "4525807224375"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/90e9110ce4e49625319dde20ec400a60.png",
       "alt": "信州雪代ﾋﾟﾝｸ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/90e9110ce4e49625319dde20ec400a60.png",
-      "alt": "信州雪代ﾋﾟﾝｸ",
-      "label": "信州雪代ﾋﾟﾝｸﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ50 JAN: 4525807224306 ﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ60 JAN: 4525807224382",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807224306",
+          "4525807224382"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a3c8c5cb844d1d5c9f004ef5b2b518a1.png",
       "alt": "ﾈｲﾃｨﾌﾞﾔﾏﾒ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a3c8c5cb844d1d5c9f004ef5b2b518a1.png",
-      "alt": "ﾈｲﾃｨﾌﾞﾔﾏﾒ",
-      "label": "ﾈｲﾃｨﾌﾞﾔﾏﾒﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ50 JAN: 4525807224276 ﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ60 JAN: 4525807224351",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807224276",
+          "4525807224351"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/afcebd3cd96e7c4d1905f1fa7102914c.png",
       "alt": "奥飛騨ﾏｽﾞﾒﾁｬｰﾄ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/afcebd3cd96e7c4d1905f1fa7102914c.png",
-      "alt": "奥飛騨ﾏｽﾞﾒﾁｬｰﾄ",
-      "label": "奥飛騨ﾏｽﾞﾒﾁｬｰﾄﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ50 JAN: 4525807224320 ﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ60 JAN: 4525807224405",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807224320",
+          "4525807224405"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f13c744cb18420532def3ec1b9bbe04a.png",
       "alt": "ﾌﾗｯｼｭｻｲﾄﾋﾟﾝｸ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f13c744cb18420532def3ec1b9bbe04a.png",
-      "alt": "ﾌﾗｯｼｭｻｲﾄﾋﾟﾝｸ",
-      "label": "ﾌﾗｯｼｭｻｲﾄﾋﾟﾝｸﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ50 JAN: 4525807224337 ﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ60 JAN: 4525807224412",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807224337",
+          "4525807224412"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4f44cdfc31c01a265873b4692e86c758.png",
       "alt": "ｱｯﾌﾟﾙﾁｬｰﾄ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4f44cdfc31c01a265873b4692e86c758.png",
-      "alt": "ｱｯﾌﾟﾙﾁｬｰﾄ",
-      "label": "ｱｯﾌﾟﾙﾁｬｰﾄﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ50 JAN: 4525807224344 ﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ60 JAN: 4525807224429",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807224344",
+          "4525807224429"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ac27d11f0895d4af2397de94f773e593.png",
       "alt": "錦鮎",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ac27d11f0895d4af2397de94f773e593.png",
-      "alt": "錦鮎",
-      "label": "錦鮎ﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ50 JAN: 4525807224313 ﾄﾘｺﾛｰﾙﾊﾞｲﾌﾞ60 JAN: 4525807224399",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807224313",
+          "4525807224399"
         ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    }
-  ],
-  "specifications": [],
-  "links": [
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricorollvib/#",
-      "label": "TROUT"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/",
-      "label": "NEW PRODUCTS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
-      "label": "LURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
-      "label": "CRANK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
-      "label": "SPOON"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
-      "label": "MINNOW"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
-      "label": "VIBRATION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
-      "label": "LIST"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
-      "label": "C&R"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
-      "label": "AYU"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/set/",
-      "label": "SET"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
-      "label": "ROD"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
-      "label": "T-CONNECTION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
-      "label": "T-CONNECTION Comfy"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
-      "label": "T-CONNECTION STREAM"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
-      "label": "ACCESSORY"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
-      "label": "JACKALL WORKS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
-      "label": "TIMON APPAREL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
-      "label": "CASE / BAG"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
-      "label": "TOOL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
-      "label": "HOOK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/other/",
-      "label": "OTHER"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricorollvib/#link-feature",
-      "label": "FEATURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricorollvib/#link-spec",
-      "label": "SPEC"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricorollvib/#link-color",
-      "label": "COLOR"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-gt/",
-      "label": "PREV"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-mai/",
-      "label": "NEXT"
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     }
   ]
 }

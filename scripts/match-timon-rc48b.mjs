@@ -168,7 +168,7 @@ for(const page of variantPages){
          const [header,...cells]=table
          if(!header[0].includes('カラー'))return []
          const c=header.findIndex((name,i)=>i>0&&slug(name)===slug(subtype))
-         return c<1?[]:cells.filter(line=>/円|売り切れ|完売/.test(line[c]??'')).map(line=>line[0])
+         return c<1?[]:cells.filter(line=>line[c]===true).map(line=>line[0])
        })
      }else{
        if(!retailerLabels(row).includes(name))continue

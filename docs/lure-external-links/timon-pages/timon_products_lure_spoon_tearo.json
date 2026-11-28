@@ -1,2591 +1,912 @@
 {
   "url": "https://www.jackall.co.jp/timon/products/lure/spoon/tearo/",
-  "checkedAt": "2026-11-28",
   "originType": "rc47-identifier",
+  "checkedAt": "2026-11-28",
   "httpStatus": 200,
   "sha256": "8a4b6e5a9a48ddaab90b40d88108c520451b6c3b904a2e512a85fbacbfe10c6f",
-  "title": "Tearo / ティアロ - TIMON 鱒・トラウト釣り｜JACKALL｜ジャッカル｜ルアー",
-  "heading": [
-    {
-      "text": "Tearo / ティアロ ティアロ",
-      "name": "page-main__title font-jp"
-    },
-    {
-      "text": "変わらないスタンダード。",
-      "name": "title-main  black"
-    },
-    {
-      "text": "ベーシックなスプーン",
-      "name": "title"
-    },
-    {
-      "text": "2サイズラインナップ",
-      "name": "title"
-    },
-    {
-      "text": "FEATURE",
-      "name": "title-secondary"
-    },
-    {
-      "text": "ダイゴマシマシウズラ",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "ゲンコツヤジーマイト",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "カドキンファースト",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "イトカツグリメタPRG",
-      "name": "desc-content__title"
-    },
-    {
-      "text": "SPEC",
-      "name": "title-secondary"
-    },
-    {
-      "text": "COLOR CHART",
-      "name": "title-secondary"
-    },
-    {
-      "text": "RELATED CONTENTS",
-      "name": "title-primary"
-    },
-    {
-      "text": "PRODUCTS",
-      "name": "title-secondary"
-    },
-    {
-      "text": "イーフック、イーフックフトジク",
-      "name": "product-list__title--main font-jp"
-    },
-    {
-      "text": "JACKALL STATION",
-      "name": "title-secondary"
-    },
-    {
-      "text": "【TIMON】初心者必見！エリアトラウトの基本 “ティアロ″ の使い方 / 杉山代悟",
-      "name": ""
-    },
-    {
-      "text": "COLUMN",
-      "name": "title-secondary"
-    },
-    {
-      "text": "2021NEWカラーを解説/ティアロ",
-      "name": ""
-    }
-  ],
   "tables": [
     {
-      "name": "",
       "rows": [
         [
           "Name",
           "Weight",
-          "Length",
-          "Hook Size",
-          "Ring Size",
-          "Price"
+          "Length"
         ],
         [
           "Tearo",
           "1.3g/1.6g/1.9g/",
-          "22mm",
-          "e-hook #8",
-          "#1",
-          "¥550"
-        ]
-      ]
-    },
-    {
-      "name": "",
-      "rows": [
-        [
-          "Name",
-          "Tearo"
-        ],
-        [
-          "Weight",
-          "1.3g/1.6g/1.9g/"
-        ],
-        [
-          "Length",
           "22mm"
-        ],
-        [
-          "Hook Size",
-          "e-hook #8"
-        ],
-        [
-          "Ring Size",
-          "#1"
-        ],
-        [
-          "Price",
-          "¥550"
         ]
       ]
     }
   ],
   "images": [
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/11/WEB_PC_Tearo.jpg",
-      "alt": "ティアロ Tearo / ティアロ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/11/WEB_SP_Tearo.jpg",
-      "alt": "ティアロ Tearo / ティアロ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "photo-main"
-        ],
-        [
-          "DIV",
-          "product-main-image"
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ],
-        [
-          "DIV",
-          "page-contents page-contents--products layout-product-v2 "
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/11/WEB_PC_Tearo_01.jpg",
-      "alt": "ティアロ Tearo / ティアロ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/11/WEB_SP_Tearo_01.jpg",
-      "alt": "ティアロ Tearo / ティアロ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/11/WEB_PC_Tearo_02.jpg",
-      "alt": "ティアロ Tearo / ティアロ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo sp_none"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/11/WEB_SP_Tearo_02.jpg",
-      "alt": "ティアロ Tearo / ティアロ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo none sp_block"
-        ],
-        [
-          "DIV",
-          "images"
-        ],
-        [
-          "DIV",
-          "section product-concept__item "
-        ],
-        [
-          "DIV",
-          "product-concept__items"
-        ],
-        [
-          "DIV",
-          "product-concept products-section"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/9dbc9a217ea9d61be80615c4501c91d2.png",
-      "alt": "ティアロ Tearo / ティアロ",
-      "label": "ダイゴマシマシウズラ 東山湖の12月に入ってから赤茶色に水色が変色し始めた頃から効き始めるカラー。裏のゴールドを強くし過ぎないように白の飛ばしを加え表のグローも濃くしていますが、グローのみだと強すぎる",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2687dbd1ee88de1d9b483dd89744783c.png",
-      "alt": "ティアロ Tearo / ティアロ",
-      "label": "ゲンコツヤジーマイト クリアーからステインウォーターでの使用を想定したカラー。その日の放流された魚が釣られ一旦活性が下がり派手なカラーを嫌う時に威力を発揮するセカンドカラー。あくまでも活性の残っている",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b731c95a6768bd7ad7166e6440cced63.png",
-      "alt": "ティアロ Tearo / ティアロ",
-      "label": "カドキンファースト クリアポンドからマッディーポンドまで水質を選ばず使用可能。放流直後のファーストカラーとして使用してもらいたいカラー。 表はアピール力ある色合わせで高活性の放流魚にスプーンの存在を気",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/20e3574ac667e7a1e0bccf40e57cb116.png",
-      "alt": "ティアロ Tearo / ティアロ",
-      "label": "イトカツグリメタPRG ステインからマッディーポンドで朝一の前日放流の残りや朝の活性が良いタイミングで使用。また、クリアウォーターでは天候が曇りなどローライトなタイミングで使用。",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-photos__item"
-        ],
-        [
-          "DIV",
-          "product-photos"
-        ],
-        [
-          "DIV",
-          "product-feature products-section content-common-products "
-        ],
-        [
-          "SECTION",
-          "page-contents-main"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/9dbc9a217ea9d61be80615c4501c91d2.png",
       "alt": "ダイゴマシマシウズラ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/9dbc9a217ea9d61be80615c4501c91d2.png",
-      "alt": "ダイゴマシマシウズラ",
-      "label": "ダイゴマシマシウズラ1.3g JAN:4525807264210 1.6g JAN:4525807264258 1.9g JAN:4525807264296",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807264210",
+          "4525807264258",
+          "4525807264296"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807264210"
+          ],
+          [
+            1.6,
+            "4525807264258"
+          ],
+          [
+            1.9,
+            "4525807264296"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2687dbd1ee88de1d9b483dd89744783c.png",
       "alt": "ゲンコツヤジーマイト",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2687dbd1ee88de1d9b483dd89744783c.png",
-      "alt": "ゲンコツヤジーマイト",
-      "label": "ゲンコツヤジーマイト1.3g JAN:4525807264227 1.6g JAN:4525807264265 1.9g JAN:4525807264302",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807264227",
+          "4525807264265",
+          "4525807264302"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807264227"
+          ],
+          [
+            1.6,
+            "4525807264265"
+          ],
+          [
+            1.9,
+            "4525807264302"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b731c95a6768bd7ad7166e6440cced63.png",
       "alt": "カドキンファースト",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b731c95a6768bd7ad7166e6440cced63.png",
-      "alt": "カドキンファースト",
-      "label": "カドキンファースト1.3g JAN:4525807264234 1.6g JAN:4525807264272 1.9g JAN:4525807264319",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807264234",
+          "4525807264272",
+          "4525807264319"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807264234"
+          ],
+          [
+            1.6,
+            "4525807264272"
+          ],
+          [
+            1.9,
+            "4525807264319"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/20e3574ac667e7a1e0bccf40e57cb116.png",
       "alt": "イトカツグリメタPRG",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/20e3574ac667e7a1e0bccf40e57cb116.png",
-      "alt": "イトカツグリメタPRG",
-      "label": "イトカツグリメタPRG1.3g JAN:4525807264241 1.6g JAN:4525807264289 1.9g JAN:4525807264326",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807264241",
+          "4525807264289",
+          "4525807264326"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807264241"
+          ],
+          [
+            1.6,
+            "4525807264289"
+          ],
+          [
+            1.9,
+            "4525807264326"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3472f37eb3748bd979c1883b1f9038c7.png",
       "alt": "クリスタルヤマメ（UV）",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3472f37eb3748bd979c1883b1f9038c7.png",
-      "alt": "クリスタルヤマメ（UV）",
-      "label": "クリスタルヤマメ（UV）1.3g JAN:4525807227055 1.6g JAN:4525807227093 1.9g JAN:4525807227550",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807227055",
+          "4525807227093",
+          "4525807227550"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807227055"
+          ],
+          [
+            1.6,
+            "4525807227093"
+          ],
+          [
+            1.9,
+            "4525807227550"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/eec25b5df8a1072b037322857cdf2a08.png",
       "alt": "ヤジーシルホワUV（UV)",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/eec25b5df8a1072b037322857cdf2a08.png",
-      "alt": "ヤジーシルホワUV（UV)",
-      "label": "ヤジーシルホワUV（UV)1.3g JAN:4525807227086 1.6g JAN:4525807227123 1.9g JAN:4525807227581",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807227086",
+          "4525807227123",
+          "4525807227581"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807227086"
+          ],
+          [
+            1.6,
+            "4525807227123"
+          ],
+          [
+            1.9,
+            "4525807227581"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4662171111ad1e11c26f25aead02aff5.png",
       "alt": "Ueフラッペ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4662171111ad1e11c26f25aead02aff5.png",
-      "alt": "Ueフラッペ",
-      "label": "Ueフラッペ1.3g JAN:4525807227062 1.6g JAN:4525807227109 1.9g JAN:4525807227567",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807227062",
+          "4525807227109",
+          "4525807227567"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807227062"
+          ],
+          [
+            1.6,
+            "4525807227109"
+          ],
+          [
+            1.9,
+            "4525807227567"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f5b0b92db164a0cdcfd8a58b8646ca09.png",
       "alt": "イトカツオリーブYG",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f5b0b92db164a0cdcfd8a58b8646ca09.png",
-      "alt": "イトカツオリーブYG",
-      "label": "イトカツオリーブYG1.3g JAN:4525807227079 1.6g JAN:4525807227116 1.9g JAN:4525807227574",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807227079",
+          "4525807227116",
+          "4525807227574"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807227079"
+          ],
+          [
+            1.6,
+            "4525807227116"
+          ],
+          [
+            1.9,
+            "4525807227574"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4b81d1768e66e4ddc24c80bee35f7ed4.png",
       "alt": "ダイゴグリーンボー（グロー）",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4b81d1768e66e4ddc24c80bee35f7ed4.png",
-      "alt": "ダイゴグリーンボー（グロー）",
-      "label": "ダイゴグリーンボー（グロー）1.3g JAN:4525807203462 1.6g JAN:4525807203486 1.9g JAN:4525807189858",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807203462",
+          "4525807203486",
+          "4525807189858"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807203462"
+          ],
+          [
+            1.6,
+            "4525807203486"
+          ],
+          [
+            1.9,
+            "4525807189858"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ea48213704d4895292c99e6c70ffd84a.png",
       "alt": "ヤジーセカンドゴールド",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ea48213704d4895292c99e6c70ffd84a.png",
-      "alt": "ヤジーセカンドゴールド",
-      "label": "ヤジーセカンドゴールド1.3g JAN:4525807203479 1.6g JAN:4525807203493 1.9g JAN:4525807189865",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807203479",
+          "4525807203493",
+          "4525807189865"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807203479"
+          ],
+          [
+            1.6,
+            "4525807203493"
+          ],
+          [
+            1.9,
+            "4525807189865"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ca22b95b3655b6d9e89ab4b6f1a6b3d2.png",
       "alt": "蛍光ピンク（UV)",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ca22b95b3655b6d9e89ab4b6f1a6b3d2.png",
-      "alt": "蛍光ピンク（UV)",
-      "label": "蛍光ピンク（UV)1.3g JAN:4525807169133 1.6g JAN:4525807169195 1.9g JAN:4525807189780",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807169133",
+          "4525807169195",
+          "4525807189780"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807169133"
+          ],
+          [
+            1.6,
+            "4525807169195"
+          ],
+          [
+            1.9,
+            "4525807189780"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7c264c2a5c8f227defed4e3355059369.png",
       "alt": "ダイゴシークレットゴールド",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7c264c2a5c8f227defed4e3355059369.png",
-      "alt": "ダイゴシークレットゴールド",
-      "label": "ダイゴシークレットゴールド1.3g JAN:4525807169140 1.6g JAN:4525807169201 1.9g JAN:4525807189810",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807169140",
+          "4525807169201",
+          "4525807189810"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807169140"
+          ],
+          [
+            1.6,
+            "4525807169201"
+          ],
+          [
+            1.9,
+            "4525807189810"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/d72b9e0675afb63a5295531b5f5b4e69.png",
       "alt": "ダイゴシークレットグリーン",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/d72b9e0675afb63a5295531b5f5b4e69.png",
-      "alt": "ダイゴシークレットグリーン",
-      "label": "ダイゴシークレットグリーン1.3g JAN:4525807169157 1.6g JAN:4525807169218 1.9g JAN:4525807189827",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807169157",
+          "4525807169218",
+          "4525807189827"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807169157"
+          ],
+          [
+            1.6,
+            "4525807169218"
+          ],
+          [
+            1.9,
+            "4525807189827"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c572da102e584ad26507ab96417d9891.png",
       "alt": "ダイゴシークレットブルー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c572da102e584ad26507ab96417d9891.png",
-      "alt": "ダイゴシークレットブルー",
-      "label": "ダイゴシークレットブルー1.9g JAN:4525807189834",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807189834"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.9,
+            "4525807189834"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2198e74597325c9c0f446bf6523a586e.png",
       "alt": "ダイゴシークレットグロー（グロー）",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2198e74597325c9c0f446bf6523a586e.png",
-      "alt": "ダイゴシークレットグロー（グロー）",
-      "label": "ダイゴシークレットグロー（グロー）1.3g JAN:4525807169171 1.6g JAN:4525807169232",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807169171",
+          "4525807169232"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807169171"
+          ],
+          [
+            1.6,
+            "4525807169232"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8f00179082bba79d4e3c142bdea8de6d.png",
       "alt": "グレーアッシュ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8f00179082bba79d4e3c142bdea8de6d.png",
-      "alt": "グレーアッシュ",
-      "label": "グレーアッシュ1.3g JAN:4525807169188 1.6g JAN:4525807169249 1.9g JAN:4525807189841",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4525807169188",
+          "4525807169249",
+          "4525807189841"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4525807169188"
+          ],
+          [
+            1.6,
+            "4525807169249"
+          ],
+          [
+            1.9,
+            "4525807189841"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5dd7eff5cff46a1f23d716b5ce0bd233.png",
       "alt": "ワサビ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5dd7eff5cff46a1f23d716b5ce0bd233.png",
-      "alt": "ワサビ",
-      "label": "ワサビ1.6g JAN:4582418089014",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418089014"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.6,
+            "4582418089014"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/bdffa09eefbfa30453932b4a81baf1ce.png",
       "alt": "ケイコウイエロー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/bdffa09eefbfa30453932b4a81baf1ce.png",
-      "alt": "ケイコウイエロー",
-      "label": "ケイコウイエロー1.6g JAN:4582418089052",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418089052"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.6,
+            "4582418089052"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/596064044cc92b98d9569b53d23db40c.png",
       "alt": "エンドクロチャー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/596064044cc92b98d9569b53d23db40c.png",
-      "alt": "エンドクロチャー",
-      "label": "エンドクロチャー1.3g JAN:4582418086112 1.6g JAN:4582418086174",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418086112",
+          "4582418086174"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4582418086112"
+          ],
+          [
+            1.6,
+            "4582418086174"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/995ec5704156b0ed93aade141f6533c2.png",
       "alt": "ダイゴマイトⅡ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/995ec5704156b0ed93aade141f6533c2.png",
-      "alt": "ダイゴマイトⅡ",
-      "label": "ダイゴマイトⅡ1.3g JAN:4560212126937 1.6g JAN:4560212126944",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212126937",
+          "4560212126944"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4560212126937"
+          ],
+          [
+            1.6,
+            "4560212126944"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ee5cf86834f73da0fbe5a0a0934ac32d.png",
       "alt": "クレイジーパープル",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ee5cf86834f73da0fbe5a0a0934ac32d.png",
-      "alt": "クレイジーパープル",
-      "label": "クレイジーパープル1.3g JAN:4582418091703 1.6g JAN:4582418091765 1.9g JAN:4582418091529",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418091703",
+          "4582418091765",
+          "4582418091529"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4582418091703"
+          ],
+          [
+            1.6,
+            "4582418091765"
+          ],
+          [
+            1.9,
+            "4582418091529"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/53868b6ff93226340e45999481393bbc.png",
       "alt": "ダイゴミクス",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/53868b6ff93226340e45999481393bbc.png",
-      "alt": "ダイゴミクス",
-      "label": "ダイゴミクス1.3g JAN:4582418091710 1.6g JAN:4582418091772 1.9g JAN:4582418091536",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418091710",
+          "4582418091772",
+          "4582418091536"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4582418091710"
+          ],
+          [
+            1.6,
+            "4582418091772"
+          ],
+          [
+            1.9,
+            "4582418091536"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6def549943f298786636841b4fcf2fd1.png",
       "alt": "マサのドクリンゴ（グロー）",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6def549943f298786636841b4fcf2fd1.png",
-      "alt": "マサのドクリンゴ（グロー）",
-      "label": "マサのドクリンゴ（グロー）1.3g JAN:4582418086075 1.6g JAN:4582418086136 1.9g JAN:4582418086198",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418086075",
+          "4582418086136",
+          "4582418086198"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4582418086075"
+          ],
+          [
+            1.6,
+            "4582418086136"
+          ],
+          [
+            1.9,
+            "4582418086198"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3ab4d1ee7eb388c1dda22172f960e394.png",
       "alt": "ダイゴマイトマッディー（グロー）",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3ab4d1ee7eb388c1dda22172f960e394.png",
-      "alt": "ダイゴマイトマッディー（グロー）",
-      "label": "ダイゴマイトマッディー（グロー）1.3g JAN:4582418086105 1.6g JAN:4582418086167 1.9g JAN:4582418086228",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418086105",
+          "4582418086167",
+          "4582418086228"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4582418086105"
+          ],
+          [
+            1.6,
+            "4582418086167"
+          ],
+          [
+            1.9,
+            "4582418086228"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/edb9dec0b6bf07799079884e0b2dcff1.png",
       "alt": "エンドブラスター",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/edb9dec0b6bf07799079884e0b2dcff1.png",
-      "alt": "エンドブラスター",
-      "label": "エンドブラスター1.3g JAN:4582418082275 1.6g JAN:4582418082336",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4582418082275",
+          "4582418082336"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4582418082275"
+          ],
+          [
+            1.6,
+            "4582418082336"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/cb8af4d0f603c07fb7ecd7215b6bd199.png",
       "alt": "赤金ヤマメ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/cb8af4d0f603c07fb7ecd7215b6bd199.png",
-      "alt": "赤金ヤマメ",
-      "label": "赤金ヤマメ1.3g JAN:4560212111964 1.6g JAN:4560212112183",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212111964",
+          "4560212112183"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4560212111964"
+          ],
+          [
+            1.6,
+            "4560212112183"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/edb24ecbe22c8398a0066871eac9d9e0.png",
       "alt": "グリーンヤマメ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/edb24ecbe22c8398a0066871eac9d9e0.png",
-      "alt": "グリーンヤマメ",
-      "label": "グリーンヤマメ1.3g JAN:4560212111988 1.6g JAN:4560212112206 1.9g JAN:4560212120188",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212111988",
+          "4560212112206",
+          "4560212120188"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4560212111988"
+          ],
+          [
+            1.6,
+            "4560212112206"
+          ],
+          [
+            1.9,
+            "4560212120188"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2815cfbb55ecde4154c145c956cbb58f.png",
       "alt": "ダークブラウン",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2815cfbb55ecde4154c145c956cbb58f.png",
-      "alt": "ダークブラウン",
-      "label": "ダークブラウン1.3g JAN:4560212113999 1.6g JAN:4560212114071 1.9g JAN:4525807189797",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212113999",
+          "4560212114071",
+          "4525807189797"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4560212113999"
+          ],
+          [
+            1.6,
+            "4560212114071"
+          ],
+          [
+            1.9,
+            "4525807189797"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f8dc52764d76d926b8bc0a5f6cebd8a8.png",
       "alt": "オリーブ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f8dc52764d76d926b8bc0a5f6cebd8a8.png",
-      "alt": "オリーブ",
-      "label": "オリーブ1.3g JAN:4560212114019 1.6g JAN:4560212114095",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212114019",
+          "4560212114095"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4560212114019"
+          ],
+          [
+            1.6,
+            "4560212114095"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6c2a3b1e91203627b2d03e351d86f102.png",
       "alt": "からし",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6c2a3b1e91203627b2d03e351d86f102.png",
-      "alt": "からし",
-      "label": "からし1.3g JAN:4560212114057 1.6g JAN:4560212114132 1.9g JAN:4525807189803",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212114057",
+          "4560212114132",
+          "4525807189803"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4560212114057"
+          ],
+          [
+            1.6,
+            "4560212114132"
+          ],
+          [
+            1.9,
+            "4525807189803"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/921b801246f889f69cfee606c605a564.png",
       "alt": "ゴールド",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/921b801246f889f69cfee606c605a564.png",
-      "alt": "ゴールド",
-      "label": "ゴールド1.3g JAN:4560212116730 1.6g JAN:456021211675",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212116730"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4560212116730"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c57665b3d42481a9cb8e59020a537173.png",
       "alt": "ブルーヤマメ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c57665b3d42481a9cb8e59020a537173.png",
-      "alt": "ブルーヤマメ",
-      "label": "ブルーヤマメ1.3g JAN:4560212117041 1.6g JAN:4560212117126",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212117041",
+          "4560212117126"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4560212117041"
+          ],
+          [
+            1.6,
+            "4560212117126"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7022d2eeb29f63b0efa3356ecc9f8c6f.png",
       "alt": "オレインボー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7022d2eeb29f63b0efa3356ecc9f8c6f.png",
-      "alt": "オレインボー",
-      "label": "オレインボー1.3g JAN:4560212122397 1.6g JAN:4560212122441 1.9g JAN:4560212123240",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212122397",
+          "4560212122441",
+          "4560212123240"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4560212122397"
+          ],
+          [
+            1.6,
+            "4560212122441"
+          ],
+          [
+            1.9,
+            "4560212123240"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8e9f7272ec7a7db645a193ff4b921df0.png",
       "alt": "ヨネスティーイエロー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8e9f7272ec7a7db645a193ff4b921df0.png",
-      "alt": "ヨネスティーイエロー",
-      "label": "ヨネスティーイエロー1.9g JAN:4560212126234",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212126234"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.9,
+            "4560212126234"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b8c717a14a6d163eb79065b5d3fd2e46.png",
       "alt": "シルバーヤマメ",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b8c717a14a6d163eb79065b5d3fd2e46.png",
-      "alt": "シルバーヤマメ",
-      "label": "シルバーヤマメ1.3g JAN:4560212124094 1.6g JAN:4560212124162 1.9g JAN:4560212126265",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212124094",
+          "4560212124162",
+          "4560212126265"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4560212124094"
+          ],
+          [
+            1.6,
+            "4560212124162"
+          ],
+          [
+            1.9,
+            "4560212126265"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     },
     {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3db615f2bd378f742ed3b77dd258d54d.png",
       "alt": "グリーンボー",
-      "label": "",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
       "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3db615f2bd378f742ed3b77dd258d54d.png",
-      "alt": "グリーンボー",
-      "label": "グリーンボー1.3g JAN:4560212124117 1.6g JAN:4560212124186 1.9g JAN:4560212126289",
-      "group": "product-color-list__item",
-      "groupChain": [
-        [
-          "DIV",
-          "lightbox-target-contents"
+      "sku": {
+        "jans": [
+          "4560212124117",
+          "4560212124186",
+          "4560212126289"
         ],
-        [
-          "A",
-          ""
+        "weightJans": [
+          [
+            1.3,
+            "4560212124117"
+          ],
+          [
+            1.6,
+            "4560212124186"
+          ],
+          [
+            1.9,
+            "4560212126289"
+          ]
         ],
-        [
-          "DIV",
-          "product-color-list__item"
-        ],
-        [
-          "DIV",
-          "product-color-list product-color-list--left lighbox-fancy"
-        ],
-        [
-          "DIV",
-          "product-colors products-section content-common-products"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/e-hook_main.jpg",
-      "alt": "e-hook、e-hook太軸",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "product-list__photo "
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "product-list__item"
-        ],
-        [
-          "DIV",
-          "list-layout__item"
-        ]
-      ]
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/11/80bd3a0c26358de33d3945a355630adb.jpg",
-      "alt": "2021NEWカラーを解説/ティアロ",
-      "label": "",
-      "groupChain": [
-        [
-          "DIV",
-          "photo-ratio"
-        ],
-        [
-          "DIV",
-          "common-list__photo uk-inline"
-        ],
-        [
-          "A",
-          ""
-        ],
-        [
-          "DIV",
-          "common-list__item"
-        ],
-        [
-          "DIV",
-          "related-slick common-list common-list--column"
-        ]
-      ]
-    }
-  ],
-  "specifications": [],
-  "links": [
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/tearo/#",
-      "label": "TROUT"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/",
-      "label": "NEW PRODUCTS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/lure/",
-      "label": "LURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/crank/",
-      "label": "CRANK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/spoon/",
-      "label": "LIST"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/minnow/",
-      "label": "MINNOW"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/vibration/",
-      "label": "VIBRATION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/stream/",
-      "label": "STREAM"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/cr/",
-      "label": "C&R"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/ayu/",
-      "label": "AYU"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/set/",
-      "label": "SET"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/rod/",
-      "label": "ROD"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tconnection/",
-      "label": "T-CONNECTION"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection-comfy-rod/",
-      "label": "T-CONNECTION Comfy"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/t-connection_s/",
-      "label": "T-CONNECTION STREAM"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/accessory/",
-      "label": "ACCESSORY"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/jackall-works/",
-      "label": "JACKALL WORKS"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/apparel/",
-      "label": "TIMON APPAREL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/case-bag/",
-      "label": "CASE / BAG"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/tool/",
-      "label": "TOOL"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/hook/",
-      "label": "HOOK"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/category/other/",
-      "label": "OTHER"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/tearo/#link-feature",
-      "label": "FEATURE"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/tearo/#link-spec",
-      "label": "SPEC"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/tearo/#link-color",
-      "label": "COLOR"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rhomy/",
-      "label": "PREV"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/lure/spoon/chibitearo/",
-      "label": "NEXT"
-    },
-    {
-      "url": "https://www.jackall.co.jp/timon/products/accessory/hook/e-hook/",
-      "label": "イーフック、イーフックフトジク SIZE 14 確実なフッキングと高いホールド力を両立！ティモンオリジナルフック e-hook、e-hook太軸"
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
     }
   ]
 }
