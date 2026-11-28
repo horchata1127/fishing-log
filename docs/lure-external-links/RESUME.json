@@ -26,11 +26,33 @@
   "verification": "VALIDATION.md",
   "candidateQueue": "SOURCE_PAGES.json",
   "reviewedRetailerPages": "RODIO_REVIEW.json",
-  "next": "RC52-B clean Node 22 validation",
-  "nextStatus": "rc52b-implementation-ready-for-validation",
+  "next": "Confirm legacy image permissions, publication scope and the iPhone release checks",
+  "nextStatus": "rc52b-validated-release-blocked",
   "rc52b": {
-    "completed": ["nested backups ignored", "synthetic catalog fixture", "separate original and catalog hashes", "PWA chunk groups", "source permissions reviewed"],
-    "pending": ["clean Node 22 suite and capacity measurement", "release reports and device guide", "legacy NOA image display permission decision"]
+    "completed": [
+      "Backups ignored and tracked materials reviewed",
+      "Synthetic default fixture and reproducible catalog generation instructions",
+      "Separate original, catalog and backup content fingerprints",
+      "PWA chunk split, measured capacity and real build-to-build service worker upgrade",
+      "Clean Node 22 tests, reports and iPhone device guide"
+    ],
+    "validation": {
+      "node": "22.23.5",
+      "unitPassed": 727,
+      "unitSkipped": 6,
+      "readOnlyBackupTestsPassed": 2,
+      "e2ePassed": 242,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed",
+      "diffCheck": "passed"
+    },
+    "pending": [
+      "Obtain explicit permission for legacy NOA images or hold 73 JH and/or 18 JOINTER rows before merge.",
+      "Confirm the publication scope and reduce unnecessary excerpts in 54 TIMON research snapshots as appropriate.",
+      "Complete the physical iPhone tests for Safari and the home-screen app."
+    ],
+    "resume": "Use RC52_RELEASE_CHECKLIST.md for merge criteria, RC52_FINAL_AUDIT.md for sources and regeneration, and RC52_IPHONE_TEST_GUIDE.md for device checks. Keep product links and user photos intact if legacy images move to held."
   },
   "rc52a": {
     "report": "RC52_AUDIT.md",
