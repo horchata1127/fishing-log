@@ -2,6 +2,34 @@ import { test, expect, restoreViaUI, catalogFixture, readAllState } from './fixt
 import { rc43Fixture, rc43TestPng } from '../rc43Fixture'
 import type { LureExternalReference } from '../../src/data/lureExternalReferences'
 
+test('SMITH official product link uses the reviewed variant and keeps its icon', async ({ page, context }) => {
+  const fixture = rc43Fixture()
+  fixture.data.lureManufacturers.push({ ...catalogFixture().data.lureManufacturers[0], name: 'SMITH' })
+  fixture.data.lureSeries.push({ id: 20, manufacturerId: 10, name: 'STILL AREA' })
+  fixture.data.lureModels.push(
+    { id: 30, seriesId: 20, name: 'STILL AREA T2', weightG: 1.1, lengthMm: 40, category: 'ミノー' },
+    { id: 31, seriesId: 20, name: 'STILL AREA T2', weightG: 1.3, lengthMm: 40, category: 'ミノー' },
+  )
+  fixture.data.lureVariants.push(
+    { id: 40, modelId: 30, colorName: 'アースクリアーBT' },
+    { id: 41, modelId: 31, colorName: 'アースクリアーBT' },
+  )
+  await restoreViaUI(page, fixture)
+  const before = await readAllState(page)
+  await page.getByRole('button', { name: 'ビジュアルカラー辞書', exact: true }).click()
+  const dictionary = page.getByRole('dialog', { name: 'ビジュアルカラー辞書' })
+  await dictionary.getByLabel('辞書検索').fill('アースクリアーBT')
+  const row = dictionary.locator('[data-variant-id="40"]')
+  const link = row.getByRole('link')
+  await expect(link).toHaveAttribute('href', 'https://www.smith.jp/product/trout/stillareat2/stillareat2.html')
+  await expect(link).toHaveAttribute('target', '_blank')
+  await expect(dictionary.locator('[data-variant-id="41"]').getByRole('link')).toHaveCount(0)
+  await context.setOffline(true)
+  await expect(row.getByRole('img', { name: '汎用ルアーアイコン' })).toBeVisible()
+  await expect(row.locator('img')).toHaveCount(0)
+  expect(await readAllState(page)).toEqual(before)
+})
+
 test('non-NOA fixture displays in dictionary and both catch pickers, with retry and independent link', async ({ page, context }) => {
   const ref: LureExternalReference = {
     manufacturerName: 'TIMON', seriesName: 'Synthetic', modelName: 'Synthetic 1.2g',

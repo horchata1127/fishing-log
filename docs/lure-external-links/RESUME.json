@@ -1,6 +1,6 @@
 {
-  "stage": "RC48-B",
-  "startCommit": "daa7134",
+  "stage": "RC49",
+  "startCommit": "990b66b",
   "branch": "feature/rc45",
   "rodio": {
     "modelsBefore": 48,
@@ -18,14 +18,15 @@
   "sourcePolicy": {
     "rodio": "manufacturer or retailer; preserve existing links",
     "timon": "reviewed retailer links; official links and images held pending permission",
-    "otherThree": "manufacturer or verified official CDN"
+    "smith": "manufacturer and reviewed collaboration manufacturer; plain links only; images held pending permission",
+    "palmsAndRobLure": "manufacturer or verified official CDN"
   },
   "inventory": "INVENTORY.json",
   "verification": "VALIDATION.md",
   "candidateQueue": "SOURCE_PAGES.json",
   "reviewedRetailerPages": "RODIO_REVIEW.json",
-  "next": "RC48-B",
-  "nextStatus": "checkpoint-after-retailer-resume",
+  "next": "RC49 image permission follow-up",
+  "nextStatus": "product-links-complete-image-activation-held",
   "rodioRemaining": [
     "HELD.json",
     "IMAGE_CHECKS.json"
@@ -56,6 +57,32 @@
     "displayedProductRows": 0,
     "displayedImageRows": 0,
     "activationResume": "Review scope of product-page linking and image permissions separately before using matched candidates"
+  },
+  "smith": {
+    "checkedAt": "2026-11-28",
+    "review": "SMITH_REVIEW.json",
+    "imageSpotChecks": "SMITH_IMAGE_SPOT_CHECKS.json",
+    "sourcePolicies": "SOURCE_POLICIES.json",
+    "localPageCheckpoints": ".rc49-smith.local/",
+    "productPagesReviewed": 32,
+    "models": 39,
+    "zeroColorModels": 17,
+    "registeredProductRows": 282,
+    "registeredProductUrls": 23,
+    "unmatchedProductRows": 0,
+    "heldImageRows": 282,
+    "heldUniqueImageUrls": 212,
+    "browserDecodedImageUrls": 23,
+    "validation": {
+      "unitPassed": 724,
+      "unitSkipped": 5,
+      "e2ePassed": 238,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed",
+      "diffCheck": "passed"
+    },
+    "activationResume": "Use saved review rows and distinct image URLs. Confirm permission for each source, then complete browser checks on the eligible URLs before activation."
   },
   "timonRetailer": {
     "listings": "TIMON_RETAILER_LISTINGS.json",

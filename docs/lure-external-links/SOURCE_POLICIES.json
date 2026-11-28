@@ -74,6 +74,40 @@
       "product": "plain-link",
       "image": "held",
       "basis": "公開店舗情報に通常のテキストリンクを制限する記載は見つからなかった。画像掲載許可は未確認。"
+    },
+    "smith": {
+      "name": "SMITH",
+      "termsUrls": [
+        "https://www.smith.jp/html/201308-attetion.html"
+      ],
+      "checkedAt": "2026-11-28",
+      "product": "plain-link",
+      "image": "held",
+      "collection": "public pages; low-rate requests; local HTML audit cache; do not bypass restrictions",
+      "robotsCheck": {
+        "url": "https://www.smith.jp/robots.txt",
+        "httpStatus": 404
+      },
+      "publication": "factual names, codes, specifications, URLs and independently written match results only",
+      "privateVsPublic": "私的使用の例外と公開アプリ・リポジトリでの利用を分離。画像・説明文・HTMLの公開は採用しない",
+      "basis": "原則事前連絡不要のページリンク。フレーム・画像リンクや提携誤認を避け、別タブで公式商品ページを開く。画像掲載の許諾は確認できていない。"
+    },
+    "velvet-arts": {
+      "name": "VELVET ARTS（VAパペットサーフェス共同メーカー）",
+      "termsUrls": [
+        "https://velvetarts.co.jp/policies/terms-of-service"
+      ],
+      "checkedAt": "2026-11-28",
+      "product": "plain-link",
+      "image": "held",
+      "collection": "公開商品ページ・公開バリエーションデータを対象1商品に限り照合",
+      "robotsCheck": {
+        "url": "https://velvetarts.co.jp/robots.txt",
+        "httpStatus": 200,
+        "scope": "確認した共同製品ページと公開バリエーションデータへの一般クローラー制限は見つからなかった"
+      },
+      "publication": "名称、仕様、色番号、URL、照合・検証結果に限定",
+      "basis": "リンクは原則自由。画像の掲載許諾は確認できていない。Shopify CDNの候補は公式商品バリエーションの掲載画像に限定。"
     }
   }
 }

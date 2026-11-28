@@ -1,5 +1,6 @@
 import { rodioExternalReferences } from './rodioExternalReferences'
 import { timonRetailerExternalReferences } from './timonRetailerExternalReferences'
+import { smithExternalReferences } from './smithExternalReferences'
 
 export interface ExternalModelDetails {
   weightG?: number
@@ -35,4 +36,6 @@ export interface LureExternalReference {
   verificationBasis: string
 }
 
-export const lureExternalReferences: readonly LureExternalReference[] = [...rodioExternalReferences, ...timonRetailerExternalReferences]
+export const lureExternalReferences: readonly LureExternalReference[] = [
+  ...rodioExternalReferences, ...timonRetailerExternalReferences, ...smithExternalReferences,
+]

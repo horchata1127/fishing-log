@@ -1590,9 +1590,12 @@
       "backup-product",
       "backup-manufacturer",
       "manifest-source",
-      "manifest-manufacturer"
+      "manifest-manufacturer",
+      "rc49-model"
     ],
-    "status": "unreviewed"
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 13
   },
   {
     "manufacturer": "ROB LURE",
@@ -32592,5 +32595,1006 @@
     "checkedAt": "2026-11-28",
     "httpStatus": 200,
     "reason": "no eligible uncovered model-color combination verified"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "index",
+    "url": "https://www.smith.jp/html/03-trouttacle.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "terms",
+    "url": "https://www.smith.jp/html/201308-attetion.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/ars/ars.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/arssh/arssh.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/arsshell/arsshell.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/arstrick/arstrick.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/bisen/bisen.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/btkswimmerarea/btksarea.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/btkswimmer2/btkswimmer.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/btkswimmer35/btkswimmer35.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/btkswimmer41/btkswimmer41.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/caddis/caddis.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/calmo/calmo.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/daibisen/daibisen.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/daibisenshell/daibisenshell.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/dangouo/dangouo.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/ddpanish/ddpanish.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/ddpanisharear/ddpanisharear.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/dropdia/dropdia.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/hikarukoikachan/hikarukoikachan.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/hikinami/hikinami.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/kurun/kurun.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/panish/panish.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/panisharear/panisharear.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/puppetmore/puppetmore.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/puppetsurface/puppetsurface.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/still/still.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/stillarea/stillarea.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/stillarea48hf/stillarea48hf.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/stillareat2/stillareat2.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/tictaclipper/tictaclipper.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/zurubee/zurubee.html",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://velvetarts.co.jp/products/va_puppetsurface",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "",
+    "model": "",
+    "kind": "product",
+    "url": "https://velvetarts.co.jp/pages/vapuppetsurface",
+    "origins": [
+      "rc49-page"
+    ],
+    "status": "page-reviewed",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "AR-S Trout Model SH",
+    "model": "AR-S SH 1.5g",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/arssh/arssh.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 8
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "AR-S Trout Model SH",
+    "model": "AR-S SH 2.0g",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/arssh/arssh.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 8
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Bottom Knock Swimmer",
+    "model": "Bottom Knock Swimmer II",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/btkswimmer2/btkswimmer.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Caddis",
+    "model": "Caddis",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/caddis/caddis.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 16
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Daibisen",
+    "model": "Daibisen",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/daibisen/daibisen.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "DANGO UO",
+    "model": "DANGO UO",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/dangouo/dangouo.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Dangouo",
+    "model": "Dangouo DR-High",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/dangouo/dangouo.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Dangouo",
+    "model": "Dangouo DR-Low",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/dangouo/dangouo.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Dangouo",
+    "model": "Dangouo SR-High",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/dangouo/dangouo.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Dangouo",
+    "model": "Dangouo SR-Low",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/dangouo/dangouo.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "DD PANISH AREA R",
+    "model": "DD PANISH AREA 55R",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/ddpanisharear/ddpanisharear.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "DD PANISH AREA R",
+    "model": "DD PANISH AREA 65R",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/ddpanisharear/ddpanisharear.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Drop Dia",
+    "model": "Drop Dia 1.8g Area",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/dropdia/dropdia.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "HIKARU! KOIKACHAN",
+    "model": "HIKARU! KOIKACHAN",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/hikarukoikachan/hikarukoikachan.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 16
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "HIKINAMI",
+    "model": "HIKINAMI F",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/hikinami/hikinami.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "HIKINAMI",
+    "model": "HIKINAMI HF",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/hikinami/hikinami.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "PANISH",
+    "model": "PANISH 55F",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/panish/panish.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "PANISH",
+    "model": "PANISH 55SP",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/panish/panish.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "PANISH",
+    "model": "PANISH 70F",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/panish/panish.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "PANISH",
+    "model": "PANISH 70SP",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/panish/panish.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "PANISH",
+    "model": "PANISH 85F",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/panish/panish.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "PANISH",
+    "model": "PANISH 85SP",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/panish/panish.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "no-registered-colors",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 0
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "PANISH AREA",
+    "model": "PANISH AREA 55R",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/panisharear/panisharear.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "PANISH AREA",
+    "model": "PANISH AREA 70R",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/panisharear/panisharear.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 10
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Puppet",
+    "model": "Puppet More",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/puppetmore/puppetmore.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Puppet",
+    "model": "PUPPET SURFACE",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/puppetsurface/puppetsurface.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 17
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "STILL AREA",
+    "model": "STILL AREA 48HF",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/stillarea48hf/stillarea48hf.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 16
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "STILL AREA",
+    "model": "STILL AREA T2",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/stillareat2/stillareat2.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "STILL AREA",
+    "model": "STILL AREA TUNE",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/stillarea/stillarea.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 16
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "TICTAC LIPPER",
+    "model": "TICTAC LIPPER HS",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/tictaclipper/tictaclipper.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "TICTAC LIPPER",
+    "model": "TICTAC LIPPER S",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/tictaclipper/tictaclipper.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "ZURUBEE",
+    "model": "Large ZURUBEE",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/zurubee/zurubee.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "ZURUBEE",
+    "model": "Small ZURUBEE",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/zurubee/zurubee.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 14
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "CALMO",
+    "model": "CALMO MR-F",
+    "kind": "product",
+    "url": "https://www.smith.jp/product/trout/calmo/calmo.html",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 12
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Puppet",
+    "model": "VA PUPPET SURFACE",
+    "kind": "product",
+    "url": "https://velvetarts.co.jp/products/va_puppetsurface",
+    "origins": [
+      "rc49-model"
+    ],
+    "status": "spec-matched",
+    "checkedAt": "2026-11-28",
+    "modelColorRows": 8
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Puppet",
+    "model": "VA PUPPET SURFACE",
+    "kind": "product",
+    "url": "https://velvetarts.co.jp/products/va_puppetsurface?variant=51598914552096",
+    "origins": [
+      "rc49-color"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "basis": "VA PUPPET SURFACE / 1.4g / 31mm / 表層用／ラトルあり / 43 ハレルヤGG"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Puppet",
+    "model": "VA PUPPET SURFACE",
+    "kind": "product",
+    "url": "https://velvetarts.co.jp/products/va_puppetsurface?variant=51598914584864",
+    "origins": [
+      "rc49-color"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "basis": "VA PUPPET SURFACE / 1.4g / 31mm / 表層用／ラトルあり / 44 チャートヘッドクリア"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Puppet",
+    "model": "VA PUPPET SURFACE",
+    "kind": "product",
+    "url": "https://velvetarts.co.jp/products/va_puppetsurface?variant=51598914617632",
+    "origins": [
+      "rc49-color"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "basis": "VA PUPPET SURFACE / 1.4g / 31mm / 表層用／ラトルあり / 45 UVブラックホール"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Puppet",
+    "model": "VA PUPPET SURFACE",
+    "kind": "product",
+    "url": "https://velvetarts.co.jp/products/va_puppetsurface?variant=51598914650400",
+    "origins": [
+      "rc49-color"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "basis": "VA PUPPET SURFACE / 1.4g / 31mm / 表層用／ラトルあり / 46 グローバックブラウン"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Puppet",
+    "model": "VA PUPPET SURFACE",
+    "kind": "product",
+    "url": "https://velvetarts.co.jp/products/va_puppetsurface?variant=51598914683168",
+    "origins": [
+      "rc49-color"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "basis": "VA PUPPET SURFACE / 1.4g / 31mm / 表層用／ラトルあり / 47 ビンテージオリーブ"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Puppet",
+    "model": "VA PUPPET SURFACE",
+    "kind": "product",
+    "url": "https://velvetarts.co.jp/products/va_puppetsurface?variant=51598914715936",
+    "origins": [
+      "rc49-color"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "basis": "VA PUPPET SURFACE / 1.4g / 31mm / 表層用／ラトルあり / 48 ムシ"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Puppet",
+    "model": "VA PUPPET SURFACE",
+    "kind": "product",
+    "url": "https://velvetarts.co.jp/products/va_puppetsurface?variant=51598914748704",
+    "origins": [
+      "rc49-color"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "basis": "VA PUPPET SURFACE / 1.4g / 31mm / 表層用／ラトルあり / 49 グローグロー"
+  },
+  {
+    "manufacturer": "SMITH",
+    "series": "Puppet",
+    "model": "VA PUPPET SURFACE",
+    "kind": "product",
+    "url": "https://velvetarts.co.jp/products/va_puppetsurface?variant=51598914781472",
+    "origins": [
+      "rc49-color"
+    ],
+    "status": "matched",
+    "checkedAt": "2026-11-28",
+    "basis": "VA PUPPET SURFACE / 1.4g / 31mm / 表層用／ラトルあり / 50 ハラオリブラウン"
   }
 ]
