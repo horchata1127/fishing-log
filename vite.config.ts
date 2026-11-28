@@ -15,7 +15,7 @@ export default defineConfig({
       theme_color: '#f4f7f6', background_color: '#f4f7f6',
       icons: [192, 512].map(size => ({ src: `pwa-${size}.png`, sizes: `${size}x${size}`, type: 'image/png' })),
     },
-    includeAssets: ['favicon.svg', 'icons.svg', 'apple-touch-icon.png', 'pwa-client-check.js'],
+    includeAssets: ['favicon.svg', 'icons.svg', 'apple-touch-icon.png'],
     workbox: {
       globPatterns: ['**/*.{html,js,css}'],
       navigateFallback: '/fishing-log/index.html',
@@ -25,5 +25,18 @@ export default defineConfig({
       importScripts: ['pwa-client-check.js'],
     },
   })],
+  build: {
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            { name: 'lure-masters', test: /[\\/]src[\\/]data[\\/](?:rc\d+\w*Catalog|lureMaster\w+)\.ts$/ },
+            { name: 'facility-masters', test: /[\\/]src[\\/]data[\\/](?:facility-master[^\\/]+\.json|stage6FacilityRelease\.ts)$/ },
+            { name: 'lure-references', test: /[\\/]src[\\/]data[\\/](?:.*ExternalReferences|noa\w+)\.ts$/ },
+          ],
+        },
+      },
+    },
+  },
   base: '/fishing-log/',
 })

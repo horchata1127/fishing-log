@@ -1,0 +1,163 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-mai/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "af3f21e8638a391ca2d76e44e529b27bb5f3c9568e2883e989d2c3f357af9bba",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Type",
+          "Length"
+        ],
+        [
+          "トリコロール舞45",
+          "3.7g",
+          "SINKING",
+          "45mm"
+        ],
+        [
+          "トリコロール舞55",
+          "5.3g",
+          "SINKING",
+          "55mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "ｶｷﾞﾛｲｱﾕ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/59b9fbefd1213997ceda58f76b1d2b59.png",
+      "sku": {
+        "jans": [
+          "4525807302417",
+          "4525807302431"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "米代ﾏﾙﾁﾌﾞﾗｯｸ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4d2bbbe76806bd5c5249968bec1114f4.png",
+      "sku": {
+        "jans": [
+          "4525807302417",
+          "4525807302424"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "赤金ﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8b1fc5a81ef39d96dd6ab86915d02858-1.png",
+      "sku": {
+        "jans": [
+          "4525807207910",
+          "4525807207835"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾈｲﾃｨﾌﾞﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7abcbb9daafd084e69862f9edbd0c0f5.png",
+      "sku": {
+        "jans": [
+          "4525807207927",
+          "4525807207842"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾈｲﾃｨﾌﾞｱﾕ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fe4ef3f06248747366bf552057e17259.png",
+      "sku": {
+        "jans": [
+          "4525807207934",
+          "4525807207859"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾃﾈｼｰBH",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/TENNESSEE-BH.pn-1.png",
+      "sku": {
+        "jans": [
+          "4525807207941",
+          "4525807207866"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ｼﾙﾊﾞｰﾋﾟﾝｸﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/SILVER-PINK-YAMAME.png",
+      "sku": {
+        "jans": [
+          "4525807207958",
+          "4525807207873"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾌﾗｯｼｭﾁｬｰﾄﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/66c5eb3836d1828375f20279ed74ec24.png",
+      "sku": {
+        "jans": [
+          "4525807207965",
+          "4525807207880"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "婚姻ﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/17694a0b0130d902740ea0e0f2bbaf6f.png",
+      "sku": {
+        "jans": [
+          "4525807207972",
+          "4525807207897"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾅﾜﾊﾞﾘﾊﾟｰﾙｱﾕ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/53e11e0c2ddfe74fc76365fffc6172fe.png",
+      "sku": {
+        "jans": [
+          "4525807207989",
+          "4525807207903"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

@@ -9,8 +9,8 @@ test('one home entrance, offline-bundled development history for all RCs, bounde
   await screen.getByRole('button', { name: '取り込み履歴', exact: true }).click()
   await expect(screen).toContainText('この端末には取り込み履歴がありません')
   await openMaster(page); await screen.getByRole('button', { name: '開発履歴', exact: true }).click()
-  const entries = screen.locator('details[data-rc]'); await expect(entries).toHaveCount(15)
-  expect(await entries.evaluateAll(nodes => nodes.map(n => n.getAttribute('data-rc')))).toEqual(Array.from({ length: 15 }, (_, i) => String(33 - i)))
+  const entries = screen.locator('details[data-rc]'); await expect(entries).toHaveCount(16)
+  expect(await entries.evaluateAll(nodes => nodes.map(n => n.getAttribute('data-rc')))).toEqual(['45',...Array.from({ length: 15 }, (_, i) => String(33 - i))])
   for (let rc = 19; rc <= 33; rc++) { const entry = screen.locator(`[data-rc="${rc}"]`); await entry.locator('summary').click(); await expect(entry.locator('p').first()).toBeVisible() }
   await expect(screen.getByRole('button', { name: /実行|適用/ })).toHaveCount(0)
   const preview = await checkMaster(page)

@@ -1,0 +1,183 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/minnow/chibi_buriburi_monnow_1/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "6704381fc47367939a4c9cebeef7033c377f3a0dc218109923b7ebfa09bdd850",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Type",
+          "Length"
+        ],
+        [
+          "ちびブリブリミノー",
+          "1.6g",
+          "フローティング",
+          "31mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "ENDO GLOW PELLE OLIVE / エンドグローペレオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/2020_chibi_buriburiminnow_2.png",
+      "sku": {
+        "jans": [
+          "4525807203899"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ENDO GLOW PELLE BROWN / エンドグローペレブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/2020_chibi_buriburiminnow_3.png",
+      "sku": {
+        "jans": [
+          "4525807203882"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "YAZY BONDZ / ヤジーボンズ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/2020_chibi_buriburiminnow_1.png",
+      "sku": {
+        "jans": [
+          "4525807203905"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "CLEAR/クリア",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/10/Chibi_Buriburi_3-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807188691"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "GORDEN/ゴールデン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/10/Chibi_Buriburi_5-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807188707"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "SHOBOKURE GLOW / ショボクレグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/10/Chibi_Buriburi_1-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807188714"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "TACKEY BROWN/タッキーブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/10/Chibi_Buriburi_6-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807188721"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "KAMI RED GLOW/神レッドグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/10/Chibi_Buriburi_2-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807188738"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "SHOBOKURE TAIL/ショボクレテール",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/10/Chibi_Buriburi_7-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807188745"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ENDO PUMKARA/エンドパンカラ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/10/Chibi_Buriburi_8-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807188752"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "PIN PINK/ピンピンク",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/10/Chibi_Buriburi_9-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807188769"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ENDO SUKE PUMPKIN/エンドスケパンプキン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/10/Chibi_Buriburi_11-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807188776"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "GONTY RUSH GLOWⅡ/ゴンティラッシュグローⅡ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/efbb07a5470760138feb7f3a54c45498.png",
+      "sku": {
+        "jans": [
+          "4525807188783"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

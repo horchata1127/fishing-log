@@ -1,0 +1,250 @@
+{
+  "stage": "RC52-C",
+  "startCommit": "bf1d812",
+  "branch": "feature/rc45",
+  "rodio": {
+    "modelsBefore": 48,
+    "modelsAfter": 57,
+    "zeroColorModels": 12,
+    "colorRowsBefore": 1115,
+    "colorRowsAfter": 1543,
+    "additionalProductRows": 644,
+    "additionalProductUrls": 607,
+    "existingProductRows": 388,
+    "heldProductRows": 511,
+    "newDisplayableExternalImages": 0,
+    "heldImageRows": 588
+  },
+  "sourcePolicy": {
+    "rodio": "manufacturer or retailer; preserve existing links",
+    "timon": "reviewed retailer links; official links and images held pending permission",
+    "smith": "manufacturer and reviewed collaboration manufacturer; plain links only; images held pending permission",
+    "palms": "plain links to reviewed official product pages; images held pending permission",
+    "robLure": "reviewed official and retailer product links; images held pending permission; prior Otsuka access hold retained"
+  },
+  "inventory": "INVENTORY.json",
+  "verification": "VALIDATION.md",
+  "candidateQueue": "SOURCE_PAGES.json",
+  "reviewedRetailerPages": "RODIO_REVIEW.json",
+  "next": "Complete physical iPhone release checks on the isolated HTTPS preview",
+  "nextStatus": "rc52c-validated-release-candidate-pending-iphone",
+  "rc52c": {
+    "implementationCheckpoint": "cd7ef17",
+    "completed": [
+      "Held 73 JH and 18 JOINTER legacy image rows without removing references, checks, or product links",
+      "Minimized published TIMON evidence and retained raw research in an ignored local directory",
+      "Verified unchanged IDs, 2,863 catalog rows, 2,041 product link rows and 428 RC45 BF/DRIFT SPIN rows",
+      "Verified deterministic TIMON evidence generation and audit output across 68 files",
+      "Measured capacity and tested the RC52-B to RC52-C service worker upgrade and offline cold start",
+      "Completed clean Node 22 unit, E2E and offline suites, build, typecheck and diff checks"
+    ],
+    "images": { "activeRows": 0, "heldRowsAcrossFiveMakers": 1854, "newlyHeldRows": 91, "applicableHeldNoaRows": 118, "preservedNoaDefinitions": 120 },
+    "validation": {
+      "node": "22.23.5",
+      "unitPassed": 727,
+      "unitSkipped": 6,
+      "readOnlyBackupTestsPassed": 2,
+      "e2ePassed": 244,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed",
+      "diffCheck": "passed",
+      "serviceWorkerUpgradeAndOfflineColdStart": "passed",
+      "physicalIphone": "pending"
+    },
+    "pending": [
+      "Complete the physical iPhone checks in Safari and the installed web app",
+      "Review the published history finding at merge review and coordinate owner-approved remediation if required"
+    ],
+    "resume": "Use RC52_IPHONE_TEST_GUIDE.md for the isolated preview and device checks, and RC52_RELEASE_CHECKLIST.md for merge review. RC52_FINAL_AUDIT.md identifies pushed history and describes regeneration from the tracked matching inputs. Original TIMON research files are preserved under the ignored .rc52c-timon.local directory."
+  },
+  "rc52b": {
+    "startCommit": "eed3897",
+    "completed": [
+      "Backups ignored and tracked materials reviewed",
+      "Synthetic default fixture and reproducible catalog generation instructions",
+      "Separate original, catalog and backup content fingerprints",
+      "PWA chunk split, measured capacity and real build-to-build service worker upgrade",
+      "Clean Node 22 tests, reports and iPhone device guide"
+    ],
+    "validation": {
+      "node": "22.23.5",
+      "unitPassed": 727,
+      "unitSkipped": 6,
+      "readOnlyBackupTestsPassed": 2,
+      "e2ePassed": 242,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed",
+      "diffCheck": "passed"
+    },
+    "pending": [
+      "Obtain explicit permission for legacy NOA images or hold 73 JH and/or 18 JOINTER rows before merge.",
+      "Confirm the publication scope and reduce unnecessary excerpts in 54 TIMON research snapshots as appropriate.",
+      "Complete the physical iPhone tests for Safari and the home-screen app."
+    ],
+    "resume": "Use RC52_RELEASE_CHECKLIST.md for merge criteria, RC52_FINAL_AUDIT.md for sources and regeneration, and RC52_IPHONE_TEST_GUIDE.md for device checks. Keep product links and user photos intact if legacy images move to held."
+  },
+  "rc52a": {
+    "report": "RC52_AUDIT.md",
+    "completed": [
+      "5-maker catalog and report regeneration",
+      "clean production build and precache measurement",
+      "tracked-data and source-terms review",
+      "clean checkout reproducibility findings"
+    ],
+    "pending": [
+      "Confirm permissions for the 91 legacy NOA image rows and review TIMON tracked excerpts.",
+      "Prevent accidental staging of nested private backups and review derived backup metadata.",
+      "Provide reproducible catalog-only fixtures and generation inputs, and add a catalog fingerprint independent of export time.",
+      "Budget the main JS and review the duplicated precache entry.",
+      "Re-run full unit, E2E and offline tests, verify Node 22, and prepare the physical-device verification procedure."
+    ],
+    "resume": "Read RC52_AUDIT.md first. Use the committed RC51 baseline and existing review records. In a detached clean checkout, install from the lockfile, verify the catalog-only test input, and run the offline audit before requesting any new external data. Keep user backups outside tracked changes."
+  },
+  "rodioRemaining": [
+    "HELD.json",
+    "IMAGE_CHECKS.json"
+  ],
+  "rodioPriorWork": {
+    "branch": "feat/rodio-driftspin-bf-catalog",
+    "worktree": "../fishing-log-rodio-drift-bf",
+    "status": "original worktree preserved; RC45 master and evidence incorporated",
+    "evidence": "../rodio-driftspin-bf/"
+  },
+  "originalBackup": "docs/latest/fishing-log-backup-2026-11-23 (2).json",
+  "originalBackupSha256": "a6ed379dd9d985c735d825dd232868ce79b051b4bd5535e24294b5058e9b1532",
+  "timon": {
+    "status": "research-complete-activation-held",
+    "officialPageCheckpoints": "timon-pages/",
+    "review": "TIMON_REVIEW.json",
+    "imageSpotChecks": "TIMON_IMAGE_SPOT_CHECKS.json",
+    "termsUrl": "https://www.jackall.co.jp/terms-of-service/",
+    "linkPermission": "not-obtained",
+    "imagePermission": "not-obtained",
+    "models": 73,
+    "colorRows": 786,
+    "modelRowsWithoutColors": 22,
+    "checkedPages": 54,
+    "matchedProductRows": 687,
+    "matchedProductUrls": 23,
+    "unmatchedProductRows": 99,
+    "displayedProductRows": 0,
+    "displayedImageRows": 0,
+    "activationResume": "Review scope of product-page linking and image permissions separately before using matched candidates"
+  },
+  "robLure": {
+    "checkedAt": "2026-11-28",
+    "review": "ROB_LURE_REVIEW.json",
+    "imageSpotChecks": "ROB_LURE_IMAGE_SPOT_CHECKS.json",
+    "sourcePolicies": "SOURCE_POLICIES.json",
+    "localPageCheckpoints": ".rc51-rob.local/",
+    "models": 16,
+    "colorRows": 169,
+    "registeredProductRows": 167,
+    "registeredProductUrls": 40,
+    "unmatchedProductRows": 2,
+    "unalignedImageRows": 46,
+    "heldImageRows": 123,
+    "heldUniqueImageUrls": 111,
+    "browserCheckedImageUrls": 13,
+    "browserDecodedImageUrls": 12,
+    "displayedImageRows": 0,
+    "remainingVariantIds": [8934, 8947],
+    "activationResume": "Reuse the recorded exact models, URLs, JAN, and image checks. Resolve the two product holds and obtain image display permission before finishing technical checks on eligible images.",
+    "regenerationOrder": ["scripts/research-rob-rc51.mjs", "scripts/match-rob-rc51.mjs", "scripts/audit-lure-external-links.mjs"],
+    "validation": {
+      "unitPassed": 724,
+      "unitSkipped": 5,
+      "e2ePassed": 242,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed",
+      "diffCheck": "passed"
+    }
+  },
+  "palms": {
+    "checkedAt": "2026-11-28",
+    "review": "PALMS_REVIEW.json",
+    "imageSpotChecks": "PALMS_IMAGE_SPOT_CHECKS.json",
+    "sourcePolicies": "SOURCE_POLICIES.json",
+    "localPageCheckpoints": ".rc50-palms.local/",
+    "productPagesReviewed": 6,
+    "models": 7,
+    "registeredProductRows": 83,
+    "registeredProductUrls": 6,
+    "unmatchedProductRows": 0,
+    "heldImageRows": 83,
+    "heldUniqueImageUrls": 67,
+    "browserDecodedImageUrls": 6,
+    "displayedImageRows": 0,
+    "activationResume": "Review permission before activating images. Reuse the recorded page and image URL matches, then complete browser checks for eligible URLs.",
+    "validation": {
+      "unitPassed": 724,
+      "unitSkipped": 5,
+      "e2ePassed": 240,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed",
+      "diffCheck": "passed"
+    }
+  },
+  "smith": {
+    "checkedAt": "2026-11-28",
+    "review": "SMITH_REVIEW.json",
+    "imageSpotChecks": "SMITH_IMAGE_SPOT_CHECKS.json",
+    "sourcePolicies": "SOURCE_POLICIES.json",
+    "localPageCheckpoints": ".rc49-smith.local/",
+    "productPagesReviewed": 32,
+    "models": 39,
+    "zeroColorModels": 17,
+    "registeredProductRows": 282,
+    "registeredProductUrls": 23,
+    "unmatchedProductRows": 0,
+    "heldImageRows": 282,
+    "heldUniqueImageUrls": 212,
+    "browserDecodedImageUrls": 23,
+    "validation": {
+      "unitPassed": 724,
+      "unitSkipped": 5,
+      "e2ePassed": 238,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed",
+      "diffCheck": "passed"
+    },
+    "activationResume": "Use saved review rows and distinct image URLs. Confirm permission for each source, then complete browser checks on the eligible URLs before activation."
+  },
+  "timonRetailer": {
+    "listings": "TIMON_RETAILER_LISTINGS.json",
+    "products": "TIMON_RETAILER_PRODUCTS.json",
+    "review": "TIMON_RETAILER_REVIEW.json",
+    "policies": "SOURCE_POLICIES.json",
+    "validation": {
+      "unitPassed": 724,
+      "unitSkipped": 5,
+      "e2ePassed": 236,
+      "offlinePassed": 70,
+      "build": "passed",
+      "typecheck": "passed",
+      "diffCheck": "passed"
+    },
+    "productPagesInspected": 336,
+    "registeredColorRows": 477,
+    "remainingColorRows": 309,
+    "castingProducts": "TIMON_CASTING_PRODUCTS.json",
+    "otsuka": "403; hold without retry",
+    "missingUninspectedJhCandidates": 59,
+    "firstCheckpoint": "af1351f",
+    "variantPages": "TIMON_RETAILER_VARIANT_PAGES.json",
+    "listingPagesAdded": 2,
+    "registeredProductUrls": 301,
+    "heldColorRows": 68,
+    "unreviewedColorRows": 241,
+    "nextPriority": [
+      "old PaniCra MR/DR model-color tables",
+      "remaining unvisited Casting JAN candidates",
+      "targeted JH list recovery only where useful"
+    ]
+  }
+}

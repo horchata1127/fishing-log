@@ -1,0 +1,328 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricorollhw/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "75bfb9e4db4cd0490cc27d3aca1858fba78d10a464e20fe3c6319584e0c1799f",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Length"
+        ],
+        [
+          "Tricoroll 47HW",
+          "3.2g",
+          "47mm"
+        ],
+        [
+          "Tricoroll 55HW",
+          "4.4g",
+          "55mm"
+        ],
+        [
+          "Tricoroll 67HW",
+          "6.3g",
+          "67mm"
+        ],
+        [
+          "Tricoroll 83HW",
+          "9g",
+          "83mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "天竜ずくアマゴ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0d45f258d70a25bd42ab3abde97fa52e.png",
+      "sku": {
+        "jans": [
+          "4525807342574",
+          "4525807342581"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "深緑クリスタル",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/236f6e097bfa4f75b8306f5338f6c0c9.png",
+      "sku": {
+        "jans": [
+          "4525807328578",
+          "4525807342598"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "銀ヤマメ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/73e165bb135368858484e5e717d5e0e5.png",
+      "sku": {
+        "jans": [
+          "4525807328479"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "金アユ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/eb1469cfdccbe7f12a0d6497aae0047c.png",
+      "sku": {
+        "jans": [
+          "4525807328486"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "箔赤金",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/19a1ba501c6774b4c681424b07a0caad.png",
+      "sku": {
+        "jans": [
+          "4525807328493"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "パールアユ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2afc6e0b95dcc19cfb41da5357afdba9.png",
+      "sku": {
+        "jans": [
+          "4525807328509"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "パラレルチャート",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5f082f7ecc4d7d3aa189fe8f27f96208-2.png",
+      "sku": {
+        "jans": [
+          "4525807328523"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "米代マルチブラック",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2f36eb15ea2208b1847b8f557c8fbf5a.png",
+      "sku": {
+        "jans": [
+          "4525807328530"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ライムヤマメ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c76e2178e806450f059946799b435792.png",
+      "sku": {
+        "jans": [
+          "4525807328516"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "カギロイアユ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8bb79a06e304ff80c061e0e7f8daa2c2.png",
+      "sku": {
+        "jans": [
+          "4525807328547"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "長良鮎遡り",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/abed856bb162394705624e7d860dede8.png",
+      "sku": {
+        "jans": [
+          "4525807328554"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "芸北神楽",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8232feed51d2d1c2d4f95426f5b7a206-3.png",
+      "sku": {
+        "jans": [
+          "4525807328561"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "HLコッパーヤマメ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ab207a2cf8da6e1b406d83480b6e36cf.png",
+      "sku": {
+        "jans": [
+          "4525807328585"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "シラカミリリー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f12249d47a80c5520ff05abb12d1e8a5.png",
+      "sku": {
+        "jans": [
+          "4525807267044",
+          "4525807267068"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ナマハゲオーリー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ce18ae4415d3f8672b14f3f6a870ae04.png",
+      "sku": {
+        "jans": [
+          "4525807267051",
+          "4525807267075"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "錦鮎",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/tricoroll_HW_NISHIKI-AYU.png",
+      "sku": {
+        "jans": [
+          "4525807207828",
+          "4525807207743"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ネイティブアユ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/tricoroll_HW_NATIVE-AYU.png",
+      "sku": {
+        "jans": [
+          "4525807207811",
+          "4525807207736"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ネイティブヤマメ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/tricoroll_HW_NATIVE-YAMAME.png",
+      "sku": {
+        "jans": [
+          "4525807207804",
+          "4525807207729"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "赤金ヤマメ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/tricoroll_HW_GOLD-YAMAME.png",
+      "sku": {
+        "jans": [
+          "4525807207798",
+          "4525807207712"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "HLコッパーヤマメBH",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/tricoroll_HW_HL-COPPER-YAMAME-BROWN-HEAD.png",
+      "sku": {
+        "jans": [
+          "4525807207781",
+          "4525807207705"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "若葉桜ヤマメBH",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/tricoroll_HW_WAKABAZAKURA-YAMAME-BROWN-HEAD-1.png",
+      "sku": {
+        "jans": [
+          "4525807207774",
+          "4525807207699"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "信州雪代ピンクBH",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/tricoroll_HW_SHINSYU-YUKISHIRO-PINK-BROWN-HEAD.png",
+      "sku": {
+        "jans": [
+          "4525807207767",
+          "4525807207682"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "越中雪代ブルーバック",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/tricoroll_HW_ECCHU-YUKISHIRO-BULE-BACK.png",
+      "sku": {
+        "jans": [
+          "4525807207750",
+          "4525807207675"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

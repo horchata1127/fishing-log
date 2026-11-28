@@ -1,0 +1,147 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/crank/prikkey/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "c1c340bc414c62f74bda64b43dfd1f6e1cc16211d7abee6b436f9b0d7e9370c2",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Type",
+          "Length"
+        ],
+        [
+          "Prikkey",
+          "1.6ｇ",
+          "Floating",
+          "30mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "ショボクレグロー（グロー）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6606c92279a5abf75d250318b3d65b09.png",
+      "sku": {
+        "jans": [
+          "4525807225839"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a48060ba92649df41386fe0a845dd566.png",
+      "sku": {
+        "jans": [
+          "4525807225822"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドパンプキン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/69a110baaf781fb3f0c0f5bab2959dc0.png",
+      "sku": {
+        "jans": [
+          "4525807225846"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ＴＫグロー（グロー）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ec12bc29cc3190d98c2d7ab7c558931b.png",
+      "sku": {
+        "jans": [
+          "4525807225853"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーゴーストペレット",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2c929840a307ae23a9797ee1e41c39af.png",
+      "sku": {
+        "jans": [
+          "4525807225891"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーボンズ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/30252b1c6dcec25408bddfb6116673d3.png",
+      "sku": {
+        "jans": [
+          "4525807225860"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ラムレーズン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c31a0bb582b64ecc728e4f2bbf5c66dd.png",
+      "sku": {
+        "jans": [
+          "4525807225877"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ダイゴゴーストレッドグロー（グロー）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8446b31bade01e044b88a33d59a3fecc.png",
+      "sku": {
+        "jans": [
+          "4525807225884"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーシャーベット",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5d155d2db538d2d5b0e9dfb85441707d.png",
+      "sku": {
+        "jans": [
+          "4525807225907"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキートロピカルグロー（グロー）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ba06ba7c8c3061042676afa8eaace79a.png",
+      "sku": {
+        "jans": [
+          "4525807225914"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

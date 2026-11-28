@@ -1,0 +1,455 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/crank/panicra/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "da813134001d6597fc7fefe3b702cf7f6acfa9975140ec3db1af59b888de8e7e",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Length",
+          "Weight"
+        ],
+        [
+          "パニクラ´SR",
+          "32㎜",
+          "3.0g"
+        ],
+        [
+          "パニクラ´MR",
+          "32㎜",
+          "3.4g"
+        ],
+        [
+          "パニクラ´DR",
+          "32㎜",
+          "3.6g"
+        ],
+        [
+          "パニクラ´DDR",
+          "32㎜",
+          "3.8g"
+        ],
+        [
+          "パニクラ´DRｰHF",
+          "32㎜",
+          "2.9g"
+        ],
+        [
+          "パニクラ´DRラトル",
+          "32㎜",
+          "3.2g"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "クリアー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2b2b7d6299400969cc27ecb57726e5d3-4.png",
+      "sku": {
+        "jans": [
+          "4525807286090",
+          "4525807316186",
+          "4525807316339"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807286090"
+          ],
+          [
+            "mr",
+            "4525807316186"
+          ],
+          [
+            "dr",
+            "4525807316339"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6606c92279a5abf75d250318b3d65b09-5.png",
+      "sku": {
+        "jans": [
+          "4525807286106",
+          "4525807316193",
+          "4525807316346"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807286106"
+          ],
+          [
+            "mr",
+            "4525807316193"
+          ],
+          [
+            "dr",
+            "4525807316346"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a48060ba92649df41386fe0a845dd566-4.png",
+      "sku": {
+        "jans": [
+          "4525807286113",
+          "4525807316209",
+          "4525807316353"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807286113"
+          ],
+          [
+            "mr",
+            "4525807316209"
+          ],
+          [
+            "dr",
+            "4525807316353"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレレッドグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7860da6c12beaedd693d3179cd6f777d-2.png",
+      "sku": {
+        "jans": [
+          "4525807286120",
+          "4525807316216",
+          "4525807316360"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807286120"
+          ],
+          [
+            "mr",
+            "4525807316216"
+          ],
+          [
+            "dr",
+            "4525807316360"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドパンプキン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/69a110baaf781fb3f0c0f5bab2959dc0-5.png",
+      "sku": {
+        "jans": [
+          "4525807286137",
+          "4525807316223",
+          "4525807316377"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807286137"
+          ],
+          [
+            "mr",
+            "4525807316223"
+          ],
+          [
+            "dr",
+            "4525807316377"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドグローペレブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/41708b165d5051e25a5cc8bb5a8f3265.png",
+      "sku": {
+        "jans": [
+          "4525807316087",
+          "4525807316230",
+          "4525807316384"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807316087"
+          ],
+          [
+            "mr",
+            "4525807316230"
+          ],
+          [
+            "dr",
+            "4525807316384"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドグローペレオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c5925d76e1a95df9c7473f2408ed9c2e.png",
+      "sku": {
+        "jans": [
+          "4525807316094",
+          "4525807316247",
+          "4525807316391"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807316094"
+          ],
+          [
+            "mr",
+            "4525807316247"
+          ],
+          [
+            "dr",
+            "4525807316391"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーゴーストペレット",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2c929840a307ae23a9797ee1e41c39af-2.png",
+      "sku": {
+        "jans": [
+          "4525807316100",
+          "4525807316254",
+          "4525807316407"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807316100"
+          ],
+          [
+            "mr",
+            "4525807316254"
+          ],
+          [
+            "dr",
+            "4525807316407"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーボンズ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/30252b1c6dcec25408bddfb6116673d3-3.png",
+      "sku": {
+        "jans": [
+          "4525807316117",
+          "4525807316261",
+          "4525807316414"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807316117"
+          ],
+          [
+            "mr",
+            "4525807316261"
+          ],
+          [
+            "dr",
+            "4525807316414"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ラムレーズン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c31a0bb582b64ecc728e4f2bbf5c66dd-3.png",
+      "sku": {
+        "jans": [
+          "4525807316124",
+          "4525807316278",
+          "4525807316421"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807316124"
+          ],
+          [
+            "mr",
+            "4525807316278"
+          ],
+          [
+            "dr",
+            "4525807316421"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "Ueインパクトペレット",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/913ce5f3720897d11bf007f804310894-1.png",
+      "sku": {
+        "jans": [
+          "4525807316131",
+          "4525807316285",
+          "4525807316438"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807316131"
+          ],
+          [
+            "mr",
+            "4525807316285"
+          ],
+          [
+            "dr",
+            "4525807316438"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "カドピングロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/bf8a201e2b70ba6b62205e2f0f072245.png",
+      "sku": {
+        "jans": [
+          "4525807316148",
+          "4525807316292",
+          "4525807316445"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807316148"
+          ],
+          [
+            "mr",
+            "4525807316292"
+          ],
+          [
+            "dr",
+            "4525807316445"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドグローペレパン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3c37ea34d3f64e3d787cfc2ba14a8102.png",
+      "sku": {
+        "jans": [
+          "4525807316155",
+          "4525807316308",
+          "4525807316452"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807316155"
+          ],
+          [
+            "mr",
+            "4525807316308"
+          ],
+          [
+            "dr",
+            "4525807316452"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "VIBESオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/bdfda38af968546cf78324655e385c34-1.png",
+      "sku": {
+        "jans": [
+          "4525807316162",
+          "4525807316315",
+          "4525807316469"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807316162"
+          ],
+          [
+            "mr",
+            "4525807316315"
+          ],
+          [
+            "dr",
+            "4525807316469"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "霞オリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7d557686617bf7468e89bca03c52813a-1.png",
+      "sku": {
+        "jans": [
+          "4525807316179",
+          "4525807316322",
+          "4525807316476"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807316179"
+          ],
+          [
+            "mr",
+            "4525807316322"
+          ],
+          [
+            "dr",
+            "4525807316476"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

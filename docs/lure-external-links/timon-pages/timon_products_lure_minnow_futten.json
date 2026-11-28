@@ -1,0 +1,121 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/minnow/futten/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "82764474e9dce73b25b6d5b83ea4ead9c9c62316007cc0ce53c5ac1b1ccd1a30",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Length",
+          "Weight"
+        ],
+        [
+          "FuttenFS",
+          "60mm",
+          "3.8g"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "クリアー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c9cd9e30e0c4f1ba28fdc472f92072eb.png",
+      "sku": {
+        "jans": [
+          "4525807299045"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "蛍光ピンク",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/aa30bab19a9cbc7f4e388ab272731bf9.png",
+      "sku": {
+        "jans": [
+          "4525807299052"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ラムレーズン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a62772e36ae294d64d1dd62f7011fa9c.png",
+      "sku": {
+        "jans": [
+          "4525807299069"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "W蛍光パンチ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c4408c1c6d862b11857272998201c6f7.png",
+      "sku": {
+        "jans": [
+          "4525807299076"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキートロピカルクリアー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4e2b1e36f147cfc952d239b9646f3841.png",
+      "sku": {
+        "jans": [
+          "4525807299090"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーフロートメロン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a7774871263c3114b70b88b9b84af726-1.png",
+      "sku": {
+        "jans": [
+          "4525807299083"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "カドニキハーフグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4234cddf5e852117876dbc89225798f9-1.png",
+      "sku": {
+        "jans": [
+          "4525807299106"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "シャインWオレピンGR",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b11074f72c69856737d41ffd4c7683fb-1.png",
+      "sku": {
+        "jans": [
+          "4525807299113"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

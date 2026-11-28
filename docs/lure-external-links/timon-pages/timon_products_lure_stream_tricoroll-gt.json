@@ -1,0 +1,520 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/stream/tricoroll-gt/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "2a21ba5d1304cea236e5331c29c82fbaeb0efcfea69833e437e127c34f44420d",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Type",
+          "Length"
+        ],
+        [
+          "Tricoroll GT 56SR-F",
+          "3.7g",
+          "フローティング",
+          "56mm"
+        ],
+        [
+          "Tricoroll GT 56MD-F",
+          "4.3g",
+          "フローティング",
+          "56mm"
+        ],
+        [
+          "Tricoroll GT 72SR-F",
+          "5.7g",
+          "フローティング",
+          "72mm"
+        ],
+        [
+          "Tricoroll GT 72MD-F",
+          "6.6g",
+          "フローティング",
+          "72mm"
+        ],
+        [
+          "Tricoroll GT 72DR-F",
+          "8.0g",
+          "フローティング",
+          "72mm"
+        ],
+        [
+          "Tricoroll GT 88SR-F",
+          "9.0g",
+          "フローティング",
+          "88mm"
+        ],
+        [
+          "Tricoroll GT 88MD-F",
+          "10.8g",
+          "フローティング",
+          "88mm"
+        ],
+        [
+          "Tricoroll GT 88DR-F",
+          "13.0g",
+          "フローティング",
+          "88mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "暁桜",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/14cf9219f212667d4d33d99a9daf9b3b.png",
+      "sku": {
+        "jans": [
+          "4525807342604",
+          "4525807342611",
+          "4525807342628"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "芸北神楽",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8232feed51d2d1c2d4f95426f5b7a206.png",
+      "sku": {
+        "jans": [
+          "4525807299236",
+          "4525807299229",
+          "4525807299144"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "長良鮎遡り",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/553ed793e7d15e62d02e62cdbf5b55dc.png",
+      "sku": {
+        "jans": [
+          "4525807300932",
+          "4525807300918",
+          "4525807298031"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ｶｷﾞﾛｲｱﾕ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/61c8dbea0ef81e1b86cc9ee209f39378.png",
+      "sku": {
+        "jans": [
+          "4525807300925",
+          "4525807300901",
+          "4525807298000"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "米代ﾏﾙﾁﾌﾞﾗｯｸ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4d9b278dc60c21daeddbd3727bc19652.png",
+      "sku": {
+        "jans": [
+          "4525807276916",
+          "4525807276923",
+          "4525807276930"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ｼﾙﾊﾞｰﾋﾟﾝｸﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/024e22dbb342772d70064de5081bf51b.png",
+      "sku": {
+        "jans": [
+          "4525807244021",
+          "4525807244137"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ｱｯﾌﾟﾙﾁｬｰﾄ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8c0bd0ec7fdf8a11eadec3c8cb83a19a.png",
+      "sku": {
+        "jans": [
+          "4525807244144"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "HLｺｯﾊﾟｰﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f98e8fb5d04eea05d5387b081084f069.png",
+      "sku": {
+        "jans": [
+          "4525807244069"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "赤金ﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/663df2643da67b244edccca1eb0d1356.png",
+      "sku": {
+        "jans": [
+          "4525807244014"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "HLﾌﾗｯｼｭｱﾕ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/89d3ee3444d21cf7ad70c1a76d1360f2.png",
+      "sku": {
+        "jans": [
+          "4525807244076"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "越中浮水ﾎﾜｲﾄﾊﾞｯｸ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1b9dbc877dda90e2ad3bcb9c04d900ba.png",
+      "sku": {
+        "jans": [
+          "4525807228144",
+          "4525807228175",
+          "4525807227178"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾊﾟﾗﾚﾙﾁｬｰﾄ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/12/985295b4fe8a0c40b4d8288b5859af25.png",
+      "sku": {
+        "jans": [
+          "4525807228151",
+          "4525807228182",
+          "4525807227185"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "越中雪代ﾌﾞﾙｰﾊﾞｯｸ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/e87db7c2cf6abc28788962cd3d88e4b1.png",
+      "sku": {
+        "jans": [
+          "4525807228137",
+          "4525807228168",
+          "4525807190052"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "銀ﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2f8cf78972f54a0da8d4f256c6811e23.png",
+      "sku": {
+        "jans": [
+          "4582418097330",
+          "4582418094155",
+          "4582418084545"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "金ｱﾕ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/d7251613afa5b0525dd78b864704a19f.png",
+      "sku": {
+        "jans": [
+          "4582418097347",
+          "4582418094162",
+          "4582418084552"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ｽﾄﾗｲﾌﾟｱﾕ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7301b8a8ed496eba15b9e07a961dc8f7.png",
+      "sku": {
+        "jans": [
+          "4582418097378",
+          "4582418094193",
+          "4582418084583"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾊﾟｰﾙｱﾕ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/d824f478956d12572a5e7617bcb4837f.png",
+      "sku": {
+        "jans": [
+          "4582418097385",
+          "4582418094209",
+          "4582418084590"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ｸﾞﾘｰﾝｺﾞｰﾙﾄﾞｱﾕ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2014/01/7da9947a7995bc42d0e49eb6f3ae4023.jpg",
+      "sku": {
+        "jans": [
+          "4582418097408",
+          "4582418094223",
+          "4582418084613"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾃﾈｼｰ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1602d6343378c370b3a98fb5e52c9880.png",
+      "sku": {
+        "jans": [
+          "4582418097415",
+          "4582418094230",
+          "4582418084620"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾗｲﾑﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2015/12/0317dc81bd160718b07378389225fe6a.jpg",
+      "sku": {
+        "jans": [
+          "4582418097477",
+          "4582418094292",
+          "4582418093240"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ｻｲﾄｱｶｷﾝ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f29e84c6ef984b7ce9a2e4613e3eb454.png",
+      "sku": {
+        "jans": [
+          "4582418099365",
+          "4582418099310",
+          "4582418099211"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾌﾗｯｼｭｸﾞﾘｰﾝﾊﾞｯｸ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/72b7c9790e6a77b2f81186c6a32017ef.png",
+      "sku": {
+        "jans": [
+          "4582418099389",
+          "4582418099334",
+          "4582418099235"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾌﾗｯｼｭﾌﾞﾙｰﾊﾞｯｸ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0840cb14c2537c5ede426b132df500db.png",
+      "sku": {
+        "jans": [
+          "4582418099396",
+          "4582418099341",
+          "4582418099297"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "信州雪代ﾋﾟﾝｸ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5fa36b8c510c7ae232c61dbfb6a8364d.png",
+      "sku": {
+        "jans": [
+          "4525807190175",
+          "4525807190151"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "郡上鮎 烈火",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f16036da28a01f5b43bb921d69fa310e.png",
+      "sku": {
+        "jans": [
+          "4525807190182",
+          "4525807190168"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾌﾗｯｼｭﾁｬｰﾄ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/628c3cb18ef8e2a48104fad379f37da7.png",
+      "sku": {
+        "jans": [
+          "4582418084644",
+          "4582418093110",
+          "4582418084408"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ｸﾞﾛｰｱﾕ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1d5fc26330c976ec03113b4138492cdf.png",
+      "sku": {
+        "jans": [
+          "4582418097453",
+          "4582418093226",
+          "4582418093196"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾋﾟﾝｸｱﾕ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/32fa70bf3f0131d906afe4d331634b48.png",
+      "sku": {
+        "jans": [
+          "4582418097460",
+          "4582418094285",
+          "4582418093233"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾌﾗｯｼｭﾋﾟﾝｸﾊﾞｯｸ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6ee8ae06fb9157bb54c00636be3c7736.png",
+      "sku": {
+        "jans": [
+          "4582418099372",
+          "4582418099228",
+          "4582418099273"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾎｯﾄﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/035b71e0ed2f1226da140e24fdc2791d.png",
+      "sku": {
+        "jans": [
+          "4582418099402",
+          "4582418099259",
+          "4582418099303"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "錦鮎",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/87be350d528b6d4f930d244ae057a3ff.png",
+      "sku": {
+        "jans": [
+          "4582418099778",
+          "4582418099754",
+          "4525807190076"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "北村GPﾌﾗｯｼｭ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ce9e03bcb51fde1f6b51e83793d72dbf.png",
+      "sku": {
+        "jans": [
+          "4582418096746",
+          "4525807170016",
+          "4582418096227"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "若葉桜ﾔﾏﾒ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b794bc6f850d24a110e5a6f3fa0c6ca7.png",
+      "sku": {
+        "jans": [
+          "4525807170009",
+          "4525807170023",
+          "4525807243994"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

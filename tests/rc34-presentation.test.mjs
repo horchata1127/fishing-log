@@ -42,9 +42,9 @@ test('preview additions stay distinct from import outcomes and unknown running i
   assert.equal(ui.historyAddedTotal({ kind: 'restore' }), 0)
   assert.equal(ui.historyAddedTotal({ kind: 'import', counts: { a: { added: 3 }, b: { added: 2 } } }), 5)
 })
-test('all 15 RC development entries are bundled descending and every linked local document remains present', async () => {
+test('historical entries and RC45 are bundled descending and every linked document remains present', async () => {
   const entries = development.lureMasterDevelopmentHistory
-  assert.deepEqual(entries.map(e => e.rc), Array.from({ length: 15 }, (_, i) => 33 - i))
+  assert.deepEqual(entries.map(e => e.rc), [45,...Array.from({ length: 15 }, (_, i) => 33 - i)])
   for (const entry of entries) {
     assert.ok(entry.catalog && entry.features && entry.pending && entry.documents.length)
     for (const document of entry.documents) {

@@ -1,0 +1,596 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/crank/pepino/",
+  "originType": "rc47-identifier",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "b0d6b5a42d4ac47dd0e2574bf588404d1cbef90b2949183734882e6eab8a58ff",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Length",
+          "Weight",
+          "Type"
+        ],
+        [
+          "Pepino SR",
+          "56mm",
+          "2.2g",
+          "Floating"
+        ],
+        [
+          "Pepino MR",
+          "56mm",
+          "2.4g",
+          "Floating"
+        ],
+        [
+          "Pepino MR-SS",
+          "56mm",
+          "2.6g",
+          "Sinking"
+        ],
+        [
+          "Pepino DR",
+          "56mm",
+          "2.5g",
+          "Floating"
+        ],
+        [
+          "Pepino DR-SS",
+          "56mm",
+          "2.6g",
+          "Sinking"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "クリアピンク",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1ef91161e22f14635b5140d47bcf7658.png",
+      "sku": {
+        "jans": [
+          "4525807256383"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807256383"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "早熟バナナ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/855a40f0e02c851f795b36ee9f13845b.png",
+      "sku": {
+        "jans": [
+          "4525807256390"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4525807256390"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "完熟マンゴー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fdbe1597a1408b598f4420d2f04c6f75.png",
+      "sku": {
+        "jans": [
+          "4525807256406",
+          "4525807289312",
+          "4525807312447"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289312"
+          ],
+          [
+            "dr-ss",
+            "4525807312447"
+          ],
+          [
+            "sr",
+            "4525807256406"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "W蛍光パンチ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3026b3d834ed59752c6eb43d15ea51c0.png",
+      "sku": {
+        "jans": [
+          "4525807256413",
+          "4525807289190",
+          "4525807312454"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289190"
+          ],
+          [
+            "dr-ss",
+            "4525807312454"
+          ],
+          [
+            "sr",
+            "4525807256413"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキートロピカルグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Pepino_2021NEW_01_re.png",
+      "sku": {
+        "jans": [
+          "4525807256369",
+          "4525807226430",
+          "4525807289268",
+          "4525807226447",
+          "4525807312416"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289268"
+          ],
+          [
+            "dr-ss",
+            "4525807312416"
+          ],
+          [
+            "sr",
+            "4525807256369"
+          ],
+          [
+            "mr",
+            "4525807226430"
+          ],
+          [
+            "dr",
+            "4525807226447"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "イトカツハニーレモンZUV",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/23bdeae454f977229ecba4a4f06aee69.png",
+      "sku": {
+        "jans": [
+          "4525807227376",
+          "4525807289206",
+          "4525807227390",
+          "4525807312423"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289206"
+          ],
+          [
+            "dr-ss",
+            "4525807312423"
+          ],
+          [
+            "mr",
+            "4525807227376"
+          ],
+          [
+            "dr",
+            "4525807227390"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "MSTカルテットチャート",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2021/11/6c278c5791f0c13067b6daa69cee3c69.png",
+      "sku": {
+        "jans": [
+          "4525807256376",
+          "4525807227383",
+          "4525807289183",
+          "4525807227406",
+          "4525807312430"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289183"
+          ],
+          [
+            "dr-ss",
+            "4525807312430"
+          ],
+          [
+            "sr",
+            "4525807256376"
+          ],
+          [
+            "mr",
+            "4525807227383"
+          ],
+          [
+            "dr",
+            "4525807227406"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "蛍光ピンク",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_1.png",
+      "sku": {
+        "jans": [
+          "4525807256291",
+          "4525807205121",
+          "4525807289336",
+          "4525807205220",
+          "4525807312317"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289336"
+          ],
+          [
+            "dr-ss",
+            "4525807312317"
+          ],
+          [
+            "sr",
+            "4525807256291"
+          ],
+          [
+            "mr",
+            "4525807205121"
+          ],
+          [
+            "dr",
+            "4525807205220"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーボンズ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_5.png",
+      "sku": {
+        "jans": [
+          "4525807256307",
+          "4525807205138",
+          "4525807289299",
+          "4525807205237",
+          "4525807312324"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289299"
+          ],
+          [
+            "dr-ss",
+            "4525807312324"
+          ],
+          [
+            "sr",
+            "4525807256307"
+          ],
+          [
+            "mr",
+            "4525807205138"
+          ],
+          [
+            "dr",
+            "4525807205237"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "マサのドクリンゴ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_7.png",
+      "sku": {
+        "jans": [
+          "4525807256314",
+          "4525807205145",
+          "4525807289282",
+          "4525807205244",
+          "4525807312331"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289282"
+          ],
+          [
+            "dr-ss",
+            "4525807312331"
+          ],
+          [
+            "sr",
+            "4525807256314"
+          ],
+          [
+            "mr",
+            "4525807205145"
+          ],
+          [
+            "dr",
+            "4525807205244"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレグロー/パンプキン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_9.png",
+      "sku": {
+        "jans": [
+          "4525807205152",
+          "4525807289244",
+          "4525807205251",
+          "4525807312348"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289244"
+          ],
+          [
+            "dr-ss",
+            "4525807312348"
+          ],
+          [
+            "mr",
+            "4525807205152"
+          ],
+          [
+            "dr",
+            "4525807205251"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーグロー/ブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_8.png",
+      "sku": {
+        "jans": [
+          "4525807205169",
+          "4525807289251",
+          "4525807205268",
+          "4525807312355"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289251"
+          ],
+          [
+            "dr-ss",
+            "4525807312355"
+          ],
+          [
+            "mr",
+            "4525807205169"
+          ],
+          [
+            "dr",
+            "4525807205268"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーブラウン/オレンジ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_4.png",
+      "sku": {
+        "jans": [
+          "4525807256321",
+          "4525807205176",
+          "4525807289275",
+          "4525807205275",
+          "4525807312362"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289275"
+          ],
+          [
+            "dr-ss",
+            "4525807312362"
+          ],
+          [
+            "sr",
+            "4525807256321"
+          ],
+          [
+            "mr",
+            "4525807205176"
+          ],
+          [
+            "dr",
+            "4525807205275"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "シュガースポット",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_2.png",
+      "sku": {
+        "jans": [
+          "4525807256338",
+          "4525807205183",
+          "4525807289237",
+          "4525807205282",
+          "4525807312379"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289237"
+          ],
+          [
+            "dr-ss",
+            "4525807312379"
+          ],
+          [
+            "sr",
+            "4525807256338"
+          ],
+          [
+            "mr",
+            "4525807205183"
+          ],
+          [
+            "dr",
+            "4525807205282"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "シマシマグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_10.png",
+      "sku": {
+        "jans": [
+          "4525807205190",
+          "4525807289220",
+          "4525807205299",
+          "4525807312386"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289220"
+          ],
+          [
+            "dr-ss",
+            "4525807312386"
+          ],
+          [
+            "mr",
+            "4525807205190"
+          ],
+          [
+            "dr",
+            "4525807205299"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ラムレーズン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_6.png",
+      "sku": {
+        "jans": [
+          "4525807256345",
+          "4525807205206",
+          "4525807289305",
+          "4525807205305",
+          "4525807312393"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289305"
+          ],
+          [
+            "dr-ss",
+            "4525807312393"
+          ],
+          [
+            "sr",
+            "4525807256345"
+          ],
+          [
+            "mr",
+            "4525807205206"
+          ],
+          [
+            "dr",
+            "4525807205305"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "蛍光グリーン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/08/pepino_3.png",
+      "sku": {
+        "jans": [
+          "4525807256352",
+          "4525807205213",
+          "4525807289329",
+          "4525807205312",
+          "4525807312409"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807289329"
+          ],
+          [
+            "sr",
+            "4525807256352"
+          ],
+          [
+            "mr",
+            "4525807205213"
+          ],
+          [
+            "dr",
+            "4525807205312"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

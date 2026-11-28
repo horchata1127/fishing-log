@@ -1,0 +1,149 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/crank/mitts-sr/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "2d14c7a0e3b2e283f1edc26954cb79757f6f63c384c435a1da5539ac53620a46",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Length"
+        ],
+        [
+          "Mitts SR-DRY[ドライ]",
+          "1.2g",
+          "28mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "DAIGO SUKEPIN/ダイゴスケピン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/07/mittsu_new_2.png",
+      "sku": {
+        "jans": [
+          "4525807203516"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "TACKEY NEON/タッキーネオン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/07/mittsu_new_1.png",
+      "sku": {
+        "jans": [
+          "4525807203509"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤスノクリブラ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/06/1a97ee86b9f688ea4208b80cc3e0cb0d.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドヌケオレ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/06/72b8febcc11473f93d424888056bc03a.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/06/a48060ba92649df41386fe0a845dd566.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "クリアー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/06/f57e7be27b11a0a9a35fe71f3d7d1424-2.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "スケ茶パープル",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/06/2fadf494a62e5bce00f41a0e31070801.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ミストペレット",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/06/b6f16c986abcb2f1c5e86f23c809cc13.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ハーフオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/06/bba371b94e4a3a36e4fc7417d4b16308.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ミエピン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/06/5d26351aec641cb96d2ed32bca2c9ece.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ミエチャート",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/06/d33ad445b60a2699c4aa7562429a1313.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "衝撃グロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/06/7b59082de9db6d3c74c2151e621b787b.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/crank/flapani/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "ed99f0bb2bc44d071e13b598eb4c1df577349c157484eb0c9e77bd8543484c7b",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Type",
+          "Length"
+        ],
+        [
+          "FlaPani",
+          "1.9g",
+          "Floating",
+          "28mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "タッキーブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a48060ba92649df41386fe0a845dd566-3.png",
+      "sku": {
+        "jans": [
+          "4525807225099"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6606c92279a5abf75d250318b3d65b09-4.png",
+      "sku": {
+        "jans": [
+          "4525807225105"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ゴールデン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/adf2bc1dac8b7369d559c37d9b67b272-2.png",
+      "sku": {
+        "jans": [
+          "4525807225112"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドパンプキン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/69a110baaf781fb3f0c0f5bab2959dc0-4.png",
+      "sku": {
+        "jans": [
+          "4525807225129"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "TKグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/84b7ff3e72e6ddb4c1b46236f1276506-1.png",
+      "sku": {
+        "jans": [
+          "4525807225136"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーボンズ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/30252b1c6dcec25408bddfb6116673d3-2.png",
+      "sku": {
+        "jans": [
+          "4525807225143"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "チェリーボンボン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8e6117d3af7dfe4321ffb90c1b160b87-1.png",
+      "sku": {
+        "jans": [
+          "4525807225150"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ラムレーズン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c31a0bb582b64ecc728e4f2bbf5c66dd-2.png",
+      "sku": {
+        "jans": [
+          "4525807225167"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーパーフェクトブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/581236e14b11d5ebb9da4be1e5165d4b.png",
+      "sku": {
+        "jans": [
+          "4525807225174"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーパーフェクトオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6006c010c72cd52dffae4015d2a26311.png",
+      "sku": {
+        "jans": [
+          "4525807225181"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

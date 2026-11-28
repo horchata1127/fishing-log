@@ -1,0 +1,151 @@
+{
+  "checkedAt": "2026-11-28",
+  "sources": {
+    "otsuka": {
+      "name": "プロショップオオツカ",
+      "termsUrls": [
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602267"
+      ],
+      "product": "held",
+      "image": "held",
+      "basis": "既存候補の本実行環境で403のアクセス確認画面。検索結果での商品確認とアクセス制限を区別し、残る候補を取得しない。ページには掲載写真が別サイズの場合がある旨の説明。"
+    },
+    "jh": {
+      "name": "城峰釣具店",
+      "termsUrls": [
+        "https://www.fishing-shop-jh.shop-pro.jp/?mode=sk",
+        "https://fishing-shop-jh.com/?mode=privacy"
+      ],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開の店舗表記・プライバシーポリシーに通常のページリンクを制限する記載は見つからなかった。原ページを別タブで開くテキストリンクに限定。画像の転載・アプリ内表示の許諾は未確認。"
+    },
+    "casting": {
+      "name": "キャスティング",
+      "termsUrls": [
+        "https://store.castingnet.jp/shop/customer/agree.aspx",
+        "https://store.castingnet.jp/shop/pages/guide_other.aspx"
+      ],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開利用規約・利用案内に通常のページリンクを制限する記載は見つからなかった。画像の権利帰属の記載があり、アプリ内表示の許諾は未確認。"
+    },
+    "troute": {
+      "name": "t-Route",
+      "termsUrls": [
+        "https://t-route.net/policies/terms-of-service"
+      ],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開利用規約に通常の商品ページリンクを制限する記載は見つからなかった。商品と色のvariant URLを原ページとして別タブで開く。コンテンツと画像の利用許可は確認できていない。"
+    },
+    "kitiya": {
+      "name": "吉や",
+      "termsUrls": [
+        "https://www.kitiya.jp/?mode=sk"
+      ],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開店舗表記に通常の商品ページリンクを制限する記載は見つからなかった。原ページを別タブで開く。画像の利用許可は確認できていない。"
+    },
+    "official": {
+      "name": "JACKALL / TIMON",
+      "termsUrls": [
+        "https://www.jackall.co.jp/terms-of-service/"
+      ],
+      "product": "held",
+      "image": "held",
+      "basis": "公式商品ページへのリンクおよび外部画像掲載の許諾未取得。RC48記録を再利用。"
+    },
+    "area-island": {
+      "name": "越谷タックルアイランド",
+      "termsUrls": [
+        "https://www.area-island.com/?mode=privacy"
+      ],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開店舗情報に通常のテキストリンクを制限する記載は見つからなかった。画像掲載許可は未確認。"
+    },
+    "troutisland": {
+      "name": "トラウトアイランド",
+      "termsUrls": [
+        "https://troutisland.shop-pro.jp/?mode=sk"
+      ],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開店舗情報に通常のテキストリンクを制限する記載は見つからなかった。画像掲載許可は未確認。"
+    },
+    "smith": {
+      "name": "SMITH",
+      "termsUrls": [
+        "https://www.smith.jp/html/201308-attetion.html"
+      ],
+      "checkedAt": "2026-11-28",
+      "product": "plain-link",
+      "image": "held",
+      "collection": "public pages; low-rate requests; local HTML audit cache; do not bypass restrictions",
+      "robotsCheck": {
+        "url": "https://www.smith.jp/robots.txt",
+        "httpStatus": 404
+      },
+      "publication": "factual names, codes, specifications, URLs and independently written match results only",
+      "privateVsPublic": "私的使用の例外と公開アプリ・リポジトリでの利用を分離。画像・説明文・HTMLの公開は採用しない",
+      "basis": "原則事前連絡不要のページリンク。フレーム・画像リンクや提携誤認を避け、別タブで公式商品ページを開く。画像掲載の許諾は確認できていない。"
+    },
+    "wonder-field": {
+      "name": "ワンダーフィールド",
+      "checkedAt": "2026-11-28",
+      "termsUrls": ["https://wonder-field.shop-pro.jp/?mode=sk"],
+      "product": "plain-link",
+      "image": "held",
+      "basis": "公開店舗表記に通常の商品ページリンクを制限する記載は見つからなかった。画像表示の許諾は未確認。"
+    },
+    "rob-lure": {
+      "name": "ROB LURE",
+      "checkedAt": "2026-11-28",
+      "policyReviewUrls": ["https://rob-lure.com/", "https://rob-lure.com/work/"],
+      "robotsCheck": {"url": "https://rob-lure.com/robots.txt", "httpStatus": 200, "scope": "公開製品ページは許可範囲。管理画面は対象外。"},
+      "product": "plain-link",
+      "image": "held",
+      "collection": "対象製品ページを低頻度で確認し、照合原本はローカルのみ。アクセス制限時は停止する。",
+      "publication": "モデル仕様、色コード・名称、URLおよび独自の照合結果のみ。",
+      "basis": "公式ホーム・製品案内のメニューとフッター及び公開サイト内検索を確認した範囲で、通常の商品ページリンクの制限や画像掲載を許可する条件は見つからなかった。"
+    },
+    "palms": {
+      "name": "PALMS",
+      "checkedAt": "2026-11-28",
+      "policyReviewUrls": [
+        "https://www.palmsjapan.com/",
+        "https://www.palmsjapan.com/sitemap/",
+        "https://www.palmsjapan.com/privacy/",
+        "https://www.palmsjapan.com/safety/"
+      ],
+      "robotsCheck": {
+        "url": "https://www.palmsjapan.com/robots.txt",
+        "httpStatus": 404
+      },
+      "product": "plain-link",
+      "image": "held",
+      "collection": "公開済みの対象製品ページだけを低頻度で確認。照合用HTMLの保存先はGit管理外。アクセス制限時は停止する。",
+      "publication": "品名、色コード、仕様、URLと独自に記述した照合結果のみ。HTML全文、説明文、画像バイナリは掲載対象外。",
+      "basis": "公式サイトの案内、サイトマップ、プライバシーポリシーと製品利用案内に、公開商品ページへの通常リンクを制限する記載は見つからなかった。出典を明示して別タブで開く。画像直リンクのアプリ内表示を許可する記載は確認できなかった。"
+    },
+    "velvet-arts": {
+      "name": "VELVET ARTS（VAパペットサーフェス共同メーカー）",
+      "termsUrls": [
+        "https://velvetarts.co.jp/policies/terms-of-service"
+      ],
+      "checkedAt": "2026-11-28",
+      "product": "plain-link",
+      "image": "held",
+      "collection": "公開商品ページ・公開バリエーションデータを対象1商品に限り照合",
+      "robotsCheck": {
+        "url": "https://velvetarts.co.jp/robots.txt",
+        "httpStatus": 200,
+        "scope": "確認した共同製品ページと公開バリエーションデータへの一般クローラー制限は見つからなかった"
+      },
+      "publication": "名称、仕様、色番号、URL、照合・検証結果に限定",
+      "basis": "リンクは原則自由。画像の掲載許諾は確認できていない。Shopify CDNの候補は公式商品バリエーションの掲載画像に限定。"
+    }
+  }
+}

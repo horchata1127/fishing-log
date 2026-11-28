@@ -8,9 +8,10 @@ import { rc31Catalog } from './rc31Catalog'
 import { rc33Catalog } from './rc33Catalog'
 import { rc37Catalog, rc37Pending } from './rc37Catalog'
 import { rc38Catalog } from './rc38Catalog'
+import { rc45RodioCatalog } from './rc45RodioCatalog'
 
-export type CatalogRevision = 'RC19' | 'RC20' | 'RC21' | 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33' | 'RC37' | 'RC38'
-export type MatchingRule = 'legacy' | 'barbie' | 'classified' | 'palms' | 'rc33' | 'moca'
+export type CatalogRevision = 'RC19' | 'RC20' | 'RC21' | 'RC22' | 'RC28' | 'RC30' | 'RC31' | 'RC33' | 'RC37' | 'RC38' | 'RC45'
+export type MatchingRule = 'legacy' | 'barbie' | 'classified' | 'palms' | 'rc33' | 'moca' | 'rodio'
 interface InputColor {
   name: string; code: string; label?: string; aliases?: readonly string[]; sourceUrl?: string
   sourceTier?: string; colorClass?: string; jan?: string; manufacturerUrl?: string; retailerUrl?: string
@@ -68,7 +69,7 @@ const barbieProducts = [
 
 function adapt(t: InputTarget, revision: CatalogRevision): MasterTarget {
   const rule: MatchingRule = revision === 'RC22' ? 'barbie' : revision === 'RC28' || revision === 'RC30' ? 'classified'
-    : revision === 'RC31' ? 'palms' : revision === 'RC33' ? 'rc33' : ['RC37', 'RC38'].includes(revision) ? 'moca' : 'legacy'
+    : revision === 'RC45' ? 'rodio' : revision === 'RC31' ? 'palms' : revision === 'RC33' ? 'rc33' : ['RC37', 'RC38'].includes(revision) ? 'moca' : 'legacy'
   return {
     key: targetKey(t), manufacturer: t.manufacturer, series: t.series, model: t.model, weight: t.weight,
     length: t.length, manufacturerAliases: [...t.manufacturerAliases], seriesAliases: [...t.seriesAliases], modelAliases: [...t.modelAliases],
@@ -76,9 +77,9 @@ function adapt(t: InputTarget, revision: CatalogRevision): MasterTarget {
     ...(t.preserveAmbiguousModel ? { preserveAmbiguousModel: true } : {}),
     category: (t.category ?? 'スプーン') as LureCategory, actionType: t.actionType, buoyancy: t.buoyancy, rattle: t.rattle,
     sourceUrl: t.sourceUrl ?? t.colors[0]?.sourceUrl ?? '', rule, revisions: [revision],
-    allowNewManufacturer: ['RC19', 'RC31', 'RC33', 'RC37', 'RC38'].includes(revision),
+    allowNewManufacturer: ['RC19', 'RC31', 'RC33', 'RC37', 'RC38', 'RC45'].includes(revision),
     allowNewModel: t.allowNewModel ?? true,
-    requireWeight: revision === 'RC21' || revision === 'RC22' || (rule === 'classified' && !t.reuseWithoutWeight),
+    requireWeight: revision === 'RC45' || revision === 'RC21' || revision === 'RC22' || (rule === 'classified' && !t.reuseWithoutWeight),
     productVerified: (t.productVerified ?? true) && (revision !== 'RC22' || barbieProducts.some(([name, type, weight]) =>
       name === t.model && type === t.actionType && weight === t.weight)), holdReason: t.holdReason ?? '',
     colors: t.colors.map(c => {
@@ -142,7 +143,7 @@ export function validateLureMasterManifest(manifest: MasterManifest): void {
   }
 }
 
-export function buildManifest(includeRC38 = true): MasterManifest {
+export function buildManifest(includeRC38 = true, includeRC45 = includeRC38): MasterManifest {
   const hunt = rc20Catalog[0]!
   const rc19: InputTarget = { ...hunt, colors: [
     { code: 'T-15', name: 'シルバー', label: 'T-15 シルバー（SILVER）', aliases: ['シルバー', 'silver'] },
@@ -153,13 +154,14 @@ export function buildManifest(includeRC38 = true): MasterManifest {
     ['RC28', rc28Catalog], ['RC30', rc30Catalog], ['RC31', rc31Catalog], ['RC33', rc33Catalog], ['RC37', rc37Catalog],
   ]
   if (includeRC38) packs.push(['RC38', rc38Catalog])
+  if (includeRC45) packs.push(['RC45', rc45RodioCatalog])
   const targets = new Map<string, MasterTarget>()
   for (const [revision, pack] of packs) for (const input of pack) {
     const target = adapt(input, revision), existing = targets.get(target.key)
     if (existing) merge(existing, target)
     else targets.set(target.key, target)
   }
-  const manifest: MasterManifest = { masterVersion: includeRC38 ? 'RC38-moca-rattle-2026-11-04' : 'RC37-moca-2026-11-03', matchingVersion: includeRC38 ? 3 : 2, targets: [...targets.values()],
+  const manifest: MasterManifest = { masterVersion: includeRC45 ? 'RC45-driftspin-bf-2026-11-23' : includeRC38 ? 'RC38-moca-rattle-2026-11-04' : 'RC37-moca-2026-11-03', matchingVersion: includeRC45 ? 4 : includeRC38 ? 3 : 2, targets: [...targets.values()],
     pending: [...rc28Pending.map(detail => ({ revision: 'RC28' as const, detail: structuredClone(detail) })),
       ...rc30Pending.map(detail => ({ revision: 'RC30' as const, detail: structuredClone(detail) })),
       ...rc37Pending.map(detail => ({ revision: 'RC37' as const, detail: includeRC38 && detail.name === 'MOCA DR Rattle 2HOOK'

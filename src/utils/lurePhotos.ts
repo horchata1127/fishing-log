@@ -2,6 +2,7 @@ import { db } from '../db/database'
 import type { SharedLureColor, LureColorPhoto, LurePhotoBlob, PhotoFace } from '../db/lurePhotoTypes'
 import { photoOptionIdentity, sharedColorForOption, modelProductLinkForOption, retailerProductLinkForOption, externalImageForOption, validateProductUrl, noaFamilyKey, type PhotoOption } from './noaPhotoCatalog'
 import { noaUnavailableProductLinks } from '../data/noaUnavailableProductLinks'
+import { resolveLureExternalReference, type ExternalPhotoOption } from './lureExternalCatalog'
 
 export const photoTableNames = ['sharedLureColors', 'lureColorPhotoLinks', 'lureColorPhotos', 'lurePhotoBlobs'] as const
 export const photoLimits = { inputBytes: 15 * 1024 * 1024, storedBytes: 2 * 1024 * 1024, edge: 1280, pixels: 40_000_000, archiveBytes: 150 * 1024 * 1024 }
@@ -11,11 +12,11 @@ function changed() { for (const listener of listeners) listener() }
 const photoTables = () => photoTableNames.map(n => db.table(n))
 const catalogTables = () => [db.lureVariants, db.lureModels, db.lureSeries, db.lureManufacturers]
 
-export async function currentPhotoCatalog(): Promise<PhotoOption[]> {
+export async function currentPhotoCatalog(): Promise<ExternalPhotoOption[]> {
   const [variants, models, series, makers] = await Promise.all([db.lureVariants.toArray(), db.lureModels.toArray(), db.lureSeries.toArray(), db.lureManufacturers.toArray()])
   return variants.flatMap(v => {
     const model = models.find(m => m.id === v.modelId), parent = series.find(s => s.id === model?.seriesId), maker = makers.find(m => m.id === parent?.manufacturerId)
-    return model && parent && maker && v.id ? [{ variantId: v.id, modelId: model.id!, manufacturerName: maker.name, seriesName: parent.name, modelName: model.name, colorName: v.colorName }] : []
+    return model && parent && maker && v.id ? [{ variantId: v.id, modelId: model.id!, manufacturerName: maker.name, seriesName: parent.name, modelName: model.name, colorName: v.colorName, externalColorCode: v.catalogEvidence?.colorCode, modelDetails: { weightG: model.weightG, lengthMm: model.lengthMm, actionType: model.actionType, buoyancy: v.catalogEvidence?.buoyancy, rattle: v.catalogEvidence?.rattle } }] : []
   })
 }
 export async function photoDetails(option: PhotoOption) {
@@ -24,9 +25,14 @@ export async function photoDetails(option: PhotoOption) {
   const [stored, rows] = await Promise.all([db.sharedLureColors.get(derived.id), db.lureColorPhotos.where('sharedColorId').equals(derived.id).toArray()])
   return { shared: stored ?? derived, hasStoredShared: !!stored, photos: rows.filter(p => !p.variantIdentity || p.variantIdentity === photoOptionIdentity(option)) }
 }
-export async function resolveColorPhoto(option: PhotoOption, face: PhotoFace = 'front') {
+export async function resolveColorPhoto(option: ExternalPhotoOption, face: PhotoFace = 'front') {
   const detail = await photoDetails(option)
-  if (!detail) return undefined
+  if (!detail) {
+    const reference = resolveLureExternalReference(option)
+    if (!reference) return undefined
+    return { ...reference, local: [], faces: [] as PhotoFace[], additionalProductLinks: [],
+      imageReference: face === 'front' ? reference.imageReference : undefined }
+  }
   const eligible = detail.photos.filter(p => p.verificationStatus === 'verified')
   const local = eligible.filter(p => p.imageAvailability === 'local' && p.imageType === face && p.blobId && ['user-owned', 'permitted'].includes(p.rightsStatus))
     .sort((a, b) => Number(!!b.variantIdentity) - Number(!!a.variantIdentity) || b.updatedAt.localeCompare(a.updatedAt) || b.id.localeCompare(a.id))
@@ -37,8 +43,9 @@ export async function resolveColorPhoto(option: PhotoOption, face: PhotoFace = '
   const retailer = retailerProductLinkForOption(option)
   const userChoice = !!override || detail.hasStoredShared && detail.shared.externalVerified !== undefined
   const suppressed = !override && detail.shared.externalVerified === false
-  const externalProductUrl = userChoice ? previousUrl : retailer?.externalProductUrl ?? previousUrl
-  const sourceName = externalProductUrl && externalProductUrl === retailer?.externalProductUrl ? retailer.sourceName : previousSource
+  const supplement = !userChoice && !retailer && !previousUrl ? resolveLureExternalReference(option, undefined, true) : undefined
+  const externalProductUrl = userChoice ? previousUrl : retailer?.externalProductUrl ?? previousUrl ?? supplement?.externalProductUrl
+  const sourceName = externalProductUrl && externalProductUrl === retailer?.externalProductUrl ? retailer.sourceName : supplement?.sourceName ?? previousSource
   const additionalProductLinks: { url: string; sourceName: string }[] = []
   if (!suppressed) {
     if (retailer && retailer.externalProductUrl !== externalProductUrl) additionalProductLinks.push({ url: retailer.externalProductUrl, sourceName: retailer.sourceName })

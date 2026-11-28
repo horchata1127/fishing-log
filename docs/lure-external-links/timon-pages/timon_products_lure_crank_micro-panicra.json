@@ -1,0 +1,297 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/crank/micro-panicra/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "769d0862d6cd4f18cc0788b0a2b8924a382128cc915330f8432438228ddaf842",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Length",
+          "Weight",
+          "Type"
+        ],
+        [
+          "MICRO PANICRA MR-Fラトル",
+          "20.2㎜",
+          "0.95g",
+          "Floating"
+        ],
+        [
+          "MICRO PANICRA MR-SS",
+          "20.2㎜",
+          "1.0g",
+          "Sinking"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "クリアー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2b2b7d6299400969cc27ecb57726e5d3-9.png",
+      "sku": {
+        "jans": [
+          "4525807327571",
+          "4525807327694"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327694"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327571"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a48060ba92649df41386fe0a845dd566-6.png",
+      "sku": {
+        "jans": [
+          "4525807327588",
+          "4525807327700"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327700"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327588"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドパンプキン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/69a110baaf781fb3f0c0f5bab2959dc0-7.png",
+      "sku": {
+        "jans": [
+          "4525807327595",
+          "4525807327717"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327717"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327595"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドグローペレブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/41708b165d5051e25a5cc8bb5a8f3265-1.png",
+      "sku": {
+        "jans": [
+          "4525807327601",
+          "4525807327724"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327724"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327601"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドグローペレオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c5925d76e1a95df9c7473f2408ed9c2e-1.png",
+      "sku": {
+        "jans": [
+          "4525807327618",
+          "4525807327731"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327731"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327618"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーボンズ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/30252b1c6dcec25408bddfb6116673d3-5.png",
+      "sku": {
+        "jans": [
+          "4525807327625",
+          "4525807327748"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327748"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327625"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ラムレーズン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c31a0bb582b64ecc728e4f2bbf5c66dd-7.png",
+      "sku": {
+        "jans": [
+          "4525807327632",
+          "4525807327755"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327755"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327632"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーペレットサン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fbb9e3162fd61cbc20c7aba98047bd23.png",
+      "sku": {
+        "jans": [
+          "4525807327649",
+          "4525807327762"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327762"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327649"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "カドピングロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/bf8a201e2b70ba6b62205e2f0f072245-1.png",
+      "sku": {
+        "jans": [
+          "4525807327656",
+          "4525807327779"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327779"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327656"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "KYオレシャグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/83fb6664b8d6815bc16dc09799f076a3-1.png",
+      "sku": {
+        "jans": [
+          "4525807327663",
+          "4525807327786"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327786"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327663"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーBPゴーストブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5c841ff8a60d8bf7237080d83841bba6.png",
+      "sku": {
+        "jans": [
+          "4525807327670",
+          "4525807327793"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327793"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327670"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ダイゴビーン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/901eb9e2090abbd7579a50ff1b73e4c7.png",
+      "sku": {
+        "jans": [
+          "4525807327687",
+          "4525807327809"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr-ss",
+            "4525807327809"
+          ],
+          [
+            "mr-fラトル",
+            "4525807327687"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/minnow/buriburi-minnow-hf-rattle/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "c59499a48ae817533cc38088d7728f496aa71b1df75c4033c53d345c41ab388a",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Length"
+        ],
+        [
+          "BURIBURI MINNOW HF Rattle",
+          "2.1g",
+          "40mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "VIBESオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1964f5b6a9e1d593b5de276257ffc0dc-6.png",
+      "sku": {
+        "jans": [
+          "4525807340341"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "霞オリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4ec72b69c8773380044221f1e379eb2d-2.png",
+      "sku": {
+        "jans": [
+          "4525807340358"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "クリアー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2b2b7d6299400969cc27ecb57726e5d3-10.png",
+      "sku": {
+        "jans": [
+          "4525807268041"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a48060ba92649df41386fe0a845dd566-7.png",
+      "sku": {
+        "jans": [
+          "4525807266825"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "神レッドグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5e391aa5745a987449b2c9e565b58660.png",
+      "sku": {
+        "jans": [
+          "4525807268065"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドスケパンプキン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c24c1ac6eb5f13db8b02892700f6a580.png",
+      "sku": {
+        "jans": [
+          "4525807268058"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドグローペレオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c5925d76e1a95df9c7473f2408ed9c2e-2.png",
+      "sku": {
+        "jans": [
+          "4525807268072"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーボンズ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/30252b1c6dcec25408bddfb6116673d3-6.png",
+      "sku": {
+        "jans": [
+          "4525807266832"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーパーフェクトブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/581236e14b11d5ebb9da4be1e5165d4b-1.png",
+      "sku": {
+        "jans": [
+          "4525807268096"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーパーフェクトオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6006c010c72cd52dffae4015d2a26311-1.png",
+      "sku": {
+        "jans": [
+          "4525807268102"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ダイゴマッスルレッドグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b0722f74e8a120a3d0e36632a61741f7.png",
+      "sku": {
+        "jans": [
+          "4525807266849"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ゴンティーラッシュグローⅡ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/9e607115d66fd08962dac52a1b6cb410-1.png",
+      "sku": {
+        "jans": [
+          "4525807268089"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/crank/panicra-dr-rattle/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "4f7394b48c517eeec67763920ee6252bed7a008e86ad216292979af690907895",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Length"
+        ],
+        [
+          "PaniCra DR Rattle",
+          "3.2g",
+          "32mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "クリアー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a41128cff03207c79db90386c665be47.png",
+      "sku": {
+        "jans": [
+          "4525807267976"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f0a07b93314b6d6dd70dd29bc7b585da-1.png",
+      "sku": {
+        "jans": [
+          "4525807267983"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレレッドグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fcb50951d33134d550922abe1f16fad5.png",
+      "sku": {
+        "jans": [
+          "4525807266894"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドパンプキン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/497e49c1db0b78d352f83fdfeff7c725.png",
+      "sku": {
+        "jans": [
+          "4525807266887"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドグローペレオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3433d3d36ab47900696e3843a71dc41e.png",
+      "sku": {
+        "jans": [
+          "4525807268010"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーゴーストペレット",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/64b146517bee261cf7c6dc530ab51f81.png",
+      "sku": {
+        "jans": [
+          "4525807267990"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ラムレーズン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/db6b66e66adef67c35c6a00ccc12df4c.png",
+      "sku": {
+        "jans": [
+          "4525807266900"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーパーフェクトブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/28d46e52894bbc75b774881b5721ff62.png",
+      "sku": {
+        "jans": [
+          "4525807268027"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーパーフェクトオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/9805503b80bb6bbca2eab8e1930ce6ba.png",
+      "sku": {
+        "jans": [
+          "4525807268034"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ダイゴマッスルレッドグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2022/02/5901506af6cb037430f24a213105b927.png",
+      "sku": {
+        "jans": [
+          "4525807268003"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

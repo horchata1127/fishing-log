@@ -12,6 +12,7 @@ const { retailerProductLinkForOption, validateProductUrl } = await loader.load('
 const { noaAdditionalExternalLinks } = await loader.load('src/data/noaExternalReferences.ts')
 const { noaRetailerProductLinks } = await loader.load('src/data/noaRetailerProductLinks.ts')
 const { noaUnavailableProductLinks } = await loader.load('src/data/noaUnavailableProductLinks.ts')
+const { resolveLureExternalReference } = await loader.load('src/utils/lureExternalCatalog.ts')
 const latest = JSON.parse(readFileSync('docs/noa-photo-coverage-followup/CATALOG.json', 'utf8'))
 const baseline = JSON.parse(readFileSync('docs/noa-photo-coverage-followup/AUDIT.json', 'utf8'))
 const snapshot = async () => Object.fromEntries(await Promise.all(db.tables.map(async t => [t.name, await t.toArray()])))
@@ -25,7 +26,7 @@ after(async () => { db.close(); await db.delete(); await loader.close() })
 
 test('all valid PR45 links remain reachable alongside better model references; retired defaults are replaced without writes', async () => {
   const catalog = await currentPhotoCatalog(), before = await snapshot()
-  let kept = 0, added = 0, replaced = 0, supplements = 0
+  let kept = 0, added = 0, replaced = 0, supplements = 0, rc47Added = 0
   const originalFetch = globalThis.fetch
   globalThis.fetch = () => { throw new Error('Browsing catalog must not fetch external content') }
   try {
@@ -35,12 +36,16 @@ test('all valid PR45 links remain reachable alongside better model references; r
       const urls = [result.externalProductUrl, ...result.additionalProductLinks.map(p=>p.url)]
       const unavailable = noaUnavailableProductLinks.includes(old.productUrl)
       if (old.productUrl && !unavailable) { assert.ok(urls.includes(old.productUrl), option.modelName+'/'+option.colorName); kept++ }
-      if (!old.productUrl && result.externalProductUrl) added++
+      if (!old.productUrl && result.externalProductUrl) {
+        const rc47 = resolveLureExternalReference(option, undefined, true)
+        if (rc47?.externalProductUrl === result.externalProductUrl) rc47Added++
+        else added++
+      }
       if (unavailable && result.externalProductUrl !== old.productUrl) replaced++
       if (old.productUrl && !unavailable && old.productUrl !== result.externalProductUrl) supplements++
     }
   } finally { globalThis.fetch = originalFetch }
-  assert.equal(catalog.length,713); assert.equal(kept,361); assert.equal(added,10); assert.equal(replaced,17); assert.equal(supplements,124)
+  assert.equal(catalog.length,713); assert.equal(kept,361); assert.equal(added,10); assert.equal(rc47Added,9); assert.equal(replaced,17); assert.equal(supplements,124)
   assert.deepEqual(await snapshot(),before)
   for (const name of photoTableNames) assert.equal(await db.table(name).count(),0)
 })

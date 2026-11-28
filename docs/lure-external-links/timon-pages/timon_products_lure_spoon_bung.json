@@ -1,0 +1,196 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/spoon/bung/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "8030e00059676892df5532e8b4377be691a4463da0fb7d5924eda223d4f89a01",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Length"
+        ],
+        [
+          "BUNG",
+          "0.4g",
+          "10mm"
+        ],
+        [
+          "BUNG",
+          "0.6g",
+          "10mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "シューイチプールサイド",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/02/2020_BUNG_syuichi_pool_side-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807198027",
+          "4525807198058"
+        ],
+        "weightJans": [
+          [
+            0.4,
+            "4525807198027"
+          ],
+          [
+            0.6,
+            "4525807198058"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーダブルグロースイカ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/02/2020_BUNG_tacky_wm-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807198010",
+          "4525807198041"
+        ],
+        "weightJans": [
+          [
+            0.4,
+            "4525807198010"
+          ],
+          [
+            0.6,
+            "4525807198041"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレクリアオレンジ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2020/02/2020_BUNG_Syobokure_Clear_orange-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807198003",
+          "4525807198034"
+        ],
+        "weightJans": [
+          [
+            0.4,
+            "4525807198003"
+          ],
+          [
+            0.6,
+            "4525807198034"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "１６４　グローチャート",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2018/10/164-GLOW-CHARTREUSE.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "１６５　レッドグローオレンジ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2018/10/165-RED-GLOW-ORENGE.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "１６６　レッドグローピンク",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/07/166-RED-GLOW-PINK-800x533.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "１６７　グローペレット",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2018/10/167-GLOW-PELLET.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "１６８　タッキーブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2018/10/168-TACKEY-BROWN.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "１６９　Ｗグローオレンジ／チャート",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2018/11/169-W-GLOW-ORENGECHARTREUSE.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "１７０　Ｗグローオレンジ／ピンク",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2018/10/170-W-GLOW-ORENGEPINK.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "１７１　ソリッドオレンジグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2018/10/171-SOLID-ORENGE-GLOW.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "１７２　ソリッドレッドグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2018/10/172-SOLID-RED-GLOW.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "１７３　ソリッドグロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2018/10/173-SOLID-GLOW.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

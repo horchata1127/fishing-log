@@ -1,0 +1,596 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/spoon/rekuze/",
+  "originType": "rc47-identifier",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "f711ae4ec0f2c0660431e659a37a61b1b8d7038c2e4b7bab85c56e5102b0eee7",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Length"
+        ],
+        [
+          "Rekuze",
+          "0.6g",
+          "19.5mm"
+        ],
+        [
+          "Rekuze",
+          "1.0g",
+          "22.3mm"
+        ],
+        [
+          "Rekuze",
+          "1.7g",
+          "26.0mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "37 からし",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_02.png",
+      "sku": {
+        "jans": [
+          "4525807286533",
+          "4525807246049",
+          "4525807294804"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807286533"
+          ],
+          [
+            1,
+            "4525807246049"
+          ],
+          [
+            1.7,
+            "4525807294804"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾀﾞｲｺﾞﾏｲﾄⅡ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_01.png",
+      "sku": {
+        "jans": [
+          "4525807286540",
+          "4525807246117",
+          "4525807294828"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807286540"
+          ],
+          [
+            1,
+            "4525807246117"
+          ],
+          [
+            1.7,
+            "4525807294828"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "119 ﾀｯｷｰGﾍﾟﾚｯﾄ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_08.png",
+      "sku": {
+        "jans": [
+          "4525807286557",
+          "4525807246056"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807286557"
+          ],
+          [
+            1,
+            "4525807246056"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "128 山葵",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_10.png",
+      "sku": {
+        "jans": [
+          "4525807286564",
+          "4525807246063"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807286564"
+          ],
+          [
+            1,
+            "4525807246063"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "160 ﾀﾞｲｺﾞｼｰｸﾚｯﾄｸﾞﾘｰﾝ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_15.png",
+      "sku": {
+        "jans": [
+          "4525807246070"
+        ],
+        "weightJans": [
+          [
+            1,
+            "4525807246070"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "162 ﾀﾞｲｺﾞｼｰｸﾚｯﾄｸﾞﾛｰ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_13.png",
+      "sku": {
+        "jans": [
+          "4525807246087"
+        ],
+        "weightJans": [
+          [
+            1,
+            "4525807246087"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "176 ﾔｼﾞｰｾｶﾝﾄﾞｺﾞｰﾙﾄﾞ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_14.png",
+      "sku": {
+        "jans": [
+          "4525807246094",
+          "4525807294859"
+        ],
+        "weightJans": [
+          [
+            1,
+            "4525807246094"
+          ],
+          [
+            1.7,
+            "4525807294859"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "180 ﾔｼﾞｰｼﾙﾎﾜUV",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_06.png",
+      "sku": {
+        "jans": [
+          "4525807286571",
+          "4525807246100",
+          "4525807294866"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807286571"
+          ],
+          [
+            1,
+            "4525807246100"
+          ],
+          [
+            1.7,
+            "4525807294866"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "206 ﾀﾞｲｺﾞﾀﾞｰｸｵﾘｰﾌﾞ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_09.png",
+      "sku": {
+        "jans": [
+          "4525807246131"
+        ],
+        "weightJans": [
+          [
+            1,
+            "4525807246131"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "207 枯れ金",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_07.png",
+      "sku": {
+        "jans": [
+          "4525807246148"
+        ],
+        "weightJans": [
+          [
+            1,
+            "4525807246148"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "208 元気ﾊﾂﾗﾂ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_12.png",
+      "sku": {
+        "jans": [
+          "4525807293630",
+          "4525807246155"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807293630"
+          ],
+          [
+            1,
+            "4525807246155"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "209 ｻﾝｾｯﾄ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_11.png",
+      "sku": {
+        "jans": [
+          "4525807286588",
+          "4525807246162",
+          "4525807294880"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807286588"
+          ],
+          [
+            1,
+            "4525807246162"
+          ],
+          [
+            1.7,
+            "4525807294880"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "210 ﾌﾞﾙｰﾊﾜｲ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_04.png",
+      "sku": {
+        "jans": [
+          "4525807246179"
+        ],
+        "weightJans": [
+          [
+            1,
+            "4525807246179"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "211 ｷﾗｵﾘｰﾌﾞ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_03.png",
+      "sku": {
+        "jans": [
+          "4525807246186"
+        ],
+        "weightJans": [
+          [
+            1,
+            "4525807246186"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ﾀﾞｲｺﾞﾐｸｽ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/Rekuze_05.png",
+      "sku": {
+        "jans": [
+          "4525807246124",
+          "4525807294835"
+        ],
+        "weightJans": [
+          [
+            1,
+            "4525807246124"
+          ],
+          [
+            1.7,
+            "4525807294835"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "4 蛍光ﾋﾟﾝｸ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b522ca7996626d062e97b9d346623d0e.png",
+      "sku": {
+        "jans": [
+          "4525807286595",
+          "4525807294798"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807286595"
+          ],
+          [
+            1.7,
+            "4525807294798"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "76 ｸﾞﾘｰﾝﾎﾞｰ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/12135d2c01032ec5228e88a840680f7d.png",
+      "sku": {
+        "jans": [
+          "4525807294811"
+        ],
+        "weightJans": [
+          [
+            1.7,
+            "4525807294811"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "141 ｵﾚﾁｬｰﾄｷﾝ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6652c838b71c0a65891cde31f6d3b4b7.png",
+      "sku": {
+        "jans": [
+          "4525807294842"
+        ],
+        "weightJans": [
+          [
+            1.7,
+            "4525807294842"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "199 放流ｵﾚｷﾝ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/cbf31143b4f17c76a4017a90d249dcd0.png",
+      "sku": {
+        "jans": [
+          "4525807294873"
+        ],
+        "weightJans": [
+          [
+            1.7,
+            "4525807294873"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "218 ﾀﾞｲｺﾞﾏｼﾏｼｳｽﾞﾗ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ebdb7bf0b95dbc57f39528918c4a1c34.png",
+      "sku": {
+        "jans": [
+          "4525807294897"
+        ],
+        "weightJans": [
+          [
+            1.7,
+            "4525807294897"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "219 ｹﾞﾝｺﾂﾔｼﾞｰﾏｲﾄ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a4a97603813bd998e6406aedac2bdb4e.png",
+      "sku": {
+        "jans": [
+          "4525807286601",
+          "4525807294903"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807286601"
+          ],
+          [
+            1.7,
+            "4525807294903"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "222 DBRG",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/548d1864368001447cd5c2582a4cbab4.png",
+      "sku": {
+        "jans": [
+          "4525807286618"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807286618"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "223 ｶﾄﾞﾓﾓ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7b8029b3d43f93e5ee48165c7746115f.png",
+      "sku": {
+        "jans": [
+          "4525807286625"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807286625"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "224 ｶﾄﾞｵﾘﾌﾞﾙ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5ba43296e5e138b29cfa32f5b63ccb53.png",
+      "sku": {
+        "jans": [
+          "4525807286632",
+          "4525807294910"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807286632"
+          ],
+          [
+            1.7,
+            "4525807294910"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "225 ﾔｼﾞｰｵﾘﾊﾞ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ea2cc611b8432add1ba1cb8a186ff5ec.png",
+      "sku": {
+        "jans": [
+          "4525807293623",
+          "4525807294927"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807293623"
+          ],
+          [
+            1.7,
+            "4525807294927"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "226 ﾗﾌﾗﾝｽ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4bb3121ae561180d247f2f078f824ce6.png",
+      "sku": {
+        "jans": [
+          "4525807293647"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807293647"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "227 ﾔｼﾞｰｼﾞｪﾗｸﾞﾛｰ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7a120b4c18bdfccc9beeb5dca02ce4e4.png",
+      "sku": {
+        "jans": [
+          "4525807293654"
+        ],
+        "weightJans": [
+          [
+            0.6,
+            "4525807293654"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "228 ﾀﾏﾑｼ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/cdcfd2a0b6331c44b673fbf491c8553a-1.png",
+      "sku": {
+        "jans": [
+          "4525807294934"
+        ],
+        "weightJans": [
+          [
+            1.7,
+            "4525807294934"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

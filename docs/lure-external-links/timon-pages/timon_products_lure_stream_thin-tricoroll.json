@@ -1,0 +1,235 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/stream/thin-tricoroll/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "9f8a740fae56617d9ba9bb74fafb0cbb87539da11aa6335bf2da96cf8d2a0e42",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Length",
+          "Weight",
+          "Type"
+        ],
+        [
+          "スィン トリコロール 44S",
+          "44mm",
+          "2.3g",
+          "Sinking"
+        ],
+        [
+          "スィン トリコロール 52S",
+          "52mm",
+          "3.2g",
+          "Sinking"
+        ],
+        [
+          "スィン トリコロール 61S",
+          "61mm",
+          "4.3g",
+          "Sinking"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "天竜ずくアマゴ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7110589f9bf2789ebf07a72a42abffcd.png",
+      "sku": {
+        "jans": [
+          "4525807348934",
+          "4525807348941",
+          "4525807348958"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "神鳴大蛇",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/862c346867e4aafe278f2e98cc45af5b.png",
+      "sku": {
+        "jans": [
+          "4525807348965",
+          "4525807348972",
+          "4525807348989"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "銀ヤマメ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c6afd11d2d5b98254a59ec952bccf99e.png",
+      "sku": {
+        "jans": [
+          "4525807328141",
+          "4525807328264",
+          "4525807328387"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "金アユ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ef0d73a39fd2cc36c7d3675417b492b6.png",
+      "sku": {
+        "jans": [
+          "4525807328110",
+          "4525807328233",
+          "4525807328356"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "パールアユ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5d4a37d37560fbafc3791d9ad09ff6b4.png",
+      "sku": {
+        "jans": [
+          "4525807328127",
+          "4525807328240",
+          "4525807328363"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "テネシー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/90f5a8afe44be3b160e414c2e52890c6.png",
+      "sku": {
+        "jans": [
+          "4525807328134",
+          "4525807328257",
+          "4525807328370"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "パラレルチャート",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0de660867e957d2746bd48a6f2466c74.png",
+      "sku": {
+        "jans": [
+          "4525807328158",
+          "4525807328271",
+          "4525807328394"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "米代マルチブラック",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a67b981892b5367e386d9c4f1e5829bf.png",
+      "sku": {
+        "jans": [
+          "4525807328165",
+          "4525807328288",
+          "4525807328400"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "カギロイアユ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0d51bd240ceca1d2500a4e1b62b48ba7.png",
+      "sku": {
+        "jans": [
+          "4525807328172",
+          "4525807328295",
+          "4525807328417"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "長良鮎遡り",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fc318329883f3141d94d45ac1c79948e.png",
+      "sku": {
+        "jans": [
+          "4525807328189",
+          "4525807328301",
+          "4525807328424"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "芸北神楽",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/74d3b02fa58bff26fc1c458a9eae6796.png",
+      "sku": {
+        "jans": [
+          "4525807328196",
+          "4525807328318",
+          "4525807328431"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "富士川クリスタル",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/befdce86961512925c40a4caf9d9e07a.png",
+      "sku": {
+        "jans": [
+          "4525807328202",
+          "4525807328325",
+          "4525807328448"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タマチャ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8742565d5dd6cb3579b48dcdde29b526.png",
+      "sku": {
+        "jans": [
+          "4525807328219",
+          "4525807328332",
+          "4525807328455"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "HLコッパーヤマメ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/cfce5e447a7e678f109b6c7818629307.png",
+      "sku": {
+        "jans": [
+          "4525807328226",
+          "4525807328349",
+          "4525807328462"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,4655 @@
+{
+  "checkedAt": "2026-11-28",
+  "policyReviewUrls": [
+    "https://rob-lure.com/",
+    "https://rob-lure.com/work/"
+  ],
+  "stats": {
+    "backupSha256": "a6ed379dd9d985c735d825dd232868ce79b051b4bd5535e24294b5058e9b1532",
+    "catalogSha256": "d33283f0f9018c1eaf2d9176dfdbcd336450a8ddac0d1c5f71af0731e05fc8d8",
+    "backupContentSha256": "624ebdf03d0fa0d47635fba7bc91dc0a0fceff50070cc98b2151fad4d8150e6b",
+    "series": 10,
+    "models": 16,
+    "colorRows": 169,
+    "matchedProductRows": 167,
+    "heldProductRows": 2
+  },
+  "pages": [
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189792400",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "cad97652dfe563d9a0bdf612d3c6d0186726cfdca31d3747675d9358beb4e42c"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189792387",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "731f01b7190bbd0d53ab5428efbfb90e5bc5605b61f41fc47d1aa258bf0b40c2"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=186122908",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "d1cf1fcec06289f03b1dc282f4cd2f15c8e8a025bb87ad48efa74aea4152ef68"
+    },
+    {
+      "url": "https://rob-lure.com/work/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "caf1d608209d50a550e20b8adeb34f8c3c15ba8bf8fbb898065bdd5452d256aa"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189194140",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "a428148b01368c923b08cade9ca422fdfaa37e693326e8fd5bf73c66375a57b7"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=172811747",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "3456a5fec044cc7920a2fc4ac39e1eab6b194216e1411bb730408628be325f10"
+    },
+    {
+      "url": "https://rob-lure.com/work/s-plug/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "0313159c3fdff2e8bf707888bc07e288c58793f98fff57ccaf94b9df8b20181e"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=172811763",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "b19a3ee519e25d8454fca2a82134ef6a49208b6810a8aac9b4a6bbb782b53f99"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?gid=3163242&mode=grp&sort=n",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "d31259ea4f9a2daf1df5caa939b5c85474e98ac5e1089121e7489ec73eef63cc"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189792393",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "b39abe603d1e2721604825dc4af6ff1553098e1be6f2fbeac93e627f49652128"
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=193679105",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "b2ce9f2cc56b2e7ea8abde8576aee287e4e764dfdfccdfd5ec54368e81398477"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?gid=2826266&mode=grp&sort=n",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "9dbe8f82684d5780482a924dbb7415c68c2d115ba6490b94531ba579353fd3b8"
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=189195750",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "753d3cfd119fc964fbc49d403b04a241ae2f270d53d77d343c7ce918227592db"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=172811796",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "02ff9b571a62c5cef27deff6501209d8fa48ce0a1f15481a238163887ffc83da"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?gid=3162787&mode=grp&sort=n",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "1add9a58fea7cd2e03baf5aa8407239074026a49476c4dc381c17bfb068c46d2"
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=193968893",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "9343ae97324c89e801adf9db6bab148a9aa30bbe47746c798a248e672b31b822"
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=191810992",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "3a4929e2428e34b31e7a6ec6dd55146f2fa2faa5c5639b79f99fa904006339ae"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189792412",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "35fca98c5f84291c1128b27e99fd46a9db6632e0e337c081ed2b5558878e28b9"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=172811720",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "1cabd6bba1a41a6b0d0a99ae9e85a48667e0c2740b7087e74632fb42d270d45e"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=172811560",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "6861747b19b036e91ae3803cdf9ddeaecc127f3d540f84069837bdd6de8e4f02"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=178149824",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "469e0df75ef62a36f64434ea9960e99a1fd99351c21fa4a76ef8d1f2b17686da"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189194177",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "6d9fa4c450b1af5ba2d965b21a84a7d5956104ec0c809e2ff2067bedba62627f"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=166911178",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "1b7753d4deb9c44929b2c15b05ea543058ca07aac5ee9228497594b30b876cf9"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=166911571",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "92c2df52e0229cda206513cf8df8a6aec0b726b237132470cb01780330810531"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=172811689",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "427dcf3e7afa4d804fa9c2bd1be5f2aea4b427467a36e0ed65a030c4b039e2aa"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?gid=3163242&mode=grp&page=2&sort=n",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "098de7bf615550b34e2cfaecfcc6afc8f4388c6babe223219493f8daa1badb41"
+    },
+    {
+      "url": "https://wonder-field.shop-pro.jp/?pid=189784116",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "0dbdba35f2bc4ed1b829460943d119b728cf5a12cfbd8b119a1f409949598177"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189792392",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "290d21b1f5b655d84167474329cf086fe0cc4fcf0936cd48a66db7f3a8e680db"
+    },
+    {
+      "url": "https://wonder-field.shop-pro.jp/?pid=178211311",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "749c48817dc645754676b79cd03b8b5408e8fe125197bae194a9ad8b68305697"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=186122918",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "963a20995d523c9d23a28446b02ae75a344c9b3e67667d578f890bf9413b97e8"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189792397",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "f3ad56b40b5fc5954a120f93d359d7303a723c602e35c956c534fac148735752"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=166911382",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "4a6542210bd646cb2d360ffb08ef9b7e0c9da0cf3a2e400c35c962dd1d20b5cd"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=186122932",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "a3e408c838eaf3ff343a38d0966ef8218b3e588cc054f830e469d16ec2fdc086"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?gid=1310974&mode=grp&sort=n",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "029dc1e5c132516d77f206784b56667d4ac13e0065264d7403f48fa151d372b9"
+    },
+    {
+      "url": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "637aa3f4262fcaf993a9575bb6cf87d01fb774e72138bbb2cd3dbcd1e0ecdc1c"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=166911182",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "e685e8774dd83f585e83e94d7a52268ded4d8d3719668baf21177f9099967b2f"
+    },
+    {
+      "url": "https://rob-lure.com/work/babel/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "6bc135fe810a860499af18d63297f1276596641139e633d98e7497e2264a6c2e"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189194173",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "8c310af5c1df733c8bd04a662fd3f8b0aeaeed061c6dc79ebab2cb807f405407"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189194176",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "ee8f4466c3c438ed64d3cc72bcab2f1e0259773199c20c0d32eec055cb457d65"
+    },
+    {
+      "url": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "f3288cbf1219577d6b312f02c8062cd5728a1b979a73c2661bd8db051c455c1f"
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=81489465",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "4e9cf4b75dad9eb83e30b56c6f75d9e9ed09080883df58ba63004c45995c88f7"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=172811552",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "c2988806711b4479a0c344b87eb91f3d50632d60d00ca11b91666196f2d062d4"
+    },
+    {
+      "url": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "5022c1035c88ce65ab118e591b67483cb887453129c35cca6529ffa08ba6dca5"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=166911140",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "d4941271e5fb719832020cefb48c1fdb8ff63837c6d735f5e27bdbeebceaaafe"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=166911135",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "f69f5773240fc16fb0aabac0673a33900258b778b78b8f100370ca2e73cd57a6"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189792389",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "4183bed8551886c3dd702c24c683e3f9ea77cb88ed7c4fc8337614550148b929"
+    },
+    {
+      "url": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "1aac4bc9adfea255b49c264b190eee0cfc7b2bdcb4dcdf342a5618ae970e695b"
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=37596448",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "d0f8342bfeed2aca84641689caa4d30cef6d05e10519a737b6509a87ff69459a"
+    },
+    {
+      "url": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "98a2c131b851d382cce8e4121dd4d477b6f4f3e6b6ceadc76bcd176567777e70"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=189194166",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "812148a6de3fd26e232647886d125f696ea017ae66accc2251607d9b8e8b6f33"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=186122900",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "7b798715fcb48ad950b1bc495a88d9e15e40189624ee0940d9fd776490f7d0f4"
+    },
+    {
+      "url": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "a8672c660820adb8c9c6326ef90d8d4e6ef7d52b1500ad73ce9634708c3e58b9"
+    },
+    {
+      "url": "https://www.kitiya.jp/?pid=172375874",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "0935d65888ac5d63b9d99afa9816d424dcad656b979de7a18a3b3faddf2f1338"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=172811778",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "9f1d7e224345862a52b4092d1d1198e58ac0bba99393eee896bd57ddc3d086d1"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=186122925",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "b47ecab6df3e024da5bea2ef0e107a05d08080437e97205916d585a3c2f8e5f5"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=166911568",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "672d777a5b94fbca1b82528486733916a10d0888cab201359d7e09ff6b61470d"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=166911197",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "1245218a029fba56c31e3665fe892e6e86b7ea0f36dfbb73370d34eb4d741bab"
+    },
+    {
+      "url": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "3d8f8ce99a12da80e63a3bb286fa23e9190469cb203d1ba9112ff0cb44439280"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=172811816",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "2f0680ffd663482e7f60a57670ae019e4b1fb3ec07bade6d1d200ec56d6ffa6e"
+    },
+    {
+      "url": "https://fishing-shop-jh.com/?pid=166911278",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-28",
+      "sha256": "ff25288fe1d57d6c14d873a3b03876ef252b9f3bc0e18f5f5a50b399663137fb"
+    },
+    {
+      "url": "https://store.castingnet.jp/shop/g/g4580374761616/",
+      "httpStatus": 202,
+      "checkedAt": "2026-11-28",
+      "reason": "exact-jan-retailer-http-202-without-product-content"
+    }
+  ],
+  "models": [
+    {
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "weightG": 1.8,
+      "colorRows": 12,
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "modelStatus": "color-gallery-reviewed"
+    },
+    {
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "weightG": 2.2,
+      "colorRows": 12,
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "modelStatus": "color-gallery-reviewed"
+    },
+    {
+      "modelId": 1814,
+      "series": "チェルシー",
+      "model": "チェルシー SS",
+      "weightG": 1.8,
+      "colorRows": 9,
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "modelStatus": "color-gallery-reviewed"
+    },
+    {
+      "modelId": 1815,
+      "series": "チェルシー",
+      "model": "チェルシー F",
+      "weightG": 1.4,
+      "colorRows": 8,
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "modelStatus": "color-gallery-reviewed"
+    },
+    {
+      "modelId": 1816,
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "weightG": 3.4,
+      "colorRows": 10,
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "modelStatus": "color-gallery-reviewed"
+    },
+    {
+      "modelId": 1817,
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "weightG": 3.4,
+      "colorRows": 10,
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "modelStatus": "color-gallery-reviewed"
+    },
+    {
+      "modelId": 1818,
+      "series": "もぐたそ",
+      "model": "もぐたそ",
+      "weightG": 4.2,
+      "colorRows": 8,
+      "candidateUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "modelStatus": "color-gallery-reviewed"
+    },
+    {
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "weightG": 1.4,
+      "colorRows": 14,
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "modelStatus": "official-color-names-unconfirmed"
+    },
+    {
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "weightG": 1.6,
+      "colorRows": 12,
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "modelStatus": "official-color-names-unconfirmed"
+    },
+    {
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "weightG": 1.6,
+      "colorRows": 13,
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "modelStatus": "color-gallery-reviewed"
+    },
+    {
+      "modelId": 1822,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング SS",
+      "weightG": 1.8,
+      "colorRows": 8,
+      "modelStatus": "official-model-page-unconfirmed"
+    },
+    {
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "weightG": 2.6,
+      "colorRows": 14,
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "modelStatus": "color-gallery-reviewed"
+    },
+    {
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "weightG": 2.8,
+      "colorRows": 13,
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "modelStatus": "color-gallery-reviewed"
+    },
+    {
+      "modelId": 1825,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール F",
+      "weightG": 0.7,
+      "colorRows": 6,
+      "modelStatus": "official-model-page-unconfirmed"
+    },
+    {
+      "modelId": 1826,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "weightG": 0.9,
+      "colorRows": 9,
+      "modelStatus": "official-model-page-unconfirmed"
+    },
+    {
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "weightG": 0.8,
+      "colorRows": 11,
+      "modelStatus": "official-model-page-unconfirmed"
+    }
+  ],
+  "rows": [
+    {
+      "variantId": 8860,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "ゴールド",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/001.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / ゴールド",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8861,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "シルバー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/002.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / シルバー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8862,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "ネーブル",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/003.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / ネーブル",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8863,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "ろっきゅ～",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/004.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / ろっきゅ~",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8864,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "Go! Go! チャンス",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/005.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / Go! Go! チャンス",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8865,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "スケスケオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/006.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / スケスケオリーブ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8866,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "GLG",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/007.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / GLG",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8867,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "MOOかりまっか",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/008.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / MOOかりまっか",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8868,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "壊滅ブラウン",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/009.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / 壊滅ブラウン",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8869,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "明滅ライム",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/010.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / 明滅ライム",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8870,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "宴もたけなわ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/011.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / 宴もたけなわ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8871,
+      "modelId": 1812,
+      "series": "S-Plug",
+      "model": "S-Plug 1.8g",
+      "color": "ぽむプリ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/012.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 1.8g / 1.8g / ぽむプリ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8872,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "ゴールド",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/001.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / ゴールド",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8873,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "シルバー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/002.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / シルバー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8874,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "ネーブル",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/003.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / ネーブル",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8875,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "ろっきゅ～",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/004.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / ろっきゅ~",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8876,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "Go! Go! チャンス",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/005.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / Go! Go! チャンス",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8877,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "スケスケオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/006.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / スケスケオリーブ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8878,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "GLG",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/007.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / GLG",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8879,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "MOOかりまっか",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/008.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / MOOかりまっか",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8880,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "壊滅ブラウン",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/009.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / 壊滅ブラウン",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8881,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "明滅ライム",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/010.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / 明滅ライム",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8882,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "宴もたけなわ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/011.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / 宴もたけなわ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8883,
+      "modelId": 1813,
+      "series": "S-Plug",
+      "model": "S-Plug 2.2g",
+      "color": "ぽむプリ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/s-plug/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/s-plug/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2024/11/012.png",
+        "kind": "weight-common-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/s-plug/",
+      "kind": "model-color-list",
+      "basis": "S-Plug 2.2g / 2.2g / ぽむプリ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8884,
+      "modelId": 1814,
+      "series": "チェルシー",
+      "model": "チェルシー SS",
+      "color": "スケスケオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/01.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー SS / 1.8g / スローシンキング / スケスケオリーブ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8885,
+      "modelId": 1814,
+      "series": "チェルシー",
+      "model": "チェルシー SS",
+      "color": "スネーキーグロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/02.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー SS / 1.8g / スローシンキング / スネーキーグロー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8886,
+      "modelId": 1814,
+      "series": "チェルシー",
+      "model": "チェルシー SS",
+      "color": "とんこつ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/03.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー SS / 1.8g / スローシンキング / とんこつ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8887,
+      "modelId": 1814,
+      "series": "チェルシー",
+      "model": "チェルシー SS",
+      "color": "玉ウキ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/04.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー SS / 1.8g / スローシンキング / 玉ウキ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8888,
+      "modelId": 1814,
+      "series": "チェルシー",
+      "model": "チェルシー SS",
+      "color": "オリーブチャート",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/05.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー SS / 1.8g / スローシンキング / オリーブチャート",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8889,
+      "modelId": 1814,
+      "series": "チェルシー",
+      "model": "チェルシー SS",
+      "color": "はいからさん",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/06.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー SS / 1.8g / スローシンキング / はいからさん",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8890,
+      "modelId": 1814,
+      "series": "チェルシー",
+      "model": "チェルシー SS",
+      "color": "でん六",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/07.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー SS / 1.8g / スローシンキング / でん六",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8891,
+      "modelId": 1814,
+      "series": "チェルシー",
+      "model": "チェルシー SS",
+      "color": "あずて〜ら",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/08.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー SS / 1.8g / スローシンキング / あずて〜ら",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8892,
+      "modelId": 1814,
+      "series": "チェルシー",
+      "model": "チェルシー SS",
+      "color": "コンクリートグレー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/010.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー SS / 1.8g / スローシンキング / コンクリートグレー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8893,
+      "modelId": 1815,
+      "series": "チェルシー",
+      "model": "チェルシー F",
+      "color": "スケスケオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/01-1.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー F / 1.4g / フローティング / スケスケオリーブ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8894,
+      "modelId": 1815,
+      "series": "チェルシー",
+      "model": "チェルシー F",
+      "color": "スネーキーグロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/02-1.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー F / 1.4g / フローティング / スネーキーグロー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8895,
+      "modelId": 1815,
+      "series": "チェルシー",
+      "model": "チェルシー F",
+      "color": "とんこつ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/03-1.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー F / 1.4g / フローティング / とんこつ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8896,
+      "modelId": 1815,
+      "series": "チェルシー",
+      "model": "チェルシー F",
+      "color": "クリクリ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/04-1.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー F / 1.4g / フローティング / クリクリ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8897,
+      "modelId": 1815,
+      "series": "チェルシー",
+      "model": "チェルシー F",
+      "color": "ブルーパールクリア",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/05-1.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー F / 1.4g / フローティング / ブルーパールクリア",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8898,
+      "modelId": 1815,
+      "series": "チェルシー",
+      "model": "チェルシー F",
+      "color": "G6",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/06-1.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー F / 1.4g / フローティング / G6",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8899,
+      "modelId": 1815,
+      "series": "チェルシー",
+      "model": "チェルシー F",
+      "color": "カモフラペレット",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/07-1.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー F / 1.4g / フローティング / カモフラペレット",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8900,
+      "modelId": 1815,
+      "series": "チェルシー",
+      "model": "チェルシー F",
+      "color": "キョンシー（グロー）",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2021/03/08-1.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%81%E3%82%A7%E3%83%AB%E3%82%B7%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "チェルシー F / 1.4g / フローティング / キョンシー(グロー)",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8901,
+      "modelId": 1816,
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "color": "クリクリ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2020/04/01.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "パパバービー / 3.4g / フローティング / クリクリ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8902,
+      "modelId": 1816,
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "color": "スケスケオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2020/04/02.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "パパバービー / 3.4g / フローティング / スケスケオリーブ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8903,
+      "modelId": 1816,
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "color": "スネーキーグロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2020/04/03.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "パパバービー / 3.4g / フローティング / スネーキーグロー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8904,
+      "modelId": 1816,
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "color": "とんこつ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2020/04/04.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "パパバービー / 3.4g / フローティング / とんこつ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8905,
+      "modelId": 1816,
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "color": "カビるん",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2020/04/05.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "パパバービー / 3.4g / フローティング / カビるん",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8906,
+      "modelId": 1816,
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "color": "オリーブチャート",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2020/04/06.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "パパバービー / 3.4g / フローティング / オリーブチャート",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8907,
+      "modelId": 1816,
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "color": "クリピン",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2020/04/07.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "パパバービー / 3.4g / フローティング / クリピン",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8908,
+      "modelId": 1816,
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "color": "玉ウキ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2020/04/08.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "パパバービー / 3.4g / フローティング / 玉ウキ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8909,
+      "modelId": 1816,
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "color": "CG桜薫",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2020/04/09.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "パパバービー / 3.4g / フローティング / CG桜薫",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8910,
+      "modelId": 1816,
+      "series": "パパバービー",
+      "model": "パパバービー",
+      "color": "ブルーパールクリア",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2020/04/10.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%91%E3%83%91%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "パパバービー / 3.4g / フローティング / ブルーパールクリア",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8911,
+      "modelId": 1817,
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "color": "クリクリ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie01.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "モーストバービー / 3.4g / クリクリ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8912,
+      "modelId": 1817,
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "color": "スネーキーグロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie02.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "モーストバービー / 3.4g / スネーキーグロー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8913,
+      "modelId": 1817,
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "color": "青汁",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie03.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "モーストバービー / 3.4g / 青汁",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8914,
+      "modelId": 1817,
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "color": "FM5",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie04.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "モーストバービー / 3.4g / FM5",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8915,
+      "modelId": 1817,
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "color": "グローセサミン",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie05.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "モーストバービー / 3.4g / グローセサミン",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8916,
+      "modelId": 1817,
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "color": "スケスケオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie06.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "モーストバービー / 3.4g / スケスケオリーブ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8917,
+      "modelId": 1817,
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "color": "とんこつ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie07.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "モーストバービー / 3.4g / とんこつ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8918,
+      "modelId": 1817,
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "color": "黒坦々",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie08.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "モーストバービー / 3.4g / 黒坦々",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8919,
+      "modelId": 1817,
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "color": "玉ウキ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie09.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "モーストバービー / 3.4g / 玉ウキ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8920,
+      "modelId": 1817,
+      "series": "モーストバービー",
+      "model": "モーストバービー",
+      "color": "カモフラオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/themes/unique_tcd044/img/mostbarbie/mostbarbie10.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%A2%E3%83%BC%E3%82%B9%E3%83%88%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "kind": "model-color-list",
+      "basis": "モーストバービー / 3.4g / カモフラオリーブ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8921,
+      "modelId": 1818,
+      "series": "もぐたそ",
+      "model": "もぐたそ",
+      "color": "凸ポンオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu1.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "kind": "model-color-list",
+      "basis": "もぐたそ / 4.2g / シンキング / 凸ポンオリーブ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8922,
+      "modelId": 1818,
+      "series": "もぐたそ",
+      "model": "もぐたそ",
+      "color": "レッドグロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu8.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "kind": "model-color-list",
+      "basis": "もぐたそ / 4.2g / シンキング / レッドグロー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8923,
+      "modelId": 1818,
+      "series": "もぐたそ",
+      "model": "もぐたそ",
+      "color": "とんこつ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu3.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "kind": "model-color-list",
+      "basis": "もぐたそ / 4.2g / シンキング / とんこつ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8924,
+      "modelId": 1818,
+      "series": "もぐたそ",
+      "model": "もぐたそ",
+      "color": "スケスケオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu4.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "kind": "model-color-list",
+      "basis": "もぐたそ / 4.2g / シンキング / スケスケオリーブ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8925,
+      "modelId": 1818,
+      "series": "もぐたそ",
+      "model": "もぐたそ",
+      "color": "凸ポングロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu5.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "kind": "model-color-list",
+      "basis": "もぐたそ / 4.2g / シンキング / 凸ポングロー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8926,
+      "modelId": 1818,
+      "series": "もぐたそ",
+      "model": "もぐたそ",
+      "color": "黒坦々",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu6.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "kind": "model-color-list",
+      "basis": "もぐたそ / 4.2g / シンキング / 黒坦々",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8927,
+      "modelId": 1818,
+      "series": "もぐたそ",
+      "model": "もぐたそ",
+      "color": "ピン子",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu7.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "kind": "model-color-list",
+      "basis": "もぐたそ / 4.2g / シンキング / ピン子",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8928,
+      "modelId": 1818,
+      "series": "もぐたそ",
+      "model": "もぐたそ",
+      "color": "スネーキーグロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2019/11/mogu2.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%82%82%E3%81%90%E3%81%9F%E3%81%9D/",
+      "kind": "model-color-list",
+      "basis": "もぐたそ / 4.2g / シンキング / スネーキーグロー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8929,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "15 クリペナプラス",
+      "colorCode": "15",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026"
+      ],
+      "productUrl": "https://wonder-field.shop-pro.jp/?pid=178211311",
+      "kind": "model-color-list",
+      "basis": "バービー F / 1.4g / フローティング / 15 / クリペナプラス",
+      "sourceName": "ワンダーフィールド",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://wonder-field.shop-pro.jp/?mode=sk"
+    },
+    {
+      "variantId": 8930,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "黒坦々",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026"
+      ],
+      "productUrl": "https://fishing-shop-jh.com/?pid=166911178",
+      "kind": "individual-color",
+      "basis": "バービー F / 1.4g / フローティング / 黒坦々",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8931,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "ミリタリスト",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/186122918.jpg?cmsp_timestamp=20250416110636",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=186122918",
+      "kind": "individual-color",
+      "basis": "バービー F / 1.4g / フローティング / ミリタリスト / JAN 4573581510702",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8932,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "ツタンカーメン",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/186122900.jpg?cmsp_timestamp=20250416110543",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=186122900",
+      "kind": "individual-color",
+      "basis": "バービー F / 1.4g / フローティング / ツタンカーメン / JAN 4573581510719",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8933,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "みそピーグロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/186122908.jpg?cmsp_timestamp=20250416110606",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=186122908",
+      "kind": "individual-color",
+      "basis": "バービー F / 1.4g / フローティング / みそピーグロー / JAN 4573581510726",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8934,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "クリアピンク",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "held",
+      "reason": "exact-jan-retailer-http-202-without-product-content",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026",
+        "https://store.castingnet.jp/shop/g/g4580374761616/"
+      ]
+    },
+    {
+      "variantId": 8935,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "スケスケオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/166911182.jpg?cmsp_timestamp=20220226121144",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=166911182",
+      "kind": "individual-color",
+      "basis": "バービー F / 1.4g / フローティング / スケスケオリーブ / JAN 4580374761630",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8936,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "スィートパール",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026"
+      ],
+      "productUrl": "https://wonder-field.shop-pro.jp/?pid=178211311",
+      "kind": "model-color-list",
+      "basis": "バービー F / 1.4g / フローティング / 2 / スィートパール",
+      "sourceName": "ワンダーフィールド",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://wonder-field.shop-pro.jp/?mode=sk"
+    },
+    {
+      "variantId": 8937,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "すけチョコ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026"
+      ],
+      "productUrl": "https://fishing-shop-jh.com/?pid=166911135",
+      "kind": "individual-color",
+      "basis": "バービー F / 1.4g / フローティング / すけチョコ",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8938,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "クリクリ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0026"
+      ],
+      "productUrl": "https://wonder-field.shop-pro.jp/?pid=178211311",
+      "kind": "model-color-list",
+      "basis": "バービー F / 1.4g / フローティング / 5 / クリクリ",
+      "sourceName": "ワンダーフィールド",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://wonder-field.shop-pro.jp/?mode=sk"
+    },
+    {
+      "variantId": 8939,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "17 C.G.G",
+      "colorCode": "17",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026"
+      ],
+      "productUrl": "https://wonder-field.shop-pro.jp/?pid=178211311",
+      "kind": "model-color-list",
+      "basis": "バービー F / 1.4g / フローティング / 17 / C.G.G.",
+      "sourceName": "ワンダーフィールド",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://wonder-field.shop-pro.jp/?mode=sk"
+    },
+    {
+      "variantId": 8940,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "16 ハリ砂夫",
+      "colorCode": "16",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026"
+      ],
+      "productUrl": "https://wonder-field.shop-pro.jp/?pid=178211311",
+      "kind": "model-color-list",
+      "basis": "バービー F / 1.4g / フローティング / 16 / ハリ砂夫",
+      "sourceName": "ワンダーフィールド",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://wonder-field.shop-pro.jp/?mode=sk"
+    },
+    {
+      "variantId": 8941,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "バレンシア",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026"
+      ],
+      "productUrl": "https://fishing-shop-jh.com/?pid=166911197",
+      "kind": "individual-color",
+      "basis": "バービー F / 1.4g / フローティング / バレンシア",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8942,
+      "modelId": 1819,
+      "series": "バービー",
+      "model": "バービー F",
+      "color": "ミルクココア",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://wonder-field.shop-pro.jp/?pid=178211311",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0026"
+      ],
+      "productUrl": "https://wonder-field.shop-pro.jp/?pid=178211311",
+      "kind": "model-color-list",
+      "basis": "バービー F / 1.4g / フローティング / 3 / ミルクココア",
+      "sourceName": "ワンダーフィールド",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://wonder-field.shop-pro.jp/?mode=sk"
+    },
+    {
+      "variantId": 8943,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "15 クリペナプラス",
+      "colorCode": "15",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=37596448",
+      "kind": "model-color-list",
+      "basis": "バービー SS / 1.6g / スローシンキング / 15 / クリペナプラス",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8944,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "クリピン",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=37596448",
+      "kind": "model-color-list",
+      "basis": "バービー SS / 1.6g / スローシンキング / クリピン",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8945,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "16 ハリ砂夫",
+      "colorCode": "16",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=37596448",
+      "kind": "model-color-list",
+      "basis": "バービー SS / 1.6g / スローシンキング / 16 / ハリ砂夫",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8946,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "FM1",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=37596448",
+      "kind": "model-color-list",
+      "basis": "バービー SS / 1.6g / スローシンキング / FM1",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8947,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "ミリタリスト",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "held",
+      "reason": "heroes-ss-jan-unconfirmed-on-accessible-product-page",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025"
+      ]
+    },
+    {
+      "variantId": 8948,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "ツタンカーメン",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/186122932.jpg?cmsp_timestamp=20250416110810",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=186122932",
+      "kind": "individual-color",
+      "basis": "バービー SS / 1.6g / スローシンキング / ツタンカーメン / JAN 4573581510740",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8949,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "みそピーグロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/186122925.jpg?cmsp_timestamp=20250416110659",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=186122925",
+      "kind": "individual-color",
+      "basis": "バービー SS / 1.6g / スローシンキング / みそピーグロー / JAN 4573581510757",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8950,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "とんこつ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=37596448",
+      "kind": "model-color-list",
+      "basis": "バービー SS / 1.6g / スローシンキング / とんこつ",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8951,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "クリクリ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=37596448",
+      "kind": "model-color-list",
+      "basis": "バービー SS / 1.6g / スローシンキング / クリクリ",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8952,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "ハムスター",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0025"
+      ],
+      "productUrl": "https://fishing-shop-jh.com/?pid=166911278",
+      "kind": "individual-color",
+      "basis": "バービー SS / 1.6g / スローシンキング / ハムスター",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8953,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "黒坦々",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0025"
+      ],
+      "productUrl": "https://fishing-shop-jh.com/?pid=166911568",
+      "kind": "individual-color",
+      "basis": "バービー SS / 1.6g / スローシンキング / 黒坦々",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8954,
+      "modelId": 1820,
+      "series": "バービー",
+      "model": "バービー SS",
+      "color": "17 C.G.G",
+      "colorCode": "17",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC/",
+        "https://www.kitiya.jp/?pid=37596448",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0025"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/178149824.jpg?cmsp_timestamp=20231115143725",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=178149824",
+      "kind": "individual-color",
+      "basis": "バービー SS / 1.6g / スローシンキング / 17 / C.G.G / JAN 4573581500055",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8955,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "スケスケオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2023/11/01.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / スケスケオリーブ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8956,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "スネーキーグロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2023/11/02.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / スネーキーグロー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8957,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "とんこつ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2023/11/03.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / とんこつ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8958,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "玉ウキ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2023/11/04.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / 玉ウキ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8959,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "オリーブチャート",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2023/11/05.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / オリーブチャート",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8960,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "カモフラオリーブ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2023/11/06.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / カモフラオリーブ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8961,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "クリピン",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2023/11/07.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / クリピン",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8962,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "アカキン",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0096"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2023/11/08-.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / アカキン",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8963,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "スケスケブラウン",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2023/11/09.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / スケスケブラウン",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8964,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "が〜こちゃん",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2023/11/010.png",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / が〜こちゃん",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8965,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "16 ハリ砂夫",
+      "colorCode": "16",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=172375874",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / 16 / ハリ砂夫",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8966,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "15 クリペナプラス",
+      "colorCode": "15",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0096"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=172375874",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / 15 / クリペナプラス",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8967,
+      "modelId": 1821,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング F",
+      "color": "17 C.G.G",
+      "colorCode": "17",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%AD%E3%83%B3%E3%82%B0/",
+        "https://www.kitiya.jp/?pid=172375874",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&p=2&type=0096"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=172375874",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング F / 1.6g / フローティング / 17 / C.G.G.",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8968,
+      "modelId": 1822,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング SS",
+      "color": "7 クリピン",
+      "colorCode": "7",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=189195750",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=189195750",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング SS / 1.8g / SS / 7 / クリピン",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8969,
+      "modelId": 1822,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング SS",
+      "color": "15 クリペナプラス",
+      "colorCode": "15",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=189195750",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189194176.jpg?cmsp_timestamp=20251101142648",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189194176",
+      "kind": "individual-color",
+      "basis": "バービー・ロング SS / 1.8g / SS / 15 / クリペナプラス / JAN 4573581515943",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8970,
+      "modelId": 1822,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング SS",
+      "color": "16 ハリ砂夫",
+      "colorCode": "16",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=189195750",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189194177.jpg?cmsp_timestamp=20251101142702",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189194177",
+      "kind": "individual-color",
+      "basis": "バービー・ロング SS / 1.8g / SS / 16 / ハリ砂夫 / JAN 4573581515950",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8971,
+      "modelId": 1822,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング SS",
+      "color": "6 カモフラオリーブ",
+      "colorCode": "6",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=189195750",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189194166.jpg?cmsp_timestamp=20251101142607",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189194166",
+      "kind": "individual-color",
+      "basis": "バービー・ロング SS / 1.8g / SS / 6 / カモフラオリーブ / JAN 4573581515912",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8972,
+      "modelId": 1822,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング SS",
+      "color": "3 とんこつ",
+      "colorCode": "3",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=189195750",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189194140.jpg?cmsp_timestamp=20251101142552",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189194140",
+      "kind": "individual-color",
+      "basis": "バービー・ロング SS / 1.8g / SS / 3 / とんこつ / JAN 4573581515905",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8973,
+      "modelId": 1822,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング SS",
+      "color": "1 スケスケオリーブ",
+      "colorCode": "1",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=189195750",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=189195750",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング SS / 1.8g / SS / 1 / スケスケオリーブ",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8974,
+      "modelId": 1822,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング SS",
+      "color": "8 アカキン",
+      "colorCode": "8",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=189195750",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189194173.jpg?cmsp_timestamp=20251101142634",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189194173",
+      "kind": "individual-color",
+      "basis": "バービー・ロング SS / 1.8g / SS / 8 / アカキン / JAN 4573581515936",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 8975,
+      "modelId": 1822,
+      "series": "バービー・ロング",
+      "model": "バービー・ロング SS",
+      "color": "17 C.G.G",
+      "colorCode": "17",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=189195750",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0110"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=189195750",
+      "kind": "model-color-list",
+      "basis": "バービー・ロング SS / 1.8g / SS / 17 / C.G.G",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8976,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "ミルキー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f01-%E3%83%9F%E3%83%AB%E3%82%AD%E3%83%BC.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / ミルキー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8977,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "クリクリ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f02-%E3%82%AF%E3%83%AA%E3%82%AF%E3%83%AA.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / クリクリ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8978,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "メタグリ夫",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f03-%E3%83%A1%E3%82%BF%E3%82%B0%E3%83%AA%E5%A4%AB.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / メタグリ夫",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8979,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "はいからさん",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f04-%E3%81%AF%E3%81%84%E3%81%8B%E3%82%89%E3%81%95%E3%82%93.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / はいからさん",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8980,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "スネーキーグロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&p=2&type=0049"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f05-%E3%82%B9%E3%83%8D%E3%83%BC%E3%82%AD%E3%83%BC%E3%82%B0%E3%83%AD%E3%83%BC.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / スネーキーグロー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8981,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "オリーブチャート",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f06-%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / オリーブチャート",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8982,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "FM2",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f07-FM2.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / FM2",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8983,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "ブルーバックチャート",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f08-%E3%83%96%E3%83%AB%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / ブルーバックチャート",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8984,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "とんこつ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&p=2&type=0049"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f09-%E3%81%A8%E3%82%93%E3%81%93%E3%81%A4.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / とんこつ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8985,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "坦々麺",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f10-%E5%9D%A6%E3%80%85%E9%BA%BA.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / 坦々麺",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8986,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "フェアリーオレンジ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f11-%E3%83%95%E3%82%A7%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / フェアリーオレンジ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8987,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "カニミソグロー",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_f12-%E3%82%AB%E3%83%8B%E3%83%9F%E3%82%BD%E3%82%B0%E3%83%AD%E3%83%BC.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / カニミソグロー",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8988,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "16 ハリ砂夫",
+      "colorCode": "16",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=81489465",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / 16 / ハリ砂夫",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8989,
+      "modelId": 1823,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ F",
+      "color": "17 C.G.G",
+      "colorCode": "17",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.kitiya.jp/?pid=81489465",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0049"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=81489465",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ F / 2.6g / フローティング / 17 / C.G.G.",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 8990,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "イチゴパフェ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss01-%E3%82%A4%E3%83%81%E3%82%B4%E3%83%91%E3%83%95%E3%82%A7.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / イチゴパフェ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8991,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "ももいろメタリック",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss02-%E3%82%82%E3%82%82%E3%81%84%E3%82%8D%E3%83%A1%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / ももいろメタリック",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8992,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "グローセサミン",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss03-%E3%82%B0%E3%83%AD%E3%83%BC%E3%82%BB%E3%82%B5%E3%83%9F%E3%83%B3.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / グローセサミン",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8993,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "マッティブルーバック",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss04-%E3%83%9E%E3%83%83%E3%83%86%E3%82%A3%E3%83%96%E3%83%AB%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / マッティブルーバック",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8994,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "月城",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss05-%E6%9C%88%E5%9F%8E.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / 月城",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8995,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "オリーブチャート",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss06-%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / オリーブチャート",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8996,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "FM2",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss07-FM2.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / FM2",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8997,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "おしるこ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss08-%E3%81%8A%E3%81%97%E3%82%8B%E3%81%93.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / おしるこ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8998,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "とんこつ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss09-%E3%81%A8%E3%82%93%E3%81%93%E3%81%A4.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / とんこつ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 8999,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "坦々麺",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss10-%E5%9D%A6%E3%80%85%E9%BA%BA.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / 坦々麺",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 9000,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "フェアリーオレンジ",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0017&type=0050"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss11-%E3%83%95%E3%82%A7%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / フェアリーオレンジ",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 9001,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "ブルーデリック",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss12-%E3%83%96%E3%83%AB%E3%83%BC%E3%83%87%E3%83%AA%E3%83%83%E3%82%AF.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / ブルーデリック",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 9002,
+      "modelId": 1824,
+      "series": "バービー・ママ",
+      "model": "バービー・ママ SS",
+      "color": "みるき～",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "candidateUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "status": "matched",
+      "candidateUrls": [
+        "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/"
+      ],
+      "image": {
+        "url": "https://rob-lure.com/wp-content/uploads/2017/11/barbie_mama_ss13-%E3%81%BF%E3%82%8B%E3%81%8D%EF%BD%9E.jpg",
+        "kind": "official-color-sample",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://rob-lure.com/work/berbie_mama-%E3%83%90%E3%83%BC%E3%83%93%E3%83%BC%E3%83%BB%E3%83%9E%E3%83%9E/",
+      "kind": "model-color-list",
+      "basis": "バービー・ママ SS / 2.8g / スローシンキング / みるき~",
+      "sourceName": "ROB LURE",
+      "sourceType": "manufacturer"
+    },
+    {
+      "variantId": 9003,
+      "modelId": 1825,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール F",
+      "color": "5 ブルクリ(ブルーパールクリア)",
+      "colorCode": "5",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=191810992",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=191810992",
+      "kind": "model-color-list",
+      "basis": "バービー・ガール F / 0.7g / F / 5 / ブルクリ(ブルーパールクリア)",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9004,
+      "modelId": 1825,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール F",
+      "color": "3 とんこつ",
+      "colorCode": "3",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=191810992",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=191810992",
+      "kind": "model-color-list",
+      "basis": "バービー・ガール F / 0.7g / F / 3 / とんこつ",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9005,
+      "modelId": 1825,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール F",
+      "color": "15 クリペナプラス",
+      "colorCode": "15",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=191810992",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=191810992",
+      "kind": "model-color-list",
+      "basis": "バービー・ガール F / 0.7g / F / 15 / クリペナプラス",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9006,
+      "modelId": 1825,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール F",
+      "color": "10 がーこちゃん",
+      "colorCode": "10",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=191810992",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=191810992",
+      "kind": "model-color-list",
+      "basis": "バービー・ガール F / 0.7g / F / 10 / が~こちゃん",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9007,
+      "modelId": 1825,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール F",
+      "color": "21 ただ巻バグ",
+      "colorCode": "21",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=191810992",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=191810992",
+      "kind": "model-color-list",
+      "basis": "バービー・ガール F / 0.7g / F / 21 / ただ巻きバグ",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9008,
+      "modelId": 1825,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール F",
+      "color": "19 キラキラ豆腐yoh!",
+      "colorCode": "19",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=191810992",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0116"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=191810992",
+      "kind": "model-color-list",
+      "basis": "バービー・ガール F / 0.7g / F / 19 / キラキラ豆腐yoh!",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9009,
+      "modelId": 1826,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "color": "1 スケスケオリーブ",
+      "colorCode": "1",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://wonder-field.shop-pro.jp/?pid=189784116",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112"
+      ],
+      "productUrl": "https://wonder-field.shop-pro.jp/?pid=189784116",
+      "kind": "model-color-list",
+      "basis": "バービー・ガール SS / 0.9g / SS / 1 / スケスケオリーブ",
+      "sourceName": "ワンダーフィールド",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://wonder-field.shop-pro.jp/?mode=sk"
+    },
+    {
+      "variantId": 9010,
+      "modelId": 1826,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "color": "3 とんこつ",
+      "colorCode": "3",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://wonder-field.shop-pro.jp/?pid=189784116",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189792387.jpg?cmsp_timestamp=20251213110950",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189792387",
+      "kind": "individual-color",
+      "basis": "バービー・ガール SS / 0.9g / SS / 3 / とんこつ / JAN 4573581516568",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 9011,
+      "modelId": 1826,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "color": "15 クリペナプラス",
+      "colorCode": "15",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://wonder-field.shop-pro.jp/?pid=189784116",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189792393.jpg?cmsp_timestamp=20251213111020",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189792393",
+      "kind": "individual-color",
+      "basis": "バービー・ガール SS / 0.9g / SS / 15 / クリペナプラス / JAN 4573581516599",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 9012,
+      "modelId": 1826,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "color": "18 ぽむプリ",
+      "colorCode": "18",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://wonder-field.shop-pro.jp/?pid=189784116",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189792397.jpg?cmsp_timestamp=20251213111040",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189792397",
+      "kind": "individual-color",
+      "basis": "バービー・ガール SS / 0.9g / SS / 18 / ぽむプリ / JAN 4573581516612",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 9013,
+      "modelId": 1826,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "color": "19 キラキラ豆腐yoh!",
+      "colorCode": "19",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://wonder-field.shop-pro.jp/?pid=189784116",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189792400.jpg?cmsp_timestamp=20251213111057",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189792400",
+      "kind": "individual-color",
+      "basis": "バービー・ガール SS / 0.9g / SS / 19 / キラキラ豆腐yoh! / JAN 4573581516629",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 9014,
+      "modelId": 1826,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "color": "20 透け透けジンタ",
+      "colorCode": "20",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://wonder-field.shop-pro.jp/?pid=189784116",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112"
+      ],
+      "productUrl": "https://wonder-field.shop-pro.jp/?pid=189784116",
+      "kind": "model-color-list",
+      "basis": "バービー・ガール SS / 0.9g / SS / 20 / 透け透けジンタ",
+      "sourceName": "ワンダーフィールド",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://wonder-field.shop-pro.jp/?mode=sk"
+    },
+    {
+      "variantId": 9015,
+      "modelId": 1826,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "color": "21 ただ巻バグ",
+      "colorCode": "21",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://wonder-field.shop-pro.jp/?pid=189784116",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189792412.jpg?cmsp_timestamp=20251213111118",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189792412",
+      "kind": "individual-color",
+      "basis": "バービー・ガール SS / 0.9g / SS / 21 / ただ巻バグ / JAN 4573581516643",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 9016,
+      "modelId": 1826,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "color": "6 カモフラオリーブ",
+      "colorCode": "6",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://wonder-field.shop-pro.jp/?pid=189784116",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189792389.jpg?cmsp_timestamp=20251213111000",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189792389",
+      "kind": "individual-color",
+      "basis": "バービー・ガール SS / 0.9g / SS / 6 / カモフラオリーブ / JAN 4573581516575",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 9017,
+      "modelId": 1826,
+      "series": "バービー・ガール",
+      "model": "バービー・ガール SS",
+      "color": "10 がーこちゃん",
+      "colorCode": "10",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://wonder-field.shop-pro.jp/?pid=189784116",
+        "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?maker%5B0%5D=0116&model=0009&type=0112"
+      ],
+      "image": {
+        "url": "https://img07.shop-pro.jp/PA01332/799/product/189792392.jpg?cmsp_timestamp=20251213111011",
+        "kind": "product-photo",
+        "conditions": "held",
+        "reason": "image-display-permission-unconfirmed"
+      },
+      "productUrl": "https://fishing-shop-jh.com/?pid=189792392",
+      "kind": "individual-color",
+      "basis": "バービー・ガール SS / 0.9g / SS / 10 / がーこちゃん / JAN 4573581516582",
+      "sourceName": "城峰釣具店",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://fishing-shop-jh.com/?mode=privacy"
+    },
+    {
+      "variantId": 9623,
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "color": "R1 枝豆グロー",
+      "colorCode": "R1",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=193968893",
+        "https://www.kitiya.jp/?pid=193679105",
+        "https://www.kitiya.jp/?pid=193968893"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=193968893",
+      "kind": "model-color-list",
+      "basis": "ルラン 0.8g / 0.8g / R1 / 枝豆グロー",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9624,
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "color": "R2 しもペナ",
+      "colorCode": "R2",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=193968893",
+        "https://www.kitiya.jp/?pid=193679105",
+        "https://www.kitiya.jp/?pid=193968893"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=193968893",
+      "kind": "model-color-list",
+      "basis": "ルラン 0.8g / 0.8g / R2 / しもペナ",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9625,
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "color": "R3 ピンキー",
+      "colorCode": "R3",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=193968893",
+        "https://www.kitiya.jp/?pid=193679105",
+        "https://www.kitiya.jp/?pid=193968893"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=193968893",
+      "kind": "model-color-list",
+      "basis": "ルラン 0.8g / 0.8g / R3 / ピンキー",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9626,
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "color": "R4 頂鱒の素",
+      "colorCode": "R4",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=193968893",
+        "https://www.kitiya.jp/?pid=193679105",
+        "https://www.kitiya.jp/?pid=193968893"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=193968893",
+      "kind": "model-color-list",
+      "basis": "ルラン 0.8g / 0.8g / R4 / 頂鱒の素",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9627,
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "color": "R5 ホタルノヒカリ",
+      "colorCode": "R5",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=193968893",
+        "https://www.kitiya.jp/?pid=193679105",
+        "https://www.kitiya.jp/?pid=193968893"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=193968893",
+      "kind": "model-color-list",
+      "basis": "ルラン 0.8g / 0.8g / R5 / ホタルノヒカリ",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9628,
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "color": "R6 G6",
+      "colorCode": "R6",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=193968893",
+        "https://www.kitiya.jp/?pid=193679105",
+        "https://www.kitiya.jp/?pid=193968893"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=193968893",
+      "kind": "model-color-list",
+      "basis": "ルラン 0.8g / 0.8g / R6 / G6",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9629,
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "color": "R7 クロカワ",
+      "colorCode": "R7",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=193968893",
+        "https://www.kitiya.jp/?pid=193679105",
+        "https://www.kitiya.jp/?pid=193968893"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=193968893",
+      "kind": "model-color-list",
+      "basis": "ルラン 0.8g / 0.8g / R7 / クロカワ",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9630,
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "color": "R8 イクラ",
+      "colorCode": "R8",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=193968893",
+        "https://www.kitiya.jp/?pid=193679105",
+        "https://www.kitiya.jp/?pid=193968893"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=193968893",
+      "kind": "model-color-list",
+      "basis": "ルラン 0.8g / 0.8g / R8 / イクラ",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9631,
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "color": "R9 マジョクロ",
+      "colorCode": "R9",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=193968893",
+        "https://www.kitiya.jp/?pid=193679105",
+        "https://www.kitiya.jp/?pid=193968893"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=193968893",
+      "kind": "model-color-list",
+      "basis": "ルラン 0.8g / 0.8g / R9 / マジョクロ",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9632,
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "color": "R10 スケスケオリーブハーフ",
+      "colorCode": "R10",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=193968893",
+        "https://www.kitiya.jp/?pid=193679105",
+        "https://www.kitiya.jp/?pid=193968893"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=193968893",
+      "kind": "model-color-list",
+      "basis": "ルラン 0.8g / 0.8g / R10 / スケスケオリーブハーフ",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    },
+    {
+      "variantId": 9876,
+      "modelId": 1859,
+      "series": "ルラン",
+      "model": "ルラン 0.8g",
+      "color": "ウッドブラウン(飛ばし)",
+      "colorCode": "",
+      "checkedAt": "2026-11-28",
+      "status": "matched",
+      "candidateUrls": [
+        "https://www.kitiya.jp/?pid=193968893",
+        "https://www.kitiya.jp/?pid=193679105"
+      ],
+      "productUrl": "https://www.kitiya.jp/?pid=193679105",
+      "kind": "model-color-list",
+      "basis": "ルラン 0.8g / 0.8g / 7 / ウッドブラウン(飛ばし)",
+      "sourceName": "吉や",
+      "sourceType": "retailer",
+      "conditionsEvidence": "https://www.kitiya.jp/?mode=sk"
+    }
+  ]
+}

@@ -16,5 +16,6 @@ export const lureMasterDevelopmentHistory: MasterDevelopmentEntry[] = [
   { rc: 31, title: 'PALMS Little Diner', catalog: '3シリーズ7モデル83色。', features: 'モデル内コード優先、表記揺れを比較時だけ吸収。', pending: 'かべるね／かるべね等の公式表記を統一しない。', documents: ['rc31/RC31_VALIDATION.md'] },
   { rc: 32, title: 'ビジュアルカラー辞書', catalog: '独立したルアーカタログ追加なし。配色辞書2表を追加。', features: '48色パレット、配色入力・逆引き、名称推定、バックアップv8。', pending: '未確認配色を捏造せず、旧復元後の参照解除を保護。', documents: ['rc32/RC32_PHASE4_IMPLEMENTATION.md', 'rc32/RC32_PHASE5_RELEASE_CHECKLIST.md'] },
   { rc: 33, title: '購入品・カラー・代表配色', catalog: '6対象61色候補（60色＋既存1色の監査例）、購入指定11個。', features: '公式画像29件・名称推定12件・未確認20件。既存所有・配色保護。', pending: '未確認20件、不可視面や限定仕様は未設定。', documents: ['rc33/RC33_IMPLEMENTATION.md', 'rc33/RC33_SOURCES.md'] },
+  { rc: 45, title: 'ドリフトスピン・BF重量別カラー', catalog: '実在商品で確認した13モデル。', features: 'サイズ・重量・カラーを照合し、追加専用のマスター更新と商品リンクを統合。', pending: '表記・限定年・塗装が未確定な候補と、外部画像の利用許可を保留。', documents: ['rodio-driftspin-bf/IMPLEMENTATION.md'] },
 ].sort((a, b) => b.rc - a.rc)
 export const developmentDocumentUrl = (path: string) => `https://github.com/horchata1127/fishing-log/blob/main/docs/${path}`

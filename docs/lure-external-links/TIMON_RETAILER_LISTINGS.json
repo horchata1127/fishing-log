@@ -1,0 +1,570 @@
+[
+  {
+    "store": "otsuka",
+    "url": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602267",
+    "status": 403,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://www.fishing-otsuka.co.jp/troutshopjp/ja/index.php?uid=53360101G3602267&__cf_chl_rt_tk=J9E7NdjJPtu0zk_va1y6hDmx5cdtW1zsUN9jsCOy0jU-1795823423-1.0.1.1-PWHYNSkPiqGjksAcAVFoKLAPT57oCkBRVsFBbJohvfI",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1264448&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1264448&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1281266&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1281266&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1446201&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1446201&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1281211&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1281211&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1295853&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1295853&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1287663&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1287663&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1381152&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1381152&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1282700&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1282700&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1569170&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1569170&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1532032&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1532032&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1728530&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1728530&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2138779&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2138779&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2483518&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2483518&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2679396&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2679396&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2806673&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2806673&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2806674&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2806674&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2851219&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2851219&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2958272&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2958272&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3067208&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3067208&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3082350&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3082350&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3143144&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3143144&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3151790&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3151790&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3151793&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3151793&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3165524&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3165524&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3219191&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3219191&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1310817&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1310817&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1281269&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1281269&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1310865&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1310865&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1446204&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1446204&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2268667&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2268667&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2930421&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2930421&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1446213&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1446213&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1281213&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1281213&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1281214&sort=n",
+    "status": 404,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1281214&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1287664&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1287664&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1295866&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1295866&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1475804&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1475804&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3024696&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3024696&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1532033&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1532033&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1532087&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1532087&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1728531&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1728531&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1728533&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1728533&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2138780&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2138780&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2153112&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2153112&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2483519&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2483519&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2497128&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2497128&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2919038&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2919038&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3144254&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3144254&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3147668&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3147668&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2679398&sort=n",
+    "status": 404,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2679398&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2806675&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2806675&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2806676&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2806676&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2806677&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2806677&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3138953&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3138953&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2851220&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2851220&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3053549&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3053549&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3056984&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3056984&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2958273&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2958273&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2958275&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2958275&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2958276&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2958276&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=2958280&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=2958280&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3067209&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3067209&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3143145&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3143145&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3151791&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3151791&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3151792&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3151792&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3165525&sort=n",
+    "status": 404,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3165525&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3165526&sort=n",
+    "status": 404,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3165526&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=3219192&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=3219192&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1310818&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1310818&sort=n",
+    "links": []
+  },
+  {
+    "store": "jh",
+    "url": "https://fishing-shop-jh.com/?mode=grp&gid=1295467&sort=n",
+    "status": 200,
+    "checkedAt": "2026-11-28",
+    "finalUrl": "https://fishing-shop-jh.com/?mode=grp&gid=1295467&sort=n",
+    "links": []
+  }
+]

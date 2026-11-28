@@ -1,0 +1,206 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/crank/mitts-dray2hook/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "c48084f1d1a39e5aed2a03759e1677fc2c6ae9b544376197c28638099d3877ba",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Length",
+          "Weight"
+        ],
+        [
+          "MITTS DRY 2Hook",
+          "28㎜",
+          "1.3g"
+        ],
+        [
+          "MITTS DRY RATTLE 2Hook",
+          "28㎜",
+          "1.4g"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "クリアー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2b2b7d6299400969cc27ecb57726e5d3-3.png",
+      "sku": {
+        "jans": [
+          "4525807299120",
+          "4525807299137"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "ミッツドライラトル2hook",
+            "4525807299137"
+          ],
+          [
+            "ミッツドライ2hook",
+            "4525807299120"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーネオン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0e20e4c32a9ea203d5b31e038916319b.png",
+      "sku": {
+        "jans": [
+          "4525807306460",
+          "4525807306538"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "ミッツドライラトル2hook",
+            "4525807306538"
+          ],
+          [
+            "ミッツドライ2hook",
+            "4525807306460"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドヌケオレ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/4a0d1cf0932b7bc00019e416df1c03ab.png",
+      "sku": {
+        "jans": [
+          "4525807306453",
+          "4525807306521"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "ミッツドライラトル2hook",
+            "4525807306521"
+          ],
+          [
+            "ミッツドライ2hook",
+            "4525807306453"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤスノクリブラ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1a97ee86b9f688ea4208b80cc3e0cb0d.png",
+      "sku": {
+        "jans": [
+          "4525807306477",
+          "4525807306545"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "ミッツドライラトル2hook",
+            "4525807306545"
+          ],
+          [
+            "ミッツドライ2hook",
+            "4525807306477"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ダイゴスケピン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1faa577c63aee184a945372bca19f19d.png",
+      "sku": {
+        "jans": [
+          "4525807306446",
+          "4525807306514"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "ミッツドライラトル2hook",
+            "4525807306514"
+          ],
+          [
+            "ミッツドライ2hook",
+            "4525807306446"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ケイムラクリアー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fde56228ec5b7a7900383fbc39ef61e6.png",
+      "sku": {
+        "jans": [
+          "4525807306439",
+          "4525807306507"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "ミッツドライラトル2hook",
+            "4525807306507"
+          ],
+          [
+            "ミッツドライ2hook",
+            "4525807306439"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "幻影ライン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f0695397b461bcbd77dc034b07c9b665.png",
+      "sku": {
+        "jans": [
+          "4525807306484",
+          "4525807306552"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "ミッツドライラトル2hook",
+            "4525807306552"
+          ],
+          [
+            "ミッツドライ2hook",
+            "4525807306484"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "誘惑ライン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/d5cd9a03a4648d32379a64a49e3b189f.png",
+      "sku": {
+        "jans": [
+          "4525807306491",
+          "4525807306569"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "ミッツドライラトル2hook",
+            "4525807306569"
+          ],
+          [
+            "ミッツドライ2hook",
+            "4525807306491"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

@@ -9,6 +9,27 @@ import { createHash } from 'node:crypto'
 import Dexie from 'dexie'
 import ts from 'typescript'
 
+// Node 22 has no navigator.locks. Exercise the two exclusive request forms
+// used by the app; Chromium E2E continues to cover the browser implementation.
+if (!navigator.locks) {
+  const pending = new Map()
+  Object.defineProperty(navigator, 'locks', { configurable: true, value: {
+    async request(name, options, callback = options) {
+      const previous = pending.get(name)
+      if (previous && options.ifAvailable) return callback(null)
+      const current = Promise.withResolvers()
+      pending.set(name, current.promise)
+      await previous
+      try {
+        return await callback({ name, mode: 'exclusive' })
+      } finally {
+        if (pending.get(name) === current.promise) pending.delete(name)
+        current.resolve()
+      }
+    },
+  } })
+}
+
 const directory = await mkdtemp(join(tmpdir(), 'fishing-rc34-apply-')), modules = new Map()
 async function compile(file) {
   file = resolve(file)
@@ -26,6 +47,9 @@ const schema = await import(await compile('src/db/database.ts'))
 const engine = await import(await compile('src/utils/lureMasterApply.ts'))
 const historyApi = await import(await compile('src/utils/lureMasterHistory.ts'))
 const { lureMasterManifest: manifest } = await import(await compile('src/data/lureMasterManifest.ts'))
+const rodioTargets = manifest.targets.filter(t=>t.revisions.includes('RC45'))
+const rodioColors = rodioTargets.reduce((n,t)=>n+t.colors.length,0)
+const rodioSeries = new Set(rodioTargets.map(t=>t.series)).size
 const legacy33 = await import(await compile('src/utils/rc33Catalog.ts'))
 const backup = await import(await compile('src/utils/backup.ts'))
 const { createVisualSnapshot } = await import(await compile('src/utils/visualColorStorage.ts'))
@@ -75,7 +99,7 @@ after(async () => {
 
 test('first actual apply and repeat are atomic, add-only, preserve every existing ID/value and keep ownership OFF', async () => {
   const u = updater(), before = await dataState(), p = await u.preview(), first = await u.apply(p.comparisonToken)
-  assert.deepEqual(added(first), { lureManufacturers: 0, lureSeries: 30, lureModels: 80, lureVariants: 1288, myLures: 0, lureVisualProfiles: 41 })
+  assert.deepEqual(added(first), { lureManufacturers: 0, lureSeries: 30 + rodioSeries, lureModels: 80 + rodioTargets.length, lureVariants: 1288 + rodioColors, myLures: 0, lureVisualProfiles: 41 })
   assert.deepEqual(first.history.counts, first.counts)
   assert.equal(first.history.status, 'succeeded_with_holds'); assert.equal(first.counts.lureVariants.held, 11)
   assert.ok(first.history.details.some(d => d.reason.includes('http')))
@@ -88,7 +112,7 @@ test('first actual apply and repeat are atomic, add-only, preserve every existin
   assert.equal(first.plan.unknownColors, 20)
   const second = await u.apply((await u.preview()).comparisonToken)
   assert.deepEqual(added(second), zero()); assert.deepEqual(await dataState(), after)
-  assert.equal(second.counts.lureVariants.retained, 1288)
+  assert.equal(second.counts.lureVariants.retained, 1288 + rodioColors)
   assert.equal((await db.lureMasterImportHistory.toArray()).filter(r => r.status === 'succeeded_with_holds').length, 2)
   const variants = after.lureVariants
   assert.equal(new Set(variants.map(v => `${v.modelId}/${v.colorName}`)).size, variants.length)
@@ -117,7 +141,7 @@ test('existing RC33 61 colors, 11 purchased records and 41 profiles are unchange
   await legacy33.applyRc33Catalog((await legacy33.previewRc33Catalog()).comparisonToken)
   const before = await dataState(), u = updater()
   const result = await u.apply((await u.preview({ includePurchases: true })).comparisonToken, { includePurchases: true })
-  assert.equal(result.counts.lureVariants.added, 1227)
+  assert.equal(result.counts.lureVariants.added, 1227 + rodioColors)
   assert.equal(result.counts.lureVariants.retained, 61)
   assert.equal(result.counts.myLures.added, 0); assert.equal(result.counts.lureVisualProfiles.added, 0)
   preserves(before, await dataState())
@@ -256,7 +280,7 @@ for (const webLocks of [true, false]) test(`two independent DB connections seria
     const results = await Promise.allSettled([a.apply(pa.comparisonToken, { includePurchases: true }), b.apply(pb.comparisonToken, { includePurchases: true })])
     assert.equal(results.filter(r => r.status === 'fulfilled').length, 1)
     assert.equal(results.find(r => r.status === 'rejected').reason.code, 'STALE_PREVIEW')
-    assert.equal(await db.lureVariants.count(), 1289); assert.equal(await db.myLures.count(), 12)
+    assert.equal(await db.lureVariants.count(), 1289 + rodioColors); assert.equal(await db.myLures.count(), 12)
     assert.equal(await db.lureVisualProfiles.count(), 42)
     const rows = await db.lureMasterImportHistory.toArray()
     assert.equal(rows.filter(r => r.status === 'failed').length, 1)
@@ -285,9 +309,9 @@ test('restore retains history but reapply uses current data and a new context', 
   const u = updater(), original = await backup.createBackup()
   const first = await u.apply((await u.preview()).comparisonToken)
   await backup.importBackup({ text: async () => JSON.stringify(original) })
-  const p = await u.preview(); assert.equal(p.addedColors, 1288)
+  const p = await u.preview(); assert.equal(p.addedColors, 1288 + rodioColors)
   const again = await u.apply(p.comparisonToken)
-  assert.equal(again.counts.lureVariants.added, 1288)
+  assert.equal(again.counts.lureVariants.added, 1288 + rodioColors)
   assert.notEqual(again.history.contextId, first.history.contextId)
   assert.deepEqual(added(await u.apply((await u.preview()).comparisonToken)), zero())
   const v9 = await backup.createBackup(); assert.equal(v9.version, 9); backup.validateBackup(JSON.parse(JSON.stringify(v9)))

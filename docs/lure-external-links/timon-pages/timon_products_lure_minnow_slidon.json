@@ -1,0 +1,147 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/minnow/slidon/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "367db20a51e1ed4c31350976f2f8f0226b3dadbd44c01f1497d38bfec5702b75",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Length",
+          "Weight",
+          "Type"
+        ],
+        [
+          "SLIDON60F",
+          "60mm",
+          "3.1g",
+          "Floating"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "クリアー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2b2b7d6299400969cc27ecb57726e5d3-6.png",
+      "sku": {
+        "jans": [
+          "4525807327472"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "テネシー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ca63259b3d56ff9388c03cee6667cfc5.png",
+      "sku": {
+        "jans": [
+          "4525807327489"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "闇金",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/47a6945ed3bf51e303c8d2a13d05b3f4-1.png",
+      "sku": {
+        "jans": [
+          "4525807327496"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレシルバー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/250f065332d8583131145c10fea50031.png",
+      "sku": {
+        "jans": [
+          "4525807327502"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーアンバー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/9f08d7abd02c50d9b1997acdcc423e38-1.png",
+      "sku": {
+        "jans": [
+          "4525807327519"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーボンズ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/30252b1c6dcec25408bddfb6116673d3-4.png",
+      "sku": {
+        "jans": [
+          "4525807327526"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ラムレーズン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c31a0bb582b64ecc728e4f2bbf5c66dd-4.png",
+      "sku": {
+        "jans": [
+          "4525807327533"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "パラレルチャート",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5f082f7ecc4d7d3aa189fe8f27f96208-1.png",
+      "sku": {
+        "jans": [
+          "4525807327540"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "パープルシャッド",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7cdcede8aca372839c706dca8a025bca.png",
+      "sku": {
+        "jans": [
+          "4525807327557"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "クリアーホロクラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/931ea8219c30cfe1db565cab0e0ac936.png",
+      "sku": {
+        "jans": [
+          "4525807327564"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import { hasLurePhotoDisplay } from '../utils/lureExternalCatalog'
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import type { LureOption } from '../utils/catchRegistration'
 import { resolveColorPhoto, subscribePhotos } from '../utils/lurePhotos'
-import { isNoaOption, photoOptionIdentity } from '../utils/noaPhotoCatalog'
+import { photoOptionIdentity } from '../utils/noaPhotoCatalog'
 import type { PhotoFace } from '../db/lurePhotoTypes'
 import LocalColorPhoto from './LocalColorPhoto.vue'
 import ExternalColorPhoto from './ExternalColorPhoto.vue'
@@ -31,13 +32,13 @@ async function refresh() {
 function connection() { online.value = navigator.onLine; externalLoaded.value = ''; if (online.value) externalFailures.value = [] }
 function chooseFace(value: PhotoFace) { faceChosen.value = true; face.value = value }
 watch(() => photoOptionIdentity(props.option), () => { faceChosen.value = false; face.value = 'front' })
-watch(() => [photoOptionIdentity(props.option), face.value], () => { failures.value = []; externalFailures.value = []; externalLoaded.value = ''; resolved.value = undefined; void refresh() }, { immediate: true })
+watch(() => [photoOptionIdentity(props.option), JSON.stringify(props.option.modelDetails), props.option.externalColorCode, face.value], () => { failures.value = []; externalFailures.value = []; externalLoaded.value = ''; resolved.value = undefined; void refresh() }, { immediate: true })
 onMounted(() => { unsubscribe = subscribePhotos(() => { failures.value = []; void refresh() }); window.addEventListener('online', connection); window.addEventListener('offline', connection) })
 onBeforeUnmount(() => { sequence++; unsubscribe?.(); window.removeEventListener('online', connection); window.removeEventListener('offline', connection) })
 </script>
 
 <template>
-  <div v-if="isNoaOption(option)" class="lure-photo-display" @click.stop>
+  <div v-if="hasLurePhotoDisplay(option)" class="lure-photo-display" @click.stop>
     <template v-if="!preferSvg">
       <div v-if="resolved?.faces.length" class="photo-faces" role="group" aria-label="写真の面">
         <button type="button" :aria-pressed="face === 'front'" @click="chooseFace('front')">表</button>
@@ -45,8 +46,8 @@ onBeforeUnmount(() => { sequence++; unsubscribe?.(); window.removeEventListener(
         <button v-if="resolved.faces.includes('other')" type="button" :aria-pressed="face === 'other'" @click="chooseFace('other')">他</button>
       </div>
       <LocalColorPhoto v-if="local?.blobId" :blob-id="local.blobId" :alt="`${option.colorName} ${face === 'front' ? '表面' : face === 'back' ? '裏面' : 'その他'}写真`" @error="failures.push(local!.blobId!)" />
-      <ExternalColorPhoto v-if="external" :key="external.imageUrl" :src="external.imageUrl" :alt="`${option.modelName} ${option.colorName} 外部${external.imageKind === 'weight-common-color-sample' ? '重量共通の色見本' : '商品写真'}`" @load="externalLoaded = $event" @error="externalFailures.push($event)" />
-      <small v-if="external && externalLoaded === external.imageUrl">画像出典：<a :href="external.externalProductUrl" target="_blank" rel="noopener noreferrer" @click.stop>{{ external.sourceName }}</a>{{ external.imageKind === 'weight-common-color-sample' ? '・重量共通の色見本' : '・撮影面の指定なし' }}</small>
+      <ExternalColorPhoto v-if="external" :key="external.imageUrl" :src="external.imageUrl" :alt="`${option.modelName} ${option.colorName} 外部${external.imageKind === 'weight-common-color-sample' ? '重量共通の色見本' : external.imageKind === 'official-color-sample' ? '公式カラー見本' : '商品写真'}`" @load="externalLoaded = $event" @error="externalFailures.push($event)" />
+      <small v-if="external && externalLoaded === external.imageUrl">画像出典：<a :href="external.externalProductUrl" target="_blank" rel="noopener noreferrer" @click.stop>{{ external.sourceName }}</a>{{ external.imageKind === 'weight-common-color-sample' ? '・重量共通の色見本' : external.imageKind === 'official-color-sample' ? '・公式カラー見本' : '・撮影面の指定なし' }}</small>
     </template>
     <template v-if="preferSvg || !local && (!external || externalLoaded !== external.imageUrl)">
       <VisualColorPreview v-if="option.visualColorSnapshot" :appearance="option.visualColorSnapshot.appearance" :color-values="option.visualColorSnapshot.colorValues" />

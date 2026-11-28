@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://www.palmsjapan.com/lures/product/little-diner-powale/color/mt915b.jpg",
+    "productUrl": "https://www.palmsjapan.com/lures/product/?name=little-diner-powale#color",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "width": 1120,
+    "height": 1120,
+    "status": "decoded",
+    "displayPermission": "unconfirmed"
+  },
+  {
+    "url": "https://www.palmsjapan.com/lures/product/little-diner-snackpowale/color/mt915.jpg",
+    "productUrl": "https://www.palmsjapan.com/lures/product/?name=little-diner-snackpowale#color",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "width": 900,
+    "height": 900,
+    "status": "decoded",
+    "displayPermission": "unconfirmed"
+  },
+  {
+    "url": "https://www.palmsjapan.com/lures/product/little-diner-powale-sinrattle/color/mt-11a.jpg",
+    "productUrl": "https://www.palmsjapan.com/lures/product/?name=little-diner-powale-sinrattle#color",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "width": 900,
+    "height": 900,
+    "status": "decoded",
+    "displayPermission": "unconfirmed"
+  },
+  {
+    "url": "https://www.palmsjapan.com/lures/product/little-diner-ganoff/color/al-928.jpg",
+    "productUrl": "https://www.palmsjapan.com/lures/product/?name=little-diner-ganoff#color",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "width": 900,
+    "height": 900,
+    "status": "decoded",
+    "displayPermission": "unconfirmed"
+  },
+  {
+    "url": "https://www.palmsjapan.com/lures/product/little-diner-grande-ganoff/color/mt-2a.jpg",
+    "productUrl": "https://www.palmsjapan.com/lures/product/?name=little-diner-grande-ganoff#color",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "width": 900,
+    "height": 900,
+    "status": "decoded",
+    "displayPermission": "unconfirmed"
+  },
+  {
+    "url": "https://www.palmsjapan.com/lures/product/little-diner-galette/color/mt-2a.jpg",
+    "productUrl": "https://www.palmsjapan.com/lures/product/?name=little-diner-galette#color",
+    "checkedAt": "2026-11-28",
+    "httpStatus": 200,
+    "width": 900,
+    "height": 900,
+    "status": "decoded",
+    "displayPermission": "unconfirmed"
+  }
+]

@@ -1,0 +1,174 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/vibration/metal-kuroball/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "7cb1b8acb8917867095d2739ba28d6d00d2abad97c86b48fa7310e27ddd3a1f1",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Length"
+        ],
+        [
+          "メタルクロボール",
+          "2.3g",
+          "26mm"
+        ],
+        [
+          "メタルクロボール",
+          "3.5g",
+          "31mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "ショボクレ缶コーヒー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/11/2019119_KRB_2-1-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807191820",
+          "4525807191844"
+        ],
+        "weightJans": [
+          [
+            2.3,
+            "4525807191820"
+          ],
+          [
+            3.5,
+            "4525807191844"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーハーフオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2019/11/2019119_KRB_1_-1-800x533.png",
+      "sku": {
+        "jans": [
+          "4525807191837",
+          "4525807191851"
+        ],
+        "weightJans": [
+          [
+            2.3,
+            "4525807191837"
+          ],
+          [
+            3.5,
+            "4525807191851"
+          ]
+        ],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "グリーンゴールド",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/01GREENGOLD.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/08BLOWN.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ケイムラダイゴブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/03KEIMURA-DAIGO-BROWN.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ケイムラダイゴライトブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/04KEIMURA-DAIGO-LIGHT-BROWN.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレおこし",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/05SHOBOKURE-OKOSHI.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "シルバー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/06SILVER.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ダイゴつぶ茶",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/07DAIGO-TUBUCHA.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレマジョチャー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/08SYOBOKURE-MAZIOCHA.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "黄ばみ茶",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/09KIBAMICHA.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "黄ばみオリーブ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2017/08/10KIBAMIOLIVE.jpg",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

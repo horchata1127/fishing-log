@@ -1,0 +1,133 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/vibration/kuroball_beta/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "af557b92baa163f9e6a526ab25e85652e0f94774005dad4934fd7455177af2c5",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Length",
+          "Weight",
+          "Type"
+        ],
+        [
+          "KUROBALL β 2.5ｇ",
+          "26mm",
+          "2.5g",
+          "SINKING"
+        ],
+        [
+          "KUROBALL β 3.8ｇ",
+          "30mm",
+          "3.8g",
+          "SINKING"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "201 クリアー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/d85c211e87bf9a7da073ae9b81f94909.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "202 タッキーブラウン",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2d7a227e498bc8ae1525bb449faca68e.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "4 蛍光ピンク",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3246398eef18e01e8d608bc72350b6d6.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "203 タッキーゴーストペレット",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/9aac092882130709a6c93de25b0505e5.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "204 蛍光オレンジ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/da967fa36fee5ce7d9f1b6dfe18cb50b.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "134 蛍光イエロー",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/e57006df46c073ba7f66e2c716f387dd.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "164 グローチャート",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0b97985673edf2ec16204966680ab8c3.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "165 レッドグローオレンジ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1f888469fb96a1dd0db7a35a99c15e9f.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "169 Wグローオレンジ/チャート",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/d7fa0b0c6130b4efcc8572de85b5d2d1.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "205 イクラ",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/eb367b2c245d6ccec826814619809532.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}

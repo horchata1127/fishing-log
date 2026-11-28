@@ -1,0 +1,84 @@
+{
+  "backupName": "fishing-log-backup-2026-11-23 (2).json",
+  "backupSha256": "a6ed379dd9d985c735d825dd232868ce79b051b4bd5535e24294b5058e9b1532",
+  "models": [
+    {
+      "series": "BF",
+      "model": {
+        "name": "BF",
+        "seriesId": 100,
+        "category": "その他",
+        "id": 115
+      },
+      "variants": []
+    },
+    {
+      "series": "BF",
+      "model": {
+        "name": "BF 0.5g",
+        "seriesId": 100,
+        "category": "スプーン",
+        "weightG": 0.5,
+        "id": 116
+      },
+      "variants": [
+        {
+          "colorName": "Liberty",
+          "modelId": 116,
+          "id": 286
+        },
+        {
+          "colorName": "Route21",
+          "modelId": 116,
+          "id": 287
+        },
+        {
+          "colorName": "ゲンちゃんブラウニー",
+          "modelId": 116,
+          "id": 288
+        }
+      ]
+    },
+    {
+      "series": "BF",
+      "model": {
+        "name": "BF 0.7g",
+        "seriesId": 100,
+        "category": "スプーン",
+        "weightG": 0.7,
+        "id": 117
+      },
+      "variants": []
+    },
+    {
+      "series": "DRIFT SPIN",
+      "model": {
+        "name": "DRIFT SPIN 0.7g",
+        "seriesId": 97,
+        "category": "スプーン",
+        "weightG": 0.7,
+        "id": 120
+      },
+      "variants": []
+    },
+    {
+      "series": "DRIFT SPIN",
+      "model": {
+        "name": "DRIFT SPIN 1.3g",
+        "seriesId": 97,
+        "category": "スプーン",
+        "weightG": 1.3,
+        "id": 121
+      },
+      "variants": [
+        {
+          "colorName": "草色",
+          "modelId": 121,
+          "id": 289
+        }
+      ]
+    }
+  ],
+  "modelCount": 5,
+  "colorRows": 4
+}

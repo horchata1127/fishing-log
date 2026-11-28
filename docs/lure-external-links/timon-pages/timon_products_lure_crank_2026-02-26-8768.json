@@ -1,0 +1,1019 @@
+{
+  "url": "https://www.jackall.co.jp/timon/products/lure/crank/2026-02-26-8768/",
+  "originType": "official-index-link",
+  "checkedAt": "2026-11-28",
+  "httpStatus": 200,
+  "sha256": "65790c77348c93c40ebea692977a00246f97fff43859ea4752e35cc3152d2b04",
+  "tables": [
+    {
+      "rows": [
+        [
+          "Name",
+          "Weight",
+          "Length"
+        ],
+        [
+          "PaniCraSR",
+          "3.0g",
+          "32mm"
+        ],
+        [
+          "PaniCra MR",
+          "3.3g",
+          "32mm"
+        ],
+        [
+          "PaniCra DR",
+          "3.6g",
+          "32mm"
+        ],
+        [
+          "PaniCra DR-HF",
+          "2.8g",
+          "32mm"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "alt": "ヤジーパーフェクトブラウン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c942cb4831343b4f031dc37823d4593d.png",
+      "sku": {
+        "jans": [
+          "4525807239515"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-hf",
+            "4525807239515"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーパーフェクトオリーブ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1d12cc02b20ce70be2f1f7b95699e632.png",
+      "sku": {
+        "jans": [
+          "4525807239522"
+        ],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドパンプキン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0281d78fbc3186625ec68bd2b7dd14f9.png",
+      "sku": {
+        "jans": [
+          "4582418083937",
+          "4582418083968",
+          "4525807239485"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-hf",
+            "4525807239485"
+          ],
+          [
+            "mr",
+            "4582418083937"
+          ],
+          [
+            "dr",
+            "4582418083968"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレほうじ茶ラテ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5cdfcd55785d449d6a754c7839c83c0f.png",
+      "sku": {
+        "jans": [
+          "4525807227420",
+          "4525807227444",
+          "4525807239492"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-hf",
+            "4525807239492"
+          ],
+          [
+            "mr",
+            "4525807227420"
+          ],
+          [
+            "dr",
+            "4525807227444"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ＴＫグロー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/566a81cba3922da822a35829bfa977d7.png",
+      "sku": {
+        "jans": [
+          "4525807191240",
+          "4525807191288",
+          "4525807239508"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-hf",
+            "4525807239508"
+          ],
+          [
+            "mr",
+            "4525807191240"
+          ],
+          [
+            "dr",
+            "4525807191288"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ダイゴマッスルレッドグロー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ce839b71e599f4baf0fbaa0aa6cb2e01.png",
+      "sku": {
+        "jans": [
+          "4525807227413",
+          "4525807227437",
+          "4525807239539"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-hf",
+            "4525807239539"
+          ],
+          [
+            "mr",
+            "4525807227413"
+          ],
+          [
+            "dr",
+            "4525807227437"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "クリアー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6000daa9ec0a53f9f7b7b0c8141a55aa.png",
+      "sku": {
+        "jans": [
+          "4582418080837",
+          "4560212121413",
+          "4560212121512",
+          "4560212127736"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-hf",
+            "4560212127736"
+          ],
+          [
+            "sr",
+            "4582418080837"
+          ],
+          [
+            "mr",
+            "4560212121413"
+          ],
+          [
+            "dr",
+            "4560212121512"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーブラウン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/1fe59b4784717a9f63aa5c34031c6648.png",
+      "sku": {
+        "jans": [
+          "4582418080875",
+          "4560212125534",
+          "4560212125572",
+          "4560212127767"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-hf",
+            "4560212127767"
+          ],
+          [
+            "sr",
+            "4582418080875"
+          ],
+          [
+            "mr",
+            "4560212125534"
+          ],
+          [
+            "dr",
+            "4560212125572"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレワカクサ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/538273b85764f5f2f0bdd43fb149ad7b.png",
+      "sku": {
+        "jans": [
+          "4582418080905",
+          "4560212127804"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-hf",
+            "4560212127804"
+          ],
+          [
+            "sr",
+            "4582418080905"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドヌケオレ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/63dcbe4cb5cb838e5b6ed741465eef07.png",
+      "sku": {
+        "jans": [
+          "4582418084002"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "dr-hf",
+            "4582418084002"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヤジーボンズ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/f01fb7c55e20965e00e831b0f8cb353b.png",
+      "sku": {
+        "jans": [
+          "4525807226454",
+          "4525807226461"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4525807226454"
+          ],
+          [
+            "dr",
+            "4525807226461"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドグローペレブラウン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/94bc9c2df40954c0f5ac0f0102a74ea2.png",
+      "sku": {
+        "jans": [
+          "4525807191219",
+          "4525807191257"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4525807191219"
+          ],
+          [
+            "dr",
+            "4525807191257"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドグローペレオリーブ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/3433d3d36ab47900696e3843a71dc41e.png",
+      "sku": {
+        "jans": [
+          "4525807191226",
+          "4525807191264"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4525807191226"
+          ],
+          [
+            "dr",
+            "4525807191264"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "静岡美人（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b8cf08db92886d303fd4d27b5166ae2b.png",
+      "sku": {
+        "jans": [
+          "4525807191233",
+          "4525807191271"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4525807191233"
+          ],
+          [
+            "dr",
+            "4525807191271"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ゴールデン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a4517ce07aeeee4aabf336a5feda36a5.png",
+      "sku": {
+        "jans": [
+          "4560212121451",
+          "4560212121550"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4560212121451"
+          ],
+          [
+            "dr",
+            "4560212121550"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーグロー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/cb7d04b725a1c9e7be4e6ce0b835e0dd.png",
+      "sku": {
+        "jans": [
+          "4582418080844",
+          "4560212122953",
+          "4560212123004"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4582418080844"
+          ],
+          [
+            "mr",
+            "4560212122953"
+          ],
+          [
+            "dr",
+            "4560212123004"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレグロー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/73f5d6786377908e4c592561abbac3cf.png",
+      "sku": {
+        "jans": [
+          "4560212122960",
+          "4560212123011"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4560212122960"
+          ],
+          [
+            "dr",
+            "4560212123011"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヨネスティＯグロー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/9363e3b4af6785a08d1ef7269da0e516.png",
+      "sku": {
+        "jans": [
+          "4582418080868",
+          "4560212122991",
+          "4560212123042"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4582418080868"
+          ],
+          [
+            "mr",
+            "4560212122991"
+          ],
+          [
+            "dr",
+            "4560212123042"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "豚桃（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c578c9df4784788a72376af9d68bf156.png",
+      "sku": {
+        "jans": [
+          "4582418080899",
+          "4560212125565",
+          "4560212125602"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4582418080899"
+          ],
+          [
+            "mr",
+            "4560212125565"
+          ],
+          [
+            "dr",
+            "4560212125602"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレレッドグロー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fcb50951d33134d550922abe1f16fad5.png",
+      "sku": {
+        "jans": [
+          "4582418083913",
+          "4582418083944"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4582418083913"
+          ],
+          [
+            "dr",
+            "4582418083944"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレジル（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8af6faa4897d9cefd8eeb321074cf94d.png",
+      "sku": {
+        "jans": [
+          "4582418083920",
+          "4582418083951"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4582418083920"
+          ],
+          [
+            "dr",
+            "4582418083951"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "エンドパンプキン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/497e49c1db0b78d352f83fdfeff7c725.png",
+      "sku": {
+        "jans": [
+          "4582418083937",
+          "4582418083968"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4582418083937"
+          ],
+          [
+            "dr",
+            "4582418083968"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "神レッドグロー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/e63a28967378dff799bf002007e0bfaa.png",
+      "sku": {
+        "jans": [
+          "4582418095565",
+          "4582418095619"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4582418095565"
+          ],
+          [
+            "dr",
+            "4582418095619"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "神グリーングロー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/469af4b343228e01e2a062705762e117.png",
+      "sku": {
+        "jans": [
+          "4582418095572",
+          "4582418095626"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4582418095572"
+          ],
+          [
+            "dr",
+            "4582418095626"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ショボクレおこし（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/2325d584c6fee908d7c9ef0183cc6177.png",
+      "sku": {
+        "jans": [
+          "4582418095589",
+          "4582418095633"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4582418095589"
+          ],
+          [
+            "dr",
+            "4582418095633"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ゴンティーラッシュグローⅡ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fa7b58a83b716be64516761f1a01cbab.png",
+      "sku": {
+        "jans": [
+          "4582418098856",
+          "4582418098887"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4582418098856"
+          ],
+          [
+            "dr",
+            "4582418098887"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "タッキーグローヤマメ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c37a9e97fa1f5ae71c7c1e5173bd9e39.png",
+      "sku": {
+        "jans": [
+          "4582418098863",
+          "4582418098894"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4582418098863"
+          ],
+          [
+            "dr",
+            "4582418098894"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "神ダークアース（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/eaa69a2c57d537b64b3cdea9f8d1d6ab.png",
+      "sku": {
+        "jans": [
+          "4582418098870",
+          "4582418098900"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4582418098870"
+          ],
+          [
+            "dr",
+            "4582418098900"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ゴンティーグロー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/19cb2b277cb27b26e07fe8277c667ce8.png",
+      "sku": {
+        "jans": [
+          "4560212122977",
+          "4560212123028"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4560212122977"
+          ],
+          [
+            "dr",
+            "4560212123028"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ヨネスティＢグロー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c73d99cc21b76b6910fe6ea4e9a97f26.png",
+      "sku": {
+        "jans": [
+          "4582418080851",
+          "4560212122984",
+          "4560212123035"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4582418080851"
+          ],
+          [
+            "mr",
+            "4560212122984"
+          ],
+          [
+            "dr",
+            "4560212123035"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ミックスオーレ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/6cac8e6200e043e871b9ec537c5dd1ec.png",
+      "sku": {
+        "jans": [
+          "4582418095596",
+          "4582418095640"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4582418095596"
+          ],
+          [
+            "dr",
+            "4582418095640"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "こぶ茶（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/660f17b61faf3b738bf55d85b836cffb.png",
+      "sku": {
+        "jans": [
+          "4582418095602",
+          "4582418095657"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "mr",
+            "4582418095602"
+          ],
+          [
+            "dr",
+            "4582418095657"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "スケ茶パープル（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/77c6d20094fdb868fca5a076b5544123.png",
+      "sku": {
+        "jans": [
+          "4582418081087"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4582418081087"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ハーフオリーブ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0d3755b4505154dbb492963e220ae8f7.png",
+      "sku": {
+        "jans": [
+          "4582418081094"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4582418081094"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ミルクＴ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/0671c585a480a8226d1245ef127fbc6b.png",
+      "sku": {
+        "jans": [
+          "4582418080929"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4582418080929"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ベッコウマットメロン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/82bd7f22a4ad83c645583c6a79044b6f.png",
+      "sku": {
+        "jans": [
+          "4582418080912"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4582418080912"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "パパの陰謀（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/a51694ad8604d5c67a34906c74834e11.png",
+      "sku": {
+        "jans": [
+          "4582418080882"
+        ],
+        "weightJans": [],
+        "modelJans": [
+          [
+            "sr",
+            "4582418080882"
+          ]
+        ],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ISグリーンゴールド（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/03efb98831b619d8d0f28efa42cb7597.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ISシルバークラウン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/62b458e065258212386e1b99ec86d3e6.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ISスモークオリーブ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/fb0a57beab379e653c0beab64e366f17.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ISスモークブラウン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/88e36b26363ae78ca73789f78b9b883e.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ISブラウン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/8e47f2dd1c2f32d3928a9e238ee86ba9.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ISブルーシルバー（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/924bed22057eb1f3b4f9168a5f9be614.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "カフェオーレ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/5846edf7c6034c59879ab2c0dab5562c.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "キャラメル（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/ad45d68b450a2a9a0acd969e7ac8e9ec.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ゴンティーオーク（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/c830a332111ab37851120127f9530f83.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "スモークペレット（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/924c6d25bca75d36e03e19025af029ce.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "パラパラグリーン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/7a395e055fc046eb94df28525e49c6c0.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ブラウンオリーブ（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/305c9f1be900df3ae014dc0777bf8ccd.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ブラピン（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/e6b6793963cc29d3e26b7f53a942596e.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "ミストペレット（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/b6f16c986abcb2f1c5e86f23c809cc13.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    },
+    {
+      "alt": "黒ぶどう（パニクラ）",
+      "url": "https://www.jackall.co.jp/timon/wp-content/uploads/sites/4/2012/12/45176461577cae026246c6babe60192b.png",
+      "sku": {
+        "jans": [],
+        "weightJans": [],
+        "modelJans": [],
+        "sharedEyeEvidence": false
+      }
+    }
+  ]
+}
